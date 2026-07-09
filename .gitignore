@@ -1,0 +1,12 @@
+# OS and editor files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local scratch
+.tmp/
+_tmp/
+_verification/
+
+# Generated local previews
+*.log

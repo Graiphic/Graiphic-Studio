@@ -1,0 +1,30 @@
+# Widgets
+
+Widgets are the reusable visual elements placed on the Front Panel.
+
+A widget may be a control or an indicator:
+
+- A control provides a value to the program or public interface.
+- An indicator displays a value produced by the program or public interface.
+
+Widget labels are separate from widget value text.
+
+## Current Core Widgets
+
+- [Numeric](numeric.md)
+- [Boolean and Text Button](boolean-and-button.md)
+- [String and Path](string-and-path.md)
+- [Ring and Enum](ring-and-enum.md)
+- [Image Static](image-static.md)
+
+## Common Behavior
+
+Most widgets support:
+
+- label visibility
+- control/indicator switching where meaningful
+- resize handles
+- context menu actions
+- selection aura
+- lock/unlock protection
+- color editing when the widget exposes visual surfaces
