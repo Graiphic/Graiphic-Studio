@@ -26,6 +26,26 @@ not the same as the widget value text.
 
 The selection or placement outline around an object.
 
+## Control
+
+An interactive widget that provides a value to the document interface or
+program.
+
+## Indicator
+
+A display widget that presents a value produced by the document interface or
+program.
+
+## Layer
+
+An independently selectable and ordered visual element, especially in the Icon
+Editor.
+
+## Selection Pane
+
+The structural list of Front Panel elements, groups, visibility, lock state,
+and stacking order.
+
 ## Interface Map
 
 The public interface square that shows the visual arrangement of public input

@@ -1,14 +1,11 @@
 # Graiphic Studio
 
-Official user documentation for Graiphic Studio.
+Official user documentation for **Graiphic Studio**, the visual development
+environment for `.frog` documents.
 
-Graiphic Studio is the visual development environment for building `.frog`
-documents: front panels, widgets, public interface maps, iconography, and the
-visual editing workflow around them.
-
-This repository is the public documentation home. It explains how the Studio
-works from a user point of view and keeps screenshots, examples, terminology,
-and behavior notes in one place.
+Graiphic Studio combines a vector Front Panel, source-backed widgets, a public
+Interface Map, document iconography, and focused visual editing tools. This
+repository explains those features from the user's point of view.
 
 ## Documentation
 
@@ -18,7 +15,11 @@ and behavior notes in one place.
 - [Widget Navigator](docs/interface/widget-navigator.md)
 - [Interface Map](docs/interface/interface-map.md)
 - [Icon Editor](docs/interface/icon-editor.md)
+- [Selection Pane](docs/interface/selection-pane.md)
+- [Arrange and Resize](docs/interface/arrange-and-resize.md)
+- [Color Tools](docs/interface/color-tools.md)
 - [Widgets](docs/widgets/index.md)
+- [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
 - [Glossary](docs/reference/glossary.md)
 
 ## Repository Layout
@@ -45,7 +46,8 @@ assets/
 - Avoid documenting experimental behavior as final unless it has been validated
   in the Studio.
 
-## Status
+## Product Status
 
-This documentation is being built alongside the Studio. Pages marked as draft
-describe the intended direction and will be tightened as features stabilize.
+Graiphic Studio is under active development. The documentation distinguishes
+implemented behavior from future runtime or Diagram work. Screenshots are
+captured from the native Windows target and updated when a workflow changes.

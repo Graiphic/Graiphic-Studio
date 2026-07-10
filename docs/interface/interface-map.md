@@ -1,49 +1,62 @@
 # Interface Map
 
-The Interface Map is the square visual representation shown in the Front Panel
-chrome. It represents the public `.frog` interface layout and keeps port
-placement visible without turning it into hidden runtime behavior.
+The Interface Map is the square representation in the Front Panel chrome. It
+shows the public `.frog` interface layout without turning that layout into
+hidden runtime behavior.
 
-## Concepts
+![Interface Layout Patterns](../../assets/screenshots/interface-map/layout-patterns.png)
 
-- **Interface Map**: the visual square showing the public interface slots.
-- **Interface Layout Pattern**: the selected slot distribution pattern.
-- **Front Panel binding**: the explicit source-level link between a widget value
-  and a public interface port.
-- **interface_input**: diagram-side projection of a public input port.
-- **interface_output**: diagram-side projection of a public output port.
+## Vocabulary
 
-## Binding Workflow
+- **Interface Map** is the square showing public interface slots.
+- **Interface Layout Pattern** is the selected distribution of those slots.
+- **Front Panel binding** is the explicit link between a widget value and a public port.
+- **interface_input** and **interface_output** are the future Diagram projections of public ports.
 
-1. Select a slot in the Interface Map.
-2. The slot enters binding mode.
-3. Click a compatible Front Panel widget.
-4. The widget is bound to that slot.
-5. The binding remains visible in the Interface Map.
+## Create A Binding
 
-Clicking a bound slot selects the bound widget and can re-enter binding mode so
-the binding can be reassigned.
+1. Click an empty slot. The slot enters binding mode.
+2. Move to a compatible Front Panel widget. Its thicker aura confirms the target.
+3. Click the widget. The binding is stored and binding mode ends.
+
+The binding cursor and candidate aura share the same highlight color. Press
+`Escape` before choosing a widget to cancel. Clicking a bound slot selects its
+widget and can re-enter binding mode so the association can be changed.
+
+Each widget value has one Front Panel binding. Binding an already-bound widget
+to another slot moves the association and clears its previous slot. Deleting a
+bound widget removes the binding.
 
 ## Slot Colors
 
-The Interface Map uses data-type colors rather than connection-status colors.
+Slots use data-type colors: Double is orange, Integer is blue, Boolean is green,
+String is pink, Path is blue-green, and Ring or Enum uses integer blue.
 
-Current direction:
+A required connection adds a red marker on the slot's exterior edge.
+Recommended and optional connections keep the normal display. For corner slots,
+the marker follows the left or right flow edge; top and bottom markers are used
+for slots whose exterior connection is strictly above or below.
 
-- Double: orange
-- Integer: blue
-- Boolean: green
-- String: pink
-- Path: blue-green
-- Enum and Ring: integer blue
+## Patterns And Capacity
 
-Required connections use an additional red edge indicator on the external edge
-of the slot. Recommended and optional connections keep the normal slot display.
+Patterns define only visual distribution. Choosing a pattern, rotating it, or
+flipping it transforms the visible slots and their hit areas together. Existing
+bindings are preserved in order while capacity allows. Extra bindings are
+removed when the new pattern has fewer available slots.
 
-## Layout Patterns
+Add Terminal and Remove Terminal choose the next compatible capacity while
+preserving bindings within that limit.
 
-Interface Layout Patterns define only the visual distribution of slots. They do
-not define execution semantics.
+## Swap And Disconnect
 
-When a pattern changes, existing bindings are preserved when possible. If the
-new pattern has fewer slots, bindings that no longer have a slot are removed.
+After selecting a bound slot, hold `Ctrl` over another slot to enter Swap mode.
+Swap works between two occupied slots and between an occupied and empty slot.
+
+Use **Disconnect This Terminal** for one slot or **Disconnect All Terminals** to
+clear the map.
+
+## Source Ownership
+
+The selected pattern and bindings are explicit `.frog` data. The Interface Map
+is an editor for that data, not an invisible execution mechanism. The Diagram
+remains the authoritative executable graph.

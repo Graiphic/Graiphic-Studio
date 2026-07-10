@@ -13,3 +13,8 @@ Picture or Screen widget displays image data produced or loaded by the program.
 Image Static can reference imported media. The `.frog` source should keep the
 media relationship explicit so runtime and export flows do not depend on hidden
 Studio-only state.
+
+SVG imports remain vector-based. Raster media is preserved as image data and
+can lose clarity when enlarged. Images support selection, proportional resize,
+rotation, horizontal or vertical flip, stacking order, grouping, visibility,
+lock, clipboard copy/paste, and undo.

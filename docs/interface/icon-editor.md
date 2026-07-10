@@ -1,54 +1,67 @@
 # Icon Editor
 
-The Icon Editor edits the `.frog` document icon.
+The Icon Editor edits the `.frog` document icon. Open it by double-clicking the
+document icon in the Front Panel chrome or choosing **Edit Icon...** from its
+context menu.
 
-The document icon is stored as SVG-oriented icon data. The 40 x 40 display is a
-preview size, not a pixel limitation. SVG content remains vector-based and can
-be displayed clearly at different sizes.
+The 40 x 40 display is a preview size, not a raster limitation. SVG remains
+vector-based and is rendered cleanly at other sizes.
 
-## Canvas
+## Canvas And Preview
 
-The editor uses a 40 x 40 working grid as a practical icon design reference.
-The grid is the minimum interaction unit for pencil-style drawing, erasing, and
-simple pixel-aligned edits.
+The canvas uses a 40 x 40 working grid. One grid cell is the minimum Pencil and
+Eraser unit. Vector objects can move outside the visible region while editing;
+only the icon region appears in Preview and in the applied document icon.
 
-Vector objects can move outside the visible grid while editing. The final
-preview uses the visible icon region.
+Use View to choose a checkerboard or white editing background. This changes
+the canvas background only. Zoom changes the editor view, not the SVG data.
 
 ## Layers
 
-Icon content is layer-based. Layers can be selected, moved forward or backward,
-hidden, shown, copied, pasted, and deleted.
+Content remains layer-based. Select a row, use its eye icon, drag it, or use the
+arrow buttons to change visibility and stacking order. Layers can be copied,
+pasted, nudged, resized, and deleted.
 
-The default template layer is a normal layer. It can be selected, moved,
-resized, edited, copied, or deleted like other layers.
+The Default Template and optional template layers follow the same interaction
+rules as imported media and drawn objects. Layer metadata stays in the editable
+SVG so work can continue after reopening the `.frog` document.
 
-## Tools
+## Drawing Tools
 
-Current tools include:
+- Pencil paints one-cell units on the selected layer.
+- Line, Rectangle, and Ellipse create vector objects.
+- Eyedropper samples a screen color into the active swatch.
+- Fill replaces a connected region on the touched layer.
+- Eraser removes cells from a layer without deleting that layer.
+- Text creates an editable text object.
+- Selection moves, resizes, copies, or deletes complete objects.
 
-- Pencil
-- Line
-- Eyedropper
-- Fill
-- Rectangle
-- Ellipse
-- Eraser
-- Text
-- Selection
-- Move
+Fill uses four-directional connectivity. It changes the touched cell and every
+connected cell of the same color on that exact layer; it never creates a second
+layer for the fill result.
 
-The Fill tool recolors the target cell and the connected region of the same
-color on the target layer.
+## Colors
+
+The two swatches are independent quick colors. Click a swatch to activate it.
+Double-click to open the single-color navigator. Drawing tools use only the
+active swatch.
 
 ## Templates
 
-Templates are optional helper layers. Selecting a template adds it as a layer.
-Templates must remain visible against the Studio theme, so transparent regions
-are shown on the editor background rather than as unreadable white-on-white
-tiles.
+Template tiles are optional helper layers. Activating a tile adds that template
+to Layers. Templates remain non-destructive and can be moved, resized, hidden,
+copied, reordered, or removed.
 
-## Saving
+## Import, Clipboard, And History
 
-Pressing OK writes the current icon preview back to the `.frog` document icon.
-The icon should remain editable when reopened.
+The File menu imports SVG or raster media. SVG stays vector-based. Clipboard
+paste and drag-and-drop create an editable visual layer.
+
+`Ctrl+Z` undoes; `Ctrl+Shift+Z` redoes. `Ctrl+Shift+Delete` clears all layers.
+Press `Escape` to leave the current tool and return to selection without
+closing the editor.
+
+## Apply Or Cancel
+
+**OK** writes the current Preview to the `.frog` icon and preserves editable
+layer data. **Cancel** closes the editor without applying the session.

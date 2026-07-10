@@ -1,45 +1,59 @@
 # Front Panel
 
-The Front Panel is the main visual editing surface in Graiphic Studio.
+The Front Panel is the main visual editing surface in Graiphic Studio. It
+contains the user-facing arrangement of widgets, labels, images, and design
+elements. The `.frog` document owns this layout.
 
-It contains the user-facing arrangement of widgets, labels, images, and design
-elements. The Front Panel is source-owned by the `.frog` document.
+![Front Panel overview](../../assets/screenshots/front-panel/front-panel-overview.png)
 
-## Grid
+## Main Areas
 
-The Front Panel uses a grid to make placement predictable. Grid visibility and
-snap-to-grid can be controlled from the Studio chrome.
+The title bar identifies the current document. The menu bar contains file and
+editing commands. The toolbar groups execution controls, selection and color
+tools, arrangement tools, and text formatting. The blue status bar keeps view
+controls such as grid visibility, snapping, and zoom close to the canvas.
 
-The grid has a visible zero marker. Scrollbars are shown only when the current
-view or placed content requires additional navigation.
+## Grid And Navigation
 
-## Selection
+The grid makes placement predictable and includes a visible origin marker.
+Grid visibility and snap-to-grid are independent controls.
 
-Objects can be selected directly on the Front Panel or through the Selection
-pane.
+Scrollbars are computed from the viewport and placed content. Removing the
+object furthest from the origin reduces the unnecessary empty range. When all
+content fits, scrollbars are hidden. Use the middle mouse button to pan freely;
+scrollbars appear when the resulting view needs them.
 
-Selected objects show an aura. Locked objects use a distinct locked aura and
-cannot be moved, resized, recolored, grouped, or modified until unlocked.
+## Select, Move, And Copy
 
-## Move And Copy
+Select objects directly or through the [Selection Pane](selection-pane.md).
+Hold `Shift` while clicking to build a multiple selection. Hovering previews an
+object aura at reduced opacity; selection shows the full aura.
 
-- Drag an object to move it.
-- Hold Shift while moving to constrain movement horizontally or vertically.
-- Hold Ctrl while starting a drag to copy the object and move the copy.
+Drag an object to move it. Hold `Shift` to constrain the first movement axis.
+Hold `Ctrl` through a drag to move a duplicate. Releasing `Ctrl` before the drop
+cancels the duplicate operation.
 
 ## Resize
 
-Widgets and visual elements expose resize handles when selected or hovered.
-Very small widgets use fewer resize handles so that selection and movement stay
-usable.
-
-Holding Shift during resize preserves proportions.
+Drag a handle to resize. Hold `Shift` to preserve proportions. Handle density
+adapts to displayed size: compact widgets use fewer handles so the pointer can
+still reach the body, while larger objects expose the complete set.
 
 ## Labels
 
-Widget labels may be anchored to the default label position. Moving a label away
-detaches it from the anchor. Moving it back near the anchor snaps it into the
-default position again.
+Widget labels and widget values are separate text surfaces. A widget label can
+remain attached to its magnetic default anchor or be positioned freely. Moving
+a detached label back near its default location reconnects it.
 
-Labels are independent text surfaces. Changing a widget value text must not be
-confused with changing the widget label.
+Double-click an empty area to create a free label. The placeholder `Write your
+text here` is selected immediately and disappears when typing starts. `Enter`
+validates; `Shift+Enter` inserts a line break. An empty label is removed instead
+of being kept as an invisible object.
+
+## Editing Protection
+
+Lock prevents layout edits without disabling the widget at runtime. A locked
+widget can still operate as a control or indicator, but it cannot be moved,
+resized, recolored, regrouped, or edited until unlocked.
+
+See [Arrange and Resize](arrange-and-resize.md) and [Color Tools](color-tools.md).

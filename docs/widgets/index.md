@@ -9,6 +9,10 @@ A widget may be a control or an indicator:
 
 Widget labels are separate from widget value text.
 
+Controls can bind to public inputs. Indicators can bind to public outputs. The
+role is a source-level property and can be changed from a widget context menu
+where the widget supports both roles.
+
 ## Current Core Widgets
 
 - [Numeric](numeric.md)
@@ -28,3 +32,9 @@ Most widgets support:
 - selection aura
 - lock/unlock protection
 - color editing when the widget exposes visual surfaces
+- undoable movement and appearance changes
+- magnetic default label anchoring
+
+Locked widgets keep their value behavior but reject layout and appearance
+editing. Hidden widgets remain in the `.frog` document and in the Selection
+Pane even though they are not drawn on the Front Panel.

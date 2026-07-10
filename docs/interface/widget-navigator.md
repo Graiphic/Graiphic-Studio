@@ -1,35 +1,41 @@
 # Widget Navigator
 
-The Widget Navigator is used to browse widget families and place widgets on the
-Front Panel.
+The Widget Navigator browses widget families and starts placement on the Front
+Panel. It can appear temporarily at the pointer or remain open as a pinned tool
+window. Popup dimensions follow their content and the active monitor work area.
+
+![Ring and Enum family in the Widget Navigator](../../assets/screenshots/widget-navigator/ring-enum-family.png)
 
 ## Families
 
-Current families:
+Current families include Numeric, Boolean, String and Path, and Ring and Enum.
+Family tiles use rows of three where space allows and carry a visual symbol for
+fast scanning.
 
-- Numeric
-- Boolean
-- String and Path
-- Ring and Enum
+Clicking a family opens its choices. Clicking a family as a direct placement
+action chooses its default widget:
 
-The navigator groups widgets by user meaning, not by internal implementation.
-For example, Boolean contains both LED-style boolean widgets and text buttons.
+- Numeric places Numeric Control.
+- Boolean places Text Button.
+- String and Path places String Control.
+- Ring and Enum places Ring Control.
 
-## Folder Behavior
+## Controls And Indicators
 
-Clicking a family folder opens its widget choices. When a direct folder click is
-used as a placement action, the first standard widget in that family is used.
+A **Control** accepts interaction and provides a value. An **Indicator**
+displays a value and omits command-only affordances. For example, Path Control
+has a browse button while Path Indicator does not.
 
-This keeps the navigator predictable:
+Ring and Enum share one family because both expose a named selection backed by
+a value. Its submenu contains Ring Control, Ring Indicator, Enum Control, and
+Enum Indicator.
 
-- Numeric opens or places Numeric Control.
-- Boolean opens or places Text Button as the first standard button-style entry.
-- String and Path opens or places String Control.
+## Place Or Cancel
 
-## Screenshots
+After choosing a widget, its preview follows the pointer until the Front Panel
+is clicked. Press `Escape` to cancel. Repeated default labels receive numeric
+suffixes so every object stays identifiable.
 
-Screenshots for this page belong in:
-
-```text
-assets/screenshots/widget-navigator/
-```
+Click outside an unpinned Navigator, press `Escape`, or begin another command
+to close it. Pinning turns it into a persistent window with the standard
+Graiphic Studio close button.
