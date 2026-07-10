@@ -65,9 +65,19 @@ instance-level overrides.
 The File menu provides New, Open, Close, Save, Save As, and Recent Files.
 Recent Files is updated when a document is opened or saved successfully.
 
+## 6. Configure The Studio
+
+Open **Tools > Options...** to choose the interface theme, configure the Front
+Panel grid, or manage SVG glyph folders used by the Icon Editor. The Appearance
+page provides a live preview before a theme is applied.
+
+These choices are local Studio preferences. They do not change FROG execution
+semantics. See [Studio Options](interface/options.md) for the complete workflow.
+
 ## Next Steps
 
 - Learn the [Front Panel](interface/front-panel.md).
+- Configure the IDE through [Studio Options](interface/options.md).
 - Learn the [Interface Map](interface/interface-map.md).
 - Learn how widgets are organized in the [Widget Navigator](interface/widget-navigator.md).
 - Organize complex panels with the [Selection Pane](interface/selection-pane.md).

@@ -12,6 +12,7 @@ edit the project icon, and prepare the document for runtime execution.
 
 - [Getting Started](getting-started.md)
 - [Front Panel](interface/front-panel.md)
+- [Studio Options](interface/options.md)
 - [Widget Navigator](interface/widget-navigator.md)
 - [Interface Map](interface/interface-map.md)
 - [Icon Editor](interface/icon-editor.md)

@@ -23,6 +23,11 @@ object furthest from the origin reduces the unnecessary empty range. When all
 content fits, scrollbars are hidden. Use the middle mouse button to pan freely;
 scrollbars appear when the resulting view needs them.
 
+Open **Tools > Options... > Front Panel** to set grid visibility, grid pitch,
+snap-to-grid behavior, and the Lines, Dots, or Graph Paper draw style. Applying
+the dialog updates the current Front Panel and stores the values as defaults.
+See [Studio Options](options.md).
+
 ## Select, Move, And Copy
 
 Select objects directly or through the [Selection Pane](selection-pane.md).

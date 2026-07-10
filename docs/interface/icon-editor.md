@@ -52,6 +52,11 @@ Template tiles are optional helper layers. Activating a tile adds that template
 to Layers. Templates remain non-destructive and can be moved, resized, hidden,
 copied, reordered, or removed.
 
+Reusable SVG glyph folders are managed through **Tools > Options... > Icon
+Editor**. Adding a folder makes its SVG assets available to the local user
+profile; removing the path from Options does not delete source files. See
+[Studio Options](options.md).
+
 ## Import, Clipboard, And History
 
 The File menu imports SVG or raster media. SVG stays vector-based. Clipboard

@@ -10,6 +10,7 @@ Folders:
 - `widget-navigator/`
 - `interface-map/`
 - `icon-editor/`
+- `options/`
 - `widgets/`
 
 Keep screenshots focused, named clearly, and tied to the documentation page that
@@ -25,6 +26,8 @@ uses them.
 - `selection-pane/grouped-elements.png`: expanded group hierarchy.
 - `arrange-resize/resize-objects.png`: exact-size editing window.
 - `widgets/ring-items.png`: Ring item source editor.
+- `options/appearance-light-preview.png`: Light theme preview in Studio Options.
+- `options/front-panel-grid.png`: Front Panel grid defaults and draw-style options.
 
 ## Capture Checklist
 

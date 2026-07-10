@@ -12,6 +12,7 @@ repository explains those features from the user's point of view.
 - [Documentation Home](docs/index.md)
 - [Getting Started](docs/getting-started.md)
 - [Front Panel](docs/interface/front-panel.md)
+- [Studio Options](docs/interface/options.md)
 - [Widget Navigator](docs/interface/widget-navigator.md)
 - [Interface Map](docs/interface/interface-map.md)
 - [Icon Editor](docs/interface/icon-editor.md)
