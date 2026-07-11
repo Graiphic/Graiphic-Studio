@@ -11,8 +11,14 @@ the close button leave the current settings unchanged.
 
 Appearance selects the interface theme. The current release provides **Dark**
 and **Light** profiles. Selecting a profile updates the preview immediately so
-you can inspect the title area, menus, toolbar, Front Panel, widget selection,
-grid, and status bar before applying it.
+you can inspect the title area, menus, execution and editing icon families,
+font control, Front Panel, widget selection, grid, and status bar before
+applying it.
+
+**Interface language** is available beside the theme selector. The choices are
+**English (United States)**, **French**, **Italian**, **Chinese (Simplified)**,
+**Japanese**, **German**, and **Spanish**. Simplified Chinese is used for the
+Chinese profile. Press **OK** to store the selection for future Studio sessions.
 
 ![Light theme preview](../../assets/screenshots/options/appearance-light-preview.png)
 
@@ -42,6 +48,8 @@ explicit source-owned layout.
 The Icon Editor category manages folders that contain reusable SVG glyphs.
 
 - **Add Folder...** selects a folder containing SVG assets.
+- Double-click a listed path to edit it in place. Press `Enter` to keep the
+  change or `Escape` to cancel the inline edit.
 - Selecting a listed path enables **Remove**.
 - **Remove** forgets the folder from the local profile; it does not delete the
   folder or any SVG file from disk.
