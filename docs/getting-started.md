@@ -8,8 +8,9 @@ Launch Graiphic Studio and start from the Front Panel. The Front Panel is the
 main design surface for placing controls, indicators, labels, images, and
 interface-related editing affordances.
 
-The current launch path opens the Front Panel. Diagram editing is not required
-for this first workflow.
+Graiphic Studio opens the Front Panel by default. The Diagram and source window
+remain complementary views of the same `.frog` document, but they are not
+required for this first placement workflow.
 
 ![Empty Front Panel](../assets/screenshots/front-panel/front-panel-overview.png)
 
@@ -28,6 +29,7 @@ Current core families include:
 - Boolean
 - String and Path
 - Ring and Enum
+- Data Containers
 - Image Static
 
 Controls accept user input. Indicators display values. This distinction also
@@ -80,5 +82,7 @@ semantics. See [Studio Options](interface/options.md) for the complete workflow.
 - Configure the IDE through [Studio Options](interface/options.md).
 - Learn the [Interface Map](interface/interface-map.md).
 - Learn how widgets are organized in the [Widget Navigator](interface/widget-navigator.md).
+- Build dataflow operations with the [Function Navigator](interface/function-navigator.md).
+- Place typed containers with the [Array Container](widgets/array-container.md).
 - Organize complex panels with the [Selection Pane](interface/selection-pane.md).
 - Customize the project icon in the [Icon Editor](interface/icon-editor.md).

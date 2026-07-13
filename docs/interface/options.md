@@ -8,6 +8,8 @@ and Icon Editor. **Apply** commits changes without closing the window, while
 **OK** commits and closes it. **Cancel** and the close button leave unapplied
 changes unchanged.
 
+![Appearance options and live Studio preview](../../assets/screenshots/options/appearance-options-dark.png)
+
 ## Appearance
 
 Appearance selects the interface theme. The current release provides **Dark**

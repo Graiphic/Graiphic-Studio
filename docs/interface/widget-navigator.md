@@ -4,13 +4,15 @@ The Widget Navigator browses widget families and starts placement on the Front
 Panel. It can appear temporarily at the pointer or remain open as a pinned tool
 window. Popup dimensions follow their content and the active monitor work area.
 
-![Ring and Enum family in the Widget Navigator](../../assets/screenshots/widget-navigator/ring-enum-family.png)
+The root view groups the current widget families into compact, scannable tiles.
+
+![Widget families in the dark Widget Navigator](../../assets/screenshots/widget-navigator/widget-families-dark.png)
 
 ## Families
 
-Current families include Numeric, Boolean, String and Path, and Ring and Enum.
-Family tiles use rows of three where space allows and carry a visual symbol for
-fast scanning.
+Current families include Numeric, Boolean, String and Path, Ring and Enum, and
+Data Containers. Family tiles use rows of three where space allows and carry a
+visual symbol for fast scanning.
 
 Clicking a family opens its choices. Clicking a family as a direct placement
 action chooses its default widget:
@@ -19,6 +21,7 @@ action chooses its default widget:
 - Boolean places Text Button.
 - String and Path places String Control.
 - Ring and Enum places Ring Control.
+- Data Containers places Array.
 
 ## Controls And Indicators
 
@@ -39,3 +42,7 @@ suffixes so every object stays identifiable.
 Click outside an unpinned Navigator, press `Escape`, or begin another command
 to close it. Pinning turns it into a persistent window with the standard
 Graiphic Studio close button.
+
+Pinned Navigators are independent: opening another Navigator does not close an
+existing pinned window. A pinned window can be resized, and its tiles reflow to
+the available width while preserving the active interface font scale.

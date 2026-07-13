@@ -1,13 +1,14 @@
 # Product Screenshots
 
 This directory contains the screenshots published by the user documentation.
-Every image must come from the native Graiphic Studio target and show a
-visually validated state.
+Every image must come from the native Graiphic Studio target or an official
+FROG runtime example and show a visually validated state.
 
 Folders:
 
 - `front-panel/`
 - `widget-navigator/`
+- `function-navigator/`
 - `interface-map/`
 - `icon-editor/`
 - `options/`
@@ -23,6 +24,14 @@ uses them.
 - `interface-map/layout-patterns.png`: complete Interface Layout Pattern grid.
 - `widgets/enum-control.png`: default Enum Control on the Front Panel.
 - `widget-navigator/ring-enum-family.png`: family and variant popup.
+- `widget-navigator/widget-families-dark.png`: current root family layout.
+- `function-navigator/numeric-functions-dark.png`: Numeric function family on
+  the Diagram.
+- `icon-editor/icon-editor-dark.png`: complete dark Icon Editor workspace.
+- `widgets/array-dimension-runtime.png`: canonical Array dimension runtime
+  example.
+- `widgets/array-numeric-2d.png`: focused two-dimensional Numeric Array.
+- `options/appearance-options-dark.png`: Appearance page and live preview.
 - `selection-pane/grouped-elements.png`: expanded group hierarchy.
 - `arrange-resize/resize-objects.png`: exact-size editing window.
 - `widgets/ring-items.png`: Ring item source editor.
@@ -31,7 +40,8 @@ uses them.
 
 ## Capture Checklist
 
-1. Use the canonical native build.
+1. Use the canonical native build or the official runtime example named by the
+   page.
 2. Keep the product theme and normal display scaling.
 3. Remove unrelated windows, cursors, debug overlays, and test artifacts.
 4. Crop tightly enough to explain one workflow without hiding context.

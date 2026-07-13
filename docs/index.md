@@ -14,6 +14,7 @@ edit the project icon, and prepare the document for runtime execution.
 - [Front Panel](interface/front-panel.md)
 - [Studio Options](interface/options.md)
 - [Widget Navigator](interface/widget-navigator.md)
+- [Function Navigator](interface/function-navigator.md)
 - [Interface Map](interface/interface-map.md)
 - [Icon Editor](interface/icon-editor.md)
 
@@ -30,6 +31,7 @@ edit the project icon, and prepare the document for runtime execution.
 - [Boolean and Text Button](widgets/boolean-and-button.md)
 - [String and Path](widgets/string-and-path.md)
 - [Ring and Enum](widgets/ring-and-enum.md)
+- [Array Container](widgets/array-container.md)
 - [Image Static](widgets/image-static.md)
 
 ## Reference

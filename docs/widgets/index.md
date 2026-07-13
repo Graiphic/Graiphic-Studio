@@ -19,6 +19,7 @@ where the widget supports both roles.
 - [Boolean and Text Button](boolean-and-button.md)
 - [String and Path](string-and-path.md)
 - [Ring and Enum](ring-and-enum.md)
+- [Array Container](array-container.md)
 - [Image Static](image-static.md)
 
 ## Common Behavior

@@ -15,6 +15,7 @@ Recommended folders:
 ```text
 assets/screenshots/front-panel/
 assets/screenshots/widget-navigator/
+assets/screenshots/function-navigator/
 assets/screenshots/interface-map/
 assets/screenshots/icon-editor/
 assets/screenshots/widgets/
@@ -33,7 +34,10 @@ icon-editor-layers.png
 
 ## Rules
 
-- Capture real Studio UI.
+- Capture real Studio UI or a named official runtime example.
+- Include at least one current screenshot on every stable visual feature page.
+- Keep a page unlisted while its only available capture shows an unfinished or
+  invalid visual state.
 - Prefer stable, visually validated states.
 - Avoid screenshots with transient mouse artifacts unless documenting cursor
   behavior.

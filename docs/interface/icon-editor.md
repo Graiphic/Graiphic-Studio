@@ -7,6 +7,11 @@ context menu.
 The 40 x 40 display is a preview size, not a raster limitation. SVG remains
 vector-based and is rendered cleanly at other sizes.
 
+The editor keeps drawing tools, layers, reusable templates, colors, and the
+40 x 40 preview visible in one workspace.
+
+![Icon Editor with tools, layers, templates, and preview](../../assets/screenshots/icon-editor/icon-editor-dark.png)
+
 ## Canvas And Preview
 
 The canvas uses a 40 x 40 working grid. One grid cell is the minimum Pencil and

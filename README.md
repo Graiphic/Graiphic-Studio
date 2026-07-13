@@ -14,12 +14,14 @@ repository explains those features from the user's point of view.
 - [Front Panel](docs/interface/front-panel.md)
 - [Studio Options](docs/interface/options.md)
 - [Widget Navigator](docs/interface/widget-navigator.md)
+- [Function Navigator](docs/interface/function-navigator.md)
 - [Interface Map](docs/interface/interface-map.md)
 - [Icon Editor](docs/interface/icon-editor.md)
 - [Selection Pane](docs/interface/selection-pane.md)
 - [Arrange and Resize](docs/interface/arrange-and-resize.md)
 - [Color Tools](docs/interface/color-tools.md)
 - [Widgets](docs/widgets/index.md)
+- [Array Container](docs/widgets/array-container.md)
 - [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
 - [Glossary](docs/reference/glossary.md)
 
@@ -41,7 +43,9 @@ assets/
 
 - Use the public product name: **Graiphic Studio**.
 - Explain user-facing behavior before implementation details.
-- Prefer screenshots for UI behavior once a feature is visually stable.
+- Every stable visual feature page must include at least one current product
+  screenshot. A page without a validated screenshot remains a draft and is not
+  linked from the main documentation index.
 - Keep `.frog` source concepts explicit: widgets, labels, bindings, interface
   maps, icon assets, and runtime-facing artifacts are separate concepts.
 - Avoid documenting experimental behavior as final unless it has been validated
@@ -50,5 +54,6 @@ assets/
 ## Product Status
 
 Graiphic Studio is under active development. The documentation distinguishes
-implemented behavior from future runtime or Diagram work. Screenshots are
-captured from the native Windows target and updated when a workflow changes.
+implemented Studio behavior from runtime-facing work that is still evolving.
+Screenshots are captured from the native Windows target or an official FROG
+runtime example and updated when a visible workflow changes.
