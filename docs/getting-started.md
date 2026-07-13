@@ -67,7 +67,21 @@ instance-level overrides.
 The File menu provides New, Open, Close, Save, Save As, and Recent Files.
 Recent Files is updated when a document is opened or saved successfully.
 
-## 6. Configure The Studio
+## 6. Place A Diagram Operation
+
+Open the Diagram and its Function Navigator. Enter **Programming > Numeric**,
+press and hold an operation tile, drag it onto the Diagram, then release it at
+the desired position. The SVG preview follows the pointer during the drag.
+
+The resulting operation is an explicit Diagram node and is saved in
+`diagram.nodes` with its FROG primitive identity and authored layout. Releasing
+outside the Diagram or pressing `Escape` cancels the placement.
+
+Only operations backed by published FROG primitive contracts can currently be
+placed. See the [Function Navigator](interface/function-navigator.md) for the
+complete workflow and current scope.
+
+## 7. Configure The Studio
 
 Open **Tools > Options...** to choose the interface theme, configure the Front
 Panel grid, or manage SVG glyph folders used by the Icon Editor. The Appearance
