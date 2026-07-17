@@ -181,6 +181,12 @@
       });
     }());
 
+    var docsRootPath = window.location.pathname;
+    if (!docsRootPath.endsWith("/")) {
+      docsRootPath = docsRootPath.slice(0, docsRootPath.lastIndexOf("/") + 1);
+    }
+    var docsAssetBase = docsRootPath + "assets/";
+
     window.$docsify = {
       name: "Graiphic Studio",
       repo: "Graiphic/Graiphic-Studio",
@@ -199,7 +205,17 @@
         placeholder: "Search Graiphic Studio",
         noData: "No matching page found.",
         depth: 3
-      }
+      },
+      plugins: [
+        function normalizeAssetPaths(hook) {
+          hook.afterEach(function (html, next) {
+            next(html.replace(
+              /src="(?:[^"]*\/)?assets\//g,
+              "src=\"" + docsAssetBase
+            ));
+          });
+        }
+      ]
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
