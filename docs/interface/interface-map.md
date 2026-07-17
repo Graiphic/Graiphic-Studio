@@ -60,3 +60,46 @@ clear the map.
 The selected pattern and bindings are explicit `.frog` data. The Interface Map
 is an editor for that data, not an invisible execution mechanism. The Diagram
 remains the authoritative executable graph.
+
+The selected layout is stored at document level:
+
+```json
+"interface": {
+  "map": {
+    "layout_pattern_id": "pattern_33",
+    "visual_transforms": ["rotate_90_clockwise"]
+  }
+}
+```
+
+Each bound widget stores its own public-port and slot correspondence:
+
+```json
+"binding": {
+  "mode": "widget_value",
+  "public_input_id": "numeric_control",
+  "interface_map_slot": "zone_4",
+  "connection_requirement": "recommended"
+}
+```
+
+An indicator uses `public_output_id` instead of `public_input_id`. The slot id
+is resolved against the selected pattern and its transforms; pixel hit areas
+are never source truth. Connection requirements are semantic source data,
+while their red required-edge marker is only a visual projection.
+
+## Array Binding Migration
+
+An empty Array has no element type and cannot be bound. If a bound scalar
+widget is dropped into an Array, the association moves atomically to the Array:
+
+- the Array inherits direction, public port, slot, and connection requirement;
+- the public type becomes the matching Array type;
+- the Diagram terminal and Interface Map type color update immediately;
+- the contained element template does not keep a duplicate scalar binding.
+
+Removing the contained widget makes the Array untyped again and clears the
+binding that can no longer be valid.
+
+The normative source contract is defined by the public FROG specification in
+[Interface Map](https://github.com/Graiphic/FROG/blob/main/Expression/Interface%20map.md).

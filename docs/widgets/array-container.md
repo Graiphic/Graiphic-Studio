@@ -13,9 +13,15 @@ visible extent.
 ## Create And Type An Array
 
 Place **Data Containers > Array** from the Widget Navigator. A new Array starts
-as a one-dimensional empty container. Drag a supported widget into its content
+as a one-dimensional empty square container with no scrollbars. Its dashed
+placeholder is not a value cell. Drag a supported widget into the content
 region to define the element template. Numeric, String, Path, Boolean, Text
 Button, Enum, and Ring templates preserve their own value and appearance rules.
+
+During the drag, the widget is drawn above the Array so the drop target remains
+visible. Once accepted, the source widget becomes the Array template and its
+standalone Diagram terminal is replaced immediately by the matching typed
+Array terminal.
 
 All cells in one Array use the same embedded widget template. Resizing the
 template changes the cell size; resizing the Array changes how many rows and
@@ -41,6 +47,11 @@ Extending an Array coordinate extends its dense shape. Missing positions before
 the new coordinate receive the embedded widget's default value instead of
 remaining visually active but absent.
 
+Cells beyond the current shape remain visible only as disabled placeholders.
+Clicking one selects its template surface; it does not activate the cell. The
+shape changes only after a value is committed or an increment/decrement command
+changes that coordinate.
+
 ## Edit Cells
 
 An active cell behaves like its embedded widget. Numeric cells accept text,
@@ -52,6 +63,14 @@ Selecting a cell targets the embedded widget. Selecting the surrounding frame
 targets the Array container. The two targets intentionally expose different
 resize, visibility, color, and context-menu actions.
 
+The embedded widget keeps its complete context menu. Copying a selected cell
+copies the widget template. Deleting that selected template returns the Array
+to its initial empty state; it does not leave an untyped active cell behind.
+
+Showing an embedded widget label reserves label height inside every repeated
+cell. Labels can be selected and edited, and the Array frame expands so all
+repeated labels and bodies remain enclosed.
+
 ## Resize And Scroll
 
 The Array frame provides independent controls for visible rows and columns.
@@ -60,6 +79,22 @@ Their ranges follow the array shape and selected higher-dimensional slice.
 
 Array background and border colors belong to the container. Cell body, border,
 spinner, label, and text colors belong to the embedded widget template.
+
+## Diagram And Binding
+
+An empty Array has no element type, so it cannot be bound and does not expose a
+typed Diagram terminal. Once a widget is encapsulated, the Array inherits that
+widget's value type, terminal family, and Interface Map color. Numeric Arrays
+also inherit the selected Numeric representation.
+
+If the widget was already bound before encapsulation, Studio transfers the
+binding to the new Array object and updates the Interface Map immediately. The
+old scalar binding is not left behind. Removing the embedded template removes
+the resulting typed binding because the Array becomes untyped again.
+
+Use **Change to Indicator** or **Change to Control** on the Array to switch the
+container role. Its Diagram terminal changes read/write posture without
+changing the element type.
 
 ## Runtime Contract
 

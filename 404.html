@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graiphic Studio Documentation</title>
+  <script>
+    var base = "/Graiphic-Studio/";
+    var path = location.pathname.indexOf(base) === 0
+      ? location.pathname.slice(base.length)
+      : "";
+    location.replace(base + "#/" + path + location.search + location.hash);
+  </script>
+</head>
+<body></body>
+</html>

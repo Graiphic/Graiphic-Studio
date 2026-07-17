@@ -23,15 +23,19 @@ applying it.
 **Japanese**, **German**, and **Spanish**. Simplified Chinese is used for the
 Chinese profile.
 
-**Interface font size** provides three global levels:
+**Interface font size** provides three navigation levels:
 
 - **Small** keeps the original compact 9 pt interface.
 - **Medium** uses 11 pt.
 - **Large** uses 13 pt.
 
 The preview reflects the selected size immediately. Press **Apply** to update
-open menus, palettes, dialogs, the Icon Editor, and inline controls without
-closing Options. The choice is restored in future Studio sessions.
+the main shell, status controls, and Navigator ergonomics without closing
+Options. The choice is restored in future Studio sessions.
+
+This setting never rewrites the font, geometry, or layout of widgets already
+placed on the Front Panel. Those are authored document properties. It also does
+not rescale Icon Editor artwork or its 40 x 40 logical preview.
 
 The Widget Navigator follows the same setting: its popup, tiles, icons,
 labels, spacing, and family views become compact at **Small**, intermediate at
@@ -79,7 +83,14 @@ explicit source-owned layout.
 
 ## Icon Editor
 
-The Icon Editor category manages folders that contain reusable SVG glyphs.
+The Icon Editor category controls the drawing background and manages folders
+that contain reusable SVG glyphs.
+
+- **Use theme background** follows the active Studio profile: the Diagram-like
+  dark surface in Dark mode and a light surface in Light mode.
+- Disable it to choose a custom solid background through the Color Navigator.
+  This is an editing and preview aid; it is not painted into transparent SVG
+  artwork.
 
 - **Add Folder...** selects a folder containing SVG assets.
 - Double-click a listed path to edit it in place. Press `Enter` to keep the
@@ -100,6 +111,11 @@ Studio preferences are stored in the local user profile:
 %APPDATA%\Graiphic\Frog Engine 1.0\frog-studio.ini
 ```
 
-The selected theme, interface font size, Front Panel grid defaults, and
-glyph-folder list are Studio preferences. They do not become hidden runtime
-behavior and do not replace source-owned `.frog` document properties.
+The selected theme, interface language, interface font size, Front Panel grid
+defaults, Icon Editor background, and glyph-folder list are Studio preferences.
+They do not become hidden runtime behavior and do not replace source-owned
+`.frog` document properties.
+
+The reset icon in the Options header restores Studio preferences to their
+defaults without changing the current document's authored widgets, Diagram, or
+view geometry. Use **Apply** to inspect the result before closing the window.

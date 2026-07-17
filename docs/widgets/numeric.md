@@ -39,36 +39,54 @@ switching.
 ## Numeric Representation
 
 Open the Numeric widget context menu and choose **Representation** to select
-the source-owned numeric type. The submenu uses the same compact type symbols
-for controls and indicators:
+the source-owned numeric type. A new Numeric widget uses **Float64** (`F64`) by
+default, so it accepts signed and fractional values.
 
-| Family | Representations | Interface Map color |
+The first page contains the 16 standard representations:
+
+| Family | Canonical types | Compact codes | Color |
+| --- | --- | --- | --- |
+| Floating point | Float16, BFloat16, Float32, Float64 | F16, BF16, F32, F64 | Orange |
+| Signed integer | Int8, Int16, Int32, Int64 | I8, I16, I32, I64 | Blue |
+| Unsigned integer | UInt8, UInt16, UInt32, UInt64 | U8, U16, U32, U64 | Cyan |
+| Complex | Complex\<Float32\>, Complex\<Float64\> | CF32, CF64 | Red |
+| Parametric | FixedPoint\<...\>, Decimal\<precision,scale\> | FXP, DEC | Purple, brown-orange |
+
+Select **Advanced** to replace that grid with nine specialized choices. The
+switch changes to **Standard** so the main set can be restored in place.
+
+| Group | Canonical types | Compact codes |
 | --- | --- | --- |
-| Floating point | EXT, DBL, SGL | Orange |
-| Fixed point | FXP | Purple |
-| Signed integer | I64, I32, I16, I8 | Blue |
-| Unsigned integer | U64, U32, U16, U8 | Cyan |
-| Complex | CXT, CDB, CSG | Red |
+| Low precision / AI | Int4, UInt4, Float8E4M3, Float8E5M2 | I4, U4, F8P, F8R |
+| Extended precision | Int128, UInt128, Float80, Float128 | I128, U128, F80, F128 |
+| Arbitrary precision | BigUInt | BIGU |
 
-The selected tile receives the standard FROG selection outline. Changing the
-representation updates the widget instance and any bound Interface Map terminal
-immediately. The terminal therefore keeps the same type color as the Numeric
-representation it exposes.
+`F8P` identifies the precision-oriented E4M3 layout. `F8R` identifies the
+range-oriented E5M2 layout. BigInt and BigDecimal are not part of the current
+Studio menu.
+
+The selected tile receives a high-contrast outline in both themes. Changing
+the representation updates the Front Panel widget, its Diagram terminal, an
+Array terminal when the widget is encapsulated, and any bound Interface Map
+terminal immediately. Terminal and binding colors follow the selected numeric
+family. Decimal uses `#B45309`.
 
 The `.frog` source records the compact value type together with the explicit
 representation contract, for example:
 
 ```json
 {
-  "valueType": "u16",
+  "valueType": "f64",
   "props": {
-    "data_type.representation": "u16",
-    "data_type.named_numeric_size": "U16",
-    "representation.kind": "uint16"
+    "data_type.representation": "f64",
+    "data_type.named_numeric_size": "Float64",
+    "representation.kind": "float64"
   }
 }
 ```
 
-Representation selection is not hidden Studio state. Runtime execution still
-depends on a validated FROG lowering and native ABI corridor for the selected
-type; Studio does not silently reinterpret unsupported executable graphs.
+Representation selection is not hidden Studio state. The compact carrier,
+canonical name, and descriptive kind must agree when more than one is present.
+Runtime execution still depends on a validated FROG lowering and native ABI
+corridor for the selected type; Studio reports unsupported types instead of
+silently reinterpreting an executable graph.

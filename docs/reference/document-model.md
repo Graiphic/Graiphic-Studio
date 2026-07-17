@@ -34,11 +34,35 @@ Catalog entries without a published primitive contract are not serialized as
 executable nodes. This keeps the `.frog` document valid while the Function
 Navigator can still preview future operation families.
 
+## Authoring View State
+
+The document may preserve enough non-executable state to reopen the authored
+workspace faithfully:
+
+- `front_panel.canvas.width` and `front_panel.canvas.height` describe the useful
+  Front Panel client surface;
+- `ide.front_panel.zoom_percent` and `viewport_origin` restore the Front Panel
+  view;
+- the Diagram records its own zoom and viewport origin and always uses a solid
+  editing background;
+- `ide.workflow.views` may carry useful client width and height for the Front
+  Panel, Diagram, and Source windows, plus recoverable position, visibility, or
+  maximized hints.
+
+Window positions are clamped to the monitors available when reopening. Native
+window chrome, monitor identity, theme, language, navigation font size, and
+local glyph-folder paths remain local Studio preferences. They are not program
+semantics.
+
 ## Document Icon
 
 The document icon is editable SVG-oriented data. Its layer metadata is retained
 inside the icon SVG so Graiphic Studio can reopen it. The 40 x 40 chrome square
 is only a preview target.
+
+Imported SVG content may be normalized into independently editable visible
+regions. This authoring segmentation remains presentation metadata; runtimes
+consume the final SVG visual rather than Icon Editor selection state.
 
 ## Media
 

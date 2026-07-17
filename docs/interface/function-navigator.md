@@ -7,15 +7,19 @@ The Numeric family presents its operations as compact, source-backed tiles.
 
 ![Numeric functions in the dark Function Navigator](../../assets/screenshots/function-navigator/numeric-functions-dark.png)
 
+The complete Diagram context is shown in the current native capture:
+
+![Numeric Function Navigator on the Block Diagram](../../assets/screenshots/block-diagram/function-navigator-numeric.jpg)
+
 ## Hierarchy
 
 The root Navigator groups functions by programming domain. Selecting
 **Programming > Numeric** opens the current Numeric operations, including
 arithmetic, rounding, range, random, and array-reduction functions.
 
-The hierarchy behaves like the Widget Navigator: move into a family to open it,
-choose a function to begin placement, and use `Escape` to cancel the active
-placement command.
+The hierarchy follows the same rule as the Widget Navigator: single-click a
+family to browse it and double-click a family to choose its default operation.
+Choosing an operation starts placement; `Escape` cancels the active command.
 
 ## Place A Numeric Operation
 
@@ -23,10 +27,13 @@ placement command.
    from **View > Function Navigator**, or by right-clicking an empty part of the
    Diagram.
 2. Open **Programming > Numeric**.
-3. Press and hold the primary mouse button on an operation tile.
-4. Drag the operation onto the Diagram. A live SVG preview follows the pointer
-   when it enters the Diagram canvas.
-5. Release the mouse button at the required position.
+3. Click an operation tile. Its live SVG preview attaches to the pointer at
+   reduced opacity.
+4. Move the preview to the required Diagram position.
+5. Click again to place it at full opacity.
+
+Direct drag-and-drop is also supported: hold an operation tile, drag it onto
+the Diagram, and release it at the required position.
 
 The operation becomes a Diagram node at the drop position. Releasing outside
 the Diagram cancels the placement. Pressing `Escape` while dragging also
@@ -58,6 +65,11 @@ Navigator open as an independent Diagram tool window.
 Pinned function windows use the same close control, sizing rules, theme, font
 scale, tile spacing, and responsive reflow as pinned Widget Navigators. Several
 pinned Navigator windows can remain open at the same time.
+
+Pinned Function Navigators belong to the Block Diagram workspace. They hide
+when the Front Panel receives focus and return, fully interactive, when the
+Diagram is raised. Scrollbars appear when a manually resized window cannot
+show every operation tile.
 
 ## Dataflow Role
 

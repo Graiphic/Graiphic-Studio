@@ -20,6 +20,11 @@ uses them.
 ## Current Captures
 
 - `front-panel/front-panel-overview.png`: empty Front Panel and main toolbar.
+- `front-panel/widget-navigator-light.jpg`: current Light-theme Widget
+  Navigator in the complete Front Panel window.
+- `block-diagram/function-navigator-numeric.jpg`: current Block Diagram with a
+  pinned Numeric Function Navigator.
+- `source-view/source-view-live.jpg`: live `.frog` Source window.
 - `front-panel/create-label.png`: free-label creation placeholder.
 - `interface-map/layout-patterns.png`: complete Interface Layout Pattern grid.
 - `widgets/enum-control.png`: default Enum Control on the Front Panel.

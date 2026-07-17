@@ -3,15 +3,20 @@
 Official user documentation for **Graiphic Studio**, the visual development
 environment for `.frog` documents.
 
-Graiphic Studio combines a vector Front Panel, source-backed widgets, a public
-Interface Map, document iconography, and focused visual editing tools. This
+Graiphic Studio coordinates three source-backed views of one `.frog` document:
+the vector Front Panel, the executable Block Diagram, and the live Source view.
+It also provides Widget and Function Navigators, a public Interface Map,
+document iconography, array containers, and focused visual editing tools. This
 repository explains those features from the user's point of view.
 
 ## Documentation
 
 - [Documentation Home](docs/index.md)
 - [Getting Started](docs/getting-started.md)
+- [Window Workflow](docs/interface/window-workflow.md)
 - [Front Panel](docs/interface/front-panel.md)
+- [Block Diagram](docs/interface/block-diagram.md)
+- [Source View](docs/interface/source-view.md)
 - [Studio Options](docs/interface/options.md)
 - [Widget Navigator](docs/interface/widget-navigator.md)
 - [Function Navigator](docs/interface/function-navigator.md)
@@ -57,3 +62,6 @@ Graiphic Studio is under active development. The documentation distinguishes
 implemented Studio behavior from runtime-facing work that is still evolving.
 Screenshots are captured from the native Windows target or an official FROG
 runtime example and updated when a visible workflow changes.
+
+The rendered documentation is available at
+[graiphic.github.io/Graiphic-Studio](https://graiphic.github.io/Graiphic-Studio/).

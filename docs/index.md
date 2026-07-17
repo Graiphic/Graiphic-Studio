@@ -2,16 +2,20 @@
 
 Welcome to the official user documentation for Graiphic Studio.
 
-Graiphic Studio is a visual IDE for creating `.frog` documents. It lets users
-design a Front Panel, place and configure widgets, define an Interface Map,
-edit the project icon, and prepare the document for runtime execution.
+Graiphic Studio is a visual IDE for creating `.frog` documents. Its Front
+Panel, Block Diagram, and Source windows are coordinated views of the same
+program model. Users can design interfaces, build explicit dataflow, inspect
+the source being produced, define an Interface Map, and edit the project icon.
 
 ![Graiphic Studio Front Panel](../assets/screenshots/front-panel/front-panel-overview.png)
 
 ## Start Here
 
 - [Getting Started](getting-started.md)
+- [Window Workflow](interface/window-workflow.md)
 - [Front Panel](interface/front-panel.md)
+- [Block Diagram](interface/block-diagram.md)
+- [Source View](interface/source-view.md)
 - [Studio Options](interface/options.md)
 - [Widget Navigator](interface/widget-navigator.md)
 - [Function Navigator](interface/function-navigator.md)
@@ -48,7 +52,8 @@ The Studio is documented from the user workflow outward:
 1. What the user sees.
 2. What action the user can perform.
 3. What changes in the `.frog` document.
-4. What the runtime will eventually consume.
+4. Which view reflects the change.
+5. What the runtime will eventually consume.
 
 This keeps the documentation practical while preserving the source model.
 When a feature is Studio-only or deliberately deferred, the page says so.

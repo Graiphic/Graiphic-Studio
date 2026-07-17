@@ -8,9 +8,11 @@ Launch Graiphic Studio and start from the Front Panel. The Front Panel is the
 main design surface for placing controls, indicators, labels, images, and
 interface-related editing affordances.
 
-Graiphic Studio opens the Front Panel by default. The Diagram and source window
-remain complementary views of the same `.frog` document, but they are not
-required for this first placement workflow.
+Graiphic Studio opens the Front Panel by default. The Block Diagram and Source
+windows are complementary views of the same `.frog` document. `Ctrl+E` raises
+the companion Front Panel or Block Diagram without resizing or moving the
+current window. `Ctrl+Shift+E` opens the Source view, and `Ctrl+T` tiles the
+Front Panel and Block Diagram when both must remain visible.
 
 ![Empty Front Panel](../assets/screenshots/front-panel/front-panel-overview.png)
 
@@ -19,9 +21,10 @@ required for this first placement workflow.
 Open the Widget Navigator, choose a widget family, then place a widget on the
 grid.
 
-Right-click an empty part of the Front Panel to open the Widget Navigator. Move
-through a family, choose a control or indicator, then click the grid to place
-it. A family tile can also choose that family's default widget.
+Right-click an empty part of the Front Panel to open the Widget Navigator.
+Single-click a family tile to browse its controls and indicators. Double-click
+the family tile to start placement of its default widget, then click the Front
+Panel to place it.
 
 Current core families include:
 
@@ -69,9 +72,10 @@ Recent Files is updated when a document is opened or saved successfully.
 
 ## 6. Place A Diagram Operation
 
-Open the Diagram and its Function Navigator. Enter **Programming > Numeric**,
-press and hold an operation tile, drag it onto the Diagram, then release it at
-the desired position. The SVG preview follows the pointer during the drag.
+Open the Block Diagram and its Function Navigator. Enter **Programming >
+Numeric**, press and hold an operation tile, drag it onto the Diagram, then
+release it at the desired position. The SVG preview follows the pointer during
+the drag and the placed operation remains movable and selectable.
 
 The resulting operation is an explicit Diagram node and is saved in
 `diagram.nodes` with its FROG primitive identity and authored layout. Releasing
@@ -81,7 +85,20 @@ Only operations backed by published FROG primitive contracts can currently be
 placed. See the [Function Navigator](interface/function-navigator.md) for the
 complete workflow and current scope.
 
-## 7. Configure The Studio
+Front Panel widgets project typed terminals into the Block Diagram. Changing a
+Numeric representation, switching Control/Indicator role, or encapsulating a
+widget in an Array updates the corresponding terminal immediately.
+
+## 7. Inspect The Source
+
+Press `Ctrl+Shift+E` to open the Source view. It displays the live `.frog`
+representation produced by the current Front Panel and Block Diagram. Use it
+to verify widget properties, bindings, node types, authored layout, and view
+state without treating editor-only selection state as executable data.
+
+![Live .frog Source view](../assets/screenshots/source-view/source-view-live.jpg)
+
+## 8. Configure The Studio
 
 Open **Tools > Options...** to choose the interface theme, configure the Front
 Panel grid, or manage SVG glyph folders used by the Icon Editor. The Appearance
@@ -93,6 +110,9 @@ semantics. See [Studio Options](interface/options.md) for the complete workflow.
 ## Next Steps
 
 - Learn the [Front Panel](interface/front-panel.md).
+- Learn how the three views cooperate in [Window Workflow](interface/window-workflow.md).
+- Build and inspect dataflow in the [Block Diagram](interface/block-diagram.md).
+- Inspect the serialized program in the [Source View](interface/source-view.md).
 - Configure the IDE through [Studio Options](interface/options.md).
 - Learn the [Interface Map](interface/interface-map.md).
 - Learn how widgets are organized in the [Widget Navigator](interface/widget-navigator.md).

@@ -67,6 +67,13 @@ profile; removing the path from Options does not delete source files. See
 The File menu imports SVG or raster media. SVG stays vector-based. Clipboard
 paste and drag-and-drop create an editable visual layer.
 
+When an SVG is imported, Studio normalizes it as one logical layer while
+flattening its visible paint regions for editing. Each independently visible
+color region can therefore be filled without recoloring unrelated shapes such
+as holes, facial details, or transparent areas. This is a general import rule,
+not a special case for the default icon. The applied result remains SVG; the
+40 x 40 preview does not rasterize it.
+
 `Ctrl+Z` undoes; `Ctrl+Shift+Z` redoes. `Ctrl+Shift+Delete` clears all layers.
 Press `Escape` to leave the current tool and return to selection without
 closing the editor.
