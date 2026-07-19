@@ -40,6 +40,10 @@ uses them.
 - `selection-pane/grouped-elements.png`: expanded group hierarchy.
 - `arrange-resize/resize-objects.png`: exact-size editing window.
 - `widgets/ring-items.png`: Ring item source editor.
+- `widgets/numeric-properties-data-entry.png`: Numeric Data Entry page with
+  representation-aware limits, entry policies, and increment settings.
+- `widgets/numeric-properties-display-format.png`: Numeric Display Format page
+  with live preview and Number, Layout, and Expert views.
 - `options/appearance-light-preview.png`: Light theme preview in Studio Options.
 - `options/front-panel-grid.png`: Front Panel grid defaults and draw-style options.
 

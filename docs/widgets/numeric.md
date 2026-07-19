@@ -40,26 +40,149 @@ Array that embeds the same Numeric template and representation.
 
 ### Data Entry
 
+![Numeric Data Entry properties](../../assets/screenshots/widgets/numeric-properties-data-entry.png)
+
 Choose **Data Entry...** to define optional minimum and maximum values,
 increment behavior, and page step. Each enabled limit declares how an entered
-value is handled: ignore the out-of-range edit or coerce it to the nearest
-legal boundary. Increment rules are used by the widget's arrow controls and by
-the same Numeric template when it is embedded in an Array.
+value is handled. **Ignore** accepts the value when the selected numeric type
+can represent it. **Coerce** clamps it to the corresponding boundary. Minimum
+and maximum responses are independent.
+
+Numeric Properties follows the same navigation model as **Tools > Options**.
+Choose **Data Entry** or **Display Format** from the category list on the left.
+The property page on the right scrolls vertically when the window is too short,
+while **OK** and **Cancel** remain available at the bottom.
+
+Clear **Use type defaults** to edit custom entry rules. Press **OK** to validate
+and apply the complete page. Invalid limits or steps keep the window open and do
+not partially modify the widget.
+
+The numeric type always has priority. An unsigned type such as `U16` rejects a
+negative value. Integer types store whole values and apply the selected entry
+rounding posture. Floating-point types accept signed fractional values within
+their representation domain.
+
+Increment response can accept an off-grid value or round it to the nearest,
+next higher, or next lower increment. The grid starts at the custom minimum
+when one is configured, otherwise at zero. An increment of zero disables this
+custom quantization while leaving the increment/decrement buttons usable with
+their natural step. **Page step** is used by Page Up and Page Down.
+
+An exact minimum or maximum remains reachable even when it does not fall on the
+increment grid. A value brought to that boundary by **Coerce** remains on the
+boundary instead of being moved away by increment rounding.
+
+Examples:
+
+| Setup | Entered value | Committed value |
+| --- | ---: | ---: |
+| Float64, range `0..10`, both limits coerced | `11` | `10` |
+| Float64, range `0..10`, maximum ignored | `12` | `12` |
+| UInt16 | `-1` | rejected |
+| UInt16, nearest rounding | `12.6` | `13` |
+| UInt16, downward rounding | `12.9` | `12` |
+
+The standard interactive editor also rejects `NaN` and infinite text. These
+values require explicit handling when they enter the application through
+programmatic dataflow.
 
 Data-entry rules are part of the widget source. They are validated when the
 user commits a value and are serialized as `data_entry.*` properties rather
-than retained as private Studio preferences.
+than retained as private Studio preferences. Applying new settings does not
+rewrite the value already displayed. Programmatic Diagram/runtime writes bypass
+Data Entry policy and remain governed by the numeric representation contract.
+
+The explicit `.frog` form is:
+
+```json
+{
+  "data_entry.use_type_defaults": false,
+  "data_entry.minimum": 0,
+  "data_entry.maximum": 100,
+  "data_entry.minimum_response": "coerce",
+  "data_entry.maximum_response": "ignore",
+  "data_entry.increment_step": 1,
+  "data_entry.increment_response": "nearest",
+  "data_entry.page_step": 10
+}
+```
 
 ### Display Format
 
-Choose **Display Format...** to control value presentation without changing
-the stored numeric type or value. The standard editor supports automatic,
-floating-point, scientific, engineering, decimal, hexadecimal, octal, and
-binary postures together with digit and trailing-zero options. Advanced mode
-accepts an explicit format string and validates it before it can be applied.
+![Numeric Display Format properties](../../assets/screenshots/widgets/numeric-properties-display-format.png)
 
-Formatting belongs to `display.*`. It changes what the Front Panel shows, not
-the Diagram terminal type, binding color, or runtime value representation.
+Choose **Display Format...** to control value presentation without changing
+the stored numeric type or value. The live preview uses the same formatter as
+the Front Panel, so every change can be checked before pressing **OK**.
+
+The page keeps the live preview visible and groups the remaining controls into
+three views:
+
+- **Number** for notation, precision, and exponent behavior;
+- **Layout** for sign, locale, width, padding, alignment, prefix, and suffix;
+- **Expert** for radix details and a validated custom format.
+
+Fields that do not apply to the current notation or numeric representation are
+disabled. This makes the active consequences explicit instead of accepting a
+setting that the widget would ignore.
+
+Available notations are Automatic, Fixed, Scientific, Engineering, SI,
+Decimal, Hexadecimal, Binary, expert Octal, and Custom. **Fractional digits**
+counts digits after the decimal separator. **Significant digits** counts the
+meaningful digits across the complete value. Trailing zeros can be retained to
+show visual resolution or hidden for a compact result.
+
+The advanced presentation controls provide:
+
+- negative-only, always-visible, or reserved-space sign display;
+- minimum field width without truncation;
+- spaces or zeros for padding;
+- left or right alignment;
+- invariant or system decimal separator;
+- decorative prefix and suffix text;
+- radix prefix, hexadecimal case, grouping, and raw-bit interpretation.
+
+Raw-bit mode uses the complete width of the selected integer representation.
+For example, `Int8 -1` appears as `1111 1111` in grouped binary, while
+`Int8 1` appears as `0000 0001`.
+
+Custom format is an expert/import feature. It accepts one safe conversion from
+`f e g p d u x X o b`, together with alignment, sign, trailing-zero,
+engineering, zero-padding, width, fractional-precision, and
+significant-precision modifiers. Unsafe or multiple conversions are rejected.
+Timestamp and Duration are separate typed widgets rather than Numeric formats.
+
+Formatting belongs to `display.format.*`. It changes what the Front Panel
+shows, not the Diagram terminal type, binding color, runtime value, numeric
+representation, or Data Entry policy. While a control is being edited, the raw
+edit text remains visible; formatting resumes after a successful commit.
+
+Typed Arrays reuse the Display Format of their contained Numeric template, so
+all cells remain consistent without losing their individual values.
+
+Example `.frog` properties:
+
+```json
+{
+  "display.format.kind": "si",
+  "display.format.digits": 4,
+  "display.format.precision_type": "significant",
+  "display.format.hide_trailing_zeros": true,
+  "display.format.exponent_multiple_of_3": false,
+  "display.format.minimum_field_width": 0,
+  "display.format.padding": "none",
+  "display.format.alignment": "right",
+  "display.format.sign": "negative_only",
+  "display.format.locale": "system",
+  "display.format.prefix": "",
+  "display.format.suffix": " V",
+  "display.format.radix.show_prefix": false,
+  "display.format.radix.uppercase": true,
+  "display.format.radix.group_size": 0,
+  "display.format.radix.interpretation": "numeric",
+  "display.format.custom_string": "%.6g"
+}
+```
 
 ## Numeric Representation
 
