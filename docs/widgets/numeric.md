@@ -34,7 +34,32 @@ one linked surface: its rectangle and triangle expose fill and border mappings.
 ## Context Menu
 
 Numeric widgets expose a context menu for visible items and control/indicator
-switching.
+switching. The menu groups role and structure commands separately from Numeric
+configuration. **Change to Array** replaces the scalar widget with a typed
+Array that embeds the same Numeric template and representation.
+
+### Data Entry
+
+Choose **Data Entry...** to define optional minimum and maximum values,
+increment behavior, and page step. Each enabled limit declares how an entered
+value is handled: ignore the out-of-range edit or coerce it to the nearest
+legal boundary. Increment rules are used by the widget's arrow controls and by
+the same Numeric template when it is embedded in an Array.
+
+Data-entry rules are part of the widget source. They are validated when the
+user commits a value and are serialized as `data_entry.*` properties rather
+than retained as private Studio preferences.
+
+### Display Format
+
+Choose **Display Format...** to control value presentation without changing
+the stored numeric type or value. The standard editor supports automatic,
+floating-point, scientific, engineering, decimal, hexadecimal, octal, and
+binary postures together with digit and trailing-zero options. Advanced mode
+accepts an explicit format string and validates it before it can be applied.
+
+Formatting belongs to `display.*`. It changes what the Front Panel shows, not
+the Diagram terminal type, binding color, or runtime value representation.
 
 ## Numeric Representation
 

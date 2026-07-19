@@ -40,7 +40,9 @@ the pointer at reduced opacity and becomes fully opaque when placed.
 Placed operations can be selected individually or with a selection rectangle,
 moved with the mouse or arrow keys, copied, and deleted. Their selection
 indicator is a restrained animated dashed contour derived from the exterior of
-the SVG, not a rectangular Front Panel aura.
+the SVG, not a rectangular Front Panel aura. Its geometry and animation are
+identical in both themes: white on the dark Diagram and dark anthracite on the
+light Diagram so selection remains visible without changing the operation SVG.
 
 ## Comments And Images
 
@@ -59,7 +61,14 @@ provide commands such as:
 - **Visible Items > Label**
 - **Find Control**
 - **Change to Control** or **Change to Indicator**
+- **Change to Array** for widget families that can become a typed Array
 - **Representation** for typed Numeric terminals
+
+Diagram labels are independently selectable. They can be moved, edited,
+resized, formatted with the Application Font controls, or restored to their
+object anchor without changing the terminal geometry. Diagram arrange,
+ordering, grouping, and Selection Pane commands operate on the selected
+Diagram objects and participate in Diagram undo/redo.
 
 Operations and comments expose only commands relevant to those objects. The
 Diagram never infers execution semantics from an icon color or selection state.

@@ -77,6 +77,17 @@ The Array frame provides independent controls for visible rows and columns.
 Scrollbars appear only when the current shape extends beyond the visible grid.
 Their ranges follow the array shape and selected higher-dimensional slice.
 
+For a one-dimensional Array, the resize direction also chooses the visible
+orientation. Start from the single-cell posture and drag primarily downward to
+create a vertical column, or primarily to the right to create a horizontal
+row. The element template keeps the same size in both layouts; Studio changes
+only the repeated axis and visible count. Two-dimensional and higher-rank
+Arrays always use the row-and-column grid posture.
+
+The selected orientation is source-owned as `viewport.orientation` and is
+restored with the document. It does not transpose or otherwise modify the
+semantic Array value.
+
 Array background and border colors belong to the container. Cell body, border,
 spinner, label, and text colors belong to the embedded widget template.
 
