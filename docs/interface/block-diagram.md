@@ -44,6 +44,21 @@ the SVG, not a rectangular Front Panel aura. Its geometry and animation are
 identical in both themes: white on the dark Diagram and dark anthracite on the
 light Diagram so selection remains visible without changing the operation SVG.
 
+### Extensible Addition
+
+Hover an Addition operation to reveal its connection points and the resize
+handle centered on its lower edge. Drag the handle downward to add ordered
+numeric inputs, or upward to remove unused inputs. The current Studio surface
+supports 2 through 16 inputs and adds one input for each 24-pixel vertical
+step. The extension uses the exact Light or Dark operation shell, so the
+outline remains continuous at every supported height.
+
+Inputs already referenced by wires are protected: the operation cannot be
+shrunk far enough to remove a connected port. Additional ports are serialized
+as `input_3`, `input_4`, and so on. The node height preserves the author's
+expanded editor shape; executable participation is defined by connected port
+identifiers, not by geometry alone.
+
 ## Comments And Images
 
 Double-click an empty Diagram area to create a comment. Comments are

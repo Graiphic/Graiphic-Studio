@@ -75,3 +75,15 @@ saving transfers them into the document's managed location.
 The Diagram remains the authoritative executable graph. Runtime execution must
 consume explicit source and compiled artifacts, never Studio-only selection or
 window state.
+
+## Context Help Metadata
+
+Built-in widgets and functions use the Studio's visible native help catalog.
+External or document-owned objects may preserve a concise help summary and an
+online documentation URL in `.frog`. Widget instances use the namespaced
+properties `documentation.description` and `documentation.url`; diagram nodes
+use a structured `doc` object with `summary` and `url` members.
+
+These fields describe an existing object. They do not change its ports, data
+type, validation, or runtime behavior. The open and locked state of the Context
+Help window remains a local Studio workspace concern.

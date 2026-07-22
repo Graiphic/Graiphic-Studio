@@ -18,6 +18,8 @@
 | `Ctrl+E` | Raise the companion Front Panel or Block Diagram without moving or resizing either window |
 | `Ctrl+Shift+E` | Open or raise the live Source view |
 | `Ctrl+T` | Tile the Front Panel and Block Diagram |
+| `Ctrl+H` | Show or hide Context Help |
+| `Ctrl+Shift+L` | Lock or unlock Context Help on its current object |
 
 ## Editing
 
