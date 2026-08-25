@@ -21,6 +21,21 @@ where the widget supports both roles.
 - [Ring and Enum](ring-and-enum.md)
 - [Array Container](array-container.md)
 - [Image Static](image-static.md)
+- [Label](label.md)
+
+## Where Widget Defaults Come From
+
+Graiphic Studio consumes the public FROG Default realization package for each
+integrated widget family. The `.wfrog` manifest supplies role-specific initial
+properties and references the semantic SVG skin. The `.frog` document stores
+the widget identity, placement, value, binding, and explicit instance
+overrides.
+
+`placement_bounds` is the authored envelope used by Studio for placement,
+hover, selection, and hit testing. The visible widget body is inset by the
+manifest's `layout.aura_band_px`; the current Default profiles use 4 px. A
+skin's `focus_ring` is keyboard-focus geometry and is not the Studio selection
+aura.
 
 ## Common Behavior
 

@@ -4,11 +4,10 @@ Array is a typed Front Panel container. It repeats one embedded widget template
 over one or more dimensions while keeping one coherent array value in the
 `.frog` document and runtime.
 
-The canonical runtime example below shows two dimensions, three visible rows,
-numeric cells, connected index displays, and scrollbars for content outside the
-visible extent.
-
-![Numeric Array dimension runtime example](../../assets/screenshots/widgets/array-dimension-runtime.png)
+The current Studio view keeps the index controls, repeated typed cells, and
+scrollbars inside one source-owned Array instance. The Default Array manifest
+provides its initial geometry and colors; each repeated cell uses the embedded
+widget's own Default realization rather than a reduced Array-specific copy.
 
 ## Create And Type An Array
 
@@ -26,6 +25,11 @@ Array terminal.
 All cells in one Array use the same embedded widget template. Resizing the
 template changes the cell size; resizing the Array changes how many rows and
 columns are visible.
+
+For widget-backed cells, the cell envelope is the contained widget's
+`placement_bounds`. Array does not add a second padding skin around it. Cell
+hover and selection belong to Array, while keyboard focus remains owned by the
+contained widget realization.
 
 The focused two-dimensional view makes the separation between index controls,
 typed cells, and scrollbars explicit.

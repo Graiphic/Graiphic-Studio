@@ -25,6 +25,7 @@
   - [Ring And Enum](/docs/widgets/ring-and-enum.md)
   - [Array Container](/docs/widgets/array-container.md)
   - [Image Static](/docs/widgets/image-static.md)
+  - [Label](/docs/widgets/label.md)
 
 - **Reference**
   - [Keyboard Shortcuts](/docs/reference/keyboard-shortcuts.md)

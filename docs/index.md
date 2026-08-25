@@ -37,6 +37,7 @@ the source being produced, define an Interface Map, and edit the project icon.
 - [Ring and Enum](docs/widgets/ring-and-enum.md)
 - [Array Container](docs/widgets/array-container.md)
 - [Image Static](docs/widgets/image-static.md)
+- [Label](docs/widgets/label.md)
 
 ## Reference
 

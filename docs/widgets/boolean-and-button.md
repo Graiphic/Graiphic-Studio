@@ -5,6 +5,11 @@ Boolean widgets represent simple true/false state.
 Text Button is a button-style boolean control or indicator with editable center
 text.
 
+Text Button keeps one widget class in both roles. Changing role changes its
+terminal and interaction posture; it does not select a different private skin.
+The control role applies mechanical action, while the indicator role displays a
+source/runtime-driven value without mouse mutation.
+
 ## Boolean
 
 Boolean widgets are command-style controls by default. They can be switched to
