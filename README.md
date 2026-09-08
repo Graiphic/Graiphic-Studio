@@ -53,6 +53,12 @@ assets/
   linked from the main documentation index.
 - Keep `.frog` source concepts explicit: widgets, labels, bindings, interface
   maps, icon assets, and runtime-facing artifacts are separate concepts.
+- The public [FROG specification](https://github.com/Graiphic/FROG) owns
+  canonical source shape, type identities, language semantics, and conformance
+  expectations. Studio documentation does not redefine those contracts.
+- Studio product contracts own editing gestures, window workflows, and visual
+  behavior. An implemented editor feature does not by itself establish source
+  conformance, runtime support, or certification.
 - Avoid documenting experimental behavior as final unless it has been validated
   in the Studio.
 
