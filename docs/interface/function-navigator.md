@@ -82,6 +82,10 @@ Numeric function icons describe operation semantics. Their connector types and
 runtime behavior must remain compatible with the FROG source and runtime
 contracts rather than being inferred from their visual color alone.
 
+The same function artwork is used in Light and Dark UI mode, including its
+body, border, symbols and internal text. Palette, Context Help, placement
+preview and Diagram share one canonical asset.
+
 ## What Is Saved
 
 Each placed operation is stored in the canonical `.frog` Diagram as a

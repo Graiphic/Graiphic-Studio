@@ -37,6 +37,10 @@ Open the [Function Navigator](function-navigator.md), browse **Programming >
 Numeric**, and drag an operation onto the Diagram. The operation SVG follows
 the pointer at reduced opacity and becomes fully opaque when placed.
 
+Function icons use the same artwork in Light and Dark mode: identical body,
+border, symbols and internal text. The Function Navigator, Context Help,
+placement preview and placed operation share the same canonical asset.
+
 Placed operations can be selected individually or with a selection rectangle,
 moved with the mouse or arrow keys, copied, and deleted. Their selection
 indicator is a restrained animated dashed contour derived from the exterior of
@@ -54,7 +58,7 @@ Hover an Addition operation to reveal its connection points and the resize
 handle centered on its lower edge. Drag the handle downward to add ordered
 numeric inputs, or upward to remove unused inputs. The current Studio surface
 supports 2 through 16 inputs and adds one input for each 24-pixel vertical
-step. The extension uses the exact Light or Dark operation shell, so the
+step. The extension uses the same canonical operation shell in both UI themes, so the
 outline remains continuous at every supported height.
 
 Inputs already referenced by wires are protected: the operation cannot be

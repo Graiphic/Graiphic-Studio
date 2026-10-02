@@ -1,10 +1,10 @@
 # Development checkpoint — 2 October 2026
 
-The current local Graiphic Studio delivery is **0.0.4.051**. Its executable was
+The current local Graiphic Studio delivery is **0.0.4.053**. Its executable was
 compiled, signed and checked against the Desktop shortcut. Studio `main` is
-published at `a75ab2011ee4c9f0fdf2f1d6a4525b0fe0dfd78e` (2 October), verified
+published at `60e7897397b4e413a44159db26e90f4dc3036547` (2 October), verified
 against the remote. It contains the accumulated editor and contour corrections
-and the subsequent binding context-menu correction.
+and the subsequent binding context-menu and invariant function-icon corrections.
 
 Regression tests remain paused. The last complete attempt failed on **0.0.3.935**:
 **300/403 passed, 103 failed**. Recent behavior below is implemented and published;
@@ -36,6 +36,10 @@ Converting it to U32 selects hexadecimal and shows the radix. Radix changes the
 display base without changing the value or numeric representation.
 
 ## Diagram and selection
+
+Function artwork is identical in Light and Dark UI themes: the same canonical
+SVG, body, border, symbols and internal text across palette, help, placement
+preview and Diagram. The theme-dependent yellow function fallback is superseded.
 
 All function selection follows the actual visible contour with zero geometry
 offset, including intrinsic SVGs, extended functions, Array/Matrix and Cluster
