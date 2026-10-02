@@ -1,10 +1,11 @@
 # Development checkpoint — 2 October 2026
 
-The current local Graiphic Studio delivery is **0.0.4.055**. Its executable was
+The current local Graiphic Studio delivery is **0.0.4.057**. Its executable was
 compiled, signed and checked against the Desktop shortcut. Studio `main` is
-published at `00c8b3d66d5d7ea27d7a73d782012a6b98994681` (2 October), verified
+published at `d1423894092147c1d777456ec6d5ac089f922c9c` (2 October), verified
 against the remote. It contains the accumulated editor and contour corrections
-and the binding context-menu, invariant function-icon and compact structure-label corrections.
+and the binding context-menu, invariant function-icon, compact structure-label
+and For Loop frame contrast corrections.
 
 Regression tests remain paused. The last complete attempt failed on **0.0.3.935**:
 **300/403 passed, 103 failed**. Recent behavior below is implemented and published;
@@ -40,6 +41,11 @@ Converting it to U32 selects hexadecimal and shows the radix. Radix changes the
 display base without changing the value or numeric representation.
 
 ## Diagram and selection
+
+For Loop frame/default inner frame use dark #575756 in Light and off-white
+#F8FAFC in Dark, including the folded corner and rear sheet outlines. Existing
+body tint/opacity and explicit saved body/inner-frame colors remain preserved.
+The native renderer and placement preview reuse the same resolved geometry.
 
 Function artwork is identical in Light and Dark UI themes: the same canonical
 SVG, body, border, symbols and internal text across palette, help, placement

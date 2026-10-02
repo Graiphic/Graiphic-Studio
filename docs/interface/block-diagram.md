@@ -9,6 +9,12 @@ data movement.
 
 ## Canvas And Navigation
 
+For Loop containers keep their theme-coordinated interior. Their contour,
+folded corner and default inner frame are dark gray (#575756) in Light mode
+and off-white (#F8FAFC) in Dark mode for clear separation. Custom body and
+inner-frame colors remain preserved. This structure chrome rule is separate
+from the fixed function-icon artwork described below.
+
 The Diagram uses a solid theme-coordinated background. It deliberately has no
 editing grid. Hold the middle mouse button to pan. Diagram zoom is limited to
 `60%` through `150%`; clicking either the zoom icon or percentage opens the
