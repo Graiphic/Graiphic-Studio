@@ -1,10 +1,10 @@
 # Development checkpoint — 2 October 2026
 
-The current local Graiphic Studio delivery is **0.0.4.053**. Its executable was
+The current local Graiphic Studio delivery is **0.0.4.055**. Its executable was
 compiled, signed and checked against the Desktop shortcut. Studio `main` is
-published at `60e7897397b4e413a44159db26e90f4dc3036547` (2 October), verified
+published at `00c8b3d66d5d7ea27d7a73d782012a6b98994681` (2 October), verified
 against the remote. It contains the accumulated editor and contour corrections
-and the subsequent binding context-menu and invariant function-icon corrections.
+and the binding context-menu, invariant function-icon and compact structure-label corrections.
 
 Regression tests remain paused. The last complete attempt failed on **0.0.3.935**:
 **300/403 passed, 103 failed**. Recent behavior below is implemented and published;
@@ -12,6 +12,10 @@ compilation and publication do not establish completed functional or visual qual
 Existing screenshots belong to their dated captures, not a new UI review.
 
 ## Aggregates and text
+
+Subdiagram Labels use the compact 11 pt default across creation, show and
+typography refresh. Explicit sizes/styles remain preserved, including an
+explicit 15 pt. Display and editing share the stored font.
 
 Cluster **None** keeps manual dimensions when children change size. **Size to Fit**
 follows the content bounds during enlargement and reduction. Copying retains the

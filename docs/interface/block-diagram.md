@@ -110,6 +110,12 @@ are created unwired when connecting would add a second source. An indicator
 branches from the existing source when compatible.
 
 Selecting a structure includes its nested contents for selection operations.
+
+**Subdiagram Label** starts at a compact **11 pt**, with the same font while
+displayed and edited. Its default size stays compact when the general document
+text preference changes. An explicitly chosen size is preserved through
+hide/show and saving/reopening the document.
+
 Iterator and conditional terminals can be selected by partial overlap with their
 visible bounds. A multiple Delete is one logical action and one Undo restores
 the removed selection. See the [development checkpoint](../reference/development-checkpoint.md)
