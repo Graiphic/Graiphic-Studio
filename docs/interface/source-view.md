@@ -28,6 +28,13 @@ from the current document session.
 
 ## Source And Execution Boundary
 
+For the current authoring document, the live view exposes Studio's draft envelope
+(`format: "frog.document.draft"`, `draft_revision: 2`, `frontPanel`). The public
+canonical source uses `spec_version` and optional `front_panel`. The common file
+extension does not make these formats interchangeable. See
+[The Document Model](../reference/document-model.md) for the importer and writer
+boundaries; editing or saving a draft does not certify public-source conformance.
+
 The Source view does not make editor selection, hover, open menus, theme,
 language, or navigation font size executable. The Diagram remains the
 authoritative executable graph; the Front Panel remains the user-facing widget

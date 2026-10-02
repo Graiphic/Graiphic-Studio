@@ -49,13 +49,22 @@
 
 | Shortcut | Action |
 | --- | --- |
-| `Enter` | Validate label editing |
-| `Shift+Enter` | Insert a label line break |
+| Main `Enter` while editing a Diagram comment | Insert a line break |
+| Keypad `Enter` or click outside a Diagram comment | Commit the comment and leave editing |
+| `Enter` in a single-line name/value field | Commit when that editor supports it |
+| `Escape` in a name/value field | Cancel the active edit |
+| `Ctrl+Backspace` / `Ctrl+Delete` while editing text | Delete the preceding / following word |
 | `Ctrl+Shift+Delete` | Clear all Icon Editor layers |
 | `Ctrl++` / `Ctrl+-` | Increase or decrease the selected text font; otherwise zoom the active canvas within its allowed range |
 
 Some commands are context-sensitive. Text and embedded Array-widget selection
 take priority over canvas zoom, so `Ctrl++` and `Ctrl+-` change the selected
 font instead of the view in those contexts. The Block Diagram zoom range is
-`60%` to `130%`. A shortcut has no effect when the current selection cannot
+`60%` to `150%`. A shortcut has no effect when the current selection cannot
 perform the operation.
+
+`Ctrl+R` opens the same compilation diagnostics as clicking a broken Run icon
+when the document has compilation errors. For a compilable document it currently
+does nothing; runtime execution is a separate delivery. Recent editing changes
+are recorded in the [development checkpoint](development-checkpoint.md), with
+their remaining qualification limits.

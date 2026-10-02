@@ -24,11 +24,15 @@
   - [String And Path](/docs/widgets/string-and-path.md)
   - [Ring And Enum](/docs/widgets/ring-and-enum.md)
   - [Array Container](/docs/widgets/array-container.md)
+  - [Error Cluster](/docs/widgets/error-cluster.md)
+  - [Variant](/docs/widgets/variant.md)
   - [Image Static](/docs/widgets/image-static.md)
   - [Label](/docs/widgets/label.md)
 
 - **Reference**
+  - [Development Checkpoint](/docs/reference/development-checkpoint.md)
   - [Keyboard Shortcuts](/docs/reference/keyboard-shortcuts.md)
   - [Document Model](/docs/reference/document-model.md)
+  - [Custom Binding Persistence](/docs/reference/custom-bindings.md)
   - [Glossary](/docs/reference/glossary.md)
   - [Screenshot Guide](/docs/reference/screenshot-guide.md)

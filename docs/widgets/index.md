@@ -20,6 +20,8 @@ where the widget supports both roles.
 - [String and Path](string-and-path.md)
 - [Ring and Enum](ring-and-enum.md)
 - [Array Container](array-container.md)
+- [Error Cluster](error-cluster.md)
+- [Variant](variant.md)
 - [Image Static](image-static.md)
 - [Label](label.md)
 

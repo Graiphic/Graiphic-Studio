@@ -3,6 +3,28 @@
 A `.frog` file is the source of truth for a Graiphic Studio project. Studio
 windows edit explicit document data rather than keeping hidden runtime state.
 
+## Current File Format Boundary
+
+In the local Studio **0.0.4.044** checkpoint, the authoring writer still uses
+`"format": "frog.document.draft"` with `"draft_revision": 2` and a `frontPanel`
+section. Canonical public FROG source instead uses `spec_version` and the
+sections defined by the public specification, including optional `front_panel`.
+Sharing the `.frog` extension does not make the two envelopes interchangeable.
+
+Studio also has a separate public-source reader and preservation/transaction
+writer. Reading public JSON does not imply that the editing-model importer can
+project every public graph onto the canvas, migrate drafts, validate all profiles
+or execute them. See the public [source syntax guide](https://github.com/Graiphic/FROG/blob/main/Expression/Frog%20source%20guide.md)
+and [integration record](https://github.com/Graiphic/FROG/blob/main/docs/studio-source-compatibility.md).
+These new references are part of the current documentation work; their main
+publication remains pending until the corresponding FROG changes are integrated.
+
+The sections below explain ownership. They do not claim that every public
+source construct is already supported by Studio's current authoring model.
+Read/save support, canonical format conformance, validation and runtime
+execution are separate capabilities; see the public
+[source compatibility reference](https://github.com/Graiphic/FROG/blob/main/Expression/Source%20compatibility%20and%20profiles.md).
+
 ## Front Panel
 
 The Front Panel owns widget instances, object geometry, labels, initial values,
@@ -10,9 +32,11 @@ visibility, lock state, groups, z-order, colors, and instance-level overrides.
 
 ## Public Interface
 
-The public interface exists independently from the Front Panel. Interface Map
-patterns arrange public ports visually. Front Panel bindings explicitly connect
-widget value properties to those ports.
+In the public FROG model, the interface exists independently from the Front
+Panel. Studio's current authoring writer derives its saved interface from bound
+widgets; independent interface-only authoring is not implied by this page.
+Interface Map patterns arrange ports visually. Front Panel bindings explicitly
+connect widget value properties to those ports.
 
 Controls bind toward public inputs. Indicators bind from public outputs. The
 Diagram will project these as `interface_input` and `interface_output` nodes;
@@ -57,8 +81,12 @@ semantics.
 ## Document Icon
 
 The document icon is editable SVG-oriented data. Its layer metadata is retained
-inside the icon SVG so Graiphic Studio can reopen it. The 40 x 40 chrome square
-is only a preview target.
+inside the icon SVG so Graiphic Studio can reopen it. The toolbar preview fits
+within 60 × 60 pixels independently of the logical icon dimensions.
+
+Custom binding layouts preserve slot identities, dimensions, explicit positions
+and disabled slots. [Custom Binding Persistence](custom-bindings.md) documents
+the exact Studio descriptors, widget associations and compatibility limits.
 
 Imported SVG content may be normalized into independently editable visible
 regions. This authoring segmentation remains presentation metadata; runtimes

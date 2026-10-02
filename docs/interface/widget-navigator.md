@@ -43,6 +43,11 @@ Enum Indicator.
 
 ## Place Or Cancel
 
+The **Data Containers** category includes **Error Cluster Control** and
+**Error Cluster Indicator**. Their monochrome rectangular icons place a
+composed Cluster: a round status LED and numeric code on the top row, with a
+String source field below. See [Error Cluster](../widgets/error-cluster.md).
+
 After choosing a widget, its preview follows the pointer until the Front Panel
 is clicked. Press `Escape` to cancel. Repeated default labels receive numeric
 suffixes so every object stays identifiable.

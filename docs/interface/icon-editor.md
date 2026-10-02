@@ -4,19 +4,32 @@ The Icon Editor edits the `.frog` document icon. Open it by double-clicking the
 document icon in the Front Panel chrome or choosing **Edit Icon...** from its
 context menu.
 
-The 40 x 40 display is a preview size, not a raster limitation. SVG remains
+The logical canvas size is independent of its toolbar preview. SVG remains
 vector-based and is rendered cleanly at other sizes.
 
 The editor keeps drawing tools, layers, reusable templates, colors, and the
-40 x 40 preview visible in one workspace.
+preview visible in one workspace.
 
 ![Icon Editor with tools, layers, templates, and preview](../../assets/screenshots/icon-editor/icon-editor-dark.png)
 
 ## Canvas And Preview
 
-The canvas uses a 40 x 40 working grid. One grid cell is the minimum Pencil and
-Eraser unit. Vector objects can move outside the visible region while editing;
-only the icon region appears in Preview and in the applied document icon.
+The size selector offers 40 × 40, 60 × 40, 40 × 60, 60 × 60, and **Custom...**.
+Custom allows 32 to 1024 logical pixels per side and a configurable binding
+layout. Its striped tile identifies the custom format.
+
+![Icon size selector with four presets and striped Custom tile](../../assets/screenshots/icon-editor/canvas-size-presets.png)
+
+The working grid follows the selected dimensions. One grid cell is the minimum
+Pencil and Eraser unit. Vector objects can move outside the visible region
+while editing; only the icon region appears in Preview and in the applied
+document icon.
+
+The toolbar preview fits proportionally within 60 × 60 pixels. A Custom 40 × 40
+icon fills that available preview area while its label continues to show
+40 × 40. Enlarging the preview does not change the saved logical dimensions.
+See [Interface Map](interface-map.md#custom-layouts) for binding placement,
+striped acceptance zones, capacity and Reset.
 
 Use View to choose a checkerboard or white editing background. This changes
 the canvas background only. Zoom changes the editor view, not the SVG data.
@@ -72,7 +85,7 @@ flattening its visible paint regions for editing. Each independently visible
 color region can therefore be filled without recoloring unrelated shapes such
 as holes, facial details, or transparent areas. This is a general import rule,
 not a special case for the default icon. The applied result remains SVG; the
-40 x 40 preview does not rasterize it.
+toolbar preview does not rasterize it.
 
 `Ctrl+Z` undoes; `Ctrl+Shift+Z` redoes. `Ctrl+Shift+Delete` clears all layers.
 Press `Escape` to leave the current tool and return to selection without
@@ -82,3 +95,8 @@ closing the editor.
 
 **OK** writes the current Preview to the `.frog` icon and preserves editable
 layer data. **Cancel** closes the editor without applying the session.
+
+Custom geometry is also retained for reopening: dimensions, stable binding
+identities, moved positions and disabled slots. The exact Studio fields and
+the public-format boundary are described in
+[Custom Binding Persistence](../reference/custom-bindings.md).

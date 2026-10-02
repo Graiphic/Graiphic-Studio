@@ -13,6 +13,7 @@ The Numeric widget can show or hide:
 
 - Label
 - Increment/Decrement controls
+- Radix for choosing decimal, hexadecimal, octal or binary display
 
 Increment/Decrement controls may be placed on the left or right. Selecting the
 currently active side again hides them.
@@ -25,8 +26,11 @@ without offering input interaction.
 Numeric widgets resize horizontally. The label follows its default anchor while
 it remains anchored.
 
-The height is fixed for the compact numeric style. Resize Objects marks this
-dimension with an asterisk rather than pretending the widget can change it.
+The compact control's manual resize posture is distinct from text fitting.
+After a font, size or style change, the current implementation measures the
+text and recalculates required width and height with a small margin. This also
+applies to targeted numeric text inside clusters and arrays. **Size to Text**
+fits both dimensions; it must not merely stretch the horizontal axis.
 
 Brush can recolor the numeric body and border. The increment/decrement pair is
 one linked surface: its rectangle and triangle expose fill and border mappings.
@@ -37,6 +41,20 @@ Numeric widgets expose a context menu for visible items and control/indicator
 switching. The menu groups role and structure commands separately from Numeric
 configuration. **Change to Array** replaces the scalar widget with a typed
 Array that embeds the same Numeric template and representation.
+
+**Visible Items > Radix** and **Show Radix** in the numeric settings control
+the same display state. The radix selector changes the displayed base, preserving
+the numeric value and representation. Converting a Color Box to a Numeric uses
+**U32**, selects hexadecimal and shows the radix automatically.
+
+## Color Box
+
+Color Box can be created directly from the Numeric palette. Its current rendering
+is a colored square with fixed dimensions on the Front Panel and Block Diagram.
+It has no resize handles or resize actions. The placement preview uses the same
+square colored rendering as the placed element. This replaces the earlier
+resize-following behavior. See the [development checkpoint](../reference/development-checkpoint.md)
+for the local implementation and validation status.
 
 ### Data Entry
 
@@ -92,7 +110,7 @@ than retained as private Studio preferences. Applying new settings does not
 rewrite the value already displayed. Programmatic Diagram/runtime writes bypass
 Data Entry policy and remain governed by the numeric representation contract.
 
-The explicit `.frog` form is:
+The Studio authoring draft records these Data Entry properties as:
 
 ```json
 {
@@ -219,8 +237,9 @@ Array terminal when the widget is encapsulated, and any bound Interface Map
 terminal immediately. Terminal and binding colors follow the selected numeric
 family. Decimal uses `#B45309`.
 
-The `.frog` source records the compact value type together with the explicit
-representation contract, for example:
+The Studio authoring draft records the compact value type and representation
+metadata using the following fields. This snippet is not the public canonical
+source envelope described by the FROG specification:
 
 ```json
 {

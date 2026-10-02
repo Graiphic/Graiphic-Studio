@@ -1,6 +1,6 @@
 # Interface Map
 
-The Interface Map is the square representation in the Front Panel chrome. It
+The Interface Map is the slot representation in the Front Panel chrome. It
 shows the public `.frog` interface layout without turning that layout into
 hidden runtime behavior.
 
@@ -8,7 +8,7 @@ hidden runtime behavior.
 
 ## Vocabulary
 
-- **Interface Map** is the square showing public interface slots.
+- **Interface Map** is the rectangle showing public interface slots.
 - **Interface Layout Pattern** is the selected distribution of those slots.
 - **Front Panel binding** is the explicit link between a widget value and a public port.
 - **interface_input** and **interface_output** are the future Diagram projections of public ports.
@@ -47,7 +47,48 @@ removed when the new pattern has fewer available slots.
 Add Terminal and Remove Terminal choose the next compatible capacity while
 preserving bindings within that limit.
 
+## Custom Layouts
+
+Choose **Create...** or **Modify...** in the Custom pattern menu to open
+**Custom Pattern**, set a width and height between 32 and 1024 logical pixels
+and arrange your own perimeter slots. The icon size selector controls the
+document icon; it is not the pattern creation action.
+
+Drag a numbered binding onto a striped green zone. Red zones mark insufficient
+spacing or a corner exclusion. The pointer is an interaction hand on hover and
+a closed hand only while dragging. Invalid drops keep the previous position.
+
+**Bindings** shows the active count. Increasing it uses available space without
+moving existing bindings; it stops when no further placement is possible.
+Use the minus action on a binding to remove that slot, or **Reset** to restore
+the layout from when the dialog opened. **Cancel** discards the dialog changes.
+Removing an assigned slot also clears its association when the edit is applied;
+it does not transfer that association to a different slot.
+
+Click the Custom map to assign Front Panel widgets in the numbered binding
+dialog. Controls provide inputs and indicators provide outputs. Unlike the
+standard direct rebinding gesture, that dialog rejects duplicate assignments;
+choose **Unassigned** explicitly when clearing an association.
+
+The following Studio 0.0.3.161 capture shows a Custom 40 × 40 document. The map
+and icon use the available toolbar preview area; the label retains the actual
+40 × 40 dimensions.
+
+![Custom 40 by 40 map and icon in the toolbar](../../assets/screenshots/icon-editor/custom-40x40-toolbar.png)
+
+Size, slot identities, explicit positions and disabled slots are saved in the
+document. See [Custom Binding Persistence](../reference/custom-bindings.md) for
+the exact fields and supported descriptor versions.
+
 ## Swap And Disconnect
+
+The current Custom menu uses **Create...** for a new pattern and **Modify...**
+for an existing custom pattern; both open **Custom Pattern**. **Saved Pattern**
+opens the saved-pattern list. In that dialog, **Save** writes the current pattern
+and keeps the dialog open without applying it. **Save Apply** saves, applies and
+closes. Saving/validation errors keep the dialog open. These recent changes and
+their qualification limits are recorded in the
+[development checkpoint](../reference/development-checkpoint.md).
 
 After selecting a bound slot, hold `Ctrl` over another slot to enter Swap mode.
 Swap works between two occupied slots and between an occupied and empty slot.
@@ -61,7 +102,10 @@ The selected pattern and bindings are explicit `.frog` data. The Interface Map
 is an editor for that data, not an invisible execution mechanism. The Diagram
 remains the authoritative executable graph.
 
-The selected layout is stored at document level:
+The selected layout is stored at document level. The fragments below describe
+Studio's saved authoring data. The current writer uses `frog.document.draft`;
+its `.frog` extension does not establish canonical source conformance. See
+[Document Model](../reference/document-model.md) for the format boundary.
 
 ```json
 "interface": {

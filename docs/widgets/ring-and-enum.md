@@ -41,5 +41,10 @@ same magnetic default anchor as other core widgets.
 
 ## Binding
 
-Both families bind as integer-backed values. Control variants bind toward
-public inputs; indicators bind from public outputs.
+Ring binds as a numeric value. Enum also carries its domain and complete ordered
+definition, including enumerator names and numeric values; integer storage alone
+does not make two Enum definitions compatible. The current implementation diagnoses
+different definitions rather than silently treating them as the same numeric type.
+Control variants bind toward public inputs; indicators bind from public outputs.
+See the [development checkpoint](../reference/development-checkpoint.md) for
+current qualification and source/runtime limits.

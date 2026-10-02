@@ -22,11 +22,13 @@ repository explains those features from the user's point of view.
 - [Function Navigator](docs/interface/function-navigator.md)
 - [Interface Map](docs/interface/interface-map.md)
 - [Icon Editor](docs/interface/icon-editor.md)
+- [Custom Binding Persistence](docs/reference/custom-bindings.md)
 - [Selection Pane](docs/interface/selection-pane.md)
 - [Arrange and Resize](docs/interface/arrange-and-resize.md)
 - [Color Tools](docs/interface/color-tools.md)
 - [Widgets](docs/widgets/index.md)
 - [Array Container](docs/widgets/array-container.md)
+- [Error Cluster](docs/widgets/error-cluster.md)
 - [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
 - [Glossary](docs/reference/glossary.md)
 
@@ -66,6 +68,11 @@ assets/
 
 Graiphic Studio is under active development. The documentation distinguishes
 implemented Studio behavior from runtime-facing work that is still evolving.
+
+The [2 October development checkpoint](docs/reference/development-checkpoint.md)
+records local delivery 0.0.4.044, recent editing changes and the current validation
+limits. Tests remain paused and the last complete gate failed; local compilation
+and committed/main publication are separate states.
 Screenshots are captured from the native Windows target or an official FROG
 runtime example and updated when a visible workflow changes.
 

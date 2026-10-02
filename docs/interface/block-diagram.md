@@ -11,7 +11,7 @@ data movement.
 
 The Diagram uses a solid theme-coordinated background. It deliberately has no
 editing grid. Hold the middle mouse button to pan. Diagram zoom is limited to
-`60%` through `130%`; clicking either the zoom icon or percentage opens the
+`60%` through `150%`; clicking either the zoom icon or percentage opens the
 same menu below the status bar control.
 
 Horizontal and vertical scrollbars appear when zoom or authored content extends
@@ -65,6 +65,9 @@ Double-click an empty Diagram area to create a comment. Comments are
 source-owned annotations rather than widgets. Their temporary selection frame
 exists only to move, resize, format, or delete the text.
 
+While editing a comment, the main Enter inserts a line break. Keypad Enter or a
+click outside commits it. The two Enter keys have distinct actions.
+
 Images can be pasted onto the Diagram as explicit visual objects. They remain
 non-executable unless a separate node contract gives them semantics.
 
@@ -87,6 +90,22 @@ Diagram objects and participate in Diagram undo/redo.
 
 Operations and comments expose only commands relevant to those objects. The
 Diagram never infers execution semantics from an icon color or selection state.
+
+Right-clicking a wire offers **Create > Constant / Control / Indicator** and the
+direct **Create Constant / Create Control / Create Indicator** actions. Creation
+preserves the complete wire type, including Enum definitions, ordered cluster
+fields and array rank. Constants are placed on the Diagram; controls/indicators
+are placed on the Front Panel with their corresponding Diagram terminal.
+Automatic connection respects the owning sub-diagram and preserves existing
+connections. Constant/Control remain available on an already sourced wire but
+are created unwired when connecting would add a second source. An indicator
+branches from the existing source when compatible.
+
+Selecting a structure includes its nested contents for selection operations.
+Iterator and conditional terminals can be selected by partial overlap with their
+visible bounds. A multiple Delete is one logical action and one Undo restores
+the removed selection. See the [development checkpoint](../reference/development-checkpoint.md)
+for the current local qualification limits.
 
 ## What Is Saved
 

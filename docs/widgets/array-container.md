@@ -111,9 +111,41 @@ Use **Change to Indicator** or **Change to Control** on the Array to switch the
 container role. Its Diagram terminal changes read/write posture without
 changing the element type.
 
+## Boolean Constants On The Block Diagram
+
+The following behavior was prepared on 19 September 2026. Its original evidence
+belongs to that dated lot. The current local delivery and qualification limits
+are in the [development checkpoint](../reference/development-checkpoint.md);
+the earlier 0.0.3.174 version is not the current executable.
+
+A click inside a Boolean Array Constant cell toggles **False/True**, including
+rapid repeated clicks and clicks while the Array is selected. The narrow cell
+border selects the element and starts its extraction gesture. The surrounding
+Array frame selects or moves the complete container. Hover uses the interaction
+pointer; the closed hand is used when holding an element to drag it.
+
+After extraction, inserting a constant back into the empty Array preserves its
+displayed row/column counts, orientation and iterator-column width. The complete
+grid and iterator stack determine the frame size, keeping every index accessible.
+The existing extraction rule still clears the Array's element type and stored
+values; the extracted constant carries the selected cell's value. This layout
+correction does not change that rule or the `.frog` format.
+
 ## Runtime Contract
 
-The Studio edits source-owned dimensions, shape, values, visible counts,
-indices, template properties, and instance styling. The runtime consumes that
-same Array value and applies the behavior demonstrated by the reference
-examples; the editor does not invent a second array model for display purposes.
+Studio edits dimensions, shape, values, visible counts, indices and template
+properties. A supported runtime must consume the declared array value and rank
+through its source/profile contract. Editor rendering alone does not establish
+runtime support for every nested element type or dimension.
+
+## Element Gap And Widest Sizing
+
+**Add Element Gap** enables spacing between repeated cells; the menu then offers
+**Remove Element Gap**. **Size to Widest Element** measures the widest content and
+resizes the shared element template with a small margin. It is a one-shot action:
+after changing a value, invoke it again to update the width. It does not enable an
+automatic Size to Text mode or change the array's values, rank or logical order.
+
+Nested arrays inside a cluster in an array of clusters retain cell editing.
+The edited cell updates the correct parent element rather than the shared
+template or another row. Current qualification limits remain in the checkpoint.

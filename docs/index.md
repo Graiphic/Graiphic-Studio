@@ -36,15 +36,19 @@ the source being produced, define an Interface Map, and edit the project icon.
 - [String and Path](docs/widgets/string-and-path.md)
 - [Ring and Enum](docs/widgets/ring-and-enum.md)
 - [Array Container](docs/widgets/array-container.md)
+- [Error Cluster](docs/widgets/error-cluster.md)
 - [Image Static](docs/widgets/image-static.md)
 - [Label](docs/widgets/label.md)
 
 ## Reference
 
+- [Development checkpoint and qualification limits](docs/reference/development-checkpoint.md)
+
 - [Glossary](docs/reference/glossary.md)
 - [Screenshot Guide](docs/reference/screenshot-guide.md)
 - [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
 - [Document Model](docs/reference/document-model.md)
+- [Custom Binding Persistence](docs/reference/custom-bindings.md)
 
 ## Documentation Philosophy
 

@@ -15,6 +15,12 @@ source/runtime-driven value without mouse mutation.
 Boolean widgets are command-style controls by default. They can be switched to
 indicators.
 
+The current default keeps Boolean state text hidden. The widget label is a
+separate visible item. Boolean constants in clusters, including error constants,
+use compact logical bounds for layout and selection instead of reserving the
+larger text-button footprint. See the [development checkpoint](../reference/development-checkpoint.md)
+for the local delivery and remaining qualification.
+
 Current visual forms:
 
 - Square LED
