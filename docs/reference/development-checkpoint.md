@@ -1,13 +1,13 @@
 # Development checkpoint — 2 October 2026
 
 The current local Graiphic Studio delivery is **0.0.4.047**. Its executable was
-compiled, signed and checked against the Desktop shortcut. The last integrated
-Studio `main` commit is `f7dbb93` (29 September); later local corrections are not
-represented by that commit alone.
+compiled, signed and checked against the Desktop shortcut. Studio `main` is
+published at `314c338d41a6633b891b9e28271a88afa635981f` (2 October), verified
+against the remote. It contains the accumulated editor and contour corrections.
 
 Regression tests remain paused. The last complete attempt failed on **0.0.3.935**:
-**300/403 passed, 103 failed**. Recent behavior below is implemented locally;
-compilation does not establish completed functional or visual qualification.
+**300/403 passed, 103 failed**. Recent behavior below is implemented and published;
+compilation and publication do not establish completed functional or visual qualification.
 Existing screenshots belong to their dated captures, not a new UI review.
 
 ## Aggregates and text
