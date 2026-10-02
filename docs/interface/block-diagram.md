@@ -117,6 +117,10 @@ branches from the existing source when compatible.
 
 Selecting a structure includes its nested contents for selection operations.
 
+Adding a **Wire Label** immediately selects all of its displayed text, ready
+for replacement by typing or paste. Enter or a click outside commits the edit;
+Escape cancels it. The initial hint remains temporary if no text is entered.
+
 **Subdiagram Label** starts at a compact **11 pt**, with the same font while
 displayed and edited. Its default size stays compact when the general document
 text preference changes. An explicitly chosen size is preserved through
