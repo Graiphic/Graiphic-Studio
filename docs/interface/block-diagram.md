@@ -44,6 +44,10 @@ the SVG, not a rectangular Front Panel aura. Its geometry and animation are
 identical in both themes: white on the dark Diagram and dark anthracite on the
 light Diagram so selection remains visible without changing the operation SVG.
 
+Right-clicking a function binding opens its menu without selecting the function.
+An existing left-button selection is retained. Connection points remain visible
+while the binding menu is open and return to ordinary hover behavior when it closes.
+
 ### Extensible Addition
 
 Hover an Addition operation to reveal its connection points and the resize
@@ -73,7 +77,7 @@ non-executable unless a separate node contract gives them semantics.
 
 ## Context Commands
 
-The context menu depends on the selected Diagram object. Widget terminals
+The context menu depends on the Diagram object under the pointer. Widget terminals
 provide commands such as:
 
 - **Visible Items > Label**

@@ -1,9 +1,10 @@
 # Development checkpoint — 2 October 2026
 
-The current local Graiphic Studio delivery is **0.0.4.047**. Its executable was
+The current local Graiphic Studio delivery is **0.0.4.051**. Its executable was
 compiled, signed and checked against the Desktop shortcut. Studio `main` is
-published at `314c338d41a6633b891b9e28271a88afa635981f` (2 October), verified
-against the remote. It contains the accumulated editor and contour corrections.
+published at `a75ab2011ee4c9f0fdf2f1d6a4525b0fe0dfd78e` (2 October), verified
+against the remote. It contains the accumulated editor and contour corrections
+and the subsequent binding context-menu correction.
 
 Regression tests remain paused. The last complete attempt failed on **0.0.3.935**:
 **300/403 passed, 103 failed**. Recent behavior below is implemented and published;
@@ -41,6 +42,10 @@ offset, including intrinsic SVGs, extended functions, Array/Matrix and Cluster
 functions, and Frog calls. Normal and locked selection share the geometry.
 Widget placement bands remain a separate contract. This supersedes the former
 external function-selection gap from 2 October 2026.
+
+Right-clicking a binding opens its menu without adding selection or an aura.
+The existing left-button selection is retained. Connection points remain visible
+while the binding menu is open, then return to ordinary hover behavior on close.
 
 Wire context creation offers nested and direct Constant/Control/Indicator actions.
 It carries the complete type and owning sub-diagram, preserves existing connections
