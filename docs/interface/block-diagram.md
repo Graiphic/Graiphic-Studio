@@ -9,9 +9,11 @@ data movement.
 
 ## Canvas And Navigation
 
-For Loop containers keep their theme-coordinated interior. Their contour,
-folded corner and default inner frame are dark gray (#575756) in Light mode
-and off-white (#F8FAFC) in Dark mode for clear separation. Custom body and
+For Loop containers keep their interior close to the general Diagram background,
+using a subtle 10% tint and respecting document background overrides. Their contour,
+folded corner and default inner frame are dark gray (#575756) on a light Diagram
+and off-white (#F8FAFC) on a dark Diagram. Rear-sheet traces use dark gray
+(#374151) on the dark Diagram to distinguish each light backing layer. Custom body and
 inner-frame colors remain preserved. This structure chrome rule is separate
 from the fixed function-icon artwork described below.
 
@@ -22,6 +24,18 @@ same menu below the status bar control.
 
 Horizontal and vertical scrollbars appear when zoom or authored content extends
 beyond the visible viewport. View navigation never changes executable meaning.
+
+Moving connected elements adapts wire ends continuously from the route captured
+at the start of the gesture. Aligned simple links remain straight; returning to
+alignment removes unnecessary bends. Moving both ends translates their common
+wire, while other branches keep their connections. Selected wires and structure
+terminals move together under the structure's placement constraints, at the
+mouse or keyboard. Shared endpoints are updated once. One Undo restores the group.
+
+Moving a connected constant or control across structure boundaries creates the
+required typed tunnels, including nested boundaries, in that same Undo action.
+The [development checkpoint](../reference/development-checkpoint.md) records
+the current qualification limits.
 
 ## Widget Terminals
 
@@ -53,6 +67,11 @@ indicator is a restrained animated dashed contour derived from the exterior of
 the SVG, not a rectangular Front Panel aura. Its geometry and animation are
 identical in both themes: white on the dark Diagram and dark anthracite on the
 light Diagram so selection remains visible without changing the operation SVG.
+
+True/False constants likewise select along their capsule border and rounded
+ends, using the same cropped artwork as their body. Their logical placement
+rectangle is not the selection contour. This applies to standalone values and
+fields inside nested Clusters, including locked selection.
 
 Right-clicking a function binding opens its menu without selecting the function.
 An existing left-button selection is retained. Connection points remain visible
@@ -86,6 +105,17 @@ Images can be pasted onto the Diagram as explicit visual objects. They remain
 non-executable unless a separate node contract gives them semantics.
 
 ## Context Commands
+
+Function hover reveals filled, type-colored circles for each unconnected
+terminal. Connecting that terminal hides its circle while leaving free peers
+visible; disconnecting its last wire restores it. Attached ends of broken wires
+also hide their circles. Hover labels and connection hit areas remain available
+on connected ports. This applies to the common port renderer across functions.
+
+In **Reorder Controls in Cluster**, the toolbar shows larger Accept/Cancel
+actions, the target index and its arrows. Highlight Execution, speed and Step
+are hidden on that window until the preview is accepted or cancelled. The normal
+toolbar is restored with its current enabled states afterward.
 
 The context menu depends on the Diagram object under the pointer. Widget terminals
 provide commands such as:

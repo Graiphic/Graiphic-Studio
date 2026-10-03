@@ -26,6 +26,23 @@ All cells in one Array use the same embedded widget template. Resizing the
 template changes the cell size; resizing the Array changes how many rows and
 columns are visible.
 
+An embedded element can also be dragged directly to another compatible
+container, without first dropping it on the Diagram. The destination shows a
+fixed aura while the grab point is in an accepted, visible region. The source
+remains intact until release; leaving the region removes the destination aura.
+An untyped Array accepts a supported template. A Cluster, including the shared
+Cluster composition of an Array of Clusters, accepts a new field. Arrays cannot
+directly contain Arrays; use a Cluster for that composition.
+
+The transfer preserves the captured selected-cell value, complete Enum
+definition, Cluster composition and nested Array data. Other fields retain
+their values in all source cells, and existing destination cells retain their
+own values when the new field is inserted. Removing the whole template leaves
+the source Array empty and untyped. The target keeps its identity and owning
+Diagram region; source Array wires retain their identity and undergo normal
+type validation. Existing restrictions on adopting into a wired typed Diagram
+Array still apply. One Undo restores both containers. Escape cancels the preview.
+
 For widget-backed cells, the cell envelope is the contained widget's
 `placement_bounds`. Array does not add a second padding skin around it. Cell
 hover and selection belong to Array, while keyboard focus remains owned by the
@@ -149,3 +166,18 @@ automatic Size to Text mode or change the array's values, rank or logical order.
 Nested arrays inside a cluster in an array of clusters retain cell editing.
 The edited cell updates the correct parent element rather than the shared
 template or another row. Current qualification limits remain in the checkpoint.
+
+Each expanded nested element keeps its own dimensions and local coordinates.
+Enlarging an enclosing Array or Cluster must not stretch its selection frame or
+in-place editor. Internal Arrays can change their visible-cell counts and shared
+appearance independently. Cluster None keeps manual bounds; Size to Fit follows
+child enlargement and reduction. A child resize previews the change and commits
+one Undo action; its design stays consistent across the cells while their values
+remain distinct. See the checkpoint for the current validation results.
+
+Selection and value routing follow complete field identities and indices through
+every container. The editor does not impose the former 32-level ceiling.
+Private Studio draft/widget JSON uses a worklist for deep authored trees; the
+public FROG source profile is unchanged. Existing resource budgets still apply.
+An edit exceeding the stored Widget-cell budget must leave the Array unchanged,
+rather than save a value that cannot be read back.

@@ -20,8 +20,8 @@ editing it immediately.
 
 ## Enum
 
-Enum presents a finite named set and follows the same default sizing and
-increment/decrement layout as Ring. Enum values use integer storage, while the
+Enum presents a finite named set with permanent automatic Size to Text and the
+same increment/decrement layout as Ring. Enum values use integer storage, while the
 displayed item text remains user-facing.
 
 Click the center of an Enum Control to open its popup list. Drag the surrounding
@@ -35,9 +35,12 @@ or right. Its rules match Numeric: the pair is linked, compact, and optional.
 
 ## Resize And Label
 
-Ring and Enum resize horizontally. Their value area remains interactive after
-resizing, while the outside body stays available for moving. Labels use the
-same magnetic default anchor as other core widgets.
+Ring can resize horizontally. Enum fits the selected item automatically,
+growing or shrinking after item, font, size or style changes. Measurement includes
+the dropdown arrow and a small margin; manual resize and a Size to Text command
+are unnecessary. The value area stays interactive and the surrounding body is
+available for moving. Labels use the same magnetic default anchor as other core
+widgets. Array viewport dimensions remain a separate setting.
 
 ## Binding
 

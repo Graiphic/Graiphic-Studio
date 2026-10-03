@@ -23,6 +23,14 @@ without offering input interaction.
 
 ## Resize
 
+Scalar Numeric constants on the Block Diagram use permanent **Size to Text**.
+Their default value font is **11 pt**, independently of the document label
+font. Value and font changes fit both dimensions, growing or shrinking to the
+measured text with a small margin and space for a visible radix. This applies
+inside clusters too. These constants have no manual resize handles or Size to
+Text command. Explicit value fonts remain preserved. Array viewport resizing
+and the fixed Color Box are separate behaviors.
+
 Numeric widgets resize horizontally. The label follows its default anchor while
 it remains anchored.
 

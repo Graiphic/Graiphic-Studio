@@ -6,8 +6,10 @@ compatibility boundary.
 
 ## Which `.frog` Format?
 
-Studio's current authoring writer saves `"format": "frog.document.draft"` with
-`"draft_revision": 2`. A `.frog` extension alone does not identify canonical
+Studio's default Readable authoring writer saves `"format": "frog.document.draft"`
+with `"draft_revision": 2`. Opt-in Automatic/Compact numeric storage uses private
+revision 3; see [FROG Properties](../interface/frog-properties.md). A `.frog`
+extension alone does not identify canonical
 FROG source, whose envelope uses `spec_version`. These version numbers are
 independent from Custom layout descriptor versions.
 
@@ -41,6 +43,9 @@ custom_v3_W_H_N_P1_P2_..._PN
 ```
 
 - `W` and `H` are logical diagram dimensions, each from 32 through 1024.
+  This is the legacy descriptor reader's range. Current Custom authoring accepts
+  at most 128 px per side; larger existing descriptors can be read and preserved
+  without silently rewriting their dimensions.
 - `N` is the number of stable slot identities, from 2 through 252. It includes
   disabled slots. It is not necessarily the active count shown by **Bindings**.
 - `v1` uses the automatic layout and enables every slot.

@@ -50,18 +50,26 @@ preserving bindings within that limit.
 ## Custom Layouts
 
 Choose **Create...** or **Modify...** in the Custom pattern menu to open
-**Custom Pattern**, set a width and height between 32 and 1024 logical pixels
+**Custom Pattern**, set a width and height between 32 and 128 logical pixels
 and arrange your own perimeter slots. The icon size selector controls the
 document icon; it is not the pattern creation action.
 
 Drag a numbered binding onto a striped green zone. Red zones mark insufficient
 spacing or a corner exclusion. The pointer is an interaction hand on hover and
-a closed hand only while dragging. Invalid drops keep the previous position.
+a closed hand only while dragging. The associated rectangle uses the theme's
+selection fill during the drag. Invalid drops keep the previous position.
+
+Hover just outside a free edge to reveal **+** and a future binding at 30%
+opacity. Click + to add it at the shown position. Existing binding identities
+and positions are preserved; spacing/corner rules and capacity still apply.
+Hovering alone does not change the document.
 
 **Bindings** shows the active count. Increasing it uses available space without
 moving existing bindings; it stops when no further placement is possible.
 Use the minus action on a binding to remove that slot, or **Reset** to restore
-the layout from when the dialog opened. **Cancel** discards the dialog changes.
+the layout from when the dialog opened. The single page has **OK**, **Cancel**
+and a title close button. **OK** validates, saves the named pattern, applies it
+and closes. **Cancel** or title close discards the draft without saving it.
 Removing an assigned slot also clears its association when the edit is applied;
 it does not transfer that association to a different slot.
 
@@ -84,9 +92,11 @@ the exact fields and supported descriptor versions.
 
 The current Custom menu uses **Create...** for a new pattern and **Modify...**
 for an existing custom pattern; both open **Custom Pattern**. **Saved Pattern**
-opens the saved-pattern list. In that dialog, **Save** writes the current pattern
-and keeps the dialog open without applying it. **Save Apply** saves, applies and
-closes. Saving/validation errors keep the dialog open. These recent changes and
+opens the saved-pattern list. The editing dialog concentrates on the Custom
+content without category navigation. Saving/validation errors keep it open
+and preserve its draft. Existing larger descriptors remain readable; opening
+and cancelling them does not resize their saved icon. Newly accepted edits
+must fit within 128 px. These recent changes and
 their qualification limits are recorded in the
 [development checkpoint](../reference/development-checkpoint.md).
 

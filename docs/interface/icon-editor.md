@@ -15,7 +15,7 @@ preview visible in one workspace.
 ## Canvas And Preview
 
 The size selector offers 40 × 40, 60 × 40, 40 × 60, 60 × 60, and **Custom...**.
-Custom allows 32 to 1024 logical pixels per side and a configurable binding
+Custom authoring allows 32 to 128 logical pixels per side and a configurable binding
 layout. Its striped tile identifies the custom format.
 
 ![Icon size selector with four presets and striped Custom tile](../../assets/screenshots/icon-editor/canvas-size-presets.png)

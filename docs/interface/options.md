@@ -58,6 +58,12 @@ coordinated light editor and gutter with syntax colors chosen for contrast;
 scrollbars and widget outlines follow the same profile rather than retaining
 dark-only colors.
 
+Toolbar icons retain the same shapes in both themes. Their monochrome ink
+follows the interface and button state, including disabled Highlight Execution,
+speed and Step. A lit bulb uses dark amber on a light button and light amber on
+a dark button so its active state stays readable. This interface rule is separate
+from the invariant artwork of Block Diagram functions.
+
 ![Light theme preview](../../assets/screenshots/options/appearance-light-preview.png)
 
 Theme colors are profile-based rather than embedded in individual windows.
@@ -115,6 +121,9 @@ The selected theme, interface language, interface font size, Front Panel grid
 defaults, Icon Editor background, and glyph-folder list are Studio preferences.
 They do not become hidden runtime behavior and do not replace source-owned
 `.frog` document properties.
+
+Choose array storage for the current document in
+[FROG Properties > Storage](frog-properties.md), rather than in Studio Options.
 
 The reset icon in the Options header restores Studio preferences to their
 defaults without changing the current document's authored widgets, Diagram, or

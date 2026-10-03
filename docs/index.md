@@ -17,6 +17,7 @@ the source being produced, define an Interface Map, and edit the project icon.
 - [Block Diagram](docs/interface/block-diagram.md)
 - [Source View](docs/interface/source-view.md)
 - [Studio Options](docs/interface/options.md)
+- [FROG Properties and Array Storage](docs/interface/frog-properties.md)
 - [Widget Navigator](docs/interface/widget-navigator.md)
 - [Function Navigator](docs/interface/function-navigator.md)
 - [Interface Map](docs/interface/interface-map.md)
