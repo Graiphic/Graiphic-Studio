@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-visual-standard="capsule-straight-40x20" data-frog-shape-standard="capsule-straight">
+  <title id="title">Implique</title>
+  <g shape-rendering="geometricPrecision">
+    <path d="M1 12.5 H41.825 C44.683 12.5 47 14.817 47 17.675 V30.325 C47 33.183 44.683 35.5 41.825 35.5 H1 Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M12.12 19.73h13.11v-2.67l10.65 6.95-10.65 6.95v-2.67H12.12Z" fill="#F8FAFC" />
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Constante énum</title>
+  <g shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="16" width="40" height="17" rx="4" fill="#F7F7F7" stroke="#3188EA" stroke-width="2"/><path d="M7.5 24.5 12.5 20v9Zm11.5 0L14 20v9Z" fill="#3188EA"/><text x="30.5" y="25" fill="#252B31" font-family="Segoe UI, Arial, sans-serif" font-size="7.2" font-weight="700" font-style="normal" text-anchor="middle" dominant-baseline="middle" letter-spacing="0">Enum</text>
+  </g>
+</svg>

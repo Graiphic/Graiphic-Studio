@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-visual-standard="logic-gate-40x24">
+  <title id="title">ET</title>
+  <g shape-rendering="geometricPrecision">
+    <path d="M6.5 12H21c10.3 0 18.5 5 18.5 12S31.3 36 21 36H6.5V12Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M15.8 28.8l5.2-9.6 5.2 9.6" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+</svg>

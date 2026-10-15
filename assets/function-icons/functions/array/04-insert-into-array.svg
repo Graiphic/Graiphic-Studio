@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #4b5563;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-2, .cls-6, .cls-7, .cls-8 {
+        stroke: #f8fafc;
+      }
+
+      .cls-3, .cls-7 {
+        fill: none;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        stroke-width: .76px;
+      }
+
+      .cls-4, .cls-5, .cls-2, .cls-6, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-8 {
+        fill: #112236;
+      }
+
+      .cls-5 {
+        fill: #aab4c0;
+      }
+
+      .cls-5, .cls-2 {
+        stroke-width: .87px;
+      }
+
+      .cls-6 {
+        stroke-width: 1.01px;
+      }
+
+      .cls-6, .cls-9 {
+        fill: #f8fafc;
+      }
+
+      .cls-7 {
+        stroke-dasharray: .85 1.69;
+      }
+
+      .cls-8 {
+        stroke-width: .88px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+      <g>
+        <rect class="cls-5" x="12.44" y="14.72" width="5.24" height="5.24" />
+        <rect class="cls-5" x="7.2" y="14.72" width="5.24" height="5.24" />
+        <rect class="cls-5" x="12.44" y="9.47" width="5.24" height="5.24" />
+        <rect class="cls-5" x="7.2" y="9.47" width="5.24" height="5.24" />
+      </g>
+      <g>
+        <rect class="cls-2" x="9.82" y="12.09" width="5.24" height="5.24" />
+        <rect class="cls-2" x="4.57" y="12.09" width="5.24" height="5.24" />
+        <rect class="cls-2" x="9.82" y="6.85" width="5.24" height="5.24" />
+        <rect class="cls-2" x="4.57" y="6.85" width="5.24" height="5.24" />
+      </g>
+      <g>
+        <rect class="cls-5" x="37.57" y="19.96" width="5.24" height="5.24" />
+        <rect class="cls-5" x="32.33" y="19.96" width="5.24" height="5.24" />
+        <rect class="cls-5" x="37.57" y="14.72" width="5.24" height="5.24" />
+        <rect class="cls-5" x="32.33" y="14.72" width="5.24" height="5.24" />
+        <rect class="cls-5" x="37.57" y="9.47" width="5.24" height="5.24" />
+        <rect class="cls-5" x="32.33" y="9.47" width="5.24" height="5.24" />
+      </g>
+      <g>
+        <rect class="cls-2" x="34.95" y="17.34" width="5.24" height="5.24" />
+        <rect class="cls-2" x="29.7" y="17.34" width="5.24" height="5.24" />
+        <rect class="cls-2" x="34.95" y="6.85" width="5.24" height="5.24" />
+        <rect class="cls-2" x="29.7" y="6.85" width="5.24" height="5.24" />
+        <rect class="cls-8" x="29.7" y="12.09" width="5.24" height="5.24" />
+        <rect class="cls-8" x="34.95" y="12.09" width="5.24" height="5.24" />
+      </g>
+      <rect class="cls-6" x="4.57" y="25.44" width="6.67" height="5.5" />
+      <rect class="cls-4" x="6.18" y="35.86" width="5.97" height="5.97" />
+      <rect class="cls-4" x="12.15" y="35.86" width="5.97" height="5.97" />
+      <g>
+        <line class="cls-3" x1="9.7" y1="27.91" x2="10.2" y2="27.91" />
+        <path class="cls-7" d="M11.9,27.91h2.15c.62,0,1.13-.51,1.13-1.13v-.31" />
+        <line class="cls-3" x1="15.17" y1="25.62" x2="15.17" y2="25.12" />
+        <polygon class="cls-9" points="16.92 25.63 15.17 22.61 13.42 25.63 16.92 25.63" />
+      </g>
+    </g>
+  </g>
+</svg>

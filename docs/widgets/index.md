@@ -1,58 +1,54 @@
 # Widgets
 
-Widgets are the reusable visual elements placed on the Front Panel.
+Choose a Control to supply a value, an Indicator to display a result, or a
+visual element to explain the interface. The Widget Navigator places them on
+the Front Panel and projects participating values into typed Diagram terminals.
 
-A widget may be a control or an indicator:
+## Choose a widget
 
-- A control provides a value to the program or public interface.
-- An indicator displays a value produced by the program or public interface.
+| Need | Widget guide |
+| --- | --- |
+| Enter or display numbers; choose a representation | [Numeric](numeric.md) |
+| Enter or display True/False | [Boolean and Text Button](boolean-and-button.md) |
+| Enter text or a filesystem path | [String and Path](string-and-path.md) |
+| Choose from named items | [Ring and Enum](ring-and-enum.md) |
+| Edit a timestamp | [Timestamp](timestamp.md) |
+| Repeat one element type | [Array](array-container.md) |
+| Combine fields of different types | [Cluster](cluster.md) |
+| Carry status, code, and error source | [Error Cluster](error-cluster.md) |
+| Inspect a Variant payload | [Variant](variant.md) |
+| Display a U32 pixel array | [Picture Display](picture-display.md) |
+| Display a numeric dataset as plots | [Waveform Graph](waveform-graph.md) |
+| Place a decorative image | [Image Static](image-static.md) |
+| Add explanatory text | [Label](label.md) |
 
-Widget labels are separate from widget value text.
+## Shared behavior
 
-Controls can bind to public inputs. Indicators can bind to public outputs. The
-role is a source-level property and can be changed from a widget context menu
-where the widget supports both roles.
+A widget's label is separate from its value text. Move a detached label back
+near its default anchor to reconnect it. Most widgets support visibility,
+selection, locking, context menus, and undoable layout/appearance changes.
+Resize behavior depends on the type: some values fit their text automatically,
+while Arrays expose a viewport and repeated cell template.
 
-## Current Core Widgets
+A locked widget rejects design edits while retaining its admitted value behavior.
+A hidden widget stays in the document and [Selection Pane](../interface/selection-pane.md).
 
-- [Numeric](numeric.md)
-- [Boolean and Text Button](boolean-and-button.md)
-- [String and Path](string-and-path.md)
-- [Ring and Enum](ring-and-enum.md)
-- [Array Container](array-container.md)
-- [Error Cluster](error-cluster.md)
-- [Variant](variant.md)
-- [Image Static](image-static.md)
-- [Label](label.md)
+## Roles and bindings
 
-## Where Widget Defaults Come From
+Controls publish values to the graph; Indicators receive values. Use the
+object's context menu to change its role where supported. For public interface
+bindings, Controls connect toward inputs and Indicators from outputs. The
+[Interface Map](../interface/interface-map.md) arranges those ports visually.
 
-Graiphic Studio consumes the public FROG Default realization package for each
-integrated widget family. The `.wfrog` manifest supplies role-specific initial
-properties and references the semantic SVG skin. The `.frog` document stores
-the widget identity, placement, value, binding, and explicit instance
-overrides.
+## Containers and types
 
-`placement_bounds` is the authored envelope used by Studio for placement,
-hover, selection, and hit testing. The visible widget body is inset by the
-manifest's `layout.aura_band_px`; the current Default profiles use 4 px. A
-skin's `focus_ring` is keyboard-focus geometry and is not the Studio selection
-aura.
+An Array repeats one shared element design and retains distinct cell values.
+A Cluster combines ordered fields with stable identities. Moving a label or a
+field's visual position does not change its type identity. Use the container
+guides for selection, nesting, transfer, and autosizing.
 
-## Common Behavior
-
-Most widgets support:
-
-- label visibility
-- control/indicator switching where meaningful
-- resize handles
-- context menu actions
-- selection aura
-- lock/unlock protection
-- color editing when the widget exposes visual surfaces
-- undoable movement and appearance changes
-- magnetic default label anchoring
-
-Locked widgets keep their value behavior but reject layout and appearance
-editing. Hidden widgets remain in the `.frog` document and in the Selection
-Pane even though they are not drawn on the Front Panel.
+The public FROG Default realization supplies integrated widget defaults. The
+saved document records authored placement and instance overrides. Editor
+rendering does not by itself establish target-runtime support for that value.
+Read [current capabilities](../reference/development-checkpoint.md) when running
+or exchanging a document.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg data-frog-shape-standard="square" id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f8fafc;
+        fill-rule: evenodd;
+      }
+
+      .st1 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st2 {
+        fill: #008ea3;
+      }
+
+      .st3 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+  <g>
+    <polygon class="st3" points="22.72 17.96 21.62 17.15 27.64 10.05 28.74 10.86 22.72 17.96" />
+    <polygon class="st3" points="16.76 17.96 17.86 17.15 11.85 10.05 10.75 10.86 16.76 17.96" />
+    <path class="st3" d="M26.84,11.49v-5.93h6.47v5.93h-6.47ZM31.93,6.92h-3.7v3.2h3.7v-3.2Z" />
+    <path class="st3" d="M5.7,11.49v-5.93h6.47v5.93h-6.47ZM10.78,6.92h-3.7v3.2h3.7v-3.2Z" />
+    <path class="st3" d="M16.51,22.63v-5.93h6.47v5.93h-6.47ZM21.6,18.07h-3.7v3.2h3.7v-3.2Z" />
+  </g>
+  <circle class="st2" cx="33.31" cy="32.8" r="11" />
+  <polygon class="st0" points="30.55 35.82 39.58 26.8 41.06 28.28 30.55 38.8 29.81 38.05 25.55 33.79 27.04 32.31 30.55 35.82" />
+</svg>

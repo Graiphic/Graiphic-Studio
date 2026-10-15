@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .79px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke: #f8fafc;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fffffe;
+        stroke-linecap: round;
+      }
+
+      .cls-8 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-8, .cls-4 {
+        fill: #4b5563;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+        stroke-linecap: square;
+        stroke-width: .76px;
+      }
+
+      .cls-3 {
+        stroke-width: .63px;
+      }
+
+      .cls-4, .cls-6 {
+        stroke-width: .94px;
+      }
+
+      .cls-4, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        stroke-dasharray: .96 1.93;
+      }
+
+      .cls-6 {
+        fill: #323f4f;
+      }
+
+      .cls-7 {
+        stroke-width: .95px;
+      }
+
+      .cls-7, .cls-9 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-8" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" transform="translate(47.8 47.8) rotate(-180)"/>
+      <g>
+        <rect class="cls-1" x="23.23" y="22.47" width=".63" height="9.48" transform="translate(50.75 3.67) rotate(90)"/>
+        <polygon class="cls-3" points="26.57 23.82 28.73 27.03 28.84 27.21 28.73 27.39 26.57 30.59 26.11 30.23 28.14 27.21 26.11 24.19 26.57 23.82"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="23.11" y="7.89" width=".63" height="9.48" transform="translate(36.06 -10.8) rotate(90)"/>
+        <polygon class="cls-3" points="26.45 9.25 28.61 12.45 28.73 12.63 28.61 12.81 26.45 16.02 25.99 15.65 28.02 12.63 25.99 9.61 26.45 9.25"/>
+      </g>
+      <g>
+        <rect class="cls-6" x="8.4" y="5.93" width="5.64" height="5.64"/>
+        <rect class="cls-6" x="8.4" y="11.57" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="8.4" y="17.2" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="8.4" y="22.84" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="8.4" y="28.47" width="5.64" height="5.64"/>
+      </g>
+      <g>
+        <rect class="cls-6" x="33.6" y="7.48" width="5.64" height="5.64"/>
+        <rect class="cls-6" x="33.6" y="13.12" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="33.6" y="23.9" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="33.6" y="29.54" width="5.64" height="5.64"/>
+        <rect class="cls-4" x="33.6" y="35.17" width="5.64" height="5.64"/>
+      </g>
+      <rect class="cls-7" x="3.8" y="38.24" width="6.67" height="4.86"/>
+      <g>
+        <line class="cls-2" x1="3.8" y1="37.99" x2="3.8" y2="37.49"/>
+        <path class="cls-5" d="M3.8,35.56v-14.41c0-.62.51-1.13,1.13-1.13h.2"/>
+        <line class="cls-2" x1="6.09" y1="20.02" x2="6.59" y2="20.02"/>
+        <polygon class="cls-9" points="6.08 21.77 9.1 20.02 6.08 18.28 6.08 21.77"/>
+      </g>
+    </g>
+  </g>
+</svg>

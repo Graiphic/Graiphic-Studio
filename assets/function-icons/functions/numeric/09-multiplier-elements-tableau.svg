@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Multiply Array Elements</title>
+  <g shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 3.5C5.4 2.7 4 3.7 4 5.5v37c0 1.9 1.9 3 3.6 2.1l36.1-18.2c1.8-.9 1.8-3.5 0-4.4L7 3.5Z" fill="#4b5563" stroke="#aab4c0" stroke-width="1.8"/>
+    <g data-role="glyph" data-shell="triangle" transform="translate(4.7 2.9)" fill="#f8fafc">
+      <rect x="7.14" y="16.15" width="12.33" height="2.29"/>
+      <rect x="9.24" y="17.95" width="2.3" height="9.03"/>
+      <rect x="15.05" y="17.95" width="2.3" height="9.03"/>
+    </g>
+  </g>
+</svg>

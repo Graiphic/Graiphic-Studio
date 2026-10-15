@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-visual-standard="logic-gate-40x24">
+  <title id="title">NON OU</title>
+  <g shape-rendering="geometricPrecision">
+    <path d="M4 12c6.5 6.5 6.5 17.5 0 24h14.5C29.7 36 37 31.2 37 24s-7.3-12-18.5-12H4Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M18.8 19.2L24 28.8L29.2 19.2" transform="translate(-3 0)" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40.5" cy="24" r="3.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-shape-standard="fixed-constant">
+  <title id="title">Tab Constant</title>
+  <rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#F017F0" stroke="#AAB4C0" stroke-width="1.8"/>
+  <g transform="translate(-0.563 0.877)" fill="#F8FAFC" fill-rule="evenodd">
+    <polygon points="19.795,21.124 19.795,21.103 23.67,21.103 23.67,16.745 29.682,23.116 23.67,29.502 23.67,25.144 14.954,25.144 14.954,21.124"/>
+    <rect x="29.682" y="16.745" width="4.49" height="12.756"/>
+  </g>
+</svg>

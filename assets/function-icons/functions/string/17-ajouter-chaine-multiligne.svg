@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        stroke-linecap: round;
+      }
+
+      .st1, .st2 {
+        fill: none;
+        stroke: #f8fafc;
+        stroke-linejoin: round;
+        stroke-width: 2.3px;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="1" y="1" width="46" height="46" rx="4.5" ry="4.5"/>
+  <path class="st2" d="M20,9h14l7,7v23h-21V9Z"/>
+  <path class="st1" d="M34,9v7h7"/>
+  <line class="st1" x1="25" y1="24.5" x2="36" y2="24.5"/>
+  <g>
+    <line class="st1" x1="6" y1="24.5" x2="14" y2="24.5"/>
+    <path class="st1" d="M11.5,21l3.5,3.5-3.5,3.5"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" data-frog-shape-standard="capsule-conversion">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f8fafc;
+        font-family: SegoeUI-Bold, 'Segoe UI';
+        font-size: 7.5px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st1 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .st2 {
+        stroke: #f8fafc;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .st2, .st3 {
+        fill: #fffffe;
+      }
+    </style>
+  </defs>
+  <path data-frog-selection-shell="true" d="M1 12.5 H41.825 C44.683 12.5 47 14.817 47 17.675 V30.325 C47 33.183 44.683 35.5 41.825 35.5 H1 C5.907 28.6 5.907 19.4 1 12.5 Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <g transform="translate(0 -.75)">
+  <text class="st0" transform="translate(8.19 24.5)"><tspan x="0" y="0">16</tspan></text>
+  <g>
+    <rect class="st3" x="31.89" y="23.59" width="6.39" height="2.85" />
+    <rect class="st3" x="19.99" y="23.59" width="6.39" height="2.85" />
+  </g>
+  <g>
+    <path class="st2" d="M35.58,27.86c0,.18,0,.35-.04.53-.21,1.1-1.12,2.05-2.43,2.69-1.31.64-3.02.97-4.81.85-1.79-.13-3.33-.69-4.37-1.5-1.04-.81-1.58-1.86-1.37-2.96l.9.06c-.18.95.29,1.86,1.18,2.55.89.69,2.22,1.18,3.76,1.29,1.54.11,3.01-.18,4.14-.73,1.13-.55,1.91-1.37,2.09-2.32.03-.15.04-.31.04-.45" />
+    <polygon class="st2" points="24.36 28.31 23.01 27.68 21.98 28.51 21.26 28.17 22.55 27.12 22.83 26.89 23.19 27.06 24.91 27.86 24.36 28.31" />
+  </g>
+  <g>
+    <path class="st2" d="M22.11,22.17c0-.18,0-.35.04-.53.21-1.1,1.12-2.05,2.43-2.69,1.31-.64,3.02-.97,4.81-.85,1.79.13,3.33.69,4.37,1.5,1.04.81,1.58,1.86,1.37,2.96l-.9-.06c.18-.95-.29-1.86-1.18-2.55-.89-.69-2.22-1.18-3.76-1.29-1.54-.11-3.01.18-4.14.73-1.13.55-1.91,1.37-2.09,2.32-.03.15-.04.31-.04.45" />
+    <polygon class="st2" points="33.33 21.72 34.69 22.35 35.71 21.52 36.44 21.86 35.14 22.92 34.86 23.14 34.5 22.97 32.79 22.17 33.33 21.72" />
+  </g>
+  </g>
+</svg>

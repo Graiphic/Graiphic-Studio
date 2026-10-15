@@ -1,65 +1,61 @@
-# Graiphic Studio Documentation
+# Graiphic Studio documentation
 
-Welcome to the official user documentation for Graiphic Studio.
+Build an interface, connect a dataflow, and inspect one `.frog` document from
+three coordinated views. Start with a short walkthrough or open the reference
+for the object you are using.
 
-Graiphic Studio is a visual IDE for creating `.frog` documents. Its Front
-Panel, Block Diagram, and Source windows are coordinated views of the same
-program model. Users can design interfaces, build explicit dataflow, inspect
-the source being produced, define an Interface Map, and edit the project icon.
+## Start here
 
-![Graiphic Studio Front Panel](assets/screenshots/front-panel/front-panel-overview.png)
+| Your next task | Guide |
+| --- | --- |
+| Create your first document | [Getting started](getting-started.md) |
+| Move between the three windows | [Window workflow](interface/window-workflow.md) |
+| Design an interface | [Front Panel](interface/front-panel.md) and [Widgets](widgets/index.md) |
+| Place and connect operations | [Block Diagram](interface/block-diagram.md) and [Function Navigator](interface/function-navigator.md) |
+| Understand a function or wire | [Context Help](interface/context-help.md) and [Functions reference](functions/index.md) |
+| Try a supported graph | [Run and Highlight](interface/run-and-highlight.md) |
 
-## Start Here
+![Front Panel overview from an earlier Studio documentation capture](../assets/screenshots/front-panel/front-panel-overview.png)
 
-- [Getting Started](docs/getting-started.md)
-- [Window Workflow](docs/interface/window-workflow.md)
-- [Front Panel](docs/interface/front-panel.md)
-- [Block Diagram](docs/interface/block-diagram.md)
-- [Source View](docs/interface/source-view.md)
-- [Studio Options](docs/interface/options.md)
-- [FROG Properties and Array Storage](docs/interface/frog-properties.md)
-- [Widget Navigator](docs/interface/widget-navigator.md)
-- [Function Navigator](docs/interface/function-navigator.md)
-- [Interface Map](docs/interface/interface-map.md)
-- [Icon Editor](docs/interface/icon-editor.md)
+*Existing documentation capture: the Front Panel layout. Recent features and
+menus are described in the guides below; this image is not a new release capture.*
 
-## Design And Organize
+## Design and edit
 
-- [Selection Pane](docs/interface/selection-pane.md)
-- [Arrange and Resize](docs/interface/arrange-and-resize.md)
-- [Color Tools](docs/interface/color-tools.md)
+Use the [Widget Navigator](interface/widget-navigator.md) to place controls and
+indicators. Organize them with the [Selection Pane](interface/selection-pane.md),
+[Arrange and Resize](interface/arrange-and-resize.md), and
+[Color Tools](interface/color-tools.md). Combine values in an
+[Array](widgets/array-container.md) or [Cluster](widgets/cluster.md).
 
-## Widget Documentation
+Define public input and output slots in the [Interface Map](interface/interface-map.md),
+customize the document icon in the [Icon Editor](interface/icon-editor.md), and
+choose local preferences in [Studio Options](interface/options.md).
 
-- [Widgets Overview](docs/widgets/index.md)
-- [Numeric](docs/widgets/numeric.md)
-- [Boolean and Text Button](docs/widgets/boolean-and-button.md)
-- [String and Path](docs/widgets/string-and-path.md)
-- [Ring and Enum](docs/widgets/ring-and-enum.md)
-- [Array Container](docs/widgets/array-container.md)
-- [Error Cluster](docs/widgets/error-cluster.md)
-- [Image Static](docs/widgets/image-static.md)
-- [Label](docs/widgets/label.md)
+## Find a function
 
-## Reference
+The [Functions reference](functions/index.md) follows the existing Studio helper:
+function names, icons, terminal requirements, declared types, and explicit limits.
+Browse a family or use documentation search with the function name or catalog ID.
 
-- [Development checkpoint and qualification limits](docs/reference/development-checkpoint.md)
+| Data and operations | Organization and services |
+| --- | --- |
+| [Numeric](functions/numeric/index.md) · [Boolean](functions/boolean/index.md) · [Comparison](functions/comparison/index.md) | [Structures](functions/structures/index.md) · [Cluster](functions/cluster/index.md) |
+| [String](functions/string/index.md) · [Path](functions/path/index.md) · [Array](functions/array/index.md) | [Application Control](functions/applicationcontrol/index.md) · [Connectivity](functions/connectivity/index.md) |
+| [Timestamp](functions/timestamp/index.md) · [Variant](functions/variant/index.md) · [Mathematics](functions/mathematics/index.md) | [Error](functions/error/index.md) · [File](functions/file/index.md) · [Synchronization](functions/synchronization/index.md) |
 
-- [Glossary](docs/reference/glossary.md)
-- [Screenshot Guide](docs/reference/screenshot-guide.md)
-- [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
-- [Document Model](docs/reference/document-model.md)
-- [Custom Binding Persistence](docs/reference/custom-bindings.md)
+## Understand the document
 
-## Documentation Philosophy
+Inspect the saved representation in [Source](interface/source-view.md). The
+[document model](reference/document-model.md) explains ownership and formats;
+[custom bindings](reference/custom-bindings.md) explain saved interface layouts.
+Keep [keyboard shortcuts](reference/keyboard-shortcuts.md) and the
+[glossary](reference/glossary.md) nearby while learning.
 
-The Studio is documented from the user workflow outward:
+## Current support
 
-1. What the user sees.
-2. What action the user can perform.
-3. What changes in the `.frog` document.
-4. Which view reflects the change.
-5. What the runtime will eventually consume.
-
-This keeps the documentation practical while preserving the source model.
-When a feature is Studio-only or deliberately deferred, the page says so.
+These guides reflect the **15 October 2026** checkpoint. Studio authoring,
+private local Run/Highlight, public FROG Source, and target runtime support have
+separate scopes. Read [current capabilities and limits](reference/development-checkpoint.md)
+when choosing an execution path. A visible catalog entry is not a promise that
+every target can execute it.

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 24.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #4b5563;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #f8fafc;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: .65px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .76px;
+      }
+
+      .cls-4 {
+        fill: #aab4c0;
+      }
+
+      .cls-5 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect class="cls-1" x=".9" y=".9" width="46" height="23" rx="4.5" ry="4.5"/>
+        <g>
+          <rect class="cls-2" x="11.68" y="16.1" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="15.6" y="16.1" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="7.76" y="16.1" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="11.68" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="15.6" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="7.76" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="11.68" y="8.26" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="15.6" y="8.26" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="7.76" y="8.26" width="3.92" height="3.92"/>
+        </g>
+        <g>
+          <rect class="cls-4" x="10.08" y="14.14" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="14" y="14.14" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="6.17" y="14.14" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="10.08" y="10.22" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="14" y="10.22" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="6.17" y="10.22" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="10.08" y="6.3" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="14" y="6.3" width="3.92" height="3.92"/>
+          <rect class="cls-4" x="6.17" y="6.3" width="3.92" height="3.92"/>
+        </g>
+        <g>
+          <rect class="cls-2" x="8.13" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="12.04" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="4.21" y="12.18" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="8.13" y="8.26" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="12.04" y="8.26" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="4.21" y="8.26" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="8.13" y="4.35" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="12.04" y="4.35" width="3.92" height="3.92"/>
+          <rect class="cls-2" x="4.21" y="4.35" width="3.92" height="3.92"/>
+        </g>
+      </g>
+      <g>
+        <line class="cls-3" x1="32.17" y1="13.08" x2="41.05" y2="13.08"/>
+        <polygon class="cls-5" points="40.53 14.83 43.56 13.08 40.53 11.33 40.53 14.83"/>
+      </g>
+      <g>
+        <line class="cls-3" x1="32.17" y1="13.08" x2="37.13" y2="18.04"/>
+        <polygon class="cls-5" points="35.53 18.91 38.91 19.82 38 16.44 35.53 18.91"/>
+      </g>
+      <g>
+        <line class="cls-3" x1="32.17" y1="13.08" x2="32.17" y2="6.87"/>
+        <polygon class="cls-5" points="33.92 7.38 32.17 4.35 30.42 7.38 33.92 7.38"/>
+      </g>
+      <line class="cls-3" x1="41.49" y1="17.49" x2="37.13" y2="21.86"/>
+      <line class="cls-3" x1="43.63" y1="9.99" x2="43.63" y2="16.17"/>
+      <line class="cls-3" x1="35.26" y1="4.35" x2="29.08" y2="4.35"/>
+    </g>
+  </g>
+</svg>

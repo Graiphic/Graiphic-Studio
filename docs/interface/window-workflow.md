@@ -6,9 +6,11 @@ same in-memory Program Model.
 
 | Window | Primary responsibility | Source ownership |
 | --- | --- | --- |
-| Front Panel | User-facing widgets, labels, media, layout, and public bindings | `front_panel`, `interface`, and document presentation data |
+| Front Panel | User-facing widgets, labels, media, layout, and public bindings | Widgets, interface bindings, and document presentation data |
 | Block Diagram | Executable dataflow nodes, typed terminals, operations, and connections | `diagram.nodes`, `diagram.edges`, ports, and authored Diagram layout |
 | Source | Live inspection of the serialized `.frog` document | The complete source representation |
+
+The screenshots below are existing documentation captures of these workflows; they are not new captures of the current release.
 
 ## The Three Windows
 
@@ -30,8 +32,8 @@ Panel layout.
 
 ### Source
 
-The Source window shows the canonical `.frog` document produced by the other
-views. It is the direct inspection surface for object identity, types,
+The Source window shows the live `.frog` representation produced by the other
+views. Studio draft authoring and public FROG Source have separate envelopes. It is an inspection surface for object identity, types,
 bindings, view state, and authored layout.
 
 ![Graiphic Studio Source view](../../assets/screenshots/source-view/source-view-live.jpg)

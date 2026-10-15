@@ -1,8 +1,9 @@
-# Custom Binding Persistence
+# Custom bindings
 
-Status: implementation reference for Graiphic Studio **0.0.3.161**, checked on
-19 September 2026. This page describes the data saved by Studio and its current
-compatibility boundary.
+This reference explains the Custom layout data retained by Studio. Descriptor
+versions are independent of the Studio release and of the public FROG source
+envelope. See [current capabilities](development-checkpoint.md) for verification
+and execution limits.
 
 ## Which `.frog` Format?
 
@@ -134,7 +135,7 @@ also exist in the full document. A slot alone does not declare a typed port.
 
 ## Editing And Compatibility
 
-Studio 0.0.3.161 reads `v1`, `v2` and `v3`. Existing automatic layouts keep their
+Studio reads the `v1`, `v2` and `v3` descriptors described here. Existing automatic layouts keep their
 established positions when reopened. Moving or removing a slot materializes
 explicit positions and writes `v3`; resizing keeps normalized positions when
 the new dimensions satisfy the placement rules. The SVG and map descriptors
@@ -154,10 +155,10 @@ automatic layout or discard disabled identities while claiming faithful
 preservation. Canonical cross-tool support for these particular Studio
 descriptors has not been established by this delivery.
 
-## Custom Rotation And Flips (Prepared, Not Yet Released)
+## Custom rotation and flips
 
-The change prepared on 19 September 2026 enables **Rotate 90 Degrees**,
-**Flip Horizontal** and **Flip Vertical** for the active Custom layout.
+**Rotate 90 Degrees**, **Flip Horizontal**, and **Flip Vertical** transform the
+active Custom layout when the resulting positions satisfy its placement rules.
 It keeps the canvas width, height and icon drawing unchanged, matching the
 standard binding-pattern commands. With normalized top-left coordinates:
 
@@ -179,21 +180,9 @@ rectangle, a quarter-turn can move many bindings onto a shorter side; **Rotate
 90 Degrees** is disabled if the resulting positions would be invalid. The
 command also rejects an invalid transformation without a partial edit.
 
-At the historical checkpoint, this addition was not included in 0.0.3.174.
-That is not the current delivery version; see the
-[development checkpoint](development-checkpoint.md) for present qualification limits.
-The geometry/model checks passed 44,456 assertions. Native integration tests
-have been added and syntax-checked but have not yet run against a rebuilt
-application; final build and visual validation remain pending.
-
-## Previous Delivery Evidence
-
-The 0.0.3.161 delivery passed `frog-win32-custom-icon-smoke`, including descriptor
-decoding, malformed-position rejection, move/remove identity preservation,
-SVG reload, document save/reload, binding assignments and saved-file versus
-live-drag call anchors. Its neighboring tests and real-application Custom
-preview scenario also passed. This is implementation evidence for Studio;
-it is not a public-format conformance or runtime certification claim.
+These Studio descriptors do not establish public-source conformance or support
+in another editor or target runtime. Current targeted and global qualification
+remain distinct; see [current capabilities](development-checkpoint.md).
 
 See [Interface Map](../interface/interface-map.md) for binding actions and
 [Icon Editor](../interface/icon-editor.md) for size and preview controls.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect data-frog-selection-shell="true" x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#E3AA63" stroke="#AAB4C0" stroke-width="1.8"/>
+      <g transform="translate(5.85 11.6)">
+      <path fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width=".82" d="M25.13,5h-13.99l.19,1.16,3.4,6.09-3.63,6.62v.94h14.11v-.94l-3.63-6.62,3.29-6.09.27-1.16ZM11.95,19.17l3.6-6.91-3.29-6.11h11.7l-3.43,6.11,3.72,6.91h-12.31.02ZM20.2,17.45c-1.43-.27-1.52-.61-1.52-.82h-1.28c0,.21-.07.55-1.52.82-1.45.27-2.54.82-2.87,1.47h10.03c-.32-.65-1.42-1.19-2.87-1.47h.02Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

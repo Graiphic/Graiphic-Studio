@@ -11,7 +11,7 @@ hidden runtime behavior.
 - **Interface Map** is the rectangle showing public interface slots.
 - **Interface Layout Pattern** is the selected distribution of those slots.
 - **Front Panel binding** is the explicit link between a widget value and a public port.
-- **interface_input** and **interface_output** are the future Diagram projections of public ports.
+- **interface_input** and **interface_output** identify public-port projections in the FROG model; Studio draft editing and public execution retain separate scopes.
 
 ## Create A Binding
 

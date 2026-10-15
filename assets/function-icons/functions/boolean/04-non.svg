@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">NON</title>
+  <g shape-rendering="geometricPrecision">
+    <path class="frog-selection-shell" d="M7 3.5C5.4 2.7 4 3.7 4 5.5v37c0 1.9 1.9 3 3.6 2.1l36.1-18.2c1.8-.9 1.8-3.5 0-4.4L7 3.5Z" transform="translate(1.8 5) scale(.8)" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle class="frog-selection-adornment" cx="40" cy="24" r="3.1" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8"/>
+  </g>
+</svg>

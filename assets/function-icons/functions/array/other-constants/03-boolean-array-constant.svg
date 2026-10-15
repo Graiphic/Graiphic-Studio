@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        letter-spacing: .04em;
+      }
+
+      .cls-3 {
+        fill: #0d770d;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+<rect x="6.75" y="12.5" width="34.5" height="23" fill="#0d770d" stroke="#AAB4C0" stroke-width="1.8"/>
+<g transform="translate(5.85 11.6)">
+<g id="Calque_1-2" data-name="Calque 1">
+    <g>
+
+      <text class="cls-1" transform="translate(6.65 16.15)"><tspan class="cls-2" x="0" y="0">[</tspan><tspan class="cls-4" x="4.51" y="0">TF</tspan><tspan class="cls-2" x="17.59" y="0">]</tspan></text>
+    </g>
+  </g>
+</g>
+</svg>

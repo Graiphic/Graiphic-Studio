@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-shape-standard="capsule-conversion">
+  <title id="title">En entier 32 bits signé</title>
+  <g shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1 12.5 H41.825 C44.683 12.5 47 14.817 47 17.675 V30.325 C47 33.183 44.683 35.5 41.825 35.5 H1 C5.907 28.6 5.907 19.4 1 12.5 Z" fill="#2563EB" stroke="#AAB4C0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><text x="24" y="24" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" text-anchor="middle" dominant-baseline="middle" letter-spacing="0">I32</text>
+  </g>
+</svg>

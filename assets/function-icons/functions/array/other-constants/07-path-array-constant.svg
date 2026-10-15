@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #008ea3;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+<rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#008ea3" stroke="#AAB4C0" stroke-width="1.8"/>
+<g transform="translate(5.85 11.6)">
+<g id="Calque_1-2" data-name="Calque 1">
+    <g>
+
+      <g class="cls-3">
+        <path class="cls-2" d="M5.82,18.06V7.06h2.92v1.29h-1.35v8.41h1.35v1.29h-2.92Z"/>
+        <path class="cls-2" d="M30.48,7.06v11h-2.92v-1.29h1.35v-8.42h-1.35v-1.28h2.92Z"/>
+      </g>
+      <g>
+        <polygon class="cls-4" points="20.06 9.69 19.4 10.18 23.05 14.48 23.71 13.99 20.06 9.69"/>
+        <polygon class="cls-4" points="16.45 9.69 17.12 10.18 13.47 14.48 12.81 13.99 16.45 9.69"/>
+        <path class="cls-4" d="M22.56,13.61v3.59h3.92v-3.59h-3.92ZM25.64,16.38h-2.25v-1.94h2.25v1.94Z"/>
+        <path class="cls-4" d="M9.74,13.61v3.59h3.92v-3.59h-3.92ZM12.83,16.38h-2.25v-1.94h2.25v1.94Z"/>
+        <path class="cls-4" d="M16.3,6.85v3.59h3.92v-3.59h-3.92ZM19.38,9.62h-2.25v-1.94h2.25v1.94Z"/>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

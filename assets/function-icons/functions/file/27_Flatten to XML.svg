@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #f8fafc;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #4b5563;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #4b5563;
+      }
+
+      .cls-2 {
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-5 {
+        font-family: SegoeUIVariable-SemiboldSmall, 'Segoe UI Variable';
+        font-size: 7px;
+        font-variation-settings: 'wght' 600, 'opsz' 8;
+        font-weight: 600;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-2" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <path class="cls-6" d="M15.9,34.85c.18,0,.34-.08.47-.22l3.38-3.38.49-.48-.49-.48-3.38-3.38c-.16-.21-.42-.3-.68-.24s-.45.25-.52.52c-.06.25.03.52.24.68l2.22,2.22h-3.62c-1.99,0-3.34-.51-4.19-1.26s-1.25-1.81-1.25-3.16c0-2.79.92-4.43.92-4.43.18-.33.06-.75-.26-.93s-.75-.06-.93.26c0,0-1.08,2-1.08,5.09,0,1.63.55,3.13,1.71,4.18,1.16,1.05,2.87,1.61,5.09,1.61h3.62s-2.22,2.22-2.22,2.22c-.21.2-.26.49-.15.75.1.25.37.42.64.41v.03s0-.01,0-.01Z"/>
+      <g>
+        <path class="cls-6" d="M23.75,14.92h12.88l6.44,6.44v21.16h-19.32V14.92Z"/>
+        <path class="cls-4" d="M36.64,14.85v6.52h6.53"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M29.54,27.43l-3.37-1.61v-.41l3.37-1.75v.73l-2.46,1.21v.02l2.46,1.1v.72Z"/>
+        <path class="cls-3" d="M32.09,25.2l-1.34-2.44h.99l.56,1.12c.12.23.23.46.38.77h.03c.13-.3.23-.54.34-.77l.53-1.12h.95l-1.34,2.48,1.43,2.55h-.99l-.62-1.19c-.13-.26-.26-.51-.4-.82h-.03c-.13.31-.25.56-.37.82l-.6,1.19h-.95l1.43-2.6Z"/>
+        <path class="cls-3" d="M39.14,25.79l-3.38,1.62v-.73l2.47-1.09v-.02l-2.47-1.21v-.73l3.38,1.75v.41Z"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M29.54,33.98l-3.37-1.61v-.41l3.37-1.75v.73l-2.46,1.21v.02l2.46,1.1v.72Z"/>
+        <path class="cls-3" d="M31.2,29.31h1.01l.89,2.46c.11.32.21.66.32.99h.03c.11-.33.21-.67.32-.99l.87-2.46h1.01v5.04h-.82v-2.3c0-.46.07-1.14.11-1.6h-.03l-.41,1.17-.83,2.26h-.53l-.83-2.26-.4-1.17h-.03c.04.47.11,1.14.11,1.6v2.3h-.8v-5.04Z"/>
+        <path class="cls-3" d="M40.71,32.34l-3.38,1.62v-.73l2.47-1.09v-.02l-2.47-1.21v-.73l3.38,1.75v.41Z"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M29.54,40.54l-3.37-1.61v-.41l3.37-1.75v.73l-2.46,1.21v.02l2.46,1.1v.72Z"/>
+        <path class="cls-3" d="M31.2,35.86h.89v4.29h2.09v.75h-2.99v-5.04Z"/>
+        <path class="cls-3" d="M38.84,38.9l-3.38,1.62v-.73l2.47-1.09v-.02l-2.47-1.21v-.73l3.38,1.75v.41Z"/>
+      </g>
+      <rect class="cls-1" x="4.28" y="5.17" width="13.99" height="9.03"/>
+      <text class="cls-5" transform="translate(7.13 12.08)"><tspan x="0" y="0">1.2</tspan></text>
+    </g>
+  </g>
+</svg>

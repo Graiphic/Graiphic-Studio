@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Racine carrée</title>
+  <g shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 3.5C5.4 2.7 4 3.7 4 5.5v37c0 1.9 1.9 3 3.6 2.1l36.1-18.2c1.8-.9 1.8-3.5 0-4.4L7 3.5Z" fill="#FFFCC8" stroke="#9A914D" stroke-width="1.5"/><g data-role="glyph" data-shell="triangle" transform="translate(-2.5 0)"><path d="m15.5 24.5 2.5 3.5 3.5-9h5.5" fill="none" stroke="#4C4B3B" stroke-width="1.8" stroke-linecap="square"/></g>
+  </g>
+</svg>

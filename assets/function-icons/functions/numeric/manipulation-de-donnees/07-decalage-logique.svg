@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" /><g transform="matrix(1.148325 0 0 1.148325 -3.559809 -3.559809) translate(-0.24 1.23)" data-frog-body-glyph-profile="square-v1">
+  <g>
+    <path class="st1" d="M21.18,28.15l-10.42-4.8v-1.74l10.42-5.04v2.61l-7.46,3.27v.06l7.46,3.04v2.61Z" />
+    <path class="st1" d="M37.63,28.15l-10.42-4.8v-1.74l10.42-5.04v2.61l-7.46,3.27v.06l7.46,3.04v2.61Z" />
+  </g>
+</g></svg>

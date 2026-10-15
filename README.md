@@ -1,81 +1,51 @@
 # Graiphic Studio
 
-Official user documentation for **Graiphic Studio**, the visual development
-environment for `.frog` documents.
+The visual workspace for designing interfaces and dataflow in `.frog` documents.
 
-Graiphic Studio coordinates three source-backed views of one `.frog` document:
-the vector Front Panel, the executable Block Diagram, and the live Source view.
-It also provides Widget and Function Navigators, a public Interface Map,
-document iconography, array containers, and focused visual editing tools. This
-repository explains those features from the user's point of view.
+Design a Front Panel, connect typed operations in the Block Diagram, and inspect
+the resulting document in Source. Context Help explains the object under the
+pointer and links directly to the relevant reference.
 
-## Documentation
+**[Read the documentation](https://graiphic.github.io/Graiphic-Studio/)** ·
+[Start your first document](docs/getting-started.md) ·
+[Browse functions](docs/functions/index.md) ·
+[Browse widgets](docs/widgets/index.md)
 
-- [Documentation Home](docs/index.md)
-- [Getting Started](docs/getting-started.md)
-- [Window Workflow](docs/interface/window-workflow.md)
-- [Front Panel](docs/interface/front-panel.md)
-- [Block Diagram](docs/interface/block-diagram.md)
-- [Source View](docs/interface/source-view.md)
-- [Studio Options](docs/interface/options.md)
-- [FROG Properties and Array Storage](docs/interface/frog-properties.md)
-- [Widget Navigator](docs/interface/widget-navigator.md)
-- [Function Navigator](docs/interface/function-navigator.md)
-- [Interface Map](docs/interface/interface-map.md)
-- [Icon Editor](docs/interface/icon-editor.md)
-- [Custom Binding Persistence](docs/reference/custom-bindings.md)
-- [Selection Pane](docs/interface/selection-pane.md)
-- [Arrange and Resize](docs/interface/arrange-and-resize.md)
-- [Color Tools](docs/interface/color-tools.md)
-- [Widgets](docs/widgets/index.md)
-- [Array Container](docs/widgets/array-container.md)
-- [Error Cluster](docs/widgets/error-cluster.md)
-- [Keyboard Shortcuts](docs/reference/keyboard-shortcuts.md)
-- [Glossary](docs/reference/glossary.md)
+## Choose a starting point
 
-## Repository Layout
+| I want to… | Read |
+| --- | --- |
+| Learn the workspace | [Getting started](docs/getting-started.md) |
+| Place and edit controls | [Front Panel](docs/interface/front-panel.md) |
+| Connect operations | [Block Diagram](docs/interface/block-diagram.md) |
+| Understand an icon or terminal | [Context Help](docs/interface/context-help.md) and [Functions](docs/functions/index.md) |
+| Try a supported graph locally | [Run and Highlight](docs/interface/run-and-highlight.md) |
+| Customize the editor | [Studio Options](docs/interface/options.md) |
+| Check support and limitations | [Current capabilities](docs/reference/development-checkpoint.md) |
 
-```text
-docs/
-  index.md                     Documentation entry point
-  getting-started.md           First user path
-  interface/                   Studio surface documentation
-  widgets/                     Widget-by-widget documentation
-  reference/                   Glossary and conventions
-assets/
-  screenshots/                 Product screenshots used by the docs
-  diagrams/                    Explanatory diagrams and exported visuals
-```
+## About these docs
 
-## Documentation Rules
+This repository contains the user guides and reference for Graiphic Studio.
+Guides explain actions and their results; function pages describe purpose,
+terminals, types, and current support using the Studio's existing help catalog.
 
-- Use the public product name: **Graiphic Studio**.
-- Explain user-facing behavior before implementation details.
-- Every stable visual feature page must include at least one current product
-  screenshot. A page without a validated screenshot remains a draft and is not
-  linked from the main documentation index.
-- Keep `.frog` source concepts explicit: widgets, labels, bindings, interface
-  maps, icon assets, and runtime-facing artifacts are separate concepts.
-- The public [FROG specification](https://github.com/Graiphic/FROG) owns
-  canonical source shape, type identities, language semantics, and conformance
-  expectations. Studio documentation does not redefine those contracts.
-- Studio product contracts own editing gestures, window workflows, and visual
-  behavior. An implemented editor feature does not by itself establish source
-  conformance, runtime support, or certification.
-- Avoid documenting experimental behavior as final unless it has been validated
-  in the Studio.
+The [FROG specification](https://graiphic.github.io/FROG/) defines the public
+language. A feature available in Studio's editor or private local simulation
+does not automatically have a public-source or target-runtime implementation.
+See [the document model](docs/reference/document-model.md) for that boundary.
 
-## Product Status
+The documentation reflects the **15 October 2026** Studio checkpoint. Existing
+screenshots illustrate named workflows; they are not new captures of every
+current feature. Function SVGs and connector schematics are identified as
+reference illustrations rather than application screenshots.
 
-Graiphic Studio is under active development. The documentation distinguishes
-implemented Studio behavior from runtime-facing work that is still evolving.
+## Contributing
 
-The [2 October development checkpoint](docs/reference/development-checkpoint.md)
-records local delivery 0.0.4.044, recent editing changes and the current validation
-limits. Tests remain paused and the last complete gate failed; local compilation
-and committed/main publication are separate states.
-Screenshots are captured from the native Windows target or an official FROG
-runtime example and updated when a visible workflow changes.
+- Start with the user's task, then explain the action, result, and relevant limit.
+- Keep function names and identifiers aligned with the built-in help catalog.
+- Use descriptive headings, relative Markdown links, and meaningful image text.
+- Use real product captures or clearly identified reference illustrations.
+- Distinguish editing support, private Run/Highlight, public Source, and target execution.
 
-The rendered documentation is available at
-[graiphic.github.io/Graiphic-Studio](https://graiphic.github.io/Graiphic-Studio/).
+`docs/` contains guides, widget pages, function pages, and reference material.
+`assets/` contains screenshots and explanatory visuals.

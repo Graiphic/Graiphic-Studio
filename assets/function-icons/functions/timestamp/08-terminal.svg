@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.94 81.83">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g data-role="frog-timestamp-output-terminal" shape-rendering="geometricPrecision">
+        <path fill="#e3aa63" stroke="#aab4c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.78" d="M151.49,11.39H11.93v59.05h139.56c16.31,0,29.52-13.22,29.52-29.52s-13.22-29.53-29.52-29.53h0Z"/>
+        <path data-frog-selection-shell="true" stroke-miterlimit="10" fill="none" stroke="#606060" stroke-width="7" d="M190.34,30.62l-12.85-19.09c-3.38-5.02-9.03-8.03-15.08-8.03H5.66c-1.19,0-2.16,1.25-2.16,2.77v69.29c0,1.52.97,2.77,2.16,2.77h156.53c6.05,0,11.7-3.01,15.08-8.02l13.06-19.37c4.14-6.14,4.14-14.18,0-20.32Z"/>
+      </g>
+      <path fill="#fff" stroke="#fff" stroke-width="2.27" stroke-miterlimit="10" d="M109.1,20.49h-38.58l.52,3.2,9.36,16.8-10.02,18.26v2.59h38.91v-2.59l-10.02-18.26,9.08-16.8.75-3.2ZM72.74,59.59l9.93-19.06-9.08-16.84h32.28l-9.46,16.84,10.26,19.06h-33.97.05ZM95.51,54.84c-3.95-.75-4.19-1.69-4.19-2.26h-3.53c0,.57-.19,1.51-4.19,2.26s-7.01,2.26-7.9,4.05h27.67c-.9-1.79-3.9-3.29-7.9-4.05h.04Z"/>
+    </g>
+  </g>
+</svg>

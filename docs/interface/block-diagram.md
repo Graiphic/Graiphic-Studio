@@ -2,10 +2,12 @@
 
 The Block Diagram is Graiphic Studio's executable dataflow authoring surface.
 It displays typed widget terminals, operations placed from the Function
-Navigator, comments, and the connections that will define execution order and
+Navigator, comments, and the connections that define execution order and
 data movement.
 
 ![Block Diagram with the Numeric Function Navigator](../../assets/screenshots/block-diagram/function-navigator-numeric.jpg)
+
+*Existing documentation capture of the Numeric Navigator workflow. The current catalog includes additional families.*
 
 ## Canvas And Navigation
 
@@ -163,7 +165,16 @@ for the current local qualification limits.
 
 ## What Is Saved
 
-Executable operations are stored as explicit nodes with published primitive
-types. Terminal identity, typed ports, edges, comments, and authored Diagram
-layout are serialized in the `.frog` document. Pan, zoom, and useful reopen
-state may be preserved as non-executable IDE metadata.
+Diagram objects retain explicit identities, typed ports, edges, configuration,
+comments, and authored layout in the Studio document. Public primitives retain
+their published contract; editor-managed and private objects have separate
+support boundaries. Pan, zoom, and reopen state are non-executable view data.
+
+## Run and support
+
+Use [Run and Highlight](run-and-highlight.md) for graphs admitted by the private
+local simulation. Controls stay interactive and Indicators are read-only in
+that supported scope. Generic Property/Invoke graph execution and general
+public-target runtime support remain unavailable. Consult the
+[function reference](../functions/index.md) and
+[current capabilities](../reference/development-checkpoint.md).

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Color Box Constant</title>
+  <g data-frog-element-standard="numeric-constant" shape-rendering="geometricPrecision">
+    <rect x="8" y="8" width="32" height="32" rx="2" fill="#FAFAFA" stroke="#3188EA" stroke-width="1.5"/>
+    <rect x="11" y="11" width="26" height="26" rx="1" fill="#2878D7" stroke="#1F232A" stroke-width="1"/>
+  </g>
+</svg>

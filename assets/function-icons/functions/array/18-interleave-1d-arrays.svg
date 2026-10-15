@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        stroke: #f8fafc;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-11 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-6, .cls-11 {
+        fill: none;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 1.13 2.27;
+      }
+
+      .cls-12 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-12, .cls-10 {
+        fill: #4b5563;
+      }
+
+      .cls-3 {
+        stroke-dasharray: .11 1.11 .56 1.11;
+      }
+
+      .cls-4 {
+        stroke-width: .51px;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #fffffe;
+      }
+
+      .cls-5, .cls-8 {
+        stroke-width: .99px;
+      }
+
+      .cls-5, .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-9 {
+        fill: #323f4f;
+      }
+
+      .cls-6 {
+        stroke-dasharray: .56 1.11;
+      }
+
+      .cls-7 {
+        stroke-width: .41px;
+      }
+
+      .cls-8 {
+        fill: #aab4c0;
+      }
+
+      .cls-9 {
+        stroke-width: .99px;
+      }
+
+      .cls-10 {
+        stroke-width: .98px;
+      }
+
+      .cls-11 {
+        stroke-dasharray: .23 2.27 1.13 2.27;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-12" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" transform="translate(47.8 47.8) rotate(-180)"/>
+      <g>
+        <rect class="cls-4" x="23.2" y="4.87" width=".41" height="6.14" transform="translate(31.34 -15.46) rotate(90)"/>
+        <polygon class="cls-7" points="25.36 5.75 26.75 7.82 26.83 7.94 26.75 8.06 25.36 10.13 25.06 9.89 26.37 7.94 25.06 5.99 25.36 5.75"/>
+      </g>
+      <g>
+        <rect class="cls-4" x="23.2" y="19.52" width=".41" height="6.14" transform="translate(45.98 -.82) rotate(90)"/>
+        <polygon class="cls-7" points="25.36 20.39 26.75 22.46 26.83 22.58 26.75 22.7 25.36 24.77 25.06 24.54 26.37 22.58 25.06 20.63 25.36 20.39"/>
+      </g>
+      <g>
+        <rect class="cls-4" x="23.2" y="34.13" width=".41" height="6.14" transform="translate(60.6 13.8) rotate(90)"/>
+        <polygon class="cls-7" points="25.36 35.01 26.75 37.08 26.83 37.2 26.75 37.32 25.36 39.39 25.06 39.15 26.37 37.2 25.06 35.25 25.36 35.01"/>
+      </g>
+      <rect class="cls-10" x="34.69" y="5.02" width="5.89" height="5.89"/>
+      <rect class="cls-8" x="34.69" y="16.69" width="5.89" height="5.89"/>
+      <rect class="cls-5" x="34.69" y="10.86" width="5.89" height="5.89"/>
+      <rect class="cls-10" x="34.69" y="22.58" width="5.89" height="5.89"/>
+      <rect class="cls-8" x="34.69" y="34.25" width="5.89" height="5.89"/>
+      <rect class="cls-5" x="34.69" y="28.42" width="5.89" height="5.89"/>
+      <rect class="cls-10" x="12.27" y="4.99" width="5.89" height="5.89"/>
+      <rect class="cls-10" x="6.39" y="4.99" width="5.89" height="5.89"/>
+      <rect class="cls-8" x="6.39" y="34.25" width="5.89" height="5.89"/>
+      <rect class="cls-8" x="12.27" y="34.25" width="5.89" height="5.89"/>
+      <rect class="cls-9" x="12.27" y="19.64" width="5.89" height="5.89"/>
+      <rect class="cls-9" x="6.39" y="19.64" width="5.89" height="5.89"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="6.39" y1="43.29" x2="6.49" y2="43.29"/>
+      <line class="cls-2" x1="8.76" y1="43.29" x2="11.02" y2="43.29"/>
+      <line class="cls-11" x1="12.16" y1="43.29" x2="16.92" y2="43.29"/>
+      <line class="cls-1" x1="18.06" y1="43.29" x2="18.16" y2="43.29"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="34.69" y1="43.29" x2="34.79" y2="43.29"/>
+      <line class="cls-6" x1="35.9" y1="43.29" x2="37.02" y2="43.29"/>
+      <line class="cls-3" x1="37.57" y1="43.29" x2="39.91" y2="43.29"/>
+      <line class="cls-1" x1="40.47" y1="43.29" x2="40.57" y2="43.29"/>
+    </g>
+  </g>
+</svg>

@@ -1,111 +1,70 @@
 # Function Navigator
 
-The Function Navigator is the Diagram counterpart of the Widget Navigator. It
-browses dataflow functions, opens families, and starts placement on the Diagram.
+Find a Diagram operation by family, inspect its help, and place it on the
+canvas. For its exact terminals and types, open the [Functions reference](../functions/index.md).
 
-The Numeric family presents its operations as compact, source-backed tiles.
+![Numeric family from an earlier Function Navigator documentation capture](../../assets/screenshots/function-navigator/numeric-functions-dark.png)
 
-![Numeric functions in the dark Function Navigator](../../assets/screenshots/function-navigator/numeric-functions-dark.png)
+*Existing Numeric-family capture. The reference includes the expanded current
+catalog and identifies each operation's support limits.*
 
-The complete Diagram context is shown in the current native capture:
+## Open and browse
 
-![Numeric Function Navigator on the Block Diagram](../../assets/screenshots/block-diagram/function-navigator-numeric.jpg)
+Open the Block Diagram and use its Function Navigator toolbar button,
+**View > Function Navigator**, or right-click empty Diagram space.
+Single-click a family to browse it; double-click a family to choose its default
+operation where one is defined.
 
-## Hierarchy
+The hierarchy includes data operations, structures, containers, references,
+connectivity, files, and synchronization. Some folders are reserved and contain
+no functions yet. The [family index](../functions/index.md) lists the documented
+catalog without requiring you to know its internal identifier.
 
-The root Navigator groups functions by programming domain. Selecting
-**Programming > Numeric** opens the current Numeric operations, including
-arithmetic, rounding, range, random, and array-reduction functions.
+## Place an operation
 
-The hierarchy follows the same rule as the Widget Navigator: single-click a
-family to browse it and double-click a family to choose its default operation.
-Choosing an operation starts placement; `Escape` cancels the active command.
+1. Choose an operation tile. A translucent preview follows the pointer.
+2. Move to the Diagram and click to place it.
+3. Or hold a tile, drag it onto the Diagram, and release there.
+4. Press `Escape`, or release a drag outside the Diagram, to cancel.
 
-## Place A Numeric Operation
+A successful placement creates an authored Diagram object and marks the document
+modified. Placement does not execute the function. Unsupported catalog entries
+report their current limitation instead of producing an executable substitute.
 
-1. Open the Diagram, then open the Function Navigator from its toolbar button,
-   from **View > Function Navigator**, or by right-clicking an empty part of the
-   Diagram.
-2. Open **Programming > Numeric**.
-3. Click an operation tile. Its live SVG preview attaches to the pointer at
-   reduced opacity.
-4. Move the preview to the required Diagram position.
-5. Click again to place it at full opacity.
+## Read the help before wiring
 
-Direct drag-and-drop is also supported: hold an operation tile, drag it onto
-the Diagram, and release it at the required position.
+Open [Context Help](context-help.md) with `Ctrl+H` and hover a tile or a placed
+function. It shows the operation, its terminal requirements, and declared or
+resolved types where available. Lock the help with `Ctrl+Shift+L` to keep it
+visible while reading **Detailed help**.
 
-The operation becomes a Diagram node at the drop position. Releasing outside
-the Diagram cancels the placement. Pressing `Escape` while dragging also
-cancels it without changing the document.
+The operation icon remains the same in the Navigator, help, placement preview,
+and Diagram. Theme changes affect the surrounding interface rather than the
+function artwork. An icon's color alone does not define its type or execution.
 
-A successful drop marks the document as modified. The transient Function
-Navigator closes after placement; pinned Navigator windows remain independent
-tool windows and can be opened again as needed.
+## Keep useful families open
 
-## Available Operations
+An unpinned Navigator closes when you click elsewhere, press `Escape`, or begin
+another command. Pin it to keep an independent tool window. Several pinned
+Navigators can remain open.
 
-Graiphic Studio only creates executable nodes for operations whose primitive
-identity is published by FROG. The first Numeric placement set includes core
-arithmetic and the published scalar math operations represented in the
-Navigator, such as addition, subtraction, multiplication, division, absolute
-value, rounding, square root, square, negation, reciprocal, and sign.
+Resize a pinned window to reflow its tiles; scrollbars appear when needed.
+Pinned Function Navigators belong to the Diagram workspace: they hide when the
+Front Panel receives focus and return when the Diagram is raised.
 
-Some catalog tiles intentionally remain discoverable before their source-level
-primitive contract is published. Selecting one of those tiles reports that it
-cannot yet be placed; Studio does not write an invented or invalid primitive
-type into the document.
+## Understand support
 
-## Transient And Pinned Windows
+A function may be available for **authoring**, admitted by **private Studio
+Run/Highlight**, or implemented by a **public FROG target**. These capabilities
+are separate. Some editor-managed objects and private functions do not have a
+published public primitive contract.
 
-An unpinned Navigator appears near the pointer and closes when the user clicks
-elsewhere, presses `Escape`, or starts another command. Pinning keeps that
-Navigator open as an independent Diagram tool window.
+Examples include the private Queue service and limited reference/Connectivity
+workflows. Generic Property/Invoke graph execution is still unavailable.
+Consult the operation's page and [current capabilities](../reference/development-checkpoint.md)
+before choosing an execution path.
 
-Pinned function windows use the same close control, sizing rules, theme, font
-scale, tile spacing, and responsive reflow as pinned Widget Navigators. Several
-pinned Navigator windows can remain open at the same time.
+## Related guides
 
-Pinned Function Navigators belong to the Block Diagram workspace. They hide
-when the Front Panel receives focus and return, fully interactive, when the
-Diagram is raised. Scrollbars appear when a manually resized window cannot
-show every operation tile.
-
-## Dataflow Role
-
-Placing a function creates a Diagram node; it does not execute the operation
-inside the palette. The Diagram remains the executable dataflow source, and the
-runtime evaluates the placed node only when it participates in an executable
-graph.
-
-Numeric function icons describe operation semantics. Their connector types and
-runtime behavior must remain compatible with the FROG source and runtime
-contracts rather than being inferred from their visual color alone.
-
-The same function artwork is used in Light and Dark UI mode, including its
-body, border, symbols and internal text. Palette, Context Help, placement
-preview and Diagram share one canonical asset.
-
-## What Is Saved
-
-Each placed operation is stored in the canonical `.frog` Diagram as a
-`kind = "primitive"` node. Its namespaced `type` identifies the operation and
-its `layout` records the authored Diagram position and size. For example:
-
-```json
-{
-  "id": "node_1",
-  "kind": "primitive",
-  "type": "frog.core.add",
-  "layout": {
-    "x": 120,
-    "y": 80,
-    "width": 48,
-    "height": 48
-  }
-}
-```
-
-The SVG is presentation data used by Studio. The primitive `type`, Diagram
-connections, and explicit ports will define execution semantics as the graph
-editor progresses.
+[Block Diagram](block-diagram.md) · [Functions](../functions/index.md) ·
+[Run and Highlight](run-and-highlight.md)

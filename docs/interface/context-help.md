@@ -1,70 +1,66 @@
 # Context Help
 
-Context Help is a modeless companion window that explains the source object
-under the pointer while leaving the active editor usable.
+Open Context Help, point at an object, and read what it does before acting on
+it. The resizable help window stays open while you use the editor.
 
-> This page documents the first implemented version. A current product
-> screenshot will be added after the native Windows validation pass; until
-> then, this draft is intentionally not linked from the main documentation
-> index.
+## Open, inspect, and lock
 
-## Open And Close
+1. Press `Ctrl+H`, or choose **Help > Context Help**.
+2. Hover a widget, function tile, Diagram function, terminal, wire, or supported
+   interface control.
+3. Press `Ctrl+Shift+L` to freeze the current object while you move the pointer.
+4. Choose **Detailed help** for its documentation. Unlock to resume live updates.
 
-- Press `Ctrl+H` to show or hide Context Help.
-- Choose **Help > Context Help** for the same command.
-- Closing Context Help does not close the `.frog` document.
+Closing Context Help leaves the document open. The open/locked state belongs
+to the workspace rather than the program.
 
-The window is modeless and resizable. It follows semantic objects rather than
-raw pointer coordinates, so moving within one object does not continuously
-rebuild the help surface.
+## Widgets and terminals
 
-## Live Front Panel Help
+Widget help identifies the object's name, purpose, Control/Indicator role,
+value type, and visible label where available. A Control supplies values;
+an Indicator displays them. An Array includes its contained type.
 
-Hover a Front Panel widget to see:
+Free labels and Diagram comments are documentation objects. They do not
+participate in dataflow.
 
-- its stable widget name;
-- its concise purpose;
-- whether it is a Control or Indicator;
-- its value type, including the contained type for an Array;
-- its visible label when one is present;
-- a detailed-help link when documentation is available.
+## Function connectors
 
-Labels are identified as documentation elements rather than dataflow controls.
+Function help uses the same catalog identity and icon as the Function Navigator.
+The connector view identifies inputs and outputs and distinguishes **required**,
+**recommended**, and **optional** terminals when declared by the function.
 
-## Live Block Diagram Help
+For a placed object, connected types can refine the declared terminal type.
+Inspect the type detail when working with nested Arrays or Clusters; a color
+alone cannot tell you the complete type. Coercion information is shown where
+available. Hover a wire to inspect the data type it carries.
 
-Hover a widget terminal or native function on the Block Diagram to see its
-role in the dataflow. Native functions use the same stable catalog identifiers
-as the Function Navigator, so their wording and documentation destination stay
-consistent before and after placement.
+The [Functions reference](../functions/index.md) provides a page for each
+catalog entry, with its purpose, connector reference, types, and current
+execution limits. Connector schematics on those pages describe declarations;
+they are not captures of a particular wired graph.
 
-The first version recognizes widget terminals, native numeric functions, and
-diagram comments. Per-port required/recommended/optional markers, wire types,
-coercions, and broken-wire diagnostics remain later extensions.
+## Interface assistance
 
-## Keep One Object Visible
+Options, Navigator controls, and other supported interactive controls use the
+navigation helper's short explanations. With Context Help open, those
+explanations are centralized in this window. Configure delayed interactive
+hints under **Tools > Options... > Assistance**.
 
-Press `Ctrl+Shift+L`, or choose **Help > Lock Context Help**, to freeze the
-current object. Locking is useful when the pointer must leave the object to
-resize the window or open its **Detailed help** link. Repeat the command to
-resume live updates.
+## Detailed help destinations
 
-## Built-In And External Documentation
+Built-in objects use known documentation destinations. Function entries open
+their corresponding reference page; unrecognized built-in identities return
+to the documentation home. A help description or a visible catalog tile does
+not establish target-runtime support.
 
-Graiphic Studio ships built-in help for standard widgets and native functions
-in the visible UTF-8 file `config/context-help.ini` beside the Windows
-executable.
+Document-owned widgets can carry `documentation.description` and
+`documentation.url`; Diagram nodes can carry `doc.summary` and `doc.url`.
+These fields document the object without changing its ports, type, or execution.
+Only HTTP and HTTPS external documentation links are accepted.
 
-Document-owned widgets can override that catalog through the common `.frog`
-properties `documentation.description` and `documentation.url`. Diagram nodes
-can provide a structured `doc` member containing `summary` and `url`. This
-allows an external function to explain itself and link to its own published
-documentation without changing its execution semantics.
+## If help seems unexpected
 
-Only `http://` and `https://` detailed-help links are opened by the Studio.
-
-## What Is Saved
-
-Descriptions and documentation URLs attached to source objects round-trip in
-the `.frog` document. Whether the Context Help window is open or locked is an
-editor workspace concern and does not alter the program.
+- Check whether help is locked; unlock it to follow the pointer again.
+- Hover the actual child field or cell when inspecting a nested container.
+- Read [current capabilities](../reference/development-checkpoint.md) when a
+  function is described but cannot run on the selected execution path.

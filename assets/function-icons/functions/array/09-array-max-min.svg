@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .79px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #f8fafc;
+      }
+
+      .cls-1, .cls-3, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-6 {
+        fill: #f8fafc;
+      }
+
+      .cls-2 {
+        stroke-width: .92px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-7, .cls-5 {
+        fill: #4b5563;
+      }
+
+      .cls-3 {
+        fill: #aab4c0;
+      }
+
+      .cls-4 {
+        stroke-width: 1.38px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-7" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <g>
+        <rect class="cls-3" x="13.54" y="21.79" width="5.97" height="5.97"/>
+        <rect class="cls-3" x="7.56" y="21.79" width="5.97" height="5.97"/>
+        <rect class="cls-3" x="13.54" y="15.81" width="5.97" height="5.97"/>
+        <rect class="cls-3" x="7.56" y="15.81" width="5.97" height="5.97"/>
+        <rect class="cls-3" x="13.54" y="9.84" width="5.97" height="5.97"/>
+        <rect class="cls-3" x="7.56" y="9.84" width="5.97" height="5.97"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="10.55" y="18.8" width="5.97" height="5.97"/>
+        <rect class="cls-5" x="4.57" y="18.8" width="5.97" height="5.97"/>
+        <rect class="cls-5" x="4.57" y="12.83" width="5.97" height="5.97"/>
+        <rect class="cls-5" x="10.55" y="6.85" width="5.97" height="5.97"/>
+        <rect class="cls-5" x="10.55" y="12.83" width="5.97" height="5.97"/>
+        <rect class="cls-5" x="4.57" y="6.85" width="5.97" height="5.97"/>
+      </g>
+      <g data-role="glyph" data-shell="square">
+        <g>
+          <path class="cls-4" d="M27.68,16.9v-4.89c0-.58.38-.86.96-.86h7.29c1.06,0,1.73-.29,2.49-.77.48-.29.96-.38,1.44-.1"/>
+          <path class="cls-4" d="M29.89,11.43l1.06,6.14c.1.67.48.96,1.15.96h3.84c.67,0,1.06-.29,1.15-.96l1.25-6.43"/>
+          <path class="cls-6" d="M31.9,12.96h4.51l-.77,3.65h-3.07l-.67-3.65Z"/>
+        </g>
+        <g>
+          <path class="cls-4" d="M27.68,35.72v-4.89c0-.58.38-.86.96-.86h7.29c1.06,0,1.73-.29,2.49-.77.48-.29.96-.38,1.44-.1"/>
+          <path class="cls-4" d="M29.89,30.26l1.06,6.14c.1.67.48.96,1.15.96h3.84c.67,0,1.06-.29,1.15-.96l1.25-6.43"/>
+          <path class="cls-2" d="M32.57,35.34h2.97"/>
+        </g>
+      </g>
+      <rect class="cls-1" x="38.29" y="20.98" width="5.23" height="4.31"/>
+      <rect class="cls-1" x="38.29" y="39.01" width="5.23" height="4.31"/>
+    </g>
+  </g>
+</svg>

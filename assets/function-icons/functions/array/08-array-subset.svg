@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #4b5563;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-2, .cls-8, .cls-9, .cls-10 {
+        stroke: #f8fafc;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-9, .cls-10 {
+        stroke-linejoin: round;
+      }
+
+      .cls-3, .cls-9, .cls-10 {
+        fill: none;
+        stroke-width: .76px;
+      }
+
+      .cls-3, .cls-10 {
+        stroke-linecap: square;
+      }
+
+      .cls-4 {
+        stroke-width: .43px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #fffffe;
+      }
+
+      .cls-4, .cls-5, .cls-9 {
+        stroke-linecap: round;
+      }
+
+      .cls-5 {
+        stroke-width: .54px;
+      }
+
+      .cls-6 {
+        fill: #aab4c0;
+      }
+
+      .cls-6, .cls-7, .cls-2 {
+        stroke-width: .87px;
+      }
+
+      .cls-6, .cls-7, .cls-2, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        fill: #112236;
+      }
+
+      .cls-8 {
+        stroke-width: 1.01px;
+      }
+
+      .cls-8, .cls-11 {
+        fill: #f8fafc;
+      }
+
+      .cls-10 {
+        stroke-dasharray: .85 1.69;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-1" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" transform="translate(47.8 47.8) rotate(-180)"/>
+      <g>
+        <rect class="cls-6" x="38.02" y="14.72" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="32.78" y="14.72" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="38.02" y="9.47" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="32.78" y="9.47" width="5.24" height="5.24"/>
+      </g>
+      <g>
+        <rect class="cls-6" x="12.89" y="19.96" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="7.65" y="19.96" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="12.89" y="14.72" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="7.65" y="14.72" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="12.89" y="9.47" width="5.24" height="5.24"/>
+        <rect class="cls-6" x="7.65" y="9.47" width="5.24" height="5.24"/>
+      </g>
+      <g>
+        <rect class="cls-2" x="10.27" y="6.85" width="5.24" height="5.24"/>
+        <rect class="cls-2" x="5.03" y="6.85" width="5.24" height="5.24"/>
+        <rect class="cls-7" x="5.03" y="12.03" width="5.24" height="5.24"/>
+        <rect class="cls-7" x="10.27" y="12.03" width="5.24" height="5.24"/>
+        <rect class="cls-7" x="5.03" y="17.27" width="5.24" height="5.24"/>
+        <rect class="cls-7" x="10.27" y="17.27" width="5.24" height="5.24"/>
+      </g>
+      <g id="subset-index-box" transform="translate(0 -1)">
+        <rect class="cls-8" x="5.65" y="29.91" width="6.67" height="5.5"/>
+      </g>
+      <rect class="cls-7" x="30.82" y="7.3" width="5.24" height="5.24"/>
+      <rect class="cls-7" x="36.06" y="7.3" width="5.24" height="5.24"/>
+      <rect class="cls-7" x="30.82" y="12.55" width="5.24" height="5.24"/>
+      <rect class="cls-7" x="36.06" y="12.55" width="5.24" height="5.24"/>
+      <g id="subset-length-glyphs" transform="translate(0 -2)">
+        <g>
+          <line class="cls-9" x1="17.53" y1="40.41" x2="14.01" y2="40.41"/>
+          <polygon class="cls-11" points="14.53 38.66 11.5 40.41 14.53 42.16 14.53 38.66"/>
+        </g>
+        <line class="cls-9" x1="17.53" y1="37.32" x2="17.53" y2="43.5"/>
+        <g>
+          <line class="cls-9" x1="5.31" y1="40.41" x2="8.83" y2="40.41"/>
+          <polygon class="cls-11" points="8.32 42.16 11.34 40.41 8.32 38.66 8.32 42.16"/>
+        </g>
+        <line class="cls-9" x1="5.31" y1="37.32" x2="5.31" y2="43.5"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="24.07" y="12.23" width=".43" height="6.52" transform="translate(39.77 -8.8) rotate(90)"/>
+        <polygon class="cls-4" points="26.36 13.16 27.85 15.36 27.93 15.49 27.85 15.61 26.36 17.82 26.05 17.56 27.44 15.49 26.05 13.41 26.36 13.16"/>
+      </g>
+      <g id="subset-index-connector" transform="translate(0 -1)">
+        <line class="cls-3" x1="10.27" y1="32.69" x2="10.77" y2="32.69"/>
+        <path class="cls-10" d="M12.47,32.69h2.15c.62,0,1.13-.51,1.13-1.13v-.31"/>
+        <line class="cls-3" x1="15.74" y1="30.41" x2="15.74" y2="29.91"/>
+        <polygon class="cls-11" points="17.49 30.42 15.74 27.39 13.99 30.42 17.49 30.42"/>
+      </g>
+    </g>
+  </g>
+</svg>

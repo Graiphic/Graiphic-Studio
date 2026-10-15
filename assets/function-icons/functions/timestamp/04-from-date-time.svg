@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect data-frog-selection-shell="true" x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+      <path fill="#e3aa63" stroke="#e3aa63" stroke-miterlimit="10" stroke-width=".71" d="M42.5,19l.25-1.01h-12.12l.16,1.01,2.94,5.27-3.15,5.73v.81h12.22v-.81l-3.15-5.73,2.84-5.27ZM31.33,30.28l3.12-5.98-2.85-5.29h10.14l-2.97,5.29,3.22,5.98h-10.67.01ZM38.48,28.78c-1.24-.24-1.31-.53-1.31-.71h-1.11c0,.18-.06.47-1.31.71s-2.2.71-2.48,1.27h8.69c-.28-.56-1.23-1.03-2.48-1.27h.01Z" />
+      <path fill="none" stroke="#f8fafc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M20.49,24.41h6.82M24.98,27.58l2.33-3.17-2.33-3.17" />
+      <g>
+        <rect fill="#f8fafc" x="4.64" y="18.63" width="8.38" height="8.38" />
+        <rect fill="#f8fafc" x="14.2" y="18.63" width="3.63" height="11.56" />
+        <rect fill="#f8fafc" x="7.73" y="24.9" width="2.19" height="8.38" transform="translate(37.92 20.26) rotate(90)" />
+      </g>
+    </g>
+  </g>
+</svg>

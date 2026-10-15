@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .48px;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #e3aa63;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+    </style>
+  </defs>
+<rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#e3aa63" stroke="#AAB4C0" stroke-width="1.8"/>
+<g transform="translate(5.85 11.6)">
+<g id="Calque_1-2" data-name="Calque 1">
+    <g>
+
+      <g class="cls-3">
+        <path class="cls-1" d="M8.73,17.81V6.81h2.67v1.29h-1.24v8.41h1.24v1.29h-2.67Z"/>
+        <path class="cls-1" d="M27.57,6.81v11h-2.67v-1.29h1.24v-8.42h-1.24v-1.28h2.67Z"/>
+      </g>
+      <path class="cls-2" d="M22.27,8.14h-8.24l.11.68,2,3.59-2.14,3.9v.55h8.32v-.55l-2.14-3.9,1.94-3.59.16-.68ZM14.49,16.49l2.12-4.07-1.94-3.6h6.9l-2.02,3.6,2.19,4.07h-7.26,0ZM19.36,15.48c-.84-.16-.89-.36-.89-.48h-.75c0,.12-.04.32-.89.48s-1.5.48-1.69.86h5.91c-.19-.38-.83-.7-1.69-.86h0Z"/>
+    </g>
+  </g>
+</g>
+</svg>

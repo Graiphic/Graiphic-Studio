@@ -63,8 +63,17 @@ font instead of the view in those contexts. The Block Diagram zoom range is
 `60%` to `150%`. A shortcut has no effect when the current selection cannot
 perform the operation.
 
-`Ctrl+R` opens the same compilation diagnostics as clicking a broken Run icon
-when the document has compilation errors. For a compilable document it currently
-does nothing; runtime execution is a separate delivery. Recent editing changes
-are recorded in the [development checkpoint](development-checkpoint.md), with
-their remaining qualification limits.
+## Run and help
+
+| Shortcut | Action |
+| --- | --- |
+| `Ctrl+R` | Run an admitted graph; open compilation diagnostics when Run is broken |
+| `Ctrl+Shift+H` | Toggle Highlight Execution |
+| `F6` | Focus the Highlight Execution button |
+| `Pause` | Pause or resume the private simulation |
+| `F10` | While paused, process the next logical instant |
+
+Private Run can start with Highlight off. Toggling Highlight changes the
+current session's display. Execution support depends on the admitted path;
+see [Run and Highlight](../interface/run-and-highlight.md) and
+[current capabilities](development-checkpoint.md).

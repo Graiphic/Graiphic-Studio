@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg data-frog-shape-standard="square" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #008ea3;
+        stroke-linecap: square;
+        stroke-width: 1.5px;
+      }
+
+      .st1 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st2 {
+        fill: #008ea3;
+      }
+
+      .st3 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1" data-frog-canvas="48-square" shape-rendering="geometricPrecision">
+    <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+    <g>
+      <polygon class="st3" points="17.27 24.47 16.47 23.89 20.83 18.73 21.63 19.32 17.27 24.47" />
+      <polygon class="st3" points="12.95 24.47 13.74 23.89 9.38 18.73 8.58 19.32 12.95 24.47" />
+      <path class="st3" d="M20.25,19.78v-4.3h4.69v4.3h-4.69ZM23.94,16.47h-2.69v2.32h2.69v-2.32Z" />
+      <path class="st3" d="M4.92,19.78v-4.3h4.69v4.3h-4.69ZM8.61,16.47h-2.69v2.32h2.69v-2.32Z" />
+      <path class="st3" d="M12.76,27.86v-4.3h4.69v4.3h-4.69ZM16.45,24.55h-2.69v2.32h2.69v-2.32Z" />
+    </g>
+    <path class="st3" d="M26.95,13.33h0c.01-.18.19-.31.39-.3.09,0,9.08.51,9.06,7.9l2.62.09c.14,0,.27.08.33.19.06.11.04.24-.06.33l-5.04,4.87c-.07.07-.18.11-.29.11s-.22-.05-.29-.13l-4.68-5.22c-.09-.1-.1-.23-.03-.34s.2-.17.34-.17l2.61.09c.1-6.57-4.44-7.09-4.63-7.11-.2-.02-.34-.16-.34-.33Z" />
+    <g>
+      <polygon class="st2" points="34.81 36.88 33.84 36.16 39.13 29.91 40.1 30.63 34.81 36.88" />
+      <rect class="st0" x="30.38" y="36.12" width="3.81" height="4.29" transform="translate(70.55 5.98) rotate(90)" />
+      <rect class="st0" x="39.49" y="26.63" width="3.81" height="4.29" transform="translate(70.18 -12.62) rotate(90)" />
+    </g>
+    <g>
+      <polygon class="st3" points="17.27 13.84 16.47 13.25 20.83 8.1 21.63 8.68 17.27 13.84" />
+      <polygon class="st3" points="12.95 13.84 13.74 13.25 9.38 8.1 8.58 8.68 12.95 13.84" />
+      <path class="st3" d="M20.25,9.14v-4.3h4.69v4.3h-4.69ZM23.94,5.83h-2.69v2.32h2.69v-2.32Z" />
+      <path class="st3" d="M4.92,9.14v-4.3h4.69v4.3h-4.69ZM8.61,5.83h-2.69v2.32h2.69v-2.32Z" />
+      <path class="st3" d="M12.76,17.23v-4.3h4.69v4.3h-4.69ZM16.45,13.92h-2.69v2.32h2.69v-2.32Z" />
+    </g>
+  </g>
+</svg>

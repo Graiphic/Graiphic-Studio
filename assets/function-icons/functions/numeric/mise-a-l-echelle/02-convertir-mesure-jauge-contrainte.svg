@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" /><g transform="matrix(1.148325 0 0 1.148325 -3.559809 -3.559809) translate(-0.8 -0.63)" data-frog-body-glyph-profile="square-v1">
+  <g>
+    <path class="st1" d="M11.21,11.91h7.73v-1.58l6.28,4.1-6.28,4.1v-1.58h-7.73v-5.04Z" />
+    <path class="st1" d="M38.38,15.12h-7.73v-1.58l-6.28,4.1,6.28,4.1v-1.58h7.73v-5.04Z" />
+  </g>
+  <g>
+    <g>
+      <rect class="st1" x="30.41" y="29.55" width="7.33" height="1" transform="translate(-11.36 30.68) rotate(-42.2)" />
+      <rect class="st1" x="11.86" y="29.55" width="7.33" height="1" transform="translate(6.84 62.75) rotate(-137.8)" />
+    </g>
+    <path class="st1" d="M30.1,34.15l-.58.53-.49-.54.11-.1c-1.37-.13-2.82-.21-4.34-.21s-2.97.08-4.34.21l.11.1-.49.54-.58-.53c-4.09.5-7.27,1.57-8.53,2.89h3.29c1.35-1.41,5.55-2.44,10.53-2.44s9.19,1.03,10.53,2.44h3.29c-1.26-1.32-4.44-2.39-8.53-2.89Z" />
+  </g>
+</g></svg>

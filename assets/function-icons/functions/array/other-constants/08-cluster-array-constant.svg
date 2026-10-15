@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #e359af;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+<rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#e359af" stroke="#AAB4C0" stroke-width="1.8"/>
+<g transform="translate(5.85 11.6)">
+<g id="Calque_1-2" data-name="Calque 1">
+    <g>
+
+      <g class="cls-3">
+        <path class="cls-2" d="M8.43,17.9V6.9h2.67v1.29h-1.24v8.41h1.24v1.29h-2.67Z"/>
+        <path class="cls-2" d="M27.87,6.9v11h-2.67v-1.29h1.24v-8.42h-1.24v-1.28h2.67Z"/>
+      </g>
+      <g>
+        <rect class="cls-4" x="12.64" y="7.57" width="7" height="7"/>
+        <rect class="cls-4" x="20.63" y="7.57" width="3.03" height="9.65"/>
+        <rect class="cls-4" x="15.23" y="12.81" width="1.83" height="7" transform="translate(32.45 .17) rotate(90)"/>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+     data-frog-shape-standard="fixed-constant" role="img" aria-label="Error Constant">
+  <title>Error Constant</title>
+  <!-- Supplied 36.3 x 24.8 SVG, centered in the standard constant viewport. -->
+  <g transform="translate(5.85 11.6)">
+    <path fill="#dec01b" stroke="#aab4c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+          d="M12.15.9h12.01c6.21,0,11.25,5.15,11.25,11.5h0c0,6.35-5.03,11.5-11.25,11.5h-12.01C5.93,23.9.9,18.75.9,12.4h0C.9,6.05,5.93.9,12.15.9Z"/>
+    <g fill="#f8fafc">
+      <rect x="18.58" y="5.71" width="2.72" height="9.71" transform="translate(39.87 21.13) rotate(-180)"/>
+      <rect x="18.58" y="17.36" width="2.72" height="2.03" transform="translate(39.87 36.75) rotate(-180)"/>
+      <polygon points="16.11 9.65 10.92 5.41 9.21 7.83 16.11 9.65"/>
+      <polygon points="15 11.06 10.35 13.8 9.95 11.57 15 11.06"/>
+    </g>
+  </g>
+</svg>

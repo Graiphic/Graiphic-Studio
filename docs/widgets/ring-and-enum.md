@@ -51,3 +51,20 @@ different definitions rather than silently treating them as the same numeric typ
 Control variants bind toward public inputs; indicators bind from public outputs.
 See the [development checkpoint](../reference/development-checkpoint.md) for
 current qualification and source/runtime limits.
+
+
+## Create a typed peer
+
+Enum and Ring menus provide one **Create Constant / Create Control / Create
+Indicator** trio. These commands create a separate typed object, preserving the
+original and its item configuration. They are separate from **Change to
+Control / Indicator**, which changes the existing object's role.
+
+Enum creation retains the complete ordered definition and representation.
+Explicit nested field/cell targets are resolved separately from the enclosing
+container. The Array's menu creates an Array rather than silently selecting a
+scalar child.
+
+The latest menu changes are compiled in the 15 October checkpoint; their new
+regression cases have not yet executed. See
+[current capabilities](../reference/development-checkpoint.md).

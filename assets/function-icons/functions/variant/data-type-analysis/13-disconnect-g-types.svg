@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #fffffe;
+        stroke-width: .5px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #f8fafc;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        fill: #ad1cb6;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        fill: #4b5563;
+      }
+
+      .cls-4 {
+        fill: #f8fafc;
+        stroke-width: 1.8px;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #ad1cb6;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#F8FAFC" stroke="#AD1CB6" stroke-width="1.8" />
+        <path class="cls-5" d="M5.6.51h37c2.48,0,4.5,2.02,4.5,4.5v9.9H1.1V5.01C1.1,2.52,3.12.51,5.6.51Z" />
+        <g>
+          <g>
+            <rect class="cls-3" x="9.02" y="5.14" width="7.67" height="7.67" />
+            <rect class="cls-3" x="5.19" y="7.06" width="3.83" height="3.83" />
+            <rect class="cls-3" x="16.69" y="7.06" width="3.83" height="3.83" />
+          </g>
+          <g>
+            <rect class="cls-2" x="26.17" y="6.47" width=".47" height="5.01" transform="translate(17.43 35.38) rotate(-90)" />
+            <polygon class="cls-2" points="27.5 11.53 29.28 9.11 29.37 8.98 29.28 8.84 27.5 6.42 27.12 6.7 28.79 8.98 27.12 11.25 27.5 11.53" />
+          </g>
+          <rect class="cls-1" x="39.17" y="2.45" width="1.6" height="6.1" transform="translate(45.47 -34.46) rotate(90)" />
+          <rect class="cls-1" x="35.56" y="5.92" width="1.6" height="6.1" transform="translate(45.33 -27.38) rotate(90)" />
+          <rect class="cls-1" x="39.17" y="9.4" width="1.6" height="6.1" transform="translate(52.41 -27.51) rotate(90)" />
+        </g>
+      </g>
+      <path class="cls-7" d="M31.84,34.97v8.38l-7.82-4.21v-8.38s7.82,4.21,7.82,4.21ZM40.96,30.79v8.34l-7.82,4.21v-8.38l7.82-4.21v.04ZM24.7,29.64l7.79-4.19,7.78,4.19-7.78,4.19-7.79-4.19Z" />
+      <path class="cls-5" d="M12.85,33l-1.23,1.22-2.87-2.89-2.89,2.89-1.23-1.24,2.89-2.86-2.89-2.89,1.2-1.23,2.93,2.89,2.91-2.89,1.18,1.28-2.87,2.84,2.89,2.87Z" />
+      <g>
+        <line class="cls-6" x1="8.74" y1="14.56" x2="8.74" y2="24.56" />
+        <circle class="cls-5" cx="8.74" cy="24.56" r="1.13" />
+      </g>
+      <g>
+        <line class="cls-6" x1="8.74" y1="46.31" x2="8.74" y2="36.31" />
+        <circle class="cls-5" cx="8.74" cy="36.31" r="1.13" />
+      </g>
+    </g>
+  </g>
+</svg>

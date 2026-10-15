@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.33 11.14" data-frog-extension-standard="cluster-build-array-rows">
+  <!-- Build cluster array_Element.svg: original row glyphs, flattened styles.
+       Only the outer strip is closed at its two ends; no inter-row borders. -->
+  <rect id="shell" x=".665" y=".665" width="46" height="9.81" rx="4.5" ry="4.5" fill="#4b5563" stroke="#aab4c0" stroke-width="1.33"/>
+  <path id="divider" d="M23.66 0V11.14" fill="none" stroke="#f8fafc" stroke-linejoin="round"/>
+  <rect id="row-arrow-shaft" x="17.13" y="2.68" width=".38" height="5.79" transform="translate(22.89 -11.75) rotate(90)" fill="#fffffe" stroke="#f8fafc" stroke-width=".48" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="row-arrow-head" points="19.16 3.5 20.48 5.46 20.56 5.57 20.48 5.68 19.16 7.64 18.89 7.41 20.12 5.57 18.89 3.73 19.16 3.5" fill="#fffffe" stroke="#f8fafc" stroke-width=".38" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="row-cluster" x="30.19" y="2.76" width="10.48" height="5.24" fill="#4b5563" stroke="#f8fafc" stroke-miterlimit="10"/>
+  <rect id="row-element" x="3.92" y="3.35" width="8.87" height="4.43" fill="#f8fafc"/>
+  <path id="row-cluster-element" d="M31.87 5.38H38.98" fill="none" stroke="#f8fafc" stroke-miterlimit="10"/>
+</svg>

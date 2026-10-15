@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <title>Sous-ensemble d'une chaîne</title>
+<defs>
+    <style>
+      .st0 {
+        fill: #f8fafc;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 8.5px;
+        font-weight: 700;
+      }
+
+      .st0, .st1 {
+        isolation: isolate;
+      }
+
+      .st2 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st3 {
+        stroke: #f8fafc;
+      }
+
+      .st3, .st4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.3px;
+      }
+
+      .st4 {
+        stroke: #f017f0;
+      }
+    </style>
+  </defs>
+  <rect class="st2" x="1" y="1" width="46" height="46" rx="4.5" ry="4.5"/>
+  <g class="st1">
+    <text class="st0" transform="translate(7.68 19)"><tspan x="0" y="0">abc</tspan></text>
+  </g>
+  <line class="st4" x1="26" y1="16.35" x2="40.35" y2="16.35"/>
+  <line class="st4" x1="26" y1="21.76" x2="40.35" y2="21.76"/>
+  <line class="st3" x1="7.99" y1="32.59" x2="40.35" y2="32.59"/>
+  <line class="st3" x1="7.99" y1="38" x2="17.01" y2="38"/>
+  <line class="st4" x1="20.73" y1="38" x2="40.35" y2="38"/>
+  <line class="st3" x1="7.99" y1="27.18" x2="40.35" y2="27.18"/>
+  <line class="st3" x1="26" y1="10.94" x2="40.35" y2="10.94"/>
+</svg>

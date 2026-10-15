@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" data-frog-shape-standard="square" role="img">
+<style type="text/css">
+	.st0{fill:#4B5563;stroke:#AAB4C0;stroke-width:1.8;}
+	.st1{fill:#F8FAFC;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:11px;}
+	.st4{fill:none;stroke:#F8FAFC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{enable-background:new    ;}
+	.st6{font-family:'SegoeUI-Bold';}
+	.st7{font-size:19.52px;}
+	.st8{fill:#F6F7F7;}
+</style>
+<rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+<text transform="matrix(1 0 0 1 5.5088 12.9997)" class="st1 st2 st3">???</text>
+<line class="st4" x1="30" y1="17" x2="42" y2="17" />
+<line class="st4" x1="30" y1="21" x2="42" y2="21" />
+<line class="st4" x1="30" y1="25" x2="40" y2="25" />
+<g class="st5">
+	<text transform="matrix(1 0 0 1 8.8071 43.5999)" class="st1 st6 st7">#</text>
+</g>
+<g class="st5">
+	<text transform="matrix(1 0 0 1 6.1104 23.9998)" class="st1 st2 st3">abc</text>
+</g>
+<path class="st8" d="M36.282,28.599L36.282,28.599c0.177-0.035,0.339,0.114,0.374,0.305c0.021,0.092,1.496,8.969-5.727,10.574&#xD;&#xA;&#x9;l0.483,2.582c0.028,0.141-0.015,0.283-0.114,0.367c-0.085,0.085-0.226,0.084-0.339,0.013l-5.854-3.851&#xD;&#xA;&#x9;c-0.085-0.057-0.148-0.149-0.169-0.269s0-0.226,0.057-0.311l4.07-5.706c0.078-0.106,0.205-0.148,0.318-0.105s0.212,0.156,0.24,0.297&#xD;&#xA;&#x9;l0.483,2.568c6.437-1.345,5.951-5.886,5.923-6.084c-0.028-0.198,0.086-0.368,0.248-0.403L36.282,28.599z" />
+</svg>

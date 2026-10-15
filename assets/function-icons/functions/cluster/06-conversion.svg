@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.5 34.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: icon;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.3px;
+      }
+
+      .cls-2 {
+        fill: icon;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g shape-rendering="geometricPrecision">
+      <g data-role="glyph">
+        <path class="cls-2" d="M0,0h18c3.2,0,5.5,2.1,5.5,5s-2.3,5-5.5,5H0V0Z"/>
+        <path class="cls-1" d="M5,6h29v12H3v11h11"/>
+        <path class="cls-1" d="M11,25l4,4-4,4"/>
+        <path class="cls-2" d="M17,24h15c3.2,0,5.5,2.1,5.5,5s-2.3,5-5.5,5h-15v-10Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

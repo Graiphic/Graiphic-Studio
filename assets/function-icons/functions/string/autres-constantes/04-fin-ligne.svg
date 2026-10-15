@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-shape-standard="fixed-constant">
+  <title id="title">End Of Line Constant</title>
+  <rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#F017F0" stroke="#AAB4C0" stroke-width="1.8"/>
+  <g transform="translate(0.07 0)">
+    <polygon fill="#F8FAFC" fill-rule="evenodd" points="20.665,17.5 20.665,24.41 16.735,24.41 16.735,21.25 12.375,25.87 16.735,30.5 16.735,27.34 23.055,27.34 23.055,17.5"/>
+    <polygon fill="none" stroke="#F8FAFC" stroke-width="1.5" stroke-miterlimit="8" points="32.945,18.43 30.595,18.43 30.595,23.19 28.055,23.19 31.775,29.57 35.485,23.19 32.945,23.19"/>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" data-frog-shape-standard="square">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-size: 7px;
+      }
+
+      .st0, .st1 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st0, .st1, .st2 {
+        isolation: isolate;
+      }
+
+      .st0, .st1, .st3 {
+        fill: #f8fafc;
+      }
+
+      .st4 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        font-size: 10px;
+      }
+
+      .st5, .st6 {
+        stroke: #f8fafc;
+      }
+
+      .st5, .st6, .st7 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st5, .st7 {
+        stroke-width: 2.3px;
+      }
+
+      .st7 {
+        stroke: #f017f0;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+  <g transform="translate(0 -4.09)">
+  <line class="st5" x1="25.4" y1="12.43" x2="40.25" y2="12.43" />
+  <line class="st5" x1="25.4" y1="18.09" x2="40.25" y2="18.09" />
+  <line class="st7" x1="35.88" y1="23.7" x2="40.25" y2="23.7" />
+  <line class="st5" x1="25.4" y1="23.7" x2="32.07" y2="23.7" />
+  <path class="st3" d="M35.17,38.87l.51-1.86c-1.47-.53-2.53-1.4-3.14-2.58-1.08-2.08-.39-4.36-.36-4.46l.35.11c-.04.14-.57,3.24,3.73,4.78l.51-1.86,3.04,4.22-4.64,1.64h0Z" />
+  <g class="st2">
+    <g class="st2">
+      <text class="st1" transform="translate(5.06 21.09)"><tspan x="0" y="0">abc</tspan></text>
+    </g>
+  </g>
+  <g class="st2">
+    <g class="st2">
+      <text class="st0" transform="translate(3.35 44.16)"><tspan x="0" y="0">abc</tspan></text>
+    </g>
+  </g>
+  <line class="st7" x1="36.88" y1="42.02" x2="41.25" y2="42.02" />
+  <path class="st3" d="M24.1,35.87l-.51-1.86c1.47-.53,2.53-1.4,3.14-2.58,1.08-2.08.39-4.36.36-4.46l-.35.11c.04.14.57,3.24-3.73,4.78l-.51-1.86-3.04,4.22,4.64,1.64h0Z" />
+  <line class="st6" x1="17.06" y1="38.53" x2="23.73" y2="38.53" />
+  <line class="st6" x1="17.06" y1="42.19" x2="23.73" y2="42.19" />
+  <line class="st6" x1="17.06" y1="45.8" x2="23.73" y2="45.8" />
+  </g>
+</svg>

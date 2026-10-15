@@ -1,130 +1,105 @@
 # Studio Options
 
-Open **Tools > Options...** to configure Graiphic Studio without changing the
-execution meaning of the current `.frog` document.
+Open **Tools > Options...** to adjust the editor. The seven categories separate
+appearance, document-view defaults, drawing behavior, and assistance.
 
-The Options window is divided into three categories: Appearance, Front Panel,
-and Icon Editor. **Apply** commits changes without closing the window, while
-**OK** commits and closes it. **Cancel** and the close button leave unapplied
-changes unchanged.
+| Category | What you can configure |
+| --- | --- |
+| Appearance | Light/Dark theme, interface language, navigation size, version visibility, default document text size |
+| Front Panel | Grid visibility, pitch, snapping, style, default background and zoom |
+| Diagram | Default background and supported starting zoom |
+| Icon Editor | Canvas background, collections, and reusable SVG glyph folders |
+| Assistance | Interactive helper behavior |
+| User Experience | Tool selection after drawing |
+| Selection Auras | Selection outline thickness for the listed element families |
 
-![Appearance options and live Studio preview](../../assets/screenshots/options/appearance-options-dark.png)
+**Apply** saves changes and keeps Options open. **OK** saves and closes it.
+**Cancel** discards changes made since the last Apply.
 
-## Appearance
+![Appearance page from an earlier Studio documentation capture](../../assets/screenshots/options/appearance-options-dark.png)
 
-Appearance selects the interface theme. The current release provides **Dark**
-and **Light** profiles. Selecting a profile updates the preview immediately so
-you can inspect the title area, menus, execution and editing icon families,
-font control, Front Panel, widget selection, grid, and status bar before
-applying it.
+*Existing Appearance capture. Its category list predates the current seven-page
+Options window; use the category table above for the current layout.*
 
-**Interface language** is available beside the theme selector. The choices are
-**English (United States)**, **French**, **Italian**, **Chinese (Simplified)**,
-**Japanese**, **German**, and **Spanish**. Simplified Chinese is used for the
-Chinese profile.
+## Theme, language, and navigation
 
-**Interface font size** provides three navigation levels:
+Choose **Light** or **Dark** and inspect the live preview before applying.
+Interface languages are English (United States), French, Italian, Chinese
+(Simplified), Japanese, German, and Spanish.
 
-- **Small** keeps the original compact 9 pt interface.
-- **Medium** uses 11 pt.
-- **Large** uses 13 pt.
+Navigation sizing offers **Small** (9 pt), **Medium** (11 pt), and **Large**
+(13 pt). It scales Navigator tiles, palette labels, spacing, and shell controls.
+An already placed Front Panel widget keeps its authored dimensions.
 
-The preview reflects the selected size immediately. Press **Apply** to update
-the main shell, status controls, and Navigator ergonomics without closing
-Options. The choice is restored in future Studio sessions.
+Pinned Navigators retain a manually chosen window size where possible and
+reflow their scaled tiles. Transient Navigators adapt their window size to the
+chosen level and available monitor area.
 
-This setting never rewrites the font, geometry, or layout of widgets already
-placed on the Front Panel. Those are authored document properties. It also does
-not rescale Icon Editor artwork or its 40 x 40 logical preview.
+**Show Studio version** controls whether the version appears in the main window.
 
-The Widget Navigator follows the same setting: its popup, tiles, icons,
-labels, spacing, and family views become compact at **Small**, intermediate at
-**Medium**, and expanded at **Large**. The expanded layout reserves enough
-space for complete family and widget names. Transient navigator windows resize
-as soon as the setting is applied. A pinned navigator that you resized manually
-keeps its window size and reorganizes the scaled tiles within it; Studio only
-grows it when the selected font no longer fits its current bounds. Toolbar text
-controls and the status zoom value also reserve more width at larger levels.
+## Default document text size
 
-Both built-in themes use the same visual hierarchy: headers are deliberately
-distinct from window and panel bodies, with a fine divider between them. This
-applies consistently to Options, Widget Navigator, Icon Editor, Resize
-Objects, Selection, Ring/Enum Items, and Color Navigator.
+The Appearance page has a separate **Default document text size** control.
+Use minus and plus to change it in points. This setting concerns Front Panel
+and Block Diagram text; it is separate from navigation sizing. Explicit custom
+text sizes are preserved.
 
-The Light profile also separates menu, toolbar, panel, control, hover, active,
-disabled, grid, border, and selection tones. Secondary labels stay readable
-without looking as strong as primary text. The source window switches to a
-coordinated light editor and gutter with syntax colors chosen for contrast;
-scrollbars and widget outlines follow the same profile rather than retaining
-dark-only colors.
+Text fitting depends on the object. For example, scalar Numeric Diagram
+constants and Enum values fit their text automatically; manually resizable
+String/Path fields and container viewports have their own rules. See
+[Numeric](../widgets/numeric.md), [Ring and Enum](../widgets/ring-and-enum.md),
+and [String and Path](../widgets/string-and-path.md).
 
-Toolbar icons retain the same shapes in both themes. Their monochrome ink
-follows the interface and button state, including disabled Highlight Execution,
-speed and Step. A lit bulb uses dark amber on a light button and light amber on
-a dark button so its active state stays readable. This interface rule is separate
-from the invariant artwork of Block Diagram functions.
+## Front Panel and Diagram defaults
 
-![Light theme preview](../../assets/screenshots/options/appearance-light-preview.png)
+For the Front Panel, configure **Show front panel grid**, **Default grid size**,
+**Enable grid alignment**, and **Grid draw style** (Lines, Dots, or Graph Paper).
+Grid visibility and snapping are independent.
 
-Theme colors are profile-based rather than embedded in individual windows.
-This keeps the shell, menus, popups, palettes, editors, text, icons, and
-interaction states on one shared visual system. Additional profiles can be
-added without redefining `.frog` source semantics.
-
-## Front Panel
-
-Front Panel options configure the editing grid:
-
-- **Show front panel grid** controls grid visibility.
-- **Default grid size** sets the grid pitch in pixels.
-- **Enable grid alignment** enables snap-to-grid placement.
-- **Grid draw style** selects **Lines**, **Dots**, or **Graph Paper**.
-
-![Front Panel grid options](../../assets/screenshots/options/front-panel-grid.png)
-
-Pressing **OK** applies these values to the current Front Panel and stores them
-as defaults for a new document. Grid appearance and snapping are editing
-preferences; widget placement stored in a saved `.frog` document remains
-explicit source-owned layout.
+The Front Panel and Diagram pages also provide default background colors and
+starting zoom. Diagram zoom remains within its supported **60%–150%** range.
+Changing a view preference does not change a value or a function's meaning.
+Applying an unrelated Options category preserves the current document's
+existing grid and view settings.
 
 ## Icon Editor
 
-The Icon Editor category controls the drawing background and manages folders
-that contain reusable SVG glyphs.
+**Use theme background** follows the active theme. Disable it to choose a custom
+solid canvas background. The background is a preview aid and does not fill
+transparent artwork.
 
-- **Use theme background** follows the active Studio profile: the Diagram-like
-  dark surface in Dark mode and a light surface in Light mode.
-- Disable it to choose a custom solid background through the Color Navigator.
-  This is an editing and preview aid; it is not painted into transparent SVG
-  artwork.
+Use the collections and glyph-folder list to organize reusable SVGs:
 
-- **Add Folder...** selects a folder containing SVG assets.
-- Double-click a listed path to edit it in place. Press `Enter` to keep the
-  change or `Escape` to cancel the inline edit.
-- Selecting a listed path enables **Remove**.
-- **Remove** forgets the folder from the local profile; it does not delete the
-  folder or any SVG file from disk.
+- **Add Folder...** adds a library location.
+- Double-click a path to edit it; `Enter` commits and `Escape` cancels.
+- **Remove** forgets the selected folder without deleting its files.
 
-Configured folders are available again the next time Graiphic Studio starts.
-If the Icon Editor is already open, applying Options refreshes its glyph
-library immediately.
+Applying Options refreshes an open Icon Editor's library. See
+[Icon Editor](icon-editor.md) for artwork editing.
 
-## Preference Storage
+## Assistance
 
-Studio preferences are stored in the local user profile:
+**Interactive helper** enables delayed explanations on interactive controls.
+When [Context Help](context-help.md) is open with `Ctrl+H`, those explanations
+are shown in the help window instead of separate floating hints.
 
-```text
-%APPDATA%\Graiphic\Frog Engine 1.0\frog-studio.ini
-```
+## User Experience
 
-The selected theme, interface language, interface font size, Front Panel grid
-defaults, Icon Editor background, and glyph-folder list are Studio preferences.
-They do not become hidden runtime behavior and do not replace source-owned
-`.frog` document properties.
+**FROG Style** returns a drawing tool to selection after use. **Manual** keeps
+the chosen tool active until you select another tool or press `Escape`.
 
-Choose array storage for the current document in
-[FROG Properties > Storage](frog-properties.md), rather than in Studio Options.
+## Selection Auras
 
-The reset icon in the Options header restores Studio preferences to their
-defaults without changing the current document's authored widgets, Diagram, or
-view geometry. Use **Apply** to inspect the result before closing the window.
+Adjust the outline thickness for the element families listed on this page.
+Hover a numeric control to read which elements that family covers. These
+settings affect the editor's selection feedback; function SVG artwork remains
+the same in Light and Dark mode.
+
+## Preferences and document properties
+
+Local preferences are restored in later Studio sessions. The reset icon opens
+the reset workflow for Studio settings. Read its confirmation before applying.
+
+Document values, widget styles, explicit layout, and public bindings belong to
+the `.frog` document. Choose per-document Array storage in
+[FROG Properties > Storage](frog-properties.md).

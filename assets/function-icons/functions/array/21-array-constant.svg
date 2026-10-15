@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 104 64"
+     role="img"
+     aria-label="Empty Array Constant"
+     data-frog-visual-standard="empty-array-constant">
+  <title>Array Constant</title>
+  <g fill="#232933" stroke="#AAB4C0" stroke-width="1.5"
+     stroke-linecap="square" stroke-linejoin="miter">
+    <rect x="40.75" y="0.75" width="62.5" height="62.5"/>
+    <rect x="0.75" y="0.75" width="40" height="23"/>
+  </g>
+  <g fill="none" stroke="#AAB4C0" stroke-width="1.5"
+     stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M12.75 1.5v21.75M1.5 12.25h11.25"/>
+  </g>
+  <g fill="#E2E8F0">
+    <path d="M6.75 4 3.5 8.25H10z"/>
+    <path d="M6.75 20.5 3.5 16.25H10z"/>
+  </g>
+  <ellipse cx="27" cy="12.25" rx="4.25" ry="7.1"
+           fill="none" stroke="#E2E8F0" stroke-width="1.8"/>
+</svg>

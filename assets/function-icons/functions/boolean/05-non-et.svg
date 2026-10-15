@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-visual-standard="logic-gate-40x24">
+  <title id="title">NON ET</title>
+  <g shape-rendering="geometricPrecision">
+    <path d="M5 12h14.5c10.3 0 14 5 14 12s-3.7 12-14 12H5V12Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M13.3 28.8l5.2-9.6 5.2 9.6" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="38" cy="24" r="3.1" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-shape-standard="fixed-constant">
+  <title id="title">Carriage Return Constant</title>
+  <rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#F017F0" stroke="#AAB4C0" stroke-width="1.8"/>
+  <polygon transform="translate(2.009 0.397)" fill="#F8FAFC" fill-rule="evenodd" points="25.841,15.121 25.841,24.138 20.712,24.138 20.712,20.014 15.023,26.043 20.712,32.085 20.712,27.961 28.959,27.961 28.959,15.121"/>
+</svg>

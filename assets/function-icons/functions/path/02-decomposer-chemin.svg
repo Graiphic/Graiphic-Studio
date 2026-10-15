@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg data-frog-shape-standard="square" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #008ea3;
+      }
+
+      .st0, .st1 {
+        fill: none;
+        stroke-linecap: square;
+        stroke-width: 1.5px;
+      }
+
+      .st2 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st3 {
+        fill: #008ea3;
+      }
+
+      .st1 {
+        stroke: #f6f7f7;
+      }
+
+      .st4 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1" data-frog-canvas="48-square" shape-rendering="geometricPrecision">
+    <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+    <path class="st4" d="M31.79,20.46h.01c.15-.08.35,0,.45.17.04.08,4.32,8-1.99,11.86l1.29,2.28c.07.13.07.27,0,.38-.06.11-.19.16-.31.12l-6.79-1.75c-.1-.03-.19-.1-.25-.2s-.07-.21-.04-.31l2-6.72c.04-.13.14-.21.27-.21s.25.08.32.21l1.29,2.28c5.65-3.36,3.72-7.49,3.64-7.67-.09-.18-.04-.38.1-.46Z" />
+    <polygon class="st4" points="13.45 9.16 14.41 9.88 9.12 16.13 8.16 15.42 13.45 9.16" />
+    <polygon class="st4" points="18.69 9.16 17.72 9.88 23.01 16.13 23.98 15.42 18.69 9.16" />
+    <rect class="st1" x="14.25" y="5.63" width="3.81" height="4.29" transform="translate(8.39 23.94) rotate(-90)" />
+    <rect class="st1" x="4.9" y="15.12" width="3.81" height="4.29" transform="translate(-10.46 24.07) rotate(-90)" />
+    <g>
+      <polygon class="st3" points="10.49 39.51 9.52 38.79 14.81 32.54 15.78 33.26 10.49 39.51" />
+      <rect class="st0" x="6.05" y="38.75" width="3.81" height="4.29" transform="translate(48.86 32.93) rotate(90)" />
+      <rect class="st0" x="15.17" y="29.26" width="3.81" height="4.29" transform="translate(48.48 14.33) rotate(90)" />
+    </g>
+    <polygon class="st4" points="27.98 16.29 27.01 15.58 32.3 9.33 33.27 10.04 27.98 16.29" />
+    <rect class="st4" x="23.08" y="14.53" width="5.28" height="5.79" transform="translate(43.15 -8.29) rotate(90)" />
+    <rect class="st4" x="32.2" y="4.97" width="5.28" height="5.79" transform="translate(42.7 -26.97) rotate(90)" />
+  </g>
+</svg>

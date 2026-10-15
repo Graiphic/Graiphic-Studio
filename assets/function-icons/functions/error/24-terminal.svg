@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.94 81.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dec01b;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.78px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #606060;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-3 {
+        fill: #f8fafc;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g data-role="frog-string-output-terminal" shape-rendering="geometricPrecision">
+        <path class="cls-1" d="M151.49,11.39H11.93v59.05h139.56c16.31,0,29.52-13.22,29.52-29.52s-13.22-29.53-29.52-29.53h0Z"/>
+        <path class="cls-2" d="M190.34,30.62l-12.85-19.09c-3.38-5.02-9.03-8.03-15.08-8.03H5.66c-1.19,0-2.16,1.25-2.16,2.77v69.29c0,1.52.97,2.77,2.16,2.77h156.53c6.05,0,11.7-3.01,15.08-8.02l13.06-19.37c4.14-6.14,4.14-14.18,0-20.32Z"/>
+      </g>
+      <g>
+        <g>
+          <rect class="cls-3" x="93.4" y="19.99" width="8.72" height="31.18" transform="translate(195.51 71.16) rotate(-180)"/>
+          <rect class="cls-3" x="93.4" y="57.41" width="8.72" height="6.51" transform="translate(195.51 121.34) rotate(-180)"/>
+        </g>
+        <polygon class="cls-3" points="85.48 32.65 68.8 19.03 63.31 26.79 85.48 32.65"/>
+        <polygon class="cls-3" points="81.92 37.18 66.98 45.99 65.68 38.82 81.92 37.18"/>
+      </g>
+    </g>
+  </g>
+</svg>

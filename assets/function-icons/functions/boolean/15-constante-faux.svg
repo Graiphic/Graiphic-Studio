@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-shape-standard="fixed-constant">
+  <title id="title">Constante Faux</title>
+  <g shape-rendering="geometricPrecision">
+    <rect x="6.75" y="12.5" width="34.5" height="23" rx="11.5" ry="11.5" fill="#FFFFFF" stroke="#0D770D" stroke-width="1.8" /><text x="20.9" y="28.26" fill="#0D770D" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0">F</text>
+  </g>
+</svg>

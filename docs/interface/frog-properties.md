@@ -22,5 +22,4 @@ memory or lazy loading. The
 [storage profile](https://github.com/Graiphic/FROG/blob/main/docs/studio-array-storage-v1.md)
 defines the exact representation and reader limits; the
 [development checkpoint](../reference/development-checkpoint.md) distinguishes
-compiled support from functional qualification, which is pending under the
-test pause.
+per-feature verification from complete application qualification.

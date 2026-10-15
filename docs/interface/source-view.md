@@ -1,46 +1,39 @@
-# Source View
+# Source view
 
-The Source view exposes the live `.frog` representation associated with the
-current Graiphic Studio document. It complements the visual Front Panel and
-Block Diagram by making serialized program structure directly inspectable.
+Source displays the live `.frog` representation of the current document. Use it
+to inspect what the Front Panel and Block Diagram edits have produced.
 
-![Live .frog source generated from the Front Panel](../../assets/screenshots/source-view/source-view-live.jpg)
+![Source view from an earlier Studio documentation capture](../../assets/screenshots/source-view/source-view-live.jpg)
 
-## Open The View
+*Existing capture of live source inspection; it does not establish conformance
+or execution of every format the Studio can read.*
 
-Press `Ctrl+Shift+E` to open or raise the Source window. It has its own native
-window geometry and does not resize the Front Panel or Block Diagram.
+## Open and inspect
 
-## What It Shows
+Press `Ctrl+Shift+E` to open or raise Source. Its window has independent geometry
+and does not resize the other views. Line numbers and syntax highlighting help
+you inspect identities, values, bindings, Diagram nodes and edges, artwork,
+authored layout, and saved view state.
 
-The editor provides line numbers and syntax highlighting for the current JSON
-source. It is useful for checking:
+Edits in the visual workspace are reflected in the current session's source
+projection. Selection, hover, menus, and temporary runtime inputs are not
+executable document data.
 
-- metadata and schema identity;
-- the public interface and Interface Map state;
-- Front Panel widgets, labels, geometry, values, and bindings;
-- Diagram nodes, ports, edges, annotations, and layout;
-- the embedded document icon and media references;
-- source-carried authoring state such as zoom and viewport origin.
+## Recognize the envelope
 
-The status area identifies the source as the live `.frog` projection generated
-from the current document session.
+Studio Readable authoring uses `frog.document.draft`, revision 2, and
+`frontPanel`. Automatic/Compact numeric storage opts into private revision 3.
+Public FROG source uses `spec_version` and the published optional `front_panel`
+section. The `.frog` extension alone does not identify the envelope.
 
-## Source And Execution Boundary
+Studio's public-source reader and preservation/transaction writer are separate
+from the full editing-model importer. A file can be preserved without every
+construct being projected onto the canvas, validated, lowered, or executable.
+See [the document model](../reference/document-model.md).
 
-For the current authoring document, the live view exposes Studio's draft envelope
-(`format: "frog.document.draft"`, `draft_revision: 2`, `frontPanel`). The public
-canonical source uses `spec_version` and optional `front_panel`. The common file
-extension does not make these formats interchangeable. See
-[The Document Model](../reference/document-model.md) for the importer and writer
-boundaries; editing or saving a draft does not certify public-source conformance.
+## Check execution separately
 
-The Source view does not make editor selection, hover, open menus, theme,
-language, or navigation font size executable. The Diagram remains the
-authoritative executable graph; the Front Panel remains the user-facing widget
-composition; the Source view reveals the explicit document that connects
-those concerns.
-
-When a field is optional IDE metadata, runtimes and compilers must be able to
-ignore it without changing program meaning. See [The `.frog` Document
-Model](../reference/document-model.md).
+A successful save is not a target-runtime qualification. Private Studio
+Run/Highlight and the narrow public execution paths have their own admission
+rules. Read [current capabilities](../reference/development-checkpoint.md) and
+[Run and Highlight](run-and-highlight.md) when choosing an execution path.

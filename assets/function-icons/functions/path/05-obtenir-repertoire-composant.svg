@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg data-frog-shape-standard="square" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #008ea3;
+        stroke-linecap: square;
+        stroke-width: 1.5px;
+      }
+
+      .st2 {
+        fill: #008ea3;
+      }
+
+      .st3 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1" data-frog-canvas="48-square" shape-rendering="geometricPrecision">
+    <rect x="1" y="1" width="46" height="46" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+    <path class="st3" d="M9.69,14.08c-.85-.42-1.59.11-1.59,1.06v19.65c0,1.01,1.01,1.59,1.91,1.12l19.17-9.66c.96-.48.96-1.86,0-2.34L9.69,14.08Z" />
+    <polygon class="st2" points="29.88 15.31 28.75 16.14 34.95 23.47 36.08 22.63 29.88 15.31" />
+    <polygon class="st2" points="23.74 15.31 24.88 16.14 18.68 23.47 17.55 22.63 23.74 15.31" />
+    <rect class="st1" x="13.79" y="22.28" width="4.47" height="5.03" transform="translate(-8.77 40.82) rotate(-90)" />
+    <rect class="st2" x="34.41" y="21.46" width="6.11" height="6.66" transform="translate(12.67 62.25) rotate(-90)" />
+    <rect class="st2" x="23.77" y="10.17" width="6.11" height="6.66" transform="translate(13.33 40.32) rotate(-90)" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196.94" height="87.87" viewBox="0 0 196.94 87.87" role="img" aria-labelledby="title">
+  <title id="title">Variant Control</title>
+  <g data-role="frog-variant-output-terminal" shape-rendering="geometricPrecision">
+    <path class="terminal-color" d="M153.49 11.39H13.93v59.05h139.56c16.31 0 29.52-13.22 29.52-29.52s-13.22-29.53-29.52-29.53Z" fill="#AD1CB6" />
+    <path data-frog-selection-shell="true" class="terminal-outline" d="M190.34 30.61 177.49 11.52c-3.38-5.02-9.03-8.03-15.08-8.03H5.66C4.47 3.49 3.5 4.74 3.5 6.26v69.29c0 1.52.97 2.77 2.16 2.77h156.53c6.05 0 11.7-3.01 15.08-8.02l13.06-19.37c4.14-6.14 4.14-14.18.01-20.32Z" fill="none" stroke="#606060" stroke-width="7" stroke-miterlimit="10" />
+    <g class="terminal-symbol" fill="#AD1CB6" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10">
+      <rect x="76" y="21.5" width="44" height="44" />
+      <rect x="120" y="32.5" width="22" height="22" />
+      <rect x="54" y="32.5" width="22" height="22" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title" data-frog-visual-standard="logic-gate-40x24">
+  <title id="title">OU exclusif</title>
+  <g shape-rendering="geometricPrecision">
+    <g transform="translate(1.2 0)">
+      <path d="M9 12C15.5 18.5 15.5 29.5 9 36H20.5C31 36 40 31.2 40 24S31 12 20.5 12Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M5.5 12.7C11.5 18.7 11.5 29.3 5.5 35.3" fill="none" stroke="#F8FAFC" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M18.8 19.2L24 28.8L29.2 19.2" fill="none" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

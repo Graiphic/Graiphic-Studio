@@ -1,84 +1,47 @@
 # Variant
 
-Historical implementation note: inspector work was prepared on 19 September
-2026 with native build/interaction qualification pending on that date. The then
-delivered executable was 0.0.3.174. Current local delivery is 0.0.4.044; see the
-[development checkpoint](../reference/development-checkpoint.md). This older
-inspector note does not establish current native or runtime qualification.
+The Variant widget inspects a retained payload without turning it into a set of
+Numeric, Boolean, String, or Cluster child controls. Its Control/Indicator role
+determines the direction of its Variant Diagram terminal.
 
-## Front Panel Inspector
+## Inspect the value
 
-**Variant** in the Widget Navigator's **Data Containers** category places one
-widget. Its prepared appearance is a rectangular text inspection area, inspired
-by the supplied LabVIEW references. The display does not create Numeric,
-Boolean, String or Cluster child controls from the payload.
+Place **Variant** from **Data Containers**. Its rectangular text area supports
+resizing and scrolling; its label remains independently movable and editable.
 
-The new placement size is approximately 182 × 91 logical pixels at 100% zoom.
-Existing documents retain their authored dimensions. The rectangle uses Studio's
-text surfaces and scrollbars; the label remains independently editable and
-movable. The shared eight resize handles change the widget bounds only.
-
-| Menu action | Effect |
+| Menu action | Result |
 | --- | --- |
-| Visible Items → Label | Show or hide the widget label. |
-| Visible Items → Caption | Show or hide an independent presentation caption. |
-| Visible Items → Scrollbar | Show or hide horizontal and vertical scrolling tracks. |
-| Show Type | Show the available type information. |
-| Show Data | Show or hide the retained payload text. |
-| Find Terminal | Locate the associated Block Diagram terminal. |
-| Change to Control / Indicator | Change the top-level widget's interface direction. |
-| Properties | Edit label visibility and inspection preferences. |
+| Visible Items > Label / Caption | Show or hide the corresponding text surface |
+| Visible Items > Scrollbar | Show or hide scrolling tracks |
+| Show Type | Display available type information |
+| Show Data | Display or hide retained payload text |
+| Find Terminal | Locate the paired Diagram terminal |
+| Change to Control / Indicator | Change the top-level role |
+| Properties | Edit inspection preferences |
 
-Defaults match the provided menu reference: **Show Data** and **Scrollbar** on,
-**Show Type** off. The empty widget has a blank inspection area. Hidden nonempty
-data retains a brief size summary. Wheel scrolling, scrollbar movement and
-resizing do not edit the payload. Display changes support Undo/Redo and save/reopen.
-Variants used inside Arrays and Clusters use the same inspection surface.
+Defaults show data and scrollbars, with type display off. An empty value has a
+blank inspection area. Hiding nonempty data retains a short size summary.
+Scrolling and resizing do not edit the payload. Arrays and Clusters use the
+same inspection surface for contained Variants.
 
-## Current Data Boundary
+## Current data boundary
 
-The current Studio authoring model preserves a Variant payload as opaque text.
-It does not yet provide a complete typed Variant value model with an independent
-attribute dictionary. For an opaque nonempty payload, **Show Type** therefore
-reports that the contained type is unavailable. The inspector never infers I32,
-String or another type merely from the text's spelling.
+The Studio authoring model preserves the payload as **opaque text**. It does
+not provide a complete typed Variant value model with an independent attribute
+dictionary. For a nonempty opaque payload, Show Type reports that its contained
+type is unavailable; the inspector does not infer a type from the text spelling.
 
-The visible preview is limited to 16 KiB, ending on a UTF-8 character boundary;
-truncation is identified in the view and never applied to the stored payload.
-The preview text is not a reversible typed serialization format.
+The visible preview is limited to **16 KiB**, ending at a UTF-8 character boundary.
+Truncation is identified and affects the display only, preserving the stored
+payload. The preview is not a reversible typed serialization format.
 
-The Variant function palette currently declares authoring ports; its manifest
-does not advertise a runtime implementation. This widget work does not certify
-`To Variant`, `Variant To Data`, attribute operations or LabVIEW-compatible
-conversion behavior. A generic editor, payload replacement by drag-and-drop,
-typed empty values and resource/reference inspection need their own shared
-data contracts and tests.
+## Save and execution
 
-## Studio Document Fields
+Inspection settings and retained payload belong to the Studio draft document;
+scroll offsets are temporary view state. These fields do not define a public
+FROG Variant encoding or cross-tool conformance.
 
-These properties belong to Studio's existing draft authoring format:
-
-| Widget property | Meaning |
-| --- | --- |
-| `props["variant.payload"]` | Existing opaque payload text, preserved unchanged by inspection. |
-| `props["variant.show_type"]` | Optional view preference; defaults to `false`. |
-| `props["variant.show_data"]` | Optional view preference; defaults to `true`. |
-| `props["variant.scrollbar_visible"]` | Optional view preference; defaults to `true`. |
-
-Scroll offsets are transient UI state. The widget and wire type remain `variant`.
-These fields do not establish a canonical FROG Variant encoding or cross-tool
-conformance. No new payload schema is inferred from the illustrative JSON in
-the supplied design report.
-
-## Verification Status
-
-The standalone inspection model passes **146 assertions**, covering default
-visibility, opaque data preservation, hidden-data summaries and bounded UTF-8
-previews. The production catalog generator accepts the new dimensions.
-Both Front Panel and Icon Editor source ownership checks pass. MSVC syntax
-analysis passes; this does not replace a linked native build.
-
-Native regression coverage has been added for menus, save/reload, Undo/Redo,
-scrolling, resizing, roles, run guards and Array cell preservation. It remains
-unexecuted until the canonical build is unblocked; screenshots of the completed
-application are still required before delivery.
+The [Variant function pages](../functions/variant/index.md) document declared
+ports and operation-specific limits. This inspector does not certify typed
+conversion, attribute operations, reference inspection, or another tool's
+Variant behavior. See [current capabilities](../reference/development-checkpoint.md).

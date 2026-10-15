@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Constante Float (DBL)</title>
+  <g data-frog-element-standard="numeric-constant" shape-rendering="geometricPrecision">
+    <rect x="2" y="14.8" width="44" height="18.4" fill="#FAFAFA" stroke="#D97706" stroke-width="1.5"/>
+    <text x="24" y="24" fill="#1F232A" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="400" text-anchor="middle" dominant-baseline="middle">0</text>
+  </g>
+</svg>

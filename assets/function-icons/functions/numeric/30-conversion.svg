@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Conversion</title>
+  <g shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round">
+    <g data-role="glyph"><path d="M5 7h18c3.2 0 5.5 2.1 5.5 5s-2.3 5-5.5 5H5Z" fill="icon"/><path d="M10 13h29v12H8v11h11" fill="none" stroke="icon" stroke-width="2.3"/><path d="m16 32 4 4-4 4" fill="none" stroke="icon" stroke-width="2.3"/><path d="M22 31h15c3.2 0 5.5 2.1 5.5 5s-2.3 5-5.5 5H22Z" fill="icon"/></g>
+  </g>
+</svg>

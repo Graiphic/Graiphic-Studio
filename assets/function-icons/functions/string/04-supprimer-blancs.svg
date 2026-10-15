@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48" data-frog-shape-standard="half-horizontal-rounded">
+  <title>Supprimer les espaces blancs</title>
+<defs>
+    <style>
+      .st0 {
+        stroke: #f017f0;
+      }
+
+      .st0, .st1, .st2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .st0, .st2 {
+        stroke-width: 5px;
+      }
+
+      .st3 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        stroke-width: 3px;
+      }
+
+      .st1, .st2 {
+        stroke: #f8fafc;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="12.5" width="46" height="23" rx="4.5" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" />
+  <line class="st2" x1="11.64" y1="24" x2="36.36" y2="24" />
+  <g>
+    <line class="st0" x1="17.48" y1="24" x2="30.76" y2="24" />
+    <line class="st1" x1="32.19" y1="28.25" x2="32.19" y2="19.75" />
+    <line class="st1" x1="15.81" y1="28.25" x2="15.81" y2="19.75" />
+  </g>
+</svg>

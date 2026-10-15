@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.233 26.911">
+  <style>
+    .frame{fill:#4B5563}
+    .panel{fill:#D6C89C;stroke:#B18A3B;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round}
+    .header{opacity:.58;fill:#FFFDF5}
+    .mark{opacity:.72;fill:#8A6A2E}
+    .body{fill:#EEE5C9}
+  </style>
+  <rect x="5.711" y=".297" class="panel" width="21.81" height="6.67"/>
+  <rect x="11.411" y="1.317" class="header" width="10.45" height="4.54"/>
+  <polygon class="mark" points="16.651,4.667 14.581,2.597 18.721,2.597"/>
+  <rect x="22.611" y="1.317" class="header" width="3.8" height="4.54"/>
+  <polygon class="mark" points="25.851,3.637 23.771,4.667 23.771,2.597"/>
+  <rect x="6.861" y="1.317" class="header" width="3.8" height="4.54"/>
+  <polygon class="mark" points="7.661,3.637 9.751,4.667 9.751,2.597"/>
+  <path class="frame" d="M28.026 1.749v3.202c.845.526 1.407 1.434 1.407 2.473v13.86c0 1.63-1.375 2.95-3.074 2.95H6.937c-1.698 0-3.074-1.32-3.074-2.95V7.424c0-1.051.576-1.967 1.438-2.49V1.749C2.877 1.777.914 3.671.914 6.004v16.34c0 2.36 1.99 4.27 4.449 4.27h22.506c2.459 0 4.449-1.91 4.449-4.27V6.004c0-2.309-1.908-4.174-4.293-4.255z"/>
+  <path class="body" d="M27.995 4.951V1.749c.147.005.286.037.429.055a1.66 1.66 0 0 0-.403-.055h-.449v5.092H5.761V1.749H5.27v3.185c-.862.522-1.438 1.439-1.438 2.49v13.86c0 1.63 1.375 2.95 3.074 2.95h19.422c1.698 0 3.074-1.32 3.074-2.95V7.424c0-1.039-.561-1.948-1.406-2.473z"/>
+</svg>

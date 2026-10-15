@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.42 24.8">
+  <rect id="shell" x=".9" y=".9" width="65.62" height="23" rx="4.5" ry="4.5" fill="#f8fafc" stroke="#aab4c0" stroke-width="1.8"/>
+  <path id="rail" d="M5.4.9h19.78v23H5.4c-2.48,0-4.5-2.02-4.5-4.5V5.4C.9,2.92,2.92.9,5.4.9Z" fill="#4b5563" stroke="#aab4c0" stroke-width="1.8"/>
+  <rect id="arrow-shaft" x="11.75" y="5.43" width=".92" height="13.93" transform="translate(24.62 .18) rotate(90)" fill="#fffffe" stroke="#f8fafc" stroke-linecap="round" stroke-width="1.8"/>
+  <polygon id="arrow-head" points="16.66 7.42 19.83 12.13 20.01 12.4 19.83 12.67 16.66 17.38 15.99 16.83 18.97 12.4 15.99 7.97 16.66 7.42" fill="#fffffe" stroke="#f8fafc" stroke-linecap="round" stroke-width="1.8"/>
+</svg>

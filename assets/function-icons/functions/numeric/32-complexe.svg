@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Complexe</title>
+  <g data-role="glyph" fill="icon" stroke="icon" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision">
+    <path d="M23.5 7.5v33M7.5 25.5h34" fill="none" stroke-width="2.3"/>
+    <path d="M23.6 25.4L36.5 7.7M30.4 16.1l5.6 9.4" fill="none" stroke-width="2.3"/>
+    <circle cx="41.2" cy="25.5" r="2.2" stroke="none"/>
+  </g>
+</svg>

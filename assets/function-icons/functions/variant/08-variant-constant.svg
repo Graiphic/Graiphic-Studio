@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="fixed-constant">
+<style type="text/css">
+	.st0{fill:#AD1CB6;stroke:#AAB4C0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#4B5563;stroke:#F8FAFC;stroke-miterlimit:10;}
+</style>
+<rect data-frog-selection-shell="true" x="6.75" y="12.5" width="34.5" height="23" rx="11.5" fill="#AD1CB6" stroke="#AAB4C0" stroke-width="1.8"/>
+<g transform="translate(5.85 11.6)">
+<g>
+	<rect x="12.13" y="6.38" class="st1" width="12.05" height="12.05"/>
+	<rect x="24.17" y="9.38" class="st1" width="6.03" height="6.03"/>
+	<rect x="6.09" y="9.38" class="st1" width="6.03" height="6.03"/>
+</g>
+</g>
+</svg>

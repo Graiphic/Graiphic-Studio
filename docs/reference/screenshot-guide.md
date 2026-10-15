@@ -1,57 +1,32 @@
-# Screenshot Guide
+# Screenshot and illustration guide
 
-Screenshots are part of the public Graiphic Studio documentation.
+Use visuals to explain a task. Every visual must identify what it shows and
+whether it is a product capture or a reference illustration.
 
-## Storage
+## Product screenshots
 
-Store screenshots under:
+Store real captures under `assets/screenshots/` with descriptive names. Capture
+from the canonical Studio application or identify a named official runtime
+example. Inspect text, active/disabled states, and popup bounds before publishing.
 
-```text
-assets/screenshots/
-```
+Introduce the image with its purpose and give it meaningful alt text. An older
+capture can illustrate a stable workflow when its age and visible differences
+are stated. Do not call an inherited image a current release capture or use an
+unfinished visual experiment as proof of delivery.
 
-Recommended folders:
+## Function icons and connector schematics
 
-```text
-assets/screenshots/front-panel/
-assets/screenshots/widget-navigator/
-assets/screenshots/function-navigator/
-assets/screenshots/interface-map/
-assets/screenshots/icon-editor/
-assets/screenshots/widgets/
-```
+Canonical SVG icons can illustrate the function reference. Connector schematics
+may show declared terminal names, directions, and requirements from the existing
+catalog. Identify them as **reference illustrations**, not screenshots or
+measurements of a live wired graph.
 
-## Naming
+Port types that depend on wiring must be described in text. An illustration
+cannot establish runtime execution, complete UI qualification, or target support.
 
-Use stable, descriptive names:
+## Accessible pages
 
-```text
-front-panel-empty-dark.png
-widget-navigator-string-path.png
-interface-map-bound-slots.png
-icon-editor-layers.png
-```
-
-## Rules
-
-- Capture real Studio UI or a named official runtime example.
-- Include at least one current screenshot on every stable visual feature page.
-- Keep a page unlisted while its only available capture shows an unfinished or
-  invalid visual state.
-- Prefer stable, visually validated states.
-- Avoid screenshots with transient mouse artifacts unless documenting cursor
-  behavior.
-- Keep screenshots focused on the feature being explained.
-- Update screenshots when the UI contract changes.
-- Capture from the canonical signed native executable.
-- Verify text, active states, disabled states, and popup bounds at 100%.
-- Do not publish a screenshot from an unfinished visual experiment.
-
-## Documentation Pattern
-
-Introduce a screenshot with one sentence that tells the reader what to look
-for. Follow it with the workflow or rule the image demonstrates. Alt text must
-name the visible feature rather than repeat the file name.
-
-Screenshots document appearance; prose documents behavior. A page should not
-rely on color or an image alone to explain a required action.
+Explain required actions in prose as well as images. Do not rely only on color
+to distinguish a type or status. A source-backed guide can be published with
+clearly identified reference artwork while a new product capture is pending;
+its behavior and support limits must still be accurate.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-shape-standard="capsule-conversion">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <path data-frog-selection-shell="true" d="M1 12.5 H41.825 C44.683 12.5 47 14.817 47 17.675 V30.325 C47 33.183 44.683 35.5 41.825 35.5 H1 C5.907 28.6 5.907 19.4 1 12.5 Z" fill="#4B5563" stroke="#AAB4C0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      <g transform="translate(0.1 11.6)">
+      <path fill="#f8fafc" d="M18.01,9.9l-.31,1.42h-1.46l-.43,1.95h1.63l-.35,1.42h-1.57l-.61,2.73h-1.58l.58-2.73h-1.8l-.58,2.73h-1.58l.56-2.73h-1.47l.29-1.42h1.48l.42-1.95h-1.59l.27-1.42h1.62l.58-2.81h1.62l-.58,2.81h1.8l.6-2.81h1.6l-.58,2.81h1.46ZM14.65,11.32h-1.83l-.43,1.95h1.82l.44-1.95Z" />
+      <path fill="none" stroke="#f8fafc" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" d="M20.49,13.06h6.82M24.98,16.23l2.33-3.17-2.33-3.17" />
+      <path fill="#e3aa63" stroke="#e3aa63" stroke-miterlimit="10" stroke-width=".71" d="M41.7,7.14l.25-1.01h-12.12l.16,1.01,2.94,5.27-3.15,5.73v.81h12.22v-.81l-3.15-5.73,2.84-5.27ZM30.53,18.41l3.12-5.98-2.85-5.29h10.14l-2.97,5.29,3.22,5.98h-10.67.01ZM37.68,16.92c-1.24-.24-1.31-.53-1.31-.71h-1.11c0,.18-.06.47-1.31.71s-2.2.71-2.48,1.27h8.69c-.28-.56-1.23-1.03-2.48-1.27h.01Z" />
+      </g>
+    </g>
+  </g>
+</svg>

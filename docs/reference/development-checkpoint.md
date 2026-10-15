@@ -1,17 +1,71 @@
-# Development checkpoint — 3 October 2026
+# Current capabilities and limits
 
-The current Graiphic Studio delivery is **0.0.4.235**, compiled, signed and checked against the Desktop shortcut. The [ordered 27-item queue](../../../FROG-Context/Current/studio-request-queue-2026-10-02.md) is implemented, with individual French delivery receipts. Studio sources are published on `main` at [36f56ba](https://github.com/Graiphic/FROG-STUDIO/commit/36f56ba3e88c5b25d5632485ce35ab907e761011), verified against the remote on 3 October at 08:43 UTC. Build validation, source publication and CI remain separate evidence.
+**Documentation checkpoint: 15 October 2026.** The latest recorded local
+Windows delivery is signed **0.0.5.332**, including the updated Detailed Help routes. This page describes product scope;
+local delivery, source publication, targeted verification, and a complete
+application qualification are separate states.
 
-The ordered [27-item Studio queue](../../../FROG-Context/Current/studio-request-queue-2026-10-02.md) is locally delivered in **0.0.4.235**, with a signed canonical executable and verified Desktop shortcut. The numbered rows and dated receipts retain exact scope and limits. No request list needs to be resubmitted.
+## Choose the right capability
 
-Tests remain **paused=true**, interval **10**, cadence **82**. Lots 01–02 have four passing native owners and the explicitly requested container matrices. Lot 17 has seven passing controlled performance scenes through 5,000 initial objects and 10,000 after paste, with exact Undo/Redo, 3,072 raster comparisons and 416 diagnostic-location comparisons. Its native clipboard publication remains unverified. The other new owner coverage is compiled or registered and **not executed under the pause**. The last full attempt remains **FAILED: 300/403 passed, 103 failed**, on **0.0.3.935** at 2026-10-01T01:15:03Z. No successful global gate or fresh UI qualification is claimed.
+| Capability | Current scope |
+| --- | --- |
+| Front Panel authoring | Typed controls/indicators, labels, Arrays and Clusters, visual editing, Interface Map, icon editing |
+| Block Diagram authoring | Functions, typed ports/wires, structures, constants, container editing, reference menus, and object-specific context actions |
+| Private local Run/Highlight | Admitted simulation graphs; normal Run can start with Highlight off; supported Controls stay interactive and Indicators stay read-only |
+| Queue | Eight private local Run/Highlight functions; no public Source, lowering, or target-runtime contract |
+| Public native execution | A narrow Numeric F64/Add corridor; not general execution of every authored graph |
+| Public Event/Unbundle integration | Separately admitted records and SDK provider; no general LLVM Record or arbitrary aggregate transport implied |
+| Generic Property/Invoke execution | Authoring menus/types/services exist; generic execution of these graph nodes is unavailable |
+| Advanced Events and .NET | Limited, operation-specific integration; general provider/runtime coverage remains incomplete |
+| Public FROG Source | Separate public reader/writer and admitted profiles; draft authoring, full editor projection, validation, lowering, and execution are distinct |
 
-Numeric conversion value execution still depends on the absent runtime. Highlight For supports invocation-local shift registers and indexed inputs without N; While/Feedback remain explicit simulation limitations. Ctrl+R runs the simulation only when valid and Highlight is armed. Runtime POC is **OFF**.
+## Recent visible behavior
 
-Recent editor behavior includes recursive container interaction and transfer; permanent measured Numeric/Enum text fitting; stable By Name field identities despite duplicate labels; automatic boundary tunnels; atomic group insertion; clean common renaming; expanding Waveform bound editors; numbered CTest canvases; adaptive wires; and atomic mixed wire/terminal movement. Historic toolbar, function-contour, Boolean capsule and For contrast corrections remain included. Refer to [queue progress](../../../FROG-Context/Reports/CONTEXT-studio-queue-progress-Codex-2026-10-03.md) for evidence.
+- Run and Highlight share the same private simulation session. Toggling Highlight
+  changes its display, and Stop restores normal editing.
+- Recursive container editing routes a value to the addressed field/cell while
+  design changes apply to the shared template. Cluster **None** preserves manual
+  bounds; **Size to Fit** follows child growth and shrinkage.
+- Numeric and Enum text fitting, String/Path sizing, typed reference placement,
+  and reference wiring have scoped improvements and verification.
+- Queue operations use FIFO semantics, cooperative waits, named accesses, and
+  cleanup. Queue references remain distinct from ordinary message values.
+- Enum, Ring, and Dropdown String menus expose one **Create Constant / Control /
+  Indicator** trio. Creation preserves the original object and its configuration;
+  it is separate from changing its role. These latest menu changes are compiled
+  in 0.0.5.331, with their added regression cases **not yet executed**.
 
-Graiphic stewards public FROG and develops Graiphic Studio as the lead authoring implementation. Public syntax and semantics remain independently implementable; product UI and implementation drafts do not silently change the language.
+## Verification limits that matter
 
-The public envelope is **spec_version 0.1**. Studio Readable authoring uses **frog.document.draft / revision 2 / frontPanel**; Automatic/Compact numeric storage opts into private **revision 3**. The [public source guide](../../../FROG/Expression/Frog%20source%20guide.md), [compatibility record](../../../FROG/docs/studio-source-compatibility.md) and [storage profile](../../../FROG/docs/studio-array-storage-v1.md) distinguish these contracts. Reader preservation, full editor projection, semantic validation, lowering and runtime execution are separate capabilities.
+Targeted passes support their tested feature and version; they do not qualify
+the entire current application. A fresh successful complete gate is not claimed.
 
-Historic checkpoints remain [archived](development-checkpoint-before-queue-closure-2026-10-03.md).
+The Queue/reference campaign passed **13/14** targeted owners. Its Clipboard
+owner failed; the separate retry passed **0/1**. The observed failure was
+Windows denying Clipboard opening. Its exact cause remains unestablished.
+Copy publication, paste, and Undo/Redo of that Queue copy therefore remain
+**unqualified**, even though the six Queue rendering/wiring sub-scenarios passed.
+The later menu compilation does not resolve that failure.
+
+Native qualification for that work is scoped to **96 DPI**. Other Windows
+display scales, the remaining Adapter workflow, general runtime support,
+advanced Events/.NET, and global qualification remain open. The standing
+regression pause remains in effect except for separately authorized targeted work.
+
+## File and type boundaries
+
+Studio's readable authoring envelope is `frog.document.draft` revision 2;
+Automatic/Compact numeric storage uses private revision 3. Public FROG source
+uses `spec_version` and its own published contract. A `.frog` extension or a
+successful editor save does not make these envelopes interchangeable.
+
+Array/Cluster rendering does not establish support for every nested runtime
+type. Queue values in Front Panel source/indicator widgets and collections of
+Matrix values are unavailable at runtime in this checkpoint.
+
+## Read next
+
+[Run and Highlight](../interface/run-and-highlight.md) ·
+[Functions reference](../functions/index.md) ·
+[Document model](document-model.md) ·
+[FROG specification](https://graiphic.github.io/FROG/)

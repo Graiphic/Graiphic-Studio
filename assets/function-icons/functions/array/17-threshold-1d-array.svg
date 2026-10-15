@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .55px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke: #f8fafc;
+      }
+
+      .cls-1, .cls-2, .cls-13, .cls-6, .cls-14, .cls-9, .cls-15, .cls-11 {
+        fill: #f8fafc;
+      }
+
+      .cls-1, .cls-2, .cls-6, .cls-8, .cls-9, .cls-11 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .83px;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 1.05 2.1;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-7, .cls-10, .cls-12 {
+        fill: none;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        stroke-width: .76px;
+      }
+
+      .cls-16 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-16, .cls-8 {
+        fill: #4b5563;
+      }
+
+      .cls-4 {
+        stroke-dasharray: .51 1.03;
+      }
+
+      .cls-13, .cls-14 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 13px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        stroke-width: .32px;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 1.04 2.08;
+      }
+
+      .cls-8 {
+        stroke-width: .94px;
+      }
+
+      .cls-14 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        stroke-width: .46px;
+      }
+
+      .cls-10 {
+        stroke-dasharray: .85 1.69;
+      }
+
+      .cls-11 {
+        stroke-width: .41px;
+      }
+
+      .cls-12 {
+        stroke-dasharray: .7 1.39;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-16" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <rect class="cls-8" x="11.13" y="12.76" width="5.64" height="5.64" transform="translate(29.54 1.63) rotate(90)"/>
+      <rect class="cls-8" x="23.08" y="12.76" width="5.64" height="5.64" transform="translate(41.48 -10.31) rotate(90)"/>
+      <rect class="cls-8" x="28.72" y="12.76" width="5.64" height="5.64" transform="translate(47.12 -15.95) rotate(90)"/>
+      <rect class="cls-8" x="34.36" y="12.76" width="5.64" height="5.64" transform="translate(52.76 -21.59) rotate(90)"/>
+      <rect class="cls-6" x="25.17" y="10.14" width="1.45" height="2.63"/>
+      <rect class="cls-11" x="30.81" y="8.5" width="1.45" height="4.27"/>
+      <rect class="cls-1" x="36.46" y="5.35" width="1.45" height="7.41"/>
+      <rect class="cls-9" x="13.23" y="7.46" width="1.45" height="5.3" transform="translate(27.9 20.22) rotate(-180)"/>
+      <g>
+        <line class="cls-5" x1="34.31" y1="19.42" x2="34.31" y2="19.92"/>
+        <path class="cls-3" d="M34.31,22.01v8.84c0,.62.51,1.13,1.13,1.13h.93"/>
+        <line class="cls-5" x1="37.42" y1="31.98" x2="37.92" y2="31.98"/>
+      </g>
+      <g>
+        <line class="cls-5" x1="15.99" y1="7.61" x2="16.49" y2="7.61"/>
+        <line class="cls-7" x1="18.57" y1="7.61" x2="30" y2="7.61"/>
+        <line class="cls-5" x1="31.04" y1="7.61" x2="31.54" y2="7.61"/>
+      </g>
+      <g>
+        <path class="cls-5" d="M35.96,4.95s-.2.03-.48.11"/>
+        <path class="cls-4" d="M34.51,5.41c-.13.06-.25.13-.36.21-.18.12-.34.26-.48.39"/>
+        <path class="cls-5" d="M33.31,6.38c-.19.23-.29.4-.29.4"/>
+        <polygon class="cls-15" points="32.22 5.96 32.24 8.17 34.14 7.04 32.22 5.96"/>
+      </g>
+      <g>
+        <line class="cls-5" x1="34.36" y1="7.88" x2="34.36" y2="8.38"/>
+        <line class="cls-12" x1="34.36" y1="9.77" x2="34.36" y2="11.16"/>
+        <line class="cls-5" x1="34.36" y1="11.86" x2="34.36" y2="12.36"/>
+      </g>
+      <text class="cls-13" x="44.09" y="36.69" text-anchor="end">X</text>
+      <text class="cls-14" x="15.03" y="36.69" text-anchor="end">Y</text>
+      <rect class="cls-2" x="7.75" y="38.81" width="5.5" height="4.53"/>
+      <g>
+        <line class="cls-5" x1="14.68" y1="41.07" x2="15.18" y2="41.07"/>
+        <path class="cls-10" d="M16.88,41.07h2.15c.62,0,1.13-.51,1.13-1.13v-.31"/>
+        <line class="cls-5" x1="20.15" y1="38.79" x2="20.15" y2="38.29"/>
+        <polygon class="cls-15" points="21.9 38.8 20.15 35.77 18.4 38.8 21.9 38.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

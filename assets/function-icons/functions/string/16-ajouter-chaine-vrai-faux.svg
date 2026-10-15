@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.7.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 114)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .st1 {
+        font-size: 13px;
+      }
+
+      .st1, .st2, .st3 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st1, .st2, .st3, .st4 {
+        fill: #f8fafc;
+      }
+
+      .st5 {
+        stroke: #f8fafc;
+      }
+
+      .st5, .st6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.3px;
+      }
+
+      .st2 {
+        font-size: 10px;
+      }
+
+      .st3 {
+        font-size: 8px;
+        isolation: isolate;
+      }
+
+      .st6 {
+        stroke: #f017f0;
+      }
+    </style>
+  </defs>
+<rect class="st0" x="1" y="1" width="46" height="46" rx="4.5" ry="4.5"/>
+  <line class="st5" x1="26.97" y1="8.34" x2="41.82" y2="8.34"/>
+  <line class="st5" x1="26.97" y1="14" x2="41.82" y2="14"/>
+  <line class="st6" x1="37.45" y1="19.61" x2="41.82" y2="19.61"/>
+  <line class="st5" x1="26.97" y1="19.61" x2="33.64" y2="19.61"/>
+  <text class="st1" transform="translate(2.86 40)"><tspan x="0" y="0">?</tspan></text>
+  <g>
+    <line class="st5" x1="13.19" y1="40.76" x2="21.19" y2="40.76"/>
+    <path class="st5" d="M18.69,37.26l3.5,3.5-3.5,3.5"/>
+  </g>
+  <g>
+    <line class="st5" x1="13.19" y1="29.78" x2="21.19" y2="29.78"/>
+    <path class="st5" d="M18.69,26.28l3.5,3.5-3.5,3.5"/>
+  </g>
+  <text class="st2" transform="translate(25.01 33.28)"><tspan x="0" y="0">F</tspan></text>
+  <text class="st2" transform="translate(25.01 44.26)"><tspan x="0" y="0">T</tspan></text>
+  <path class="st4" d="M42.78,30.21l-1.93-.02c-.14,1.56-.71,2.8-1.7,3.69-1.74,1.57-4.12,1.48-4.22,1.48l.02-.37c.14,0,3.28-.27,3.68-4.82l-1.93-.02,3.31-4.01,2.76,4.07Z"/>
+  <text class="st3" transform="translate(5.63 16)"><tspan x="0" y="0">abc</tspan></text>
+</svg>

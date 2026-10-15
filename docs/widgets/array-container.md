@@ -130,11 +130,6 @@ changing the element type.
 
 ## Boolean Constants On The Block Diagram
 
-The following behavior was prepared on 19 September 2026. Its original evidence
-belongs to that dated lot. The current local delivery and qualification limits
-are in the [development checkpoint](../reference/development-checkpoint.md);
-the earlier 0.0.3.174 version is not the current executable.
-
 A click inside a Boolean Array Constant cell toggles **False/True**, including
 rapid repeated clicks and clicks while the Array is selected. The narrow cell
 border selects the element and starts its extraction gesture. The surrounding
@@ -175,9 +170,10 @@ child enlargement and reduction. A child resize previews the change and commits
 one Undo action; its design stays consistent across the cells while their values
 remain distinct. See the checkpoint for the current validation results.
 
-Selection and value routing follow complete field identities and indices through
-every container. The editor does not impose the former 32-level ceiling.
-Private Studio draft/widget JSON uses a worklist for deep authored trees; the
-public FROG source profile is unchanged. Existing resource budgets still apply.
-An edit exceeding the stored Widget-cell budget must leave the Array unchanged,
-rather than save a value that cannot be read back.
+Selection and value routing follow field identities and indices through nested
+containers. Deep editing remains subject to document resource limits. A value
+edit that exceeds the stored cell budget must leave the Array unchanged rather
+than install data that cannot be reopened.
+
+For Cluster layout modes, see [Cluster](cluster.md). For operation terminals
+and types, see [Array functions](../functions/array/index.md).

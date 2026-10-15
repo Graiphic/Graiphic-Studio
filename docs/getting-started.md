@@ -1,122 +1,100 @@
-# Getting Started
+# Getting started
 
-This page describes the first path through Graiphic Studio.
+Create a small document, place a control, add a Diagram operation, and save your
+work. You can inspect each step in the coordinated Source view.
 
-## 1. Open Graiphic Studio
+## 1. Meet the three views
 
-Launch Graiphic Studio and start from the Front Panel. The Front Panel is the
-main design surface for placing controls, indicators, labels, images, and
-interface-related editing affordances.
+Launch Graiphic Studio. The **Front Panel** is the design surface for controls,
+indicators, labels, and images. The **Block Diagram** holds typed terminals,
+functions, structures, and wires. **Source** shows the live saved representation.
 
-Graiphic Studio opens the Front Panel by default. The Block Diagram and Source
-windows are complementary views of the same `.frog` document. `Ctrl+E` raises
-the companion Front Panel or Block Diagram without resizing or moving the
-current window. `Ctrl+Shift+E` opens the Source view, and `Ctrl+T` tiles the
-Front Panel and Block Diagram when both must remain visible.
+| Shortcut | Result |
+| --- | --- |
+| `Ctrl+E` | Raise the companion Front Panel or Block Diagram |
+| `Ctrl+Shift+E` | Open or raise Source |
+| `Ctrl+T` | Tile the Front Panel and Block Diagram |
+| `Ctrl+H` | Show or hide Context Help |
 
-![Empty Front Panel](../assets/screenshots/front-panel/front-panel-overview.png)
+Each view has its own window. Switching views preserves the current window's
+position and size. See [Window workflow](interface/window-workflow.md).
 
-## 2. Place A Widget
+## 2. Place a Numeric control
 
-Open the Widget Navigator, choose a widget family, then place a widget on the
-grid.
+1. Right-click an empty part of the Front Panel to open the **Widget Navigator**.
+2. Single-click **Numeric** to browse the family.
+3. Choose **Numeric Control**, then click the Front Panel to place it.
+4. Edit its value and give its separate label a useful name.
 
-Right-click an empty part of the Front Panel to open the Widget Navigator.
-Single-click a family tile to browse its controls and indicators. Double-click
-the family tile to start placement of its default widget, then click the Front
-Panel to place it.
+A Control supplies values to the graph. An Indicator displays results. The
+control's typed terminal appears in the Block Diagram automatically.
 
-Current core families include:
+A double-click on a family chooses its default widget directly. During
+placement, the preview follows the pointer; `Escape` cancels it.
 
-- Numeric
-- Boolean
-- String and Path
-- Ring and Enum
-- Data Containers
-- Image Static
+![Widget Navigator from an earlier Light theme documentation capture](../assets/screenshots/front-panel/widget-navigator-light.jpg)
 
-Controls accept user input. Indicators display values. This distinction also
-determines the direction of a future Interface Map binding.
+*Existing capture of the Navigator workflow. The current family catalog may
+contain additional entries.*
 
-## 3. Move And Resize
+## 3. Move, resize, and label
 
-Drag a widget from its body or available frame. Drag a resize handle to change
-its dimensions. Hold `Shift` while resizing to preserve proportions. When grid
-snapping is active, placement follows the Front Panel grid.
+Drag the widget's body or frame to move it. Resize using the available handles;
+some compact or automatically fitted objects have different resize rules.
 
-Hold `Shift` while moving to constrain the motion horizontally or vertically.
-Hold `Ctrl` through a drag to move a duplicate; releasing `Ctrl` before the
-drop cancels the duplicate operation.
+| Gesture | Result |
+| --- | --- |
+| Hold `Shift` while moving | Constrain movement to an axis |
+| Hold `Ctrl` through a drag | Move a duplicate |
+| Hold `Shift` while resizing | Preserve proportions where supported |
+| Double-click empty Front Panel space | Create a free label |
 
-## 4. Edit A Label
+For a Front Panel label, `Enter` commits and `Shift+Enter` adds a line.
+Committing an empty label removes it. Widget labels can be positioned separately
+and reconnect to their magnetic default anchor when moved back nearby.
 
-Double-click an empty area on the Front Panel to create a label. A new label
-starts with placeholder text so that an empty label is not accidentally kept.
+## 4. Add a function
 
-If the label is validated with no text, the label is removed.
+1. Press `Ctrl+E` to raise the Block Diagram.
+2. Right-click empty Diagram space to open the **Function Navigator**.
+3. Open **Programming > Numeric** and choose **Add**.
+4. Click the canvas to place the preview, or drag the tile onto the canvas.
 
-![Creating a free label](../assets/screenshots/front-panel/create-label.png)
+Hover the operation to reveal its ports. Connect compatible ports to build the
+dataflow. Use [Context Help](interface/context-help.md) to inspect terminal
+requirements and types, and the [Functions reference](functions/index.md) for
+the operation's detailed contract.
 
-Press `Enter` to validate a label. Press `Shift+Enter` to insert a new line.
-Widget labels use a magnetic default anchor: moving a detached label back near
-its default position reconnects it naturally.
+Placement, local simulation, and target execution have separate support limits.
+Studio reports unsupported operations for the selected path.
 
-## 5. Save The Document
+## 5. Save and inspect
 
-Save the document as a `.frog` file. The `.frog` document owns the source-level
-state: widgets, layout, labels, bindings, interface map data, icon data, and
-instance-level overrides.
+Choose **File > Save** (`Ctrl+S`) and save a `.frog` document. Use **Save As**
+(`Ctrl+Shift+S`) to keep a separate copy. Recent Files records successful opens
+and saves.
 
-The File menu provides New, Open, Close, Save, Save As, and Recent Files.
-Recent Files is updated when a document is opened or saved successfully.
+Press `Ctrl+Shift+E` to inspect Source after making an edit. You will see the
+explicit widgets, values, layout, bindings, nodes, and connections. Studio's
+authoring draft and public FROG source have different envelopes; see
+[the document model](reference/document-model.md) before exchanging source
+with another tool.
 
-## 6. Place A Diagram Operation
+## 6. Try the supported local execution path
 
-Open the Block Diagram and its Function Navigator. Enter **Programming >
-Numeric**, press and hold an operation tile, drag it onto the Diagram, then
-release it at the desired position. The SVG preview follows the pointer during
-the drag and the placed operation remains movable and selectable.
+For a graph admitted by Studio's private simulation, **Run** can start with
+Highlight off. Highlight displays the same session's execution; toggling it
+does not start another run. Supported controls stay interactive and indicators
+are read-only. **Stop** returns to normal editing.
 
-The resulting operation is an explicit Diagram node and is saved in
-`diagram.nodes` with its FROG primitive identity and authored layout. Releasing
-outside the Diagram or pressing `Escape` cancels the placement.
+Read [Run and Highlight](interface/run-and-highlight.md) before relying on this
+path. The public native execution corridor and general target runtime support
+remain distinct from local simulation.
 
-Only operations backed by published FROG primitive contracts can currently be
-placed. See the [Function Navigator](interface/function-navigator.md) for the
-complete workflow and current scope.
+## Continue
 
-Front Panel widgets project typed terminals into the Block Diagram. Changing a
-Numeric representation, switching Control/Indicator role, or encapsulating a
-widget in an Array updates the corresponding terminal immediately.
-
-## 7. Inspect The Source
-
-Press `Ctrl+Shift+E` to open the Source view. It displays the live `.frog`
-representation produced by the current Front Panel and Block Diagram. Use it
-to verify widget properties, bindings, node types, authored layout, and view
-state without treating editor-only selection state as executable data.
-
-![Live .frog Source view](../assets/screenshots/source-view/source-view-live.jpg)
-
-## 8. Configure The Studio
-
-Open **Tools > Options...** to choose the interface theme, configure the Front
-Panel grid, or manage SVG glyph folders used by the Icon Editor. The Appearance
-page provides a live preview before a theme is applied.
-
-These choices are local Studio preferences. They do not change FROG execution
-semantics. See [Studio Options](interface/options.md) for the complete workflow.
-
-## Next Steps
-
-- Learn the [Front Panel](interface/front-panel.md).
-- Learn how the three views cooperate in [Window Workflow](interface/window-workflow.md).
-- Build and inspect dataflow in the [Block Diagram](interface/block-diagram.md).
-- Inspect the serialized program in the [Source View](interface/source-view.md).
-- Configure the IDE through [Studio Options](interface/options.md).
-- Learn the [Interface Map](interface/interface-map.md).
-- Learn how widgets are organized in the [Widget Navigator](interface/widget-navigator.md).
-- Build dataflow operations with the [Function Navigator](interface/function-navigator.md).
-- Place typed containers with the [Array Container](widgets/array-container.md).
-- Organize complex panels with the [Selection Pane](interface/selection-pane.md).
-- Customize the project icon in the [Icon Editor](interface/icon-editor.md).
+- [Widgets](widgets/index.md): choose the right input, display, or container.
+- [Block Diagram](interface/block-diagram.md): terminals, wires, structures, and context actions.
+- [Functions](functions/index.md): find an operation and read its ports and limits.
+- [Studio Options](interface/options.md): theme, language, text, navigation, and assistance.
+- [Keyboard shortcuts](reference/keyboard-shortcuts.md): keep common actions close.

@@ -1,117 +1,77 @@
-# The `.frog` Document Model
+# The `.frog` document model
 
-A `.frog` file is the source of truth for a Graiphic Studio project. Studio
-windows edit explicit document data rather than keeping hidden runtime state.
+A `.frog` document records the authored program: widgets, values, labels,
+bindings, Diagram objects, connections, and visual layout. Studio's three views
+show different parts of that document.
 
-## Current File Format Boundary
+## Know the format before exchanging a file
 
-In the local Studio **0.0.4.044** checkpoint, the authoring writer still uses
-`"format": "frog.document.draft"` with `"draft_revision": 2` and a `frontPanel`
-section. Canonical public FROG source instead uses `spec_version` and the
-sections defined by the public specification, including optional `front_panel`.
-Sharing the `.frog` extension does not make the two envelopes interchangeable.
+| Format | Envelope | Purpose |
+| --- | --- | --- |
+| Studio Readable draft | `format: "frog.document.draft"`, revision 2, `frontPanel` | Current Studio authoring representation |
+| Studio Automatic/Compact draft | Private revision 3 | Opt-in compact numeric Array storage |
+| Public FROG Source | `spec_version`, optional `front_panel` | Published language contract and admitted profiles |
 
-Studio also has a separate public-source reader and preservation/transaction
-writer. Reading public JSON does not imply that the editing-model importer can
-project every public graph onto the canvas, migrate drafts, validate all profiles
-or execute them. See the public [source syntax guide](https://github.com/Graiphic/FROG/blob/main/Expression/Frog%20source%20guide.md)
-and [integration record](https://github.com/Graiphic/FROG/blob/main/docs/studio-source-compatibility.md).
-These new references are part of the current documentation work; their main
-publication remains pending until the corresponding FROG changes are integrated.
+The shared extension does not make these formats interchangeable. Studio has a
+separate public-source reader and preservation/transaction writer. Reading and
+preserving a file do not imply complete visual editing, semantic validation,
+lowering, or runtime support for its entire graph.
 
-The sections below explain ownership. They do not claim that every public
-source construct is already supported by Studio's current authoring model.
-Read/save support, canonical format conformance, validation and runtime
-execution are separate capabilities; see the public
-[source compatibility reference](https://github.com/Graiphic/FROG/blob/main/Expression/Source%20compatibility%20and%20profiles.md).
+The [FROG source guide](https://github.com/Graiphic/FROG/blob/main/Expression/Frog%20source%20guide.md)
+and [compatibility reference](https://github.com/Graiphic/FROG/blob/main/Expression/Source%20compatibility%20and%20profiles.md)
+define the public source boundary. See [current capabilities](development-checkpoint.md)
+for the Studio checkpoint.
 
-## Front Panel
+## What each part owns
 
-The Front Panel owns widget instances, object geometry, labels, initial values,
-visibility, lock state, groups, z-order, colors, and instance-level overrides.
+| Part | Authored data |
+| --- | --- |
+| Front Panel | Widget instances, initial values, geometry, labels, visibility, lock state, groups, order, and appearance overrides |
+| Public interface | Typed input/output declarations and explicit widget associations |
+| Interface Map | Visual slot pattern and binding placement |
+| Block Diagram | Nodes, typed ports, edges, structures, constants, annotations, and layout |
+| Icon and media | Explicit artwork and asset relationships |
 
-## Public Interface
+The public interface can exist independently of a Front Panel in the language.
+Studio's draft writer currently derives its saved interface from bound widgets.
+An Interface Map slot alone does not declare or execute a function.
 
-In the public FROG model, the interface exists independently from the Front
-Panel. Studio's current authoring writer derives its saved interface from bound
-widgets; independent interface-only authoring is not implied by this page.
-Interface Map patterns arrange ports visually. Front Panel bindings explicitly
-connect widget value properties to those ports.
+Diagram objects carry explicit identities and saved configuration. Public
+primitive types such as `frog.core.add` retain their published contracts;
+editor-managed and private functions retain their separate support boundaries.
+Geometry, SVG artwork, and selection never substitute for an execution contract.
 
-Controls bind toward public inputs. Indicators bind from public outputs. The
-Diagram will project these as `interface_input` and `interface_output` nodes;
-the Interface Map itself does not execute code.
+## Values, design, and view state
 
-## Diagram
+Array cells keep distinct values while sharing an element design. Cluster fields
+keep stable identities and order even when their labels or positions change.
+This distinction lets a value edit affect one addressed cell without rewriting
+the shared layout or another row.
 
-The Diagram owns the executable dataflow graph. Operations placed from the
-Function Navigator become explicit entries in `diagram.nodes`; a primitive
-node uses `kind = "primitive"` and a published namespaced `type`, such as
-`frog.core.add` or `frog.math.sqrt`.
+The document can preserve zoom, viewport origin, canvas dimensions, and useful
+window reopen hints. Unavailable monitor positions are clamped when reopening.
+Those view details do not change the graph's meaning.
 
-Studio also records the authored Diagram `layout` for each placed node. Layout
-controls where the node reappears when the document is reopened, but it does
-not replace dataflow semantics. Execution will be determined by the node type,
-typed ports, and explicit connections in `diagram.edges`.
+Theme, interface language, navigation size, and local glyph-folder locations are
+Studio preferences. Hover, selection, open menus, and temporary runtime inputs
+are workspace/session state. They do not become executable data.
 
-Catalog entries without a published primitive contract are not serialized as
-executable nodes. This keeps the `.frog` document valid while the Function
-Navigator can still preview future operation families.
+## Icon and custom bindings
 
-## Authoring View State
+The icon retains editable SVG-oriented data and layer metadata. The toolbar
+preview is independent of the logical icon dimensions. Custom layout descriptors
+preserve slot identities, dimensions, explicit positions, and disabled slots;
+see [Custom bindings](custom-bindings.md).
 
-The document may preserve enough non-executable state to reopen the authored
-workspace faithfully:
+## Documentation metadata
 
-- `front_panel.canvas.width` and `front_panel.canvas.height` describe the useful
-  Front Panel client surface;
-- `ide.front_panel.zoom_percent` and `viewport_origin` restore the Front Panel
-  view;
-- the Diagram records its own zoom and viewport origin and always uses a solid
-  editing background;
-- `ide.workflow.views` may carry useful client width and height for the Front
-  Panel, Diagram, and Source windows, plus recoverable position, visibility, or
-  maximized hints.
+A widget may carry `documentation.description` and `documentation.url`.
+A Diagram node may carry a `doc` object with `summary` and `url`. These describe
+the existing object and do not alter its type or ports.
 
-Window positions are clamped to the monitors available when reopening. Native
-window chrome, monitor identity, theme, language, navigation font size, and
-local glyph-folder paths remain local Studio preferences. They are not program
-semantics.
+## Execution boundary
 
-## Document Icon
-
-The document icon is editable SVG-oriented data. Its layer metadata is retained
-inside the icon SVG so Graiphic Studio can reopen it. The toolbar preview fits
-within 60 × 60 pixels independently of the logical icon dimensions.
-
-Custom binding layouts preserve slot identities, dimensions, explicit positions
-and disabled slots. [Custom Binding Persistence](custom-bindings.md) documents
-the exact Studio descriptors, widget associations and compatibility limits.
-
-Imported SVG content may be normalized into independently editable visible
-regions. This authoring segmentation remains presentation metadata; runtimes
-consume the final SVG visual rather than Icon Editor selection state.
-
-## Media
-
-Imported media should remain an explicit document asset relationship. Before a
-document has a permanent location, Graiphic Studio may stage temporary assets;
-saving transfers them into the document's managed location.
-
-## Runtime Boundary
-
-The Diagram remains the authoritative executable graph. Runtime execution must
-consume explicit source and compiled artifacts, never Studio-only selection or
-window state.
-
-## Context Help Metadata
-
-Built-in widgets and functions use the Studio's visible native help catalog.
-External or document-owned objects may preserve a concise help summary and an
-online documentation URL in `.frog`. Widget instances use the namespaced
-properties `documentation.description` and `documentation.url`; diagram nodes
-use a structured `doc` object with `summary` and `url` members.
-
-These fields describe an existing object. They do not change its ports, data
-type, validation, or runtime behavior. The open and locked state of the Context
-Help window remains a local Studio workspace concern.
+Private Studio Run/Highlight, public-source compilation, and target runtime
+execution have separate admission rules. A document that can be saved or drawn
+is not automatically executable. Read [Run and Highlight](../interface/run-and-highlight.md)
+and the relevant [function reference](../functions/index.md).
