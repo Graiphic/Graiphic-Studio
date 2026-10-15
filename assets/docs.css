@@ -7,7 +7,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .skip-link:focus { top:10px; }
 .sidebar { width:var(--sidebar-width); color:var(--body-color); background:var(--surface); border-right:1px solid var(--border); padding-top:22px; }
 .sidebar .app-name-link, .sidebar-nav a, .sidebar-nav strong, .app-nav a { color:var(--body-color); }
-.sidebar-nav li > a { color:var(--body-color); }
+.sidebar .sidebar-nav ul li a { color:var(--body-color); }
+.sidebar .sidebar-nav ul li.active > a { color:var(--theme-color); }
 .sidebar-nav { padding-bottom:5rem; }
 .sidebar-nav > ul > li { margin:4px 0; }
 .sidebar-nav a { white-space:normal; line-height:1.5; padding:4px 0; }
