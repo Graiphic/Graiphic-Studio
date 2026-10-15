@@ -1,0 +1,10 @@
+# Keep deterministic generated documentation identical on Windows and Linux.
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Reference icons retain the exact bytes of the Studio source assets.
+assets/function-icons/** -text
