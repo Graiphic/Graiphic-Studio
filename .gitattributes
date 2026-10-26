@@ -7,4 +7,8 @@
 *.html text eol=lf
 
 # Reference icons retain the exact bytes of the Studio source assets.
-assets/function-icons/** -text
+assets/function-icons/** -text -whitespace
+
+# Imported corpus and declared dependencies retain their exact source bytes,
+# including on Windows checkouts. Their hashes are checked by the exporter.
+assets/examples/** -text -whitespace

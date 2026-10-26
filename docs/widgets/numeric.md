@@ -135,6 +135,20 @@ The Studio authoring draft records these Data Entry properties as:
 
 ### Display Format
 
+Input follows the selected radix. In an already Binary field, `10` and `0010`
+store decimal 2, and `11` stores decimal 3. Switching an existing decimal value
+10 to Binary displays `1010` without changing that value. Invalid Binary input
+such as `102` is not interpreted as decimal or partially accepted.
+
+Layout offers **Use minimum field width**, the width, and **Pad with spaces on
+left**, **Pad with spaces on right**, or **Pad with zeros on left**. Width 4
+with zero padding displays 2 as `0010`; 16 remains `10000`. Width is a minimum,
+not a bit limit. Decimal precision controls are disabled for Binary, Octal and
+Hexadecimal. Draft text, leading zeros and the caret remain editable without
+reformatting on every keystroke. These settings change neither the type nor
+the control's dimensions. Array elements share their display configuration,
+with independent values and no new cells created by a format change.
+
 ![Numeric Display Format properties](../../assets/screenshots/widgets/numeric-properties-display-format.png)
 
 Choose **Display Format...** to control value presentation without changing

@@ -81,9 +81,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.text_write`.
+- Parent palette: [Text](text.md).
 - Profile: `frog.studio.palette.file.text_write.v1`.
 - Definition: `frog.studio.file.text_write`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/write-to-text-file.html).

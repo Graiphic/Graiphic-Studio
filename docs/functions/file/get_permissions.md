@@ -81,9 +81,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.get_permissions`.
+- Parent palette: [Operation](operation.md).
 - Profile: `frog.studio.palette.file.get_permissions.v1`.
 - Definition: `frog.studio.file.get_permissions`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/get-permissions.html).

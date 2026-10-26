@@ -7,10 +7,16 @@
 
 Private Studio configuration of ordered property rows. Each stable row chooses one real member and Read or Write; its data terminal follows the complete member type. An incoming object reference takes precedence over the implicit symbolic target. Real authoring provider access checks target permissions, latch Value and contained-widget restrictions. Reference and Error pairs stay fixed; Value (Signaling) and graph execution are unavailable in this delivery.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](property_node.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Nœud de propriétés**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Configuration privée Studio de lignes de propriétés ordonnées. Chaque ligne stable choisit un membre réel et Lecture ou Écriture ; son terminal de données reprend le type complet du membre. Une référence d’objet câblée prime sur la cible symbolique implicite. Le fournisseur authoring contrôle les permissions, la valeur des booléens à verrouillage et les restrictions des widgets contenus. Les paires Référence et Erreur restent fixes ; Value (Signaling) et l’exécution dans un graphe sont indisponibles dans cette livraison.
 
@@ -20,7 +26,14 @@ Configuration privée Studio de lignes de propriétés ordonnées. Chaque ligne 
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Private Studio authoring configuration with fixed reference/error ports. Property rows and one method signature are projected by ApplicationControl, not by this discovery envelope. This does not implement public frog.ui/FIR lowering or runtime execution.
+
+</details>
 
 ## IN — inputs
 
@@ -60,9 +73,16 @@ Required provider: `frog.studio.application_control`.
 
 Authoring provider operations are not a graph execution provider.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Object-operation execution and public lowering require an explicit provider.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -75,6 +95,14 @@ Authoring provider operations are not a graph execution provider.
 | OUTPUT | `error_out` | `cluster<"status":bool,"code":i32,"source":string>` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Référence de contrôle : lire sa vraie valeur](../../examples/application_control.read_value.md) — Référence de contrôle : lire sa vraie valeur (`execution`, `studio-draft`).
+- [Property Node : écrire la valeur sans événement](../../examples/application_control.silent_write.md) — Property Node : écrire la valeur sans événement (`execution`, `studio-draft`).
+- [Invoke Node : réinitialiser la valeur par défaut](../../examples/application_control.reinitialize.md) — Invoke Node : réinitialiser la valeur par défaut (`execution`, `studio-draft`).
 
 ## Identity and references
 

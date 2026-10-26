@@ -83,6 +83,10 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation.unflatten_from_byte_array`.

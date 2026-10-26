@@ -5,8 +5,8 @@ Run from any directory with Python 3.11+, without application builds or packages
   python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine
   python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine --check
 
-The source checkout is read-only. Only docs/functions and assets/function-icons
-are generated. No source paths become links to the private Studio repository.
+The source checkouts are read-only. Function reference, example pages and exact
+declared example assets are generated. No private source path becomes a link.
 """
 
 from __future__ import annotations
@@ -21,6 +21,7 @@ from pathlib import Path
 import posixpath
 import re
 from urllib.parse import quote, unquote, urlsplit
+import studio_examples
 
 
 BASE_URL = "https://graiphic.github.io/Graiphic-Studio/"
@@ -63,7 +64,7 @@ def digest(data: bytes) -> str:
 
 
 def prose(value) -> str:
-    return html.escape(str(value), quote=False).replace("|", "\\|").replace("\n", " ")
+    return html.escape(str(value), quote=False).replace("|", "\\|").replace("\n", " ").strip()
 
 
 def code(value) -> str:
@@ -89,7 +90,13 @@ def relative_links(page: str, text: str) -> str:
             return match[0]
         relative = posixpath.relpath(path, posixpath.dirname(page))
         return "](" + relative + (separator + anchor if separator else "") + ")"
-    return re.sub(r"\]\(([^)]+)\)", rewrite, text)
+    text = re.sub(r"\]\(([^)]+)\)", rewrite, text)
+    def rewrite_html(match):
+        path = match[2]
+        if not path.startswith(("docs/", "assets/")):
+            return match[0]
+        return match[1] + posixpath.relpath(path, posixpath.dirname(page)) + match[3]
+    return re.sub(r'(\b(?:href|src)=")([^"]+)(")', rewrite_html, text)
 
 
 def cpp_string(value: str) -> str:
@@ -122,7 +129,9 @@ def load_catalog(source: Path):
 
 
 def load_inputs(source: Path):
-    help_catalog = configparser.RawConfigParser(interpolation=None, strict=True)
+    # Stable dynamic connector IDs contain colons (row:row_0:key). The Studio
+    # INI contract uses '=' as its separator; ':' is part of the port identity.
+    help_catalog = configparser.RawConfigParser(interpolation=None, strict=True, delimiters=("=",))
     help_catalog.read(source / "config/context-help.ini", encoding="utf-8-sig")
     contracts, contract_sources = {}, {}
     consumed = {"config/context-help.ini", "src/FunctionCatalog.cpp", "src/FunctionCatalogLegacyAliases.inc", *CATALOG_SOURCES}
@@ -149,10 +158,11 @@ def load_inputs(source: Path):
             supplemental[function["id"]] = function
         for palette in document.get("palettes", []):
             palettes[palette["id"]] = palette
-    math_path = source / "manifests/math/exponential.json"
-    consumed.add(math_path.relative_to(source).as_posix())
-    for function in read_json(math_path)["functions"]:
-        supplemental[function["id"]] = function
+    for math_name in ("exponential.json", "elliptic-parabolic-functions.json"):
+        math_path = source / "manifests/math" / math_name
+        consumed.add(math_path.relative_to(source).as_posix())
+        for function in read_json(math_path)["functions"]:
+            supplemental[function["id"]] = function
     file_defaults_path = source / "manifests/file/defaults.inc"
     consumed.add(file_defaults_path.relative_to(source).as_posix())
     defaults = {}
@@ -288,7 +298,7 @@ def render_instances(supplemental):
     return lines
 
 
-def render_runtime(cid, contract, supplemental):
+def render_runtime(cid, contract, supplemental, native_examples=False):
     runtime = contract["runtime_availability"]
     available = runtime["available"]
     lines = ["## Execution and limits", "", "**Public FROG / target Runtime:** " + ("declared available within the scope below." if available else "not declared available by this authoring contract."), ""]
@@ -302,9 +312,14 @@ def render_runtime(cid, contract, supplemental):
         lines.extend((prose(runtime["notes"]), ""))
     blockers = list(dict.fromkeys(contract.get("blockers", [])))
     if blockers:
+        if native_examples:
+            lines.extend(("<details>", "<summary>Retained authoring-contract limitations</summary>", "",
+                          "These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.", ""))
         lines.extend(("**Authoring/target contract limits:**", ""))
         lines.extend("- " + prose(item) for item in blockers)
         lines.append("")
+        if native_examples:
+            lines.extend(("</details>", ""))
     if cid.startswith("synchronization.queue."):
         lines.extend(("**Private Studio Run/Highlight:** the local Queue execution provider implements this operation. It does not establish public FROG lowering or a target provider.", ""))
     if supplemental.get("studio_local_evaluator_dispatch"):
@@ -322,13 +337,23 @@ def render_runtime(cid, contract, supplemental):
     return lines
 
 
-def render_page(entry, contract, help_entry, supplemental, palettes, defaults, entries, labels):
+def render_page(entry, contract, help_entry, supplemental, palettes, defaults, entries, labels, example_projection):
     cid = entry["catalog_id"]
     title = entry["title_en"]
     icon = quote(entry["icon"] or "", safe="/._-")
     lines = ["<!-- Generated by tools/export_studio_help.py; edit the reviewed source metadata, then regenerate. -->", f"# {prose(title)}", "",
              f'![{prose(title)} function icon]({icon})' if icon else "No icon asset is declared for this entry in the Studio catalogue.", "",
              f"{link(entry['family'] + ' functions', entry['family_route'])} · {link('All functions', 'docs/functions/index.md')}", "", prose(entry["summary"]), ""]
+    native_examples = any(set(item.get("backends", [])) & {"native-fast", "native-debug"}
+                          for item in example_projection.by_catalog.get(cid, []))
+    if native_examples:
+        lines.extend(("## Product execution profiles", "",
+                      "The shared index declares native examples for this object; see " +
+                      link("the examples below", entry["route"] + "#examples") + " and " +
+                      link("document profiles and evidence boundaries", "docs/reference/studio-draft-examples.md") +
+                      ". Older binding/help statements retained below can lag those product profiles. "
+                      "They do not establish or deny the separately measured native profiles. "
+                      "An example declaration alone is not an execution result or admission of every overload.", ""))
     if supplemental.get("formula"):
         lines.extend(("Formula: " + code(supplemental["formula"]) + ".", ""))
     if entry["title_fr"] or help_entry.get("description.fr"):
@@ -336,6 +361,8 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
         if entry["title_fr"]:
             lines.extend(("**" + prose(entry["title_fr"]) + "**", ""))
         if help_entry.get("description.fr"):
+            if native_examples:
+                lines.extend(("Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.", ""))
             if supplemental.get("matrix_dispatch", {}).get("available"):
                 lines.extend(("Le texte existant ci-dessous ne décrit pas le profil matriciel déclaré dans les métadonnées actuelles. Les règles et limites de ce profil sont précisées dans les sections anglaises de cette fiche.", ""))
             lines.extend((prose(help_entry["description.fr"]), ""))
@@ -354,11 +381,16 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
         status = contract["contract_status"].replace("_", " ")
         lines.extend(("## Studio authoring profile", "", f"Contract status: **{status}**. " + ("This is an editor-managed element; placement and configured values are distinct from an executable function provider." if contract["contract_status"] == "editor_managed" else "The connector below describes Studio authoring; execution availability is stated separately."), ""))
         behavior = contract["behavior_summary"]
+        if native_examples:
+            lines.extend(("<details>", "<summary>Retained binding and help description</summary>", "",
+                          "This is the source declaration, not the current measured product-execution assessment.", ""))
         if behavior and behavior != entry["summary"] and not behavior.startswith("Preserves the historical Studio authoring bindings for"):
             lines.extend((prose(behavior), ""))
         _, help_rules = purpose_parts(help_entry.get("description.en", ""))
         if help_rules and not supplemental.get("matrix_dispatch", {}).get("available"):
             lines.extend((prose(help_rules), ""))
+        if native_examples:
+            lines.extend(("</details>", ""))
         if cid.startswith("synchronization.queue."):
             lines.extend(("## Queue behavior", "", prose(QUEUE_DETAILS[cid.rsplit(".", 1)[1]]), "", "Queue&lt;T&gt; is a nominal execution-resource access reference. The complete T schema is invariant; an Array, Cluster or Enum message remains one T value. Collection outputs add one outer rank-1 Array.", ""))
             if any(p["id"] == "timeout_ms" for p in contract["ports"]["inputs"]):
@@ -382,7 +414,7 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
             lines.extend(("Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.", ""))
         lines.extend(render_policy(contract, supplemental))
         lines.extend(render_instances(supplemental))
-        lines.extend(render_runtime(cid, contract, supplemental))
+        lines.extend(render_runtime(cid, contract, supplemental, native_examples))
         lines.extend(("<details>", "<summary>Connector type defaults and persistence aliases</summary>", ""))
         rows = []
         for direction in ("inputs", "outputs"):
@@ -392,6 +424,7 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
         lines.extend(("</details>", ""))
     else:
         lines.extend(("## Authoring scope", "", "This catalogue entry has no versioned function binding contract in the current snapshot. Its presence and icon establish discovery only; fixed ports, defaults and execution support are not inferred.", ""))
+    lines.extend(studio_examples.function_examples(example_projection, cid))
     lines.extend(("## Identity and references", "", "- Catalogue ID: " + code(cid) + "."))
     if entry["parent"]:
         lines.append("- Parent palette: " + link(entries[entry["parent"]]["title_en"], entries[entry["parent"]]["route"]) + ".")
@@ -414,10 +447,13 @@ def main():
     parser.add_argument("--source", type=Path, default=Path(__file__).resolve().parents[2] / "FROG-STUDIO/native-portable-engine")
     parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--routes-output", type=Path)
+    parser.add_argument("--examples-index", type=Path, help="Canonical FROG/Examples/index.v1.json (required; no placeholder index is generated).")
     parser.add_argument("--check", action="store_true", help="Check deterministic generated files without writing.")
     args = parser.parse_args()
     source, output = args.source.resolve(), args.output.resolve()
     catalog = load_catalog(source)
+    example_index = (args.examples_index or source.parents[1] / "FROG/Examples/index.v1.json").resolve()
+    example_projection = studio_examples.load_examples(example_index, catalog)
     help_catalog, contracts, contract_sources, supplemental, palettes, defaults, aliases, labels, consumed = load_inputs(source)
     missing = sorted(set(contracts) - set(catalog))
     if missing:
@@ -448,7 +484,8 @@ def main():
             consumed.add(icon_file.relative_to(source).as_posix())
     for cid, entry in catalog.items():
         helper = dict(help_catalog["function." + cid]) if "function." + cid in help_catalog else {}
-        artifacts[entry["route"]] = render_page(entry, contracts.get(cid), helper, supplemental.get(cid, {}), palettes, defaults, catalog, labels).encode("utf-8")
+        artifacts[entry["route"]] = render_page(entry, contracts.get(cid), helper, supplemental.get(cid, {}), palettes, defaults, catalog, labels, example_projection).encode("utf-8")
+    artifacts.update(studio_examples.render_examples(example_projection, catalog))
     families = []
     for family_id in sorted({e["family_id"] for e in catalog.values()}):
         members = sorted((e for e in catalog.values() if e["family_id"] == family_id), key=lambda e: (e["kind"] == "folder", e["title_en"].casefold(), e["catalog_id"]))
@@ -484,6 +521,7 @@ def main():
         record["contract_source"] = contract_sources.get(cid)
         records.append(record)
     export = {"schema_version": 1, "source_snapshot": {"sha256": source_hash, "files": provenance}, "counts": counts, "families": families, "entries": records}
+    export["examples_projection"] = {"index": "assets/examples/index.v1.json", "sha256": digest(example_projection.files["assets/examples/index.v1.json"]), "entries": len(example_projection.entries), "scope": "declared expectations; no execution results inferred"}
     artifacts["docs/functions/catalog.json"] = (json.dumps(export, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     routes = []
     for entry in records:
@@ -496,19 +534,21 @@ def main():
     lines.extend(table(["Family", "Operations / editor elements", "Folders"], [[link(f["name"], f["route"]), str(f["operations"]), str(f["entries"] - f["operations"])] for f in families]))
     lines.extend(("## Read a function page", "", "**IN** terminals receive values and **OUT** terminals publish values. Required inputs must be connected for semantic readiness. Recommended and optional inputs keep their distinct Studio connection flags. A listed default is a value only when the reviewed metadata states one; the preview type is shown separately.", "", "Authoring a node does not establish execution support. Each page names the public FROG / target Runtime declaration separately from private local Run/Highlight behavior when the source describes it. A partial or blocked authoring contract remains labelled as such.", "", "Constants, terminals and structure containers are included. Their editor-managed values, dynamic boundaries and configured connectors must not be read as an ordinary fixed executable function signature.", "", "## Provenance and notation", "", f"This deterministic export covers **{counts['catalog_entries']} catalogue entries**, **{counts['function_contracts']} versioned function contracts** and **{counts['palette_folders']} palette folders** across **{counts['families']} families**. {counts['helper_entries']} entries carry an existing context-help section. The remaining purposes come from reviewed family metadata or the versioned authoring contract.", "", "The English text follows Studio help. French summaries are reproduced only where the existing helper supplies them. Missing French text, defaults, requirements or capabilities are not translated or inferred.", "", "The source snapshot combines the context-help catalogue, the four catalogue tables, v2 family binding manifests, reviewed Connectivity/Mathematics metadata, explicit File defaults, Queue contracts, shared displayed terminal labels and private evaluator dispatch sources. SHA-256 hashes for every consumed source file and copied icon are retained in the machine-readable catalogue. Private source filenames are provenance records, not public source links.", "", "The SVG icons are copied byte for byte from Studio assets. They are reference icons, not screenshots of a running diagram. No screenshot or native execution result is synthesized. Three File reference entries declare no icon; their pages say so explicitly.", "", "Type expressions preserve the contract notation: `T:` names a generic type constraint; `array<...>` includes rank/shape rules; `cluster<...>` preserves ordered fields; `ref<...>` is a nominal reference; `resolve:...` names a resolver; `unresolved:...` requires explicit configuration or metadata. `f64`, `i32` and `bool` are scalar types. Exact per-port connection policies and preview types are available in each page’s connector-details panel.", "", "NI API links document reference semantics and connector evidence. They do not promise every NI overload or a compatible Studio execution provider. NI flags marked unverified stay unverified, even when Studio has an explicit authoring connection policy.", "", "Regenerate with Python 3.11+: `python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine`; add `--check` for a read-only deterministic export check. This documentation check does not run application regression tests.", "", "Source snapshot SHA-256: " + code(source_hash) + ".", ""))
     artifacts["docs/functions/index.md"] = "\n".join(lines).encode("utf-8")
+    artifacts["docs/functions/index.md"] += ("\n## Actual example documents\n\n" + link("Browse the shared example index", "docs/examples/index.md") + ". Each example provides its actual `.frog`, explanation, expected results and explicit backend/profile requirements. These expectations do not certify a successful native run.\n").encode("utf-8")
     for cid, entry in catalog.items():
         if ("- Catalogue ID: " + code(cid) + ".").encode("utf-8") not in artifacts[entry["route"]]:
             raise ValueError(f"Function page lost its catalogue identity: {cid}")
     for name, data in list(artifacts.items()):
         if name.endswith(".md"):
             artifacts[name] = relative_links(name, data.decode("utf-8")).encode("utf-8")
+    studio_examples.seal_example_ownership(artifacts)
     # Validate only links owned by this export. Existing site navigation has its own owner.
     missing_links = []
     for name, data in artifacts.items():
         if not name.endswith(".md"):
             continue
         text = data.decode("utf-8")
-        urls = re.findall(r'\]\(([^)]+)\)|\bsrc="([^"]+)"', text)
+        urls = re.findall(r'\]\(([^)]+)\)|\b(?:src|href)="([^"]+)"', text)
         for pair in urls:
             target = unquote(next(value for value in pair if value)).split("#", 1)[0]
             if urlsplit(target).scheme or not target:
@@ -521,8 +561,40 @@ def main():
     if missing_links:
         raise ValueError(f"Broken generated links: {missing_links[:10]}")
     mismatches = []
+    for path in studio_examples.stale_example_files(output, artifacts):
+        mismatches.append(path.relative_to(output).as_posix())
+        if not args.check:
+            path.unlink()
+    # Remove only pages carrying this generator's ownership marker. Withdrawn
+    # catalogue entries must not remain discoverable as stale public features.
+    generated_page_root = output / "docs/functions"
+    generated_page_marker = b"<!-- Generated by tools/export_studio_help.py;"
+    if generated_page_root.is_dir():
+        resolved_page_root = generated_page_root.resolve()
+        for path in sorted(generated_page_root.rglob("*.md")):
+            resolved_path = path.resolve()
+            resolved_path.relative_to(resolved_page_root)
+            name = path.relative_to(output).as_posix()
+            if name not in artifacts and resolved_path.read_bytes().startswith(generated_page_marker):
+                mismatches.append(name)
+                if not args.check:
+                    resolved_path.unlink()
+    # This directory contains only byte-for-byte generated catalogue icons.
+    # Reused resources must remove their superseded copies as well as update
+    # links; otherwise a deterministic check would silently accept old assets.
+    generated_icon_root = output / "assets/function-icons"
+    if generated_icon_root.is_dir():
+        resolved_icon_root = generated_icon_root.resolve()
+        for path in sorted(generated_icon_root.rglob("*.svg")):
+            resolved_path = path.resolve()
+            resolved_path.relative_to(resolved_icon_root)
+            name = path.relative_to(output).as_posix()
+            if name not in artifacts:
+                mismatches.append(name)
+                if not args.check:
+                    resolved_path.unlink()
     for name, data in sorted(artifacts.items()):
-        path = output / name
+        path = studio_examples.destination(output, name)
         if not path.is_file() or path.read_bytes() != data:
             mismatches.append(name)
             if not args.check:
@@ -531,7 +603,7 @@ def main():
     if args.routes_output and not args.check:
         args.routes_output.parent.mkdir(parents=True, exist_ok=True)
         args.routes_output.write_bytes(route_export)
-    print(json.dumps({"mode": "check" if args.check else "export", "counts": counts, "artifact_files": len(artifacts), "changed_or_stale": len(mismatches), "source_snapshot_sha256": source_hash, "links": "all generated links resolve", "authentic_icons": "all copied bytes match source"}, indent=2))
+    print(json.dumps({"mode": "check" if args.check else "export", "counts": counts, "example_documents": len(example_projection.entries), "example_bytes": "exact input copies; no runtime execution implied", "artifact_files": len(artifacts), "changed_or_stale": len(mismatches), "source_snapshot_sha256": source_hash, "links": "all generated links resolve", "authentic_icons": "all copied bytes match source"}, indent=2))
     if args.check and mismatches:
         raise SystemExit("Stale generated output: " + ", ".join(mismatches[:10]))
 

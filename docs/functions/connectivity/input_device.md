@@ -20,6 +20,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Acquire Input Data.vi](input_device/acquire_input_data.md) | Acquires joystick, keyboard or mouse state using the instance selected by the initialized device reference. |
 | [Close Input Device.vi](input_device/close_input_device.md) | Closes the initialized joystick, keyboard or mouse reference using the corresponding instance. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.input_device`.

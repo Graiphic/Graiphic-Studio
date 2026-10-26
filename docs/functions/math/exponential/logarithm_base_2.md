@@ -7,12 +7,18 @@
 
 Computes the logarithm of x to base two.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](logarithm_base_2.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 Formula: `log2(x)`.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Logarithme en base 2**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule le logarithme de x en base 2. [Types] Scalaires F32/F64 et complexes C32/C64, tableaux ou clusters numériques récursifs. Les entiers sont convertis en F64 ; au-delà de 2^53, la conversion peut arrondir. Les rangs des tableaux et les identités ordonnées des champs sont conservés. Deux opérandes composés exigent la même structure et les mêmes dimensions réelles ; un opérande entièrement scalaire peut être appliqué à chaque feuille de l’autre. Pas de virgule fixe, précision étendue, calcul matriciel nominal ni diffusion entre dimensions. Les résultats réels hors domaine suivent NaN/Inf IEEE ; les résultats complexes non finis sont refusés. Toutes les entrées sont obligatoires dans le profil de calcul Studio ; l’aperçu F64 non câblé ne fournit aucune valeur implicite. Le calcul Highlight local utilise son fournisseur dédié ; l’exécution runtime sur cible est indisponible.
 
@@ -22,9 +28,16 @@ Calcule le logarithme de x en base 2. [Types] Scalaires F32/F64 et complexes C32
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Computes the logarithm of x to base two. Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. This private Studio profile declares local Highlight calculation separately from target Runtime execution.
 
 Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. All operands are required by the Studio calculation profile; the F64 unwired preview is not an implicit value. Local Highlight calculation is available through its dedicated provider; target Runtime execution is unavailable.
+
+</details>
 
 ## IN — inputs
 
@@ -75,12 +88,19 @@ Port order: `x`.
 
 The local Highlight provider is not a public FROG lowering or a target Runtime provider.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI fixed-point, physical units and extended numeric precision are outside this explicit Studio profile.
 - Complex input/output transport reuses the existing complete finite c32/c64 lexical grammar; non-finite complex results are rejected explicitly.
 - Binary arrays use equal actual dimensions; no dimensional broadcasting or truncation.
 - No public FROG lowering or target Runtime provider is declared.
+
+</details>
 
 **Private Studio Run/Highlight:** a local calculation provider is declared.
 
@@ -95,6 +115,12 @@ f32/f64, bounded finite lexical c32/c64, and recursively numeric arrays/clusters
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Logarithm Base 2 — real identity](../../../examples/math.exponential.logarithm_base_2.real_identity.md) — Computes the logarithm of x to base two. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -73,6 +73,10 @@ Real x, y -&gt; Complex. Numeric array/cluster structure is preserved, with real
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.complex.real_imaginary_to_complex`.

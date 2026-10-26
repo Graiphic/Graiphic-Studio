@@ -7,10 +7,16 @@
 
 Converts compatible cluster fields into an array.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](cluster_to_array.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Cluster en tableau**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Convertit les champs compatibles d'un cluster en tableau. [Types] Un cluster non vide d’éléments homogènes compatibles produit un tableau 1D. Les champs directement tableaux sont refusés. Les clusters imbriqués conservent leur schéma compatible ; les représentations numériques peuvent être promues.
 
@@ -20,9 +26,16 @@ Convertit les champs compatibles d'un cluster en tableau. [Types] Un cluster non
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 A non-empty cluster of compatible homogeneous elements produces a 1D array. Direct array fields are not accepted. Nested clusters retain their complete compatible schema; numeric representations can promote.
 
 A non-empty cluster of compatible homogeneous elements produces a 1D array. Direct array fields are not accepted. Nested clusters retain their complete compatible schema; numeric representations can promote.
+
+</details>
 
 ## IN — inputs
 
@@ -58,9 +71,16 @@ Scope: `requires_explicit_target_capability`.
 
 Authoring support is not an execution capability.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,6 +91,14 @@ Authoring support is not an execution capability.
 | OUTPUT | `array` | `unknown` | `any_explicit` | `single` | `result` |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Cluster To Array promotes numeric fields](../../../examples/cluster.to-array.promotion.md) — I16 and I32 fields promote to the resolver's common I32 element type. Field order determines array order; stable field IDs remain in the original Cluster. (`execution`, `studio-draft`).
+- [Cluster To Array preserves homogeneous I64](../../../examples/cluster.to-array.exact-i64.md) — Homogeneous fields retain their exact integer carrier. An integer above 2^53 remains unchanged, and stable Cluster field order determines Array order. (`execution`, `studio-draft`).
+- [Cluster To Array preserves homogeneous I64 — alternate palette entry](../../../examples/array.cluster-to-array.alias.md) — Homogeneous fields retain their exact integer carrier. An integer above 2^53 remains unchanged, and stable Cluster field order determines Array order. (`execution`, `studio-draft`).
 
 ## Identity and references
 

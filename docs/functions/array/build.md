@@ -7,12 +7,18 @@
 
 Combines elements and arrays into a new array.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](build.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Construire un tableau**
 
-Combine des elements et des tableaux dans un nouveau tableau. [Types] Dépliez Construire un tableau de 1 à 32 entrées ordonnées. Les éléments doivent être compatibles et leurs rangs égaux ou adjacents. Des entrées de rang N donnent un rang N+1, ou N avec « Concaténer les entrées ». Des rangs N et N-1 imposent la concaténation au rang N : le menu est coché et verrouillé. Des scalaires donnent un tableau 1D : la concaténation est décochée et verrouillée. Sans type connu en entrée, la sortie est void. Les numériques peuvent être promus, pas les types sans rapport. Le mode manuel et le nombre d’entrées sont sauvegardés ; l’exécution dépend toujours de la cible.
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
+
+Combine des elements et des tableaux dans un nouveau tableau. [Types] Dépliez Construire un tableau de 1 à 32 entrées ordonnées. Les éléments doivent être compatibles et leurs rangs égaux ou adjacents. Des entrées de rang N donnent un rang N+1, ou N avec « Concaténer les entrées ». Des rangs N et N-1 imposent la concaténation au rang N : le menu est coché et verrouillé. Des scalaires donnent un tableau 1D : la concaténation est décochée et verrouillée. Sans type connu en entrée, la sortie est void. Les numériques peuvent être promus, pas les types sans rapport. Le mode manuel et le nombre d’entrées sont sauvegardés ; l’exécution dépend toujours de la cible. [Local Studio] Play/Highlight local exécute de 1 à 32 entrées scalaires f64 finies et renvoie array&lt;f64&gt; de rang 1. Les identifiants sémantiques canoniques imposent l’ordre des éléments, indépendamment de l’arrivée des arguments. Ce profil local n’implémente ni concaténation ni entrée tableau. Autres types/rangs ou modes : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Les options générales d’édition restent distinctes de cette capacité d’exécution bornée ; aucun support cible public FROG/LLVM n’est déclaré.
 
 </details>
 
@@ -20,9 +26,16 @@ Combine des elements et des tableaux dans un nouveau tableau. [Types] Dépliez C
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated.
+<details>
+<summary>Retained binding and help description</summary>
 
-Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated.
+This is the source declaration, not the current measured product-execution assessment.
+
+Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated. [Local Studio] Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
+
+Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated. [Local Studio] Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
+
+</details>
 
 ## IN — inputs
 
@@ -63,11 +76,19 @@ Port order: `array_a` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
+
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
 
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+- Local f64 vector execution: finite rank-1 Index/single i32 index or Build/1..32 scalar f64 inputs only; no general Array or public LLVM provider.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -78,6 +99,14 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `result` | `unknown` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Notifier : Multiple retourne les notifications disponibles](../../examples/sync.notifier.multiple_available.md) — Notifier : Multiple retourne les notifications disponibles (`execution`, `studio-draft`).
+- [Notifier : Multiple History conserve les identités de source](../../examples/sync.notifier.multiple_history_available.md) — Notifier : Multiple History conserve les identités de source (`execution`, `studio-draft`).
+- [Notifier History : revenir à A sans relire son ancien signal](../../examples/sync.notifier.history_a_b_a.md) — Notifier History : revenir à A sans relire son ancien signal (`execution`, `studio-draft`).
 
 ## Identity and references
 

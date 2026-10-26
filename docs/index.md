@@ -1,5 +1,7 @@
 # Graiphic Studio documentation
 
+The [26 October documentation reconciliation](reference/documentation-refresh-2026-10-26.md) brings forward Run/Highlight, standalone Build, standard Type Def, Tabs and attached-comment guides. The example results below remain a dated measurement.
+
 Build an interface, connect a dataflow, and inspect one `.frog` document from
 three coordinated views. Start with a short walkthrough or open the reference
 for the object you are using.
@@ -14,6 +16,11 @@ for the object you are using.
 | Place and connect operations | [Block Diagram](interface/block-diagram.md) and [Function Navigator](interface/function-navigator.md) |
 | Understand a function or wire | [Context Help](interface/context-help.md) and [Functions reference](functions/index.md) |
 | Try a supported graph | [Run and Highlight](interface/run-and-highlight.md) |
+| Compile a standalone application | [Build](interface/build.md) |
+| Share a type across documents | [Type Definitions](interface/type-definitions.md) |
+| Create pages of independent controls | [Tab Controls](widgets/tab-controls.md) |
+| Link an annotation to an object | [Attached comments](interface/attached-comments.md) |
+| Open a real .frog with an explanation and expected outputs | [Examples](examples/index.md) |
 
 ![Front Panel overview from an earlier Studio documentation capture](../assets/screenshots/front-panel/front-panel-overview.png)
 
@@ -54,8 +61,9 @@ Keep [keyboard shortcuts](reference/keyboard-shortcuts.md) and the
 
 ## Current support
 
-These guides reflect the **15 October 2026** checkpoint. Studio authoring,
-private local Run/Highlight, public FROG Source, and target runtime support have
-separate scopes. Read [current capabilities and limits](reference/development-checkpoint.md)
-when choosing an execution path. A visible catalog entry is not a promise that
-every target can execute it.
+The [25 October 2026 checkpoint](reference/development-checkpoint.md) records
+**625 real example documents and 1,219 successful file/backend checks**.
+Studio authoring, local runtime profiles and public FROG Source retain separate
+scopes. Read the measured capabilities and limits when choosing an execution
+path. A visible catalogue entry is not a promise that every target or overload
+is supported, and this checkpoint is not a complete application qualification.

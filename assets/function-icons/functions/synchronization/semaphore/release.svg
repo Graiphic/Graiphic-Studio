@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-provisional="semaphore-release">
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#30343b" stroke="#aab4c0" stroke-width="2"/>
+  <g stroke="#f8fafc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="33" y="9" width="9" height="30" rx="3" fill="#20252c"/>
+    <path d="M37.5 39v4M11 21v-6a6 6 0 0 1 12 0" fill="none"/>
+    <rect x="7" y="21" width="20" height="17" rx="2" fill="none"/>
+    <path d="m12 29 4 4 7-8" fill="none" stroke="#76d36b" stroke-width="2.5"/>
+  </g>
+  <circle cx="37.5" cy="15" r="2.7" fill="#ed7379"/>
+  <circle cx="37.5" cy="24" r="2.7" fill="#f1c65d"/>
+  <circle cx="37.5" cy="33" r="2.7" fill="#76d36b"/>
+</svg>

@@ -84,9 +84,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.binary_read_preallocated`.
+- Parent palette: [Operation](operation.md).
 - Profile: `frog.studio.palette.file.binary_read_preallocated.v1`.
 - Definition: `frog.studio.file.binary_read_preallocated`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/preallocated-read-from-binary-file.html).

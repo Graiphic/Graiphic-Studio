@@ -7,10 +7,16 @@
 
 Inverts a Boolean value.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](not.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **NON**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Inverse une valeur booleenne. [Types] Accepte booléens ou numériques non complexes, scalaires, tableaux et clusters. Les feuilles booléennes restent booléennes ; les entiers conservent/promeuvent leur représentation ; les flottants deviennent I32. Un cluster d'erreur utilise status. Ne mélange pas booléen et nombre. Les tableaux sont traités élément par élément en conservant leur rang. Plusieurs tableaux en entrée doivent avoir le même rang ; une entrée scalaire s'applique à chaque élément.
 
@@ -20,9 +26,16 @@ Inverse une valeur booleenne. [Types] Accepte booléens ou numériques non compl
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolean leaves produce Boolean; integer leaves retain/promote their representation; floating leaves coerce to I32. Error-cluster input uses status. Boolean and numeric leaves cannot mix. Arrays are processed element by element and retain their rank. Multiple array operands must have the same rank; a scalar operand is applied to every element.
 
 Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolean leaves produce Boolean; integer leaves retain/promote their representation; floating leaves coerce to I32. Error-cluster input uses status. Boolean and numeric leaves cannot mix. Arrays are processed element by element and retain their rank. Multiple array operands must have the same rank; a scalar operand is applied to every element.
+
+</details>
 
 ## IN — inputs
 
@@ -58,9 +71,16 @@ Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolea
 
 Implementation: `frog.core.not`.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -73,6 +93,13 @@ Implementation: `frog.core.not`.
 | OUTPUT | `result` | `bool` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [NOT — truth 0](../../examples/boolean.not.truth_0.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted. (`execution`, `studio-draft`).
+- [NOT — truth 1](../../examples/boolean.not.truth_1.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted. (`execution`, `studio-draft`).
 
 ## Identity and references
 

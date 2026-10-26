@@ -62,6 +62,12 @@ Provider identity is retained from Studio. Executability must be established by 
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Timed Loop : configuration des nœuds de temporisation](../../examples/structure.timed_loop.saved_schedule.md) — Timed Loop : configuration des nœuds de temporisation (`persistence`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `structures.timed_loop`.

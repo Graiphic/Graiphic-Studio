@@ -7,12 +7,18 @@
 
 Computes e raised to x.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](exponential.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 Formula: `e^x`.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Exponentielle**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Le texte existant ci-dessous ne décrit pas le profil matriciel déclaré dans les métadonnées actuelles. Les règles et limites de ce profil sont précisées dans les sections anglaises de cette fiche.
 
@@ -24,7 +30,14 @@ Calcule e élevé à x. [Types] Scalaires F32/F64 et complexes C32/C64, tableaux
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Computes e raised to x. Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. This private Studio profile declares local Highlight calculation separately from target Runtime execution. Concrete matrix&lt;f64&gt; dispatch is separate from element-wise Array/Cluster lifting: nonempty square matrices of dimension at most 32; finite real output only, bounded arithmetic and numerical residual checks. Exponential uses matrix Pade scaling/squaring; Natural Logarithm uses the convergent real principal matrix logarithm; Power uses actual matrix products for integer exponents and Exp(y*Ln(A)) for admissible noninteger real exponents. Complex branch-cut, ill-conditioned, nonconvergent or overflowing Matrix results fail explicitly.
+
+</details>
 
 ## IN — inputs
 
@@ -75,12 +88,19 @@ Port order: `x`.
 
 The local Highlight provider is not a public FROG lowering or a target Runtime provider.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI fixed-point, physical units and extended numeric precision are outside this explicit Studio profile.
 - Complex input/output transport reuses the existing complete finite c32/c64 lexical grammar; non-finite complex results are rejected explicitly.
 - Binary arrays use equal actual dimensions; no dimensional broadcasting or truncation.
 - No public FROG lowering or target Runtime provider is declared.
+
+</details>
 
 **Private Studio Run/Highlight:** a local calculation provider is declared.
 
@@ -99,6 +119,12 @@ f32/f64, bounded finite lexical c32/c64, and recursively numeric arrays/clusters
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Exponential — real identity](../../../examples/math.exponential.exponential.real_identity.md) — Computes e raised to x. (`execution`, `studio-draft`).
 
 ## Identity and references
 

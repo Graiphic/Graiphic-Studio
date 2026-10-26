@@ -76,6 +76,10 @@ The local Highlight provider is not a public FROG lowering or a target Runtime p
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `math.matrix.matrix_to_array`.

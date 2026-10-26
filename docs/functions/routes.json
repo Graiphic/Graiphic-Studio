@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "27dd4f98a028f3b30637714c0d761a5d03bc1e926f11a0cdee74fa1dbc5ee3c5",
+  "source_snapshot_sha256": "5aacecb1be75a8e4dbbe99e9d280891e0c47d6f8736e100a82caf4993e09c0ea",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",
@@ -770,6 +770,15 @@
       ]
     },
     {
+      "catalog_id": "cluster.bundle",
+      "route": "docs/functions/cluster/bundle.md",
+      "keys": [
+        "cluster.bundle",
+        "frog.studio.cluster.bundle",
+        "function.cluster.bundle"
+      ]
+    },
+    {
       "catalog_id": "cluster.bundle_by_name",
       "route": "docs/functions/cluster/bundle_by_name.md",
       "keys": [
@@ -833,12 +842,237 @@
       ]
     },
     {
+      "catalog_id": "cluster.unbundle",
+      "route": "docs/functions/cluster/unbundle.md",
+      "keys": [
+        "cluster.unbundle",
+        "frog.studio.cluster.unbundle",
+        "function.cluster.unbundle"
+      ]
+    },
+    {
       "catalog_id": "cluster.unbundle_by_name",
       "route": "docs/functions/cluster/unbundle_by_name.md",
       "keys": [
         "cluster.unbundle_by_name",
         "frog.studio.cluster.unbundle_by_name",
         "function.cluster.unbundle_by_name"
+      ]
+    },
+    {
+      "catalog_id": "collection.empty",
+      "route": "docs/functions/collection/empty.md",
+      "keys": [
+        "collection.empty",
+        "frog.studio.collection.empty",
+        "function.collection.empty"
+      ]
+    },
+    {
+      "catalog_id": "collection.map",
+      "route": "docs/functions/collection/map.md",
+      "keys": [
+        "collection.map",
+        "frog.studio.collection.map",
+        "function.collection.map"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.build",
+      "route": "docs/functions/collection/map/build.md",
+      "keys": [
+        "collection.map.build",
+        "frog.studio.collection.map.build",
+        "function.collection.map.build"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.constant",
+      "route": "docs/functions/collection/map/constant.md",
+      "keys": [
+        "collection.map.constant",
+        "frog.studio.collection.map.constant",
+        "function.collection.map.constant"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.extrema",
+      "route": "docs/functions/collection/map/extrema.md",
+      "keys": [
+        "collection.map.extrema",
+        "frog.studio.collection.map.extrema",
+        "function.collection.map.extrema"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.in_place_access",
+      "route": "docs/functions/collection/map/in_place_access.md",
+      "keys": [
+        "collection.map.in_place_access",
+        "frog.studio.collection.map.in_place_access",
+        "function.collection.map.in_place_access"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.insert",
+      "route": "docs/functions/collection/map/insert.md",
+      "keys": [
+        "collection.map.insert",
+        "frog.studio.collection.map.insert",
+        "function.collection.map.insert"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.look",
+      "route": "docs/functions/collection/map/look.md",
+      "keys": [
+        "collection.map.look",
+        "frog.studio.collection.map.look",
+        "function.collection.map.look"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.remove",
+      "route": "docs/functions/collection/map/remove.md",
+      "keys": [
+        "collection.map.remove",
+        "frog.studio.collection.map.remove",
+        "function.collection.map.remove"
+      ]
+    },
+    {
+      "catalog_id": "collection.map.to_array",
+      "route": "docs/functions/collection/map/to_array.md",
+      "keys": [
+        "collection.map.to_array",
+        "frog.studio.collection.map.to_array",
+        "function.collection.map.to_array"
+      ]
+    },
+    {
+      "catalog_id": "collection.set",
+      "route": "docs/functions/collection/set.md",
+      "keys": [
+        "collection.set",
+        "frog.studio.collection.set",
+        "function.collection.set"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.build",
+      "route": "docs/functions/collection/set/build.md",
+      "keys": [
+        "collection.set.build",
+        "frog.studio.collection.set.build",
+        "function.collection.set.build"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.cartesian_product",
+      "route": "docs/functions/collection/set/cartesian_product.md",
+      "keys": [
+        "collection.set.cartesian_product",
+        "frog.studio.collection.set.cartesian_product",
+        "function.collection.set.cartesian_product"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.constant",
+      "route": "docs/functions/collection/set/constant.md",
+      "keys": [
+        "collection.set.constant",
+        "frog.studio.collection.set.constant",
+        "function.collection.set.constant"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.contains",
+      "route": "docs/functions/collection/set/contains.md",
+      "keys": [
+        "collection.set.contains",
+        "frog.studio.collection.set.contains",
+        "function.collection.set.contains"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.difference",
+      "route": "docs/functions/collection/set/difference.md",
+      "keys": [
+        "collection.set.difference",
+        "frog.studio.collection.set.difference",
+        "function.collection.set.difference"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.extrema",
+      "route": "docs/functions/collection/set/extrema.md",
+      "keys": [
+        "collection.set.extrema",
+        "frog.studio.collection.set.extrema",
+        "function.collection.set.extrema"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.insert",
+      "route": "docs/functions/collection/set/insert.md",
+      "keys": [
+        "collection.set.insert",
+        "frog.studio.collection.set.insert",
+        "function.collection.set.insert"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.intersection",
+      "route": "docs/functions/collection/set/intersection.md",
+      "keys": [
+        "collection.set.intersection",
+        "frog.studio.collection.set.intersection",
+        "function.collection.set.intersection"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.remove",
+      "route": "docs/functions/collection/set/remove.md",
+      "keys": [
+        "collection.set.remove",
+        "frog.studio.collection.set.remove",
+        "function.collection.set.remove"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.symmetric_difference",
+      "route": "docs/functions/collection/set/symmetric_difference.md",
+      "keys": [
+        "collection.set.symmetric_difference",
+        "frog.studio.collection.set.symmetric_difference",
+        "function.collection.set.symmetric_difference"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.to_array",
+      "route": "docs/functions/collection/set/to_array.md",
+      "keys": [
+        "collection.set.to_array",
+        "frog.studio.collection.set.to_array",
+        "function.collection.set.to_array"
+      ]
+    },
+    {
+      "catalog_id": "collection.set.union",
+      "route": "docs/functions/collection/set/union.md",
+      "keys": [
+        "collection.set.union",
+        "frog.studio.collection.set.union",
+        "function.collection.set.union"
+      ]
+    },
+    {
+      "catalog_id": "collection.size",
+      "route": "docs/functions/collection/size.md",
+      "keys": [
+        "collection.size",
+        "frog.studio.collection.size",
+        "function.collection.size"
       ]
     },
     {
@@ -1010,561 +1244,6 @@
         "comparison.white_space",
         "frog.studio.comparison.white_space",
         "function.comparison.white_space"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex",
-      "route": "docs/functions/connectivity/activex.md",
-      "keys": [
-        "connectivity.activex",
-        "frog.studio.connectivity.activex",
-        "function.connectivity.activex"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.automation_open",
-      "route": "docs/functions/connectivity/activex/automation_open.md",
-      "keys": [
-        "AX-01",
-        "connectivity.activex.automation_open",
-        "frog.studio.connectivity.activex.automation_open",
-        "function.connectivity.activex.automation_open"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.close_reference",
-      "route": "docs/functions/connectivity/activex/close_reference.md",
-      "keys": [
-        "AX-02",
-        "connectivity.activex.close_reference",
-        "frog.studio.connectivity.activex.close_reference",
-        "function.connectivity.activex.close_reference"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.invoke_node",
-      "route": "docs/functions/connectivity/activex/invoke_node.md",
-      "keys": [
-        "AX-06",
-        "connectivity.activex.invoke_node",
-        "frog.studio.connectivity.activex.invoke_node",
-        "function.connectivity.activex.invoke_node"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.property_node",
-      "route": "docs/functions/connectivity/activex/property_node.md",
-      "keys": [
-        "AX-05",
-        "connectivity.activex.property_node",
-        "frog.studio.connectivity.activex.property_node",
-        "function.connectivity.activex.property_node"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.register_event_callback",
-      "route": "docs/functions/connectivity/activex/register_event_callback.md",
-      "keys": [
-        "AX-07",
-        "connectivity.activex.register_event_callback",
-        "frog.studio.connectivity.activex.register_event_callback",
-        "function.connectivity.activex.register_event_callback"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.static_vi_reference",
-      "route": "docs/functions/connectivity/activex/static_vi_reference.md",
-      "keys": [
-        "AX-09",
-        "connectivity.activex.static_vi_reference",
-        "frog.studio.connectivity.activex.static_vi_reference",
-        "function.connectivity.activex.static_vi_reference"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.to_variant",
-      "route": "docs/functions/connectivity/activex/to_variant.md",
-      "keys": [
-        "AX-03",
-        "connectivity.activex.to_variant",
-        "frog.studio.connectivity.activex.to_variant",
-        "function.connectivity.activex.to_variant"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.unregister_for_events",
-      "route": "docs/functions/connectivity/activex/unregister_for_events.md",
-      "keys": [
-        "AX-08",
-        "connectivity.activex.unregister_for_events",
-        "frog.studio.connectivity.activex.unregister_for_events",
-        "function.connectivity.activex.unregister_for_events"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.activex.variant_to_data",
-      "route": "docs/functions/connectivity/activex/variant_to_data.md",
-      "keys": [
-        "AX-04",
-        "connectivity.activex.variant_to_data",
-        "frog.studio.connectivity.activex.variant_to_data",
-        "function.connectivity.activex.variant_to_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database",
-      "route": "docs/functions/connectivity/database.md",
-      "keys": [
-        "connectivity.database",
-        "frog.studio.connectivity.database",
-        "function.connectivity.database"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.advanced",
-      "route": "docs/functions/connectivity/database/advanced.md",
-      "keys": [
-        "connectivity.database.advanced",
-        "frog.studio.connectivity.database.advanced",
-        "function.connectivity.database.advanced"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.close_connection",
-      "route": "docs/functions/connectivity/database/close_connection.md",
-      "keys": [
-        "DB-02",
-        "connectivity.database.close_connection",
-        "frog.studio.connectivity.database.close_connection",
-        "function.connectivity.database.close_connection"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.create_parameterized_query",
-      "route": "docs/functions/connectivity/database/create_parameterized_query.md",
-      "keys": [
-        "DB-ADV-09",
-        "connectivity.database.create_parameterized_query",
-        "frog.studio.connectivity.database.create_parameterized_query",
-        "function.connectivity.database.create_parameterized_query"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.create_table",
-      "route": "docs/functions/connectivity/database/create_table.md",
-      "keys": [
-        "DB-07",
-        "connectivity.database.create_table",
-        "frog.studio.connectivity.database.create_table",
-        "function.connectivity.database.create_table"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.delete_data",
-      "route": "docs/functions/connectivity/database/delete_data.md",
-      "keys": [
-        "DB-06",
-        "connectivity.database.delete_data",
-        "frog.studio.connectivity.database.delete_data",
-        "function.connectivity.database.delete_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.drop_table",
-      "route": "docs/functions/connectivity/database/drop_table.md",
-      "keys": [
-        "DB-08",
-        "connectivity.database.drop_table",
-        "frog.studio.connectivity.database.drop_table",
-        "function.connectivity.database.drop_table"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.execute_query",
-      "route": "docs/functions/connectivity/database/execute_query.md",
-      "keys": [
-        "DB-ADV-01",
-        "connectivity.database.execute_query",
-        "frog.studio.connectivity.database.execute_query",
-        "function.connectivity.database.execute_query"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.fetch_element_data",
-      "route": "docs/functions/connectivity/database/fetch_element_data.md",
-      "keys": [
-        "DB-ADV-03",
-        "connectivity.database.fetch_element_data",
-        "frog.studio.connectivity.database.fetch_element_data",
-        "function.connectivity.database.fetch_element_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.fetch_next_recordset",
-      "route": "docs/functions/connectivity/database/fetch_next_recordset.md",
-      "keys": [
-        "DB-ADV-04",
-        "connectivity.database.fetch_next_recordset",
-        "frog.studio.connectivity.database.fetch_next_recordset",
-        "function.connectivity.database.fetch_next_recordset"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.fetch_recordset_data",
-      "route": "docs/functions/connectivity/database/fetch_recordset_data.md",
-      "keys": [
-        "DB-ADV-02",
-        "connectivity.database.fetch_recordset_data",
-        "frog.studio.connectivity.database.fetch_recordset_data",
-        "function.connectivity.database.fetch_recordset_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.format_datetime_string",
-      "route": "docs/functions/connectivity/database/format_datetime_string.md",
-      "keys": [
-        "DB-UTIL-05",
-        "connectivity.database.format_datetime_string",
-        "frog.studio.connectivity.database.format_datetime_string",
-        "function.connectivity.database.format_datetime_string"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.free_object",
-      "route": "docs/functions/connectivity/database/free_object.md",
-      "keys": [
-        "DB-ADV-05",
-        "connectivity.database.free_object",
-        "frog.studio.connectivity.database.free_object",
-        "function.connectivity.database.free_object"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.get_parameter_value",
-      "route": "docs/functions/connectivity/database/get_parameter_value.md",
-      "keys": [
-        "DB-ADV-11",
-        "connectivity.database.get_parameter_value",
-        "frog.studio.connectivity.database.get_parameter_value",
-        "function.connectivity.database.get_parameter_value"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.get_properties",
-      "route": "docs/functions/connectivity/database/get_properties.md",
-      "keys": [
-        "DB-UTIL-04",
-        "connectivity.database.get_properties",
-        "frog.studio.connectivity.database.get_properties",
-        "function.connectivity.database.get_properties"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.insert_data",
-      "route": "docs/functions/connectivity/database/insert_data.md",
-      "keys": [
-        "DB-03",
-        "connectivity.database.insert_data",
-        "frog.studio.connectivity.database.insert_data",
-        "function.connectivity.database.insert_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.list_columns",
-      "route": "docs/functions/connectivity/database/list_columns.md",
-      "keys": [
-        "DB-UTIL-02",
-        "connectivity.database.list_columns",
-        "frog.studio.connectivity.database.list_columns",
-        "function.connectivity.database.list_columns"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.list_tables",
-      "route": "docs/functions/connectivity/database/list_tables.md",
-      "keys": [
-        "DB-UTIL-01",
-        "connectivity.database.list_tables",
-        "frog.studio.connectivity.database.list_tables",
-        "function.connectivity.database.list_tables"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.load_recordset_from_file",
-      "route": "docs/functions/connectivity/database/load_recordset_from_file.md",
-      "keys": [
-        "DB-UTIL-08",
-        "connectivity.database.load_recordset_from_file",
-        "frog.studio.connectivity.database.load_recordset_from_file",
-        "function.connectivity.database.load_recordset_from_file"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.move_to_next_record",
-      "route": "docs/functions/connectivity/database/move_to_next_record.md",
-      "keys": [
-        "DB-ADV-06",
-        "connectivity.database.move_to_next_record",
-        "frog.studio.connectivity.database.move_to_next_record",
-        "function.connectivity.database.move_to_next_record"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.move_to_previous_record",
-      "route": "docs/functions/connectivity/database/move_to_previous_record.md",
-      "keys": [
-        "DB-ADV-07",
-        "connectivity.database.move_to_previous_record",
-        "frog.studio.connectivity.database.move_to_previous_record",
-        "function.connectivity.database.move_to_previous_record"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.move_to_record_n",
-      "route": "docs/functions/connectivity/database/move_to_record_n.md",
-      "keys": [
-        "DB-ADV-08",
-        "connectivity.database.move_to_record_n",
-        "frog.studio.connectivity.database.move_to_record_n",
-        "function.connectivity.database.move_to_record_n"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.null",
-      "route": "docs/functions/connectivity/database/null.md",
-      "keys": [
-        "DB-ADV-12",
-        "connectivity.database.null",
-        "frog.studio.connectivity.database.null",
-        "function.connectivity.database.null"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.open_connection",
-      "route": "docs/functions/connectivity/database/open_connection.md",
-      "keys": [
-        "DB-01",
-        "connectivity.database.open_connection",
-        "frog.studio.connectivity.database.open_connection",
-        "function.connectivity.database.open_connection"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.save_recordset_to_file",
-      "route": "docs/functions/connectivity/database/save_recordset_to_file.md",
-      "keys": [
-        "DB-UTIL-07",
-        "connectivity.database.save_recordset_to_file",
-        "frog.studio.connectivity.database.save_recordset_to_file",
-        "function.connectivity.database.save_recordset_to_file"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.select_data",
-      "route": "docs/functions/connectivity/database/select_data.md",
-      "keys": [
-        "DB-04",
-        "connectivity.database.select_data",
-        "frog.studio.connectivity.database.select_data",
-        "function.connectivity.database.select_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.set_parameter_value",
-      "route": "docs/functions/connectivity/database/set_parameter_value.md",
-      "keys": [
-        "DB-ADV-10",
-        "connectivity.database.set_parameter_value",
-        "frog.studio.connectivity.database.set_parameter_value",
-        "function.connectivity.database.set_parameter_value"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.set_properties",
-      "route": "docs/functions/connectivity/database/set_properties.md",
-      "keys": [
-        "DB-UTIL-03",
-        "connectivity.database.set_properties",
-        "frog.studio.connectivity.database.set_properties",
-        "function.connectivity.database.set_properties"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.transaction",
-      "route": "docs/functions/connectivity/database/transaction.md",
-      "keys": [
-        "DB-UTIL-06",
-        "connectivity.database.transaction",
-        "frog.studio.connectivity.database.transaction",
-        "function.connectivity.database.transaction"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.update_data",
-      "route": "docs/functions/connectivity/database/update_data.md",
-      "keys": [
-        "DB-05",
-        "connectivity.database.update_data",
-        "frog.studio.connectivity.database.update_data",
-        "function.connectivity.database.update_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.utility",
-      "route": "docs/functions/connectivity/database/utility.md",
-      "keys": [
-        "connectivity.database.utility",
-        "frog.studio.connectivity.database.utility",
-        "function.connectivity.database.utility"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.database.variant_to_data",
-      "route": "docs/functions/connectivity/database/variant_to_data.md",
-      "keys": [
-        "DB-09",
-        "connectivity.database.variant_to_data",
-        "frog.studio.connectivity.database.variant_to_data",
-        "function.connectivity.database.variant_to_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder",
-      "route": "docs/functions/connectivity/datafinder.md",
-      "keys": [
-        "connectivity.datafinder",
-        "frog.studio.connectivity.datafinder",
-        "function.connectivity.datafinder"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.close_reference",
-      "route": "docs/functions/connectivity/datafinder/close_reference.md",
-      "keys": [
-        "DF-11",
-        "connectivity.datafinder.close_reference",
-        "frog.studio.connectivity.datafinder.close_reference",
-        "function.connectivity.datafinder.close_reference"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.create_index_job_file",
-      "route": "docs/functions/connectivity/datafinder/create_index_job_file.md",
-      "keys": [
-        "DF-13",
-        "connectivity.datafinder.create_index_job_file",
-        "frog.studio.connectivity.datafinder.create_index_job_file",
-        "function.connectivity.datafinder.create_index_job_file"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.create_query",
-      "route": "docs/functions/connectivity/datafinder/create_query.md",
-      "keys": [
-        "DF-03",
-        "connectivity.datafinder.create_query",
-        "frog.studio.connectivity.datafinder.create_query",
-        "function.connectivity.datafinder.create_query"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.execute_query",
-      "route": "docs/functions/connectivity/datafinder/execute_query.md",
-      "keys": [
-        "DF-05",
-        "connectivity.datafinder.execute_query",
-        "frog.studio.connectivity.datafinder.execute_query",
-        "function.connectivity.datafinder.execute_query"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.get_indexed_properties",
-      "route": "docs/functions/connectivity/datafinder/get_indexed_properties.md",
-      "keys": [
-        "DF-07",
-        "connectivity.datafinder.get_indexed_properties",
-        "frog.studio.connectivity.datafinder.get_indexed_properties",
-        "function.connectivity.datafinder.get_indexed_properties"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.get_indexed_value_limits",
-      "route": "docs/functions/connectivity/datafinder/get_indexed_value_limits.md",
-      "keys": [
-        "DF-09",
-        "connectivity.datafinder.get_indexed_value_limits",
-        "frog.studio.connectivity.datafinder.get_indexed_value_limits",
-        "function.connectivity.datafinder.get_indexed_value_limits"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.get_indexed_value_list",
-      "route": "docs/functions/connectivity/datafinder/get_indexed_value_list.md",
-      "keys": [
-        "DF-08",
-        "connectivity.datafinder.get_indexed_value_list",
-        "frog.studio.connectivity.datafinder.get_indexed_value_list",
-        "function.connectivity.datafinder.get_indexed_value_list"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.get_property_values",
-      "route": "docs/functions/connectivity/datafinder/get_property_values.md",
-      "keys": [
-        "DF-06",
-        "connectivity.datafinder.get_property_values",
-        "frog.studio.connectivity.datafinder.get_property_values",
-        "function.connectivity.datafinder.get_property_values"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.merge_queries",
-      "route": "docs/functions/connectivity/datafinder/merge_queries.md",
-      "keys": [
-        "DF-04",
-        "connectivity.datafinder.merge_queries",
-        "frog.studio.connectivity.datafinder.merge_queries",
-        "function.connectivity.datafinder.merge_queries"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.open_server",
-      "route": "docs/functions/connectivity/datafinder/open_server.md",
-      "keys": [
-        "DF-10",
-        "connectivity.datafinder.open_server",
-        "frog.studio.connectivity.datafinder.open_server",
-        "function.connectivity.datafinder.open_server"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.property_node",
-      "route": "docs/functions/connectivity/datafinder/property_node.md",
-      "keys": [
-        "DF-12",
-        "connectivity.datafinder.property_node",
-        "frog.studio.connectivity.datafinder.property_node",
-        "function.connectivity.datafinder.property_node"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.results_to_waveforms",
-      "route": "docs/functions/connectivity/datafinder/results_to_waveforms.md",
-      "keys": [
-        "DF-02",
-        "connectivity.datafinder.results_to_waveforms",
-        "frog.studio.connectivity.datafinder.results_to_waveforms",
-        "function.connectivity.datafinder.results_to_waveforms"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.datafinder.search_text",
-      "route": "docs/functions/connectivity/datafinder/search_text.md",
-      "keys": [
-        "DF-01",
-        "connectivity.datafinder.search_text",
-        "frog.studio.connectivity.datafinder.search_text",
-        "function.connectivity.datafinder.search_text"
       ]
     },
     {
@@ -2082,404 +1761,66 @@
       ]
     },
     {
-      "catalog_id": "connectivity.web_services",
-      "route": "docs/functions/connectivity/web_services.md",
+      "catalog_id": "dialog.events",
+      "route": "docs/functions/dialog/events.md",
       "keys": [
-        "connectivity.web_services",
-        "frog.studio.connectivity.web_services",
-        "function.connectivity.web_services"
+        "dialog.events",
+        "frog.studio.dialog.events",
+        "function.dialog.events"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.output.render_esp_template",
-      "route": "docs/functions/connectivity/web_services/application/output/render_esp_template.md",
+      "catalog_id": "dialog.events.create_user_event",
+      "route": "docs/functions/dialog/events/create_user_event.md",
       "keys": [
-        "WS-APP-OUT-02",
-        "connectivity.web_services.application.output.render_esp_template",
-        "frog.studio.connectivity.web_services.application.output.render_esp_template",
-        "function.connectivity.web_services.application.output.render_esp_template"
+        "dialog.events.create_user_event",
+        "frog.studio.dialog.events.create_user_event",
+        "function.dialog.events.create_user_event"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.output.set_esp_variable",
-      "route": "docs/functions/connectivity/web_services/application/output/set_esp_variable.md",
+      "catalog_id": "dialog.events.destroy_user_event",
+      "route": "docs/functions/dialog/events/destroy_user_event.md",
       "keys": [
-        "WS-APP-OUT-01",
-        "connectivity.web_services.application.output.set_esp_variable",
-        "frog.studio.connectivity.web_services.application.output.set_esp_variable",
-        "function.connectivity.web_services.application.output.set_esp_variable"
+        "dialog.events.destroy_user_event",
+        "frog.studio.dialog.events.destroy_user_event",
+        "function.dialog.events.destroy_user_event"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.security.decrypt",
-      "route": "docs/functions/connectivity/web_services/application/security/decrypt.md",
+      "catalog_id": "dialog.events.flush_event_queue",
+      "route": "docs/functions/dialog/events/flush_event_queue.md",
       "keys": [
-        "WS-APP-SEC-02",
-        "connectivity.web_services.application.security.decrypt",
-        "frog.studio.connectivity.web_services.application.security.decrypt",
-        "function.connectivity.web_services.application.security.decrypt"
+        "dialog.events.flush_event_queue",
+        "frog.studio.dialog.events.flush_event_queue",
+        "function.dialog.events.flush_event_queue"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.security.encrypt",
-      "route": "docs/functions/connectivity/web_services/application/security/encrypt.md",
+      "catalog_id": "dialog.events.generate_user_event",
+      "route": "docs/functions/dialog/events/generate_user_event.md",
       "keys": [
-        "WS-APP-SEC-01",
-        "connectivity.web_services.application.security.encrypt",
-        "frog.studio.connectivity.web_services.application.security.encrypt",
-        "function.connectivity.web_services.application.security.encrypt"
+        "dialog.events.generate_user_event",
+        "frog.studio.dialog.events.generate_user_event",
+        "function.dialog.events.generate_user_event"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.security.get_auth_details",
-      "route": "docs/functions/connectivity/web_services/application/security/get_auth_details.md",
+      "catalog_id": "dialog.events.register_for_events",
+      "route": "docs/functions/dialog/events/register_for_events.md",
       "keys": [
-        "WS-APP-SEC-03",
-        "connectivity.web_services.application.security.get_auth_details",
-        "frog.studio.connectivity.web_services.application.security.get_auth_details",
-        "function.connectivity.web_services.application.security.get_auth_details"
+        "dialog.events.register_for_events",
+        "frog.studio.dialog.events.register_for_events",
+        "function.dialog.events.register_for_events"
       ]
     },
     {
-      "catalog_id": "connectivity.web_services.application.sessions.create",
-      "route": "docs/functions/connectivity/web_services/application/sessions/create.md",
+      "catalog_id": "dialog.events.unregister_for_events",
+      "route": "docs/functions/dialog/events/unregister_for_events.md",
       "keys": [
-        "WS-APP-SES-01",
-        "connectivity.web_services.application.sessions.create",
-        "frog.studio.connectivity.web_services.application.sessions.create",
-        "function.connectivity.web_services.application.sessions.create"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.delete_variable",
-      "route": "docs/functions/connectivity/web_services/application/sessions/delete_variable.md",
-      "keys": [
-        "WS-APP-SES-08",
-        "connectivity.web_services.application.sessions.delete_variable",
-        "frog.studio.connectivity.web_services.application.sessions.delete_variable",
-        "function.connectivity.web_services.application.sessions.delete_variable"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.destroy",
-      "route": "docs/functions/connectivity/web_services/application/sessions/destroy.md",
-      "keys": [
-        "WS-APP-SES-04",
-        "connectivity.web_services.application.sessions.destroy",
-        "frog.studio.connectivity.web_services.application.sessions.destroy",
-        "function.connectivity.web_services.application.sessions.destroy"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.exists",
-      "route": "docs/functions/connectivity/web_services/application/sessions/exists.md",
-      "keys": [
-        "WS-APP-SES-02",
-        "connectivity.web_services.application.sessions.exists",
-        "frog.studio.connectivity.web_services.application.sessions.exists",
-        "function.connectivity.web_services.application.sessions.exists"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.get_id_cookie",
-      "route": "docs/functions/connectivity/web_services/application/sessions/get_id_cookie.md",
-      "keys": [
-        "WS-APP-SES-03",
-        "connectivity.web_services.application.sessions.get_id_cookie",
-        "frog.studio.connectivity.web_services.application.sessions.get_id_cookie",
-        "function.connectivity.web_services.application.sessions.get_id_cookie"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.read_all_variables",
-      "route": "docs/functions/connectivity/web_services/application/sessions/read_all_variables.md",
-      "keys": [
-        "WS-APP-SES-06",
-        "connectivity.web_services.application.sessions.read_all_variables",
-        "frog.studio.connectivity.web_services.application.sessions.read_all_variables",
-        "function.connectivity.web_services.application.sessions.read_all_variables"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.read_variable",
-      "route": "docs/functions/connectivity/web_services/application/sessions/read_variable.md",
-      "keys": [
-        "WS-APP-SES-05",
-        "connectivity.web_services.application.sessions.read_variable",
-        "frog.studio.connectivity.web_services.application.sessions.read_variable",
-        "function.connectivity.web_services.application.sessions.read_variable"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application.sessions.write_variable",
-      "route": "docs/functions/connectivity/web_services/application/sessions/write_variable.md",
-      "keys": [
-        "WS-APP-SES-07",
-        "connectivity.web_services.application.sessions.write_variable",
-        "frog.studio.connectivity.web_services.application.sessions.write_variable",
-        "function.connectivity.web_services.application.sessions.write_variable"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application_web_server",
-      "route": "docs/functions/connectivity/web_services/application_web_server.md",
-      "keys": [
-        "connectivity.web_services.application_web_server",
-        "frog.studio.connectivity.web_services.application_web_server",
-        "function.connectivity.web_services.application_web_server"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application_web_server.output",
-      "route": "docs/functions/connectivity/web_services/application_web_server/output.md",
-      "keys": [
-        "connectivity.web_services.application_web_server.output",
-        "frog.studio.connectivity.web_services.application_web_server.output",
-        "function.connectivity.web_services.application_web_server.output"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application_web_server.security",
-      "route": "docs/functions/connectivity/web_services/application_web_server/security.md",
-      "keys": [
-        "connectivity.web_services.application_web_server.security",
-        "frog.studio.connectivity.web_services.application_web_server.security",
-        "function.connectivity.web_services.application_web_server.security"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.application_web_server.sessions",
-      "route": "docs/functions/connectivity/web_services/application_web_server/sessions.md",
-      "keys": [
-        "connectivity.web_services.application_web_server.sessions",
-        "frog.studio.connectivity.web_services.application_web_server.sessions",
-        "function.connectivity.web_services.application_web_server.sessions"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.conversion",
-      "route": "docs/functions/connectivity/web_services/conversion.md",
-      "keys": [
-        "connectivity.web_services.conversion",
-        "frog.studio.connectivity.web_services.conversion",
-        "function.connectivity.web_services.conversion"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.conversion.escape_url",
-      "route": "docs/functions/connectivity/web_services/conversion/escape_url.md",
-      "keys": [
-        "WS-CONV-01",
-        "connectivity.web_services.conversion.escape_url",
-        "frog.studio.connectivity.web_services.conversion.escape_url",
-        "function.connectivity.web_services.conversion.escape_url"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.conversion.image_to_png",
-      "route": "docs/functions/connectivity/web_services/conversion/image_to_png.md",
-      "keys": [
-        "WS-CONV-04",
-        "connectivity.web_services.conversion.image_to_png",
-        "frog.studio.connectivity.web_services.conversion.image_to_png",
-        "function.connectivity.web_services.conversion.image_to_png"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.conversion.png_to_image",
-      "route": "docs/functions/connectivity/web_services/conversion/png_to_image.md",
-      "keys": [
-        "WS-CONV-03",
-        "connectivity.web_services.conversion.png_to_image",
-        "frog.studio.connectivity.web_services.conversion.png_to_image",
-        "function.connectivity.web_services.conversion.png_to_image"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.conversion.unescape_url",
-      "route": "docs/functions/connectivity/web_services/conversion/unescape_url.md",
-      "keys": [
-        "WS-CONV-02",
-        "connectivity.web_services.conversion.unescape_url",
-        "frog.studio.connectivity.web_services.conversion.unescape_url",
-        "function.connectivity.web_services.conversion.unescape_url"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.ni_web_server",
-      "route": "docs/functions/connectivity/web_services/ni_web_server.md",
-      "keys": [
-        "connectivity.web_services.ni_web_server",
-        "frog.studio.connectivity.web_services.ni_web_server",
-        "function.connectivity.web_services.ni_web_server"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.ni_web_server.get_auth_details",
-      "route": "docs/functions/connectivity/web_services/ni_web_server/get_auth_details.md",
-      "keys": [
-        "WS-NI-01",
-        "connectivity.web_services.ni_web_server.get_auth_details",
-        "frog.studio.connectivity.web_services.ni_web_server.get_auth_details",
-        "function.connectivity.web_services.ni_web_server.get_auth_details"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output",
-      "route": "docs/functions/connectivity/web_services/output.md",
-      "keys": [
-        "connectivity.web_services.output",
-        "frog.studio.connectivity.web_services.output",
-        "function.connectivity.web_services.output"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.flush_output",
-      "route": "docs/functions/connectivity/web_services/output/flush_output.md",
-      "keys": [
-        "WS-OUT-06",
-        "connectivity.web_services.output.flush_output",
-        "frog.studio.connectivity.web_services.output.flush_output",
-        "function.connectivity.web_services.output.flush_output"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.set_header",
-      "route": "docs/functions/connectivity/web_services/output/set_header.md",
-      "keys": [
-        "WS-OUT-04",
-        "connectivity.web_services.output.set_header",
-        "frog.studio.connectivity.web_services.output.set_header",
-        "function.connectivity.web_services.output.set_header"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.set_http_code",
-      "route": "docs/functions/connectivity/web_services/output/set_http_code.md",
-      "keys": [
-        "WS-OUT-02",
-        "connectivity.web_services.output.set_http_code",
-        "frog.studio.connectivity.web_services.output.set_http_code",
-        "function.connectivity.web_services.output.set_http_code"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.set_mime_type",
-      "route": "docs/functions/connectivity/web_services/output/set_mime_type.md",
-      "keys": [
-        "WS-OUT-01",
-        "connectivity.web_services.output.set_mime_type",
-        "frog.studio.connectivity.web_services.output.set_mime_type",
-        "function.connectivity.web_services.output.set_mime_type"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.set_redirect",
-      "route": "docs/functions/connectivity/web_services/output/set_redirect.md",
-      "keys": [
-        "WS-OUT-03",
-        "connectivity.web_services.output.set_redirect",
-        "frog.studio.connectivity.web_services.output.set_redirect",
-        "function.connectivity.web_services.output.set_redirect"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.output.write_response",
-      "route": "docs/functions/connectivity/web_services/output/write_response.md",
-      "keys": [
-        "WS-OUT-05",
-        "connectivity.web_services.output.write_response",
-        "frog.studio.connectivity.web_services.output.write_response",
-        "function.connectivity.web_services.output.write_response"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_all_form_data",
-      "route": "docs/functions/connectivity/web_services/read_all_form_data.md",
-      "keys": [
-        "WS-02",
-        "connectivity.web_services.read_all_form_data",
-        "frog.studio.connectivity.web_services.read_all_form_data",
-        "function.connectivity.web_services.read_all_form_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_all_request_variables",
-      "route": "docs/functions/connectivity/web_services/read_all_request_variables.md",
-      "keys": [
-        "WS-06",
-        "connectivity.web_services.read_all_request_variables",
-        "frog.studio.connectivity.web_services.read_all_request_variables",
-        "function.connectivity.web_services.read_all_request_variables"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_form_data",
-      "route": "docs/functions/connectivity/web_services/read_form_data.md",
-      "keys": [
-        "WS-01",
-        "connectivity.web_services.read_form_data",
-        "frog.studio.connectivity.web_services.read_form_data",
-        "function.connectivity.web_services.read_form_data"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_postdata",
-      "route": "docs/functions/connectivity/web_services/read_postdata.md",
-      "keys": [
-        "WS-04",
-        "connectivity.web_services.read_postdata",
-        "frog.studio.connectivity.web_services.read_postdata",
-        "function.connectivity.web_services.read_postdata"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_request_variable",
-      "route": "docs/functions/connectivity/web_services/read_request_variable.md",
-      "keys": [
-        "WS-05",
-        "connectivity.web_services.read_request_variable",
-        "frog.studio.connectivity.web_services.read_request_variable",
-        "function.connectivity.web_services.read_request_variable"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.read_uploaded_files_info",
-      "route": "docs/functions/connectivity/web_services/read_uploaded_files_info.md",
-      "keys": [
-        "WS-03",
-        "connectivity.web_services.read_uploaded_files_info",
-        "frog.studio.connectivity.web_services.read_uploaded_files_info",
-        "function.connectivity.web_services.read_uploaded_files_info"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.service",
-      "route": "docs/functions/connectivity/web_services/service.md",
-      "keys": [
-        "connectivity.web_services.service",
-        "frog.studio.connectivity.web_services.service",
-        "function.connectivity.web_services.service"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.service.get_status",
-      "route": "docs/functions/connectivity/web_services/service/get_status.md",
-      "keys": [
-        "WS-SVC-02",
-        "connectivity.web_services.service.get_status",
-        "frog.studio.connectivity.web_services.service.get_status",
-        "function.connectivity.web_services.service.get_status"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.web_services.service.read_attribute",
-      "route": "docs/functions/connectivity/web_services/service/read_attribute.md",
-      "keys": [
-        "WS-SVC-01",
-        "connectivity.web_services.service.read_attribute",
-        "frog.studio.connectivity.web_services.service.read_attribute",
-        "function.connectivity.web_services.service.read_attribute"
+        "dialog.events.unregister_for_events",
+        "frog.studio.dialog.events.unregister_for_events",
+        "function.dialog.events.unregister_for_events"
       ]
     },
     {
@@ -2753,6 +2094,15 @@
       ]
     },
     {
+      "catalog_id": "file.csv",
+      "route": "docs/functions/file/csv.md",
+      "keys": [
+        "file.csv",
+        "frog.studio.file.csv",
+        "function.file.csv"
+      ]
+    },
+    {
       "catalog_id": "file.delete",
       "route": "docs/functions/file/delete.md",
       "keys": [
@@ -2870,6 +2220,24 @@
       ]
     },
     {
+      "catalog_id": "file.operation",
+      "route": "docs/functions/file/operation.md",
+      "keys": [
+        "file.operation",
+        "frog.studio.file.operation",
+        "function.file.operation"
+      ]
+    },
+    {
+      "catalog_id": "file.path",
+      "route": "docs/functions/file/path.md",
+      "keys": [
+        "file.path",
+        "frog.studio.file.path",
+        "function.file.path"
+      ]
+    },
+    {
       "catalog_id": "file.read_xml",
       "route": "docs/functions/file/read_xml.md",
       "keys": [
@@ -2885,15 +2253,6 @@
         "file.recursive_list",
         "frog.studio.file.recursive_list",
         "function.file.recursive_list"
-      ]
-    },
-    {
-      "catalog_id": "file.references",
-      "route": "docs/functions/file/references.md",
-      "keys": [
-        "file.references",
-        "frog.studio.file.references",
-        "function.file.references"
       ]
     },
     {
@@ -2960,6 +2319,15 @@
       ]
     },
     {
+      "catalog_id": "file.text",
+      "route": "docs/functions/file/text.md",
+      "keys": [
+        "file.text",
+        "frog.studio.file.text",
+        "function.file.text"
+      ]
+    },
+    {
       "catalog_id": "file.text_read",
       "route": "docs/functions/file/text_read.md",
       "keys": [
@@ -3002,6 +2370,159 @@
         "file.write_xml",
         "frog.studio.file.write_xml",
         "function.file.write_xml"
+      ]
+    },
+    {
+      "catalog_id": "file.xml",
+      "route": "docs/functions/file/xml.md",
+      "keys": [
+        "file.xml",
+        "frog.studio.file.xml",
+        "function.file.xml"
+      ]
+    },
+    {
+      "catalog_id": "math.beta.complete",
+      "route": "docs/functions/math/beta/complete.md",
+      "keys": [
+        "frog.studio.math.beta.complete",
+        "function.math.beta.complete",
+        "math.beta.complete"
+      ]
+    },
+    {
+      "catalog_id": "math.beta.regularized_lower",
+      "route": "docs/functions/math/beta/regularized_lower.md",
+      "keys": [
+        "frog.studio.math.beta.regularized_lower",
+        "function.math.beta.regularized_lower",
+        "math.beta.regularized_lower"
+      ]
+    },
+    {
+      "catalog_id": "math.dae.radau_iia5",
+      "route": "docs/functions/math/dae/radau_iia5.md",
+      "keys": [
+        "frog.studio.math.dae.radau_iia5",
+        "function.math.dae.radau_iia5",
+        "math.dae.radau_iia5"
+      ]
+    },
+    {
+      "catalog_id": "math.dae.radau_iia5.reference",
+      "route": "docs/functions/math/dae/radau_iia5/reference.md",
+      "keys": [
+        "frog.studio.math.dae.radau_iia5.reference",
+        "function.math.dae.radau_iia5.reference",
+        "math.dae.radau_iia5.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.binomial",
+      "route": "docs/functions/math/discrete/binomial.md",
+      "keys": [
+        "frog.studio.math.discrete.binomial",
+        "function.math.discrete.binomial",
+        "math.discrete.binomial"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.check_prime",
+      "route": "docs/functions/math/discrete/check_prime.md",
+      "keys": [
+        "frog.studio.math.discrete.check_prime",
+        "function.math.discrete.check_prime",
+        "math.discrete.check_prime"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.continued_fraction",
+      "route": "docs/functions/math/discrete/continued_fraction.md",
+      "keys": [
+        "frog.studio.math.discrete.continued_fraction",
+        "function.math.discrete.continued_fraction",
+        "math.discrete.continued_fraction"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.factorial",
+      "route": "docs/functions/math/discrete/factorial.md",
+      "keys": [
+        "frog.studio.math.discrete.factorial",
+        "function.math.discrete.factorial",
+        "math.discrete.factorial"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.gcd",
+      "route": "docs/functions/math/discrete/gcd.md",
+      "keys": [
+        "frog.studio.math.discrete.gcd",
+        "function.math.discrete.gcd",
+        "math.discrete.gcd"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.lcm",
+      "route": "docs/functions/math/discrete/lcm.md",
+      "keys": [
+        "frog.studio.math.discrete.lcm",
+        "function.math.discrete.lcm",
+        "math.discrete.lcm"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.permute",
+      "route": "docs/functions/math/discrete/permute.md",
+      "keys": [
+        "frog.studio.math.discrete.permute",
+        "function.math.discrete.permute",
+        "math.discrete.permute"
+      ]
+    },
+    {
+      "catalog_id": "math.discrete.prime_factor",
+      "route": "docs/functions/math/discrete/prime_factor.md",
+      "keys": [
+        "frog.studio.math.discrete.prime_factor",
+        "function.math.discrete.prime_factor",
+        "math.discrete.prime_factor"
+      ]
+    },
+    {
+      "catalog_id": "math.elliptic.first_kind.complete_k",
+      "route": "docs/functions/math/elliptic/first_kind/complete_k.md",
+      "keys": [
+        "frog.studio.math.elliptic.first_kind.complete_k",
+        "function.math.elliptic.first_kind.complete_k",
+        "math.elliptic.first_kind.complete_k"
+      ]
+    },
+    {
+      "catalog_id": "math.elliptic.first_kind.incomplete_f",
+      "route": "docs/functions/math/elliptic/first_kind/incomplete_f.md",
+      "keys": [
+        "frog.studio.math.elliptic.first_kind.incomplete_f",
+        "function.math.elliptic.first_kind.incomplete_f",
+        "math.elliptic.first_kind.incomplete_f"
+      ]
+    },
+    {
+      "catalog_id": "math.elliptic.second_kind.complete_e",
+      "route": "docs/functions/math/elliptic/second_kind/complete_e.md",
+      "keys": [
+        "frog.studio.math.elliptic.second_kind.complete_e",
+        "function.math.elliptic.second_kind.complete_e",
+        "math.elliptic.second_kind.complete_e"
+      ]
+    },
+    {
+      "catalog_id": "math.elliptic.second_kind.incomplete_e",
+      "route": "docs/functions/math/elliptic/second_kind/incomplete_e.md",
+      "keys": [
+        "frog.studio.math.elliptic.second_kind.incomplete_e",
+        "function.math.elliptic.second_kind.incomplete_e",
+        "math.elliptic.second_kind.incomplete_e"
       ]
     },
     {
@@ -3115,6 +2636,402 @@
       ]
     },
     {
+      "catalog_id": "math.formula.eval_string",
+      "route": "docs/functions/math/formula/eval_string.md",
+      "keys": [
+        "frog.studio.math.formula.eval_string",
+        "function.math.formula.eval_string",
+        "math.formula.eval_string"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.multi_array",
+      "route": "docs/functions/math/formula/multi_array.md",
+      "keys": [
+        "frog.studio.math.formula.multi_array",
+        "function.math.formula.multi_array",
+        "math.formula.multi_array"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.multi_scalar",
+      "route": "docs/functions/math/formula/multi_scalar.md",
+      "keys": [
+        "frog.studio.math.formula.multi_scalar",
+        "function.math.formula.multi_scalar",
+        "math.formula.multi_scalar"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.node",
+      "route": "docs/functions/math/formula/node.md",
+      "keys": [
+        "frog.studio.math.formula.node",
+        "function.math.formula.node",
+        "math.formula.node"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.parsed_node",
+      "route": "docs/functions/math/formula/parsed_node.md",
+      "keys": [
+        "frog.studio.math.formula.parsed_node",
+        "function.math.formula.parsed_node",
+        "math.formula.parsed_node"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.parsed_string",
+      "route": "docs/functions/math/formula/parsed_string.md",
+      "keys": [
+        "frog.studio.math.formula.parsed_string",
+        "function.math.formula.parsed_string",
+        "math.formula.parsed_string"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.polar",
+      "route": "docs/functions/math/formula/polar.md",
+      "keys": [
+        "frog.studio.math.formula.polar",
+        "function.math.formula.polar",
+        "math.formula.polar"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.polar_optimal",
+      "route": "docs/functions/math/formula/polar_optimal.md",
+      "keys": [
+        "frog.studio.math.formula.polar_optimal",
+        "function.math.formula.polar_optimal",
+        "math.formula.polar_optimal"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.single_array",
+      "route": "docs/functions/math/formula/single_array.md",
+      "keys": [
+        "frog.studio.math.formula.single_array",
+        "function.math.formula.single_array",
+        "math.formula.single_array"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.single_scalar",
+      "route": "docs/functions/math/formula/single_scalar.md",
+      "keys": [
+        "frog.studio.math.formula.single_scalar",
+        "function.math.formula.single_scalar",
+        "math.formula.single_scalar"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.surface",
+      "route": "docs/functions/math/formula/surface.md",
+      "keys": [
+        "frog.studio.math.formula.surface",
+        "function.math.formula.surface",
+        "math.formula.surface"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.surface_parameters",
+      "route": "docs/functions/math/formula/surface_parameters.md",
+      "keys": [
+        "frog.studio.math.formula.surface_parameters",
+        "function.math.formula.surface_parameters",
+        "math.formula.surface_parameters"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.xy",
+      "route": "docs/functions/math/formula/xy.md",
+      "keys": [
+        "frog.studio.math.formula.xy",
+        "function.math.formula.xy",
+        "math.formula.xy"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.xy_optimal",
+      "route": "docs/functions/math/formula/xy_optimal.md",
+      "keys": [
+        "frog.studio.math.formula.xy_optimal",
+        "function.math.formula.xy_optimal",
+        "math.formula.xy_optimal"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.xy_parameters",
+      "route": "docs/functions/math/formula/xy_parameters.md",
+      "keys": [
+        "frog.studio.math.formula.xy_parameters",
+        "function.math.formula.xy_parameters",
+        "math.formula.xy_parameters"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.xyz",
+      "route": "docs/functions/math/formula/xyz.md",
+      "keys": [
+        "frog.studio.math.formula.xyz",
+        "function.math.formula.xyz",
+        "math.formula.xyz"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.xyz_parameters",
+      "route": "docs/functions/math/formula/xyz_parameters.md",
+      "keys": [
+        "frog.studio.math.formula.xyz_parameters",
+        "function.math.formula.xyz_parameters",
+        "math.formula.xyz_parameters"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.y_optimal",
+      "route": "docs/functions/math/formula/y_optimal.md",
+      "keys": [
+        "frog.studio.math.formula.y_optimal",
+        "function.math.formula.y_optimal",
+        "math.formula.y_optimal"
+      ]
+    },
+    {
+      "catalog_id": "math.formula.y_parameters",
+      "route": "docs/functions/math/formula/y_parameters.md",
+      "keys": [
+        "frog.studio.math.formula.y_parameters",
+        "function.math.formula.y_parameters",
+        "math.formula.y_parameters"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.complete",
+      "route": "docs/functions/math/gamma/complete.md",
+      "keys": [
+        "frog.studio.math.gamma.complete",
+        "function.math.gamma.complete",
+        "math.gamma.complete"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.digamma",
+      "route": "docs/functions/math/gamma/digamma.md",
+      "keys": [
+        "frog.studio.math.gamma.digamma",
+        "function.math.gamma.digamma",
+        "math.gamma.digamma"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.log_complete",
+      "route": "docs/functions/math/gamma/log_complete.md",
+      "keys": [
+        "frog.studio.math.gamma.log_complete",
+        "function.math.gamma.log_complete",
+        "math.gamma.log_complete"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.log_factorial",
+      "route": "docs/functions/math/gamma/log_factorial.md",
+      "keys": [
+        "frog.studio.math.gamma.log_factorial",
+        "function.math.gamma.log_factorial",
+        "math.gamma.log_factorial"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.regularized_lower",
+      "route": "docs/functions/math/gamma/regularized_lower.md",
+      "keys": [
+        "frog.studio.math.gamma.regularized_lower",
+        "function.math.gamma.regularized_lower",
+        "math.gamma.regularized_lower"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.regularized_upper",
+      "route": "docs/functions/math/gamma/regularized_upper.md",
+      "keys": [
+        "frog.studio.math.gamma.regularized_upper",
+        "function.math.gamma.regularized_upper",
+        "math.gamma.regularized_upper"
+      ]
+    },
+    {
+      "catalog_id": "math.gamma.stirling_leading",
+      "route": "docs/functions/math/gamma/stirling_leading.md",
+      "keys": [
+        "frog.studio.math.gamma.stirling_leading",
+        "function.math.gamma.stirling_leading",
+        "math.gamma.stirling_leading"
+      ]
+    },
+    {
+      "catalog_id": "math.gating.spike",
+      "route": "docs/functions/math/gating/spike.md",
+      "keys": [
+        "frog.studio.math.gating.spike",
+        "function.math.gating.spike",
+        "math.gating.spike"
+      ]
+    },
+    {
+      "catalog_id": "math.gating.square",
+      "route": "docs/functions/math/gating/square.md",
+      "keys": [
+        "frog.studio.math.gating.square",
+        "function.math.gating.square",
+        "math.gating.square"
+      ]
+    },
+    {
+      "catalog_id": "math.gating.step",
+      "route": "docs/functions/math/gating/step.md",
+      "keys": [
+        "frog.studio.math.gating.step",
+        "function.math.gating.step",
+        "math.gating.step"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.acosh",
+      "route": "docs/functions/math/hyperbolic/acosh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.acosh",
+        "function.math.hyperbolic.acosh",
+        "math.hyperbolic.acosh"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.acoth",
+      "route": "docs/functions/math/hyperbolic/acoth.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.acoth",
+        "function.math.hyperbolic.acoth",
+        "math.hyperbolic.acoth"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.acsch",
+      "route": "docs/functions/math/hyperbolic/acsch.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.acsch",
+        "function.math.hyperbolic.acsch",
+        "math.hyperbolic.acsch"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.asech",
+      "route": "docs/functions/math/hyperbolic/asech.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.asech",
+        "function.math.hyperbolic.asech",
+        "math.hyperbolic.asech"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.asinh",
+      "route": "docs/functions/math/hyperbolic/asinh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.asinh",
+        "function.math.hyperbolic.asinh",
+        "math.hyperbolic.asinh"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.atanh",
+      "route": "docs/functions/math/hyperbolic/atanh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.atanh",
+        "function.math.hyperbolic.atanh",
+        "math.hyperbolic.atanh"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.cosh",
+      "route": "docs/functions/math/hyperbolic/cosh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.cosh",
+        "function.math.hyperbolic.cosh",
+        "math.hyperbolic.cosh"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.coth",
+      "route": "docs/functions/math/hyperbolic/coth.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.coth",
+        "function.math.hyperbolic.coth",
+        "math.hyperbolic.coth"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.csch",
+      "route": "docs/functions/math/hyperbolic/csch.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.csch",
+        "function.math.hyperbolic.csch",
+        "math.hyperbolic.csch"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.sech",
+      "route": "docs/functions/math/hyperbolic/sech.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.sech",
+        "function.math.hyperbolic.sech",
+        "math.hyperbolic.sech"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.sinh",
+      "route": "docs/functions/math/hyperbolic/sinh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.sinh",
+        "function.math.hyperbolic.sinh",
+        "math.hyperbolic.sinh"
+      ]
+    },
+    {
+      "catalog_id": "math.hyperbolic.tanh",
+      "route": "docs/functions/math/hyperbolic/tanh.md",
+      "keys": [
+        "frog.studio.math.hyperbolic.tanh",
+        "function.math.hyperbolic.tanh",
+        "math.hyperbolic.tanh"
+      ]
+    },
+    {
+      "catalog_id": "math.hypergeometric.gauss",
+      "route": "docs/functions/math/hypergeometric/gauss.md",
+      "keys": [
+        "frog.studio.math.hypergeometric.gauss",
+        "function.math.hypergeometric.gauss",
+        "math.hypergeometric.gauss"
+      ]
+    },
+    {
+      "catalog_id": "math.hypergeometric.kummer_m",
+      "route": "docs/functions/math/hypergeometric/kummer_m.md",
+      "keys": [
+        "frog.studio.math.hypergeometric.kummer_m",
+        "function.math.hypergeometric.kummer_m",
+        "math.hypergeometric.kummer_m"
+      ]
+    },
+    {
+      "catalog_id": "math.hypergeometric.tricomi_u",
+      "route": "docs/functions/math/hypergeometric/tricomi_u.md",
+      "keys": [
+        "frog.studio.math.hypergeometric.tricomi_u",
+        "function.math.hypergeometric.tricomi_u",
+        "math.hypergeometric.tricomi_u"
+      ]
+    },
+    {
       "catalog_id": "math.matrix.array_to_matrix",
       "route": "docs/functions/math/matrix/array_to_matrix.md",
       "keys": [
@@ -3130,6 +3047,899 @@
         "frog.studio.math.matrix.matrix_to_array",
         "function.math.matrix.matrix_to_array",
         "math.matrix.matrix_to_array"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.cash_karp54",
+      "route": "docs/functions/math/ode/cash_karp54.md",
+      "keys": [
+        "frog.studio.math.ode.cash_karp54",
+        "function.math.ode.cash_karp54",
+        "math.ode.cash_karp54"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.euler",
+      "route": "docs/functions/math/ode/euler.md",
+      "keys": [
+        "frog.studio.math.ode.euler",
+        "function.math.ode.euler",
+        "math.ode.euler"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.linear_nth_numeric",
+      "route": "docs/functions/math/ode/linear_nth_numeric.md",
+      "keys": [
+        "frog.studio.math.ode.linear_nth_numeric",
+        "function.math.ode.linear_nth_numeric",
+        "math.ode.linear_nth_numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.linear_nth_symbolic",
+      "route": "docs/functions/math/ode/linear_nth_symbolic.md",
+      "keys": [
+        "frog.studio.math.ode.linear_nth_symbolic",
+        "function.math.ode.linear_nth_symbolic",
+        "math.ode.linear_nth_symbolic"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.linear_system_numeric",
+      "route": "docs/functions/math/ode/linear_system_numeric.md",
+      "keys": [
+        "frog.studio.math.ode.linear_system_numeric",
+        "function.math.ode.linear_system_numeric",
+        "math.ode.linear_system_numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.linear_system_symbolic",
+      "route": "docs/functions/math/ode/linear_system_symbolic.md",
+      "keys": [
+        "frog.studio.math.ode.linear_system_symbolic",
+        "function.math.ode.linear_system_symbolic",
+        "math.ode.linear_system_symbolic"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.rk4",
+      "route": "docs/functions/math/ode/rk4.md",
+      "keys": [
+        "frog.studio.math.ode.rk4",
+        "function.math.ode.rk4",
+        "math.ode.rk4"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.solve",
+      "route": "docs/functions/math/ode/solve.md",
+      "keys": [
+        "frog.studio.math.ode.solve",
+        "function.math.ode.solve",
+        "math.ode.solve"
+      ]
+    },
+    {
+      "catalog_id": "math.ode.solve.reference",
+      "route": "docs/functions/math/ode/solve/reference.md",
+      "keys": [
+        "frog.studio.math.ode.solve.reference",
+        "function.math.ode.solve.reference",
+        "math.ode.solve.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.heat1d.numeric",
+      "route": "docs/functions/math/pde/define_boundary/heat1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.heat1d.numeric",
+        "function.math.pde.define_boundary.heat1d.numeric",
+        "math.pde.define_boundary.heat1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.heat1d.reference",
+      "route": "docs/functions/math/pde/define_boundary/heat1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.heat1d.reference",
+        "function.math.pde.define_boundary.heat1d.reference",
+        "math.pde.define_boundary.heat1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.heat2d.numeric",
+      "route": "docs/functions/math/pde/define_boundary/heat2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.heat2d.numeric",
+        "function.math.pde.define_boundary.heat2d.numeric",
+        "math.pde.define_boundary.heat2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.heat2d.reference",
+      "route": "docs/functions/math/pde/define_boundary/heat2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.heat2d.reference",
+        "function.math.pde.define_boundary.heat2d.reference",
+        "math.pde.define_boundary.heat2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.helmholtz2d.polygon.numeric",
+      "route": "docs/functions/math/pde/define_boundary/helmholtz2d/polygon/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.helmholtz2d.polygon.numeric",
+        "function.math.pde.define_boundary.helmholtz2d.polygon.numeric",
+        "math.pde.define_boundary.helmholtz2d.polygon.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.helmholtz2d.polygon.reference",
+      "route": "docs/functions/math/pde/define_boundary/helmholtz2d/polygon/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.helmholtz2d.polygon.reference",
+        "function.math.pde.define_boundary.helmholtz2d.polygon.reference",
+        "math.pde.define_boundary.helmholtz2d.polygon.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.helmholtz2d.rectangle.numeric",
+      "route": "docs/functions/math/pde/define_boundary/helmholtz2d/rectangle/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.helmholtz2d.rectangle.numeric",
+        "function.math.pde.define_boundary.helmholtz2d.rectangle.numeric",
+        "math.pde.define_boundary.helmholtz2d.rectangle.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.helmholtz2d.rectangle.reference",
+      "route": "docs/functions/math/pde/define_boundary/helmholtz2d/rectangle/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.helmholtz2d.rectangle.reference",
+        "function.math.pde.define_boundary.helmholtz2d.rectangle.reference",
+        "math.pde.define_boundary.helmholtz2d.rectangle.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.wave1d.numeric",
+      "route": "docs/functions/math/pde/define_boundary/wave1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.wave1d.numeric",
+        "function.math.pde.define_boundary.wave1d.numeric",
+        "math.pde.define_boundary.wave1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.wave1d.reference",
+      "route": "docs/functions/math/pde/define_boundary/wave1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.wave1d.reference",
+        "function.math.pde.define_boundary.wave1d.reference",
+        "math.pde.define_boundary.wave1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.wave2d.numeric",
+      "route": "docs/functions/math/pde/define_boundary/wave2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.wave2d.numeric",
+        "function.math.pde.define_boundary.wave2d.numeric",
+        "math.pde.define_boundary.wave2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_boundary.wave2d.reference",
+      "route": "docs/functions/math/pde/define_boundary/wave2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_boundary.wave2d.reference",
+        "function.math.pde.define_boundary.wave2d.reference",
+        "math.pde.define_boundary.wave2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.heat1d",
+      "route": "docs/functions/math/pde/define_domain/heat1d.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.heat1d",
+        "function.math.pde.define_domain.heat1d",
+        "math.pde.define_domain.heat1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.heat2d",
+      "route": "docs/functions/math/pde/define_domain/heat2d.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.heat2d",
+        "function.math.pde.define_domain.heat2d",
+        "math.pde.define_domain.heat2d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.helmholtz2d.polygon",
+      "route": "docs/functions/math/pde/define_domain/helmholtz2d/polygon.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.helmholtz2d.polygon",
+        "function.math.pde.define_domain.helmholtz2d.polygon",
+        "math.pde.define_domain.helmholtz2d.polygon"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.helmholtz2d.rectangle",
+      "route": "docs/functions/math/pde/define_domain/helmholtz2d/rectangle.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.helmholtz2d.rectangle",
+        "function.math.pde.define_domain.helmholtz2d.rectangle",
+        "math.pde.define_domain.helmholtz2d.rectangle"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.wave1d",
+      "route": "docs/functions/math/pde/define_domain/wave1d.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.wave1d",
+        "function.math.pde.define_domain.wave1d",
+        "math.pde.define_domain.wave1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_domain.wave2d",
+      "route": "docs/functions/math/pde/define_domain/wave2d.md",
+      "keys": [
+        "frog.studio.math.pde.define_domain.wave2d",
+        "function.math.pde.define_domain.wave2d",
+        "math.pde.define_domain.wave2d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.heat1d.numeric",
+      "route": "docs/functions/math/pde/define_equation/heat1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.heat1d.numeric",
+        "function.math.pde.define_equation.heat1d.numeric",
+        "math.pde.define_equation.heat1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.heat1d.reference",
+      "route": "docs/functions/math/pde/define_equation/heat1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.heat1d.reference",
+        "function.math.pde.define_equation.heat1d.reference",
+        "math.pde.define_equation.heat1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.heat2d.numeric",
+      "route": "docs/functions/math/pde/define_equation/heat2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.heat2d.numeric",
+        "function.math.pde.define_equation.heat2d.numeric",
+        "math.pde.define_equation.heat2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.heat2d.reference",
+      "route": "docs/functions/math/pde/define_equation/heat2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.heat2d.reference",
+        "function.math.pde.define_equation.heat2d.reference",
+        "math.pde.define_equation.heat2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.helmholtz2d.numeric",
+      "route": "docs/functions/math/pde/define_equation/helmholtz2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.helmholtz2d.numeric",
+        "function.math.pde.define_equation.helmholtz2d.numeric",
+        "math.pde.define_equation.helmholtz2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.helmholtz2d.reference",
+      "route": "docs/functions/math/pde/define_equation/helmholtz2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.helmholtz2d.reference",
+        "function.math.pde.define_equation.helmholtz2d.reference",
+        "math.pde.define_equation.helmholtz2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.wave1d.numeric",
+      "route": "docs/functions/math/pde/define_equation/wave1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.wave1d.numeric",
+        "function.math.pde.define_equation.wave1d.numeric",
+        "math.pde.define_equation.wave1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.wave1d.reference",
+      "route": "docs/functions/math/pde/define_equation/wave1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.wave1d.reference",
+        "function.math.pde.define_equation.wave1d.reference",
+        "math.pde.define_equation.wave1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.wave2d.numeric",
+      "route": "docs/functions/math/pde/define_equation/wave2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.wave2d.numeric",
+        "function.math.pde.define_equation.wave2d.numeric",
+        "math.pde.define_equation.wave2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_equation.wave2d.reference",
+      "route": "docs/functions/math/pde/define_equation/wave2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_equation.wave2d.reference",
+        "function.math.pde.define_equation.wave2d.reference",
+        "math.pde.define_equation.wave2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.heat1d.numeric",
+      "route": "docs/functions/math/pde/define_initial/heat1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.heat1d.numeric",
+        "function.math.pde.define_initial.heat1d.numeric",
+        "math.pde.define_initial.heat1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.heat1d.reference",
+      "route": "docs/functions/math/pde/define_initial/heat1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.heat1d.reference",
+        "function.math.pde.define_initial.heat1d.reference",
+        "math.pde.define_initial.heat1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.heat2d.numeric",
+      "route": "docs/functions/math/pde/define_initial/heat2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.heat2d.numeric",
+        "function.math.pde.define_initial.heat2d.numeric",
+        "math.pde.define_initial.heat2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.heat2d.reference",
+      "route": "docs/functions/math/pde/define_initial/heat2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.heat2d.reference",
+        "function.math.pde.define_initial.heat2d.reference",
+        "math.pde.define_initial.heat2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.wave1d.numeric",
+      "route": "docs/functions/math/pde/define_initial/wave1d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.wave1d.numeric",
+        "function.math.pde.define_initial.wave1d.numeric",
+        "math.pde.define_initial.wave1d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.wave1d.reference",
+      "route": "docs/functions/math/pde/define_initial/wave1d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.wave1d.reference",
+        "function.math.pde.define_initial.wave1d.reference",
+        "math.pde.define_initial.wave1d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.wave2d.numeric",
+      "route": "docs/functions/math/pde/define_initial/wave2d/numeric.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.wave2d.numeric",
+        "function.math.pde.define_initial.wave2d.numeric",
+        "math.pde.define_initial.wave2d.numeric"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.define_initial.wave2d.reference",
+      "route": "docs/functions/math/pde/define_initial/wave2d/reference.md",
+      "keys": [
+        "frog.studio.math.pde.define_initial.wave2d.reference",
+        "function.math.pde.define_initial.wave2d.reference",
+        "math.pde.define_initial.wave2d.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.heat1d",
+      "route": "docs/functions/math/pde/render/heat1d.md",
+      "keys": [
+        "frog.studio.math.pde.render.heat1d",
+        "function.math.pde.render.heat1d",
+        "math.pde.render.heat1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.heat2d",
+      "route": "docs/functions/math/pde/render/heat2d.md",
+      "keys": [
+        "frog.studio.math.pde.render.heat2d",
+        "function.math.pde.render.heat2d",
+        "math.pde.render.heat2d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.helmholtz2d.polygon",
+      "route": "docs/functions/math/pde/render/helmholtz2d/polygon.md",
+      "keys": [
+        "frog.studio.math.pde.render.helmholtz2d.polygon",
+        "function.math.pde.render.helmholtz2d.polygon",
+        "math.pde.render.helmholtz2d.polygon"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.helmholtz2d.rectangle",
+      "route": "docs/functions/math/pde/render/helmholtz2d/rectangle.md",
+      "keys": [
+        "frog.studio.math.pde.render.helmholtz2d.rectangle",
+        "function.math.pde.render.helmholtz2d.rectangle",
+        "math.pde.render.helmholtz2d.rectangle"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.wave1d",
+      "route": "docs/functions/math/pde/render/wave1d.md",
+      "keys": [
+        "frog.studio.math.pde.render.wave1d",
+        "function.math.pde.render.wave1d",
+        "math.pde.render.wave1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.render.wave2d",
+      "route": "docs/functions/math/pde/render/wave2d.md",
+      "keys": [
+        "frog.studio.math.pde.render.wave2d",
+        "function.math.pde.render.wave2d",
+        "math.pde.render.wave2d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.heat1d",
+      "route": "docs/functions/math/pde/solve/heat1d.md",
+      "keys": [
+        "frog.studio.math.pde.solve.heat1d",
+        "function.math.pde.solve.heat1d",
+        "math.pde.solve.heat1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.heat2d",
+      "route": "docs/functions/math/pde/solve/heat2d.md",
+      "keys": [
+        "frog.studio.math.pde.solve.heat2d",
+        "function.math.pde.solve.heat2d",
+        "math.pde.solve.heat2d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.helmholtz2d.polygon",
+      "route": "docs/functions/math/pde/solve/helmholtz2d/polygon.md",
+      "keys": [
+        "frog.studio.math.pde.solve.helmholtz2d.polygon",
+        "function.math.pde.solve.helmholtz2d.polygon",
+        "math.pde.solve.helmholtz2d.polygon"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.helmholtz2d.rectangle",
+      "route": "docs/functions/math/pde/solve/helmholtz2d/rectangle.md",
+      "keys": [
+        "frog.studio.math.pde.solve.helmholtz2d.rectangle",
+        "function.math.pde.solve.helmholtz2d.rectangle",
+        "math.pde.solve.helmholtz2d.rectangle"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.wave1d",
+      "route": "docs/functions/math/pde/solve/wave1d.md",
+      "keys": [
+        "frog.studio.math.pde.solve.wave1d",
+        "function.math.pde.solve.wave1d",
+        "math.pde.solve.wave1d"
+      ]
+    },
+    {
+      "catalog_id": "math.pde.solve.wave2d",
+      "route": "docs/functions/math/pde/solve/wave2d.md",
+      "keys": [
+        "frog.studio.math.pde.solve.wave2d",
+        "function.math.pde.solve.wave2d",
+        "math.pde.solve.wave2d"
+      ]
+    },
+    {
+      "catalog_id": "math.special.airy_ai_bi",
+      "route": "docs/functions/math/special/airy_ai_bi.md",
+      "keys": [
+        "frog.studio.math.special.airy_ai_bi",
+        "function.math.special.airy_ai_bi",
+        "math.special.airy_ai_bi"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_cyl_j",
+      "route": "docs/functions/math/special/bessel_cyl_j.md",
+      "keys": [
+        "frog.studio.math.special.bessel_cyl_j",
+        "function.math.special.bessel_cyl_j",
+        "math.special.bessel_cyl_j"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_cyl_y",
+      "route": "docs/functions/math/special/bessel_cyl_y.md",
+      "keys": [
+        "frog.studio.math.special.bessel_cyl_y",
+        "function.math.special.bessel_cyl_y",
+        "math.special.bessel_cyl_y"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_mod_i",
+      "route": "docs/functions/math/special/bessel_mod_i.md",
+      "keys": [
+        "frog.studio.math.special.bessel_mod_i",
+        "function.math.special.bessel_mod_i",
+        "math.special.bessel_mod_i"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_mod_k",
+      "route": "docs/functions/math/special/bessel_mod_k.md",
+      "keys": [
+        "frog.studio.math.special.bessel_mod_k",
+        "function.math.special.bessel_mod_k",
+        "math.special.bessel_mod_k"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_sph_j",
+      "route": "docs/functions/math/special/bessel_sph_j.md",
+      "keys": [
+        "frog.studio.math.special.bessel_sph_j",
+        "function.math.special.bessel_sph_j",
+        "math.special.bessel_sph_j"
+      ]
+    },
+    {
+      "catalog_id": "math.special.bessel_sph_y",
+      "route": "docs/functions/math/special/bessel_sph_y.md",
+      "keys": [
+        "frog.studio.math.special.bessel_sph_y",
+        "function.math.special.bessel_sph_y",
+        "math.special.bessel_sph_y"
+      ]
+    },
+    {
+      "catalog_id": "math.special.elliptic_parabolic_functions.jacobi_elliptic",
+      "route": "docs/functions/math/special/elliptic_parabolic_functions/jacobi_elliptic.md",
+      "keys": [
+        "frog.studio.math.special.elliptic_parabolic_functions.jacobi_elliptic",
+        "function.math.special.elliptic_parabolic_functions.jacobi_elliptic",
+        "jacobi_elliptic",
+        "math.special.elliptic_parabolic_functions.jacobi_elliptic"
+      ]
+    },
+    {
+      "catalog_id": "math.special.elliptic_parabolic_functions.parabolic_cylinder",
+      "route": "docs/functions/math/special/elliptic_parabolic_functions/parabolic_cylinder.md",
+      "keys": [
+        "frog.studio.math.special.elliptic_parabolic_functions.parabolic_cylinder",
+        "function.math.special.elliptic_parabolic_functions.parabolic_cylinder",
+        "math.special.elliptic_parabolic_functions.parabolic_cylinder",
+        "parabolic_cylinder"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.dawson",
+      "route": "docs/functions/math/special/error_functions/dawson.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.dawson",
+        "function.math.special.error_functions.dawson",
+        "math.special.error_functions.dawson"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.erf",
+      "route": "docs/functions/math/special/error_functions/erf.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.erf",
+        "function.math.special.error_functions.erf",
+        "math.special.error_functions.erf"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.erfc",
+      "route": "docs/functions/math/special/error_functions/erfc.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.erfc",
+        "function.math.special.error_functions.erfc",
+        "math.special.error_functions.erfc"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.erfcinv",
+      "route": "docs/functions/math/special/error_functions/erfcinv.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.erfcinv",
+        "function.math.special.error_functions.erfcinv",
+        "math.special.error_functions.erfcinv"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.erfcx",
+      "route": "docs/functions/math/special/error_functions/erfcx.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.erfcx",
+        "function.math.special.error_functions.erfcx",
+        "math.special.error_functions.erfcx"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.erfinv",
+      "route": "docs/functions/math/special/error_functions/erfinv.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.erfinv",
+        "function.math.special.error_functions.erfinv",
+        "math.special.error_functions.erfinv"
+      ]
+    },
+    {
+      "catalog_id": "math.special.error_functions.fresnel",
+      "route": "docs/functions/math/special/error_functions/fresnel.md",
+      "keys": [
+        "frog.studio.math.special.error_functions.fresnel",
+        "function.math.special.error_functions.fresnel",
+        "math.special.error_functions.fresnel"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.chi",
+      "route": "docs/functions/math/special/exponential_integrals/chi.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.chi",
+        "function.math.special.exponential_integrals.chi",
+        "math.special.exponential_integrals.chi"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.ci",
+      "route": "docs/functions/math/special/exponential_integrals/ci.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.ci",
+        "function.math.special.exponential_integrals.ci",
+        "math.special.exponential_integrals.ci"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.dilogarithm",
+      "route": "docs/functions/math/special/exponential_integrals/dilogarithm.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.dilogarithm",
+        "function.math.special.exponential_integrals.dilogarithm",
+        "math.special.exponential_integrals.dilogarithm"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.expn",
+      "route": "docs/functions/math/special/exponential_integrals/expn.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.expn",
+        "function.math.special.exponential_integrals.expn",
+        "math.special.exponential_integrals.expn"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.shi",
+      "route": "docs/functions/math/special/exponential_integrals/shi.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.shi",
+        "function.math.special.exponential_integrals.shi",
+        "math.special.exponential_integrals.shi"
+      ]
+    },
+    {
+      "catalog_id": "math.special.exponential_integrals.si",
+      "route": "docs/functions/math/special/exponential_integrals/si.md",
+      "keys": [
+        "frog.studio.math.special.exponential_integrals.si",
+        "function.math.special.exponential_integrals.si",
+        "math.special.exponential_integrals.si"
+      ]
+    },
+    {
+      "catalog_id": "math.special.hankel_cyl",
+      "route": "docs/functions/math/special/hankel_cyl.md",
+      "keys": [
+        "frog.studio.math.special.hankel_cyl",
+        "function.math.special.hankel_cyl",
+        "math.special.hankel_cyl"
+      ]
+    },
+    {
+      "catalog_id": "math.special.hankel_sph",
+      "route": "docs/functions/math/special/hankel_sph.md",
+      "keys": [
+        "frog.studio.math.special.hankel_sph",
+        "function.math.special.hankel_sph",
+        "math.special.hankel_sph"
+      ]
+    },
+    {
+      "catalog_id": "math.special.kelvin_be",
+      "route": "docs/functions/math/special/kelvin_be.md",
+      "keys": [
+        "frog.studio.math.special.kelvin_be",
+        "function.math.special.kelvin_be",
+        "math.special.kelvin_be"
+      ]
+    },
+    {
+      "catalog_id": "math.special.kelvin_ke",
+      "route": "docs/functions/math/special/kelvin_ke.md",
+      "keys": [
+        "frog.studio.math.special.kelvin_ke",
+        "function.math.special.kelvin_ke",
+        "math.special.kelvin_ke"
+      ]
+    },
+    {
+      "catalog_id": "math.special.struve_h",
+      "route": "docs/functions/math/special/struve_h.md",
+      "keys": [
+        "frog.studio.math.special.struve_h",
+        "function.math.special.struve_h",
+        "math.special.struve_h"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.acos",
+      "route": "docs/functions/math/trigonometric/acos.md",
+      "keys": [
+        "frog.studio.math.trigonometric.acos",
+        "function.math.trigonometric.acos",
+        "math.trigonometric.acos"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.acot",
+      "route": "docs/functions/math/trigonometric/acot.md",
+      "keys": [
+        "frog.studio.math.trigonometric.acot",
+        "function.math.trigonometric.acot",
+        "math.trigonometric.acot"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.acsc",
+      "route": "docs/functions/math/trigonometric/acsc.md",
+      "keys": [
+        "frog.studio.math.trigonometric.acsc",
+        "function.math.trigonometric.acsc",
+        "math.trigonometric.acsc"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.asec",
+      "route": "docs/functions/math/trigonometric/asec.md",
+      "keys": [
+        "frog.studio.math.trigonometric.asec",
+        "function.math.trigonometric.asec",
+        "math.trigonometric.asec"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.asin",
+      "route": "docs/functions/math/trigonometric/asin.md",
+      "keys": [
+        "frog.studio.math.trigonometric.asin",
+        "function.math.trigonometric.asin",
+        "math.trigonometric.asin"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.atan",
+      "route": "docs/functions/math/trigonometric/atan.md",
+      "keys": [
+        "frog.studio.math.trigonometric.atan",
+        "function.math.trigonometric.atan",
+        "math.trigonometric.atan"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.atan2",
+      "route": "docs/functions/math/trigonometric/atan2.md",
+      "keys": [
+        "frog.studio.math.trigonometric.atan2",
+        "function.math.trigonometric.atan2",
+        "math.trigonometric.atan2"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.cos",
+      "route": "docs/functions/math/trigonometric/cos.md",
+      "keys": [
+        "frog.studio.math.trigonometric.cos",
+        "function.math.trigonometric.cos",
+        "math.trigonometric.cos"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.cot",
+      "route": "docs/functions/math/trigonometric/cot.md",
+      "keys": [
+        "frog.studio.math.trigonometric.cot",
+        "function.math.trigonometric.cot",
+        "math.trigonometric.cot"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.csc",
+      "route": "docs/functions/math/trigonometric/csc.md",
+      "keys": [
+        "frog.studio.math.trigonometric.csc",
+        "function.math.trigonometric.csc",
+        "math.trigonometric.csc"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.sec",
+      "route": "docs/functions/math/trigonometric/sec.md",
+      "keys": [
+        "frog.studio.math.trigonometric.sec",
+        "function.math.trigonometric.sec",
+        "math.trigonometric.sec"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.sin",
+      "route": "docs/functions/math/trigonometric/sin.md",
+      "keys": [
+        "frog.studio.math.trigonometric.sin",
+        "function.math.trigonometric.sin",
+        "math.trigonometric.sin"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.sinc",
+      "route": "docs/functions/math/trigonometric/sinc.md",
+      "keys": [
+        "frog.studio.math.trigonometric.sinc",
+        "function.math.trigonometric.sinc",
+        "math.trigonometric.sinc"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.sincos",
+      "route": "docs/functions/math/trigonometric/sincos.md",
+      "keys": [
+        "frog.studio.math.trigonometric.sincos",
+        "function.math.trigonometric.sincos",
+        "math.trigonometric.sincos"
+      ]
+    },
+    {
+      "catalog_id": "math.trigonometric.tan",
+      "route": "docs/functions/math/trigonometric/tan.md",
+      "keys": [
+        "frog.studio.math.trigonometric.tan",
+        "function.math.trigonometric.tan",
+        "math.trigonometric.tan"
       ]
     },
     {
@@ -3151,6 +3961,24 @@
       ]
     },
     {
+      "catalog_id": "mathematics.differential_equations.ordinary",
+      "route": "docs/functions/mathematics/differential_equations/ordinary.md",
+      "keys": [
+        "frog.studio.mathematics.differential_equations.ordinary",
+        "function.mathematics.differential_equations.ordinary",
+        "mathematics.differential_equations.ordinary"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.differential_equations.partial",
+      "route": "docs/functions/mathematics/differential_equations/partial.md",
+      "keys": [
+        "frog.studio.mathematics.differential_equations.partial",
+        "function.mathematics.differential_equations.partial",
+        "mathematics.differential_equations.partial"
+      ]
+    },
+    {
       "catalog_id": "mathematics.elementary",
       "route": "docs/functions/mathematics/elementary.md",
       "keys": [
@@ -3160,12 +3988,111 @@
       ]
     },
     {
+      "catalog_id": "mathematics.elementary.bessel_functions",
+      "route": "docs/functions/mathematics/elementary/bessel_functions.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.bessel_functions",
+        "function.mathematics.elementary.bessel_functions",
+        "mathematics.elementary.bessel_functions"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.discrete",
+      "route": "docs/functions/mathematics/elementary/discrete.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.discrete",
+        "function.mathematics.elementary.discrete",
+        "mathematics.elementary.discrete"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.elliptic_integrals",
+      "route": "docs/functions/mathematics/elementary/elliptic_integrals.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.elliptic_integrals",
+        "function.mathematics.elementary.elliptic_integrals",
+        "mathematics.elementary.elliptic_integrals"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.elliptic_parabolic_functions",
+      "route": "docs/functions/mathematics/elementary/elliptic_parabolic_functions.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.elliptic_parabolic_functions",
+        "function.mathematics.elementary.elliptic_parabolic_functions",
+        "mathematics.elementary.elliptic_parabolic_functions"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.error_functions",
+      "route": "docs/functions/mathematics/elementary/error_functions.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.error_functions",
+        "function.mathematics.elementary.error_functions",
+        "mathematics.elementary.error_functions"
+      ]
+    },
+    {
       "catalog_id": "mathematics.elementary.exponential",
       "route": "docs/functions/mathematics/elementary/exponential.md",
       "keys": [
         "frog.studio.mathematics.elementary.exponential",
         "function.mathematics.elementary.exponential",
         "mathematics.elementary.exponential"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.exponential_integrals",
+      "route": "docs/functions/mathematics/elementary/exponential_integrals.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.exponential_integrals",
+        "function.mathematics.elementary.exponential_integrals",
+        "mathematics.elementary.exponential_integrals"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.gamma_functions",
+      "route": "docs/functions/mathematics/elementary/gamma_functions.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.gamma_functions",
+        "function.mathematics.elementary.gamma_functions",
+        "mathematics.elementary.gamma_functions"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.gating",
+      "route": "docs/functions/mathematics/elementary/gating.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.gating",
+        "function.mathematics.elementary.gating",
+        "mathematics.elementary.gating"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.hyperbolic",
+      "route": "docs/functions/mathematics/elementary/hyperbolic.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.hyperbolic",
+        "function.mathematics.elementary.hyperbolic",
+        "mathematics.elementary.hyperbolic"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.hypergeometric_functions",
+      "route": "docs/functions/mathematics/elementary/hypergeometric_functions.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.hypergeometric_functions",
+        "function.mathematics.elementary.hypergeometric_functions",
+        "mathematics.elementary.hypergeometric_functions"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.elementary.trigonometric",
+      "route": "docs/functions/mathematics/elementary/trigonometric.md",
+      "keys": [
+        "frog.studio.mathematics.elementary.trigonometric",
+        "function.mathematics.elementary.trigonometric",
+        "mathematics.elementary.trigonometric"
       ]
     },
     {
@@ -3256,6 +4183,15 @@
         "frog.studio.mathematics.script_formula",
         "function.mathematics.script_formula",
         "mathematics.script_formula"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.script_formula.evaluation_1d_2d",
+      "route": "docs/functions/mathematics/script_formula/evaluation_1d_2d.md",
+      "keys": [
+        "frog.studio.mathematics.script_formula.evaluation_1d_2d",
+        "function.mathematics.script_formula.evaluation_1d_2d",
+        "mathematics.script_formula.evaluation_1d_2d"
       ]
     },
     {
@@ -4275,6 +5211,15 @@
       ]
     },
     {
+      "catalog_id": "path.application_directory",
+      "route": "docs/functions/path/application_directory.md",
+      "keys": [
+        "frog.studio.path.application_directory",
+        "function.path.application_directory",
+        "path.application_directory"
+      ]
+    },
+    {
       "catalog_id": "path.common_relative",
       "route": "docs/functions/path/common_relative.md",
       "keys": [
@@ -4311,12 +5256,30 @@
       ]
     },
     {
+      "catalog_id": "path.current_frog_path",
+      "route": "docs/functions/path/current_frog_path.md",
+      "keys": [
+        "frog.studio.path.current_frog_path",
+        "function.path.current_frog_path",
+        "path.current_frog_path"
+      ]
+    },
+    {
       "catalog_id": "path.decompose",
       "route": "docs/functions/path/decompose.md",
       "keys": [
         "frog.studio.path.decompose",
         "function.path.decompose",
         "path.decompose"
+      ]
+    },
+    {
+      "catalog_id": "path.default_directory",
+      "route": "docs/functions/path/default_directory.md",
+      "keys": [
+        "frog.studio.path.default_directory",
+        "function.path.default_directory",
+        "path.default_directory"
       ]
     },
     {
@@ -4407,6 +5370,15 @@
         "frog.studio.path.replace_file_extension",
         "function.path.replace_file_extension",
         "path.replace_file_extension"
+      ]
+    },
+    {
+      "catalog_id": "path.temporary_directory",
+      "route": "docs/functions/path/temporary_directory.md",
+      "keys": [
+        "frog.studio.path.temporary_directory",
+        "function.path.temporary_directory",
+        "path.temporary_directory"
       ]
     },
     {
@@ -5157,6 +6129,150 @@
       ]
     },
     {
+      "catalog_id": "synchronization.first_call",
+      "route": "docs/functions/synchronization/first_call.md",
+      "keys": [
+        "frog.studio.synchronization.first_call",
+        "function.synchronization.first_call",
+        "synchronization.first_call"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier",
+      "route": "docs/functions/synchronization/notifier.md",
+      "keys": [
+        "frog.studio.synchronization.notifier",
+        "function.synchronization.notifier",
+        "synchronization.notifier"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.advanced",
+      "route": "docs/functions/synchronization/notifier/advanced.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.advanced",
+        "function.synchronization.notifier.advanced",
+        "synchronization.notifier.advanced"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.cancel",
+      "route": "docs/functions/synchronization/notifier/cancel.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.cancel",
+        "function.synchronization.notifier.cancel",
+        "synchronization.notifier.cancel"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.obtain",
+      "route": "docs/functions/synchronization/notifier/obtain.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.obtain",
+        "function.synchronization.notifier.obtain",
+        "synchronization.notifier.obtain"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.release",
+      "route": "docs/functions/synchronization/notifier/release.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.release",
+        "function.synchronization.notifier.release",
+        "synchronization.notifier.release"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.send",
+      "route": "docs/functions/synchronization/notifier/send.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.send",
+        "function.synchronization.notifier.send",
+        "synchronization.notifier.send"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.status",
+      "route": "docs/functions/synchronization/notifier/status.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.status",
+        "function.synchronization.notifier.status",
+        "synchronization.notifier.status"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.wait",
+      "route": "docs/functions/synchronization/notifier/wait.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.wait",
+        "function.synchronization.notifier.wait",
+        "synchronization.notifier.wait"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.wait_history",
+      "route": "docs/functions/synchronization/notifier/wait_history.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.wait_history",
+        "function.synchronization.notifier.wait_history",
+        "synchronization.notifier.wait_history"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.wait_multiple",
+      "route": "docs/functions/synchronization/notifier/wait_multiple.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.wait_multiple",
+        "function.synchronization.notifier.wait_multiple",
+        "synchronization.notifier.wait_multiple"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.notifier.wait_multiple_history",
+      "route": "docs/functions/synchronization/notifier/wait_multiple_history.md",
+      "keys": [
+        "frog.studio.synchronization.notifier.wait_multiple_history",
+        "function.synchronization.notifier.wait_multiple_history",
+        "synchronization.notifier.wait_multiple_history"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.occurrences",
+      "route": "docs/functions/synchronization/occurrences.md",
+      "keys": [
+        "frog.studio.synchronization.occurrences",
+        "function.synchronization.occurrences",
+        "synchronization.occurrences"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.occurrences.generate",
+      "route": "docs/functions/synchronization/occurrences/generate.md",
+      "keys": [
+        "frog.studio.synchronization.occurrences.generate",
+        "function.synchronization.occurrences.generate",
+        "synchronization.occurrences.generate"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.occurrences.set",
+      "route": "docs/functions/synchronization/occurrences/set.md",
+      "keys": [
+        "frog.studio.synchronization.occurrences.set",
+        "function.synchronization.occurrences.set",
+        "synchronization.occurrences.set"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.occurrences.wait",
+      "route": "docs/functions/synchronization/occurrences/wait.md",
+      "keys": [
+        "frog.studio.synchronization.occurrences.wait",
+        "function.synchronization.occurrences.wait",
+        "synchronization.occurrences.wait"
+      ]
+    },
+    {
       "catalog_id": "synchronization.queue",
       "route": "docs/functions/synchronization/queue.md",
       "keys": [
@@ -5235,6 +6351,132 @@
         "frog.studio.synchronization.queue.status",
         "function.synchronization.queue.status",
         "synchronization.queue.status"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous",
+      "route": "docs/functions/synchronization/rendezvous.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous",
+        "function.synchronization.rendezvous",
+        "synchronization.rendezvous"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.create",
+      "route": "docs/functions/synchronization/rendezvous/create.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.create",
+        "function.synchronization.rendezvous.create",
+        "synchronization.rendezvous.create"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.destroy",
+      "route": "docs/functions/synchronization/rendezvous/destroy.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.destroy",
+        "function.synchronization.rendezvous.destroy",
+        "synchronization.rendezvous.destroy"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.not_a_rendezvous",
+      "route": "docs/functions/synchronization/rendezvous/not_a_rendezvous.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.not_a_rendezvous",
+        "function.synchronization.rendezvous.not_a_rendezvous",
+        "synchronization.rendezvous.not_a_rendezvous"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.resize",
+      "route": "docs/functions/synchronization/rendezvous/resize.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.resize",
+        "function.synchronization.rendezvous.resize",
+        "synchronization.rendezvous.resize"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.status",
+      "route": "docs/functions/synchronization/rendezvous/status.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.status",
+        "function.synchronization.rendezvous.status",
+        "synchronization.rendezvous.status"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.rendezvous.wait",
+      "route": "docs/functions/synchronization/rendezvous/wait.md",
+      "keys": [
+        "frog.studio.synchronization.rendezvous.wait",
+        "function.synchronization.rendezvous.wait",
+        "synchronization.rendezvous.wait"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore",
+      "route": "docs/functions/synchronization/semaphore.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore",
+        "function.synchronization.semaphore",
+        "synchronization.semaphore"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.acquire",
+      "route": "docs/functions/synchronization/semaphore/acquire.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.acquire",
+        "function.synchronization.semaphore.acquire",
+        "synchronization.semaphore.acquire"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.not_a_semaphore",
+      "route": "docs/functions/synchronization/semaphore/not_a_semaphore.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.not_a_semaphore",
+        "function.synchronization.semaphore.not_a_semaphore",
+        "synchronization.semaphore.not_a_semaphore"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.obtain",
+      "route": "docs/functions/synchronization/semaphore/obtain.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.obtain",
+        "function.synchronization.semaphore.obtain",
+        "synchronization.semaphore.obtain"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.release",
+      "route": "docs/functions/synchronization/semaphore/release.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.release",
+        "function.synchronization.semaphore.release",
+        "synchronization.semaphore.release"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.release_reference",
+      "route": "docs/functions/synchronization/semaphore/release_reference.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.release_reference",
+        "function.synchronization.semaphore.release_reference",
+        "synchronization.semaphore.release_reference"
+      ]
+    },
+    {
+      "catalog_id": "synchronization.semaphore.status",
+      "route": "docs/functions/synchronization/semaphore/status.md",
+      "keys": [
+        "frog.studio.synchronization.semaphore.status",
+        "function.synchronization.semaphore.status",
+        "synchronization.semaphore.status"
       ]
     },
     {

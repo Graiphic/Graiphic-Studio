@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-provisional="semaphore-status">
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#30343b" stroke="#aab4c0" stroke-width="2"/>
+  <g stroke="#f8fafc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="33" y="9" width="9" height="30" rx="3" fill="#20252c"/>
+    <path d="M37.5 39v4M8 18h17M8 26h17M12 12v20m8-20v20" fill="none"/>
+    <path d="M9 38h4m4 0h4m4 0h3" fill="none" stroke="#9cceff" stroke-width="2.5"/>
+  </g>
+  <circle cx="37.5" cy="15" r="2.7" fill="#ed7379"/>
+  <circle cx="37.5" cy="24" r="2.7" fill="#f1c65d"/>
+  <circle cx="37.5" cy="33" r="2.7" fill="#76d36b"/>
+</svg>

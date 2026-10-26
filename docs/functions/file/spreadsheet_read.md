@@ -96,9 +96,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.spreadsheet_read`.
+- Parent palette: [CSV](csv.md).
 - Profile: `frog.studio.palette.file.spreadsheet_read.v1`.
 - Definition: `frog.studio.file.spreadsheet_read`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/vi-lib/utility/file-llb/read-delimited-spreadsheet-dbl-vi.html).

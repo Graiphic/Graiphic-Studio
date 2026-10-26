@@ -70,6 +70,10 @@ Integer/fixed-point scalar -&gt; 1D Boolean array, one element per bit; first is
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `boolean.number_to_array`.

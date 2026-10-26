@@ -73,6 +73,10 @@ Floating number -&gt; mantissa and integer-valued exponent, both in the input fl
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation.mantissa_exponent`.

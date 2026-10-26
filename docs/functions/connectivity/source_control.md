@@ -28,6 +28,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [SCC Compare VIs.vi](source_control/compare_vis.md) | Compares a local VI with its source controlled version using LabVIEW VI comparison options. |
 | [SCC Not A Source Control Reference.vi](source_control/not_a_reference.md) | Checks whether a source control reference is invalid. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.source_control`.

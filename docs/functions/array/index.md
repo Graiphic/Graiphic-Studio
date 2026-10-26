@@ -12,7 +12,7 @@ Returns an element or subarray at the requested index.
 
 **Indexer un tableau**
 
-Renvoie un element ou un sous-tableau a l'index demande. [Types] Un tableau nD de T produit T si toutes les dimensions sont indexées ; sinon un sous-tableau de T. Chaque dimension indexée retire un rang. Sans index câblé, la première dimension utilise zéro. Une waveform expose les éléments de Y. Studio: Studio fournit un index par dimension (jusqu’à 16) et jusqu’à 32 groupes de sorties extensibles. Un groupe non câblé reprend les dimensions indexées du groupe précédent. L’exécution dépend de la cible.
+Renvoie un element ou un sous-tableau a l'index demande. [Types] Un tableau nD de T produit T si toutes les dimensions sont indexées ; sinon un sous-tableau de T. Chaque dimension indexée retire un rang. Sans index câblé, la première dimension utilise zéro. Une waveform expose les éléments de Y. Studio: Studio fournit un index par dimension (jusqu’à 16) et jusqu’à 32 groupes de sorties extensibles. Un groupe non câblé reprend les dimensions indexées du groupe précédent. L’exécution dépend de la cible. [Local Studio] Play/Highlight local exécute un tableau fini array&lt;f64&gt; de rang 1, un seul index i32 explicitement câblé et une seule sortie f64. Index négatif/hors borne ou tableau vide : ARRAY_INDEX_RANGE sans sortie, jamais un zéro inventé. Lecture bornée à un million d’éléments. Autres types/rangs, sous-tableaux et groupes étendus d’index/sorties : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Ce profil FROG borné n’annonce ni le comportement NI général ni un support cible public FROG/LLVM.
 
 </details>
 
@@ -20,9 +20,9 @@ Renvoie un element ou un sous-tableau a l'index demande. [Types] Un tableau nD d
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements.
+An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
 
-An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. Studio: Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target.
+An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. Studio: Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
 
 ## IN — inputs
 
@@ -57,12 +57,13 @@ An n-D array of T yields T when all dimensions are indexed; otherwise an array o
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
 
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target.
+- Local f64 vector execution: finite rank-1 Index/single i32 index or Build/1..32 scalar f64 inputs only; no general Array or public LLVM provider.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -74,6 +75,10 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `element` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
 
 ## Identity and references
 

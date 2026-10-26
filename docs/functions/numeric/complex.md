@@ -30,6 +30,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Re/Im To Polar](complex/real_imaginary_to_polar.md) | Converts real and imaginary components to magnitude and phase. |
 | [Polar To Re/Im](complex/polar_to_real_imaginary.md) | Converts magnitude and phase to real and imaginary components. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.complex`.

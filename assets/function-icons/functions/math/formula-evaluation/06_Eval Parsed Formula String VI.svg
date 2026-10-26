@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: SourceSansPro-Semibold, 'Source Sans Pro';
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #fffffe;
+        stroke: #f8fafc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        fill: #4b5563;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+      }
+
+      .cls-2 {
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #aab4c0;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect class="cls-4" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <path class="cls-5" d="M5.88,1.21h12.03v17.01H.9V6.19C.9,3.44,3.13,1.21,5.88,1.21Z"/>
+        <text class="cls-2" transform="translate(6.58 13.87)"><tspan x="0" y="0">∑</tspan></text>
+      </g>
+      <g>
+        <rect class="cls-6" x="5.62" y="23.07" width="18.78" height="18.78"/>
+        <rect class="cls-6" x="5.62" y="23.07" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="11.88" y="23.07" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="18.14" y="23.07" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="5.62" y="29.33" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="11.88" y="29.33" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="18.14" y="29.33" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="5.62" y="35.59" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="11.88" y="35.59" width="6.26" height="6.26"/>
+        <rect class="cls-6" x="18.14" y="35.59" width="6.26" height="6.26"/>
+      </g>
+      <g>
+        <polygon class="cls-3" points="29.31 17.8 28.74 17.3 25.33 21.31 25.9 21.81 29.31 17.8"/>
+        <polygon class="cls-3" points="30.66 21.92 29.57 17.25 29.51 16.99 29.24 16.96 24.45 16.62 24.4 17.36 28.9 17.7 29.93 22.09 30.66 21.92"/>
+      </g>
+      <text class="cls-1" transform="translate(25.21 12.88)"><tspan x="0" y="0">17.4</tspan></text>
+    </g>
+  </g>
+</svg>

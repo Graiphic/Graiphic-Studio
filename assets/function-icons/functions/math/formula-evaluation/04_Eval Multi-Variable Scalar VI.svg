@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-4, .cls-5 {
+        font-size: 9px;
+      }
+
+      .cls-6 {
+        fill: #fffffe;
+        stroke: #f8fafc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .75px;
+      }
+
+      .cls-7 {
+        fill: #4b5563;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: #aab4c0;
+        stroke-width: 1.8px;
+      }
+
+      .cls-2 {
+        font-family: SourceSansPro-Semibold, 'Source Sans Pro';
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+      }
+
+      .cls-8 {
+        fill: #aab4c0;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-7" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <path class="cls-8" d="M5.88,1.21h12.03v17.01H.9V6.19C.9,3.44,3.13,1.21,5.88,1.21Z"/>
+      <text class="cls-3" transform="translate(6.58 13.87)"><tspan x="0" y="0">∑</tspan></text>
+      <text class="cls-2" transform="translate(29.74 38.57)"><tspan x="0" y="0">f( )</tspan></text>
+      <text class="cls-1" transform="translate(5.41 26.1)"><tspan x="0" y="0">x</tspan></text>
+      <text class="cls-1" transform="translate(10.03 29.1) scale(.58)"><tspan x="0" y="0">1</tspan></text>
+      <text class="cls-4" transform="translate(12.13 26.1)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-1" transform="translate(5.56 34.93)"><tspan x="0" y="0">x</tspan></text>
+      <text class="cls-5" transform="translate(10.19 37.93) scale(.58)"><tspan x="0" y="0">n</tspan></text>
+      <text class="cls-4" transform="translate(13.19 34.93)"><tspan x="0" y="0"> </tspan></text>
+      <text class="cls-1" transform="translate(5.93 44.58)"><tspan x="0" y="0">f</tspan></text>
+      <g>
+        <rect class="cls-6" x="21.95" y="30.47" width=".84" height="8.93" transform="translate(-12.56 57.31) rotate(-90)"/>
+        <polygon class="cls-6" points="24.32 39.48 27.49 35.18 27.66 34.93 27.49 34.69 24.32 30.39 23.65 30.88 26.62 34.93 23.65 38.99 24.32 39.48"/>
+      </g>
+    </g>
+  </g>
+</svg>

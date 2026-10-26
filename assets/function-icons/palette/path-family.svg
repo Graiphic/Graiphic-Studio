@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-visual-standard="path-constant-family" shape-rendering="geometricPrecision">
+  <rect x="4" y="16" width="40" height="17" rx="4" fill="#008EA3"/>
+  <g fill="#FFFFFF" transform="translate(14.64 16.2) scale(.39)">
+    <polygon points="29.004,15.261 27.296,16.52 36.648,27.571 38.356,26.311"/>
+    <polygon points="19.743,15.261 21.451,16.52 12.099,27.571 10.391,26.311"/>
+    <path d="M2.539,25.333v9.215h10.053v-9.215H2.539z M10.446,32.424h-5.76v-4.968h5.76V32.424z"/>
+    <path d="M19.347,8v9.215H29.4V8H19.347z M27.253,15.092h-5.76v-4.968h5.76V15.092z"/>
+    <rect x="35.408" y="25.333" width="10.053" height="9.215"/>
+  </g>
+</svg>

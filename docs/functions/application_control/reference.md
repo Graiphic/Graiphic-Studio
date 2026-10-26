@@ -7,10 +7,16 @@
 
 Private Studio symbolic reference constant for This Frog, This Application, Front Panel or a widget identified by its owner document and stable identity. The single reference output is distinct from the widget data value and preserves a complete strict schema when known. Class upcasts are allowed; a generic reference does not implicitly become strict. Saved files contain no native handles. Resolution uses the live authoring provider; graph runtime execution is unavailable in this delivery.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](reference.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Référence serveur FROG**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Constante privée Studio de référence symbolique vers Ce FROG, Cette application, la Face avant ou un widget identifié par son document propriétaire et son identité stable. L’unique sortie Référence est distincte de la valeur de données et conserve le schéma strict complet lorsqu’il est connu. Les conversions vers une classe parente sont permises ; une référence générique ne devient pas strictement typée implicitement. Les fichiers ne contiennent aucun handle natif. La résolution utilise le fournisseur authoring vivant ; l’exécution dans un graphe est indisponible dans cette livraison.
 
@@ -20,7 +26,14 @@ Constante privée Studio de référence symbolique vers Ce FROG, Cette applicati
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Private Studio authoring configuration with fixed reference/error ports. Property rows and one method signature are projected by ApplicationControl, not by this discovery envelope. This does not implement public frog.ui/FIR lowering or runtime execution.
+
+</details>
 
 ## IN — inputs
 
@@ -54,9 +67,16 @@ Required provider: `frog.studio.application_control`.
 
 Authoring provider operations are not a graph execution provider.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Object-operation execution and public lowering require an explicit provider.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -66,6 +86,17 @@ Authoring provider operations are not a graph execution provider.
 | OUTPUT | `reference_out` | `ref<"frog.object">` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [semaphore : référence nulle correctement typée](../../examples/sync.semaphore.typed_null.md) — semaphore : référence nulle correctement typée (`execution`, `studio-draft`).
+- [rendezvous : référence nulle correctement typée](../../examples/sync.rendezvous.typed_null.md) — rendezvous : référence nulle correctement typée (`execution`, `studio-draft`).
+- [occurrence : référence nulle correctement typée](../../examples/sync.occurrence.typed_null.md) — occurrence : référence nulle correctement typée (`execution`, `studio-draft`).
+- [Référence de contrôle : lire sa vraie valeur](../../examples/application_control.read_value.md) — Référence de contrôle : lire sa vraie valeur (`execution`, `studio-draft`).
+- [Property Node : écrire la valeur sans événement](../../examples/application_control.silent_write.md) — Property Node : écrire la valeur sans événement (`execution`, `studio-draft`).
+- [Invoke Node : réinitialiser la valeur par défaut](../../examples/application_control.reinitialize.md) — Invoke Node : réinitialiser la valeur par défaut (`execution`, `studio-draft`).
 
 ## Identity and references
 

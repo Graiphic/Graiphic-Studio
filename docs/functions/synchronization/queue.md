@@ -31,6 +31,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Dequeue Element](queue/dequeue.md) | Removes and returns the head element in FIFO order. An empty queue waits cooperatively: -1 means no deadline, 0 an immediate attempt. Ordinary timeout is distinguished from invalidation and from a successfully received message. Queue&lt;T&gt; is an execution resource reference; element is the ordinary T value. Public FROG target compilation remains unavailable. |
 | [Flush Queue](queue/flush.md) | Atomically removes the present messages and returns them in FIFO order, preserving each complete message boundary even when T itself is an Array. The queue stays valid and usable; an empty FIFO returns an empty outer array. Queue&lt;T&gt; is an execution resource reference; element is the ordinary T value. Public FROG target compilation remains unavailable. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `synchronization.queue`.

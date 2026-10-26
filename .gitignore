@@ -10,3 +10,5 @@ _verification/
 
 # Generated local previews
 *.log
+__pycache__/
+/proof/

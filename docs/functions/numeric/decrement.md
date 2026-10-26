@@ -7,10 +7,16 @@
 
 Subtracts one from the input value.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](decrement.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Decrementer**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Soustrait un a la valeur d'entree. [Types] x numérique ou enum -&gt; même structure/représentation x-1 ; variantes Timestamp et Waveform chez NI. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
 
@@ -20,9 +26,16 @@ Soustrait un a la valeur d'entree. [Types] x numérique ou enum -&gt; même stru
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads.
 
 Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+</details>
 
 ## IN — inputs
 
@@ -56,10 +69,17 @@ Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -72,6 +92,16 @@ Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp
 | OUTPUT | `result` | `f64` | `any_explicit` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Decrement — scalar i32](../../examples/numeric.decrement.scalar_i32.md) — Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. (`execution`, `studio-draft`).
+- [Decrement — scalar u32](../../examples/numeric.decrement.scalar_u32.md) — Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. (`execution`, `studio-draft`).
+- [Decrement — scalar i64](../../examples/numeric.decrement.scalar_i64.md) — Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. (`execution`, `studio-draft`).
+- [Decrement — scalar u64](../../examples/numeric.decrement.scalar_u64.md) — Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. (`execution`, `studio-draft`).
+- [Decrement — scalar f64](../../examples/numeric.decrement.scalar_f64.md) — Numeric or enum x -&gt; same structure/representation x-1; NI also has timestamp and waveform overloads. (`execution`, `studio-draft`).
 
 ## Identity and references
 

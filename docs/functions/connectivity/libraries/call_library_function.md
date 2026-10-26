@@ -7,9 +7,20 @@
 
 Calls an explicitly configured native C function. Each node embeds its library path policy, exact export and typed ABI signature. Parameter rows may be reordered visually without changing ABI argument order. Configure by double-clicking its fixed header. Local Windows/x64 execution uses the libffi adapter; advanced representations require their own marshalling and lifetime capability.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](call_library_function.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -47,10 +58,17 @@ Required provider: `frog.studio.native_call.libffi@1`.
 
 Local Windows/x64 libffi execution is an explicit private Studio provider. Public FIR lowering and other target providers remain unavailable.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No public FROG FIR lowering or deployment provider is declared by the local Highlight implementation.
 - NI handles, waveforms, digital data, ActiveX, variadic signatures and unsupported target ABIs fail explicitly; they are never cast to void pointers.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -61,6 +79,20 @@ Local Windows/x64 libffi execution is an explicit private Studio provider. Publi
 | OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Appel C : scalaire exact i32](../../../examples/native_call.i32.minimum.md) — Appel C : scalaire exact i32 (`execution`, `studio-draft`).
+- [Appel C : scalaire exact u32](../../../examples/native_call.u32.maximum.md) — Appel C : scalaire exact u32 (`execution`, `studio-draft`).
+- [Appel C : scalaire exact i64](../../../examples/native_call.i64.exact_above_2pow53.md) — Appel C : scalaire exact i64 (`execution`, `studio-draft`).
+- [Appel C : scalaire exact u64](../../../examples/native_call.u64.maximum.md) — Appel C : scalaire exact u64 (`execution`, `studio-draft`).
+- [Appel C : scalaire exact f64](../../../examples/native_call.f64.exact.md) — Appel C : scalaire exact f64 (`execution`, `studio-draft`).
+- [Appel C : ordre visuel différent de l'ordre ABI](../../../examples/native_call.visual_order_independent.md) — Appel C : ordre visuel différent de l'ordre ABI (`execution`, `studio-draft`).
+- [Appel C : bibliothèque absente](../../../examples/native_call.missing_library.md) — Appel C : bibliothèque absente (`execution`, `studio-draft`).
+- [Appel C : erreur amont, aucun effet externe](../../../examples/native_call.upstream_error.md) — Appel C : erreur amont, aucun effet externe (`execution`, `studio-draft`).
+- [Appel C : signature pointeur non admise par scalar5](../../../examples/native_call.pointer_refused_scalar5.md) — Appel C : signature pointeur non admise par scalar5 (`expected-diagnostic`, `studio-draft`).
 
 ## Identity and references
 

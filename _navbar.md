@@ -1,5 +1,6 @@
 - [Guides](/docs/index.md)
 - [Functions](/docs/functions/index.md)
+- [Examples](/docs/examples/index.md)
 - [Widgets](/docs/widgets/index.md)
 - [FROG specification](https://graiphic.github.io/FROG/)
 - [GitHub](https://github.com/Graiphic/Graiphic-Studio)

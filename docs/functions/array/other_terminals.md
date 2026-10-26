@@ -32,6 +32,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Cluster Array Terminal](other_terminals/cluster.md) | Creates an array of clusters and its linked diagram terminal. |
 | [Error Array Terminal](other_terminals/error.md) | Palette icon for an array of errors. Placement is not implemented yet. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `array.other_terminals`.

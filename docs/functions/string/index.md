@@ -57,7 +57,7 @@
 | [String Array To Delimited String](conversion/string_array_to_delimited_string.md) | Joins a string array using a delimiter. |
 | [String Array To Path](conversion/string_array_to_path.md) | Builds a path from an array of strings. |
 | [String Constant](constant.md) | Places an editable string constant on the diagram. |
-| [String Length](length.md) | Returns the number of characters in a string. |
+| [String Length](length.md) | Returns the number of bytes in a String, including embedded NUL bytes. UTF-8 é occupies two bytes; no Unicode character count or normalization is performed. |
 | [String Subset](subset.md) | Extracts a portion of a string. |
 | [String Terminal](terminal.md) | Places a string terminal on the diagram. |
 | [String To Path](conversion/string_to_path.md) | Converts a string to a path. |

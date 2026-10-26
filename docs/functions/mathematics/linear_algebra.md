@@ -25,6 +25,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Array To Matrix](../math/matrix/array_to_matrix.md) | Explicitly converts an actual two-dimensional F64 Array to the distinct private Matrix&lt;F64&gt; type. Preserves row-major values and exact rectangular or empty dimensions in an immutable result; finite values, shape and resource budgets are checked. |
 | [Matrix To Array](../math/matrix/matrix_to_array.md) | Explicitly converts a private Matrix&lt;F64&gt; value to a two-dimensional F64 Array. Preserves row-major values and exact rectangular or empty dimensions in an independently owned immutable result; finite values, shape and resource budgets are checked. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `mathematics.linear_algebra`.

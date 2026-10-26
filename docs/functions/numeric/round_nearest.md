@@ -5,14 +5,20 @@
 
 [Numeric functions](index.md) · [All functions](../index.md)
 
-Rounds the input to the nearest integer.
+Rounds the input to the nearest integer, with ties to the even integer: 2.5 becomes 2 and 3.5 becomes 4.
+
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](round_nearest.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Arrondir au plus proche**
 
-Arrondit l'entree a l'entier le plus proche. [Types] Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. L'arrondi conserve la représentation, y compris feuilles complexes et timestamps. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices.
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
+
+Arrondit l’entrée à l’entier le plus proche, avec les égalités vers le pair : 2,5 devient 2 et 3,5 devient 4. [Types] Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. L’arrondi conserve la représentation, y compris feuilles complexes et timestamps. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices. L’exécution native nécessite un profil admis sur la cible.
 
 </details>
 
@@ -20,9 +26,16 @@ Arrondit l'entree a l'entier le plus proche. [Types] Scalaire numérique, tablea
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps).
+<details>
+<summary>Retained binding and help description</summary>
 
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps). Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
+This is the source declaration, not the current measured product-execution assessment.
+
+Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps). Exact halfway values round to the even integer, independent of the caller floating environment. The authored native scalar realization is round_nearest.even64.v1; explicitly persisted historical fenv64.v1 keeps its separately versioned environmental behavior.
+
+Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps). Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile. Native execution requires an admitted target profile.
+
+</details>
 
 ## IN — inputs
 
@@ -42,7 +55,7 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 ## Types and connection rules
 
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps).
+Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Rounding retains the representation (including complex leaves and timestamps). Exact halfway values round to the even integer, independent of the caller floating environment. The authored native scalar realization is round_nearest.even64.v1; explicitly persisted historical fenv64.v1 keeps its separately versioned environmental behavior.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -58,10 +71,17 @@ fixed unary
 
 No portable Runtime provider is declared.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -74,6 +94,17 @@ No portable Runtime provider is declared.
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Round To Nearest — ties even half](../../examples/numeric.round_nearest.ties_even_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
+- [Round To Nearest — ties even one half](../../examples/numeric.round_nearest.ties_even_one_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
+- [Round To Nearest — ties even two half](../../examples/numeric.round_nearest.ties_even_two_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
+- [Round To Nearest — ties even negative half](../../examples/numeric.round_nearest.ties_even_negative_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
+- [Round To Nearest — ties even negative one half](../../examples/numeric.round_nearest.ties_even_negative_one_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
+- [Round To Nearest — ties even negative two half](../../examples/numeric.round_nearest.ties_even_negative_two_half.md) — Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. (`execution`, `studio-draft`).
 
 ## Identity and references
 

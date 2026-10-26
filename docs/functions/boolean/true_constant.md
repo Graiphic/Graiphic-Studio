@@ -7,10 +7,16 @@
 
 Provides a fixed true Boolean value.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](true_constant.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Constante vrai**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Fournit une valeur booleenne vraie fixe. [Types] Sans opérande de fonction ; type de l’instance : Boolean. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
 
@@ -20,9 +26,16 @@ Fournit une valeur booleenne vraie fixe. [Types] Sans opérande de fonction ; ty
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 The Studio node stores and exposes the fixed Boolean value true through output value.
 
 No function operand; instance type: Boolean. Constants/controls supply a value; indicators consume it.
+
+</details>
 
 ## IN — inputs
 
@@ -48,10 +61,17 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The Runtime artifact builder currently treats the catalog entry as a function with no provider.
 - Define an editor-to-NodeKind::Constant lowering or another explicit literal projection.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -61,6 +81,12 @@ A default is shown only for an input with an explicitly documented value. Previe
 | OUTPUT | `value` | `bool` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [True Constant — direct indicator](../../examples/boolean.true_constant.direct_indicator.md) — The Studio node stores and exposes the fixed Boolean value true through output value. (`execution`, `studio-draft`).
 
 ## Identity and references
 

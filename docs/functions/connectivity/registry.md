@@ -24,6 +24,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Write Registry Value Simple.vi](registry/write_value_simple.md) | Writes string/binary or U32 DWORD data to a named registry value using the verified write connector. |
 | [Delete Registry Value.vi](registry/delete_value.md) | Deletes the named value under the open registry key and forwards that key reference. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.registry`.

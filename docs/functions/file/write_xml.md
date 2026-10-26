@@ -84,9 +84,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.write_xml`.
+- Parent palette: [XML](xml.md).
 - Profile: `frog.studio.palette.file.write_xml.v1`.
 - Definition: `frog.studio.file.write_xml`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/vi-lib/utility/xml-llb/write-to-xml-file-string-vi.html).

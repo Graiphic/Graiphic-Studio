@@ -1,5 +1,7 @@
 # Widgets
 
+See [Tab Controls](tab-controls.md) for pages of independent widgets, and [Type Definitions](../interface/type-definitions.md) for shared schemas across documents.
+
 Choose a Control to supply a value, an Indicator to display a result, or a
 visual element to explain the interface. The Widget Navigator places them on
 the Front Panel and projects participating values into typed Diagram terminals.

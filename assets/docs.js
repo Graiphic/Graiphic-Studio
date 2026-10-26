@@ -23,13 +23,16 @@
   function routeHref(path) { return '#/' + path.replace(/^\//, '').replace(/\.md$/, ''); }
   function normalize(value) { return String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
   function currentPath() { return window.location.hash.split('?')[0].replace(/^#\//, '').replace(/\.md$/, '') || 'docs/index'; }
-  Promise.all([fetchText('docs/functions/catalog.json'), fetchText('_sidebar.md')]).then(function (resources) {
+  Promise.all([fetchText('docs/functions/catalog.json'), fetchText('_sidebar.md'), fetchText('assets/examples/index.v1.json').then(JSON.parse).catch(function () { return {examples:[]}; })]).then(function (resources) {
     var data = JSON.parse(resources[0]);
     families = data.families || [];
     catalog = (data.entries || []).map(function (entry) {
       return {id:entry.catalog_id, title:entry.title_en, titleFr:entry.title_fr, family:entry.family, familyId:entry.family_id, path:entry.route, description:entry.summary, aliases:entry.aliases || [], connectors:entry.connector_names || []};
     });
     searchEntries = catalog.slice();
+    (resources[2].examples || []).forEach(function (entry) {
+      searchEntries.push({id:entry.id, title:entry.title, family:'Example · ' + entry.family, path:'docs/examples/' + entry.id + '.md', description:entry.summary + ' ' + entry.description, aliases:entry.catalog_ids || [], connectors:[]});
+    });
     var seen = new Set(searchEntries.map(function (entry) { return entry.path; }));
     var re = /\[([^\]]+)\]\((\/docs\/[^)]+\.md)\)/g, match;
     while ((match = re.exec(resources[1]))) {
@@ -51,7 +54,7 @@
     var results = searchEntries.filter(function (entry) { return terms.every(function (term) { return entry.searchText.includes(term); }); });
     function score(entry) { var title = normalize(entry.title); return title === query ? 0 : title.startsWith(query) ? 1 : title.includes(query) ? 2 : 3; }
     results.sort(function (a, b) { return score(a) - score(b) || a.title.localeCompare(b.title); });
-    status.textContent = results.length ? results.length + ' results' + (results.length > 40 ? ' · first 40 shown; refine your search' : '') : 'No matching function or guide.';
+    status.textContent = results.length ? results.length + ' results' + (results.length > 40 ? ' · first 40 shown; refine your search' : '') : 'No matching function, example or guide.';
     results.slice(0, 40).forEach(function (entry) {
       var item = document.createElement('li'), link = document.createElement('a'), family = document.createElement('small');
       link.href = routeHref(entry.path); link.append(document.createTextNode(entry.title)); family.textContent = entry.family || 'Function reference'; link.append(family); item.append(link); list.append(item);
@@ -66,7 +69,7 @@
     }
     if (!document.getElementById('docs-search-input')) {
       var search = document.createElement('div'); search.className = 'docs-search';
-      search.innerHTML = '<label for="docs-search-input">Search functions and guides</label><input id="docs-search-input" type="search" placeholder="Name, terminal, type…" autocomplete="off" aria-controls="docs-search-results"><div id="docs-search-status" class="search-status" role="status"></div><ul id="docs-search-results" class="search-results" hidden></ul>';
+      search.innerHTML = '<label for="docs-search-input">Search functions, examples and guides</label><input id="docs-search-input" type="search" placeholder="Name, terminal, type…" autocomplete="off" aria-controls="docs-search-results"><div id="docs-search-status" class="search-status" role="status"></div><ul id="docs-search-results" class="search-results" hidden></ul>';
       sidebar.insertBefore(search, sidebar.querySelector('.sidebar-nav'));
       var input = search.querySelector('input'); input.addEventListener('input', refreshSearch);
       input.addEventListener('keydown', function (event) {
@@ -99,6 +102,7 @@
       var family = entry && families.find(function (item) { return item.id === entry.familyId; });
       if (family) parts.push({title:family.name, path:family.route});
     }
+    if (currentPath().startsWith('docs/examples')) parts.push({title:'Examples', path:'docs/examples/index.md'});
     var heading = article.querySelector('h1');
     parts.forEach(function (part) { var a = document.createElement('a'); a.href = routeHref(part.path); a.textContent = part.title; breadcrumb.append(a, document.createTextNode(' / ')); });
     var label = document.createElement('span'); label.textContent = heading ? heading.textContent : 'User guide'; label.setAttribute('aria-current', 'page'); breadcrumb.append(label); article.prepend(breadcrumb);
@@ -115,7 +119,7 @@
     name:'Graiphic Studio', repo:'Graiphic/Graiphic-Studio', homepage:'docs/index.md', loadSidebar:true, loadNavbar:true, auto2top:true, relativePath:true, subMaxLevel:0, maxLevel:3,
     alias:{'/.*/_sidebar.md':'/_sidebar.md', '/.*/_navbar.md':'/_navbar.md'},
     plugins:[function (hook) {
-      hook.afterEach(function (html, next) { next(html.replace(/src="(?:[^"]*\/)?assets\//g, 'src="' + base.pathname + 'assets/')); });
+      hook.afterEach(function (html, next) { next(html.replace(/src="(?:[^"]*\/)?assets\//g, 'src="' + base.pathname + 'assets/').replace(/href="(?:[^"]*\/)?assets\/examples\//g, 'href="' + base.pathname + 'assets/examples/')); });
       hook.doneEach(function () { installNavigation(); updateReadingTools(); });
     }]
   };

@@ -7,10 +7,16 @@
 
 Places the natural logarithm of two on the diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](ln_two.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Ln 2**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place le logarithme naturel de deux sur le diagramme. [Types] Aucune entrée ; sortie constante numérique réelle (DBL par défaut dans Studio).
 
@@ -20,9 +26,16 @@ Place le logarithme naturel de deux sur le diagramme. [Types] Aucune entrée ; s
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Emits the fixed f64 value currently catalogued by Studio.
 
 No input; one real numeric constant output (Studio default DBL).
+
+</details>
 
 ## IN — inputs
 
@@ -56,10 +69,17 @@ no inputs
 
 Studio materializes the catalogued value, but no function provider or portable lowering contract is declared.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No public FROG primitive identity or machine-readable function manifest exists.
 - Portable Runtime lowering is not defined.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -69,6 +89,12 @@ Studio materializes the catalogued value, but no function provider or portable l
 | OUTPUT | `value` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Ln 2 — value and persistence](../../../examples/numeric.other_constants.ln_two.value_and_persistence.md) — Emits the fixed f64 value currently catalogued by Studio. (`execution`, `studio-draft`).
 
 ## Identity and references
 

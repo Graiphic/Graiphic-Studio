@@ -83,9 +83,17 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Read Text : refuser un chemin relatif sans base explicite](../../examples/file.read.relative_path_rejected.md) — Read Text : refuser un chemin relatif sans base explicite (`execution`, `studio-draft`).
+- [Read Text : conserver l'erreur amont sans accès disque](../../examples/file.read.upstream_error.md) — Read Text : conserver l'erreur amont sans accès disque (`execution`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `file.text_read`.
+- Parent palette: [Text](text.md).
 - Profile: `frog.studio.palette.file.text_read.v1`.
 - Definition: `frog.studio.file.text_read`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/read-from-text-file.html).

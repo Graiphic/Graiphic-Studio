@@ -20,7 +20,7 @@ R (sortie supérieure) est le reste : x - y * floor(x/y). IQ (sortie inférieure
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Numeric x,y (scalars/arrays/clusters) -&gt; integer-valued quotient and remainder in promoted numeric structure.
+Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. Persistent historical output id quotient is remainder (R), id remainder is integer quotient (IQ); IDs are retained so saved wires stay attached. Integer y=0 yields q=0,r=x; signed minimum/-1 wraps quotient at the declared integer width, remainder=0. Float zero follows IEEE Infinity/NaN.
 
 Numeric x,y (scalars/arrays/clusters) -&gt; upper R = x - y * floor(x/y), lower IQ = floor(x/y), in promoted numeric structure. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
@@ -48,7 +48,7 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 ## Types and connection rules
 
-Numeric x,y (scalars/arrays/clusters) -&gt; integer-valued quotient and remainder in promoted numeric structure.
+Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. Persistent historical output id quotient is remainder (R), id remainder is integer quotient (IQ); IDs are retained so saved wires stay attached. Integer y=0 yields q=0,r=x; signed minimum/-1 wraps quotient at the declared integer width, remainder=0. Float zero follows IEEE Infinity/NaN.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -81,11 +81,22 @@ Numeric x,y (scalars/arrays/clusters) -&gt; integer-valued quotient and remainde
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Quotient &amp; Remainder — signed x7 y3](../../examples/numeric.quotient_remainder.signed_x7_y3.md) — Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. (`execution`, `studio-draft`).
+- [Quotient &amp; Remainder — signed xneg7 y3](../../examples/numeric.quotient_remainder.signed_xneg7_y3.md) — Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. (`execution`, `studio-draft`).
+- [Quotient &amp; Remainder — signed x7 yneg3](../../examples/numeric.quotient_remainder.signed_x7_yneg3.md) — Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. (`execution`, `studio-draft`).
+- [Quotient &amp; Remainder — signed xneg7 yneg3](../../examples/numeric.quotient_remainder.signed_xneg7_yneg3.md) — Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. (`execution`, `studio-draft`).
+- [Quotient &amp; Remainder — signed x7 y0](../../examples/numeric.quotient_remainder.signed_x7_y0.md) — Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. (`execution`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.quotient_remainder`.
 - Profile: `frog.studio.polymorphic.numeric.quotient_remainder.v1`.
 - Definition: `frog.studio.numeric.quotient_remainder`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-nxg-nodes-api-ref/page/quotient-and-remainder.html).
+- [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/quotient-remainder.html).
 
 NI links are reference sources for the connector model; Studio support is limited to the profile above. [Reference provenance and notation](../index.md#provenance-and-notation).

@@ -62,6 +62,12 @@ Provider identity is retained from Studio. Executability must be established by 
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Conditional Disable : symbole sauvegardé et branches conservées](../../examples/structure.conditional_disable.saved_symbol.md) — Conditional Disable : symbole sauvegardé et branches conservées (`persistence`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `structures.conditional_disable_structure`.

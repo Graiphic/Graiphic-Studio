@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #aab4c0;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #f8fafc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-3, .cls-2 {
+        stroke: #4b5563;
+      }
+
+      .cls-4 {
+        fill: #fffffe;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #4b5563;
+      }
+
+      .cls-2 {
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect class="cls-3" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <path class="cls-5" d="M6.45,32.36h34.9c1.46,0,2.64,1.18,2.64,2.64v9.14H3.81v-9.14c0-1.46,1.18-2.64,2.64-2.64Z" transform="translate(47.8 76.51) rotate(-180)"/>
+      </g>
+      <line class="cls-1" x1="23.17" y1="2.93" x2="23.17" y2="31.52"/>
+      <line class="cls-1" x1="43.26" y1="17.23" x2="3.08" y2="17.23"/>
+      <path class="cls-2" d="M9.79,29.5c21.84,0,9.91-25.36,25.63-25.36"/>
+      <text class="cls-4" transform="translate(9.35 41.33)"><tspan x="0" y="0">ASINH</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -7,10 +7,16 @@
 
 Returns the greater and lesser of the numeric inputs.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](max_min.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Maximum et minimum**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Renvoie la plus grande et la plus petite des entrees numeriques. [Types] x,y comparables compatibles -&gt; max et min du type commun, y compris agrégats. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
 
@@ -20,9 +26,16 @@ Renvoie la plus grande et la plus petite des entrees numeriques. [Types] x,y com
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Compatible comparable x,y -&gt; max and min of their common type, including aggregates.
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+Compatible comparable x,y -&gt; max/min of the common type. In Compare Elements, a single NaN selects the non-NaN value at both outputs; two NaNs remain NaN. The current exact scalar native authored profile is frog.studio.scalar.maxmin.nan-aware.v2; equality and two NaNs retain x bits. Explicit persisted exact.v1 remains historical and chooses x for unordered comparisons.
 
 Compatible comparable x,y -&gt; max and min of their common type, including aggregates. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+</details>
 
 ## IN — inputs
 
@@ -44,7 +57,7 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 ## Types and connection rules
 
-Compatible comparable x,y -&gt; max and min of their common type, including aggregates.
+Compatible comparable x,y -&gt; max/min of the common type. In Compare Elements, a single NaN selects the non-NaN value at both outputs; two NaNs remain NaN. The current exact scalar native authored profile is frog.studio.scalar.maxmin.nan-aware.v2; equality and two NaNs retain x bits. Explicit persisted exact.v1 remains historical and chooses x for unordered comparisons.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -58,10 +71,25 @@ Compatible comparable x,y -&gt; max and min of their common type, including aggr
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.scalar.maxmin.nan-aware.v2`.
+
+Required provider: `frog.studio.scalar-maxmin.nan-aware@2`.
+
+Real LLVM/Reference scalar selection requires exact i32/u32/i64/u64/f64. Aggregate overloads remain a separate capability. Historical exact.v1 is still admitted explicitly.
+
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -77,11 +105,35 @@ Compatible comparable x,y -&gt; max and min of their common type, including aggr
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Max &amp; Min — ascending i32](../../examples/numeric.max_min.ascending_i32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — descending i32](../../examples/numeric.max_min.descending_i32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — ascending u32](../../examples/numeric.max_min.ascending_u32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — descending u32](../../examples/numeric.max_min.descending_u32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — ascending i64](../../examples/numeric.max_min.ascending_i64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — descending i64](../../examples/numeric.max_min.descending_i64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — ascending u64](../../examples/numeric.max_min.ascending_u64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — descending u64](../../examples/numeric.max_min.descending_u64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — ascending f64](../../examples/numeric.max_min.ascending_f64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — descending f64](../../examples/numeric.max_min.descending_f64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — bounds i32](../../examples/numeric.max_min.bounds_i32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — bounds u32](../../examples/numeric.max_min.bounds_u32.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — bounds i64](../../examples/numeric.max_min.bounds_i64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — bounds u64](../../examples/numeric.max_min.bounds_u64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — bounds f64](../../examples/numeric.max_min.bounds_f64.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan x](../../examples/numeric.max_min.nan_x.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan y](../../examples/numeric.max_min.nan_y.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan both](../../examples/numeric.max_min.nan_both.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.max_min`.
 - Profile: `frog.studio.polymorphic.numeric.max_min.v1`.
 - Definition: `frog.studio.numeric.max_min`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-nxg-nodes-api-ref/page/max-and-min.html).
+- [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/max-min.html).
 
 NI links are reference sources for the connector model; Studio support is limited to the profile above. [Reference provenance and notation](../index.md#provenance-and-notation).

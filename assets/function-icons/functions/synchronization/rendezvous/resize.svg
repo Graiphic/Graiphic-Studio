@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-provisional="rendezvous-resize">
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#30343b" stroke="#aab4c0" stroke-width="2"/>
+  <g fill="none" stroke="#f8fafc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m11 7 9 9m18-9-9 9m9 18-9-9"/><path d="M15 16h5v-5m9 0v5h5m-5 14v-5h5"/><circle cx="24.5" cy="20.5" r="3" fill="#f8fafc"/>
+    <path d="M6 35h16m-12-4-4 4 4 4m8-8 4 4-4 4" stroke="#82c7f5" stroke-width="2"/>
+  </g>
+</svg>

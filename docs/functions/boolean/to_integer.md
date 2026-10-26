@@ -70,6 +70,10 @@ Boolean scalar/array/cluster -&gt; same structure with I16 leaves (0 or 1).
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `boolean.to_integer`.

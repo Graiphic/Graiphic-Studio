@@ -2,7 +2,7 @@
 
 [All functions](../index.md)
 
-32 operations or editor elements; 1 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
+32 operations or editor elements; 5 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
 
 ## Operations and editor elements
 
@@ -45,4 +45,8 @@
 
 | Entry | Purpose |
 | --- | --- |
-| [File References](references.md) | Auxiliary operations to open and close typed file references. No SVG was supplied for these additional lifetime operations. |
+| [CSV](csv.md) | Delimited spreadsheet file operations. Moving them here does not change their separator or format options. |
+| [Operation](operation.md) | Other existing File operations, including opening and closing typed file references. Their operator identities and saved nodes are unchanged. |
+| [Path](path.md) | Second access to the complete shared Path palette. Both locations use the same operations, constants, resources and types. |
+| [Text](text.md) | Existing text-file read and write operations, with unchanged connectors and behavior. |
+| [XML](xml.md) | Existing XML flattening, unflattening, file write and file read operations. |

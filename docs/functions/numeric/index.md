@@ -85,11 +85,11 @@
 | [Rotate](data_manipulation/rotate.md) | Rotates the bits by the requested amount. |
 | [Rotate Left With Carry](data_manipulation/rotate_left_with_carry.md) | Rotates the bits left while including the carry bit. |
 | [Rotate Right With Carry](data_manipulation/rotate_right_with_carry.md) | Rotates the bits right while including the carry bit. |
-| [Round To Nearest](round_nearest.md) | Rounds the input to the nearest integer. |
+| [Round To Nearest](round_nearest.md) | Rounds the input to the nearest integer, with ties to the even integer: 2.5 becomes 2 and 3.5 becomes 4. |
 | [Round Toward +Infinity](round_positive_infinity.md) | Rounds the input upward to the nearest integer. |
 | [Round Toward -Infinity](round_negative_infinity.md) | Rounds the input downward to the nearest integer. |
 | [Rydberg Constant](other_constants/rydberg.md) | Places the Rydberg constant on the diagram. |
-| [Scale By Power Of 2](scale_power_two.md) | Multiplies the input by two raised to the supplied exponent. |
+| [Scale By Power Of 2](scale_power_two.md) | Multiplies x by 2 raised to n. |
 | [Sign](sign.md) | Returns a value that identifies the sign of the input. |
 | [Speed of Light](other_constants/speed_of_light.md) | Places the speed of light in vacuum on the diagram. |
 | [Split Number](data_manipulation/split_number.md) | Splits a numeric value into lower and upper parts. |

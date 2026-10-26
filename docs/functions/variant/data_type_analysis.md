@@ -37,6 +37,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Disconnect G Types](data_type_analysis/disconnect_g_types.md) | Data Type Analysis palette entry. Artwork is available; ports and execution are not defined yet. |
 | [Is Error Cluster](data_type_analysis/is_error_cluster.md) | Data Type Analysis palette entry. Artwork is available; ports and execution are not defined yet. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `variant.data_type_analysis`.

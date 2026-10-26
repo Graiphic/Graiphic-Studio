@@ -7,10 +7,16 @@
 
 Expandable inputs are checked from top to bottom: first error, otherwise first warning, otherwise no error. This is not Multiplex Errors.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](retain_first.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Retenir la première erreur**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Les entrées déroulables sont examinées de haut en bas : première erreur, sinon première mise en garde, sinon aucune erreur. Cette sélection n’est pas Combiner les erreurs. [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
 
@@ -20,7 +26,14 @@ Les entrées déroulables sont examinées de haut en bas : première erreur, sin
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
 
 ## IN — inputs
 
@@ -61,9 +74,16 @@ Scope: `requires_explicit_target_capability`.
 
 Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Runtime execution is not implemented by this authoring profile.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -75,6 +95,13 @@ Authoring only; no error propagation, dialog, code lookup or execution provider 
 | OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Retain First Error : une erreur prime sur un warning](../../examples/error.retain_first.error_before_warning.md) — Retain First Error : une erreur prime sur un warning (`execution`, `studio-draft`).
+- [Retain First : conserver le premier avertissement en l'absence d'erreur](../../examples/error.retain_first.warning_priority.md) — Retain First : conserver le premier avertissement en l'absence d'erreur (`execution`, `studio-draft`).
 
 ## Identity and references
 

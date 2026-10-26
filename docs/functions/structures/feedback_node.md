@@ -20,6 +20,8 @@ Place le glyphe Noeud de retroaction sur le diagramme. [Types] Valeur:T, initial
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+Typed previous-state read and future-state commit, bounded execution-count Delay, explicit initialization scope and Boolean Enable. Historical connector identities are preserved; History is an explicit sequence of T, including when T is itself an Array. Local FROG contract, not a published NI compatibility claim.
+
 Value:T, initializer:T, enable:Boolean -&gt; previous T, preserving all schema/rank information.
 
 ## IN — inputs
@@ -54,15 +56,17 @@ Only the declared port expressions and connection policies are defined by this S
 
 ## Execution and limits
 
-**Public FROG / target Runtime:** not declared available by this authoring contract.
+**Public FROG / target Runtime:** declared available within the scope below.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.structures.feedback_node`.
+
+Native structured lowering requires frog.studio.feedback@1, the instance temporal-state service, an admitted exact value carrier and Delay1..128. No Identity-simulation fallback. Configuration and target admission remain authoritative.
 
 **Authoring/target contract limits:**
 
-- The complete public execution semantics and target support for this legacy Studio profile have not been established.
+- This is a local FROG transition contract; exact NI Enable transitions and unsupported target/deployment capabilities are not certified.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -76,10 +80,14 @@ Provider identity is retained from Studio. Executability must be established by 
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `structures.feedback_node`.
-- Profile: `frog.studio.legacy.structures.feedback_node.v1`.
+- Profile: `frog.studio.feedback.v1`.
 - Definition: `frog.studio.structures.feedback_node`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-nxg-nodes-api-ref/page/feedback-node-forward-with-enable.html).
 

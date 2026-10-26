@@ -73,6 +73,10 @@ Integer scalar/array/cluster -&gt; high and low unsigned halves, preserving stru
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation.split_number`.

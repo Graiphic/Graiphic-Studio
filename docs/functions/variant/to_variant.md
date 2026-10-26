@@ -5,14 +5,20 @@
 
 [Variant functions](index.md) · [All functions](../index.md)
 
-Diagram node for To Variant. Ports are available for authoring; execution requires target support.
+Local Studio Play/Highlight wraps one immutable exact typed value in a Variant envelope. Arrays retain rank and dimensions, clusters retain field identities, and I128/U128 lexical payloads remain exact; there is no conversion to the ODE f64 state profile. Boxing a Variant deliberately adds one nesting level. Common value placement limits remain active. No external Variant backend, attributes or serialization are implied. Public FROG/LLVM target support is not declared.
+
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](to_variant.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **En variant**
 
-Noeud de diagramme : En variant. Ports disponibles pour l'edition ; execution selon le moteur cible. [Types] Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
+
+Play/Highlight local enveloppe une valeur typée immuable exacte dans un Variant. Les tableaux gardent rang et dimensions, les clusters leurs identifiants de champs, les I128/U128 leur représentation lexicale exacte, sans conversion vers le profil f64 des états EDO. Boxer un Variant ajoute explicitement un niveau. Les limites communes de placement des valeurs restent actives. Aucun backend Variant externe, attribut ou format de sérialisation n’est annoncé. Aucun support cible public FROG/LLVM n’est déclaré. [Types] Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
 
 </details>
 
@@ -20,9 +26,14 @@ Noeud de diagramme : En variant. Ports disponibles pour l'edition ; execution se
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Studio authoring ports for variant.to_variant.
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
 
 Any data T -&gt; Variant; contained T does not change the Variant wire type.
+
+</details>
 
 ## IN — inputs
 
@@ -42,11 +53,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 ## Types and connection rules
 
+Local Studio Play/Highlight wraps one immutable exact typed value in a Variant envelope. Arrays retain rank and dimensions, clusters retain field identities, and I128/U128 lexical payloads remain exact; there is no conversion to the ODE f64 state profile. Boxing a Variant deliberately adds one nesting level. Common value placement limits remain active. No external Variant backend, attributes or serialization are implied. Public FROG/LLVM target support is not declared.
+
 - Type resolution: `fixed`; result expression: `variant`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
-- Arrays: not established; lifting policy: `none`.
-
-Only the declared port expressions and connection policies are defined by this Studio profile; general array semantics remain unspecified.
+- Arrays: accepted; lifting policy: `none`.
+- Shape rule: `one_typed_payload; preserve_exact_rank_dimensions_and_ordered_fields`.
+- Scalar lifting: no.
+- Broadcasting: no.
 
 **Input count:** 1; this contract does not enable variadic inputs.
 
@@ -56,11 +70,18 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Private Studio Play/Highlight executes exact immutable Variant envelopes. This does not provide a public FROG/LLVM target provider.
+
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
 
 **Authoring/target contract limits:**
 
-- Execution requires explicit support by the active target.
+- No public FROG/LLVM target provider is declared; immutable boxing/unboxing is a private Studio Play/Highlight capability.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,6 +92,15 @@ Authoring support is not an execution capability.
 | OUTPUT | `variant` | `variant` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Variant retains an exact I64](../../examples/variant.exact-i64-roundtrip.md) — Boxing owns an immutable typed value. Variant To Data extracts one envelope only when its type specimen matches exactly; it must not route I64 through F64. (`execution`, `studio-draft`).
+- [Variant preserves an Array shape](../../examples/variant.rank2-roundtrip.md) — Boxing and unboxing retain the complete rank-two I64 Array shape and row-major values, including an integer above 2^53. The type specimen contributes its schema, not its value. (`execution`, `studio-draft`).
+- [Variant preserves a named Cluster](../../examples/variant.cluster-roundtrip.md) — The typed Variant retains the Cluster field identities and values. The same Cluster is used only as a schema witness for unboxing; it is not substituted for the payload. (`execution`, `studio-draft`).
+- [Variant type mismatch is a normal error](../../examples/variant.type-mismatch.error.md) — A boxed String cannot be extracted as I32. The result is the I32 intrinsic default and an error status; no numeric parsing or reinterpretation is attempted. Native and historical Simulation currently have distinct error codes, so this example compares the shared status and data behavior. (`execution`, `studio-draft`).
 
 ## Identity and references
 

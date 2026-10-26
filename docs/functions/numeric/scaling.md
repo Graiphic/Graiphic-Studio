@@ -27,6 +27,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Convert Thermistor Reading](scaling/convert_thermistor_reading.md) | Converts a thermistor measurement into a scaled numeric value. |
 | [Convert Thermocouple Reading](scaling/convert_thermocouple_reading.md) | Converts a thermocouple measurement into a scaled numeric value. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.scaling`.

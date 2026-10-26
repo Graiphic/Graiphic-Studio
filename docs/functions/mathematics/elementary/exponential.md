@@ -34,6 +34,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Logarithm Base 2](../../math/exponential/logarithm_base_2.md) | Computes the logarithm of x to base two. |
 | [Logarithm Base X](../../math/exponential/logarithm_base_x.md) | Computes the logarithm of value y to base x. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `mathematics.elementary.exponential`.

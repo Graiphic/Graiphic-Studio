@@ -8,14 +8,20 @@ show different parts of that document.
 
 | Format | Envelope | Purpose |
 | --- | --- | --- |
-| Studio Readable draft | `format: "frog.document.draft"`, revision 2, `frontPanel` | Current Studio authoring representation |
-| Studio Automatic/Compact draft | Private revision 3 | Opt-in compact numeric Array storage |
+| Studio Readable draft | `format: "frog.document.draft"`, `draft_revision`, `frontPanel` | Product authoring representation; revision depends on the features used |
+| Studio Automatic/Compact draft | Private numeric-storage revision | Opt-in compact numeric Array storage |
 | Public FROG Source | `spec_version`, optional `front_panel` | Published language contract and admitted profiles |
 
 The shared extension does not make these formats interchangeable. Studio has a
 separate public-source reader and preservation/transaction writer. Reading and
 preserving a file do not imply complete visual editing, semantic validation,
 lowering, or runtime support for its entire graph.
+
+Revision 2 describes the older readable baseline, not every current document.
+The example index includes revisions 2, 4, 6 and 7; linked standard Type Def
+documents use revision 8. Application version, draft revision and public Source
+version are different identities. Preserve the actual envelope rather than
+rewriting its revision to match an older documentation snapshot.
 
 The [FROG source guide](https://github.com/Graiphic/FROG/blob/main/Expression/Frog%20source%20guide.md)
 and [compatibility reference](https://github.com/Graiphic/FROG/blob/main/Expression/Source%20compatibility%20and%20profiles.md)

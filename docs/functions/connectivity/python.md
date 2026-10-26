@@ -17,6 +17,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Python Node](python/node.md) | Calls a configured Python function with extensible typed arguments and a return value determined by return type. |
 | [Close Python Session](python/close_session.md) | Closes a Python session, including when a previous node has returned an error. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.python`.

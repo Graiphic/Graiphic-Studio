@@ -48,6 +48,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Format Value](conversion/format_value.md) | Formats a value according to a format specification. |
 | [Relative Path To Portable String](conversion/relative_path_to_portable_string.md) | Converts a relative path to a portable string. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `string.conversion`.

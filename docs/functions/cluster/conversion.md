@@ -25,6 +25,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Cluster To Array](conversion/cluster_to_array.md) | Diagram node for converting a cluster to an array. Ports are available for authoring; execution requires target support. |
 | [Array To Cluster](conversion/array_to_cluster.md) | Diagram node for converting an array to a cluster. Ports are available for authoring; execution requires target support. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `cluster.conversion`.

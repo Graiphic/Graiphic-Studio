@@ -75,6 +75,10 @@ Scalar lower,upper -&gt; scalar result; NI has distinct DBL, I64 and U64 instanc
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.random_range`.

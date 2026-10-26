@@ -77,9 +77,16 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [File Exists : le chemin vide désigne la liste des lecteurs Windows](../../examples/file.exists.empty_drive_list.md) — File Exists : le chemin vide désigne la liste des lecteurs Windows (`execution`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `file.exists`.
+- Parent palette: [Operation](operation.md).
 - Profile: `frog.studio.palette.file.exists.v1`.
 - Definition: `frog.studio.file.exists`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/vi-lib/utility/libraryn-llb/check-if-file-or-folder-exists-vi.html).

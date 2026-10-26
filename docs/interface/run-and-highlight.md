@@ -1,8 +1,10 @@
 # Run and Highlight
 
-Studio can run graphs admitted by its **private local simulation**. Run starts
-the session; Highlight makes that session's execution visible. This path is
-separate from compiling public FROG Source for a target runtime.
+Normal **Run** uses the admitted **native** program/session path. Highlight
+shows that session's execution; it is not a separate calculation engine.
+**Simulation** remains an explicitly selected private mode for the profiles
+that name it. It is not a silent fallback for unsupported native operations.
+Studio Draft admission and public FROG Source lowering remain distinct.
 
 ## Start and stop
 
@@ -41,15 +43,19 @@ source/indicator widgets are unavailable at runtime. See
 
 ## Public execution and advanced services
 
-The public native Numeric F64/Add corridor and the separately admitted SDK
-Event/Unbundle path have their own contracts. Their existence does not provide
-a general runtime for every Studio authoring object.
+Native coverage extends beyond the earlier F64/Add corridor to selected exact
+integer and owned-value operations, structures and providers. The dated corpus
+checkpoint records Native Fast and Native Debug cases separately from explicit
+Simulation, expected errors, stops and persistence-only checks.
 
-Reference menus, types, and authoring services are available in their documented
-scope. Generic Property/Invoke nodes still lack a graph executor. .NET,
-advanced Events, Matrix collections, and other families retain the limits
-listed on their reference pages. Queue has no public Source/lowering/target
-runtime contract in this checkpoint.
+Selected real-target Property/Invoke operations have measured profiles; this
+does not admit every property, method or host action. File and dynamic-event
+examples in the dated corpus use explicit Simulation. .NET and other advanced
+providers keep their operation-specific limits. Queue's private execution
+provider does not establish a general public Source/lowering/target contract.
+
+For a standalone application, open [Build](build.md) with the hammer button.
+Run success does not bypass Build's toolchain, provider or presentation checks.
 
 Read [current capabilities and limits](../reference/development-checkpoint.md)
 before relying on a workflow beyond local authoring.

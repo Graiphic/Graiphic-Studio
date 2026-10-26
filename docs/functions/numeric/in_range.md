@@ -79,6 +79,10 @@ Comparable x,lower,upper -&gt; coerced value of common type; Boolean in-range re
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.in_range`.

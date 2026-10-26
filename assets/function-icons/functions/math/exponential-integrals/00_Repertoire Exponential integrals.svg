@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.5 40.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Fonction_elliptique_et_parabolique" data-name="Fonction elliptique et parabolique">
+    <g id="Calque_1-2" data-name="Calque 1-2">
+      <g>
+        <polyline class="cls-1" points="40.5 40 .5 40 .5 0"/>
+        <path class="cls-1" d="M.98,11.4c4,25.69,18.33,27.62,38.93,28.19"/>
+        <path class="cls-1" d="M3.31,2.14c3.03,25.7,11.76,36.18,36.61,37.46"/>
+        <path class="cls-1" d="M10.49,2.14c.3,25.28,7.45,33.96,29.43,37.46"/>
+      </g>
+    </g>
+  </g>
+</svg>

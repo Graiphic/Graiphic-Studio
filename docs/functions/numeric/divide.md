@@ -7,10 +7,16 @@
 
 Divides the first numeric input by the second.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](divide.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Diviser**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Divise la premiere entree numerique par la seconde. [Types] Scalaires numériques, tableaux et clusters numériques : opération élément par élément, formes compatibles et promotion numérique. Deux feuilles entières donnent DBL ; les flottants/complexes utilisent leur représentation commune. Studio: Studio n’implémente pas le remplacement des nœuds NI de waveform ou de données dynamiques, les unités physiques ni les longueurs de mot configurables en virgule fixe.
 
@@ -20,9 +26,16 @@ Divise la premiere entree numerique par la seconde. [Types] Scalaires numérique
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. Two integer leaves yield DBL; floating/complex leaves use their common representation.
 
 Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. Two integer leaves yield DBL; floating/complex leaves use their common representation. Studio: Studio does not implement NI waveform/dynamic-data node replacement, physical units or configurable fixed-point word lengths.
+
+</details>
 
 ## IN — inputs
 
@@ -61,10 +74,17 @@ Implementation: `frog.core.div`.
 
 Portable Runtime scalar execution is present.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - Studio does not implement NI waveform/dynamic-data node replacement, physical units or configurable fixed-point word lengths.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -80,6 +100,19 @@ Local arithmetic includes F32/F64 and supported integer leaves, scalar lifting a
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Divide — scalar i32](../../examples/numeric.divide.scalar_i32.md) — Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. (`execution`, `studio-draft`).
+- [Divide — scalar u32](../../examples/numeric.divide.scalar_u32.md) — Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. (`execution`, `studio-draft`).
+- [Divide — scalar i64](../../examples/numeric.divide.scalar_i64.md) — Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. (`execution`, `studio-draft`).
+- [Divide — scalar u64](../../examples/numeric.divide.scalar_u64.md) — Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. (`execution`, `studio-draft`).
+- [Divide — scalar f64](../../examples/numeric.divide.scalar_f64.md) — Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan x](../../examples/numeric.max_min.nan_x.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan y](../../examples/numeric.max_min.nan_y.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
+- [Max &amp; Min — nan both](../../examples/numeric.max_min.nan_both.md) — Compatible comparable x,y -&gt; max/min of the common type. (`execution`, `studio-draft`).
 
 ## Identity and references
 

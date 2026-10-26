@@ -22,6 +22,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 
 No direct child operation is declared in the current catalogue snapshot. Browse the family reference for the entries that are available.
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `mathematics.fitting`.

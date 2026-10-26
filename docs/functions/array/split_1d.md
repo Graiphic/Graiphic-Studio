@@ -7,10 +7,16 @@
 
 Splits a one-dimensional array at an index.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](split_1d.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Diviser un tableau 1D**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Divise un tableau a une dimension a un index donne. [Types] Accepte uniquement un tableau 1D de T ; sépare ses éléments sans changer le type ni le rang. Les deux sorties restent des tableaux 1D de T. L’indice numérique réel est converti en I32.
 
@@ -20,9 +26,16 @@ Divise un tableau a une dimension a un index donne. [Types] Accepte uniquement u
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Accepts only a 1D array of any T; splits its elements without changing T or rank. Both outputs remain 1D arrays of T. The split index is a real number converted to I32.
 
 Accepts only a 1D array of any T; splits its elements without changing T or rank. Both outputs remain 1D arrays of T. The split index is a real number converted to I32.
+
+</details>
 
 ## IN — inputs
 
@@ -60,9 +73,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -75,6 +95,14 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `after` | `unknown` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Split 1D Array — middle](../../examples/array.split.middle.md) — The second array starts at the split index. Indices outside the array clamp to its ends; elements are preserved. (`execution`, `studio-draft`).
+- [Split 1D Array — negative](../../examples/array.split.negative.md) — The second array starts at the split index. Indices outside the array clamp to its ends; elements are preserved. (`execution`, `studio-draft`).
+- [Split 1D Array — past-end](../../examples/array.split.past-end.md) — The second array starts at the split index. Indices outside the array clamp to its ends; elements are preserved. (`execution`, `studio-draft`).
 
 ## Identity and references
 

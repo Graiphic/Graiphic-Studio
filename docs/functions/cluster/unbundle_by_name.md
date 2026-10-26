@@ -7,10 +7,16 @@
 
 Select a Cluster field in each extensible row. Missing names break validation. Runtime requires aggregate target support.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](unbundle_by_name.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Désassembler par nom**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Choisissez un champ du Cluster dans chaque ligne extensible. Un nom absent invalide le nœud. Exécution selon le support des agrégats par la cible. [Types] Cluster obligatoire -&gt; champs choisis par nom, avec leurs types exacts. Le réordonnancement conserve les choix ; noms absents ou ambigus invalides.
 
@@ -20,9 +26,16 @@ Choisissez un champ du Cluster dans chaque ligne extensible. Un nom absent inval
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Extracts selected nominal fields of a required input Cluster. Repeated output rows have the exact selected field types. Reordering does not change selections; missing or ambiguous names invalidate the node.
 
 Required Cluster -&gt; selected fields by name, with their exact types. Reordering preserves selections; missing or ambiguous names are invalid.
+
+</details>
 
 ## IN — inputs
 
@@ -58,9 +71,16 @@ Scope: `requires_explicit_target_capability`.
 
 Authoring support is not an execution capability.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Execution requires explicit support by the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,6 +91,13 @@ Authoring support is not an execution capability.
 | OUTPUT | `element1` | `unknown` | `any_explicit` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Read a nested field by stable identity](../../examples/cluster.unbundle-by-name.nested.md) — The displayed Config.Offset path resolves the stable IDs config-id / offset-id. Unrelated fields are not read or rebuilt. (`execution`, `studio-draft`).
+- [Replace one nested Cluster field](../../examples/cluster.bundle-by-name.replace-nested.md) — Replacing Config.Offset preserves the nested Name and outer Enabled fields. The selection uses persistent field identities, independently from their displayed names. (`execution`, `studio-draft`).
 
 ## Identity and references
 

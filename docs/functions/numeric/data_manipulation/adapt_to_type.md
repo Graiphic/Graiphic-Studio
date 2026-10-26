@@ -73,6 +73,10 @@ x:any + type:T -&gt; T; reinterpretation requires compatible flattened layout.
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation.adapt_to_type`.

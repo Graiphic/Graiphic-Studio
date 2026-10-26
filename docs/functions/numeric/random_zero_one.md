@@ -68,6 +68,10 @@ No inputs -&gt; scalar DBL in [0,1).
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.random_zero_one`.

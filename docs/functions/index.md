@@ -9,17 +9,19 @@ Use the documentation search for an English or French helper title, a catalogue 
 | [Application Control](applicationcontrol/index.md) | 4 | 0 |
 | [Array](array/overview.md) | 58 | 4 |
 | [Boolean](boolean/index.md) | 16 | 0 |
-| [Cluster](cluster/index.md) | 9 | 1 |
+| [Cluster](cluster/index.md) | 11 | 1 |
+| [Collection](collection/index.md) | 22 | 2 |
 | [Comparison](comparison/index.md) | 19 | 0 |
-| [Connectivity](connectivity/index.md) | 130 | 20 |
+| [Connectivity](connectivity/index.md) | 47 | 6 |
+| [DialogUserInterface](dialoguserinterface/index.md) | 6 | 1 |
 | [Error](error/index.md) | 24 | 0 |
-| [File](file/index.md) | 32 | 1 |
-| [Mathematics](mathematics/index.md) | 13 | 14 |
+| [File](file/index.md) | 32 | 5 |
+| [Mathematics](mathematics/index.md) | 172 | 28 |
 | [Numeric](numeric/index.md) | 106 | 5 |
-| [Path](path/index.md) | 19 | 0 |
+| [Path](path/index.md) | 23 | 0 |
 | [String](string/index.md) | 58 | 2 |
 | [Structures](structures/index.md) | 16 | 3 |
-| [Synchronization](synchronization/index.md) | 8 | 1 |
+| [Synchronization](synchronization/index.md) | 33 | 6 |
 | [Timestamp](timestamp/index.md) | 8 | 0 |
 | [Variant](variant/index.md) | 23 | 1 |
 
@@ -33,7 +35,7 @@ Constants, terminals and structure containers are included. Their editor-managed
 
 ## Provenance and notation
 
-This deterministic export covers **595 catalogue entries**, **543 versioned function contracts** and **52 palette folders** across **16 families**. 445 entries carry an existing context-help section. The remaining purposes come from reviewed family metadata or the versioned authoring contract.
+This deterministic export covers **742 catalogue entries**, **678 versioned function contracts** and **64 palette folders** across **18 families**. 689 entries carry an existing context-help section. The remaining purposes come from reviewed family metadata or the versioned authoring contract.
 
 The English text follows Studio help. French summaries are reproduced only where the existing helper supplies them. Missing French text, defaults, requirements or capabilities are not translated or inferred.
 
@@ -47,4 +49,8 @@ NI API links document reference semantics and connector evidence. They do not pr
 
 Regenerate with Python 3.11+: `python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine`; add `--check` for a read-only deterministic export check. This documentation check does not run application regression tests.
 
-Source snapshot SHA-256: `27dd4f98a028f3b30637714c0d761a5d03bc1e926f11a0cdee74fa1dbc5ee3c5`.
+Source snapshot SHA-256: `5aacecb1be75a8e4dbbe99e9d280891e0c47d6f8736e100a82caf4993e09c0ea`.
+
+## Actual example documents
+
+[Browse the shared example index](../examples/index.md). Each example provides its actual `.frog`, explanation, expected results and explicit backend/profile requirements. These expectations do not certify a successful native run.

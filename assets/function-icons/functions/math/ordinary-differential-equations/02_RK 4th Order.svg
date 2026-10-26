@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00bc85;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #4b5563;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        fill: #f8fafc;
+        stroke: #00bc85;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-8" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <path class="cls-1" d="M5.4.51h37c2.48,0,4.5,2.02,4.5,4.5v9.9H.9V5.01C.9,2.52,2.92.51,5.4.51Z"/>
+      <text class="cls-3" transform="translate(7.18 27.84)"><tspan x="0" y="0">Run</tspan><tspan class="cls-6" x="21.04" y="0">g</tspan><tspan class="cls-5" x="27.23" y="0">e</tspan></text>
+      <text class="cls-3" transform="translate(9.36 41.06)"><tspan class="cls-7" x="0" y="0">K</tspan><tspan x="7.24" y="0">u</tspan><tspan class="cls-4" x="14.05" y="0">tt</tspan><tspan x="22.76" y="0">a</tspan></text>
+      <g>
+        <g>
+          <path class="cls-2" d="M26.7,12.83l2.56-3.85-2.4-3.55h2.36l.76,1.19c.12.21.25.42.39.63.14.21.27.42.39.63h.06c.09-.21.19-.42.31-.64.11-.22.22-.43.31-.63l.66-1.19h2.3l-2.42,3.8,2.57,3.59h-2.36l-.85-1.22c-.14-.21-.28-.42-.42-.64-.14-.22-.29-.43-.42-.64h-.06c-.11.21-.22.42-.34.63s-.23.43-.34.65l-.73,1.22h-2.3Z"/>
+          <path class="cls-2" d="M28.11,4.58c-.32,0-.58-.11-.78-.32s-.31-.47-.31-.78.1-.56.31-.77.46-.31.78-.31.58.1.79.31c.21.2.31.46.31.77s-.1.57-.31.78c-.21.21-.47.32-.79.32ZM33.24,4.58c-.32,0-.58-.11-.79-.32s-.31-.47-.31-.78.1-.56.31-.77.47-.31.79-.31.58.1.78.31c.2.2.31.46.31.77s-.1.57-.31.78c-.2.21-.47.32-.78.32Z"/>
+        </g>
+        <g>
+          <path class="cls-2" d="M13.27,12.83l2.56-3.85-2.4-3.55h2.36l.76,1.19c.12.21.25.42.39.63.14.21.27.42.39.63h.06c.09-.21.19-.42.31-.64.11-.22.22-.43.31-.63l.66-1.19h2.3l-2.42,3.8,2.57,3.59h-2.36l-.85-1.22c-.14-.21-.28-.42-.42-.64-.14-.22-.29-.43-.42-.64h-.06c-.11.21-.22.42-.34.63s-.23.43-.34.65l-.73,1.22h-2.3Z"/>
+          <path class="cls-2" d="M17.18,4.58c-.32,0-.58-.11-.78-.32s-.31-.47-.31-.78.1-.56.31-.77.46-.31.78-.31.58.1.79.31c.21.2.31.46.31.77s-.1.57-.31.78c-.21.21-.47.32-.79.32Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

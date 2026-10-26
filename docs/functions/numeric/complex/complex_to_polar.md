@@ -73,6 +73,10 @@ Complex -&gt; Real r, theta. Numeric array/cluster structure is preserved, with 
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.complex.complex_to_polar`.

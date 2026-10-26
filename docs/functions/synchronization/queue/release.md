@@ -7,10 +7,16 @@
 
 Releases this obtained access, preserving independently obtained accesses unless force destroy is true. Forced destruction invalidates all accesses and wakes waits with errors. Cleanup also executes with an incoming error. Returns the FIFO snapshot before release and never returns a queue reference. Queue&lt;T&gt; is an execution resource reference; element is the ordinary T value. Public FROG target compilation remains unavailable.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](release.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Release Queue**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Libère cet accès obtenu, sans détruire les accès obtenus séparément. Force destroy? invalide tous les accès et réveille les attentes en erreur. Le nettoyage s'exécute aussi avec une erreur amont. Retourne le nom et le contenu FIFO avant libération ; aucune référence de file ne sort de cette fonction. Queue&lt;T&gt; est la référence de ressource ; element est la valeur ordinaire T. La compilation cible FROG reste indisponible.
 
@@ -20,7 +26,14 @@ Libère cet accès obtenu, sans détruire les accès obtenus séparément. Force
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Releases this obtained access, preserving independently obtained accesses unless force destroy is true. Forced destruction invalidates all accesses and wakes waits with errors. Cleanup also executes with an incoming error. Returns the FIFO snapshot before release and never returns a queue reference.
+
+</details>
 
 ## Queue behavior
 
@@ -68,9 +81,16 @@ Port order: `queue` → `force_destroy` → `error_in`.
 
 Private Studio Run/Highlight Queue execution is separate from public FROG lowering and target Runtime availability; no published Queue contract or target provider is claimed.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No published FROG Queue Source contract, lowering or target Runtime provider is declared.
+
+</details>
 
 **Private Studio Run/Highlight:** the local Queue execution provider implements this operation. It does not establish public FROG lowering or a target provider.
 
@@ -87,6 +107,13 @@ Private Studio Run/Highlight Queue execution is separate from public FROG loweri
 | OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Queue : enfiler, défiler et nettoyer](../../../examples/sync.queue.publish_receive.md) — Queue : enfiler, défiler et nettoyer (`execution`, `studio-draft`).
+- [Queue : capacité, Preview, perte contrôlée et Flush](../../../examples/sync.queue.bounded_preview_lossy_flush.md) — Queue : capacité, Preview, perte contrôlée et Flush (`execution`, `studio-draft`).
 
 ## Identity and references
 

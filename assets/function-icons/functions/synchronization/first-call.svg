@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-provisional="synchronization-first-call">
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#30343b" stroke="#aab4c0" stroke-width="2"/>
+  <path d="M12 17l5-4v22m-5 0h10" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27 17c0-6 10-6 10 0 0 4-5 4-5 9" fill="none" stroke="#54b948" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="33" r="1.7" fill="#54b948"/>
+</svg>

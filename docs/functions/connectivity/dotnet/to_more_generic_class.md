@@ -16,7 +16,7 @@ Contract status: **partial**. The connector below describes Studio authoring; ex
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
 | target class `target_class` | `unknown` | Recommended; NI flag unverified | Not specified | Class specifier defining the desired reference type within the documented inheritance hierarchy. |
-| reference `reference` | `ref<connectivity.dotnet.object>` | Recommended; NI flag unverified | Not specified | Object reference whose selected members are accessed; its .NET or ActiveX family is preserved. |
+| reference `reference` | `ref<connectivity.dotnet.object>` | Recommended; NI flag unverified | Not specified | Object reference whose selected members are accessed; its .NET family is preserved. |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -64,6 +64,10 @@ Authoring only; no new function runtime is implemented.
 | OUTPUT | `generic_class_reference` | `unknown` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
 
 ## Identity and references
 

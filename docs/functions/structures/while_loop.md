@@ -7,10 +7,16 @@
 
 Places a resizable post-test loop. Its movable I64 iteration and Boolean condition terminals belong to the encapsulated body diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](while_loop.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Boucle While**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place une boucle post-test redimensionnable. Ses terminaux mobiles d'iteration I64 et de condition booleenne appartiennent au diagramme encapsule. [Types] Condition booléenne ; itération i entière ; tunnels transportant T ou collectant/indexant des tableaux. Studio: Les terminaux dynamiques des structures sont gérés par le modèle de structure.
 
@@ -20,7 +26,14 @@ Place une boucle post-test redimensionnable. Ses terminaux mobiles d'iteration I
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Boolean condition; iteration integer i; tunnels transport T or collect/index arrays. Studio: Dynamic structure terminals are managed by the structure model.
+
+</details>
 
 ## IN — inputs
 
@@ -58,9 +71,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The complete public execution semantics and target support for this legacy Studio profile have not been established.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,6 +91,14 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `iteration` | `i64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [While : Stop if True exécute au moins une itération](../../examples/structure.while.stop_true_one_iteration.md) — While : Stop if True exécute au moins une itération (`execution`, `studio-draft`).
+- [While : Continue if True s'arrête sur False](../../examples/structure.while.continue_false_one_iteration.md) — While : Continue if True s'arrête sur False (`execution`, `studio-draft`).
+- [While : arrêter au troisième incrément](../../examples/structure.while.three_iterations.md) — While : arrêter au troisième incrément (`execution`, `studio-draft`).
 
 ## Identity and references
 

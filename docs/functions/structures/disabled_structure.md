@@ -62,6 +62,12 @@ Provider identity is retained from Studio. Executability must be established by 
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Diagram Disable : la branche visible n'est pas la branche active](../../examples/structure.diagram_disable.hidden_enabled.md) — Diagram Disable : la branche visible n'est pas la branche active (`persistence`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `structures.disabled_structure`.

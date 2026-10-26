@@ -5,14 +5,14 @@
 
 [Mathematics functions](index.md) · [All functions](../index.md)
 
-Reserved Mathematics folder for Script &amp; Formula. No functions have been added to this folder yet.
+Mathematical text expressions and assignments. Browse 1D &amp; 2D Evaluation; prepared scalar expressions and prepared assignment programs are distinct versioned FROG values.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Script &amp; Formula**
 
-Dossier Mathematics réservé à Script &amp; Formula. Aucune fonction n’a encore été ajoutée dans ce dossier.
+Expressions et affectations mathématiques textuelles. Le dossier1D &amp; 2D Evaluation contient les évaluateurs ; expressions scalaires préparées et programmes d’affectations préparés sont des valeurs FROG distinctes et versionnées.
 
 </details>
 
@@ -20,7 +20,13 @@ Dossier Mathematics réservé à Script &amp; Formula. Aucune fonction n’a enc
 
 This entry opens a palette folder; it is not an executable dataflow function.
 
-No direct child operation is declared in the current catalogue snapshot. Browse the family reference for the entries that are available.
+| Entry | Purpose |
+| --- | --- |
+| [1D &amp; 2D Evaluation](script_formula/evaluation_1d_2d.md) | 19 supplied operations, in exact01–08,10–20 order. The00resource is this folder only. Eval y=f(x), number09in the reference screenshot, has no supplied icon and is not added. Mathematical expressions, prepared programs, scalar/arrayevaluation, uniform/adaptive curves and2Dgrids have distinct contracts. |
+
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
 
 ## Identity and references
 

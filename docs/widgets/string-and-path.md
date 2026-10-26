@@ -11,6 +11,20 @@ without accepting input. Resize the text area and use its context menu for the
 available display, wrapping, single-line, and scrollbar options. Scrolling
 changes the view rather than the stored text.
 
+The context menu and Properties share the same four exclusive display modes:
+**Normal Display**, **\\ Codes Display**, **Password Display**, and **Hex Display**.
+Normal shows the text, Codes shows escapes, Password masks the rendering, and
+Hex displays the stored bytes. In Codes, an actual space appears as `\s`:
+`jfgghjg jgjng` is displayed as `jfgghjg\sjgjng`. Switching modes preserves the
+stored String; it does not append literal escapes to its data.
+
+**Limit to Single Line**, **Update Value while Typing**, and **Enable Wrapping**
+are independent checked options. Update while typing publishes valid drafts;
+incomplete or invalid escape sequences retain the last valid value until the
+draft becomes valid. Escape cancels the edit. Changing presentation does not
+implicitly resize the String. In an Array, element display settings are shared
+while stored cell values stay independent.
+
 **Dropdown String** exposes named text choices while retaining a String value.
 Its item configuration is separate from Enum's typed domain or Ring's numeric
 values.
@@ -38,9 +52,8 @@ Control / Create Indicator** trio. Creation makes a separate object and
 preserves the original's value and configuration; it is separate from
 **Change to Control / Indicator**. Explicit nested targets preserve their type.
 
-The latest menu changes are compiled in the 15 October checkpoint, with their
-new regression cases still unexecuted. See
-[current capabilities](../reference/development-checkpoint.md).
+See the [current capability and verification boundaries](../reference/development-checkpoint.md)
+for the dated String and neighboring property-test results.
 
 ## Related functions
 

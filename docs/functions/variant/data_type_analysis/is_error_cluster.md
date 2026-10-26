@@ -64,6 +64,10 @@ not_variadic
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `variant.data_type_analysis.is_error_cluster`.

@@ -7,10 +7,16 @@
 
 Places a resizable Boolean Case Structure with True and False cases on the Diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](case_structure.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Structure Condition**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place sur le diagramme une Structure Condition booleenne redimensionnable avec les cas Vrai et Faux. [Types] Sélecteur booléen, entier, enum, String ou erreur ; types des tunnels compatibles entre cas. Studio: Le domaine du sélecteur de Studio est défini par le contrat de la structure Case ; toutes les surcharges de sélecteur de NI ne sont pas implémentées.
 
@@ -20,7 +26,14 @@ Place sur le diagramme une Structure Condition booleenne redimensionnable avec l
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Boolean, integer, enum, String or error selector; data tunnels require compatible types across cases. Studio: Studio selector domain is defined by its Case contract; not every NI selector overload is implemented.
+
+</details>
 
 ## IN — inputs
 
@@ -58,9 +71,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The complete public execution semantics and target support for this legacy Studio profile have not been established.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,6 +91,18 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `selected_case` | `bool` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Case bool : sélection exacte et tunnels](../../examples/structure.case.bool.true.md) — Case bool : sélection exacte et tunnels (`execution`, `studio-draft`).
+- [Case bool : branche alternative](../../examples/structure.case.bool.false.md) — Case bool : branche alternative (`execution`, `studio-draft`).
+- [Case i64 : sélection exacte et tunnels](../../examples/structure.case.i64.exact.md) — Case i64 : sélection exacte et tunnels (`execution`, `studio-draft`).
+- [Case u64 : sélection exacte et tunnels](../../examples/structure.case.u64.exact.md) — Case u64 : sélection exacte et tunnels (`execution`, `studio-draft`).
+- [Case string : sélection exacte et tunnels](../../examples/structure.case.string.exact.md) — Case string : sélection exacte et tunnels (`execution`, `studio-draft`).
+- [Case string : branche alternative](../../examples/structure.case.string.default.md) — Case string : branche alternative (`execution`, `studio-draft`).
+- [Case enum : sélection exacte et tunnels](../../examples/structure.case.enum.exact.md) — Case enum : sélection exacte et tunnels (`execution`, `studio-draft`).
 
 ## Identity and references
 

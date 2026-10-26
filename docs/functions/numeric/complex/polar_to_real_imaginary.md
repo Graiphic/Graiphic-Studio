@@ -75,6 +75,10 @@ Real r, theta -&gt; Real x, y. Numeric array/cluster structure is preserved, wit
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.complex.polar_to_real_imaginary`.

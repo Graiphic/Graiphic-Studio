@@ -16,6 +16,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [System Exec.vi](system_exec.md) | Runs a system command or executable and returns its standard streams and exit code. |
 | [Call Library Function Node](libraries/call_library_function.md) | Calls an explicitly configured native C function. Each node embeds its library path policy, exact export and typed ABI signature. Parameter rows may be reordered visually without changing ABI argument order. Configure by double-clicking its fixed header. Local Windows/x64 execution uses the libffi adapter; advanced representations require their own marshalling and lifetime capability. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.libraries`.

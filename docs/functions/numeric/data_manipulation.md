@@ -36,6 +36,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Swap Words](data_manipulation/swap_words.md) | Reverses the word order within the numeric value. |
 | [Reinterpret Number](data_manipulation/reinterpret_number.md) | Reinterprets the stored bits using another numeric representation. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation`.

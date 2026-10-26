@@ -29,6 +29,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Tab Constant](other_constants/tab.md) | Provides a tab character. |
 | [Space Constant](other_constants/space.md) | Provides a space character. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `string.other_constants`.

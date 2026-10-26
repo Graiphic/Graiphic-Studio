@@ -31,6 +31,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [String To Byte Array](conversion/string_to_byte_array.md) | Converts a string into its byte array representation. |
 | [Byte Array To String](conversion/byte_array_to_string.md) | Converts a byte array into a string. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `array.conversion`.

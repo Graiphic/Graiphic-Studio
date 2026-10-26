@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Map Constant" data-frog-provisional="collection-v1">
+  <title>Map Constant</title>
+  <rect x="1" y="1" width="46" height="46" rx="1.5" fill="#232933" stroke="#BAC5D2" stroke-width="1.5"/>
+  <g fill="none" stroke="#BAC5D2" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M6 15h8v8H6z" stroke="#D66DB1"/><path d="M32 15h8v8h-8z" stroke="#67A8E5"/><path d="M14 19h18m-6-4 6 4-6 4"/><path d="M6 31h34m-34 5h34" stroke="#80C6AE"/>
+  </g>
+</svg>
+

@@ -43,6 +43,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Planck Constant](other_constants/planck.md) | Places the Planck constant on the diagram. |
 | [Speed of Light](other_constants/speed_of_light.md) | Places the speed of light in vacuum on the diagram. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.other_constants`.

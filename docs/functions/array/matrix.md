@@ -33,6 +33,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Build Matrix](matrix/build.md) | Builds a matrix from supplied values or matrices. |
 | [Set Matrix Subset](matrix/set_subset.md) | Replaces a rectangular subset in a matrix. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `array.matrix`.

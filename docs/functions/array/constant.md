@@ -7,10 +7,16 @@
 
 Places an editable array constant on the diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](constant.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Constante tableau**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place une constante tableau editable sur le diagramme. [Types] Le modèle d’élément T et les dimensions définissent Array&lt;T,rang&gt; ; pas de tableau directement imbriqué, utiliser un cluster intermédiaire.
 
@@ -20,7 +26,14 @@ Place une constante tableau editable sur le diagramme. [Types] Le modèle d’é
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Array element template T and dimension count define Array&lt;T,rank&gt;; no direct array-of-array element (wrap it in a cluster).
+
+</details>
 
 ## IN — inputs
 
@@ -56,9 +69,16 @@ Implementation: `frog.studio.editor-managed`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The complete public execution semantics and target support for this legacy Studio profile have not been established.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -68,6 +88,13 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `value` | `array:f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [For : l'entrée auto-indexée limite N](../../examples/structure.for.indexed_input_limits_count.md) — For : l'entrée auto-indexée limite N (`execution`, `studio-draft`).
+- [For : collecter les trois éléments par auto-indexation](../../examples/structure.for.indexed_output.md) — For : collecter les trois éléments par auto-indexation (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" data-frog-original="occurrence-generate">
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#30343b" stroke="#aab4c0" stroke-width="2"/>
+  <g fill="none" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 18h6l4-8 7 16 4-8h7"/>
+    <circle cx="37" cy="18" r="3" fill="#f1c75b" stroke="#f1c75b"/>
+    <path d="M14 30v12m-6-6h12" stroke="#76d36b" stroke-width="2.8"/>
+    <path d="M27 36h13m-5-5 5 5-5 5"/>
+  </g>
+</svg>

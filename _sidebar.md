@@ -1,5 +1,6 @@
 - [Overview](/docs/index.md)
 - [Getting started](/docs/getting-started.md)
+- [Examples — actual .frog documents](/docs/examples/index.md)
 
 - **Workspace guides**
   - [Window workflow](/docs/interface/window-workflow.md)
@@ -7,6 +8,9 @@
   - [Block Diagram](/docs/interface/block-diagram.md)
   - [Source](/docs/interface/source-view.md)
   - [Run and Highlight](/docs/interface/run-and-highlight.md)
+  - [Build a standalone application](/docs/interface/build.md)
+  - [Type Definitions](/docs/interface/type-definitions.md)
+  - [Attached comments](/docs/interface/attached-comments.md)
   - [Context Help](/docs/interface/context-help.md)
 
 - **Design and edit**
@@ -29,6 +33,7 @@
   - [Timestamp](/docs/widgets/timestamp.md)
   - [Array](/docs/widgets/array-container.md)
   - [Cluster](/docs/widgets/cluster.md)
+  - [Tab Controls](/docs/widgets/tab-controls.md)
   - [Error Cluster](/docs/widgets/error-cluster.md)
   - [Variant](/docs/widgets/variant.md)
   - [Picture Display](/docs/widgets/picture-display.md)
@@ -57,7 +62,9 @@
 
 - **Reference**
   - [Current capabilities](/docs/reference/development-checkpoint.md)
+  - [26 October documentation reconciliation](/docs/reference/documentation-refresh-2026-10-26.md)
   - [Keyboard shortcuts](/docs/reference/keyboard-shortcuts.md)
   - [Document model](/docs/reference/document-model.md)
+  - [Studio Draft examples and execution scope](/docs/reference/studio-draft-examples.md)
   - [Custom bindings](/docs/reference/custom-bindings.md)
   - [Glossary](/docs/reference/glossary.md)

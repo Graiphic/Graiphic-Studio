@@ -96,6 +96,10 @@ Authoring only; no new function runtime is implemented.
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.source_control.get_latest_version`.

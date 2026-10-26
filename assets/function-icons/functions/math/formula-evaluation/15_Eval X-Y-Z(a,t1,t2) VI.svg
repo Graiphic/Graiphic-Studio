@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-6, .cls-7 {
+        stroke: #aab4c0;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-width: 1.06px;
+      }
+
+      .cls-6, .cls-5 {
+        fill: #4b5563;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 1.8px;
+      }
+
+      .cls-4 {
+        stroke-width: .75px;
+      }
+
+      .cls-8 {
+        fill: #fff;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        fill: #aab4c0;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect class="cls-6" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <path class="cls-7" d="M5.88,1.21h12.03v17.01H.9V6.19C.9,3.44,3.13,1.21,5.88,1.21Z"/>
+        <text class="cls-8" transform="translate(6.58 13.87)"><tspan x="0" y="0">∑</tspan></text>
+      </g>
+      <line class="cls-1" x1="7.94" y1="43.71" x2="7.94" y2="21.44"/>
+      <line class="cls-3" x1="7.94" y1="40.42" x2="39.45" y2="16.66"/>
+      <line class="cls-1" x1="43.75" y1="40.42" x2="4.05" y2="40.42"/>
+      <path class="cls-5" d="M35.17,28.98l-11.99,6.93s.46-3.63-2.06-7.17-4.87-4.83-4.87-4.83l11.99-6.93s3.12,2.12,5.32,5.51c2.2,3.38,1.6,6.49,1.6,6.49Z"/>
+      <path class="cls-5" d="M39.38,28.98l-11.99,6.93s.46-3.63-2.06-7.17-4.87-4.83-4.87-4.83l11.99-6.93s3.12,2.12,5.32,5.51c2.2,3.38,1.6,6.49,1.6,6.49Z"/>
+      <line class="cls-4" x1="23.7" y1="26.17" x2="35.5" y2="19.64"/>
+      <line class="cls-4" x1="38.38" y1="24.2" x2="26.64" y2="31.17"/>
+      <line class="cls-2" x1="19.42" y1="26.17" x2="21.54" y2="25.06"/>
+      <line class="cls-2" x1="22.57" y1="31.55" x2="25.97" y2="29.75"/>
+      <path class="cls-4" d="M27.02,20.13s3.63,2.56,5.2,5.49c1.87,3.49,1.75,6.49,1.75,6.49"/>
+      <path class="cls-4" d="M22.93,20.06s.93.11,1.34.45.86.93.86.93"/>
+    </g>
+  </g>
+</svg>

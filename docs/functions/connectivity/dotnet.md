@@ -25,6 +25,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Unregister For Events](dotnet/unregister_for_events.md) | Unregisters the events associated with a .NET callback registration reference. |
 | [Static VI Reference](dotnet/static_vi_reference.md) | Maintains a static reference to a selected document with either a generic reference or its exact strict connector schema. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `connectivity.dotnet`.

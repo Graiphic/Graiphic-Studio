@@ -71,6 +71,10 @@ Integer data or arrays/clusters containing integers -&gt; same type and structur
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `numeric.data_manipulation.swap_bytes`.

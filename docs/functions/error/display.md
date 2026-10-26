@@ -7,10 +7,16 @@
 
 Reports status, code, location and description; the selected dialog mode controls runtime presentation. Placing this node opens no dialog.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](display.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Afficher l’erreur**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Fournit le statut, le code, l’emplacement et la description. Le mode choisi règle le dialogue à l’exécution ; poser le nœud n’ouvre aucun dialogue. [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
 
@@ -20,7 +26,14 @@ Fournit le statut, le code, l’emplacement et la description. Le mode choisi r�
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
 
 ## IN — inputs
 
@@ -60,9 +73,16 @@ Scope: `requires_explicit_target_capability`.
 
 Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Runtime execution is not implemented by this authoring profile.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -77,6 +97,12 @@ Authoring only; no error propagation, dialog, code lookup or execution provider 
 | OUTPUT | `description` | `string` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Display Error : inspecter un record sans erreur](../../examples/error.display.clean_record.md) — Display Error : inspecter un record sans erreur (`execution`, `studio-draft`).
 
 ## Identity and references
 

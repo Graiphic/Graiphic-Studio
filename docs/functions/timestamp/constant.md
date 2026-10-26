@@ -69,6 +69,12 @@ Authoring support does not establish runtime execution on the active target.
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Timestamp : constante et indicateur conservés dans le document](../../examples/timestamp.editor_managed.saved_value.md) — Timestamp : constante et indicateur conservés dans le document (`persistence`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `timestamp.constant`.

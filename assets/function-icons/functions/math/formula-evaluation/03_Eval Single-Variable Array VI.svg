@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #aab4c0;
+      }
+
+      .cls-1, .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #4b5563;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 1.8px;
+      }
+
+      .cls-4 {
+        stroke-width: .99px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        fill: #fff;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #aab4c0;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-2" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <path class="cls-3" d="M5.88,1.21h12.03v17.01H.9V6.19C.9,3.44,3.13,1.21,5.88,1.21Z"/>
+      <text class="cls-6" transform="translate(6.58 13.87)"><tspan x="0" y="0">∑</tspan></text>
+      <line class="cls-1" x1="7.94" y1="43.93" x2="7.94" y2="21.61"/>
+      <path class="cls-5" d="M9.79,25.74c6.53-.43,7.41-8.44,15.85-5.71,3.93,1.27,3.64,6.83,8.67,6.9,3.59.05,5.6-6.01,9.44-6.18"/>
+      <line class="cls-1" x1="43.75" y1="40.63" x2="4.05" y2="40.63"/>
+      <g>
+        <line class="cls-4" x1="14.58" y1="23.9" x2="14.58" y2="39.85"/>
+        <line class="cls-4" x1="18.3" y1="20.09" x2="18.3" y2="39.85"/>
+        <line class="cls-4" x1="22.02" y1="18.83" x2="22.02" y2="39.85"/>
+        <line class="cls-4" x1="25.74" y1="19.46" x2="25.74" y2="39.85"/>
+        <line class="cls-4" x1="29.46" y1="23.9" x2="29.46" y2="39.85"/>
+        <line class="cls-4" x1="33.18" y1="26.58" x2="33.18" y2="39.85"/>
+        <line class="cls-4" x1="36.89" y1="25.92" x2="36.89" y2="39.85"/>
+        <line class="cls-4" x1="40.61" y1="22.24" x2="40.61" y2="39.85"/>
+      </g>
+    </g>
+  </g>
+</svg>

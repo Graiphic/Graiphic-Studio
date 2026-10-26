@@ -7,10 +7,16 @@
 
 Finds literal text and replaces it in a string.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](search_replace.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Rechercher et remplacer une chaine**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Recherche un texte litteral et le remplace dans une chaine. [Types] Chaînes scalaires source/recherche/remplacement, décalage I32, booléens ignorer la casse/tout remplacer et cluster d’erreur produisent chaîne, nombre de remplacements et décalage I32, et erreur. La variante regex ajoute le mode multiligne.
 
@@ -20,9 +26,16 @@ Recherche un texte litteral et le remplace dans une chaine. [Types] Chaînes sca
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace-all and error cluster produce String, I32 replacement count/offset and error cluster. The regex variant adds multiline.
 
 Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace-all and error cluster produce String, I32 replacement count/offset and error cluster. The regex variant adds multiline.
+
+</details>
 
 ## IN — inputs
 
@@ -67,9 +80,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -89,6 +109,21 @@ Provider identity is retained from Studio. Executability must be established by 
 | OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `any_explicit` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Search And Replace String — first](../../examples/string.search-replace.first.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — all](../../examples/string.search-replace.all.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — delete-default](../../examples/string.search-replace.delete-default.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — offset](../../examples/string.search-replace.offset.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — not-found](../../examples/string.search-replace.not-found.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — incoming-error](../../examples/string.search-replace.incoming-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — empty-search.profile-error](../../examples/string.search-replace.empty-search.profile-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — offset-outside.profile-error](../../examples/string.search-replace.offset-outside.profile-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — utf8-boundary.profile-error](../../examples/string.search-replace.utf8-boundary.profile-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`execution`, `studio-draft`).
+- [Search And Replace String — casefold-unavailable](../../examples/string.search-replace.casefold-unavailable.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic. (`expected-diagnostic`, `studio-draft`).
 
 ## Identity and references
 

@@ -32,6 +32,10 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Cluster Array Constant](other_constants/cluster.md) | Palette icon for a constant array of clusters. Placement is not implemented yet. |
 | [Error Array Constant](other_constants/error.md) | Palette icon for a constant array of errors. Placement is not implemented yet. |
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `array.other_constants`.

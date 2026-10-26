@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 47.8">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-2 {
+        stroke: #aab4c0;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        fill: #f8fafc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-5, .cls-3 {
+        stroke: #4b5563;
+      }
+
+      .cls-6 {
+        fill: #fffffe;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        fill: #4b5563;
+      }
+
+      .cls-3 {
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <rect class="cls-5" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <path class="cls-7" d="M6.45,32.36h34.9c1.46,0,2.64,1.18,2.64,2.64v9.14H3.81v-9.14c0-1.46,1.18-2.64,2.64-2.64Z" transform="translate(47.8 76.51) rotate(-180)"/>
+      </g>
+      <line class="cls-2" x1="23.9" y1="2.93" x2="23.9" y2="31.52"/>
+      <line class="cls-2" x1="43.99" y1="17.23" x2="3.81" y2="17.23"/>
+      <path class="cls-3" d="M43.52,10.79h-5.43c-19.55,0-8.51,11.45-26.09,11.45h-7.72"/>
+      <path class="cls-3" d="M43.52,24.68c-5.91.11-16.82-1.06-17.61,6.84"/>
+      <path class="cls-3" d="M4.28,9.77c5.91-.11,16.82,1.06,17.61-6.84"/>
+      <text class="cls-6" transform="translate(11.19 41.51)"><tspan class="cls-1" x="0" y="0">A</tspan><tspan class="cls-4" x="5" y="0">T</tspan><tspan x="10.16" y="0">AN2</tspan></text>
+    </g>
+  </g>
+</svg>

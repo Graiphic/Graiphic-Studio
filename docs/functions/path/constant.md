@@ -69,6 +69,14 @@ Provider identity is retained from Studio. Executability must be established by 
 
 </details>
 
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [File Exists : le chemin vide désigne la liste des lecteurs Windows](../../examples/file.exists.empty_drive_list.md) — File Exists : le chemin vide désigne la liste des lecteurs Windows (`execution`, `studio-draft`).
+- [Read Text : refuser un chemin relatif sans base explicite](../../examples/file.read.relative_path_rejected.md) — Read Text : refuser un chemin relatif sans base explicite (`execution`, `studio-draft`).
+- [Read Text : conserver l'erreur amont sans accès disque](../../examples/file.read.upstream_error.md) — Read Text : conserver l'erreur amont sans accès disque (`execution`, `studio-draft`).
+
 ## Identity and references
 
 - Catalogue ID: `path.constant`.

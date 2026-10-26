@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.49 30.07">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 1.09px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #f8fafc;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: .99px;
+      }
+    </style>
+  </defs>
+  <g id="Foonction_d_erreur" data-name="Foonction d&amp;apos;erreur">
+    <g>
+      <path class="cls-3" d="M25.94,19.36H0V0h25.94v19.36ZM.63,18.72h24.68V.63H.63v18.09Z"/>
+      <path class="cls-3" d="M25.78,10.71s.02.63.02.63h14.07v18.09H15.18v-10.43h-.63v11.06h25.94V10.71h-14.72Z"/>
+      <polyline class="cls-1" points="23.06 14.01 19.95 14.01 19.95 5.35 15.22 5.35 15.22 14.01 10.45 14.01 10.45 5.35 5.72 5.35 5.72 14.01 2.88 14.01"/>
+      <polyline class="cls-2" points="37.85 15.37 28.16 15.37 28.16 26.79 16.94 26.79"/>
+    </g>
+  </g>
+</svg>

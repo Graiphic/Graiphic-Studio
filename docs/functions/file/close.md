@@ -75,10 +75,14 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 </details>
 
+## Examples
+
+No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+
 ## Identity and references
 
 - Catalogue ID: `file.close`.
-- Parent palette: [File References](references.md).
+- Parent palette: [Operation](operation.md).
 - Profile: `frog.studio.palette.file.close.v1`.
 - Definition: `frog.studio.file.close`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/functions/close-file.html).

@@ -7,10 +7,16 @@
 
 Adds the two numeric inputs and returns their sum.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](add.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Additionner**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Additionne les deux entrees numeriques et renvoie leur somme. [Types] x,y numériques -&gt; scalaire/tableau/cluster promu ; extension scalaire et variantes Waveform/Timestamp chez NI. Studio: La fonction publique frog.core.add conserve son contrat fixé pour les scalaires et tableaux numériques, ainsi que la règle stricte imposant des tableaux de même forme ; cette revue ne redéfinit pas cette règle.
 
@@ -20,9 +26,16 @@ Additionne les deux entrees numeriques et renvoie leur somme. [Types] x,y numér
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type.
 
 Numeric x,y -&gt; promoted scalar/array/cluster; scalar lifting and waveform/timestamp overloads exist in NI. Studio: Public frog.core.add retains its pinned numeric scalar/array contract and strict same-array-shape rule; this review does not redefine that law.
+
+</details>
 
 ## IN — inputs
 
@@ -64,17 +77,26 @@ Port order: `a` → `b` → `input_N_ascending`.
 
 ## Execution and limits
 
-**Public FROG / target Runtime:** declared available within the scope below.
+**Public FROG / target Runtime:** not declared available by this authoring contract.
 
-Scope: `numeric_scalar_only`.
+Scope: `requires_explicit_target_capability`.
 
-Implementation: `frog.core.add`.
+Implementation: `frog.studio.numeric.add.owned-promote.v1`.
 
-Scalar execution is available; authorable array lifting is rejected until an array Runtime value provider exists.
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing same-type i32/u32/i64/u64/f64 scalar intrinsics and IEEE slots remain distinct. Mixed/narrow real scalar and numeric Array signatures require the private owned-promote native capability: 2..16 canonical left-fold inputs, exact integer carriers, finite f32/f64 values, identical Array shapes and scalar lifting. A complete type fold may contain logical I128 before a final supported real type; an actual I128 result, complex/fixed-point/nominal/Cluster overloads remain unavailable in this owned profile. Source preparation and the active target must admit the exact signature; this field does not grant universal runtime availability.
+
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
 
 **Authoring/target contract limits:**
 
-- Runtime array execution is unavailable.
+- The owned numeric profile requires an explicitly admitted target signature; nonfinite aggregate values, actual I128/U128 carriers, complex/fixed-point and nominal/Cluster overloads are outside its v1 realization.
+
+</details>
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 
@@ -90,6 +112,79 @@ Local arithmetic includes F32/F64 and supported integer leaves, scalar lifting a
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>
+
+## Examples
+
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Add — scalar i8](../../examples/numeric.add.scalar_i8.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar u8](../../examples/numeric.add.scalar_u8.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar i16](../../examples/numeric.add.scalar_i16.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar u16](../../examples/numeric.add.scalar_u16.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar i32](../../examples/numeric.add.scalar_i32.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar u32](../../examples/numeric.add.scalar_u32.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar i64](../../examples/numeric.add.scalar_i64.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar u64](../../examples/numeric.add.scalar_u64.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar f32](../../examples/numeric.add.scalar_f32.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar f64](../../examples/numeric.add.scalar_f64.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — mixed i32 f64](../../examples/numeric.add.mixed_i32_f64.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — scalar array](../../examples/numeric.add.scalar_array.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arrays same shape](../../examples/numeric.add.arrays_same_shape.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — typed empty](../../examples/numeric.add.typed_empty.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — incompatible shapes](../../examples/numeric.add.incompatible_shapes.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`expected-diagnostic`, `studio-draft`).
+- [Add — arity 2](../../examples/numeric.add.arity_2.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 3](../../examples/numeric.add.arity_3.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 4](../../examples/numeric.add.arity_4.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 5](../../examples/numeric.add.arity_5.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 6](../../examples/numeric.add.arity_6.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 7](../../examples/numeric.add.arity_7.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 8](../../examples/numeric.add.arity_8.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 9](../../examples/numeric.add.arity_9.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 10](../../examples/numeric.add.arity_10.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 11](../../examples/numeric.add.arity_11.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 12](../../examples/numeric.add.arity_12.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 13](../../examples/numeric.add.arity_13.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 14](../../examples/numeric.add.arity_14.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 15](../../examples/numeric.add.arity_15.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — arity 16](../../examples/numeric.add.arity_16.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — left fold f64](../../examples/numeric.add.left_fold_f64.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add — left fold f32](../../examples/numeric.add.left_fold_f32.md) — Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type. (`execution`, `studio-draft`).
+- [Add: mixed i32 f64](../../examples/numeric.add.native_owned_mixed_i32_f64.md) — Exact representable conversion and elementary sum. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: scalar array i32](../../examples/numeric.add.native_owned_scalar_array_i32.md) — Apply the scalar independently to each of the three existing elements. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: array scalar i32](../../examples/numeric.add.native_owned_array_scalar_i32.md) — Same lifting law in the other operand order. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arrays i32](../../examples/numeric.add.native_owned_arrays_i32.md) — Elementwise sums on exactly equal shapes. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: empty i32](../../examples/numeric.add.native_owned_empty_i32.md) — A typed empty Array has shape\[0\], retains its type and creates no element. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: rank2 i32](../../examples/numeric.add.native_owned_rank2_i32.md) — Row-major rank and shape stay unchanged. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: i64 precision](../../examples/numeric.add.native_owned_i64_precision.md) — Exact integer identity beyond2^53; no floating intermediate is permitted. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: u64 wrap](../../examples/numeric.add.native_owned_u64_wrap.md) — Modulo2^64: maximum+1 is0. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: i32 wrap](../../examples/numeric.add.native_owned_i32_wrap.md) — Modulo2^32 with restoration of the signed representation. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: i16 array promoted i32](../../examples/numeric.add.native_owned_i16_array_promoted_i32.md) — The authored common type is I32; the source Array stays I16 and is not rebound as an I32 input. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: i64 extremes](../../examples/numeric.add.native_owned_i64_extremes.md) — Exact signed carrier and modulo2^64 restore, with no invalid signed C++ overflow. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: f64 left fold](../../examples/numeric.add.native_owned_f64_left_fold.md) — (1e16 + -1e16)+1 is1; reassociation would produce0. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: f32 left fold](../../examples/numeric.add.native_owned_f32_left_fold.md) — A binary32 addition rounds at every step;2^24+1 first rounds to2^24. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: logical i128 then f64](../../examples/numeric.add.native_owned_logical_i128_then_f64.md) — Type fold I64/U64 logically reachesI128, then finalF64. Convert all actual values to finalF64 before arithmetic; never construct an I128 value. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: negative zero](../../examples/numeric.add.native_owned_negative_zero.md) — IEEE sum of two negative zeros remains negative zero in the ordinary nearest mode. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: i64 direct f32 round](../../examples/numeric.add.native_owned_i64_direct_f32_round.md) — Exact integer is1 above the binary32 halfway value: direct nearest-even conversion gives bits0x5e800001. A double intermediate would incorrectly return0x5e800000 for PromotionV1. Adding binary32zero preserves this finite result. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 2](../../examples/numeric.add.native_owned_arity_2.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 3](../../examples/numeric.add.native_owned_arity_3.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 4](../../examples/numeric.add.native_owned_arity_4.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 5](../../examples/numeric.add.native_owned_arity_5.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 6](../../examples/numeric.add.native_owned_arity_6.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 7](../../examples/numeric.add.native_owned_arity_7.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 8](../../examples/numeric.add.native_owned_arity_8.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 9](../../examples/numeric.add.native_owned_arity_9.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 10](../../examples/numeric.add.native_owned_arity_10.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 11](../../examples/numeric.add.native_owned_arity_11.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 12](../../examples/numeric.add.native_owned_arity_12.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 13](../../examples/numeric.add.native_owned_arity_13.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 14](../../examples/numeric.add.native_owned_arity_14.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 15](../../examples/numeric.add.native_owned_arity_15.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: arity 16](../../examples/numeric.add.native_owned_arity_16.md) — The true ordered operands1..N sum toN(N+1)/2 in the first element; only the first Array element of the second position differs by+1. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`execution`, `studio-draft`).
+- [Add: shape length rejected](../../examples/numeric.add.native_owned_shape_length_rejected.md) — Shapes\[2\] and\[3\] are incompatible; keep a connected real indicator to verify that it receives nothing. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`expected-diagnostic`, `studio-draft`).
+- [Add: shape equal count rejected](../../examples/numeric.add.native_owned_shape_equal_count_rejected.md) — Equal element counts do not make shapes\[2,2\] and\[1,4\] compatible. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`expected-diagnostic`, `studio-draft`).
+- [Add: nonfinite result rejected](../../examples/numeric.add.native_owned_nonfinite_result_rejected.md) — The finite owned SDK profile cannot carry+Infinity; reject atomically rather than publish an empty Array or zero. Native finite owned profile; original scalar IEEE slots and explicit private Simulation examples remain separate. (`expected-diagnostic`, `studio-draft`).
+- [In Place : modifier une donnée par la paire entrée/sortie](../../examples/structure.ipe.generic_modify.md) — In Place : modifier une donnée par la paire entrée/sortie (`execution`, `studio-draft`).
+- [In Place : indexer et remplacer un élément du tableau](../../examples/structure.ipe.array_index_replace.md) — In Place : indexer et remplacer un élément du tableau (`execution`, `studio-draft`).
 
 ## Identity and references
 

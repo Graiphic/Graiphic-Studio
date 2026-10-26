@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.28 31.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 3.17 3.17;
+      }
+
+      .cls-3 {
+        stroke: #fffffe;
+        stroke-width: 1.5px;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 3.18 3.18;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <line class="cls-1" x1="22.14" x2="22.14" y2="1.5"/>
+        <line class="cls-2" x1="22.14" y1="4.67" x2="22.14" y2="28.42"/>
+        <line class="cls-1" x1="22.14" y1="30" x2="22.14" y2="31.5"/>
+      </g>
+      <g>
+        <line class="cls-1" x1="44.28" y1="15.75" x2="42.78" y2="15.75"/>
+        <line class="cls-4" x1="39.61" y1="15.75" x2="3.09" y2="15.75"/>
+        <line class="cls-1" x1="1.5" y1="15.75" y2="15.75"/>
+      </g>
+      <path class="cls-3" d="M1.17,18.54h10.36c4.1,0,7.43,4.09,7.43,9.14v2.99"/>
+      <path class="cls-3" d="M42.6,12.57h-10.36c-4.1,0-7.43-4.09-7.43-9.14V.44"/>
+    </g>
+  </g>
+</svg>

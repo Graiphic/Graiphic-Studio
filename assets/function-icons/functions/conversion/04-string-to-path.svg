@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.8 24.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8fafc;
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 13px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #4b5563;
+        stroke: #aab4c0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-3 {
+        fill: #f6f7f7;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <path class="cls-2" d="M.9.9h40.83c2.86,0,5.17,2.32,5.17,5.17v12.65c0,2.86-2.32,5.17-5.17,5.17H.9C5.81,17,5.81,7.8.9.9Z"/>
+      <text class="cls-1" transform="translate(8.58 16.64)"><tspan x="0" y="0">abc</tspan></text>
+      <g>
+        <polygon class="cls-3" points="35.28 9 34.38 9.68 39.4 15.54 40.3 14.86 35.28 9"/>
+        <path class="cls-3" d="M38.98,14.3v5h5v-5h-5ZM42.73,18.05h-2.5v-2.5h2.5v2.5Z"/>
+        <path class="cls-3" d="M30.42,5.06v5h5v-5h-5ZM34.17,8.81h-2.5v-2.5h2.5v2.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
