@@ -12,15 +12,13 @@ Places the Call Chain utility on the Diagram.
 
 **Chaine d'appel**
 
-Place l'utilitaire Chaine d'appel sur le diagramme. [Types] Aucune entrée -&gt; tableau String 1D des appelants.
+Place l'utilitaire Chaine d'appel sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-No input -&gt; 1D String array of caller names.
 
 ## IN — inputs
 
@@ -34,7 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No input -&gt; 1D String array of caller names.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Aucune entrée -&gt; tableau String 1D des appelants.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

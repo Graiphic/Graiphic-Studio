@@ -12,17 +12,13 @@ Returns a selected system directory.
 
 **Obtenir un repertoire systeme**
 
-Renvoie un repertoire systeme selectionne. [Types] Signature LabVIEW classique : type de dossier I32 (choix 0 à 13) et booléen facultatif de création du dossier (faux) vers un Chemin. Aucune borne de cluster d’erreur ; le choix supplémentaire NXG n’appartient pas à cette signature classique.
+Renvoie un repertoire systeme selectionne.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Classic LabVIEW signature: directory type I32 (choices 0–13) and optional create-directory Boolean (false) produce one Path. No error-cluster terminals; NXG's additional directory choice is not part of this classic signature.
-
-Classic LabVIEW signature: directory type I32 (choices 0–13) and optional create-directory Boolean (false) produce one Path. No error-cluster terminals; NXG's additional directory choice is not part of this classic signature.
 
 ## IN — inputs
 
@@ -41,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Classic LabVIEW signature: directory type I32 (choices 0–13) and optional create-directory Boolean (false) produce one Path. No error-cluster terminals; NXG's additional directory choice is not part of this classic signature.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Signature LabVIEW classique : type de dossier I32 (choix 0 à 13) et booléen facultatif de création du dossier (faux) vers un Chemin. Aucune borne de cluster d’erreur ; le choix supplémentaire NXG n’appartient pas à cette signature classique.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

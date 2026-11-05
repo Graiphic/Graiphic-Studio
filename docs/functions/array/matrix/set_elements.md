@@ -12,17 +12,13 @@ Replaces selected elements in a matrix.
 
 **Definir des elements d'une matrice**
 
-Remplace les elements selectionnes d'une matrice. [Types] Matrice numérique 2D en entrée/sortie. Indices ligne/colonne déroulables, scalaires réels ou tableaux 1D (conversion I32). Remplacement par scalaire numérique ou tableau numérique 2D, avec promotion numérique commune à la matrice et au remplacement. Remplacement optionnel : zéro.
+Remplace les elements selectionnes d'une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric 2D matrix input/output. Repeatable row/column indices accept real scalars or 1D real arrays (I32 conversion). New elements accept a numeric scalar fill or numeric 2D array, with numeric promotion shared by the matrix and replacement. Optional replacement defaults to zero.
-
-Numeric 2D matrix input/output. Repeatable row/column indices accept real scalars or 1D real arrays (I32 conversion). New elements accept a numeric scalar fill or numeric 2D array, with numeric promotion shared by the matrix and replacement. Optional replacement defaults to zero.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric 2D matrix input/output. Repeatable row/column indices accept real scalars or 1D real arrays (I32 conversion). New elements accept a numeric scalar fill or numeric 2D array, with numeric promotion shared by the matrix and replacement. Optional replacement defaults to zero.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Matrice numérique 2D en entrée/sortie. Indices ligne/colonne déroulables, scalaires réels ou tableaux 1D (conversion I32). Remplacement par scalaire numérique ou tableau numérique 2D, avec promotion numérique commune à la matrice et au remplacement. Remplacement optionnel : zéro.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -59,7 +66,11 @@ Numeric 2D matrix input/output. Repeatable row/column indices accept real scalar
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.set_elements.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -70,10 +81,10 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `row_indices` | `i32` | `any_explicit` | `single` | — |
 | INPUT | `column_indices` | `i32` | `any_explicit` | `single` | — |
-| INPUT | `elements` | `f64` | `any_explicit` | `single` | — |
+| INPUT | `elements` | `f64` | `numeric_scalar_or_array_implicit` | `single` | — |
 | OUTPUT | `result` | `unknown` | `any_explicit` | `single` | — |
 
 </details>

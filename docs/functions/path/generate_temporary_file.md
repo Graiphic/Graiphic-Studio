@@ -12,17 +12,13 @@ Generates a path for a temporary file.
 
 **Generer un chemin de fichier temporaire**
 
-Genere un chemin pour un fichier temporaire. [Types] Une extension Chaîne scalaire facultative (tmp par défaut) et un cluster d’erreur produisent un chemin temporaire unique et le cluster d’erreur. Le VI renvoie un chemin sans créer de fichier ; aucune opération disque n’est effectuée pendant l’édition.
+Genere un chemin pour un fichier temporaire.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Optional scalar extension String (tmp by default) and error cluster produce a unique temporary Path and error cluster. The VI returns a path without creating a file; no filesystem action is performed during authoring.
-
-Optional scalar extension String (tmp by default) and error cluster produce a unique temporary Path and error cluster. The VI returns a path without creating a file; no filesystem action is performed during authoring.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Optional scalar extension String (tmp by default) and error cluster produce a unique temporary Path and error cluster. The VI returns a path without creating a file; no filesystem action is performed during authoring.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une extension Chaîne scalaire facultative (tmp par défaut) et un cluster d’erreur produisent un chemin temporaire unique et le cluster d’erreur. Le VI renvoie un chemin sans créer de fichier ; aucune opération disque n’est effectuée pendant l’édition.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

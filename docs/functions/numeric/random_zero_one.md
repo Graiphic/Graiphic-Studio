@@ -12,17 +12,13 @@ Produces a pseudo-random numeric value in the interval from zero to one.
 
 **Nombre aleatoire (0-1)**
 
-Produit une valeur pseudo-aleatoire comprise entre zero et un. [Types] Aucune entrée -&gt; DBL scalaire dans [0,1). Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+Produit une valeur pseudo-aleatoire comprise entre zero et un.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-No inputs -&gt; scalar DBL in [0,1).
-
-No inputs -&gt; scalar DBL in [0,1). Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 ## IN — inputs
 
@@ -36,9 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-No inputs -&gt; scalar DBL in [0,1).
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No inputs -&gt; scalar DBL in [0,1). Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Aucune entrée -&gt; DBL scalaire dans [0,1). Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -51,6 +58,14 @@ No inputs -&gt; scalar DBL in [0,1).
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
+
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.random_zero_one.instance-owned.v1`.
+
+Required provider: `frog.studio.numeric.random.instance-owned@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

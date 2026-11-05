@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Assemble plusieurs chaines dans l'ordre. [Types] Les entrées déroulables acceptent indépendamment une chaîne ou un tableau 1D de chaînes ; la sortie est une chaîne. Les tableaux de rang supérieur et les clusters sont refusés.
+Assemble plusieurs chaines dans l'ordre.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Expandable ordered inputs accept scalar Strings or 1D String arrays independently; output is one String. Arrays of rank 2 or greater and clusters are rejected.
-
-Expandable ordered inputs accept scalar Strings or 1D String arrays independently; output is one String. Arrays of rank 2 or greater and clusters are rejected.
-
-</details>
 
 ## IN — inputs
 
@@ -58,9 +47,27 @@ Additional input IDs: `input_N`, starting at 3.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 Expandable ordered inputs accept scalar Strings or 1D String arrays independently; output is one String. Arrays of rank 2 or greater and clusters are rejected.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Les entrées déroulables acceptent indépendamment une chaîne ou un tableau 1D de chaînes ; la sortie est une chaîne. Les tableaux de rang supérieur et les clusters sont refusés.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

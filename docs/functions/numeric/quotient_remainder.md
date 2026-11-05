@@ -12,17 +12,13 @@ R (upper output) is the remainder: x - y * floor(x/y). IQ (lower output) is the 
 
 **Quotient et reste**
 
-R (sortie supérieure) est le reste : x - y * floor(x/y). IQ (sortie inférieure) est le quotient entier : floor(x/y). [Types] x,y numériques (scalaires/tableaux/clusters) -&gt; R en haut = x - y * floor(x/y), IQ en bas = floor(x/y), structure numérique promue. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+R (sortie supérieure) est le reste : x - y * floor(x/y). IQ (sortie inférieure) est le quotient entier : floor(x/y).
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. Persistent historical output id quotient is remainder (R), id remainder is integer quotient (IQ); IDs are retained so saved wires stay attached. Integer y=0 yields q=0,r=x; signed minimum/-1 wraps quotient at the declared integer width, remainder=0. Float zero follows IEEE Infinity/NaN.
-
-Numeric x,y (scalars/arrays/clusters) -&gt; upper R = x - y * floor(x/y), lower IQ = floor(x/y), in promoted numeric structure. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 ## Output mapping
 
@@ -46,9 +42,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Numeric x,y (scalars/arrays/clusters) -&gt; upper R = x - y * floor(x/y), lower IQ = floor(x/y), in promoted numeric structure. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure. Persistent historical output id quotient is remainder (R), id remainder is integer quotient (IQ); IDs are retained so saved wires stay attached. Integer y=0 yields q=0,r=x; signed minimum/-1 wraps quotient at the declared integer width, remainder=0. Float zero follows IEEE Infinity/NaN.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x,y numériques (scalaires/tableaux/clusters) -&gt; R en haut = x - y * floor(x/y), IQ en bas = floor(x/y), structure numérique promue. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -61,6 +70,14 @@ Floor quotient q=floor(x/y), remainder r=x-y*q in the promoted numeric structure
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
+
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.quotient_remainder.owned.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

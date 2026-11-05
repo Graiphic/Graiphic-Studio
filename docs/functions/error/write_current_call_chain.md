@@ -12,15 +12,13 @@ Updates an error or warning with the current call chain, omitting the specified 
 
 **Écrire la chaîne d’appel actuelle**
 
-Actualise une erreur ou mise en garde avec la chaîne d’appel actuelle en retirant le nombre indiqué d’éléments initiaux (un par défaut). [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+Actualise une erreur ou mise en garde avec la chaîne d’appel actuelle en retirant le nombre indiqué d’éléments initiaux (un par défaut).
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
 
 ## IN — inputs
 
@@ -39,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Updates an error or warning with the current call chain, omitting the specified number of initial elements (default one).
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -55,11 +64,18 @@ Updates an error or warning with the current call chain, omitting the specified 
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
+Implementation: `frog.studio.error.write_current_call_chain.v1`.
+
+Required provider: `frog.studio.error.handling@1`.
+
+Local compiled Error value/service realization on complete immutable SDK carriers. The selected Source/FIR/native target must explicitly admit this exact operation and full typed signature; this metadata neither enables every backend nor claims that partial variants have been qualified.
 
 **Authoring/target contract limits:**
 
-- Runtime execution is not implemented by this authoring profile.
+- The active target must explicitly admit the exact native operation and complete typed signature; palette visibility and this metadata do not grant an execution capability.
+- Authored positional Error clusters with custom field IDs remain valid authoring types, but their native typed-edge bridge is not implemented/qualified in this profile.
+- The current call chain requires exact Source/FIR provenance; projected SubFROG caller ancestry is not admitted without a qualified authority. A nonnegative removal count is required.
+- Mutating a legacy append-tag source remains an explicit unsupported variant.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

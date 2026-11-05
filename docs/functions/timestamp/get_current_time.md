@@ -12,17 +12,13 @@ No input; current UTC time as Timestamp, in seconds since 1904-01-01. Runtime su
 
 **Obtenir le temps présent**
 
-Sans entrée ; instant UTC courant de type Horodatage, en secondes depuis le 01/01/1904. L’exécution dépend de la cible sélectionnée. [Types] Sans entrée ; instant UTC courant de type Horodatage, en secondes depuis le 01/01/1904.
+Sans entrée ; instant UTC courant de type Horodatage, en secondes depuis le 01/01/1904. L’exécution dépend de la cible sélectionnée.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-No input; current UTC time as Timestamp, in seconds since 1904-01-01.
-
-No input; current UTC time as Timestamp, in seconds since 1904-01-01.
 
 ## IN — inputs
 
@@ -36,9 +32,9 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-No input; current UTC time as Timestamp, in seconds since 1904-01-01.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -52,11 +48,16 @@ No input; current UTC time as Timestamp, in seconds since 1904-01-01.
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support does not establish runtime execution on the active target.
+Implementation: `frog.studio.timestamp.get_current_time.v1`.
+
+Required provider: `frog.studio.timestamp.native@1`.
+
+Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared types. Windows NLS/timezone services are required for local rendering. Explicit range, precision and format refusals remain. Admission, observed execution and AOT package qualification require separate current evidence; this declaration is not that evidence.
 
 **Authoring/target contract limits:**
 
-- NI reference verified for authoring types; this does not establish runtime support on the active target.
+- The native Timestamp profile is bounded; unsupported precision, calendar, locale and format variants remain explicit refusals.
+- A compiled service declaration alone does not qualify actual Run or an AOT package.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

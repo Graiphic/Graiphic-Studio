@@ -12,17 +12,13 @@ Editor-managed Timestamp constant. Uses the existing UTC date/time editor and se
 
 **Constante horodatage**
 
-Constante horodatage gérée par l’éditeur UTC existant. Stockage actuel en secondes depuis 1904 sur un double, et non avec la précision 128 bits de NI. L’exécution dépend de la cible sélectionnée. [Types] Constante horodatage gérée par l’éditeur UTC existant. Stockage actuel en secondes depuis 1904 sur un double, et non avec la précision 128 bits de NI.
+Constante horodatage gérée par l’éditeur UTC existant. Stockage actuel en secondes depuis 1904 sur un double, et non avec la précision 128 bits de NI. L’exécution dépend de la cible sélectionnée.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Editor-managed Timestamp constant. Uses the existing UTC date/time editor and seconds-since-1904 double storage, not NI 128-bit timestamp precision.
-
-Editor-managed Timestamp constant. Uses the existing UTC date/time editor and seconds-since-1904 double storage, not NI 128-bit timestamp precision.
 
 ## IN — inputs
 
@@ -36,9 +32,9 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Editor-managed Timestamp constant. Uses the existing UTC date/time editor and seconds-since-1904 double storage, not NI 128-bit timestamp precision.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

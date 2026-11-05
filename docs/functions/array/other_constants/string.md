@@ -12,17 +12,13 @@ Palette icon for a constant array of strings. Placement is not implemented yet.
 
 **Constante tableau de chaines**
 
-Icone de palette pour une constante tableau de chaines. Le placement n'est pas encore implemente. [Types] Sans opérande de fonction. Élément String et rang configuré définissent Array&lt;T,rang&gt;. Un contrôle fournit ce type ; un indicateur le reçoit.
+Icone de palette pour une constante tableau de chaines. Le placement n'est pas encore implemente.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Studio authoring ports for array.other_constants.string.
-
-No function operand. Instance element type String and configured rank determine Array&lt;T,rank&gt;. A control supplies this type; an indicator consumes it.
 
 ## IN — inputs
 
@@ -36,7 +32,22 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No function operand. Instance element type String and configured rank determine Array&lt;T,rank&gt;. A control supplies this type; an indicator consumes it.
+
+Studio authoring ports for array.other_constants.string.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans opérande de fonction. Élément String et rang configuré définissent Array&lt;T,rang&gt;. Un contrôle fournit ce type ; un indicateur le reçoit.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `array<string,rank=1>`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

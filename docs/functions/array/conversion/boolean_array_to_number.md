@@ -12,17 +12,13 @@ Packs Boolean array values into a numeric bit pattern.
 
 **Tableau booleen en nombre**
 
-Regroupe les valeurs d'un tableau booleen dans un motif numerique. [Types] Un tableau booléen 1D produit un entier ou nombre réel à virgule fixe scalaire. La représentation de sortie est configurée dans l’éditeur (U32 par défaut), pas déduite de la longueur du tableau.
+Regroupe les valeurs d'un tableau booleen dans un motif numerique.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A 1D Boolean array produces an integer or real fixed-point scalar. The output representation is configured in the editor (default U32), not inferred from array length.
-
-A 1D Boolean array produces an integer or real fixed-point scalar. The output representation is configured in the editor (default U32), not inferred from array length.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A 1D Boolean array produces an integer or real fixed-point scalar. The output representation is configured in the editor (default U32), not inferred from array length.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau booléen 1D produit un entier ou nombre réel à virgule fixe scalaire. La représentation de sortie est configurée dans l’éditeur (U32 par défaut), pas déduite de la longueur du tableau.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,11 @@ A 1D Boolean array produces an integer or real fixed-point scalar. The output re
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.numeric.boolean_array_to_number.sign-if-signed.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

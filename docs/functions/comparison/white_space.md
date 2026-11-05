@@ -12,17 +12,13 @@ Tests a whitespace character.
 
 **Espace blanc ?**
 
-Teste un caractère d’espacement. [Types] Chaînes ou valeurs numériques réelles, y compris en tableaux et clusters ; la sortie conserve leur structure booléenne. Le test porte sur le premier caractère de la chaîne ou sur le code ASCII numérique. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+Teste un caractère d’espacement.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Tests a whitespace character. String or real numeric leaves, including arrays/clusters; output preserves their Boolean structure. The predicate examines the first string character or numeric ASCII code.
-
-String or real numeric leaves, including arrays/clusters; output preserves their Boolean structure. The predicate examines the first string character or numeric ASCII code. Runtime execution is not implemented by this authoring profile.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-String or real numeric leaves, including arrays/clusters; output preserves their Boolean structure. The predicate examines the first string character or numeric ASCII code.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+String or real numeric leaves, including arrays/clusters; output preserves their Boolean structure. The predicate examines the first string character or numeric ASCII code. Runtime execution is not implemented by this authoring profile.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaînes ou valeurs numériques réelles, y compris en tableaux et clusters ; la sortie conserve leur structure booléenne. Le test porte sur le premier caractère de la chaîne ou sur le code ASCII numérique. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,11 +63,11 @@ String or real numeric leaves, including arrays/clusters; output preserves their
 
 Scope: `requires_explicit_target_capability`.
 
-Runtime execution is not implemented by this authoring profile.
+Implementation: `frog.studio.comparison.white_space.owned.v1`.
 
-**Authoring/target contract limits:**
+Required provider: `frog.studio.comparison.owned-tree@1`.
 
-- Runtime execution is not implemented by this authoring profile.
+The existing compiled NumericAggregate service provides the bounded Comparison profile on explicitly admitted targets. The exact established scalar zero-comparison identities remain unchanged where applicable. Complete types, nominal schemas, shapes and exact physical carriers remain checked. This declaration is not a passing test, full overload coverage or AOT/package qualification.
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 

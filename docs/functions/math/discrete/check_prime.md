@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Renvoie un booléen indiquant si l’entier I64 est premier. Tout n&lt;2, y compris négatif, donne False ; aucune substitution par la valeur absolue. Le contrat FROG est déterministe sur toute la plage I64, sans résultat seulement probable. Formule : true iff n is a prime integer &gt;= 2. Exemple : Check Prime(-7)=False; Check Prime(97)=True; Check Prime(561)=False. [Types] n: i64 → prime?: bool. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée.
+Renvoie un booléen indiquant si l’entier I64 est premier. Tout n&lt;2, y compris négatif, donne False ; aucune substitution par la valeur absolue. Le contrat FROG est déterministe sur toute la plage I64, sans résultat seulement probable. Formule : true iff n is a prime integer &gt;= 2. Exemple : Check Prime(-7)=False; Check Prime(97)=True; Check Prime(561)=False.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Returns a Boolean primality result for an I64 integer. Every n&lt;2, including negative values, is False; the magnitude is not substituted. The FROG contract is deterministic on the entire I64 range, not a probabilistic guess. Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
-
-n: i64 → prime?: bool. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+n: i64 → prime?: bool. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature.
+
+Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+n: i64 → prime?: bool. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `bool`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

@@ -29,6 +29,11 @@ Function help uses the same catalog identity and icon as the Function Navigator.
 The connector view identifies inputs and outputs and distinguishes **required**,
 **recommended**, and **optional** terminals when declared by the function.
 
+The description gives the function's quick purpose. **Terminal Data Types**
+still describes its terminals, and **Examples** keeps the related examples.
+Choose **Detailed help** for the full **Types and Compatibility** reference,
+including accepted types, conversions, shape rules and declared limits.
+
 For a placed object, connected types can refine the declared terminal type.
 Inspect the type detail when working with nested Arrays or Clusters; a color
 alone cannot tell you the complete type. Coercion information is shown where

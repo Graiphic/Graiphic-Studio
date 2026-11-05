@@ -53,11 +53,11 @@ class ExampleExportTests(unittest.TestCase):
     def save_index(self):
         self.index.write_text(json.dumps(dict(schema="frog.examples.index", version=1, examples=self.rows), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    def export(self, check=False):
+    def export(self, check=False, functions_only=False):
         # Catalog/help are isolated reviewed-input fixtures, not an alternate
         # canonical index. Production main still reads its real source inputs.
         inputs = (configparser.RawConfigParser(), {}, {}, {}, {}, {}, collections.defaultdict(list), {}, set())
-        argv = ["export_studio_help.py", "--source", str(self.engine), "--output", str(self.site), "--examples-index", str(self.index)] + (["--check"] if check else [])
+        argv = ["export_studio_help.py", "--source", str(self.engine), "--output", str(self.site), "--examples-index", str(self.index)] + (["--check"] if check else []) + (["--functions-only"] if functions_only else [])
         with mock.patch.object(exporter, "load_catalog", return_value=copy.deepcopy(self.catalog)), mock.patch.object(exporter, "load_inputs", return_value=inputs), mock.patch("sys.argv", argv), contextlib.redirect_stdout(io.StringIO()) as log:
             exporter.main()
         return json.loads(log.getvalue())
@@ -96,6 +96,33 @@ class ExampleExportTests(unittest.TestCase):
         self.assertEqual(self.export(True)["changed_or_stale"], 0)
         self.assertEqual(self.state(self.site), before)
         self.assertEqual(self.state(self.root), source_before)
+
+    def test_functions_only_retains_examples_assets_and_manual_function_pages(self):
+        self.export()
+        preserved = {name: data for name, data in self.state(self.site).items() if not name.startswith("docs/functions/")}
+        function = self.site / exporter.route_for("numeric.square")
+        function.write_text("# Individually maintained function\n\nKeep this enriched manual reference.\n", encoding="utf-8")
+        enriched = self.site / exporter.route_for("numeric.add")
+        enriched_text = enriched.read_text(encoding="utf-8") + "\n## Functional appendix\n\nRetain independently reviewed functional and historical details.\n"
+        enriched.write_text(enriched_text, encoding="utf-8")
+        self.rows[0]["summary"] = "A newly reviewed example summary belongs to the example export owner."
+        self.save_index()
+        result = self.export(functions_only=True)
+        self.assertEqual(result["manual_page_exceptions"], ["docs/functions/numeric/square.md"])
+        self.assertIn("enriched manual reference", function.read_text(encoding="utf-8"))
+        self.assertEqual(enriched.read_text(encoding="utf-8"), enriched_text)
+        self.assertEqual({name: data for name, data in self.state(self.site).items() if not name.startswith("docs/functions/")}, preserved)
+        self.assertEqual(self.export(True, True)["changed_or_stale"], 0)
+
+    def test_document_directory_context_comparator_is_documentation_not_null(self):
+        self.rows[1]["expected"][0].update(comparator="document_directory", value_json="null", type="path")
+        self.save_index()
+        before = self.state(self.root)
+        self.export()
+        page = (self.site / "docs/examples/numeric.nan.sample.md").read_text(encoding="utf-8")
+        self.assertIn("<directory containing the current example document>", page)
+        self.assertNotIn("```text\nnull\n```", page)
+        self.assertEqual(self.state(self.root), before)
 
     def test_check_detects_changed_copy_without_repair(self):
         self.export()
@@ -272,6 +299,43 @@ class ExampleExportTests(unittest.TestCase):
         self.index.write_text('{"schema":"frog.examples.index","schema":"other","version":1,"examples":[]}', encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "Duplicate JSON member"):
             self.export()
+
+
+class HelpTypeNarrativeTests(unittest.TestCase):
+    def test_only_the_marked_paragraph_moves_and_functional_prose_survives(self):
+        description = "Select a field. Missing names invalidate the node. [Types] Exact field type. [Local Studio] Keep this restriction.\n\nA later functional paragraph remains available."
+        purpose, rules = exporter.purpose_parts(description)
+        self.assertEqual(purpose, "Select a field. Missing names invalidate the node.\n\nA later functional paragraph remains available.")
+        self.assertEqual(rules, "Exact field type. [Local Studio] Keep this restriction.")
+        original = "  A complete unmarked description. Another useful sentence.\n\nKeep its whitespace.  "
+        self.assertEqual(exporter.purpose_parts(original), (original, ""))
+
+    def test_crlf_and_independent_marked_paragraphs(self):
+        purpose, rules = exporter.purpose_parts("One. [Types] A -> B; [value] is technical.\r\n\r\nAnother action. [Types] Rank 1.\r\n\r\nA final action.")
+        self.assertEqual(purpose, "One.\r\n\r\nAnother action.\r\n\r\nA final action.")
+        self.assertEqual(rules, "A -> B; [value] is technical.\n\nRank 1.")
+
+    def test_bilingual_type_notes_are_complete_and_exact_duplicates_are_not_repeated(self):
+        rule = "A rank-1 String array and optional delimiter produce one String. Default delimiter is TAB; higher ranks are refused."
+        french = "Un tableau 1D de chaînes produit une chaîne. Le séparateur facultatif est une tabulation ; autres rangs refusés."
+        contract = {"behavior_summary": rule, "overload_type_resolution": {"policy": "fixed", "result": "declared_output_type", "implicit_coercion": False, "description": rule},
+                    "array_policy": {"accepted": True, "lifting": "none", "description": rule}, "variadicity": {"enabled": False, "input_count": 2}}
+        before = copy.deepcopy(contract)
+        helper = {"description.en": "Joins strings. [Types] " + rule, "description.fr": "Réunit les chaînes. [Types] " + french}
+        page = "\n".join(exporter.render_policy(contract, {}, helper))
+        self.assertIn("## Types and Compatibility", page)
+        self.assertEqual(page.count(exporter.prose(rule)), 1)
+        self.assertEqual(page.count(exporter.prose(french)), 1)
+        self.assertNotIn("[Types]", page)
+        self.assertTrue(exporter.prose_is_preserved(rule, page))
+        self.assertIn("An NI overload is not a claim of Studio runtime support", page)
+        self.assertEqual(contract, before)
+
+    def test_notes_without_a_binding_contract_are_not_lost(self):
+        helper = {"description.en": "A palette action. [Types] No operands. Studio placement only."}
+        page = "\n".join(exporter.render_policy(None, {}, helper))
+        self.assertIn("No operands. Studio placement only.", page)
+        self.assertIn("Types and Compatibility", page)
 
 
 if __name__ == "__main__":

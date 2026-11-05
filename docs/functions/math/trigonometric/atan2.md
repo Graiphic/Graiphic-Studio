@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-atan2(y,x). Entrées requises dans l’ordre y,x ; résultat réel [-pi,pi]. FROG suit le backend C++ pour les axes, zéros signés et infinis. À l’origine numérique, dans l’ordre (y,x) : atan2(+0,+0)=+0 ; atan2(-0,+0)=-0 ; atan2(+0,-0)=+pi ; atan2(-0,-0)=-pi. Ces conventions IEEE sont FROG, sans mesure NXG. Atan2 complexe reste indisponible sans définition NI complète validée. Angles et résultats réels inverses en radians, sans conversion implicite de degrés. NaN se propage sans promotion complexe dépendant de la valeur. [Types] F32/F64 conservent leur précision ; les entiers deviennent F64 et peuvent s’arrondir au-delà de 2^53. Tableaux : rang, dimensions et vides typés conservés ; clusters entièrement numériques : champs ordonnés conservés. Aucun Boolean, String, référence, cluster mixte non numérique, virgule fixe, précision étendue, unité physique ou Matrix. Les entrées sont requises, sans zéro implicite. Atan2 complexe n’est pas pris en charge. Deux conteneurs doivent avoir les mêmes dimensions réelles et schémas de champs ; un scalaire réel peut s’appliquer à l’autre conteneur. Aucune troncature ni diffusion multidimensionnelle. NI NXG documente les connecteurs ; les conventions indiquées sont FROG, sans équivalence bit à bit mesurée.
+atan2(y,x). Entrées requises dans l’ordre y,x ; résultat réel [-pi,pi]. FROG suit le backend C++ pour les axes, zéros signés et infinis. À l’origine numérique, dans l’ordre (y,x) : atan2(+0,+0)=+0 ; atan2(-0,+0)=-0 ; atan2(+0,-0)=+pi ; atan2(-0,-0)=-pi. Ces conventions IEEE sont FROG, sans mesure NXG. Atan2 complexe reste indisponible sans définition NI complète validée. Angles et résultats réels inverses en radians, sans conversion implicite de degrés. NaN se propage sans promotion complexe dépendant de la valeur.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-atan2(y,x). Required inputs are ordered y,x; real result [-pi,pi]. FROG follows the selected C++ backend for axes, signed zero and infinities. At the numerical origin, with arguments (y,x): atan2(+0,+0)=+0; atan2(-0,+0)=-0; atan2(+0,-0)=+pi; atan2(-0,-0)=-pi. These are FROG IEEE conventions, not measured NXG results. Complex Atan2 is unavailable pending a validated complete NI definition. Angles and real inverse results are radians; no implicit degree conversion. Real NaN propagates without value-dependent complex promotion. F32/F64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. Complex Atan2 is not supported. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Binary operands require equal actual array dimensions and matching cluster schemas; one whole real scalar may lift through the other aggregate. No truncation or multidimensional broadcasting. Local Highlight provider: frog.studio.trigonometric.atan2.
-
-F32/F64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. Complex Atan2 is not supported. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Binary operands require equal actual array dimensions and matching cluster schemas; one whole real scalar may lift through the other aggregate. No truncation or multidimensional broadcasting. NI NXG documents the connectors; the named edge conventions are FROG, without a measured bit-equivalence claim.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +43,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-F32/F64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. Complex Atan2 is not supported. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Binary operands require equal actual array dimensions and matching cluster schemas; one whole real scalar may lift through the other aggregate. No truncation or multidimensional broadcasting.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+F32/F64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. Complex Atan2 is not supported. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Binary operands require equal actual array dimensions and matching cluster schemas; one whole real scalar may lift through the other aggregate. No truncation or multidimensional broadcasting. NI NXG documents the connectors; the named edge conventions are FROG, without a measured bit-equivalence claim.
+
+Local Highlight provider: frog.studio.trigonometric.atan2.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+F32/F64 conservent leur précision ; les entiers deviennent F64 et peuvent s’arrondir au-delà de 2^53. Tableaux : rang, dimensions et vides typés conservés ; clusters entièrement numériques : champs ordonnés conservés. Aucun Boolean, String, référence, cluster mixte non numérique, virgule fixe, précision étendue, unité physique ou Matrix. Les entrées sont requises, sans zéro implicite. Atan2 complexe n’est pas pris en charge. Deux conteneurs doivent avoir les mêmes dimensions réelles et schémas de champs ; un scalaire réel peut s’appliquer à l’autre conteneur. Aucune troncature ni diffusion multidimensionnelle. NI NXG documente les connecteurs ; les conventions indiquées sont FROG, sans équivalence bit à bit mesurée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.trigonometric.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

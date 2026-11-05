@@ -12,17 +12,13 @@ Places the Feedback Node glyph on the Diagram.
 
 **Noeud de retroaction**
 
-Place le glyphe Noeud de retroaction sur le diagramme. [Types] Valeur:T, initialisation:T, enable:Boolean -&gt; T précédent, schéma et rangs conservés.
+Place le glyphe Noeud de retroaction sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Typed previous-state read and future-state commit, bounded execution-count Delay, explicit initialization scope and Boolean Enable. Historical connector identities are preserved; History is an explicit sequence of T, including when T is itself an Array. Local FROG contract, not a published NI compatibility claim.
-
-Value:T, initializer:T, enable:Boolean -&gt; previous T, preserving all schema/rank information.
 
 ## IN — inputs
 
@@ -42,7 +38,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Value:T, initializer:T, enable:Boolean -&gt; previous T, preserving all schema/rank information.
+
+Typed previous-state read and future-state commit, bounded execution-count Delay, explicit initialization scope and Boolean Enable. Historical connector identities are preserved; History is an explicit sequence of T, including when T is itself an Array. Local FROG contract, not a published NI compatibility claim.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Valeur:T, initialisation:T, enable:Boolean -&gt; T précédent, schéma et rangs conservés.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

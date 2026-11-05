@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Évalue la fonction hypergéométrique confluente U, solution distincte de M de Kummer ; jamais 1/M, 1-M ni M régularisée. Pour r&gt;0, tous a,b réels finis sont admis, y compris b entier ou non positif. En r=0, traiter d’abord le polynôme a=-n ; sinon b&lt;1 donne Gamma(1-b)/Gamma(1+a-b), avec les zéros de Gamma réciproque au dénominateur ; autres cas en zéro : singularité. [Types] x: f64; a: f64; b: f64 → U [value]: f64. Le profil hg_ni_documented_abs_real_v1 valide les entrées finies puis évalue r=abs(x) seulement ; a, b et c conservent leur signe. Cette adaptation FROG suit une remarque documentaire NI non mesurée. Le noyau mathématique séparé accepte x signé sur son domaine ; ces fonctions ne sont pas paires. Par exemple le noyau M(1,1,-1)=exp(-1), alors que ce nœud à x=-1 renvoie exp(1). Socle NI scalaire f64 ; toutes les entrées sont requises, sans valeur implicite. Extension FROG par NumericTreeMath commun : tableaux/clusters réels numériques de structures compatibles, rangs, dimensions, vides typés et identités ordonnées des champs conservés ; chaque opérande entièrement scalaire est diffusé sur cette structure. Feuilles f32/entières promues visiblement en f64 ; résultats à feuilles f64. Sans conversion cachée Boolean, String, Path, référence, complexe, Matrix ni broadcasting NumPy. Les entiers au-delà de 2^53 peuvent être arrondis. Diagnostics numériques internes FROG : invalid_parameter, outside_real_profile, singularity, nonfinite_input, overflow, underflow et nonconvergence, via le canal existant sans terminal d’erreur ; NaN typé en erreur, infini signé en dépassement, zéro signé en sous-dépassement et sous-normaux représentables conservés. Signature NXG non vérifiée.
+Évalue la fonction hypergéométrique confluente U, solution distincte de M de Kummer ; jamais 1/M, 1-M ni M régularisée. Pour r&gt;0, tous a,b réels finis sont admis, y compris b entier ou non positif. En r=0, traiter d’abord le polynôme a=-n ; sinon b&lt;1 donne Gamma(1-b)/Gamma(1+a-b), avec les zéros de Gamma réciproque au dénominateur ; autres cas en zéro : singularité.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Evaluates confluent hypergeometric U, a distinct solution from Kummer M; never 1/M, 1-M or regularized M. For r&gt;0 all finite real a,b are accepted, including integer or nonpositive b. At r=0 use a=-n polynomial first; otherwise b&lt;1 uses Gamma(1-b)/Gamma(1+a-b), including denominator reciprocal-Gamma zeros; other zero cases are singular. Formula: U(a,b,abs(x)). Example: Tricomi(2,1,2)=0.5. Profile hg_ni_documented_abs_real_v1 validates finite inputs then evaluates r=abs(x) only; a, b and c retain their signs. This FROG adaptation follows an unmeasured NI documentary remark. The separate mathematical kernel accepts signed x where defined; these functions are not mathematically even. For example standard M(1,1,-1)=exp(-1), whereas this node at x=-1 returns exp(1). NI scalar baseline: every required input and result is f64. FROG extension through common NumericTreeMath: real numeric Arrays/Clusters preserve rank, dimensions, typed empties and ordered field identities; compatible structured operands combine element by element and each whole scalar operand lifts across that structure. Real f32/integer leaves promote visibly to f64; all result leaves are f64. No implicit Boolean, String, Path, reference, complex, Matrix or NumPy broadcasting overload. Integer promotion may round beyond 2^53. No implicit unwired values. FROG internal numeric diagnostics invalid_parameter, outside_real_profile, singularity, nonfinite_input, overflow, underflow and nonconvergence use the existing engine channel, without an error terminal. Finite success, typed NaN failures, signed Infinity overflow, and signed zero underflow retain the source graph; preserve representable subnormals. Classic LabVIEW scalar connector documentation and mathematical DLMF definitions; no verified NXG signature or measured NI runtime parity. FROG owns required inputs, diagnostic and boundary conventions, and the versioned documentary abs(x) adapter.
-
-x: f64; a: f64; b: f64 → U [value]: f64. Profile hg_ni_documented_abs_real_v1 validates finite inputs then evaluates r=abs(x) only; a, b and c retain their signs. This FROG adaptation follows an unmeasured NI documentary remark. The separate mathematical kernel accepts signed x where defined; these functions are not mathematically even. For example standard M(1,1,-1)=exp(-1), whereas this node at x=-1 returns exp(1). NI scalar baseline: every required input and result is f64. FROG extension through common NumericTreeMath: real numeric Arrays/Clusters preserve rank, dimensions, typed empties and ordered field identities; compatible structured operands combine element by element and each whole scalar operand lifts across that structure. Real f32/integer leaves promote visibly to f64; all result leaves are f64. No implicit Boolean, String, Path, reference, complex, Matrix or NumPy broadcasting overload. Integer promotion may round beyond 2^53. No implicit unwired values. FROG internal numeric diagnostics invalid_parameter, outside_real_profile, singularity, nonfinite_input, overflow, underflow and nonconvergence use the existing engine channel, without an error terminal. Finite success, typed NaN failures, signed Infinity overflow, and signed zero underflow retain the source graph; preserve representable subnormals.
-
-</details>
 
 ## IN — inputs
 
@@ -55,9 +44,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-NI scalar baseline: every required input and result is f64. FROG extension through common NumericTreeMath: real numeric Arrays/Clusters preserve rank, dimensions, typed empties and ordered field identities; compatible structured operands combine element by element and each whole scalar operand lifts across that structure. Real f32/integer leaves promote visibly to f64; all result leaves are f64. No implicit Boolean, String, Path, reference, complex, Matrix or NumPy broadcasting overload. Integer promotion may round beyond 2^53. No implicit unwired values.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+x: f64; a: f64; b: f64 → U [value]: f64. Profile hg_ni_documented_abs_real_v1 validates finite inputs then evaluates r=abs(x) only; a, b and c retain their signs. This FROG adaptation follows an unmeasured NI documentary remark. The separate mathematical kernel accepts signed x where defined; these functions are not mathematically even. For example standard M(1,1,-1)=exp(-1), whereas this node at x=-1 returns exp(1). NI scalar baseline: every required input and result is f64. FROG extension through common NumericTreeMath: real numeric Arrays/Clusters preserve rank, dimensions, typed empties and ordered field identities; compatible structured operands combine element by element and each whole scalar operand lifts across that structure. Real f32/integer leaves promote visibly to f64; all result leaves are f64. No implicit Boolean, String, Path, reference, complex, Matrix or NumPy broadcasting overload. Integer promotion may round beyond 2^53. No implicit unwired values. FROG internal numeric diagnostics invalid_parameter, outside_real_profile, singularity, nonfinite_input, overflow, underflow and nonconvergence use the existing engine channel, without an error terminal. Finite success, typed NaN failures, signed Infinity overflow, and signed zero underflow retain the source graph; preserve representable subnormals.
+
+Formula: U(a,b,abs(x)). Example: Tricomi(2,1,2)=0.5. Classic LabVIEW scalar connector documentation and mathematical DLMF definitions; no verified NXG signature or measured NI runtime parity. FROG owns required inputs, diagnostic and boundary conventions, and the versioned documentary abs(x) adapter.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x: f64; a: f64; b: f64 → U [value]: f64. Le profil hg_ni_documented_abs_real_v1 valide les entrées finies puis évalue r=abs(x) seulement ; a, b et c conservent leur signe. Cette adaptation FROG suit une remarque documentaire NI non mesurée. Le noyau mathématique séparé accepte x signé sur son domaine ; ces fonctions ne sont pas paires. Par exemple le noyau M(1,1,-1)=exp(-1), alors que ce nœud à x=-1 renvoie exp(1). Socle NI scalaire f64 ; toutes les entrées sont requises, sans valeur implicite. Extension FROG par NumericTreeMath commun : tableaux/clusters réels numériques de structures compatibles, rangs, dimensions, vides typés et identités ordonnées des champs conservés ; chaque opérande entièrement scalaire est diffusé sur cette structure. Feuilles f32/entières promues visiblement en f64 ; résultats à feuilles f64. Sans conversion cachée Boolean, String, Path, référence, complexe, Matrix ni broadcasting NumPy. Les entiers au-delà de 2^53 peuvent être arrondis. Diagnostics numériques internes FROG : invalid_parameter, outside_real_profile, singularity, nonfinite_input, overflow, underflow et nonconvergence, via le canal existant sans terminal d’erreur ; NaN typé en erreur, infini signé en dépassement, zéro signé en sous-dépassement et sous-normaux représentables conservés. Signature NXG non vérifiée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.hypergeometric.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

@@ -12,17 +12,13 @@ Formats a number as an octal string.
 
 **Nombre vers chaine octale**
 
-Formate un nombre dans une chaine octale. [Types] Les numériques scalaires et tableaux/clusters numériques deviennent des chaînes (octal), avec rangs et schémas conservés. Largeur scalaire I32.
+Formate un nombre dans une chaine octale.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric scalars and numeric-only arrays/clusters convert to octal String leaves, preserving ranks and cluster schemas. Width is scalar I32.
-
-Numeric scalars and numeric-only arrays/clusters convert to octal String leaves, preserving ranks and cluster schemas. Width is scalar I32.
 
 ## IN — inputs
 
@@ -41,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric scalars and numeric-only arrays/clusters convert to octal String leaves, preserving ranks and cluster schemas. Width is scalar I32.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Les numériques scalaires et tableaux/clusters numériques deviennent des chaînes (octal), avec rangs et schémas conservés. Largeur scalaire I32.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

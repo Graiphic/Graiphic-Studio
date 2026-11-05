@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Inverse une valeur booleenne. [Types] Accepte booléens ou numériques non complexes, scalaires, tableaux et clusters. Les feuilles booléennes restent booléennes ; les entiers conservent/promeuvent leur représentation ; les flottants deviennent I32. Un cluster d'erreur utilise status. Ne mélange pas booléen et nombre. Les tableaux sont traités élément par élément en conservant leur rang. Plusieurs tableaux en entrée doivent avoir le même rang ; une entrée scalaire s'applique à chaque élément.
+Inverse une valeur booleenne.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolean leaves produce Boolean; integer leaves retain/promote their representation; floating leaves coerce to I32. Error-cluster input uses status. Boolean and numeric leaves cannot mix. Arrays are processed element by element and retain their rank. Multiple array operands must have the same rank; a scalar operand is applied to every element.
-
-Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolean leaves produce Boolean; integer leaves retain/promote their representation; floating leaves coerce to I32. Error-cluster input uses status. Boolean and numeric leaves cannot mix. Arrays are processed element by element and retain their rank. Multiple array operands must have the same rank; a scalar operand is applied to every element.
-
-</details>
 
 ## IN — inputs
 
@@ -53,23 +42,49 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 Boolean or non-complex numeric scalars, arrays and clusters are accepted. Boolean leaves produce Boolean; integer leaves retain/promote their representation; floating leaves coerce to I32. Error-cluster input uses status. Boolean and numeric leaves cannot mix. Arrays are processed element by element and retain their rank. Multiple array operands must have the same rank; a scalar operand is applied to every element.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Accepte booléens ou numériques non complexes, scalaires, tableaux et clusters. Les feuilles booléennes restent booléennes ; les entiers conservent/promeuvent leur représentation ; les flottants deviennent I32. Un cluster d'erreur utilise status. Ne mélange pas booléen et nombre. Les tableaux sont traités élément par élément en conservant leur rang. Plusieurs tableaux en entrée doivent avoir le même rang ; une entrée scalaire s'applique à chaque élément.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
 - Arrays: accepted; lifting policy: `element_wise`.
-- Shape rule: `preserve_rank; array_operands_must_have_equal_rank`.
+- Shape rule: `preserve_rank; same_rank_arrays_use_coordinate_intersection; scalar_broadcast`.
 - Scalar lifting: no.
+
+Different same-rank Array lengths use the intersection; cross-shaped multidimensional intersection is an explicit GS coordinate-wise contract, not a claim of observed NI behavior.
 
 **Input count:** 1; this contract does not enable variadic inputs.
 
 ## Execution and limits
 
-**Public FROG / target Runtime:** declared available within the scope below.
+**Public FROG / target Runtime:** not declared available by this authoring contract.
 
-Implementation: `frog.core.not`.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.boolean.not.tree.v1`.
+
+Required provider: `frog.studio.boolean.owned-tree@1`.
+
+Conditional complete typed-tree implementation. Existing scalar Boolean Core/reduction identities remain exact; the current Source chooses the tree realization for polymorphic inputs and Array reductions. Extended numeric carriers and deployment require separate admission and proof.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

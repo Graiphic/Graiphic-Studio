@@ -12,17 +12,13 @@ Builds a path from an array of components.
 
 **Tableau de chaines en chemin**
 
-Construit un chemin depuis un tableau de composants. [Types] Un tableau de chaînes exactement 1D et un booléen relatif scalaire facultatif (faux par défaut) produisent un chemin scalaire. Les rangs supérieurs et tableaux de chemins sont refusés.
+Construit un chemin depuis un tableau de composants.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Exactly a 1D String array and an optional scalar relative Boolean (false by default) produce one scalar Path. Higher ranks and arrays of Paths are rejected.
-
-Exactly a 1D String array and an optional scalar relative Boolean (false by default) produce one scalar Path. Higher ranks and arrays of Paths are rejected.
 
 ## IN — inputs
 
@@ -41,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Exactly a 1D String array and an optional scalar relative Boolean (false by default) produce one scalar Path. Higher ranks and arrays of Paths are rejected.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau de chaînes exactement 1D et un booléen relatif scalaire facultatif (faux par défaut) produisent un chemin scalaire. Les rangs supérieurs et tableaux de chemins sont refusés.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

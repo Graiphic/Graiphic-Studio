@@ -12,17 +12,13 @@ Returns a value that identifies the sign of the input.
 
 **Signe**
 
-Renvoie une valeur qui identifie le signe de l'entree. [Types] Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. Les feuilles conservent leur représentation, y compris les complexes. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices.
+Renvoie une valeur qui identifie le signe de l'entree.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Leaves retain their numeric representation, including complex values.
-
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Leaves retain their numeric representation, including complex values. Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Leaves retain their numeric representation, including complex values.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Leaves retain their numeric representation, including complex values. Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. Les feuilles conservent leur représentation, y compris les complexes. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -56,7 +63,13 @@ fixed unary
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
-No portable Runtime provider is declared.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.sign.owned.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

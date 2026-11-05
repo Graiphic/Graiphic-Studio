@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Calcule l’inverse multiplicatif du cosinus hyperbolique. Entrée x ; sortie sech. Tout réel x ; sech(0)=1 et sech(±∞)=+0. Exemple : Sech(ln(2)) = 0,8. [Types] Scalaire, tableau ou cluster entièrement numérique ; les entiers produisent du F64 et la précision flottante est conservée. Les inverses complexes utilisent les branches principales ; les résultats complexes non finis sont indisponibles. NaN se propage ; un réel hors domaine produit NaN sans devenir complexe. Aucune conversion d’angle. Le calcul local Highlight est disponible.
+Calcule l’inverse multiplicatif du cosinus hyperbolique. Entrée x ; sortie sech. Tout réel x ; sech(0)=1 et sech(±∞)=+0. Exemple : Sech(ln(2)) = 0,8.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Computes the reciprocal of the hyperbolic cosine, not its inverse function. Every real x; sech(0)=1 and sech(±Infinity)=+0. F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays are processed element by element, preserving rank and dimensions; recursively numeric clusters preserve ordered fields. Typed empty arrays remain typed. String, Boolean, reference, mixed nonnumeric clusters, fixed-point, extended precision and Matrix inputs are not supported. The input x is required; the F64 unwired preview is not a numerical default. Local Highlight calculation uses frog.studio.hyperbolic.sech. Real NaN propagates; real inputs never become complex based on their value. No angle conversion. Principal complex branches are used; non-finite complex results fail with a capability diagnostic.
-
-Numeric scalar, array or numeric-only cluster; integer leaves produce F64 and floating-point precision is retained. Complex inverses use principal branches; non-finite complex results are unavailable. NaN propagates; real domain errors produce NaN without changing the output to complex. No angle conversion. Local Highlight calculation is available.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays are processed element by element, preserving rank and dimensions; recursively numeric clusters preserve ordered fields. Typed empty arrays remain typed. String, Boolean, reference, mixed nonnumeric clusters, fixed-point, extended precision and Matrix inputs are not supported. The input x is required; the F64 unwired preview is not a numerical default.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric scalar, array or numeric-only cluster; integer leaves produce F64 and floating-point precision is retained. Complex inverses use principal branches; non-finite complex results are unavailable. NaN propagates; real domain errors produce NaN without changing the output to complex. No angle conversion. Local Highlight calculation is available.
+
+F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays are processed element by element, preserving rank and dimensions; recursively numeric clusters preserve ordered fields. Typed empty arrays remain typed. String, Boolean, reference, mixed nonnumeric clusters, fixed-point, extended precision and Matrix inputs are not supported. The input x is required; the F64 unwired preview is not a numerical default. Local Highlight calculation uses frog.studio.hyperbolic.sech. Real NaN propagates; real inputs never become complex based on their value. Principal complex branches are used; non-finite complex results fail with a capability diagnostic.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaire, tableau ou cluster entièrement numérique ; les entiers produisent du F64 et la précision flottante est conservée. Les inverses complexes utilisent les branches principales ; les résultats complexes non finis sont indisponibles. NaN se propage ; un réel hors domaine produit NaN sans devenir complexe. Aucune conversion d’angle. Le calcul local Highlight est disponible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.hyperbolic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

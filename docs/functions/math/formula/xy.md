@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Échantillonne uniformément 2formules X(t),Y(t), en conservant appariement et ordre du paramètre. N&gt;=2 inclut les bornes ; défautN=10,0→1. [2*t,t^2],N=3,sur[0,2] donneX[0,2,4],Y[0,1,4]. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points. [Types] Formulas [formulas]: array&lt;string&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+Échantillonne uniformément 2formules X(t),Y(t), en conservant appariement et ordre du paramètre. N&gt;=2 inclut les bornes ; défautN=10,0→1. [2*t,t^2],N=3,sur[0,2] donneX[0,2,4],Y[0,1,4]. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Uniformly samples2 formulas X(t),Y(t), preserving pairing and parameter traversal order. N&gt;=2 includes start/end; default N=10,start 0,end 1. Formulas[2*t,t^2],N=3,on [0,2] givesX[0,2,4],Y[0,1,4]. Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
-
-Formulas [formulas]: array&lt;string&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
-
-</details>
 
 ## IN — inputs
 
@@ -59,9 +48,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Formulas [formulas]: array&lt;string&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Formulas [formulas]: array&lt;string&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

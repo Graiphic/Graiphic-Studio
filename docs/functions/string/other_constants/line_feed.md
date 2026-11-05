@@ -12,15 +12,13 @@ Provides a line feed character.
 
 **Constante retour a la ligne**
 
-Fournit un caractere de retour a la ligne. [Types] Chaîne scalaire contenant LF ASCII (10) ; aucune entrée.
+Fournit un caractere de retour a la ligne.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Scalar String containing ASCII LF (10); no input.
 
 ## IN — inputs
 
@@ -34,7 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Scalar String containing ASCII LF (10); no input.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaîne scalaire contenant LF ASCII (10) ; aucune entrée.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

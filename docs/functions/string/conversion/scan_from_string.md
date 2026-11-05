@@ -12,17 +12,13 @@ Reads formatted values from a string.
 
 **Balayer une chaine**
 
-Lit des valeurs formatees depuis une chaine. [Types] Dérouler expose 1 à 32 couples défaut/sortie scalaires. Chaque sortie suit son propre défaut numérique/chaîne/chemin/booléen/enum/horodatage. Un format constant direct définit le nombre et les types chaîne, DBL ou horodatage des sorties sans défaut câblé. Tableaux/clusters refusés. Chaîne restante, décalage I32 et erreur gardent leurs types.
+Lit des valeurs formatees depuis une chaine.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Resize for 1–32 paired scalar defaults/outputs. Each output follows its own numeric/String/Path/Boolean/enum/timestamp default. A direct constant format infers parameter count and String, DBL or timestamp outputs when defaults are unwired. Arrays/clusters are rejected. Remainder String, I32 offset and error stay separately typed.
-
-Resize for 1–32 paired scalar defaults/outputs. Each output follows its own numeric/String/Path/Boolean/enum/timestamp default. A direct constant format infers parameter count and String, DBL or timestamp outputs when defaults are unwired. Arrays/clusters are rejected. Remainder String, I32 offset and error stay separately typed.
 
 ## IN — inputs
 
@@ -51,9 +47,20 @@ Additional input IDs: `default_value_N`, starting at 2.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Resize for 1–32 paired scalar defaults/outputs. Each output follows its own numeric/String/Path/Boolean/enum/timestamp default. A direct constant format infers parameter count and String, DBL or timestamp outputs when defaults are unwired. Arrays/clusters are rejected. Remainder String, I32 offset and error stay separately typed.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Dérouler expose 1 à 32 couples défaut/sortie scalaires. Chaque sortie suit son propre défaut numérique/chaîne/chemin/booléen/enum/horodatage. Un format constant direct définit le nombre et les types chaîne, DBL ou horodatage des sorties sans défaut câblé. Tableaux/clusters refusés. Chaîne restante, décalage I32 et erreur gardent leurs types.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

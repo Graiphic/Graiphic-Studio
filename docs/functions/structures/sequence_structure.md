@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Place des cadres ordonnés côte à côte. Ajoutez, dupliquez, réordonnez ou redimensionnez un cadre depuis sa bordure. Les fils transmettent des données vers les cadres suivants, jamais vers les précédents. [Types] Sans sélecteur ni itérateur ; tunnels typés sans indexation, avec un seul producteur par sortie. Studio : édition et sauvegarde uniquement ; l’exécution séquentielle n’est pas implémentée. Séquence empilée et variables locales de séquence non activées.
+Place des cadres ordonnés côte à côte. Ajoutez, dupliquez, réordonnez ou redimensionnez un cadre depuis sa bordure. Les fils transmettent des données vers les cadres suivants, jamais vers les précédents.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Studio authoring for a flat Sequence: ordered stable frames, forward data dependencies and single-producer boundary tunnels. Execution is not implemented.
-
-No selector or iteration terminal; typed non-indexing tunnels preserve data types, with one producer per output. Studio: authoring and document persistence only; sequential execution is not implemented. Stacked Sequence and Sequence Locals are not enabled.
-
-</details>
 
 ## IN — inputs
 
@@ -45,7 +34,29 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+No selector or iteration terminal; typed non-indexing tunnels preserve data types, with one producer per output. Studio: authoring and document persistence only; sequential execution is not implemented. Stacked Sequence and Sequence Locals are not enabled.
+
+Studio authoring for a flat Sequence: ordered stable frames, forward data dependencies and single-producer boundary tunnels. Execution is not implemented.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans sélecteur ni itérateur ; tunnels typés sans indexation, avec un seul producteur par sortie. Studio : édition et sauvegarde uniquement ; l’exécution séquentielle n’est pas implémentée. Séquence empilée et variables locales de séquence non activées.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

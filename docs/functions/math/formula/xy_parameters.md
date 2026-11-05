@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Échantillonne uniformément les composantes appariées X(t),Y(t) avec des paramètres nommés fixes. Ce profil FROG réserve t au paramètre indépendant : un paramètre nommé t est refusé, même si les deux formules sont constantes. Les paramètres restent fixes durant l’appel. [a*cos(t),b*sin(t)], a=2,b=1 décrit une ellipse ; les sorties restent deux tableaux 1D appariés. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points. [Types] Formulas [formulas]: array&lt;string&gt;; Parameters [parameters]: array&lt;cluster&lt;name:string,value:f64&gt;&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+Échantillonne uniformément les composantes appariées X(t),Y(t) avec des paramètres nommés fixes. Ce profil FROG réserve t au paramètre indépendant : un paramètre nommé t est refusé, même si les deux formules sont constantes. Les paramètres restent fixes durant l’appel. [a*cos(t),b*sin(t)], a=2,b=1 décrit une ellipse ; les sorties restent deux tableaux 1D appariés. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Uniformly samples paired X(t),Y(t) with fixed named parameters. This FROG profile reserves t as the independent parameter: a named parameter t is rejected, including when both formulas are constant. Parameters stay constant during the call. [a*cos(t),b*sin(t)] with a=2,b=1 describes an ellipse; the outputs remain two paired rank-one arrays. Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
-
-Formulas [formulas]: array&lt;string&gt;; Parameters [parameters]: array&lt;cluster&lt;name:string,value:f64&gt;&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
-
-</details>
 
 ## IN — inputs
 
@@ -60,9 +49,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Formulas [formulas]: array&lt;string&gt;; Parameters [parameters]: array&lt;cluster&lt;name:string,value:f64&gt;&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Formulas [formulas]: array&lt;string&gt;; Parameters [parameters]: array&lt;cluster&lt;name:string,value:f64&gt;&gt;; number of points [points]: u32; start [start]: f64; end [end]: f64; X [x_values]: array&lt;f64&gt;; Y [y_values]: array&lt;f64&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

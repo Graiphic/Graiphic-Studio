@@ -12,17 +12,13 @@ Represents a U8 Ring control or indicator in the dataflow.
 
 **Terminal Ring**
 
-Represente une commande ou un indicateur Ring U8 dans le flux. [Types] Sans opérande de fonction ; type de l’instance : représentation entière ; le texte de la liste déroulante ne constitue pas un domaine d’énumération. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+Represente une commande ou un indicateur Ring U8 dans le flux.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-The element is created and managed by the Studio editor rather than executed as a function provider.
-
-No function operand; instance type: integer representation; ring text is not an enum domain. Constants/controls supply a value; indicators consume it.
 
 ## IN — inputs
 
@@ -32,7 +28,22 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No function operand; instance type: integer representation; ring text is not an enum domain. Constants/controls supply a value; indicators consume it.
+
+The element is created and managed by the Studio editor rather than executed as a function provider.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans opérande de fonction ; type de l’instance : représentation entière ; le texte de la liste déroulante ne constitue pas un domaine d’énumération. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+
+</details>
 
 undecided
 

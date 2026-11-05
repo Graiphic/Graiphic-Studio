@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Teste si x est inférieur ou égal à y. [Types] Valeurs numériques réelles, booléennes, chaînes, horodatages ou énumérations ; tableaux de même rang, clusters et diffusion d’un scalaire. Les complexes et les chemins sont refusés. Le mode Éléments conserve la structure booléenne ; le mode Agrégats renvoie un booléen. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+Teste si x est inférieur ou égal à y.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Tests whether x is less than or equal to y. Real numeric, Boolean, String, Timestamp or Enum leaves; matching-rank arrays/clusters and scalar lifting. Complex numbers and Paths are rejected. Elements mode preserves the Boolean shape; Aggregates mode returns one Boolean.
-
-Real numeric, Boolean, String, Timestamp or Enum leaves; matching-rank arrays/clusters and scalar lifting. Complex numbers and Paths are rejected. Elements mode preserves the Boolean shape; Aggregates mode returns one Boolean. Runtime execution is not implemented by this authoring profile.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +43,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Real numeric, Boolean, String, Timestamp or Enum leaves; matching-rank arrays/clusters and scalar lifting. Complex numbers and Paths are rejected. Elements mode preserves the Boolean shape; Aggregates mode returns one Boolean.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Real numeric, Boolean, String, Timestamp or Enum leaves; matching-rank arrays/clusters and scalar lifting. Complex numbers and Paths are rejected. Elements mode preserves the Boolean shape; Aggregates mode returns one Boolean. Runtime execution is not implemented by this authoring profile.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Valeurs numériques réelles, booléennes, chaînes, horodatages ou énumérations ; tableaux de même rang, clusters et diffusion d’un scalaire. Les complexes et les chemins sont refusés. Le mode Éléments conserve la structure booléenne ; le mode Agrégats renvoie un booléen. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -70,18 +77,11 @@ Real numeric, Boolean, String, Timestamp or Enum leaves; matching-rank arrays/cl
 
 Scope: `requires_explicit_target_capability`.
 
-Runtime execution is not implemented by this authoring profile.
+Implementation: `frog.studio.comparison.less_or_equal.elements.owned.v1`.
 
-<details>
-<summary>Retained authoring-contract limitations</summary>
+Required provider: `frog.studio.comparison.owned-tree@1`.
 
-These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
-
-**Authoring/target contract limits:**
-
-- Runtime execution is not implemented by this authoring profile.
-
-</details>
+The existing compiled NumericAggregate service provides the bounded Comparison profile on explicitly admitted targets. Elements/Aggregates use distinct versioned operations; exact established scalar Core/private comparison identities remain unchanged. Complete types, nominal schemas, shapes and exact physical carriers remain checked. This declaration is not a passing test, full overload coverage or AOT/package qualification.
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 

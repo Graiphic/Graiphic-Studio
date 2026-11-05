@@ -12,17 +12,13 @@ Searches a one-dimensional array for an element.
 
 **Rechercher dans un tableau 1D**
 
-Recherche un element dans un tableau a une dimension. [Types] Le tableau 1D et l’élément scalaire/cluster recherché partagent le même schéma ; les représentations numériques compatibles sont promues ensemble. Chaque entrée spécialise l’autre. L’indice initial optionnel vaut zéro et est converti en I32. La sortie est un indice I32.
+Recherche un element dans un tableau a une dimension.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A 1D array and a matching scalar/cluster element share their full element schema; compatible numeric representations promote together. Either input specializes the other. Optional start index defaults to zero; real numeric indices convert to I32. Result is an I32 index.
-
-A 1D array and a matching scalar/cluster element share their full element schema; compatible numeric representations promote together. Either input specializes the other. Optional start index defaults to zero; real numeric indices convert to I32. Result is an I32 index.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A 1D array and a matching scalar/cluster element share their full element schema; compatible numeric representations promote together. Either input specializes the other. Optional start index defaults to zero; real numeric indices convert to I32. Result is an I32 index.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Le tableau 1D et l’élément scalaire/cluster recherché partagent le même schéma ; les représentations numériques compatibles sont promues ensemble. Chaque entrée spécialise l’autre. L’indice initial optionnel vaut zéro et est converti en I32. La sortie est un indice I32.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -58,7 +65,11 @@ A 1D array and a matching scalar/cluster element share their full element schema
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.search_1d.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

@@ -18,22 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Place une constante tableau editable sur le diagramme. [Types] Le modèle d’élément T et les dimensions définissent Array&lt;T,rang&gt; ; pas de tableau directement imbriqué, utiliser un cluster intermédiaire.
+Place une constante tableau editable sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Array element template T and dimension count define Array&lt;T,rank&gt;; no direct array-of-array element (wrap it in a cluster).
-
-</details>
 
 ## IN — inputs
 
@@ -47,7 +38,27 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Array element template T and dimension count define Array&lt;T,rank&gt;; no direct array-of-array element (wrap it in a cluster).
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Le modèle d’élément T et les dimensions définissent Array&lt;T,rang&gt; ; pas de tableau directement imbriqué, utiliser un cluster intermédiaire.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

@@ -16,24 +16,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Évalue D(q)=-Li2(1-q)=intégrale de ln(t)/(t-1) de 1 à q, q=abs(x), selon l’équation NI/CVI. D(0)=-pi^2/6, D(1)=0 et D(2)=pi^2/12 ; t=1 est amovible. [Types] x:f64 → result:f64. Extension FROG locale NumericTreeMath sur x tableaux/clusters numériques réels : rang, dimensions et champs ordonnés conservés ; promotion f32/entiers vers f64. Backend natif scalaire uniquement. Profil ni_documented_real_v1 : Si garde x signé ; En/Ci/Dilogarithm/Shi/Chi appliquent abs(x). Shi mathématique est impaire mais le nœud applique abs(x). D(q)=-Li2(1-q). Diagnostics séparés sans terminal d’erreur, sous-normaux conservés, calcul échelonné de Shi/Chi(717). Documentation NI-G et équation NI/CVI ; parité NI non mesurée.
+Évalue D(q)=-Li2(1-q)=intégrale de ln(t)/(t-1) de 1 à q, q=abs(x), selon l’équation NI/CVI. D(0)=-pi^2/6, D(1)=0 et D(2)=pi^2/12 ; t=1 est amovible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Evaluates D(q)=-Li2(1-q)=integral(1,q,ln(t)/(t-1),dt), q=abs(x), following the NI/CVI equation. D(0)=-pi^2/6, D(1)=0 and D(2)=pi^2/12; t=1 is removable. Profile ni_documented_real_v1: Si uses signed x; En, Ci, Dilogarithm, Shi and Chi use q=abs(x). Standard Shi is odd, but the documented node adapter applies abs(x). En is E_n, not Ei; D(q)=-Li2(1-q), not Li2(q) or positive Spence. NI parity has not been measured. NI scalar real double baseline: x:f64, required scalar n:i32 for En, result:f64. FROG local Highlight extension through common NumericTreeMath maps real numeric x Arrays/Clusters while preserving rank, dimensions, typed empties and ordered field identities; n remains one required scalar i32 common to every x leaf. Real f32/integer x leaves promote visibly to f64, possibly rounding integers beyond 2^53. No implicit floating n conversion, truncation, absolute n, Boolean, String, Path, complex, Matrix or dimensional broadcasting. Native compiled provider is scalar only; aggregates fail explicitly. FROG numeric diagnostics use the existing channel without error terminals: nan_input, limit, domain, singularity, overflow, underflow, nonconvergence. Preserve typed NaN failures, signed zero, documented limiting infinities and representable subnormals. Scaled Shi/Chi evaluation avoids premature intermediate exp overflow at x=717.
-
-NI scalar real double baseline: x:f64, required scalar n:i32 for En, result:f64. FROG local Highlight extension through common NumericTreeMath maps real numeric x Arrays/Clusters while preserving rank, dimensions, typed empties and ordered field identities; n remains one required scalar i32 common to every x leaf. Real f32/integer x leaves promote visibly to f64, possibly rounding integers beyond 2^53. No implicit floating n conversion, truncation, absolute n, Boolean, String, Path, complex, Matrix or dimensional broadcasting. Native compiled provider is scalar only; aggregates fail explicitly. Profile ni_documented_real_v1: Si uses signed x; En, Ci, Dilogarithm, Shi and Chi use q=abs(x). Standard Shi is odd, but the documented node adapter applies abs(x). En is E_n, not Ei; D(q)=-Li2(1-q), not Li2(q) or positive Spence. NI parity has not been measured. FROG numeric diagnostics use the existing channel without error terminals: nan_input, limit, domain, singularity, overflow, underflow, nonconvergence. Preserve typed NaN failures, signed zero, documented limiting infinities and representable subnormals. Scaled Shi/Chi evaluation avoids premature intermediate exp overflow at x=717.
-
-</details>
 
 ## IN — inputs
 
@@ -51,9 +40,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-NI scalar real double baseline: x:f64, required scalar n:i32 for En, result:f64. FROG local Highlight extension through common NumericTreeMath maps real numeric x Arrays/Clusters while preserving rank, dimensions, typed empties and ordered field identities; n remains one required scalar i32 common to every x leaf. Real f32/integer x leaves promote visibly to f64, possibly rounding integers beyond 2^53. No implicit floating n conversion, truncation, absolute n, Boolean, String, Path, complex, Matrix or dimensional broadcasting. Native compiled provider is scalar only; aggregates fail explicitly.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+NI scalar real double baseline: x:f64, required scalar n:i32 for En, result:f64. FROG local Highlight extension through common NumericTreeMath maps real numeric x Arrays/Clusters while preserving rank, dimensions, typed empties and ordered field identities; n remains one required scalar i32 common to every x leaf. Real f32/integer x leaves promote visibly to f64, possibly rounding integers beyond 2^53. No implicit floating n conversion, truncation, absolute n, Boolean, String, Path, complex, Matrix or dimensional broadcasting. Native compiled provider is scalar only; aggregates fail explicitly. Profile ni_documented_real_v1: Si uses signed x; En, Ci, Dilogarithm, Shi and Chi use q=abs(x). Standard Shi is odd, but the documented node adapter applies abs(x). En is E_n, not Ei; D(q)=-Li2(1-q), not Li2(q) or positive Spence. NI parity has not been measured. FROG numeric diagnostics use the existing channel without error terminals: nan_input, limit, domain, singularity, overflow, underflow, nonconvergence. Preserve typed NaN failures, signed zero, documented limiting infinities and representable subnormals. Scaled Shi/Chi evaluation avoids premature intermediate exp overflow at x=717.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x:f64 → result:f64. Extension FROG locale NumericTreeMath sur x tableaux/clusters numériques réels : rang, dimensions et champs ordonnés conservés ; promotion f32/entiers vers f64. Backend natif scalaire uniquement. Profil ni_documented_real_v1 : Si garde x signé ; En/Ci/Dilogarithm/Shi/Chi appliquent abs(x). Shi mathématique est impaire mais le nœud applique abs(x). D(q)=-Li2(1-q). Diagnostics séparés sans terminal d’erreur, sous-normaux conservés, calcul échelonné de Shi/Chi(717). Documentation NI-G et équation NI/CVI ; parité NI non mesurée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.exponential-integrals.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

@@ -12,15 +12,13 @@ Places a dropdown string constant on the diagram.
 
 **Constante chaine deroulante**
 
-Place une constante chaine deroulante sur le diagramme. [Types] Variante Studio avec liste de chaînes : sortie chaîne scalaire, ni enum ni tableau de chaînes. La constante chaîne NI est la référence de type, pas un éditeur de liste identique.
+Place une constante chaine deroulante sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Studio String-list editor variant: scalar String output, not an enum and not a String array. NI String Constant is the scalar-type reference, not an identical list editor.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Studio String-list editor variant: scalar String output, not an enum and not a String array. NI String Constant is the scalar-type reference, not an identical list editor.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Variante Studio avec liste de chaînes : sortie chaîne scalaire, ni enum ni tableau de chaînes. La constante chaîne NI est la référence de type, pas un éditeur de liste identique.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

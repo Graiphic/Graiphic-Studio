@@ -12,17 +12,13 @@ Formats an array as spreadsheet text.
 
 **Tableau en chaine format tableur**
 
-Convertit un tableau en chaine au format tableur. [Types] Un tableau numérique ou de chaînes de tout rang produit une chaîne scalaire. Format et séparateur sont des chaînes scalaires ; tableaux de booléens, clusters, chemins ou horodatages refusés.
+Convertit un tableau en chaine au format tableur.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Any-rank numeric or String array produces a scalar String. Format and delimiter are scalar strings; arrays of Boolean, clusters, paths or timestamps are rejected.
-
-Any-rank numeric or String array produces a scalar String. Format and delimiter are scalar strings; arrays of Boolean, clusters, paths or timestamps are rejected.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Any-rank numeric or String array produces a scalar String. Format and delimiter are scalar strings; arrays of Boolean, clusters, paths or timestamps are rejected.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau numérique ou de chaînes de tout rang produit une chaîne scalaire. Format et séparateur sont des chaînes scalaires ; tableaux de booléens, clusters, chemins ou horodatages refusés.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -58,7 +65,11 @@ Any-rank numeric or String array produces a scalar String. Format and delimiter 
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.conversion.array_to_spreadsheet_string.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

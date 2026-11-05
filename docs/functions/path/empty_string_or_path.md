@@ -12,17 +12,13 @@ Tests whether a string or path is empty.
 
 **Chaine ou chemin vide ?**
 
-Teste si une chaine ou un chemin est vide. [Types] Les chaînes, chemins et variants, ainsi que leurs tableaux et clusters, produisent des booléens avec les mêmes rangs et champs de cluster. Les images NI utilisent des chaînes ; les tags DSC n’ont pas de type dans Studio.
+Teste si une chaine ou un chemin est vide.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-String, Path or Variant values, including arrays and clusters of supported leaves, produce Booleans preserving all ranks and cluster fields. NI picture strings use String; DSC tags have no Studio type.
-
-String, Path or Variant values, including arrays and clusters of supported leaves, produce Booleans preserving all ranks and cluster fields. NI picture strings use String; DSC tags have no Studio type.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 String, Path or Variant values, including arrays and clusters of supported leaves, produce Booleans preserving all ranks and cluster fields. NI picture strings use String; DSC tags have no Studio type.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Les chaînes, chemins et variants, ainsi que leurs tableaux et clusters, produisent des booléens avec les mêmes rangs et champs de cluster. Les images NI utilisent des chaînes ; les tags DSC n’ont pas de type dans Studio.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

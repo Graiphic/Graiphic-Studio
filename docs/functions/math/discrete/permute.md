@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Compte les arrangements ordonnés de k éléments distincts parmi n, sans remise. Entrées n et k U32 ; sortie nPk F64. FROG définit k=0 comme 1, y compris (0,0), et k&gt;n comme 0. Un dépassement produit +∞ ; l’arrondi normal F64 est admis. Renvoie un nombre, jamais un tableau réorganisé. Formule : P(n,k)=n!/(n-k)! for k&lt;=n; 0 for k&gt;n. Exemple : Permute(5,2)=20; Permute(1000,2)=999000; Permute(0,0)=1. [Types] n: u32; k: u32 → nPk: f64. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée.
+Compte les arrangements ordonnés de k éléments distincts parmi n, sans remise. Entrées n et k U32 ; sortie nPk F64. FROG définit k=0 comme 1, y compris (0,0), et k&gt;n comme 0. Un dépassement produit +∞ ; l’arrondi normal F64 est admis. Renvoie un nombre, jamais un tableau réorganisé. Formule : P(n,k)=n!/(n-k)! for k&lt;=n; 0 for k&gt;n. Exemple : Permute(5,2)=20; Permute(1000,2)=999000; Permute(0,0)=1.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Counts ordered selections of k distinct elements among n, without replacement. Inputs n and k are U32; output nPk is F64. FROG defines k=0 as 1, including (0,0), and k&gt;n as 0. Overflow produces +Infinity; ordinary F64 rounding is allowed. Returns a count, never a reordered array. Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
-
-n: u32; k: u32 → nPk: f64. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +43,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+n: u32; k: u32 → nPk: f64. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature.
+
+Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+n: u32; k: u32 → nPk: f64. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `f64`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

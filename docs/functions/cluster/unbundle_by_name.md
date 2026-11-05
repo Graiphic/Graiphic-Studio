@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Choisissez un champ du Cluster dans chaque ligne extensible. Un nom absent invalide le nœud. Exécution selon le support des agrégats par la cible. [Types] Cluster obligatoire -&gt; champs choisis par nom, avec leurs types exacts. Le réordonnancement conserve les choix ; noms absents ou ambigus invalides.
+Choisissez un champ du Cluster dans chaque ligne extensible. Un nom absent invalide le nœud. Exécution selon le support des agrégats par la cible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Extracts selected nominal fields of a required input Cluster. Repeated output rows have the exact selected field types. Reordering does not change selections; missing or ambiguous names invalidate the node.
-
-Required Cluster -&gt; selected fields by name, with their exact types. Reordering preserves selections; missing or ambiguous names are invalid.
-
-</details>
 
 ## IN — inputs
 
@@ -53,7 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Required Cluster -&gt; selected fields by name, with their exact types. Reordering preserves selections; missing or ambiguous names are invalid.
+
+Extracts selected nominal fields of a required input Cluster. Repeated output rows have the exact selected field types. Reordering does not change selections; missing or ambiguous names invalidate the node.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Cluster obligatoire -&gt; champs choisis par nom, avec leurs types exacts. Le réordonnancement conserve les choix ; noms absents ou ambigus invalides.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

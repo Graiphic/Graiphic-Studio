@@ -12,15 +12,13 @@ Selects the first compile-time condition that matches the resolved target symbol
 
 **Structure de desactivation conditionnelle**
 
-Selectionne la premiere condition de compilation correspondant aux symboles de cible resolus, ou Default. Elle ne possede aucun terminal de selection runtime. [Types] Symboles de compilation sélectionnant un sous-diagramme ; tunnels typés, pas de surcharge numérique. Studio : contrat de bornes appelables pas encore implémenté. Studio: La rubrique NI NXG Disable apporte du contexte ; l’implémentation des symboles conditionnels est propre à Studio.
+Selectionne la premiere condition de compilation correspondant aux symboles de cible resolus, ou Default. Elle ne possede aucun terminal de selection runtime.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Compile-time symbols select a subdiagram; typed tunnels, not numeric overloads. Studio: callable connector contract not yet implemented. Studio: The NI NXG Disable topic is related background; the conditional-symbol implementation is Studio-specific.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Compile-time symbols select a subdiagram; typed tunnels, not numeric overloads. Studio: callable connector contract not yet implemented. Studio: The NI NXG Disable topic is related background; the conditional-symbol implementation is Studio-specific.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Symboles de compilation sélectionnant un sous-diagramme ; tunnels typés, pas de surcharge numérique. Studio : contrat de bornes appelables pas encore implémenté. Studio: La rubrique NI NXG Disable apporte du contexte ; l’implémentation des symboles conditionnels est propre à Studio.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

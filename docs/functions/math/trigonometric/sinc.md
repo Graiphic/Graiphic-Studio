@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-sin(x)/x; sinc(±0)=1. Sin(x)/x non normalisé, prolongé par FROG avec sinc(±0)=1. Aucun facteur pi implicite. Un noyau local stable traite les petits arguments. Angles et résultats réels inverses en radians, sans conversion implicite de degrés. NaN se propage sans promotion complexe dépendant de la valeur. [Types] F32/F64 et C32/C64 finis conservent leur précision ; les entiers deviennent F64 et peuvent s’arrondir au-delà de 2^53. Tableaux : rang, dimensions et vides typés conservés ; clusters entièrement numériques : champs ordonnés conservés. Aucun Boolean, String, référence, cluster mixte non numérique, virgule fixe, précision étendue, unité physique ou Matrix. Les entrées sont requises, sans zéro implicite.  Branches complexes principales ; un résultat complexe non fini produit un diagnostic de capacité du transport lexical à composantes finies. NI NXG documente les connecteurs ; les conventions indiquées sont FROG, sans équivalence bit à bit mesurée.
+sin(x)/x; sinc(±0)=1. Sin(x)/x non normalisé, prolongé par FROG avec sinc(±0)=1. Aucun facteur pi implicite. Un noyau local stable traite les petits arguments. Angles et résultats réels inverses en radians, sans conversion implicite de degrés. NaN se propage sans promotion complexe dépendant de la valeur.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-sin(x)/x; sinc(±0)=1. Unnormalized sin(x)/x with FROG continuous extension sinc(±0)=1. No implicit pi factor. A stable local kernel handles small arguments. Angles and real inverse results are radians; no implicit degree conversion. Real NaN propagates without value-dependent complex promotion. F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Principal complex branches; non-finite complex results require unavailable finite-component lexical transport capability. Local Highlight provider: frog.studio.trigonometric.sinc.
-
-F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value.  Principal complex branches; non-finite complex results require unavailable finite-component lexical transport capability. NI NXG documents the connectors; the named edge conventions are FROG, without a measured bit-equivalence claim.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Principal complex branches; non-finite complex results require unavailable finite-component lexical transport capability. NI NXG documents the connectors; the named edge conventions are FROG, without a measured bit-equivalence claim.
+
+Local Highlight provider: frog.studio.trigonometric.sinc.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+F32/F64 et C32/C64 finis conservent leur précision ; les entiers deviennent F64 et peuvent s’arrondir au-delà de 2^53. Tableaux : rang, dimensions et vides typés conservés ; clusters entièrement numériques : champs ordonnés conservés. Aucun Boolean, String, référence, cluster mixte non numérique, virgule fixe, précision étendue, unité physique ou Matrix. Les entrées sont requises, sans zéro implicite. Branches complexes principales ; un résultat complexe non fini produit un diagnostic de capacité du transport lexical à composantes finies. NI NXG documente les connecteurs ; les conventions indiquées sont FROG, sans équivalence bit à bit mesurée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.trigonometric.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

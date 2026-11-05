@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Constante de contexte renvoyant le dossier de l’exécutable FROG compilé associé à cette exécution. Un programme déployé utilise l’exécutable réellement lancé, y compris après déplacement. Ce dossier n’est pas le dossier d’installation GS (Default Directory). Dans Studio, l’absence d’application compilée associée produit un diagnostic explicite ; aucun repli vers GS ou le document contenant n’est appliqué. [Types] Aucune entrée ; sortie Path [result].
+Constante de contexte renvoyant le dossier de l’exécutable FROG compilé associé à cette exécution. Un programme déployé utilise l’exécutable réellement lancé, y compris après déplacement. Ce dossier n’est pas le dossier d’installation GS (Default Directory). Dans Studio, l’absence d’application compilée associée produit un diagnostic explicite ; aucun repli vers GS ou le document contenant n’est appliqué.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Directory of the actual compiled FROG executable. Studio JIT without an associated deployed executable faults; relocation is resolved by the deployed host at execution.
-
-No inputs; Path output [result].
-
-</details>
 
 ## IN — inputs
 
@@ -49,9 +38,29 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Directory of the actual compiled FROG executable. Studio JIT without an associated deployed executable faults; relocation is resolved by the deployed host at execution.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+No inputs; Path output [result].
+
+Directory of the compiled FROG executable when deployed. Studio Run uses its saved owning project directory, or the saved top-level document directory when no project owns it. An unsaved project or top-level document has no Path authority; CWD and Studio installation are never substitutes.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Aucune entrée ; sortie Path [result].
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

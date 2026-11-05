@@ -12,17 +12,13 @@ Interleaves elements from two one-dimensional arrays.
 
 **Entrelacer des tableaux 1D**
 
-Entrelace les elements de deux tableaux a une dimension. [Types] Dérouler pour 1–32 tableaux 1D de schémas compatibles ; les représentations numériques sont promues vers un type T commun. La sortie reste un tableau 1D de T. Les longueurs peuvent différer et ne modifient pas le type d’édition.
+Entrelace les elements de deux tableaux a une dimension.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Resize for 1–32 one-dimensional arrays with compatible element schemas; all connected numeric representations promote to a shared T. Output remains a 1D array of T. Input lengths need not match; their values do not affect the authoring type.
-
-Resize for 1–32 one-dimensional arrays with compatible element schemas; all connected numeric representations promote to a shared T. Output remains a 1D array of T. Input lengths need not match; their values do not affect the authoring type.
 
 ## IN — inputs
 
@@ -44,9 +40,20 @@ Additional input IDs: `input_N`, starting at 2.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Resize for 1–32 one-dimensional arrays with compatible element schemas; all connected numeric representations promote to a shared T. Output remains a 1D array of T. Input lengths need not match; their values do not affect the authoring type.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Dérouler pour 1–32 tableaux 1D de schémas compatibles ; les représentations numériques sont promues vers un type T commun. La sortie reste un tableau 1D de T. Les longueurs peuvent différer et ne modifient pas le type d’édition.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -62,7 +69,11 @@ Port order: `array_a` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.interleave_1d.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

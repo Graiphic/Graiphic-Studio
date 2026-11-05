@@ -12,17 +12,13 @@ Removes surrounding whitespace from a string.
 
 **Supprimer les blancs**
 
-Supprime les espaces autour d'une chaine. [Types] Une chaîne scalaire et un sélecteur (deux extrémités, début, fin) produisent une chaîne nettoyée. Instance chaîne d’octets, distincte de l’instance UTF-8.
+Supprime les espaces autour d'une chaine.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Scalar String and location selector (both ends, beginning, end) produce one trimmed String. This is the byte-string instance, not the UTF-8 instance.
-
-Scalar String and location selector (both ends, beginning, end) produce one trimmed String. This is the byte-string instance, not the UTF-8 instance.
 
 ## IN — inputs
 
@@ -41,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Scalar String and location selector (both ends, beginning, end) produce one trimmed String. This is the byte-string instance, not the UTF-8 instance.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une chaîne scalaire et un sélecteur (deux extrémités, début, fin) produisent une chaîne nettoyée. Instance chaîne d’octets, distincte de l’instance UTF-8.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -57,7 +64,7 @@ Scalar String and location selector (both ends, beginning, end) produce one trim
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Unconditional authoring availability is not claimed. The private native compiled String service declares frog.studio.string.trim_whitespace.bytes.v1 for scalar byte Strings and integral location 0 both/1 start/2 end. It removes only SP/TAB/CR/LF at the selected edges; other bytes including NUL remain unchanged. No Array/Cluster lifting or Unicode whitespace normalization. Actual target admission is required; see docs/contracts/native-string-trim-normalize.md.
 
 **Authoring/target contract limits:**
 

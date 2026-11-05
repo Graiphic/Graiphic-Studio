@@ -12,17 +12,13 @@ Places the positive infinity constant on the diagram.
 
 **Plus l'infini**
 
-Place la constante plus l'infini sur le diagramme. [Types] Aucune entrée ; sortie constante numérique réelle (DBL par défaut dans Studio).
+Place la constante plus l'infini sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Emits the fixed f64 value currently catalogued by Studio.
-
-No input; one real numeric constant output (Studio default DBL).
 
 ## IN — inputs
 
@@ -36,7 +32,22 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No input; one real numeric constant output (Studio default DBL).
+
+Emits the fixed f64 value currently catalogued by Studio.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Aucune entrée ; sortie constante numérique réelle (DBL par défaut dans Studio).
+
+</details>
 
 fixed f64 output
 

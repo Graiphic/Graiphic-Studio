@@ -12,17 +12,13 @@ Converts the input to a complex fixed-point value.
 
 **Vers CFX**
 
-Convertit l'entree en valeur complexe a virgule fixe. [Types] Numérique + type/configuration virgule fixe complexe -&gt; CFX et booléen de débordement. Studio: Studio résout uniquement la représentation ; la longueur de mot, la mise à l’échelle, la configuration et la sortie de dépassement de NI ne sont pas encore exposées.
+Convertit l'entree en valeur complexe a virgule fixe.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric value + complex fixed-point type/configuration -&gt; complex FXP and overflow Boolean.
-
-Numeric value + complex fixed-point type/configuration -&gt; complex FXP and overflow Boolean. Studio: Studio resolves the representation only; NI word-length, scaling, overflow configuration and overflow output are not yet exposed.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric value + complex fixed-point type/configuration -&gt; complex FXP and overflow Boolean.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Numeric value + complex fixed-point type/configuration -&gt; complex FXP and overflow Boolean. Studio: Studio resolves the representation only; NI word-length, scaling, overflow configuration and overflow output are not yet exposed.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Numérique + type/configuration virgule fixe complexe -&gt; CFX et booléen de débordement. Studio: Studio résout uniquement la représentation ; la longueur de mot, la mise à l’échelle, la configuration et la sortie de dépassement de NI ne sont pas encore exposées.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

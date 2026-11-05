@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Renvoie 1 sur 0≤x&lt;1 et 0 ailleurs ; créneau unitaire non périodique. Entrée x ; sortie spike(x). Spike(±0)=1 ; Spike(1)=0 ; Spike(±∞)=+0. NaN produit NaN. Exemple : Spike(0,25)=1 ; Spike(1)=0. [Types] Réel, tableau ou cluster entièrement numérique réel ; la précision F32/F64 est conservée et les entiers sont convertis en F64. NaN se propage. Entrée x requise ; aucun état ni horloge. NI documente le scalaire DBL dans LabVIEW classique ; les surcharges et règles IEEE sont des extensions FROG, sans surcharge NXG vérifiée.
+Renvoie 1 sur 0≤x&lt;1 et 0 ailleurs ; créneau unitaire non périodique. Entrée x ; sortie spike(x). Spike(±0)=1 ; Spike(1)=0 ; Spike(±∞)=+0. NaN produit NaN. Exemple : Spike(0,25)=1 ; Spike(1)=0.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Returns 1 for 0≤x&lt;1 and 0 elsewhere; a nonperiodic unit rectangular pulse. Spike(±0)=1; Spike(1)=0; Spike(±Infinity)=+0. NaN produces NaN. FROG extension: real F32/F64 scalars retain their precision; signed and unsigned integer leaves convert to F64 before calculation, so values above 2^53 may round before interval classification. Apply element by element to arrays of rank 1 through 16 and recursively real numeric clusters, preserving dimensions, typed empty arrays, ordered field identities and names. Complex, Boolean, Enum, String, Path, Variant, reference, nonnumeric cluster, fixed-point, extended precision and Matrix inputs are rejected. Input x is required; the F64 editor preview supplies no implicit zero. Outputs remain numeric, never Boolean. NI classic LabVIEW documentation establishes only the scalar DBL connector and mathematical definition. The numeric-tree overloads, IEEE rules and integer promotions are FROG extensions. No detailed NXG signature or overload was verified, and no bit-for-bit LabVIEW equivalence is claimed. Local Highlight calculation uses frog.studio.gating.spike.
-
-Real scalar, array or real-numeric cluster; F32/F64 precision is retained and integers produce F64 after conversion. NaN propagates. One required input x; no clock or stored state. NI documents scalar DBL in classic LabVIEW; overloads and IEEE rules are FROG extensions, with no verified NXG overload.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-FROG extension: real F32/F64 scalars retain their precision; signed and unsigned integer leaves convert to F64 before calculation, so values above 2^53 may round before interval classification. Apply element by element to arrays of rank 1 through 16 and recursively real numeric clusters, preserving dimensions, typed empty arrays, ordered field identities and names. Complex, Boolean, Enum, String, Path, Variant, reference, nonnumeric cluster, fixed-point, extended precision and Matrix inputs are rejected. Input x is required; the F64 editor preview supplies no implicit zero. Outputs remain numeric, never Boolean.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Real scalar, array or real-numeric cluster; F32/F64 precision is retained and integers produce F64 after conversion. NaN propagates. One required input x; no clock or stored state. NI documents scalar DBL in classic LabVIEW; overloads and IEEE rules are FROG extensions, with no verified NXG overload.
+
+FROG extension: real F32/F64 scalars retain their precision; signed and unsigned integer leaves convert to F64 before calculation, so values above 2^53 may round before interval classification. Apply element by element to arrays of rank 1 through 16 and recursively real numeric clusters, preserving dimensions, typed empty arrays, ordered field identities and names. Complex, Boolean, Enum, String, Path, Variant, reference, nonnumeric cluster, fixed-point, extended precision and Matrix inputs are rejected. Input x is required; the F64 editor preview supplies no implicit zero. Outputs remain numeric, never Boolean. NI classic LabVIEW documentation establishes only the scalar DBL connector and mathematical definition. The numeric-tree overloads, IEEE rules and integer promotions are FROG extensions. No detailed NXG signature or overload was verified, and no bit-for-bit LabVIEW equivalence is claimed. Local Highlight calculation uses frog.studio.gating.spike.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Réel, tableau ou cluster entièrement numérique réel ; la précision F32/F64 est conservée et les entiers sont convertis en F64. NaN se propage. Entrée x requise ; aucun état ni horloge. NI documente le scalaire DBL dans LabVIEW classique ; les surcharges et règles IEEE sont des extensions FROG, sans surcharge NXG vérifiée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.gating.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

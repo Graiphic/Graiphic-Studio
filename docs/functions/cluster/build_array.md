@@ -12,17 +12,13 @@ Diagram node for building an array of clusters. Ports are available for authorin
 
 **Construire un tableau de clusters**
 
-Noeud de diagramme pour construire un tableau de clusters. Ports disponibles pour l'edition ; execution selon le moteur cible. [Types] N valeurs compatibles T -&gt; Array 1D de N Clusters&lt;T&gt; à un champ. Studio accepte scalaires et agrégats de formes compatibles, avec coercition numérique.
+Noeud de diagramme pour construire un tableau de clusters. Ports disponibles pour l'edition ; execution selon le moteur cible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Wraps each input value independently in a single-field Cluster and builds a 1D Array with one element per input. Scalars, Arrays and Clusters are accepted; all inputs must have one common effective type under normal numeric coercion rules.
-
-N compatible values of T -&gt; 1D Array of N single-field Clusters&lt;T&gt;. Studio accepts scalars and aggregates with compatible shapes and numeric coercions.
 
 ## IN — inputs
 
@@ -42,7 +38,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 Additional input IDs: `elementN`, starting at 2.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+N compatible values of T -&gt; 1D Array of N single-field Clusters&lt;T&gt;. Studio accepts scalars and aggregates with compatible shapes and numeric coercions.
+
+Wraps each input value independently in a single-field Cluster and builds a 1D Array with one element per input. Scalars, Arrays and Clusters are accepted; all inputs must have one common effective type under normal numeric coercion rules.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+N valeurs compatibles T -&gt; Array 1D de N Clusters&lt;T&gt; à un champ. Studio accepte scalaires et agrégats de formes compatibles, avec coercition numérique.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

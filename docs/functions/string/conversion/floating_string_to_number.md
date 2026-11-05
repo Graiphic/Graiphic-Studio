@@ -12,17 +12,13 @@ Parses a floating-point string as a number.
 
 **Chaine flottante vers nombre**
 
-Convertit une chaine flottante en nombre. [Types] Une chaîne ou un tableau/cluster de chaînes produit des feuilles numériques du type du défaut scalaire (F64 si non câblé). Rangs et schémas conservés. Décalage et position après le nombre sont des I32 scalaires, pas des tableaux. Option booléenne de séparateur décimal système.
+Convertit une chaine flottante en nombre.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-String scalars or String-only arrays/clusters produce numeric leaves of the scalar default representation (F64 if unwired). Ranks and cluster schemas are preserved. Offset and offset-past-number are scalar I32, not arrays. Includes the system decimal-point Boolean.
-
-String scalars or String-only arrays/clusters produce numeric leaves of the scalar default representation (F64 if unwired). Ranks and cluster schemas are preserved. Offset and offset-past-number are scalar I32, not arrays. Includes the system decimal-point Boolean.
 
 ## IN — inputs
 
@@ -44,9 +40,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 String scalars or String-only arrays/clusters produce numeric leaves of the scalar default representation (F64 if unwired). Ranks and cluster schemas are preserved. Offset and offset-past-number are scalar I32, not arrays. Includes the system decimal-point Boolean.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une chaîne ou un tableau/cluster de chaînes produit des feuilles numériques du type du défaut scalaire (F64 si non câblé). Rangs et schémas conservés. Décalage et position après le nombre sont des I32 scalaires, pas des tableaux. Option booléenne de séparateur décimal système.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

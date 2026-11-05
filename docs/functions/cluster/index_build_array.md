@@ -12,17 +12,13 @@ Diagram node for indexing and building an array of clusters. Ports are available
 
 **Indexer et construire un tableau de clusters**
 
-Noeud de diagramme pour indexer et construire un tableau de clusters. Ports disponibles pour l'edition ; execution selon le moteur cible. [Types] Tableaux 1D de T1..Tn -&gt; Array&lt;Cluster&lt;T1..Tn&gt;&gt; 1D ; longueur de la plus courte entrée.
+Noeud de diagramme pour indexer et construire un tableau de clusters. Ports disponibles pour l'edition ; execution selon le moteur cible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Zips 1D input Arrays, allowing heterogeneous element types, into a 1D Array of Clusters in input row order. Output length is the shortest input length; any empty input produces an empty output.
-
-1D arrays of T1..Tn -&gt; 1D Array&lt;Cluster&lt;T1..Tn&gt;&gt;; shortest input controls output length.
 
 ## IN — inputs
 
@@ -42,7 +38,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 Additional input IDs: `elementN`, starting at 2.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+1D arrays of T1..Tn -&gt; 1D Array&lt;Cluster&lt;T1..Tn&gt;&gt;; shortest input controls output length.
+
+Zips 1D input Arrays, allowing heterogeneous element types, into a 1D Array of Clusters in input row order. Output length is the shortest input length; any empty input produces an empty output.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Tableaux 1D de T1..Tn -&gt; Array&lt;Cluster&lt;T1..Tn&gt;&gt; 1D ; longueur de la plus courte entrée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

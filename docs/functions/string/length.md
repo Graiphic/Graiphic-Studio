@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Renvoie le nombre d’octets d’une chaîne, y compris les octets NUL internes. Le caractère é en UTF-8 occupe deux octets ; aucun comptage de caractères Unicode ni normalisation n’est effectué. [Types] Une chaîne, ou un tableau/cluster ne contenant que des chaînes, produit des longueurs en octets I32 avec les mêmes rangs et la même structure de cluster.
+Renvoie le nombre d’octets d’une chaîne, y compris les octets NUL internes. Le caractère é en UTF-8 occupe deux octets ; aucun comptage de caractères Unicode ni normalisation n’est effectué.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-String or an array/cluster containing only Strings produces I32 byte lengths with exactly the same rank and cluster structure.
-
-String or an array/cluster containing only Strings produces I32 byte lengths with exactly the same rank and cluster structure.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 String or an array/cluster containing only Strings produces I32 byte lengths with exactly the same rank and cluster structure.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une chaîne, ou un tableau/cluster ne contenant que des chaînes, produit des longueurs en octets I32 avec les mêmes rangs et la même structure de cluster.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

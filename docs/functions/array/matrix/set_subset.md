@@ -12,17 +12,13 @@ Replaces a rectangular subset in a matrix.
 
 **Definir une sous-matrice**
 
-Remplace une sous-matrice rectangulaire dans une matrice. [Types] Matrice numérique 2D en entrée/sortie. Groupes déroulables de quatre bornes numériques scalaires inclusives et d’un remplacement scalaire ou tableau numérique 2D. Indices convertis en I32, matrice et remplacement promus vers une représentation numérique commune. Sans bornes, toute la matrice est sélectionnée.
+Remplace une sous-matrice rectangulaire dans une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric 2D matrix input/output. Repeatable groups contain four optional scalar numeric inclusive bounds and a scalar fill or numeric 2D replacement. Indices convert to I32; matrix and replacement promote to a common numeric representation. Unwired bounds select the full matrix.
-
-Numeric 2D matrix input/output. Repeatable groups contain four optional scalar numeric inclusive bounds and a scalar fill or numeric 2D replacement. Indices convert to I32; matrix and replacement promote to a common numeric representation. Unwired bounds select the full matrix.
 
 ## IN — inputs
 
@@ -45,9 +41,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric 2D matrix input/output. Repeatable groups contain four optional scalar numeric inclusive bounds and a scalar fill or numeric 2D replacement. Indices convert to I32; matrix and replacement promote to a common numeric representation. Unwired bounds select the full matrix.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Matrice numérique 2D en entrée/sortie. Groupes déroulables de quatre bornes numériques scalaires inclusives et d’un remplacement scalaire ou tableau numérique 2D. Indices convertis en I32, matrice et remplacement promus vers une représentation numérique commune. Sans bornes, toute la matrice est sélectionnée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -61,7 +68,11 @@ Numeric 2D matrix input/output. Repeatable groups contain four optional scalar n
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.set_subset.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -72,10 +83,10 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `row` | `i32` | `numeric_implicit` | `single` | — |
 | INPUT | `column` | `i32` | `numeric_implicit` | `single` | — |
-| INPUT | `subset` | `f64` | `any_explicit` | `single` | — |
+| INPUT | `subset` | `f64` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `rows` | `i32` | `numeric_implicit` | `single` | — |
 | INPUT | `columns` | `i32` | `numeric_implicit` | `single` | — |
 | OUTPUT | `result` | `unknown` | `any_explicit` | `single` | — |

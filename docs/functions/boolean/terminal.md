@@ -12,17 +12,13 @@ Places a Boolean control and its linked diagram terminal.
 
 **Terminal booleen**
 
-Place un controle booleen et son terminal de diagramme lie. [Types] Sans opérande de fonction ; type de l’instance : Boolean. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+Place un controle booleen et son terminal de diagramme lie.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-This palette action places a Boolean widget and its linked diagram terminal; it is not a Runtime function contract.
-
-No function operand; instance type: Boolean. Constants/controls supply a value; indicators consume it.
 
 ## IN — inputs
 
@@ -32,7 +28,22 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No function operand; instance type: Boolean. Constants/controls supply a value; indicators consume it.
+
+This palette action places a Boolean widget and its linked diagram terminal; it is not a Runtime function contract.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans opérande de fonction ; type de l’instance : Boolean. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+
+</details>
 
 - Type resolution: `editor_managed`; result expression: `editor_managed`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

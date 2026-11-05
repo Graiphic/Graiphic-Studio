@@ -12,17 +12,13 @@ Places a U32 color constant on the diagram. Click the color to select its value.
 
 **Constante Color Box**
 
-Place une constante de couleur U32 sur le diagramme. Cliquer sur la couleur permet de choisir sa valeur. [Types] Sans opérande de fonction ; type de l’instance : valeur de couleur U32. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+Place une constante de couleur U32 sur le diagramme. Cliquer sur la couleur permet de choisir sa valeur.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-The Color Box constant is a numeric constant preset whose U32 color value and presentation are managed by the Studio editor.
-
-No function operand; instance type: U32 color value. Constants/controls supply a value; indicators consume it.
 
 ## IN — inputs
 
@@ -32,7 +28,22 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No function operand; instance type: U32 color value. Constants/controls supply a value; indicators consume it.
+
+The Color Box constant is a numeric constant preset whose U32 color value and presentation are managed by the Studio editor.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans opérande de fonction ; type de l’instance : valeur de couleur U32. Constantes/contrôles fournissent une valeur, indicateurs la reçoivent.
+
+</details>
 
 undecided
 

@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Constante de contexte renvoyant le répertoire temporaire existant fourni par l’environnement d’exécution via son service système. Elle ne crée ni fichier ni nouveau sous-dossier. L’impossibilité d’obtenir un dossier valide produit un diagnostic explicite. [Types] Aucune entrée ; sortie Path [result].
+Constante de contexte renvoyant le répertoire temporaire existant fourni par l’environnement d’exécution via son service système. Elle ne crée ni fichier ni nouveau sous-dossier. L’impossibilité d’obtenir un dossier valide produit un diagnostic explicite.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Existing current process/user system temporary directory from the platform filesystem service; no directory is created per evaluation.
-
-No inputs; Path output [result].
-
-</details>
 
 ## IN — inputs
 
@@ -49,9 +38,29 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+No inputs; Path output [result].
 
 Existing current process/user system temporary directory from the platform filesystem service; no directory is created per evaluation.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Aucune entrée ; sortie Path [result].
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

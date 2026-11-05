@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Effectue une rotation d'un tableau a une dimension selon le decalage demande. [Types] Accepte uniquement un tableau 1D de T ; fait tourner ses éléments sans changer le type ni le rang. Le décalage numérique réel est converti en I32.
+Effectue une rotation d'un tableau a une dimension selon le decalage demande.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Accepts only a 1D array of any T; rotates its elements without changing T or rank. The offset is a real number converted to I32.
-
-Accepts only a 1D array of any T; rotates its elements without changing T or rank. The offset is a real number converted to I32.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +43,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 Accepts only a 1D array of any T; rotates its elements without changing T or rank. The offset is a real number converted to I32.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Accepte uniquement un tableau 1D de T ; fait tourner ses éléments sans changer le type ni le rang. Le décalage numérique réel est converti en I32.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -70,7 +77,11 @@ Accepts only a 1D array of any T; rotates its elements without changing T or ran
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.rotate_1d.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

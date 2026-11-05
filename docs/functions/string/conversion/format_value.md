@@ -12,17 +12,13 @@ Formats a value according to a format specification.
 
 **Formater une valeur**
 
-Formate une valeur selon une specification de format. [Types] Une valeur numérique scalaire, un format et une chaîne initiale facultative produisent une chaîne. Tableaux, clusters et valeurs non numériques refusés.
+Formate une valeur selon une specification de format.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-One scalar numeric value, format String and optional initial String produce one String. Arrays, clusters and nonnumeric values are rejected.
-
-One scalar numeric value, format String and optional initial String produce one String. Arrays, clusters and nonnumeric values are rejected.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 One scalar numeric value, format String and optional initial String produce one String. Arrays, clusters and nonnumeric values are rejected.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une valeur numérique scalaire, un format et une chaîne initiale facultative produisent une chaîne. Tableaux, clusters et valeurs non numériques refusés.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

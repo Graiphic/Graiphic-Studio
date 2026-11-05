@@ -12,17 +12,13 @@ Formats values into a string.
 
 **Formater en chaine**
 
-Formate des valeurs dans une chaine. [Types] Dérouler expose 1 à 32 arguments scalaires indépendants : numérique, chaîne, chemin, booléen, enum ou horodatage. Tableaux et clusters refusés. Format, chaîne initiale et erreur en entrée ; chaîne et erreur en sortie. Un format constant direct détermine le nombre d’arguments et vérifie la compatibilité des codes.
+Formate des valeurs dans une chaine.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Resize for 1–32 independent scalar numeric, String, Path, Boolean, enum or timestamp arguments. Arrays and clusters are rejected. Format String, initial String and error input are exposed; outputs are String and error. A direct constant format determines argument count and checks conversion-code compatibility.
-
-Resize for 1–32 independent scalar numeric, String, Path, Boolean, enum or timestamp arguments. Arrays and clusters are rejected. Format String, initial String and error input are exposed; outputs are String and error. A direct constant format determines argument count and checks conversion-code compatibility.
 
 ## IN — inputs
 
@@ -48,9 +44,20 @@ Additional input IDs: `value_N`, starting at 2.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Resize for 1–32 independent scalar numeric, String, Path, Boolean, enum or timestamp arguments. Arrays and clusters are rejected. Format String, initial String and error input are exposed; outputs are String and error. A direct constant format determines argument count and checks conversion-code compatibility.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Dérouler expose 1 à 32 arguments scalaires indépendants : numérique, chaîne, chemin, booléen, enum ou horodatage. Tableaux et clusters refusés. Format, chaîne initiale et erreur en entrée ; chaîne et erreur en sortie. Un format constant direct détermine le nombre d’arguments et vérifie la compatibilité des codes.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
