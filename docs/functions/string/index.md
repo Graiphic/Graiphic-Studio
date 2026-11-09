@@ -2,7 +2,7 @@
 
 [All functions](../index.md)
 
-58 operations or editor elements; 2 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
+60 operations or editor elements; 2 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
 
 ## Operations and editor elements
 
@@ -21,6 +21,7 @@
 | [End Of Line Constant](other_constants/end_of_line.md) | Provides the platform end-of-line sequence. |
 | [Escape String](escape.md) | Processes escape characters in a string. |
 | [Flatten To JSON](conversion/flatten_to_json.md) | Serializes a value as JSON text. |
+| [Flatten To String](conversion/flatten_to_string.md) | Flattens a supported value into a binary String, preserving raw bytes without text or hexadecimal conversion. |
 | [Floating String To Number](conversion/floating_string_to_number.md) | Parses a floating-point string as a number. |
 | [Format Into String](conversion/format_into_string.md) | Formats values into a string. |
 | [Format Value](conversion/format_value.md) | Formats a value according to a format specification. |
@@ -66,6 +67,7 @@
 | [To Upper Case](to_upper.md) | Converts a string to upper case. |
 | [Trim Whitespace](trim_whitespace.md) | Removes surrounding whitespace from a string. |
 | [Unflatten From JSON](conversion/unflatten_from_json.md) | Deserializes a value from JSON text. |
+| [Unflatten From String](conversion/unflatten_from_string.md) | Restores the requested supported type from a binary String, returning unconsumed bytes separately. |
 
 ## Palette folders
 

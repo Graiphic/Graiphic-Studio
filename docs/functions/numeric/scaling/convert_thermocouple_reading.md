@@ -12,17 +12,13 @@ Converts a thermocouple measurement into a scaled numeric value.
 
 **Convertir une mesure de thermocouple**
 
-Convertit une mesure de thermocouple en une valeur numerique mise a l'echelle. [Types] Tension DBL ou Waveform + paramètres numériques d’étalonnage et enums du capteur -&gt; mesure DBL ou Waveform correspondante. Pas d’entrées String/Boolean arbitraires. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+Convertit une mesure de thermocouple en une valeur numerique mise a l'echelle.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-DBL voltage or waveform + sensor-specific numeric calibration parameters and configuration enums -&gt; DBL measurement or corresponding waveform. These are sensor-specific overloads, not arbitrary String/Boolean inputs.
-
-DBL voltage or waveform + sensor-specific numeric calibration parameters and configuration enums -&gt; DBL measurement or corresponding waveform. These are sensor-specific overloads, not arbitrary String/Boolean inputs. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 ## IN — inputs
 
@@ -45,9 +41,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-DBL voltage or waveform + sensor-specific numeric calibration parameters and configuration enums -&gt; DBL measurement or corresponding waveform. These are sensor-specific overloads, not arbitrary String/Boolean inputs.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+DBL voltage or waveform + sensor-specific numeric calibration parameters and configuration enums -&gt; DBL measurement or corresponding waveform. These are sensor-specific overloads, not arbitrary String/Boolean inputs. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Tension DBL ou Waveform + paramètres numériques d’étalonnage et enums du capteur -&gt; mesure DBL ou Waveform correspondante. Pas d’entrées String/Boolean arbitraires. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -60,6 +67,14 @@ DBL voltage or waveform + sensor-specific numeric calibration parameters and con
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
+
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.scaling.convert_thermocouple_reading.nist-its90-cjc.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric calibration provider implements a bounded ITS-90/CJC profile with the eight declared thermocouple types. Scalar or Array1D real input is promoted explicitly to F64; configuration connectors remain exact I32/F64. Forward CJC and inverse measurement ranges are checked separately; extrapolation is refused. Declaration is not a native test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

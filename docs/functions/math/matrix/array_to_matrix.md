@@ -12,17 +12,13 @@ Explicitly converts an actual two-dimensional F64 Array to the distinct private 
 
 **Tableau en matrice**
 
-Convertit explicitement un tableau F64 à deux dimensions en type privé distinct Matrix&lt;F64&gt;. Le résultat immuable conserve les valeurs par rangées et les dimensions exactes, rectangulaires ou vides ; les valeurs finies, la forme et les limites de ressources sont vérifiées. [Types] array&lt;f64,rank=2&gt; -&gt; matrix&lt;f64&gt;. Les autres types d’éléments, la coercition implicite et le calcul par éléments ne sont pas pris en charge. Run/Highlight local utilise le fournisseur de conversion Matrix installé ; l’abaissement FROG public et l’exécution Runtime cible sont indisponibles.
+Convertit explicitement un tableau F64 à deux dimensions en type privé distinct Matrix&lt;F64&gt;. Le résultat immuable conserve les valeurs par rangées et les dimensions exactes, rectangulaires ou vides ; les valeurs finies, la forme et les limites de ressources sont vérifiées.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Explicit independent row-major finite f64 conversion between a rank-2 Array and the distinct private Matrix type. Preserves exact rectangular/empty dimensions and values, validates shape and resource budgets, and owns immutable copies. Existing Matrix-named Array functions are not reinterpreted. No public FROG lowering or target Runtime provider is declared.
-
-array&lt;f64,rank=2&gt; -&gt; matrix&lt;f64&gt;. Other element types, implicit coercion and element-wise lifting are not supported. Local Run/Highlight uses the installed Matrix conversion provider; public FROG lowering and target Runtime execution are unavailable.
 
 ## IN — inputs
 
@@ -40,9 +36,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+array&lt;f64,rank=2&gt; -&gt; matrix&lt;f64&gt;. Other element types, implicit coercion and element-wise lifting are not supported. Local Run/Highlight uses the installed Matrix conversion provider; public FROG lowering and target Runtime execution are unavailable.
 
 Explicit independent row-major finite f64 conversion between a rank-2 Array and the distinct private Matrix type. Preserves exact rectangular/empty dimensions and values, validates shape and resource budgets, and owns immutable copies. Existing Matrix-named Array functions are not reinterpreted. No public FROG lowering or target Runtime provider is declared.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+array&lt;f64,rank=2&gt; -&gt; matrix&lt;f64&gt;. Les autres types d’éléments, la coercition implicite et le calcul par éléments ne sont pas pris en charge. Run/Highlight local utilise le fournisseur de conversion Matrix installé ; l’abaissement FROG public et l’exécution Runtime cible sont indisponibles.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `matrix<f64>`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

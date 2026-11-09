@@ -12,17 +12,13 @@ Sorts the elements of a one-dimensional array.
 
 **Classer un tableau 1D**
 
-Trie les elements d'un tableau a une dimension. [Types] Accepte uniquement un tableau 1D de T ; trie ses éléments sans changer le type ni le rang.
+Trie les elements d'un tableau a une dimension.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Accepts only a 1D array of any T; sorts its elements without changing T or rank.
-
-Accepts only a 1D array of any T; sorts its elements without changing T or rank.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Accepts only a 1D array of any T; sorts its elements without changing T or rank.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Accepte uniquement un tableau 1D de T ; trie ses éléments sans changer le type ni le rang.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,11 @@ Accepts only a 1D array of any T; sorts its elements without changing T or rank.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.sort_1d.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

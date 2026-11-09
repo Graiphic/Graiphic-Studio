@@ -12,15 +12,13 @@ Places a path constant on the diagram.
 
 **Constante chemin**
 
-Place une constante chemin sur le diagramme. [Types] Constante Chemin scalaire éditable, avec sortie Chemin ; sa valeur et son affichage sont enregistrés par l’éditeur.
+Place une constante chemin sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Editable scalar Path constant with a Path output; its value and layout are saved by the editor.
 
 ## IN — inputs
 
@@ -34,7 +32,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Editable scalar Path constant with a Path output; its value and layout are saved by the editor.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Constante Chemin scalaire éditable, avec sortie Chemin ; sa valeur et son affichage sont enregistrés par l’éditeur.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

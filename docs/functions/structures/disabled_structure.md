@@ -12,15 +12,13 @@ Retains Enabled and Disabled code regions without a condition terminal. Only the
 
 **Structure de desactivation du diagramme**
 
-Conserve les regions de code Active et Desactivee sans terminal de condition. Seule la region Active s'execute ; la region Desactivee apparait sous un voile translucide. [Types] Sans opérande sélecteur ; diagramme actif et tunnels typés déterminent le flux. Studio : contrat de bornes appelables pas encore implémenté. Studio: Structure gérée par l’éditeur.
+Conserve les regions de code Active et Desactivee sans terminal de condition. Seule la region Active s'execute ; la region Desactivee apparait sous un voile translucide.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-No selector operand; active diagram and typed tunnels determine dataflow. Studio: callable connector contract not yet implemented. Studio: Editor-managed structure.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+No selector operand; active diagram and typed tunnels determine dataflow. Studio: callable connector contract not yet implemented. Studio: Editor-managed structure.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Sans opérande sélecteur ; diagramme actif et tunnels typés déterminent le flux. Studio : contrat de bornes appelables pas encore implémenté. Studio: Structure gérée par l’éditeur.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

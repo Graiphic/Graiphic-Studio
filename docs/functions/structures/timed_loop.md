@@ -12,15 +12,13 @@ Places a resizable While-style loop with orange scheduling surfaces for initial 
 
 **Boucle cadencee**
 
-Place une boucle de type While redimensionnable avec des surfaces orange pour la configuration temporelle, le retour d'iteration, la mise a jour suivante et le resultat final. [Types] Entrées de temporisation/configuration et bornes de boucle/condition ; tunnels selon leur mode. Studio : contrat de bornes appelables pas encore implémenté. Studio: Aucun contrat de fonction statique appelable n’est actuellement déclaré dans Studio.
+Place une boucle de type While redimensionnable avec des surfaces orange pour la configuration temporelle, le retour d'iteration, la mise a jour suivante et le resultat final.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Timing/configuration inputs and loop data/condition terminals; data tunnels preserve their configured mode. Studio: callable connector contract not yet implemented. Studio: No callable static function contract is currently declared in Studio.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Timing/configuration inputs and loop data/condition terminals; data tunnels preserve their configured mode. Studio: callable connector contract not yet implemented. Studio: No callable static function contract is currently declared in Studio.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Entrées de temporisation/configuration et bornes de boucle/condition ; tunnels selon leur mode. Studio : contrat de bornes appelables pas encore implémenté. Studio: Aucun contrat de fonction statique appelable n’est actuellement déclaré dans Studio.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

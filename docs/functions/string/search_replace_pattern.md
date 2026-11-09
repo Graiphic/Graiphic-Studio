@@ -12,17 +12,13 @@ Searches for a pattern and replaces matching text.
 
 **Rechercher et remplacer une expression**
 
-Recherche une expression et remplace le texte correspondant. [Types] Chaînes scalaires source/motif/remplacement, décalage I32 et booléen tout remplacer facultatifs produisent une chaîne modifiée et le décalage I32 après correspondance.
+Recherche une expression et remplace le texte correspondant.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Scalar String/pattern/replacement, optional I32 offset and Boolean replace-all yield an edited String and I32 offset past match.
-
-Scalar String/pattern/replacement, optional I32 offset and Boolean replace-all yield an edited String and I32 offset past match.
 
 ## IN — inputs
 
@@ -45,9 +41,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Scalar String/pattern/replacement, optional I32 offset and Boolean replace-all yield an edited String and I32 offset past match.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaînes scalaires source/motif/remplacement, décalage I32 et booléen tout remplacer facultatifs produisent une chaîne modifiée et le décalage I32 après correspondance.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

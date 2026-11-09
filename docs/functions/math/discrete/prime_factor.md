@@ -12,17 +12,13 @@ Factors the magnitude of an I64 integer into a rank-one I64 array. FROG sorts re
 
 **Facteurs premiers**
 
-Décompose la valeur absolue d’un entier I64 en tableau 1D de facteurs premiers I64. FROG trie les facteurs répétés dans l’ordre croissant ; ±1 donnent un tableau vide et zéro un diagnostic de domaine sans résultat exploitable. La magnitude des négatifs est utilisée, y compris INT64_MIN. Une annulation ou limite de travail ne présente jamais une factorisation partielle comme complète. Formule : product(factors) = abs(n). Exemple : Prime Factor(-60)=[2,2,3,5]; Prime Factor(1)=[]. [Types] n: i64 → factors: array&lt;i64,rank=1&gt;. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée. Run natif ne transporte pas encore les tableaux de cette signature et la refuse explicitement ; Highlight local la prend en charge.
+Décompose la valeur absolue d’un entier I64 en tableau 1D de facteurs premiers I64. FROG trie les facteurs répétés dans l’ordre croissant ; ±1 donnent un tableau vide et zéro un diagnostic de domaine sans résultat exploitable. La magnitude des négatifs est utilisée, y compris INT64_MIN. Une annulation ou limite de travail ne présente jamais une factorisation partielle comme complète. Formule : product(factors) = abs(n). Exemple : Prime Factor(-60)=[2,2,3,5]; Prime Factor(1)=[].
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Factors the magnitude of an I64 integer into a rank-one I64 array. FROG sorts repeated prime factors in ascending order; +/-1 produce an empty array and zero produces a domain diagnostic without a usable result. Negative inputs use their magnitude, including INT64_MIN. Cancellation or a work limit never returns a partial factorization as success. Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
-
-n: i64 → factors: array&lt;i64,rank=1&gt;. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. Native Run currently has no Array transport for this signature and rejects it explicitly; local Highlight supports it.
 
 ## IN — inputs
 
@@ -40,9 +36,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+n: i64 → factors: array&lt;i64,rank=1&gt;. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. Native Run currently has no Array transport for this signature and rejects it explicitly; local Highlight supports it.
+
+Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+n: i64 → factors: array&lt;i64,rank=1&gt;. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée. Run natif ne transporte pas encore les tableaux de cette signature et la refuse explicitement ; Highlight local la prend en charge.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `array<i64,rank=1>`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

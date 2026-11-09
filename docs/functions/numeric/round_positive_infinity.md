@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Arrondit l'entree vers le haut a l'entier le plus proche. [Types] Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. L'arrondi supérieur conserve la représentation, y compris feuilles complexes et timestamps. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices.
+Arrondit l'entree vers le haut a l'entier le plus proche.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Ceiling retains the representation, including complex leaves and timestamps.
-
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Ceiling retains the representation, including complex leaves and timestamps. Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
-
-</details>
 
 ## IN — inputs
 
@@ -53,9 +42,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Ceiling retains the representation, including complex leaves and timestamps.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric scalar, array or recursively numeric cluster; result preserves aggregate structure. Ceiling retains the representation, including complex leaves and timestamps. Studio: NI configurable fixed-point widths, units and matrix-specific VI replacement are not modeled by this authoring profile.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaire numérique, tableau ou cluster récursivement numérique ; la sortie conserve la structure. L'arrondi supérieur conserve la représentation, y compris feuilles complexes et timestamps. Studio: Ce profil d’édition ne modélise pas les largeurs de virgule fixe configurables de NI, les unités ni le remplacement par des VI propres aux matrices.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -69,7 +76,13 @@ fixed unary
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
-No portable Runtime provider is declared.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.round_positive_infinity.owned.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

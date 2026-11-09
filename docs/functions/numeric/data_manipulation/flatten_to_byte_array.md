@@ -12,7 +12,7 @@ Flattens a numeric value into its byte-array representation.
 
 **Aplatir en tableau d'octets**
 
-Aplatit une valeur numerique dans sa representation en tableau d'octets. [Types] Donnée sérialisable + ordre des octets/options de taille -&gt; tableau U8 1D + erreur ; refnums exclus. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+Aplatit une valeur numerique dans sa representation en tableau d'octets.
 
 </details>
 
@@ -20,16 +20,12 @@ Aplatit une valeur numerique dans sa representation en tableau d'octets. [Types]
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums excluded.
-
-Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums excluded. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
-
 ## IN — inputs
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
 | anything `anything` | `T:any` | Required | Not specified | — |
-| byte order `byte_order` | `i32` | Optional | Not specified | — |
+| byte order `byte_order` | `T:any` | Optional | Not specified | — |
 | prepend size? `prepend_size` | `bool` | Optional | Not specified | — |
 | error in `error_in` | `cluster<status:bool,code:i32,source:string>` | Optional | Not specified | — |
 
@@ -44,9 +40,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums excluded.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums excluded. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Donnée sérialisable + ordre des octets/options de taille -&gt; tableau U8 1D + erreur ; refnums exclus. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
+
+The byte-order connector presents enum&lt;byte_order,u16&gt; with big-endian=0, native=1, little-endian=2; the scoped resolver also accepts legacy scalar integer selectors and rejects other schemas.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -60,10 +69,17 @@ Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums exc
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.data_manipulation.flatten_to_byte_array.binary.v1`.
+
+Required provider: `frog.studio.string.raw-bytes@1`.
+
+The typed binary operation is admitted only by the active Source/FIR/Runtime capability. Byte order is big-endian (0), native (1), or little-endian (2); top-level array/String size prefixes are optional.
+
 **Authoring/target contract limits:**
 
-- NI reference verified for authoring types; this does not establish runtime support on the active target.
-- Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+- NI reference verified for the supported binary value schemas; this does not grant an unsupported target this native operation.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,7 +87,7 @@ Serializable data + byte-order/size flags -&gt; 1D U8 array + error; refnums exc
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
 | INPUT | `anything` | `f64` | `any_explicit` | `single` | — |
-| INPUT | `byte_order` | `i32` | `any_explicit` | `single` | — |
+| INPUT | `byte_order` | `enum<byte_order,u16>` | `any_explicit` | `single` | — |
 | INPUT | `prepend_size` | `bool` | `any_explicit` | `single` | — |
 | INPUT | `error_in` | `cluster<status:bool,code:i32,source:string>` | `any_explicit` | `single` | — |
 | OUTPUT | `data_bytes` | `array<u8,rank=1>` | `any_explicit` | `single` | — |

@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Combine des elements et des tableaux dans un nouveau tableau. [Types] Dépliez Construire un tableau de 1 à 32 entrées ordonnées. Les éléments doivent être compatibles et leurs rangs égaux ou adjacents. Des entrées de rang N donnent un rang N+1, ou N avec « Concaténer les entrées ». Des rangs N et N-1 imposent la concaténation au rang N : le menu est coché et verrouillé. Des scalaires donnent un tableau 1D : la concaténation est décochée et verrouillée. Sans type connu en entrée, la sortie est void. Les numériques peuvent être promus, pas les types sans rapport. Le mode manuel et le nombre d’entrées sont sauvegardés ; l’exécution dépend toujours de la cible. [Local Studio] Play/Highlight local exécute de 1 à 32 entrées scalaires f64 finies et renvoie array&lt;f64&gt; de rang 1. Les identifiants sémantiques canoniques imposent l’ordre des éléments, indépendamment de l’arrivée des arguments. Ce profil local n’implémente ni concaténation ni entrée tableau. Autres types/rangs ou modes : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Les options générales d’édition restent distinctes de cette capacité d’exécution bornée ; aucun support cible public FROG/LLVM n’est déclaré.
+Combine des elements et des tableaux dans un nouveau tableau.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated. [Local Studio] Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
-
-Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated. [Local Studio] Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
-
-</details>
 
 ## IN — inputs
 
@@ -57,9 +46,27 @@ Additional input IDs: `input_N`, starting at 2.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
 
-Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Expand Build Array from 1 to 32 ordered inputs. Compatible elements must have equal or adjacent ranks. Equal rank N produces rank N+1, or rank N when Concatenate Inputs is selected. Mixed ranks N and N-1 force concatenation at rank N and lock the checked menu item. All scalars produce a 1D array and lock concatenation off. Unwired inputs supply no type evidence; without known types the output is void. Numeric leaves may promote; unrelated types cannot mix. Manual mode and input count are saved; target execution remains separately gated. [Local Studio] Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Dépliez Construire un tableau de 1 à 32 entrées ordonnées. Les éléments doivent être compatibles et leurs rangs égaux ou adjacents. Des entrées de rang N donnent un rang N+1, ou N avec « Concaténer les entrées ». Des rangs N et N-1 imposent la concaténation au rang N : le menu est coché et verrouillé. Des scalaires donnent un tableau 1D : la concaténation est décochée et verrouillée. Sans type connu en entrée, la sortie est void. Les numériques peuvent être promus, pas les types sans rapport. Le mode manuel et le nombre d’entrées sont sauvegardés ; l’exécution dépend toujours de la cible. [Local Studio] Play/Highlight local exécute de 1 à 32 entrées scalaires f64 finies et renvoie array&lt;f64&gt; de rang 1. Les identifiants sémantiques canoniques imposent l’ordre des éléments, indépendamment de l’arrivée des arguments. Ce profil local n’implémente ni concaténation ni entrée tableau. Autres types/rangs ou modes : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Les options générales d’édition restent distinctes de cette capacité d’exécution bornée ; aucun support cible public FROG/LLVM n’est déclaré.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -76,7 +83,11 @@ Port order: `array_a` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Local Studio Play/Highlight executes 1 through 32 finite f64 scalar inputs and returns a rank-1 array&lt;f64&gt;. Canonical semantic input IDs determine element order, independently of argument arrival. No concatenation or Array input is implemented by this local profile. Other types/ranks or modes fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. General authoring options remain distinct from this bounded execution capability; public FROG/LLVM target support is not declared.
+Implementation: `frog.studio.array.build.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

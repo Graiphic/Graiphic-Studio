@@ -18,22 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Les entrées déroulables sont examinées de haut en bas : première erreur, sinon première mise en garde, sinon aucune erreur. Cette sélection n’est pas Combiner les erreurs. [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+Les entrées déroulables sont examinées de haut en bas : première erreur, sinon première mise en garde, sinon aucune erreur. Cette sélection n’est pas Combiner les erreurs.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +45,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 Additional input IDs: `input_N`, starting at 3.
 
-## Types and connection rules
+## Types and Compatibility
 
-Expandable inputs are checked from top to bottom: first error, otherwise first warning, otherwise no error. This is not Multiplex Errors.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -72,7 +81,11 @@ Port order: `a` → `b` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
+Implementation: `frog.studio.error.retain_first.v1`.
+
+Required provider: `frog.studio.composed-program@1`.
+
+Local compiled Error value/service realization on complete immutable SDK carriers. The selected Source/FIR/native target must explicitly admit this exact operation and full typed signature; this metadata neither enables every backend nor claims that partial variants have been qualified.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>
@@ -81,7 +94,9 @@ These declarations belong to the binding snapshot. Compare them with the separat
 
 **Authoring/target contract limits:**
 
-- Runtime execution is not implemented by this authoring profile.
+- The active target must explicitly admit the exact native operation and complete typed signature; palette visibility and this metadata do not grant an execution capability.
+- Authored positional Error clusters with custom field IDs remain valid authoring types, but their native typed-edge bridge is not implemented/qualified in this profile.
+- Only configured scalar Error inputs a,b,input_3..input_16 are admitted, in numeric terminal order; arrays and unrelated Clusters are not implicit Error inputs.
 
 </details>
 

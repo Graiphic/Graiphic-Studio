@@ -12,17 +12,13 @@ Separates a path into its components.
 
 **Decomposer un chemin**
 
-Separe un chemin en composants. [Types] Un chemin scalaire produit le chemin parent et le nom du dernier composant sous forme de chaîne scalaire.
+Separe un chemin en composants.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-One scalar Path produces the stripped parent Path and the final name as a scalar String.
-
-One scalar Path produces the stripped parent Path and the final name as a scalar String.
 
 ## IN — inputs
 
@@ -41,9 +37,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 One scalar Path produces the stripped parent Path and the final name as a scalar String.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un chemin scalaire produit le chemin parent et le nom du dernier composant sous forme de chaîne scalaire.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

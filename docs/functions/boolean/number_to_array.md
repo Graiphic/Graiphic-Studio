@@ -12,17 +12,13 @@ Expands the bits of a number into a Boolean array.
 
 **Nombre vers tableau booleen**
 
-Decompose les bits d'un nombre dans un tableau booleen. [Types] Entier/virgule fixe scalaire -&gt; tableau booléen 1D, un élément par bit, poids faible en premier.
+Decompose les bits d'un nombre dans un tableau booleen.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Integer/fixed-point scalar -&gt; 1D Boolean array, one element per bit; first is least significant.
-
-Integer/fixed-point scalar -&gt; 1D Boolean array, one element per bit; first is least significant.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Integer/fixed-point scalar -&gt; 1D Boolean array, one element per bit; first is least significant.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Entier/virgule fixe scalaire -&gt; tableau booléen 1D, un élément par bit, poids faible en premier.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -55,6 +62,14 @@ Integer/fixed-point scalar -&gt; 1D Boolean array, one element per bit; first is
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
+
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.number_to_boolean_array.exact-width.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

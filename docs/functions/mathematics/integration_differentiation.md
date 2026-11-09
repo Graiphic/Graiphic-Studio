@@ -20,7 +20,14 @@ Dossier Mathematics réservé à Integration &amp; Differentiation. Aucune fonct
 
 This entry opens a palette folder; it is not an executable dataflow function.
 
-No direct child operation is declared in the current catalogue snapshot. Browse the family reference for the entries that are available.
+| Entry | Purpose |
+| --- | --- |
+| [Numeric Integration](../math/calculus/numeric_integration.md) | Integrates regularly sampled real data in one, two or three dimensions using trapezoidal, Simpson, Simpson 3/8 or Bode panels, including every remainder interval. Axes map [z,y,x] to dx,dy,dz without flattening. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: 1d, 2d, 3d. |
+| [Uneven Numeric Integration](../math/calculus/uneven_numeric_integration.md) | Integrates paired values X and sample positions T by trapezoids after a non-destructive coupled stable sort of T; neither vector is truncated. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: default. |
+| [Quadrature](../math/calculus/quadrature.md) | Adaptively integrates an authored mathematical formula or a compiled strict native function over finite rectangular one-, two- or three-dimensional limits. Callable coordinates are paired arrays and preserve Variant data. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: formula_1d, function_1d, formula_2d, function_2d, formula_3d, function_3d. |
+| [Integral x(t)](../math/calculus/integral_xt.md) | Produces one cumulative integral per real signal sample using the selected local Newton-Cotes stencil and explicit prehistory/future samples. Conditions are signal samples, not an additive integration constant. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: default. |
+| [Derivative x(t)](../math/calculus/derivative_xt.md) | Produces the first derivative at each real signal sample by central order two/four, forward or backward differences, using explicit neighboring samples and the declared positive sample interval. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: default. |
+| [Time Domain Math](../math/calculus/time_domain_math.md) | Computes derivative, difference, integral or summation on an existing timed waveform or an array of waveforms. Continuous and per-segment modes keep distinct node/invocation/channel state and preserve timestamps. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: waveform_derivative_continuous, waveform_derivative_segment, waveform_difference_continuous, waveform_difference_segment, waveform_integral_continuous, waveform_integral_segment, waveform_sum_continuous, waveform_sum_segment, waveforms_derivative_continuous, waveforms_derivative_segment, waveforms_difference_continuous, waveforms_difference_segment, waveforms_integral_continuous, waveforms_integral_segment, waveforms_sum_continuous, waveforms_sum_segment. |
 
 ## Examples
 

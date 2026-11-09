@@ -12,17 +12,13 @@ Creates an array filled with the supplied element.
 
 **Initialiser un tableau**
 
-Cree un tableau rempli avec l'element fourni. [Types] Un scalaire ou cluster T initialise un tableau de T à M dimensions. Dérouler la fonction expose M tailles (1–16), numériques réelles converties en I32. Un tableau direct n’est pas accepté comme élément.
+Cree un tableau rempli avec l'element fourni.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A scalar or cluster T initializes an M-dimensional array of T. Resize to expose M dimension-size inputs (1–16); real numeric sizes are converted to I32. A direct array element is not accepted.
-
-A scalar or cluster T initializes an M-dimensional array of T. Resize to expose M dimension-size inputs (1–16); real numeric sizes are converted to I32. A direct array element is not accepted.
 
 ## IN — inputs
 
@@ -45,9 +41,20 @@ Additional input IDs: `input_N`, starting at 3.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A scalar or cluster T initializes an M-dimensional array of T. Resize to expose M dimension-size inputs (1–16); real numeric sizes are converted to I32. A direct array element is not accepted.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un scalaire ou cluster T initialise un tableau de T à M dimensions. Dérouler la fonction expose M tailles (1–16), numériques réelles converties en I32. Un tableau direct n’est pas accepté comme élément.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -63,7 +70,11 @@ Port order: `element` → `size` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.initialize.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

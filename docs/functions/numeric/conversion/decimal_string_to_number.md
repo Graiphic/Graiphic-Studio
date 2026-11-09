@@ -12,17 +12,13 @@ Parses a decimal string into a numeric value.
 
 **Chaine decimale vers nombre**
 
-Analyse une chaine decimale pour produire une valeur numerique. [Types] String ou tableau/cluster récursivement String devient la même structure à feuilles numériques (I32 par défaut). Chez NI, l'entrée valeur par défaut choisit la représentation ; les offsets restent scalaires. Studio: Studio expose actuellement uniquement la valeur d’entrée et le résultat, sans les terminaux NI de valeur par défaut, de position initiale et de position après le nombre.
+Analyse une chaine decimale pour produire une valeur numerique.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-String or recursively String array/cluster becomes the same structure with numeric leaves (default I32). In NI the default-value input selects numeric representation; offset and offset-past-number remain scalar.
-
-String or recursively String array/cluster becomes the same structure with numeric leaves (default I32). In NI the default-value input selects numeric representation; offset and offset-past-number remain scalar. Studio: Studio currently exposes only the value input/result, without the NI default-value, offset and offset-past-number terminals.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-String or recursively String array/cluster becomes the same structure with numeric leaves (default I32). In NI the default-value input selects numeric representation; offset and offset-past-number remain scalar.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+String or recursively String array/cluster becomes the same structure with numeric leaves (default I32). In NI the default-value input selects numeric representation; offset and offset-past-number remain scalar. Studio: Studio currently exposes only the value input/result, without the NI default-value, offset and offset-past-number terminals.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+String ou tableau/cluster récursivement String devient la même structure à feuilles numériques (I32 par défaut). Chez NI, l'entrée valeur par défaut choisit la représentation ; les offsets restent scalaires. Studio: Studio expose actuellement uniquement la valeur d’entrée et le résultat, sans les terminaux NI de valeur par défaut, de position initiale et de position après le nombre.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,13 @@ fixed unary in the current binding catalog
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
-No portable Runtime formatting or parsing provider is declared.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.conversion.decimal_string_to_number.unary-typed.v1`.
+
+Required provider: `frog.studio.numeric.unary-text.ascii-dot-prefix@1`.
+
+Explicit GS unary text defaults: invariant ASCII dot, precision six, exact source integer width and prefix parsers with the declared I32/U32/DBL result. Uses the compiled Numeric provider and existing String formatter; missing NI locale/prototype/precision connectors and advanced carriers are not claimed. Execution and AOT evidence remain distinct.
 
 **Authoring/target contract limits:**
 

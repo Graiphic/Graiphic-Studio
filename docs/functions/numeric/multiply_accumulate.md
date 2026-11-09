@@ -12,17 +12,13 @@ Multiplies values and adds the product to an accumulator.
 
 **Multiplier-accumuler**
 
-Multiplie des valeurs puis ajoute le produit a un accumulateur. [Types] x,y,valeur initiale numériques scalaires + initialisation booléenne -&gt; accumulation scalaire ; pas d’extension aux tableaux. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+Multiplie des valeurs puis ajoute le produit a un accumulateur.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting.
-
-Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x,y,valeur initiale numériques scalaires + initialisation booléenne -&gt; accumulation scalaire ; pas d’extension aux tableaux. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

@@ -12,7 +12,7 @@ Deletes elements or slices and returns both the remaining array and the deleted 
 
 **Supprimer une portion de tableau**
 
-Supprime des éléments ou des tranches et renvoie le tableau restant ainsi que la portion supprimée. [Types] Un tableau ND de T expose N indices ; un seul peut être câblé pour choisir la dimension de suppression. Le tableau restant conserve le rang N. La portion supprimée est de rang N-1 si la longueur n'est pas câblée (scalaire en 1D), sinon de rang N, même avec une longueur câblée à un. La longueur par défaut vaut un ; sans indice, la suppression commence au dernier élément ou à la dernière tranche.
+Supprime des éléments ou des tranches et renvoie le tableau restant ainsi que la portion supprimée.
 
 </details>
 
@@ -20,17 +20,13 @@ Supprime des éléments ou des tranches et renvoie le tableau restant ainsi que 
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-An N-D array of T exposes N index terminals, with only one dimension selectable for deletion. The remaining array retains rank N. The deleted portion has rank N-1 when length is unwired (scalar for 1D), or rank N when length is wired, including a wired value of one. Default length is one; without an index, deletion starts at the last element or slice.
-
-An N-D array of T exposes N index terminals, with only one dimension selectable for deletion. The remaining array retains rank N. The deleted portion has rank N-1 when length is unwired (scalar for 1D), or rank N when length is wired, including a wired value of one. Default length is one; without an index, deletion starts at the last element or slice.
-
 ## IN — inputs
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
 | array `array` | `array<T:any,rank>=1>` | Required | Not specified | — |
-| length `length` | `T:integer` | Recommended (help); Optional (binding) | Not specified | — |
-| index `index` | `T:integer` | Recommended (help); Optional (binding) | Not specified | — |
+| length `length` | `T:numeric` | Recommended (help); Optional (binding) | Not specified | — |
+| index `index` | `T:numeric` | Recommended (help); Optional (binding) | Not specified | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 An N-D array of T exposes N index terminals, with only one dimension selectable for deletion. The remaining array retains rank N. The deleted portion has rank N-1 when length is unwired (scalar for 1D), or rank N when length is wired, including a wired value of one. Default length is one; without an index, deletion starts at the last element or slice.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau ND de T expose N indices ; un seul peut être câblé pour choisir la dimension de suppression. Le tableau restant conserve le rang N. La portion supprimée est de rang N-1 si la longueur n'est pas câblée (scalaire en 1D), sinon de rang N, même avec une longueur câblée à un. La longueur par défaut vaut un ; sans indice, la suppression commence au dernier élément ou à la dernière tranche.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -59,7 +66,11 @@ An N-D array of T exposes N index terminals, with only one dimension selectable 
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.delete.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

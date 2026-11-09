@@ -12,17 +12,13 @@ Applies OR across all elements of a Boolean array.
 
 **OU des elements du tableau**
 
-Applique OU a tous les elements d'un tableau booleen. [Types] Tableau booléen de rang quelconque -&gt; OU booléen scalaire.
+Applique OU a tous les elements d'un tableau booleen.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Boolean array of any rank -&gt; scalar Boolean OR.
-
-Boolean array of any rank -&gt; scalar Boolean OR.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Boolean array of any rank -&gt; scalar Boolean OR.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Tableau booléen de rang quelconque -&gt; OU booléen scalaire.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -55,6 +62,14 @@ Boolean array of any rank -&gt; scalar Boolean OR.
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
+
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.boolean.or_array_elements.tree.v1`.
+
+Required provider: `frog.studio.boolean.owned-tree@1`.
+
+Conditional complete typed-tree implementation. Existing scalar Boolean Core/reduction identities remain exact; the current Source chooses the tree realization for polymorphic inputs and Array reductions. Extended numeric carriers and deployment require separate admission and proof.
 
 **Authoring/target contract limits:**
 

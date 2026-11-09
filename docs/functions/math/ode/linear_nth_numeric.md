@@ -12,15 +12,13 @@ Homogeneous normalized constant-coefficient scalar equation x^(n)+a[n-1]*x^(n-1)
 
 **Équation linéaire d’ordre n numérique**
 
-Équation scalaire homogène normalisée à coefficients constants x^(n)+a[n-1]*x^(n-1)+...+a[0]*x=0. A commence par a0 ; coefficient dominant implicitement 1. X0=[x(t0),x'(t0),...]. n est l’ordre de l’équation. Exponentielle de la matrice compagnon : X est un tableau 1D de x(t), sans ses dérivées. Au moins deux points, bornes incluses, tf&gt;t0. Les racines répétées sont une amélioration FROG documentée. Socle réel f64 : un vecteur est un système couplé, sans batch implicite, complexe ni transport Matrix. Les matrices et trajectoires multi-états sont de vrais tableaux de rang 2 : ligne=temps, colonne=état. Exception : Linear nth Order Numeric renvoie seulement x(t), tableau de rang 1 sans ses dérivées. Les données Variant empruntées restent opaques au profil f64 des états et peuvent conserver des lexèmes I128/U128 exacts sans conversion numérique. Formula/FROG Reference sont des instances manuelles persistées avec les mêmes identifiants des ports communs et le même SVG. ODE Solver/DAE gardent les clusters error in/out ; les anciens nœuds gardent error:i32 (0=succès). ticks:u32 mesure les millisecondes de calcul, pas les pas. endpoint_policy=clip inclut t0 et tf en recalculant le dernier pas tronqué. Dimensions, formules, tolérances, bornes, valeurs non finies, ressources, annulation et convergence produisent un diagnostic explicite. Sources LabVIEW classique, sans parité NI mesurée ni signature NXG confirmée ; les écarts FROG sont documentés. Exécution locale sur le graphe auteur immuable via le worker Highlight, Play avec ou sans ampoule. Le corridor cible compilé LLVM ne prend pas encore en charge ces signatures agrégées et les refuse explicitement, sans substitution. [Types] A [coefficients]: array&lt;f64&gt;; X0 [initial_values]: array&lt;f64&gt;; number of points [points]: u32; time start [time_start]: f64; time end [time_end]: f64; Times [times]: array&lt;f64&gt;; X [values]: array&lt;f64&gt;; error [error]: i32
+Équation scalaire homogène normalisée à coefficients constants x^(n)+a[n-1]*x^(n-1)+...+a[0]*x=0. A commence par a0 ; coefficient dominant implicitement 1. X0=[x(t0),x'(t0),...]. n est l’ordre de l’équation. Exponentielle de la matrice compagnon : X est un tableau 1D de x(t), sans ses dérivées. Au moins deux points, bornes incluses, tf&gt;t0. Les racines répétées sont une amélioration FROG documentée. Socle réel f64 : un vecteur est un système couplé, sans batch implicite, complexe ni transport Matrix. Les matrices et trajectoires multi-états sont de vrais tableaux de rang 2 : ligne=temps, colonne=état. Exception : Linear nth Order Numeric renvoie seulement x(t), tableau de rang 1 sans ses dérivées. Les données Variant empruntées restent opaques au profil f64 des états et peuvent conserver des lexèmes I128/U128 exacts sans conversion numérique. Formula/FROG Reference sont des instances manuelles persistées avec les mêmes identifiants des ports communs et le même SVG. ODE Solver/DAE gardent les clusters error in/out ; les anciens nœuds gardent error:i32 (0=succès). ticks:u32 mesure les millisecondes de calcul, pas les pas. endpoint_policy=clip inclut t0 et tf en recalculant le dernier pas tronqué. Dimensions, formules, tolérances, bornes, valeurs non finies, ressources, annulation et convergence produisent un diagnostic explicite. Sources LabVIEW classique, sans parité NI mesurée ni signature NXG confirmée ; les écarts FROG sont documentés. Exécution locale sur le graphe auteur immuable via le worker Highlight, Play avec ou sans ampoule. Le corridor cible compilé LLVM ne prend pas encore en charge ces signatures agrégées et les refuse explicitement, sans substitution.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A [coefficients]: array&lt;f64&gt;; X0 [initial_values]: array&lt;f64&gt;; number of points [points]: u32; time start [time_start]: f64; time end [time_end]: f64; Times [times]: array&lt;f64&gt;; X [values]: array&lt;f64&gt;; error [error]: i32
 
 ## IN — inputs
 
@@ -44,9 +42,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Real f64 coupled systems, not element-wise batch lifting. Vectors are rank 1; matrices and multistate trajectories are actual rank-2 Arrays, not nominal Matrix transport. Values[row,column] is state column at Times[row]. Explicit exception: Linear nth Order Numeric returns only x(t) as a rank-1 Array, without its derivatives. Borrowed Variant user data is opaque to the f64 ODE state profile and may preserve exact common typed payloads, including I128/U128 lexical values, without numeric conversion. No complex transport, implicit batch, dimensional broadcasting or scalar lifting. Formula and FROG Reference are explicitly selected persisted identities sharing one palette artwork. Common connector IDs survive switching instances.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+A [coefficients]: array&lt;f64&gt;; X0 [initial_values]: array&lt;f64&gt;; number of points [points]: u32; time start [time_start]: f64; time end [time_end]: f64; Times [times]: array&lt;f64&gt;; X [values]: array&lt;f64&gt;; error [error]: i32
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+A [coefficients]: array&lt;f64&gt;; X0 [initial_values]: array&lt;f64&gt;; number of points [points]: u32; time start [time_start]: f64; time end [time_end]: f64; Times [times]: array&lt;f64&gt;; X [values]: array&lt;f64&gt;; error [error]: i32
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.ordinary-differential-equations.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

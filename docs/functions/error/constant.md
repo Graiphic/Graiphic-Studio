@@ -18,22 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Crée un cluster status/code/source modifiable, initialisé à faux, zéro et chaîne vide. Cette valeur ne déclenche aucune exception. [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+Crée un cluster status/code/source modifiable, initialisé à faux, zéro et chaîne vide. Cette valeur ne déclenche aucune exception.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
-
-</details>
 
 ## IN — inputs
 
@@ -47,9 +38,27 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Creates an editable status/code/source cluster with the initial no-error value false, zero and empty string. This value is not an exception.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -63,7 +72,9 @@ Creates an editable status/code/source cluster with the initial no-error value f
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
+Required provider: `frog.studio.immutable-record-constant@1`.
+
+Existing Core immutable Record literal lowering for the actual editable Cluster fields; this is not a callable Error function and no new operation identity is introduced.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>
@@ -72,7 +83,8 @@ These declarations belong to the binding snapshot. Compare them with the separat
 
 **Authoring/target contract limits:**
 
-- Runtime execution is not implemented by this authoring profile.
+- The selected target must admit the actual complete Record literal or typed widget binding; catalog visibility is not a universal execution guarantee.
+- The literal schema and field identities remain owned by the actual editable Cluster; changing that schema does not force it back to the Error preset.
 
 </details>
 

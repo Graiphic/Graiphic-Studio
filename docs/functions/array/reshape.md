@@ -12,17 +12,13 @@ Changes the dimensions of an array while preserving its elements.
 
 **Redimensionner un tableau**
 
-Change les dimensions d'un tableau en conservant ses elements. [Types] Un tableau de tout type et de rang N produit le même type d’élément au rang M, fixé par le nombre de terminaux de taille affichés (1 à 16). Dépliez verticalement la fonction pour ajouter ou retirer des tailles. Chaque taille est un scalaire numérique réel converti en I32 ; sa valeur ne détermine pas le rang. Toutes les tailles affichées sont requises pour la préparation à l’exécution. Sans type de tableau, la sortie reste void. Le rang est sauvegardé et prend en charge Annuler/Rétablir ; un terminal câblé ne peut pas être replié. L’exécution dépend toujours de la cible.
+Change les dimensions d'un tableau en conservant ses elements.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-An array of any element type and input rank N produces the same element type at output rank M, where M is the displayed size-terminal count (1 to 16). Resize the node vertically to add or remove size terminals. Each size is a real numeric scalar converted to I32; values do not determine rank. All displayed sizes are required for readiness. Without an array type, the output remains void. Expanded rank is saved and supports Undo/Redo; connected terminals cannot be folded away. Target execution remains separately gated.
-
-An array of any element type and input rank N produces the same element type at output rank M, where M is the displayed size-terminal count (1 to 16). Resize the node vertically to add or remove size terminals. Each size is a real numeric scalar converted to I32; values do not determine rank. All displayed sizes are required for readiness. Without an array type, the output remains void. Expanded rank is saved and supports Undo/Redo; connected terminals cannot be folded away. Target execution remains separately gated.
 
 ## IN — inputs
 
@@ -45,9 +41,20 @@ Additional input IDs: `input_N`, starting at 3.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 An array of any element type and input rank N produces the same element type at output rank M, where M is the displayed size-terminal count (1 to 16). Resize the node vertically to add or remove size terminals. Each size is a real numeric scalar converted to I32; values do not determine rank. All displayed sizes are required for readiness. Without an array type, the output remains void. Expanded rank is saved and supports Undo/Redo; connected terminals cannot be folded away. Target execution remains separately gated.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau de tout type et de rang N produit le même type d’élément au rang M, fixé par le nombre de terminaux de taille affichés (1 à 16). Dépliez verticalement la fonction pour ajouter ou retirer des tailles. Chaque taille est un scalaire numérique réel converti en I32 ; sa valeur ne détermine pas le rang. Toutes les tailles affichées sont requises pour la préparation à l’exécution. Sans type de tableau, la sortie reste void. Le rang est sauvegardé et prend en charge Annuler/Rétablir ; un terminal câblé ne peut pas être replié. L’exécution dépend toujours de la cible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -64,7 +71,11 @@ Port order: `array` → `dimension_size` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.reshape.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

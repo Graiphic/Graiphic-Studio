@@ -12,15 +12,13 @@ Places the Elapsed Time utility on the Diagram.
 
 **Temps ecoule**
 
-Place l'utilitaire Temps ecoule sur le diagramme. [Types] Secondes cibles:DBL, reset/auto-reset:Boolean -&gt; secondes écoulées:DBL, écoulé:Boolean. Studio: Studio expose la réinitialisation, mais pas l’entrée NI de réinitialisation automatique.
+Place l'utilitaire Temps ecoule sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Target seconds:DBL, reset/auto-reset:Boolean -&gt; elapsed seconds:DBL, elapsed:Boolean. Studio: Studio exposes reset but not the NI auto-reset input.
 
 ## IN — inputs
 
@@ -40,7 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Target seconds:DBL, reset/auto-reset:Boolean -&gt; elapsed seconds:DBL, elapsed:Boolean. Studio: Studio exposes reset but not the NI auto-reset input.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Secondes cibles:DBL, reset/auto-reset:Boolean -&gt; secondes écoulées:DBL, écoulé:Boolean. Studio: Studio expose la réinitialisation, mais pas l’entrée NI de réinitialisation automatique.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

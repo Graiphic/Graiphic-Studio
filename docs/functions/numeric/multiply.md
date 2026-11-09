@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Multiplie les entrees numeriques. [Types] Scalaires numériques, tableaux et clusters numériques : opération élément par élément, formes compatibles et promotion numérique. La sortie conserve le type numérique promu. Studio: Studio n’implémente pas le remplacement des nœuds NI de waveform ou de données dynamiques, les unités physiques ni les longueurs de mot configurables en virgule fixe.
+Multiplie les entrees numeriques.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. The output retains the promoted numeric leaf type.
-
-Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. The output retains the promoted numeric leaf type. Studio: Studio does not implement NI waveform/dynamic-data node replacement, physical units or configurable fixed-point word lengths.
-
-</details>
 
 ## IN — inputs
 
@@ -58,9 +47,27 @@ Additional input IDs: `input_N`, starting at 3.
 
 When expanded beyond two operands, Studio displays x1, x2, …, xN and the corresponding result expression. The persisted input IDs and canonical operand order stay unchanged.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. The output retains the promoted numeric leaf type.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric scalars, arrays and numeric clusters operate element by element, with compatible shapes and numeric promotion. The output retains the promoted numeric leaf type. Studio: Studio does not implement NI waveform/dynamic-data node replacement, physical units or configurable fixed-point word lengths.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaires numériques, tableaux et clusters numériques : opération élément par élément, formes compatibles et promotion numérique. La sortie conserve le type numérique promu. Studio: Studio n’implémente pas le remplacement des nœuds NI de waveform ou de données dynamiques, les unités physiques ni les longueurs de mot configurables en virgule fixe.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -72,11 +79,15 @@ Port order: `a` → `b` → `input_N_ascending`.
 
 ## Execution and limits
 
-**Public FROG / target Runtime:** declared available within the scope below.
+**Public FROG / target Runtime:** not declared available by this authoring contract.
 
-Implementation: `frog.core.mul`.
+Scope: `requires_explicit_target_capability`.
 
-Portable Runtime scalar variadic execution is present.
+Implementation: `frog.studio.numeric.multiply.owned.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

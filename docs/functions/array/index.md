@@ -12,7 +12,7 @@ Returns an element or subarray at the requested index.
 
 **Indexer un tableau**
 
-Renvoie un element ou un sous-tableau a l'index demande. [Types] Un tableau nD de T produit T si toutes les dimensions sont indexées ; sinon un sous-tableau de T. Chaque dimension indexée retire un rang. Sans index câblé, la première dimension utilise zéro. Une waveform expose les éléments de Y. Studio: Studio fournit un index par dimension (jusqu’à 16) et jusqu’à 32 groupes de sorties extensibles. Un groupe non câblé reprend les dimensions indexées du groupe précédent. L’exécution dépend de la cible. [Local Studio] Play/Highlight local exécute un tableau fini array&lt;f64&gt; de rang 1, un seul index i32 explicitement câblé et une seule sortie f64. Index négatif/hors borne ou tableau vide : ARRAY_INDEX_RANGE sans sortie, jamais un zéro inventé. Lecture bornée à un million d’éléments. Autres types/rangs, sous-tableaux et groupes étendus d’index/sorties : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Ce profil FROG borné n’annonce ni le comportement NI général ni un support cible public FROG/LLVM.
+Renvoie un element ou un sous-tableau a l'index demande.
 
 </details>
 
@@ -20,16 +20,12 @@ Renvoie un element ou un sous-tableau a l'index demande. [Types] Un tableau nD d
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
-
-An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. Studio: Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
-
 ## IN — inputs
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
 | array `array` | `T:any` | Required | Not specified | — |
-| index `index` | `T:integer` | Recommended (help); Optional (binding) | Not specified | — |
+| index `index` | `T:numeric` | Recommended (help); Optional (binding) | Not specified | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -41,9 +37,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. Studio: Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
+
+[Local Studio] Exact owned Array operations use the selected native target capability. The historical one-output I32 Index keeps its version-one range diagnostic. Extended ranks, groups and unwired indices use the separately versioned owned.v2 contract with full-schema defaults. Unsupported carriers remain explicit diagnostics.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau nD de T produit T si toutes les dimensions sont indexées ; sinon un sous-tableau de T. Chaque dimension indexée retire un rang. Sans index câblé, la première dimension utilise zéro. Une waveform expose les éléments de Y. Studio: Studio fournit un index par dimension (jusqu’à 16) et jusqu’à 32 groupes de sorties extensibles. Un groupe non câblé reprend les dimensions indexées du groupe précédent. L’exécution dépend de la cible. [Local Studio] Play/Highlight local exécute un tableau fini array&lt;f64&gt; de rang 1, un seul index i32 explicitement câblé et une seule sortie f64. Index négatif/hors borne ou tableau vide : ARRAY_INDEX_RANGE sans sortie, jamais un zéro inventé. Lecture bornée à un million d’éléments. Autres types/rangs, sous-tableaux et groupes étendus d’index/sorties : refus explicite ARRAY_LOCAL_PROFILE_UNAVAILABLE. Ce profil FROG borné n’annonce ni le comportement NI général ni un support cible public FROG/LLVM.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -57,7 +66,11 @@ An n-D array of T yields T when all dimensions are indexed; otherwise an array o
 
 Scope: `requires_explicit_target_capability`.
 
-Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
+Implementation: `frog.studio.array.index.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

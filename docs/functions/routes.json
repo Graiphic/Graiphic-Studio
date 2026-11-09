@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "5aacecb1be75a8e4dbbe99e9d280891e0c47d6f8736e100a82caf4993e09c0ea",
+  "source_snapshot_sha256": "64072045364fada45f2716632dae5f6fdad6b2f3f9c62471830d27715186b294",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",
@@ -1247,125 +1247,6 @@
       ]
     },
     {
-      "catalog_id": "connectivity.dotnet",
-      "route": "docs/functions/connectivity/dotnet.md",
-      "keys": [
-        "connectivity.dotnet",
-        "frog.studio.connectivity.dotnet",
-        "function.connectivity.dotnet"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.close_reference",
-      "route": "docs/functions/connectivity/dotnet/close_reference.md",
-      "keys": [
-        "NET-04",
-        "connectivity.dotnet.close_reference",
-        "frog.studio.connectivity.dotnet.close_reference",
-        "function.connectivity.dotnet.close_reference"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.constructor",
-      "route": "docs/functions/connectivity/dotnet/constructor.md",
-      "keys": [
-        "NET-01",
-        "connectivity.dotnet.constructor",
-        "frog.studio.connectivity.dotnet.constructor",
-        "function.connectivity.dotnet.constructor"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.invoke_node",
-      "route": "docs/functions/connectivity/dotnet/invoke_node.md",
-      "keys": [
-        "NET-03",
-        "connectivity.dotnet.invoke_node",
-        "frog.studio.connectivity.dotnet.invoke_node",
-        "function.connectivity.dotnet.invoke_node"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.object_to_variant",
-      "route": "docs/functions/connectivity/dotnet/object_to_variant.md",
-      "keys": [
-        "NET-07",
-        "connectivity.dotnet.object_to_variant",
-        "frog.studio.connectivity.dotnet.object_to_variant",
-        "function.connectivity.dotnet.object_to_variant"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.property_node",
-      "route": "docs/functions/connectivity/dotnet/property_node.md",
-      "keys": [
-        "NET-02",
-        "connectivity.dotnet.property_node",
-        "frog.studio.connectivity.dotnet.property_node",
-        "function.connectivity.dotnet.property_node"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.register_event_callback",
-      "route": "docs/functions/connectivity/dotnet/register_event_callback.md",
-      "keys": [
-        "NET-09",
-        "connectivity.dotnet.register_event_callback",
-        "frog.studio.connectivity.dotnet.register_event_callback",
-        "function.connectivity.dotnet.register_event_callback"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.static_vi_reference",
-      "route": "docs/functions/connectivity/dotnet/static_vi_reference.md",
-      "keys": [
-        "NET-11",
-        "connectivity.dotnet.static_vi_reference",
-        "frog.studio.connectivity.dotnet.static_vi_reference",
-        "function.connectivity.dotnet.static_vi_reference"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.to_dotnet_object",
-      "route": "docs/functions/connectivity/dotnet/to_dotnet_object.md",
-      "keys": [
-        "NET-08",
-        "connectivity.dotnet.to_dotnet_object",
-        "frog.studio.connectivity.dotnet.to_dotnet_object",
-        "function.connectivity.dotnet.to_dotnet_object"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.to_more_generic_class",
-      "route": "docs/functions/connectivity/dotnet/to_more_generic_class.md",
-      "keys": [
-        "NET-05",
-        "connectivity.dotnet.to_more_generic_class",
-        "frog.studio.connectivity.dotnet.to_more_generic_class",
-        "function.connectivity.dotnet.to_more_generic_class"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.to_more_specific_class",
-      "route": "docs/functions/connectivity/dotnet/to_more_specific_class.md",
-      "keys": [
-        "NET-06",
-        "connectivity.dotnet.to_more_specific_class",
-        "frog.studio.connectivity.dotnet.to_more_specific_class",
-        "function.connectivity.dotnet.to_more_specific_class"
-      ]
-    },
-    {
-      "catalog_id": "connectivity.dotnet.unregister_for_events",
-      "route": "docs/functions/connectivity/dotnet/unregister_for_events.md",
-      "keys": [
-        "NET-10",
-        "connectivity.dotnet.unregister_for_events",
-        "frog.studio.connectivity.dotnet.unregister_for_events",
-        "function.connectivity.dotnet.unregister_for_events"
-      ]
-    },
-    {
       "catalog_id": "connectivity.input_device",
       "route": "docs/functions/connectivity/input_device.md",
       "keys": [
@@ -1821,15 +1702,6 @@
         "dialog.events.unregister_for_events",
         "frog.studio.dialog.events.unregister_for_events",
         "function.dialog.events.unregister_for_events"
-      ]
-    },
-    {
-      "catalog_id": "dotnet.reference",
-      "route": "docs/functions/dotnet/reference.md",
-      "keys": [
-        "dotnet.reference",
-        "frog.studio.dotnet.reference",
-        "function.dotnet.reference"
       ]
     },
     {
@@ -2400,6 +2272,60 @@
       ]
     },
     {
+      "catalog_id": "math.calculus.derivative_xt",
+      "route": "docs/functions/math/calculus/derivative_xt.md",
+      "keys": [
+        "frog.studio.math.calculus.derivative_xt",
+        "function.math.calculus.derivative_xt",
+        "math.calculus.derivative_xt"
+      ]
+    },
+    {
+      "catalog_id": "math.calculus.integral_xt",
+      "route": "docs/functions/math/calculus/integral_xt.md",
+      "keys": [
+        "frog.studio.math.calculus.integral_xt",
+        "function.math.calculus.integral_xt",
+        "math.calculus.integral_xt"
+      ]
+    },
+    {
+      "catalog_id": "math.calculus.numeric_integration",
+      "route": "docs/functions/math/calculus/numeric_integration.md",
+      "keys": [
+        "frog.studio.math.calculus.numeric_integration",
+        "function.math.calculus.numeric_integration",
+        "math.calculus.numeric_integration"
+      ]
+    },
+    {
+      "catalog_id": "math.calculus.quadrature",
+      "route": "docs/functions/math/calculus/quadrature.md",
+      "keys": [
+        "frog.studio.math.calculus.quadrature",
+        "function.math.calculus.quadrature",
+        "math.calculus.quadrature"
+      ]
+    },
+    {
+      "catalog_id": "math.calculus.time_domain_math",
+      "route": "docs/functions/math/calculus/time_domain_math.md",
+      "keys": [
+        "frog.studio.math.calculus.time_domain_math",
+        "function.math.calculus.time_domain_math",
+        "math.calculus.time_domain_math"
+      ]
+    },
+    {
+      "catalog_id": "math.calculus.uneven_numeric_integration",
+      "route": "docs/functions/math/calculus/uneven_numeric_integration.md",
+      "keys": [
+        "frog.studio.math.calculus.uneven_numeric_integration",
+        "function.math.calculus.uneven_numeric_integration",
+        "math.calculus.uneven_numeric_integration"
+      ]
+    },
+    {
       "catalog_id": "math.dae.radau_iia5",
       "route": "docs/functions/math/dae/radau_iia5.md",
       "keys": [
@@ -2633,6 +2559,258 @@
         "frog.studio.math.exponential.y_th_root_of_x",
         "function.math.exponential.y_th_root_of_x",
         "math.exponential.y_th_root_of_x"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.b_spline_fit",
+      "route": "docs/functions/math/fitting/b_spline_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.b_spline_fit",
+        "function.math.fitting.b_spline_fit",
+        "math.fitting.b_spline_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.constrained_nonlinear_curve_fit",
+      "route": "docs/functions/math/fitting/constrained_nonlinear_curve_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.constrained_nonlinear_curve_fit",
+        "function.math.fitting.constrained_nonlinear_curve_fit",
+        "math.fitting.constrained_nonlinear_curve_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.cubic_spline_fit",
+      "route": "docs/functions/math/fitting/cubic_spline_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.cubic_spline_fit",
+        "function.math.fitting.cubic_spline_fit",
+        "math.fitting.cubic_spline_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.curve_fit",
+      "route": "docs/functions/math/fitting/curve_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.curve_fit",
+        "function.math.fitting.curve_fit",
+        "math.fitting.curve_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.exponential_fit",
+      "route": "docs/functions/math/fitting/exponential_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.exponential_fit",
+        "function.math.fitting.exponential_fit",
+        "math.fitting.exponential_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.exponential_fit_coefficients",
+      "route": "docs/functions/math/fitting/exponential_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.exponential_fit_coefficients",
+        "function.math.fitting.exponential_fit_coefficients",
+        "math.fitting.exponential_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.exponential_fit_intervals",
+      "route": "docs/functions/math/fitting/exponential_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.exponential_fit_intervals",
+        "function.math.fitting.exponential_fit_intervals",
+        "math.fitting.exponential_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.fitting_on_sphere",
+      "route": "docs/functions/math/fitting/fitting_on_sphere.md",
+      "keys": [
+        "frog.studio.math.fitting.fitting_on_sphere",
+        "function.math.fitting.fitting_on_sphere",
+        "math.fitting.fitting_on_sphere"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.gaussian_fit_coefficients",
+      "route": "docs/functions/math/fitting/gaussian_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.gaussian_fit_coefficients",
+        "function.math.fitting.gaussian_fit_coefficients",
+        "math.fitting.gaussian_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.gaussian_fit_intervals",
+      "route": "docs/functions/math/fitting/gaussian_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.gaussian_fit_intervals",
+        "function.math.fitting.gaussian_fit_intervals",
+        "math.fitting.gaussian_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.gaussian_peak_fit",
+      "route": "docs/functions/math/fitting/gaussian_peak_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.gaussian_peak_fit",
+        "function.math.fitting.gaussian_peak_fit",
+        "math.fitting.gaussian_peak_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.general_linear_fit",
+      "route": "docs/functions/math/fitting/general_linear_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.general_linear_fit",
+        "function.math.fitting.general_linear_fit",
+        "math.fitting.general_linear_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.goodness_of_fit",
+      "route": "docs/functions/math/fitting/goodness_of_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.goodness_of_fit",
+        "function.math.fitting.goodness_of_fit",
+        "math.fitting.goodness_of_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.linear_fit",
+      "route": "docs/functions/math/fitting/linear_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.linear_fit",
+        "function.math.fitting.linear_fit",
+        "math.fitting.linear_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.linear_fit_coefficients",
+      "route": "docs/functions/math/fitting/linear_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.linear_fit_coefficients",
+        "function.math.fitting.linear_fit_coefficients",
+        "math.fitting.linear_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.linear_fit_intervals",
+      "route": "docs/functions/math/fitting/linear_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.linear_fit_intervals",
+        "function.math.fitting.linear_fit_intervals",
+        "math.fitting.linear_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.logarithm_fit",
+      "route": "docs/functions/math/fitting/logarithm_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.logarithm_fit",
+        "function.math.fitting.logarithm_fit",
+        "math.fitting.logarithm_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.logarithm_fit_coefficients",
+      "route": "docs/functions/math/fitting/logarithm_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.logarithm_fit_coefficients",
+        "function.math.fitting.logarithm_fit_coefficients",
+        "math.fitting.logarithm_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.logarithm_fit_intervals",
+      "route": "docs/functions/math/fitting/logarithm_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.logarithm_fit_intervals",
+        "function.math.fitting.logarithm_fit_intervals",
+        "math.fitting.logarithm_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.nonlinear_curve_fit",
+      "route": "docs/functions/math/fitting/nonlinear_curve_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.nonlinear_curve_fit",
+        "function.math.fitting.nonlinear_curve_fit",
+        "math.fitting.nonlinear_curve_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.nonlinear_curve_fit_intervals",
+      "route": "docs/functions/math/fitting/nonlinear_curve_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.nonlinear_curve_fit_intervals",
+        "function.math.fitting.nonlinear_curve_fit_intervals",
+        "math.fitting.nonlinear_curve_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.polynomial_fit",
+      "route": "docs/functions/math/fitting/polynomial_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.polynomial_fit",
+        "function.math.fitting.polynomial_fit",
+        "math.fitting.polynomial_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.polynomial_fit_coefficients",
+      "route": "docs/functions/math/fitting/polynomial_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.polynomial_fit_coefficients",
+        "function.math.fitting.polynomial_fit_coefficients",
+        "math.fitting.polynomial_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.polynomial_fit_intervals",
+      "route": "docs/functions/math/fitting/polynomial_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.polynomial_fit_intervals",
+        "function.math.fitting.polynomial_fit_intervals",
+        "math.fitting.polynomial_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.power_fit",
+      "route": "docs/functions/math/fitting/power_fit.md",
+      "keys": [
+        "frog.studio.math.fitting.power_fit",
+        "function.math.fitting.power_fit",
+        "math.fitting.power_fit"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.power_fit_coefficients",
+      "route": "docs/functions/math/fitting/power_fit_coefficients.md",
+      "keys": [
+        "frog.studio.math.fitting.power_fit_coefficients",
+        "function.math.fitting.power_fit_coefficients",
+        "math.fitting.power_fit_coefficients"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.power_fit_intervals",
+      "route": "docs/functions/math/fitting/power_fit_intervals.md",
+      "keys": [
+        "frog.studio.math.fitting.power_fit_intervals",
+        "function.math.fitting.power_fit_intervals",
+        "math.fitting.power_fit_intervals"
+      ]
+    },
+    {
+      "catalog_id": "math.fitting.remove_outliers",
+      "route": "docs/functions/math/fitting/remove_outliers.md",
+      "keys": [
+        "frog.studio.math.fitting.remove_outliers",
+        "function.math.fitting.remove_outliers",
+        "math.fitting.remove_outliers"
       ]
     },
     {
@@ -2897,6 +3075,222 @@
       ]
     },
     {
+      "catalog_id": "math.geometry.absolute_angle_difference",
+      "route": "docs/functions/math/geometry/absolute_angle_difference.md",
+      "keys": [
+        "frog.studio.math.geometry.absolute_angle_difference",
+        "function.math.geometry.absolute_angle_difference",
+        "math.geometry.absolute_angle_difference"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.angle_rotation",
+      "route": "docs/functions/math/geometry/angle_rotation.md",
+      "keys": [
+        "frog.studio.math.geometry.angle_rotation",
+        "function.math.geometry.angle_rotation",
+        "math.geometry.angle_rotation"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.bisect_angle",
+      "route": "docs/functions/math/geometry/bisect_angle.md",
+      "keys": [
+        "frog.studio.math.geometry.bisect_angle",
+        "function.math.geometry.bisect_angle",
+        "math.geometry.bisect_angle"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.complementary_angle",
+      "route": "docs/functions/math/geometry/complementary_angle.md",
+      "keys": [
+        "frog.studio.math.geometry.complementary_angle",
+        "function.math.geometry.complementary_angle",
+        "math.geometry.complementary_angle"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.contour_line",
+      "route": "docs/functions/math/geometry/contour_line.md",
+      "keys": [
+        "frog.studio.math.geometry.contour_line",
+        "function.math.geometry.contour_line",
+        "math.geometry.contour_line"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.convex_hull",
+      "route": "docs/functions/math/geometry/convex_hull.md",
+      "keys": [
+        "frog.studio.math.geometry.convex_hull",
+        "function.math.geometry.convex_hull",
+        "math.geometry.convex_hull"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.convex_polygon_intersection",
+      "route": "docs/functions/math/geometry/convex_polygon_intersection.md",
+      "keys": [
+        "frog.studio.math.geometry.convex_polygon_intersection",
+        "function.math.geometry.convex_polygon_intersection",
+        "math.geometry.convex_polygon_intersection"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.coordinate_conversion_3d",
+      "route": "docs/functions/math/geometry/coordinate_conversion_3d.md",
+      "keys": [
+        "frog.studio.math.geometry.coordinate_conversion_3d",
+        "function.math.geometry.coordinate_conversion_3d",
+        "math.geometry.coordinate_conversion_3d"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.cross_product",
+      "route": "docs/functions/math/geometry/cross_product.md",
+      "keys": [
+        "frog.studio.math.geometry.cross_product",
+        "function.math.geometry.cross_product",
+        "math.geometry.cross_product"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.delaunay_triangulation",
+      "route": "docs/functions/math/geometry/delaunay_triangulation.md",
+      "keys": [
+        "frog.studio.math.geometry.delaunay_triangulation",
+        "function.math.geometry.delaunay_triangulation",
+        "math.geometry.delaunay_triangulation"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.direction_to_euler",
+      "route": "docs/functions/math/geometry/direction_to_euler.md",
+      "keys": [
+        "frog.studio.math.geometry.direction_to_euler",
+        "function.math.geometry.direction_to_euler",
+        "math.geometry.direction_to_euler"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.euler_to_direction",
+      "route": "docs/functions/math/geometry/euler_to_direction.md",
+      "keys": [
+        "frog.studio.math.geometry.euler_to_direction",
+        "function.math.geometry.euler_to_direction",
+        "math.geometry.euler_to_direction"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.included_angle",
+      "route": "docs/functions/math/geometry/included_angle.md",
+      "keys": [
+        "frog.studio.math.geometry.included_angle",
+        "function.math.geometry.included_angle",
+        "math.geometry.included_angle"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.point_in_polygon",
+      "route": "docs/functions/math/geometry/point_in_polygon.md",
+      "keys": [
+        "frog.studio.math.geometry.point_in_polygon",
+        "function.math.geometry.point_in_polygon",
+        "math.geometry.point_in_polygon"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.polygon_area",
+      "route": "docs/functions/math/geometry/polygon_area.md",
+      "keys": [
+        "frog.studio.math.geometry.polygon_area",
+        "function.math.geometry.polygon_area",
+        "math.geometry.polygon_area"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.polygon_centroid",
+      "route": "docs/functions/math/geometry/polygon_centroid.md",
+      "keys": [
+        "frog.studio.math.geometry.polygon_centroid",
+        "function.math.geometry.polygon_centroid",
+        "math.geometry.polygon_centroid"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.rotation_2d",
+      "route": "docs/functions/math/geometry/rotation_2d.md",
+      "keys": [
+        "frog.studio.math.geometry.rotation_2d",
+        "function.math.geometry.rotation_2d",
+        "math.geometry.rotation_2d"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.rotation_3d_direction",
+      "route": "docs/functions/math/geometry/rotation_3d_direction.md",
+      "keys": [
+        "frog.studio.math.geometry.rotation_3d_direction",
+        "function.math.geometry.rotation_3d_direction",
+        "math.geometry.rotation_3d_direction"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.rotation_3d_euler",
+      "route": "docs/functions/math/geometry/rotation_3d_euler.md",
+      "keys": [
+        "frog.studio.math.geometry.rotation_3d_euler",
+        "function.math.geometry.rotation_3d_euler",
+        "math.geometry.rotation_3d_euler"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.shift_2d",
+      "route": "docs/functions/math/geometry/shift_2d.md",
+      "keys": [
+        "frog.studio.math.geometry.shift_2d",
+        "function.math.geometry.shift_2d",
+        "math.geometry.shift_2d"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.shift_3d",
+      "route": "docs/functions/math/geometry/shift_3d.md",
+      "keys": [
+        "frog.studio.math.geometry.shift_3d",
+        "function.math.geometry.shift_3d",
+        "math.geometry.shift_3d"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.supplementary_angle",
+      "route": "docs/functions/math/geometry/supplementary_angle.md",
+      "keys": [
+        "frog.studio.math.geometry.supplementary_angle",
+        "function.math.geometry.supplementary_angle",
+        "math.geometry.supplementary_angle"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.voronoi_diagram",
+      "route": "docs/functions/math/geometry/voronoi_diagram.md",
+      "keys": [
+        "frog.studio.math.geometry.voronoi_diagram",
+        "function.math.geometry.voronoi_diagram",
+        "math.geometry.voronoi_diagram"
+      ]
+    },
+    {
+      "catalog_id": "math.geometry.wrap_angle",
+      "route": "docs/functions/math/geometry/wrap_angle.md",
+      "keys": [
+        "frog.studio.math.geometry.wrap_angle",
+        "function.math.geometry.wrap_angle",
+        "math.geometry.wrap_angle"
+      ]
+    },
+    {
       "catalog_id": "math.hyperbolic.acosh",
       "route": "docs/functions/math/hyperbolic/acosh.md",
       "keys": [
@@ -3029,6 +3423,780 @@
         "frog.studio.math.hypergeometric.tricomi_u",
         "function.math.hypergeometric.tricomi_u",
         "math.hypergeometric.tricomi_u"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.create_interpolating_polynomial",
+      "route": "docs/functions/math/interpolation/create_interpolating_polynomial.md",
+      "keys": [
+        "frog.studio.math.interpolation.create_interpolating_polynomial",
+        "function.math.interpolation.create_interpolating_polynomial",
+        "math.interpolation.create_interpolating_polynomial"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.create_mesh_grid_2d",
+      "route": "docs/functions/math/interpolation/create_mesh_grid_2d.md",
+      "keys": [
+        "frog.studio.math.interpolation.create_mesh_grid_2d",
+        "function.math.interpolation.create_mesh_grid_2d",
+        "math.interpolation.create_mesh_grid_2d"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.evaluate_interpolating_polynomial",
+      "route": "docs/functions/math/interpolation/evaluate_interpolating_polynomial.md",
+      "keys": [
+        "frog.studio.math.interpolation.evaluate_interpolating_polynomial",
+        "function.math.interpolation.evaluate_interpolating_polynomial",
+        "math.interpolation.evaluate_interpolating_polynomial"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.hermite_interpolation_1d",
+      "route": "docs/functions/math/interpolation/hermite_interpolation_1d.md",
+      "keys": [
+        "frog.studio.math.interpolation.hermite_interpolation_1d",
+        "function.math.interpolation.hermite_interpolation_1d",
+        "math.interpolation.hermite_interpolation_1d"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.interpolate_1d",
+      "route": "docs/functions/math/interpolation/interpolate_1d.md",
+      "keys": [
+        "frog.studio.math.interpolation.interpolate_1d",
+        "function.math.interpolation.interpolate_1d",
+        "math.interpolation.interpolate_1d"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.interpolate_1d_fourier",
+      "route": "docs/functions/math/interpolation/interpolate_1d_fourier.md",
+      "keys": [
+        "frog.studio.math.interpolation.interpolate_1d_fourier",
+        "function.math.interpolation.interpolate_1d_fourier",
+        "math.interpolation.interpolate_1d_fourier"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.interpolate_2d",
+      "route": "docs/functions/math/interpolation/interpolate_2d.md",
+      "keys": [
+        "frog.studio.math.interpolation.interpolate_2d",
+        "function.math.interpolation.interpolate_2d",
+        "math.interpolation.interpolate_2d"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.interpolate_2d_scattered",
+      "route": "docs/functions/math/interpolation/interpolate_2d_scattered.md",
+      "keys": [
+        "frog.studio.math.interpolation.interpolate_2d_scattered",
+        "function.math.interpolation.interpolate_2d_scattered",
+        "math.interpolation.interpolate_2d_scattered"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.polynomial_interpolation",
+      "route": "docs/functions/math/interpolation/polynomial_interpolation.md",
+      "keys": [
+        "frog.studio.math.interpolation.polynomial_interpolation",
+        "function.math.interpolation.polynomial_interpolation",
+        "math.interpolation.polynomial_interpolation"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.rational_interpolation",
+      "route": "docs/functions/math/interpolation/rational_interpolation.md",
+      "keys": [
+        "frog.studio.math.interpolation.rational_interpolation",
+        "function.math.interpolation.rational_interpolation",
+        "math.interpolation.rational_interpolation"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.search_ordered_table",
+      "route": "docs/functions/math/interpolation/search_ordered_table.md",
+      "keys": [
+        "frog.studio.math.interpolation.search_ordered_table",
+        "function.math.interpolation.search_ordered_table",
+        "math.interpolation.search_ordered_table"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.spline_interpolant",
+      "route": "docs/functions/math/interpolation/spline_interpolant.md",
+      "keys": [
+        "frog.studio.math.interpolation.spline_interpolant",
+        "function.math.interpolation.spline_interpolant",
+        "math.interpolation.spline_interpolant"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.spline_interpolation",
+      "route": "docs/functions/math/interpolation/spline_interpolation.md",
+      "keys": [
+        "frog.studio.math.interpolation.spline_interpolation",
+        "function.math.interpolation.spline_interpolation",
+        "math.interpolation.spline_interpolation"
+      ]
+    },
+    {
+      "catalog_id": "math.interpolation.spline_interpolation_1d",
+      "route": "docs/functions/math/interpolation/spline_interpolation_1d.md",
+      "keys": [
+        "frog.studio.math.interpolation.spline_interpolation_1d",
+        "function.math.interpolation.spline_interpolation_1d",
+        "math.interpolation.spline_interpolation_1d"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.back_transform_eigenvectors",
+      "route": "docs/functions/math/linear_algebra/back_transform_eigenvectors.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.back_transform_eigenvectors",
+        "function.math.linear_algebra.back_transform_eigenvectors",
+        "math.linear_algebra.back_transform_eigenvectors"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.asum",
+      "route": "docs/functions/math/linear_algebra/blas/asum.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.asum",
+        "function.math.linear_algebra.blas.asum",
+        "math.linear_algebra.blas.asum"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.axpy",
+      "route": "docs/functions/math/linear_algebra/blas/axpy.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.axpy",
+        "function.math.linear_algebra.blas.axpy",
+        "math.linear_algebra.blas.axpy"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.copy",
+      "route": "docs/functions/math/linear_algebra/blas/copy.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.copy",
+        "function.math.linear_algebra.blas.copy",
+        "math.linear_algebra.blas.copy"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.ddot",
+      "route": "docs/functions/math/linear_algebra/blas/ddot.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.ddot",
+        "function.math.linear_algebra.blas.ddot",
+        "math.linear_algebra.blas.ddot"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.dger",
+      "route": "docs/functions/math/linear_algebra/blas/dger.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.dger",
+        "function.math.linear_algebra.blas.dger",
+        "math.linear_algebra.blas.dger"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.drotm",
+      "route": "docs/functions/math/linear_algebra/blas/drotm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.drotm",
+        "function.math.linear_algebra.blas.drotm",
+        "math.linear_algebra.blas.drotm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.drotmg",
+      "route": "docs/functions/math/linear_algebra/blas/drotmg.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.drotmg",
+        "function.math.linear_algebra.blas.drotmg",
+        "math.linear_algebra.blas.drotmg"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.dsymv",
+      "route": "docs/functions/math/linear_algebra/blas/dsymv.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.dsymv",
+        "function.math.linear_algebra.blas.dsymv",
+        "math.linear_algebra.blas.dsymv"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.dsyr",
+      "route": "docs/functions/math/linear_algebra/blas/dsyr.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.dsyr",
+        "function.math.linear_algebra.blas.dsyr",
+        "math.linear_algebra.blas.dsyr"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.dsyr2",
+      "route": "docs/functions/math/linear_algebra/blas/dsyr2.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.dsyr2",
+        "function.math.linear_algebra.blas.dsyr2",
+        "math.linear_algebra.blas.dsyr2"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.gemm",
+      "route": "docs/functions/math/linear_algebra/blas/gemm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.gemm",
+        "function.math.linear_algebra.blas.gemm",
+        "math.linear_algebra.blas.gemm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.gemv",
+      "route": "docs/functions/math/linear_algebra/blas/gemv.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.gemv",
+        "function.math.linear_algebra.blas.gemv",
+        "math.linear_algebra.blas.gemv"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.iamax",
+      "route": "docs/functions/math/linear_algebra/blas/iamax.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.iamax",
+        "function.math.linear_algebra.blas.iamax",
+        "math.linear_algebra.blas.iamax"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.iamin",
+      "route": "docs/functions/math/linear_algebra/blas/iamin.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.iamin",
+        "function.math.linear_algebra.blas.iamin",
+        "math.linear_algebra.blas.iamin"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.nrm2",
+      "route": "docs/functions/math/linear_algebra/blas/nrm2.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.nrm2",
+        "function.math.linear_algebra.blas.nrm2",
+        "math.linear_algebra.blas.nrm2"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.rot",
+      "route": "docs/functions/math/linear_algebra/blas/rot.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.rot",
+        "function.math.linear_algebra.blas.rot",
+        "math.linear_algebra.blas.rot"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.rotg",
+      "route": "docs/functions/math/linear_algebra/blas/rotg.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.rotg",
+        "function.math.linear_algebra.blas.rotg",
+        "math.linear_algebra.blas.rotg"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.swap",
+      "route": "docs/functions/math/linear_algebra/blas/swap.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.swap",
+        "function.math.linear_algebra.blas.swap",
+        "math.linear_algebra.blas.swap"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.symm",
+      "route": "docs/functions/math/linear_algebra/blas/symm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.symm",
+        "function.math.linear_algebra.blas.symm",
+        "math.linear_algebra.blas.symm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.syr2k",
+      "route": "docs/functions/math/linear_algebra/blas/syr2k.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.syr2k",
+        "function.math.linear_algebra.blas.syr2k",
+        "math.linear_algebra.blas.syr2k"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.syrk",
+      "route": "docs/functions/math/linear_algebra/blas/syrk.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.syrk",
+        "function.math.linear_algebra.blas.syrk",
+        "math.linear_algebra.blas.syrk"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.trmm",
+      "route": "docs/functions/math/linear_algebra/blas/trmm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.trmm",
+        "function.math.linear_algebra.blas.trmm",
+        "math.linear_algebra.blas.trmm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.trmv",
+      "route": "docs/functions/math/linear_algebra/blas/trmv.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.trmv",
+        "function.math.linear_algebra.blas.trmv",
+        "math.linear_algebra.blas.trmv"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.trsm",
+      "route": "docs/functions/math/linear_algebra/blas/trsm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.trsm",
+        "function.math.linear_algebra.blas.trsm",
+        "math.linear_algebra.blas.trsm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.trsv",
+      "route": "docs/functions/math/linear_algebra/blas/trsv.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.trsv",
+        "function.math.linear_algebra.blas.trsv",
+        "math.linear_algebra.blas.trsv"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zdotc",
+      "route": "docs/functions/math/linear_algebra/blas/zdotc.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zdotc",
+        "function.math.linear_algebra.blas.zdotc",
+        "math.linear_algebra.blas.zdotc"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zdotu",
+      "route": "docs/functions/math/linear_algebra/blas/zdotu.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zdotu",
+        "function.math.linear_algebra.blas.zdotu",
+        "math.linear_algebra.blas.zdotu"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zgerc",
+      "route": "docs/functions/math/linear_algebra/blas/zgerc.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zgerc",
+        "function.math.linear_algebra.blas.zgerc",
+        "math.linear_algebra.blas.zgerc"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zgeru",
+      "route": "docs/functions/math/linear_algebra/blas/zgeru.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zgeru",
+        "function.math.linear_algebra.blas.zgeru",
+        "math.linear_algebra.blas.zgeru"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zhemm",
+      "route": "docs/functions/math/linear_algebra/blas/zhemm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zhemm",
+        "function.math.linear_algebra.blas.zhemm",
+        "math.linear_algebra.blas.zhemm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zhemv",
+      "route": "docs/functions/math/linear_algebra/blas/zhemv.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zhemv",
+        "function.math.linear_algebra.blas.zhemv",
+        "math.linear_algebra.blas.zhemv"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zher",
+      "route": "docs/functions/math/linear_algebra/blas/zher.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zher",
+        "function.math.linear_algebra.blas.zher",
+        "math.linear_algebra.blas.zher"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zher2",
+      "route": "docs/functions/math/linear_algebra/blas/zher2.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zher2",
+        "function.math.linear_algebra.blas.zher2",
+        "math.linear_algebra.blas.zher2"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zher2k",
+      "route": "docs/functions/math/linear_algebra/blas/zher2k.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zher2k",
+        "function.math.linear_algebra.blas.zher2k",
+        "math.linear_algebra.blas.zher2k"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.blas.zherk",
+      "route": "docs/functions/math/linear_algebra/blas/zherk.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.blas.zherk",
+        "function.math.linear_algebra.blas.zherk",
+        "math.linear_algebra.blas.zherk"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.characteristic_polynomial",
+      "route": "docs/functions/math/linear_algebra/characteristic_polynomial.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.characteristic_polynomial",
+        "function.math.linear_algebra.characteristic_polynomial",
+        "math.linear_algebra.characteristic_polynomial"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.cholesky",
+      "route": "docs/functions/math/linear_algebra/cholesky.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.cholesky",
+        "function.math.linear_algebra.cholesky",
+        "math.linear_algebra.cholesky"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.cholesky_update",
+      "route": "docs/functions/math/linear_algebra/cholesky_update.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.cholesky_update",
+        "function.math.linear_algebra.cholesky_update",
+        "math.linear_algebra.cholesky_update"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.condition_number",
+      "route": "docs/functions/math/linear_algebra/condition_number.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.condition_number",
+        "function.math.linear_algebra.condition_number",
+        "math.linear_algebra.condition_number"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.determinant",
+      "route": "docs/functions/math/linear_algebra/determinant.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.determinant",
+        "function.math.linear_algebra.determinant",
+        "math.linear_algebra.determinant"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.dot_product",
+      "route": "docs/functions/math/linear_algebra/dot_product.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.dot_product",
+        "function.math.linear_algebra.dot_product",
+        "math.linear_algebra.dot_product"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.eigenvalues_vectors",
+      "route": "docs/functions/math/linear_algebra/eigenvalues_vectors.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.eigenvalues_vectors",
+        "function.math.linear_algebra.eigenvalues_vectors",
+        "math.linear_algebra.eigenvalues_vectors"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.generalized_eigenvalues_vectors",
+      "route": "docs/functions/math/linear_algebra/generalized_eigenvalues_vectors.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.generalized_eigenvalues_vectors",
+        "function.math.linear_algebra.generalized_eigenvalues_vectors",
+        "math.linear_algebra.generalized_eigenvalues_vectors"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.generalized_svd",
+      "route": "docs/functions/math/linear_algebra/generalized_svd.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.generalized_svd",
+        "function.math.linear_algebra.generalized_svd",
+        "math.linear_algebra.generalized_svd"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.hessenberg",
+      "route": "docs/functions/math/linear_algebra/hessenberg.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.hessenberg",
+        "function.math.linear_algebra.hessenberg",
+        "math.linear_algebra.hessenberg"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.inverse_matrix",
+      "route": "docs/functions/math/linear_algebra/inverse_matrix.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.inverse_matrix",
+        "function.math.linear_algebra.inverse_matrix",
+        "math.linear_algebra.inverse_matrix"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.kronecker_product",
+      "route": "docs/functions/math/linear_algebra/kronecker_product.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.kronecker_product",
+        "function.math.linear_algebra.kronecker_product",
+        "math.linear_algebra.kronecker_product"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.lu",
+      "route": "docs/functions/math/linear_algebra/lu.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.lu",
+        "function.math.linear_algebra.lu",
+        "math.linear_algebra.lu"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.lyapunov_equations",
+      "route": "docs/functions/math/linear_algebra/lyapunov_equations.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.lyapunov_equations",
+        "function.math.linear_algebra.lyapunov_equations",
+        "math.linear_algebra.lyapunov_equations"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_balance",
+      "route": "docs/functions/math/linear_algebra/matrix_balance.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_balance",
+        "function.math.linear_algebra.matrix_balance",
+        "math.linear_algebra.matrix_balance"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_exp",
+      "route": "docs/functions/math/linear_algebra/matrix_exp.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_exp",
+        "function.math.linear_algebra.matrix_exp",
+        "math.linear_algebra.matrix_exp"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_log",
+      "route": "docs/functions/math/linear_algebra/matrix_log.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_log",
+        "function.math.linear_algebra.matrix_log",
+        "math.linear_algebra.matrix_log"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_multiply",
+      "route": "docs/functions/math/linear_algebra/matrix_multiply.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_multiply",
+        "function.math.linear_algebra.matrix_multiply",
+        "math.linear_algebra.matrix_multiply"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_norm",
+      "route": "docs/functions/math/linear_algebra/matrix_norm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_norm",
+        "function.math.linear_algebra.matrix_norm",
+        "math.linear_algebra.matrix_norm"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_power",
+      "route": "docs/functions/math/linear_algebra/matrix_power.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_power",
+        "function.math.linear_algebra.matrix_power",
+        "math.linear_algebra.matrix_power"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_rank",
+      "route": "docs/functions/math/linear_algebra/matrix_rank.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_rank",
+        "function.math.linear_algebra.matrix_rank",
+        "math.linear_algebra.matrix_rank"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.matrix_sqrt",
+      "route": "docs/functions/math/linear_algebra/matrix_sqrt.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.matrix_sqrt",
+        "function.math.linear_algebra.matrix_sqrt",
+        "math.linear_algebra.matrix_sqrt"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.outer_product",
+      "route": "docs/functions/math/linear_algebra/outer_product.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.outer_product",
+        "function.math.linear_algebra.outer_product",
+        "math.linear_algebra.outer_product"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.pseudoinverse",
+      "route": "docs/functions/math/linear_algebra/pseudoinverse.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.pseudoinverse",
+        "function.math.linear_algebra.pseudoinverse",
+        "math.linear_algebra.pseudoinverse"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.qr",
+      "route": "docs/functions/math/linear_algebra/qr.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.qr",
+        "function.math.linear_algebra.qr",
+        "math.linear_algebra.qr"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.qz",
+      "route": "docs/functions/math/linear_algebra/qz.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.qz",
+        "function.math.linear_algebra.qz",
+        "math.linear_algebra.qz"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.real_matrix_from_eigenvalues",
+      "route": "docs/functions/math/linear_algebra/real_matrix_from_eigenvalues.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.real_matrix_from_eigenvalues",
+        "function.math.linear_algebra.real_matrix_from_eigenvalues",
+        "math.linear_algebra.real_matrix_from_eigenvalues"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.schur",
+      "route": "docs/functions/math/linear_algebra/schur.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.schur",
+        "function.math.linear_algebra.schur",
+        "math.linear_algebra.schur"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.solve_linear_equations",
+      "route": "docs/functions/math/linear_algebra/solve_linear_equations.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.solve_linear_equations",
+        "function.math.linear_algebra.solve_linear_equations",
+        "math.linear_algebra.solve_linear_equations"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.special_matrix",
+      "route": "docs/functions/math/linear_algebra/special_matrix.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.special_matrix",
+        "function.math.linear_algebra.special_matrix",
+        "math.linear_algebra.special_matrix"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.subspaces_angle",
+      "route": "docs/functions/math/linear_algebra/subspaces_angle.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.subspaces_angle",
+        "function.math.linear_algebra.subspaces_angle",
+        "math.linear_algebra.subspaces_angle"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.svd",
+      "route": "docs/functions/math/linear_algebra/svd.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.svd",
+        "function.math.linear_algebra.svd",
+        "math.linear_algebra.svd"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.sylvester_equations",
+      "route": "docs/functions/math/linear_algebra/sylvester_equations.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.sylvester_equations",
+        "function.math.linear_algebra.sylvester_equations",
+        "math.linear_algebra.sylvester_equations"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.test_matrix_type",
+      "route": "docs/functions/math/linear_algebra/test_matrix_type.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.test_matrix_type",
+        "function.math.linear_algebra.test_matrix_type",
+        "math.linear_algebra.test_matrix_type"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.trace",
+      "route": "docs/functions/math/linear_algebra/trace.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.trace",
+        "function.math.linear_algebra.trace",
+        "math.linear_algebra.trace"
+      ]
+    },
+    {
+      "catalog_id": "math.linear_algebra.vector_norm",
+      "route": "docs/functions/math/linear_algebra/vector_norm.md",
+      "keys": [
+        "frog.studio.math.linear_algebra.vector_norm",
+        "function.math.linear_algebra.vector_norm",
+        "math.linear_algebra.vector_norm"
       ]
     },
     {
@@ -3563,6 +4731,375 @@
       ]
     },
     {
+      "catalog_id": "math.polynomial.add",
+      "route": "docs/functions/math/polynomial/add.md",
+      "keys": [
+        "frog.studio.math.polynomial.add",
+        "function.math.polynomial.add",
+        "math.polynomial.add"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.bessel",
+      "route": "docs/functions/math/polynomial/bessel.md",
+      "keys": [
+        "frog.studio.math.polynomial.bessel",
+        "function.math.polynomial.bessel",
+        "math.polynomial.bessel"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.chebyshev",
+      "route": "docs/functions/math/polynomial/chebyshev.md",
+      "keys": [
+        "frog.studio.math.polynomial.chebyshev",
+        "function.math.polynomial.chebyshev",
+        "math.polynomial.chebyshev"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.classify_roots",
+      "route": "docs/functions/math/polynomial/classify_roots.md",
+      "keys": [
+        "frog.studio.math.polynomial.classify_roots",
+        "function.math.polynomial.classify_roots",
+        "math.polynomial.classify_roots"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.compose",
+      "route": "docs/functions/math/polynomial/compose.md",
+      "keys": [
+        "frog.studio.math.polynomial.compose",
+        "function.math.polynomial.compose",
+        "math.polynomial.compose"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.derivative",
+      "route": "docs/functions/math/polynomial/derivative.md",
+      "keys": [
+        "frog.studio.math.polynomial.derivative",
+        "function.math.polynomial.derivative",
+        "math.polynomial.derivative"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.divide",
+      "route": "docs/functions/math/polynomial/divide.md",
+      "keys": [
+        "frog.studio.math.polynomial.divide",
+        "function.math.polynomial.divide",
+        "math.polynomial.divide"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.eigenvalues",
+      "route": "docs/functions/math/polynomial/eigenvalues.md",
+      "keys": [
+        "frog.studio.math.polynomial.eigenvalues",
+        "function.math.polynomial.eigenvalues",
+        "math.polynomial.eigenvalues"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.evaluate",
+      "route": "docs/functions/math/polynomial/evaluate.md",
+      "keys": [
+        "frog.studio.math.polynomial.evaluate",
+        "function.math.polynomial.evaluate",
+        "math.polynomial.evaluate"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.from_pfe",
+      "route": "docs/functions/math/polynomial/from_pfe.md",
+      "keys": [
+        "frog.studio.math.polynomial.from_pfe",
+        "function.math.polynomial.from_pfe",
+        "math.polynomial.from_pfe"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.from_roots",
+      "route": "docs/functions/math/polynomial/from_roots.md",
+      "keys": [
+        "frog.studio.math.polynomial.from_roots",
+        "function.math.polynomial.from_roots",
+        "math.polynomial.from_roots"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.gcd",
+      "route": "docs/functions/math/polynomial/gcd.md",
+      "keys": [
+        "frog.studio.math.polynomial.gcd",
+        "function.math.polynomial.gcd",
+        "math.polynomial.gcd"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.integral",
+      "route": "docs/functions/math/polynomial/integral.md",
+      "keys": [
+        "frog.studio.math.polynomial.integral",
+        "function.math.polynomial.integral",
+        "math.polynomial.integral"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.lcm",
+      "route": "docs/functions/math/polynomial/lcm.md",
+      "keys": [
+        "frog.studio.math.polynomial.lcm",
+        "function.math.polynomial.lcm",
+        "math.polynomial.lcm"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.legendre",
+      "route": "docs/functions/math/polynomial/legendre.md",
+      "keys": [
+        "frog.studio.math.polynomial.legendre",
+        "function.math.polynomial.legendre",
+        "math.polynomial.legendre"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.linear_evaluate",
+      "route": "docs/functions/math/polynomial/linear_evaluate.md",
+      "keys": [
+        "frog.studio.math.polynomial.linear_evaluate",
+        "function.math.polynomial.linear_evaluate",
+        "math.polynomial.linear_evaluate"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.matrix_evaluate",
+      "route": "docs/functions/math/polynomial/matrix_evaluate.md",
+      "keys": [
+        "frog.studio.math.polynomial.matrix_evaluate",
+        "function.math.polynomial.matrix_evaluate",
+        "math.polynomial.matrix_evaluate"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.multiply",
+      "route": "docs/functions/math/polynomial/multiply.md",
+      "keys": [
+        "frog.studio.math.polynomial.multiply",
+        "function.math.polynomial.multiply",
+        "math.polynomial.multiply"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.negative_feedback",
+      "route": "docs/functions/math/polynomial/negative_feedback.md",
+      "keys": [
+        "frog.studio.math.polynomial.negative_feedback",
+        "function.math.polynomial.negative_feedback",
+        "math.polynomial.negative_feedback"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.normalize_high",
+      "route": "docs/functions/math/polynomial/normalize_high.md",
+      "keys": [
+        "frog.studio.math.polynomial.normalize_high",
+        "function.math.polynomial.normalize_high",
+        "math.polynomial.normalize_high"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.normalize_low",
+      "route": "docs/functions/math/polynomial/normalize_low.md",
+      "keys": [
+        "frog.studio.math.polynomial.normalize_low",
+        "function.math.polynomial.normalize_low",
+        "math.polynomial.normalize_low"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.order",
+      "route": "docs/functions/math/polynomial/order.md",
+      "keys": [
+        "frog.studio.math.polynomial.order",
+        "function.math.polynomial.order",
+        "math.polynomial.order"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.orthogonal",
+      "route": "docs/functions/math/polynomial/orthogonal.md",
+      "keys": [
+        "frog.studio.math.polynomial.orthogonal",
+        "function.math.polynomial.orthogonal",
+        "math.polynomial.orthogonal"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.pade",
+      "route": "docs/functions/math/polynomial/pade.md",
+      "keys": [
+        "frog.studio.math.polynomial.pade",
+        "function.math.polynomial.pade",
+        "math.polynomial.pade"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.pfe",
+      "route": "docs/functions/math/polynomial/pfe.md",
+      "keys": [
+        "frog.studio.math.polynomial.pfe",
+        "function.math.polynomial.pfe",
+        "math.polynomial.pfe"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.plot",
+      "route": "docs/functions/math/polynomial/plot.md",
+      "keys": [
+        "frog.studio.math.polynomial.plot",
+        "function.math.polynomial.plot",
+        "math.polynomial.plot"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.positive_feedback",
+      "route": "docs/functions/math/polynomial/positive_feedback.md",
+      "keys": [
+        "frog.studio.math.polynomial.positive_feedback",
+        "function.math.polynomial.positive_feedback",
+        "math.polynomial.positive_feedback"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.primitive",
+      "route": "docs/functions/math/polynomial/primitive.md",
+      "keys": [
+        "frog.studio.math.polynomial.primitive",
+        "function.math.polynomial.primitive",
+        "math.polynomial.primitive"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_add",
+      "route": "docs/functions/math/polynomial/rational_add.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_add",
+        "function.math.polynomial.rational_add",
+        "math.polynomial.rational_add"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_derivative",
+      "route": "docs/functions/math/polynomial/rational_derivative.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_derivative",
+        "function.math.polynomial.rational_derivative",
+        "math.polynomial.rational_derivative"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_divide",
+      "route": "docs/functions/math/polynomial/rational_divide.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_divide",
+        "function.math.polynomial.rational_divide",
+        "math.polynomial.rational_divide"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_evaluate",
+      "route": "docs/functions/math/polynomial/rational_evaluate.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_evaluate",
+        "function.math.polynomial.rational_evaluate",
+        "math.polynomial.rational_evaluate"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_multiply",
+      "route": "docs/functions/math/polynomial/rational_multiply.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_multiply",
+        "function.math.polynomial.rational_multiply",
+        "math.polynomial.rational_multiply"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.rational_subtract",
+      "route": "docs/functions/math/polynomial/rational_subtract.md",
+      "keys": [
+        "frog.studio.math.polynomial.rational_subtract",
+        "function.math.polynomial.rational_subtract",
+        "math.polynomial.rational_subtract"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.real_zeros",
+      "route": "docs/functions/math/polynomial/real_zeros.md",
+      "keys": [
+        "frog.studio.math.polynomial.real_zeros",
+        "function.math.polynomial.real_zeros",
+        "math.polynomial.real_zeros"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.remove_residue",
+      "route": "docs/functions/math/polynomial/remove_residue.md",
+      "keys": [
+        "frog.studio.math.polynomial.remove_residue",
+        "function.math.polynomial.remove_residue",
+        "math.polynomial.remove_residue"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.remove_zeros",
+      "route": "docs/functions/math/polynomial/remove_zeros.md",
+      "keys": [
+        "frog.studio.math.polynomial.remove_zeros",
+        "function.math.polynomial.remove_zeros",
+        "math.polynomial.remove_zeros"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.roots",
+      "route": "docs/functions/math/polynomial/roots.md",
+      "keys": [
+        "frog.studio.math.polynomial.roots",
+        "function.math.polynomial.roots",
+        "math.polynomial.roots"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.sort_complex",
+      "route": "docs/functions/math/polynomial/sort_complex.md",
+      "keys": [
+        "frog.studio.math.polynomial.sort_complex",
+        "function.math.polynomial.sort_complex",
+        "math.polynomial.sort_complex"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.subtract",
+      "route": "docs/functions/math/polynomial/subtract.md",
+      "keys": [
+        "frog.studio.math.polynomial.subtract",
+        "function.math.polynomial.subtract",
+        "math.polynomial.subtract"
+      ]
+    },
+    {
+      "catalog_id": "math.polynomial.unique",
+      "route": "docs/functions/math/polynomial/unique.md",
+      "keys": [
+        "frog.studio.math.polynomial.unique",
+        "function.math.polynomial.unique",
+        "math.polynomial.unique"
+      ]
+    },
+    {
       "catalog_id": "math.special.airy_ai_bi",
       "route": "docs/functions/math/special/airy_ai_bi.md",
       "keys": [
@@ -3805,6 +5342,357 @@
         "frog.studio.math.special.struve_h",
         "function.math.special.struve_h",
         "math.special.struve_h"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.anova.anova_1d",
+      "route": "docs/functions/math/statistics/anova/anova_1d.md",
+      "keys": [
+        "frog.studio.math.statistics.anova.anova_1d",
+        "function.math.statistics.anova.anova_1d",
+        "math.statistics.anova.anova_1d"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.anova.anova_2d",
+      "route": "docs/functions/math/statistics/anova/anova_2d.md",
+      "keys": [
+        "frog.studio.math.statistics.anova.anova_2d",
+        "function.math.statistics.anova.anova_2d",
+        "math.statistics.anova.anova_2d"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.anova.anova_3d",
+      "route": "docs/functions/math/statistics/anova/anova_3d.md",
+      "keys": [
+        "frog.studio.math.statistics.anova.anova_3d",
+        "function.math.statistics.anova.anova_3d",
+        "math.statistics.anova.anova_3d"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.covariance_matrix",
+      "route": "docs/functions/math/statistics/covariance_matrix.md",
+      "keys": [
+        "frog.studio.math.statistics.covariance_matrix",
+        "function.math.statistics.covariance_matrix",
+        "math.statistics.covariance_matrix"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.general_histogram",
+      "route": "docs/functions/math/statistics/general_histogram.md",
+      "keys": [
+        "frog.studio.math.statistics.general_histogram",
+        "function.math.statistics.general_histogram",
+        "math.statistics.general_histogram"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.histogram",
+      "route": "docs/functions/math/statistics/histogram.md",
+      "keys": [
+        "frog.studio.math.statistics.histogram",
+        "function.math.statistics.histogram",
+        "math.statistics.histogram"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.histogram_express",
+      "route": "docs/functions/math/statistics/histogram_express.md",
+      "keys": [
+        "frog.studio.math.statistics.histogram_express",
+        "function.math.statistics.histogram_express",
+        "math.statistics.histogram_express"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.contingency_table",
+      "route": "docs/functions/math/statistics/hypothesis/contingency_table.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.contingency_table",
+        "function.math.statistics.hypothesis.contingency_table",
+        "math.statistics.hypothesis.contingency_table"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.correlation_test",
+      "route": "docs/functions/math/statistics/hypothesis/correlation_test.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.correlation_test",
+        "function.math.statistics.hypothesis.correlation_test",
+        "math.statistics.hypothesis.correlation_test"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.rank_transformation",
+      "route": "docs/functions/math/statistics/hypothesis/rank_transformation.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.rank_transformation",
+        "function.math.statistics.hypothesis.rank_transformation",
+        "math.statistics.hypothesis.rank_transformation"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.sign_test",
+      "route": "docs/functions/math/statistics/hypothesis/sign_test.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.sign_test",
+        "function.math.statistics.hypothesis.sign_test",
+        "math.statistics.hypothesis.sign_test"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.t_test",
+      "route": "docs/functions/math/statistics/hypothesis/t_test.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.t_test",
+        "function.math.statistics.hypothesis.t_test",
+        "math.statistics.hypothesis.t_test"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.wilcoxon",
+      "route": "docs/functions/math/statistics/hypothesis/wilcoxon.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.wilcoxon",
+        "function.math.statistics.hypothesis.wilcoxon",
+        "math.statistics.hypothesis.wilcoxon"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.hypothesis.z_test",
+      "route": "docs/functions/math/statistics/hypothesis/z_test.md",
+      "keys": [
+        "frog.studio.math.statistics.hypothesis.z_test",
+        "function.math.statistics.hypothesis.z_test",
+        "math.statistics.hypothesis.z_test"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.kendall",
+      "route": "docs/functions/math/statistics/kendall.md",
+      "keys": [
+        "frog.studio.math.statistics.kendall",
+        "function.math.statistics.kendall",
+        "math.statistics.kendall"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.mean",
+      "route": "docs/functions/math/statistics/mean.md",
+      "keys": [
+        "frog.studio.math.statistics.mean",
+        "function.math.statistics.mean",
+        "math.statistics.mean"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.measures_of_mean",
+      "route": "docs/functions/math/statistics/measures_of_mean.md",
+      "keys": [
+        "frog.studio.math.statistics.measures_of_mean",
+        "function.math.statistics.measures_of_mean",
+        "math.statistics.measures_of_mean"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.measures_of_spread",
+      "route": "docs/functions/math/statistics/measures_of_spread.md",
+      "keys": [
+        "frog.studio.math.statistics.measures_of_spread",
+        "function.math.statistics.measures_of_spread",
+        "math.statistics.measures_of_spread"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.median",
+      "route": "docs/functions/math/statistics/median.md",
+      "keys": [
+        "frog.studio.math.statistics.median",
+        "function.math.statistics.median",
+        "math.statistics.median"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.mode",
+      "route": "docs/functions/math/statistics/mode.md",
+      "keys": [
+        "frog.studio.math.statistics.mode",
+        "function.math.statistics.mode",
+        "math.statistics.mode"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.moment",
+      "route": "docs/functions/math/statistics/moment.md",
+      "keys": [
+        "frog.studio.math.statistics.moment",
+        "function.math.statistics.moment",
+        "math.statistics.moment"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.mse",
+      "route": "docs/functions/math/statistics/mse.md",
+      "keys": [
+        "frog.studio.math.statistics.mse",
+        "function.math.statistics.mse",
+        "math.statistics.mse"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.pearson",
+      "route": "docs/functions/math/statistics/pearson.md",
+      "keys": [
+        "frog.studio.math.statistics.pearson",
+        "function.math.statistics.pearson",
+        "math.statistics.pearson"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.percentiles",
+      "route": "docs/functions/math/statistics/percentiles.md",
+      "keys": [
+        "frog.studio.math.statistics.percentiles",
+        "function.math.statistics.percentiles",
+        "math.statistics.percentiles"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.continuous_cdf",
+      "route": "docs/functions/math/statistics/probability/continuous_cdf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.continuous_cdf",
+        "function.math.statistics.probability.continuous_cdf",
+        "math.statistics.probability.continuous_cdf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.continuous_inverse_cdf",
+      "route": "docs/functions/math/statistics/probability/continuous_inverse_cdf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.continuous_inverse_cdf",
+        "function.math.statistics.probability.continuous_inverse_cdf",
+        "math.statistics.probability.continuous_inverse_cdf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.continuous_moments",
+      "route": "docs/functions/math/statistics/probability/continuous_moments.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.continuous_moments",
+        "function.math.statistics.probability.continuous_moments",
+        "math.statistics.probability.continuous_moments"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.continuous_pdf",
+      "route": "docs/functions/math/statistics/probability/continuous_pdf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.continuous_pdf",
+        "function.math.statistics.probability.continuous_pdf",
+        "math.statistics.probability.continuous_pdf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.continuous_random",
+      "route": "docs/functions/math/statistics/probability/continuous_random.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.continuous_random",
+        "function.math.statistics.probability.continuous_random",
+        "math.statistics.probability.continuous_random"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.discrete_cdf",
+      "route": "docs/functions/math/statistics/probability/discrete_cdf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.discrete_cdf",
+        "function.math.statistics.probability.discrete_cdf",
+        "math.statistics.probability.discrete_cdf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.discrete_inverse_cdf",
+      "route": "docs/functions/math/statistics/probability/discrete_inverse_cdf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.discrete_inverse_cdf",
+        "function.math.statistics.probability.discrete_inverse_cdf",
+        "math.statistics.probability.discrete_inverse_cdf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.discrete_moments",
+      "route": "docs/functions/math/statistics/probability/discrete_moments.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.discrete_moments",
+        "function.math.statistics.probability.discrete_moments",
+        "math.statistics.probability.discrete_moments"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.discrete_pf",
+      "route": "docs/functions/math/statistics/probability/discrete_pf.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.discrete_pf",
+        "function.math.statistics.probability.discrete_pf",
+        "math.statistics.probability.discrete_pf"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.probability.discrete_random",
+      "route": "docs/functions/math/statistics/probability/discrete_random.md",
+      "keys": [
+        "frog.studio.math.statistics.probability.discrete_random",
+        "function.math.statistics.probability.discrete_random",
+        "math.statistics.probability.discrete_random"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.rms",
+      "route": "docs/functions/math/statistics/rms.md",
+      "keys": [
+        "frog.studio.math.statistics.rms",
+        "function.math.statistics.rms",
+        "math.statistics.rms"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.skewness_kurtosis",
+      "route": "docs/functions/math/statistics/skewness_kurtosis.md",
+      "keys": [
+        "frog.studio.math.statistics.skewness_kurtosis",
+        "function.math.statistics.skewness_kurtosis",
+        "math.statistics.skewness_kurtosis"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.spearman",
+      "route": "docs/functions/math/statistics/spearman.md",
+      "keys": [
+        "frog.studio.math.statistics.spearman",
+        "function.math.statistics.spearman",
+        "math.statistics.spearman"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.statistics_express",
+      "route": "docs/functions/math/statistics/statistics_express.md",
+      "keys": [
+        "frog.studio.math.statistics.statistics_express",
+        "function.math.statistics.statistics_express",
+        "math.statistics.statistics_express"
+      ]
+    },
+    {
+      "catalog_id": "math.statistics.std_variance",
+      "route": "docs/functions/math/statistics/std_variance.md",
+      "keys": [
+        "frog.studio.math.statistics.std_variance",
+        "function.math.statistics.std_variance",
+        "math.statistics.std_variance"
       ]
     },
     {
@@ -4105,12 +5993,39 @@
       ]
     },
     {
+      "catalog_id": "mathematics.fitting.advanced_curve_fitting",
+      "route": "docs/functions/mathematics/fitting/advanced_curve_fitting.md",
+      "keys": [
+        "frog.studio.mathematics.fitting.advanced_curve_fitting",
+        "function.mathematics.fitting.advanced_curve_fitting",
+        "mathematics.fitting.advanced_curve_fitting"
+      ]
+    },
+    {
       "catalog_id": "mathematics.geometry",
       "route": "docs/functions/mathematics/geometry.md",
       "keys": [
         "frog.studio.mathematics.geometry",
         "function.mathematics.geometry",
         "mathematics.geometry"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.geometry.angle",
+      "route": "docs/functions/mathematics/geometry/angle.md",
+      "keys": [
+        "frog.studio.mathematics.geometry.angle",
+        "function.mathematics.geometry.angle",
+        "mathematics.geometry.angle"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.geometry.computational_geometry",
+      "route": "docs/functions/mathematics/geometry/computational_geometry.md",
+      "keys": [
+        "frog.studio.mathematics.geometry.computational_geometry",
+        "function.mathematics.geometry.computational_geometry",
+        "mathematics.geometry.computational_geometry"
       ]
     },
     {
@@ -4141,6 +6056,15 @@
       ]
     },
     {
+      "catalog_id": "mathematics.linear_algebra.blas",
+      "route": "docs/functions/mathematics/linear_algebra/blas.md",
+      "keys": [
+        "frog.studio.mathematics.linear_algebra.blas",
+        "function.mathematics.linear_algebra.blas",
+        "mathematics.linear_algebra.blas"
+      ]
+    },
+    {
       "catalog_id": "mathematics.numeric",
       "route": "docs/functions/mathematics/numeric.md",
       "keys": [
@@ -4168,12 +6092,57 @@
       ]
     },
     {
+      "catalog_id": "mathematics.polynomial.orthogonal",
+      "route": "docs/functions/mathematics/polynomial/orthogonal.md",
+      "keys": [
+        "frog.studio.mathematics.polynomial.orthogonal",
+        "function.mathematics.polynomial.orthogonal",
+        "mathematics.polynomial.orthogonal"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.polynomial.rational",
+      "route": "docs/functions/mathematics/polynomial/rational.md",
+      "keys": [
+        "frog.studio.mathematics.polynomial.rational",
+        "function.mathematics.polynomial.rational",
+        "mathematics.polynomial.rational"
+      ]
+    },
+    {
       "catalog_id": "mathematics.probability_statistics",
       "route": "docs/functions/mathematics/probability_statistics.md",
       "keys": [
         "frog.studio.mathematics.probability_statistics",
         "function.mathematics.probability_statistics",
         "mathematics.probability_statistics"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.probability_statistics.anova",
+      "route": "docs/functions/mathematics/probability_statistics/anova.md",
+      "keys": [
+        "frog.studio.mathematics.probability_statistics.anova",
+        "function.mathematics.probability_statistics.anova",
+        "mathematics.probability_statistics.anova"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.probability_statistics.hypothesis_test",
+      "route": "docs/functions/mathematics/probability_statistics/hypothesis_test.md",
+      "keys": [
+        "frog.studio.mathematics.probability_statistics.hypothesis_test",
+        "function.mathematics.probability_statistics.hypothesis_test",
+        "mathematics.probability_statistics.hypothesis_test"
+      ]
+    },
+    {
+      "catalog_id": "mathematics.probability_statistics.probability",
+      "route": "docs/functions/mathematics/probability_statistics/probability.md",
+      "keys": [
+        "frog.studio.mathematics.probability_statistics.probability",
+        "function.mathematics.probability_statistics.probability",
+        "mathematics.probability_statistics.probability"
       ]
     },
     {
@@ -5499,6 +7468,15 @@
       ]
     },
     {
+      "catalog_id": "string.conversion.flatten_to_string",
+      "route": "docs/functions/string/conversion/flatten_to_string.md",
+      "keys": [
+        "frog.studio.string.conversion.flatten_to_string",
+        "function.string.conversion.flatten_to_string",
+        "string.conversion.flatten_to_string"
+      ]
+    },
+    {
       "catalog_id": "string.conversion.floating_string_to_number",
       "route": "docs/functions/string/conversion/floating_string_to_number.md",
       "keys": [
@@ -5685,6 +7663,15 @@
         "frog.studio.string.conversion.unflatten_from_json",
         "function.string.conversion.unflatten_from_json",
         "string.conversion.unflatten_from_json"
+      ]
+    },
+    {
+      "catalog_id": "string.conversion.unflatten_from_string",
+      "route": "docs/functions/string/conversion/unflatten_from_string.md",
+      "keys": [
+        "frog.studio.string.conversion.unflatten_from_string",
+        "function.string.conversion.unflatten_from_string",
+        "string.conversion.unflatten_from_string"
       ]
     },
     {

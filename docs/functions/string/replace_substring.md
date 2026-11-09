@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Remplace une portion selectionnee d'une chaine. [Types] Chaîne scalaire, chaîne de remplacement, décalage et longueur numériques produisent la chaîne modifiée et la sous-chaîne remplacée. Remplacement vide : suppression ; longueur nulle : insertion.
+Remplace une portion selectionnee d'une chaine.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Scalar String, replacement String, numeric offset and length yield both the edited String and replaced substring. Empty replacement deletes; zero length inserts.
-
-Scalar String, replacement String, numeric offset and length yield both the edited String and replaced substring. Empty replacement deletes; zero length inserts.
-
-</details>
 
 ## IN — inputs
 
@@ -57,9 +46,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 Scalar String, replacement String, numeric offset and length yield both the edited String and replaced substring. Empty replacement deletes; zero length inserts.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaîne scalaire, chaîne de remplacement, décalage et longueur numériques produisent la chaîne modifiée et la sous-chaîne remplacée. Remplacement vide : suppression ; longueur nulle : insertion.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

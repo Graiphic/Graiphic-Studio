@@ -12,17 +12,13 @@ Returns the maximum and minimum elements and their indices.
 
 **Maximum et minimum d'un tableau**
 
-Renvoie les elements maximum et minimum ainsi que leurs indices. [Types] Un tableau de T de rang N produit deux éléments T (minimum/maximum). Les indices sont des I32 en 1D, sinon des tableaux 1D d’I32. Le schéma des éléments est conservé.
+Renvoie les elements maximum et minimum ainsi que leurs indices.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Any N-D array of T yields scalar elements T for min/max. Both indices are I32 for rank 1, and 1D arrays of I32 for rank greater than 1. Element schemas are retained.
-
-Any N-D array of T yields scalar elements T for min/max. Both indices are I32 for rank 1, and 1D arrays of I32 for rank greater than 1. Element schemas are retained.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Any N-D array of T yields scalar elements T for min/max. Both indices are I32 for rank 1, and 1D arrays of I32 for rank greater than 1. Element schemas are retained.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau de T de rang N produit deux éléments T (minimum/maximum). Les indices sont des I32 en 1D, sinon des tableaux 1D d’I32. Le schéma des éléments est conservé.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -59,7 +66,11 @@ Any N-D array of T yields scalar elements T for min/max. Both indices are I32 fo
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.array.max_min.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

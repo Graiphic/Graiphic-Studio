@@ -12,17 +12,13 @@ Parses spreadsheet-formatted text into an array.
 
 **Chaine format tableur en tableau**
 
-Convertit une chaine au format tableur en tableau. [Types] Chaîne et format sont des chaînes. Le séparateur accepte une chaîne ou un tableau 1D de chaînes. Le type de tableau optionnel définit le type numérique/chaîne et le rang 1–16, 2D DBL par défaut ; la sortie suit exactement ce type.
+Convertit une chaine au format tableur en tableau.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Spreadsheet String and format are strings. Delimiter accepts a String or 1D String array. Optional array type selects numeric/String element type and rank 1–16, default 2D DBL; output exactly follows that type.
-
-Spreadsheet String and format are strings. Delimiter accepts a String or 1D String array. Optional array type selects numeric/String element type and rank 1–16, default 2D DBL; output exactly follows that type.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Spreadsheet String and format are strings. Delimiter accepts a String or 1D String array. Optional array type selects numeric/String element type and rank 1–16, default 2D DBL; output exactly follows that type.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaîne et format sont des chaînes. Le séparateur accepte une chaîne ou un tableau 1D de chaînes. Le type de tableau optionnel définit le type numérique/chaîne et le rang 1–16, 2D DBL par défaut ; la sortie suit exactement ce type.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -59,7 +66,11 @@ Spreadsheet String and format are strings. Delimiter accepts a String or 1D Stri
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.conversion.spreadsheet_string_to_array.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 

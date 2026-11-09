@@ -22,22 +22,13 @@ Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts
 
 Le texte existant ci-dessous ne décrit pas le profil matriciel déclaré dans les métadonnées actuelles. Les règles et limites de ce profil sont précisées dans les sections anglaises de cette fiche.
 
-Calcule e élevé à x. [Types] Scalaires F32/F64 et complexes C32/C64, tableaux ou clusters numériques récursifs. Les entiers sont convertis en F64 ; au-delà de 2^53, la conversion peut arrondir. Les rangs des tableaux et les identités ordonnées des champs sont conservés. Deux opérandes composés exigent la même structure et les mêmes dimensions réelles ; un opérande entièrement scalaire peut être appliqué à chaque feuille de l’autre. Pas de virgule fixe, précision étendue, calcul matriciel nominal ni diffusion entre dimensions. Les résultats réels hors domaine suivent NaN/Inf IEEE ; les résultats complexes non finis sont refusés. Toutes les entrées sont obligatoires dans le profil de calcul Studio ; l’aperçu F64 non câblé ne fournit aucune valeur implicite. Le calcul Highlight local utilise son fournisseur dédié ; l’exécution runtime sur cible est indisponible.
+Calcule e élevé à x.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Computes e raised to x. Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. This private Studio profile declares local Highlight calculation separately from target Runtime execution. Concrete matrix&lt;f64&gt; dispatch is separate from element-wise Array/Cluster lifting: nonempty square matrices of dimension at most 32; finite real output only, bounded arithmetic and numerical residual checks. Exponential uses matrix Pade scaling/squaring; Natural Logarithm uses the convergent real principal matrix logarithm; Power uses actual matrix products for integer exponents and Exp(y*Ln(A)) for admissible noninteger real exponents. Complex branch-cut, ill-conditioned, nonconvergent or overflowing Matrix results fail explicitly.
-
-</details>
 
 ## IN — inputs
 
@@ -55,9 +46,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. Concrete matrix&lt;f64&gt; dispatch is separate from element-wise Array/Cluster lifting: nonempty square matrices of dimension at most 32; finite real output only, bounded arithmetic and numerical residual checks. Exponential uses matrix Pade scaling/squaring; Natural Logarithm uses the convergent real principal matrix logarithm; Power uses actual matrix products for integer exponents and Exp(y*Ln(A)) for admissible noninteger real exponents. Complex branch-cut, ill-conditioned, nonconvergent or overflowing Matrix results fail explicitly.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. All operands are required by the Studio calculation profile; the F64 unwired preview is not an implicit value. Local Highlight calculation is available through its dedicated provider; target Runtime execution is unavailable.
+
+No fixed-point, extended precision, dimensional broadcasting. This private Studio profile declares local Highlight calculation separately from target Runtime execution. Concrete matrix&lt;f64&gt; dispatch is separate from element-wise Array/Cluster lifting: nonempty square matrices of dimension at most 32; finite real output only, bounded arithmetic and numerical residual checks. Exponential uses matrix Pade scaling/squaring; Natural Logarithm uses the convergent real principal matrix logarithm; Power uses actual matrix products for integer exponents and Exp(y*Ln(A)) for admissible noninteger real exponents. Complex branch-cut, ill-conditioned, nonconvergent or overflowing Matrix results fail explicitly.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaires F32/F64 et complexes C32/C64, tableaux ou clusters numériques récursifs. Les entiers sont convertis en F64 ; au-delà de 2^53, la conversion peut arrondir. Les rangs des tableaux et les identités ordonnées des champs sont conservés. Deux opérandes composés exigent la même structure et les mêmes dimensions réelles ; un opérande entièrement scalaire peut être appliqué à chaque feuille de l’autre. Pas de virgule fixe, précision étendue, calcul matriciel nominal ni diffusion entre dimensions. Les résultats réels hors domaine suivent NaN/Inf IEEE ; les résultats complexes non finis sont refusés. Toutes les entrées sont obligatoires dans le profil de calcul Studio ; l’aperçu F64 non câblé ne fournit aucune valeur implicite. Le calcul Highlight local utilise son fournisseur dédié ; l’exécution runtime sur cible est indisponible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.exponential.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

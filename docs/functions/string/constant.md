@@ -12,15 +12,13 @@ Places an editable string constant on the diagram.
 
 **Constante chaine**
 
-Place une constante chaine editable sur le diagramme. [Types] Constante chaîne scalaire éditable. L’éditeur gère sa borne de valeur et ses modes d’affichage ; le câblage ne lui donne pas de rang de tableau.
+Place une constante chaine editable sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Editable scalar String constant. The editor owns its value terminal and display modes; it does not acquire an array rank from wiring.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Editable scalar String constant. The editor owns its value terminal and display modes; it does not acquire an array rank from wiring.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Constante chaîne scalaire éditable. L’éditeur gère sa borne de valeur et ses modes d’affichage ; le câblage ne lui donne pas de rang de tableau.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

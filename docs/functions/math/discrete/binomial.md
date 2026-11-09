@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Compte les choix non ordonnés de k éléments distincts parmi n. Les entrées U32 donnent un coefficient F64 et un état I32 séparé. FROG définit k&gt;n comme coefficient=0,error=0 ; k=0 ou k=n donnent 1. Les grands coefficients finis peuvent être arrondis. Dépassement : +∞,error=2 ; réussite ordinaire : error=0. Formule : C(n,k)=n!/(k!*(n-k)!) for k&lt;=n; 0 for k&gt;n. Exemple : C(5,2)=10; C(5,3)=10; C(5,0)=1. [Types] n: u32; k: u32 → coefficient: f64; error: i32. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée. État I32 FROG : 0=Ok,1=Domaine,2=Dépassement,3=Annulé,4=Limite de travail ; ni code NI ni cluster d’erreur.
+Compte les choix non ordonnés de k éléments distincts parmi n. Les entrées U32 donnent un coefficient F64 et un état I32 séparé. FROG définit k&gt;n comme coefficient=0,error=0 ; k=0 ou k=n donnent 1. Les grands coefficients finis peuvent être arrondis. Dépassement : +∞,error=2 ; réussite ordinaire : error=0. Formule : C(n,k)=n!/(k!*(n-k)!) for k&lt;=n; 0 for k&gt;n. Exemple : C(5,2)=10; C(5,3)=10; C(5,0)=1.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Counts unordered selections of k distinct elements among n. U32 inputs produce an F64 coefficient and a separate I32 status. FROG defines k&gt;n as coefficient=0,error=0; boundaries k=0 or k=n give 1. Finite large coefficients may round. Overflow gives +Infinity,error=2; ordinary success gives error=0. Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
-
-n: u32; k: u32 → coefficient: f64; error: i32. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. FROG I32 status: 0=Ok,1=Domain,2=Overflow,3=Cancelled,4=WorkLimit; not NI codes or an Error Cluster.
-
-</details>
 
 ## IN — inputs
 
@@ -55,9 +44,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+n: u32; k: u32 → coefficient: f64; error: i32. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. FROG I32 status: 0=Ok,1=Domain,2=Overflow,3=Cancelled,4=WorkLimit; not NI codes or an Error Cluster.
+
+Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+n: u32; k: u32 → coefficient: f64; error: i32. Toutes les entrées sont requises ; arité fixe, sans lifting implicite. NI documente les connecteurs de LabVIEW classique ; FROG précise les limites et entrées requises. Signature NXG non vérifiée. État I32 FROG : 0=Ok,1=Domaine,2=Dépassement,3=Annulé,4=Limite de travail ; ni code NI ni cluster d’erreur.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `f64,i32`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

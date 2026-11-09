@@ -18,22 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Play/Highlight local retire exactement un niveau d’enveloppe Variant immuable si le type de l’enfant correspond exactement au vrai témoin type câblé et à la sortie data compilée. Sans conversion numérique implicite : lexèmes entiers exacts, rangs/dimensions, champs ordonnés des clusters et propriété immuable sont conservés. Le témoin donne un type, pas une valeur de repli arbitraire. Un Variant neutre ou texte historique reste opaque : défaut du type demandé et erreur 8051 VARIANT_NO_CONCRETE_PAYLOAD. Type ou rang différent : 8051 VARIANT_TYPE_MISMATCH. Une erreur entrante active est conservée avec un défaut typé. Un double boxing exige d’extraire d’abord le Variant, puis son enfant. Aucun support cible public FROG/LLVM n’est déclaré. [Types] Variant + type:T + erreur -&gt; T + erreur, rangs et schémas conservés.
+Play/Highlight local retire exactement un niveau d’enveloppe Variant immuable si le type de l’enfant correspond exactement au vrai témoin type câblé et à la sortie data compilée. Sans conversion numérique implicite : lexèmes entiers exacts, rangs/dimensions, champs ordonnés des clusters et propriété immuable sont conservés. Le témoin donne un type, pas une valeur de repli arbitraire. Un Variant neutre ou texte historique reste opaque : défaut du type demandé et erreur 8051 VARIANT_NO_CONCRETE_PAYLOAD. Type ou rang différent : 8051 VARIANT_TYPE_MISMATCH. Une erreur entrante active est conservée avec un défaut typé. Un double boxing exige d’extraire d’abord le Variant, puis son enfant. Aucun support cible public FROG/LLVM n’est déclaré.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Variant + type:T + error -&gt; T + error, including array rank and cluster schema.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +45,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Local Studio Play/Highlight removes exactly one immutable Variant envelope when its child type exactly matches both the actual wired type specimen and the compiled data output. No implicit numeric conversion: exact integer lexical payloads, array rank/dimensions, ordered cluster fields and immutable ownership survive. The specimen is a type, not an arbitrary fallback value. A neutral or historical text Variant remains opaque: return the requested typed default and error 8051 VARIANT_NO_CONCRETE_PAYLOAD. A wrong payload type/rank gives 8051 VARIANT_TYPE_MISMATCH. Incoming active error is preserved with a typed default. Double boxing requires unboxing Variant first, then its child. Public FROG/LLVM target support is not declared.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Variant + type:T + error -&gt; T + error, including array rank and cluster schema.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Variant + type:T + erreur -&gt; T + erreur, rangs et schémas conservés.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.palette.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

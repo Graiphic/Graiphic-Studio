@@ -12,15 +12,13 @@ Creates an error-cluster control on the Front Panel and its linked diagram termi
 
 **Terminal d’erreur**
 
-Crée un contrôle de cluster d’erreur en face avant et son terminal lié sur le diagramme. [Types] Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+Crée un contrôle de cluster d’erreur en face avant et son terminal lié sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
 
 ## IN — inputs
 
@@ -34,9 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Creates an error-cluster control on the Front Panel and its linked diagram terminal.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Erreur = status:booléen, code:I32, source:chaîne. Pas de traitement implicite des tableaux ; pas de fournisseur runtime dans cette livraison.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -50,11 +59,11 @@ Creates an error-cluster control on the Front Panel and its linked diagram termi
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring only; no error propagation, dialog, code lookup or execution provider is implemented here.
+Existing linked Cluster widget authoring and actual typed widget_value/UIBinding lowering; this palette entry is not a callable Error function and no runtime operation identity is invented.
 
 **Authoring/target contract limits:**
 
-- Runtime execution is not implemented by this authoring profile.
+- The selected target must admit the actual complete Record literal or typed widget binding; catalog visibility is not a universal execution guarantee.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

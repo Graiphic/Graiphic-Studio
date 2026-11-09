@@ -12,17 +12,13 @@ Converts the input to a 16-bit signed integer.
 
 **Vers I16**
 
-Convertit l'entree en entier signe sur 16 bits. [Types] Les feuilles numériques deviennent I16 ; rangs des tableaux et structure des clusters restent intacts. La conversion ne transforme pas tout l'agrégat en scalaire.
+Convertit l'entree en entier signe sur 16 bits.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric leaves convert to I16; array ranks and cluster layout stay intact. This is a leaf conversion, not a conversion of the whole aggregate to a scalar.
-
-Numeric leaves convert to I16; array ranks and cluster layout stay intact. This is a leaf conversion, not a conversion of the whole aggregate to a scalar.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric leaves convert to I16; array ranks and cluster layout stay intact. This is a leaf conversion, not a conversion of the whole aggregate to a scalar.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Les feuilles numériques deviennent I16 ; rangs des tableaux et structure des clusters restent intacts. La conversion ne transforme pas tout l'agrégat en scalaire.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,13 @@ fixed unary
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
-No portable Runtime conversion provider is declared.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.convert.to_i16.ieee-even-modulo.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

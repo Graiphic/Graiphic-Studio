@@ -40,6 +40,8 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [String To Path](conversion/string_to_path.md) | Converts a string to a path. |
 | [String Array To Path](conversion/string_array_to_path.md) | Builds a path from an array of strings. |
 | [Path To String Array](conversion/path_to_string_array.md) | Splits a path into an array of strings. |
+| [Flatten To String](conversion/flatten_to_string.md) | Flattens a supported value into a binary String, preserving raw bytes without text or hexadecimal conversion. |
+| [Unflatten From String](conversion/unflatten_from_string.md) | Restores the requested supported type from a binary String, returning unconsumed bytes separately. |
 | [Flatten To JSON](conversion/flatten_to_json.md) | Serializes a value as JSON text. |
 | [Unflatten From JSON](conversion/unflatten_from_json.md) | Deserializes a value from JSON text. |
 | [String Array To Delimited String](conversion/string_array_to_delimited_string.md) | Joins a string array using a delimiter. |

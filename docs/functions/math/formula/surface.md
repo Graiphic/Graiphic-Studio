@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Évalue une expression sur une grille cartésienne. Variables,Start,End ont chacun 2 éléments ; N est le nombre par axe. Convention FROG :Y[j,i]=f(X1[i],X2[j]), vrai tableau 2D. Défauts[x1,x2],[0,0],[1,1],N=25. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points. [Types] formula [formula]: string; Variables [variables]: array&lt;string&gt;; Start [start]: array&lt;f64&gt;; End [end]: array&lt;f64&gt;; number of points [points]: u32; X1 Values [x1_values]: array&lt;f64&gt;; X2 Values [x2_values]: array&lt;f64&gt;; Y Values [y_values]: array&lt;f64,rank=2&gt;; ticks [ticks]: u32; error [error]: i32
+Évalue une expression sur une grille cartésienne. Variables,Start,End ont chacun 2 éléments ; N est le nombre par axe. Convention FROG :Y[j,i]=f(X1[i],X2[j]), vrai tableau 2D. Défauts[x1,x2],[0,0],[1,1],N=25. Signatures exactes f64/Tableau, sans diffusion ni conversion numérique implicite. Le profil explicite FROG frog.studio.formula.evaluation@1 est distinct du dialecte ODE historique. Les programmes préparés sont des AST validés et versionnés, jamais du texte à réanalyser lors de l’évaluation ni des pointeurs. La documentation des connecteurs NI ne prouve ni compatibilité binaire préparée ni parité d’algorithme mesurée. error:i32 est un statut GS local (0=succès) ; ticks:u32 mesure les millisecondes de calcul, pas les points.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Samples one expression on a Cartesian grid. Variables,Start,End each have2items; N is per axis. FROG orientation is Y[j,i]=f(X1[i],X2[j]), a real rank 2 Array. Default names [x1,x2],Start[0,0],End[1,1],N=25. Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
-
-formula [formula]: string; Variables [variables]: array&lt;string&gt;; Start [start]: array&lt;f64&gt;; End [end]: array&lt;f64&gt;; number of points [points]: u32; X1 Values [x1_values]: array&lt;f64&gt;; X2 Values [x2_values]: array&lt;f64&gt;; Y Values [y_values]: array&lt;f64,rank=2&gt;; ticks [ticks]: u32; error [error]: i32
-
-</details>
 
 ## IN — inputs
 
@@ -61,9 +50,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Fixed exact f64/Array signatures, without scalar lifting, broadcasting or implicit numeric conversion. Explicit FROG profile frog.studio.formula.evaluation@1 is distinct from the historical ODE dialect. Prepared payloads are validated versioned AST, never source to re-parse at evaluation or native pointers. NI connector documentation does not establish prepared binary compatibility or measured algorithm parity.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+formula [formula]: string; Variables [variables]: array&lt;string&gt;; Start [start]: array&lt;f64&gt;; End [end]: array&lt;f64&gt;; number of points [points]: u32; X1 Values [x1_values]: array&lt;f64&gt;; X2 Values [x2_values]: array&lt;f64&gt;; Y Values [y_values]: array&lt;f64,rank=2&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+formula [formula]: string; Variables [variables]: array&lt;string&gt;; Start [start]: array&lt;f64&gt;; End [end]: array&lt;f64&gt;; number of points [points]: u32; X1 Values [x1_values]: array&lt;f64&gt;; X2 Values [x2_values]: array&lt;f64&gt;; Y Values [y_values]: array&lt;f64,rank=2&gt;; ticks [ticks]: u32; error [error]: i32
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

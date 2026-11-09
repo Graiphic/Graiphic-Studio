@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Recherche un texte litteral et le remplace dans une chaine. [Types] Chaînes scalaires source/recherche/remplacement, décalage I32, booléens ignorer la casse/tout remplacer et cluster d’erreur produisent chaîne, nombre de remplacements et décalage I32, et erreur. La variante regex ajoute le mode multiligne.
+Recherche un texte litteral et le remplace dans une chaine.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace-all and error cluster produce String, I32 replacement count/offset and error cluster. The regex variant adds multiline.
-
-Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace-all and error cluster produce String, I32 replacement count/offset and error cluster. The regex variant adds multiline.
-
-</details>
 
 ## IN — inputs
 
@@ -62,9 +51,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
 
 Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace-all and error cluster produce String, I32 replacement count/offset and error cluster. The regex variant adds multiline.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaînes scalaires source/recherche/remplacement, décalage I32, booléens ignorer la casse/tout remplacer et cluster d’erreur produisent chaîne, nombre de remplacements et décalage I32, et erreur. La variante regex ajoute le mode multiligne.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -78,7 +85,7 @@ Scalar input/search/replacement Strings, I32 offset, Boolean ignore-case/replace
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Native composed search_replace.v1 admits the declared UTF-8 literal profile and ascii-casefold@1 for ASCII source and pattern only. Unicode case folding remains an explicit refusal. This is not availability of the entire polymorphic authoring profile; package execution requires its own proof.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

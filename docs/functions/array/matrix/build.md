@@ -12,17 +12,13 @@ Builds a matrix from supplied values or matrices.
 
 **Construire une matrice**
 
-Construit une matrice a partir des valeurs ou matrices fournies. [Types] Dérouler pour 1–32 scalaires numériques ou tableaux numériques 1D/2D. Les représentations sont promues ensemble ; la sortie est toujours 2D. Ajout par colonnes par défaut, ajout par lignes configurable.
+Construit une matrice a partir des valeurs ou matrices fournies.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Resize for 1–32 numeric scalars, 1D arrays or 2D arrays. Numeric representations promote together; output is always 2D. Append by Columns is default; Append by Rows is an editor setting.
-
-Resize for 1–32 numeric scalars, 1D arrays or 2D arrays. Numeric representations promote together; output is always 2D. Append by Columns is default; Append by Rows is an editor setting.
 
 ## IN — inputs
 
@@ -44,9 +40,20 @@ Additional input IDs: `input_N`, starting at 2.
 
 Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Resize for 1–32 numeric scalars, 1D arrays or 2D arrays. Numeric representations promote together; output is always 2D. Append by Columns is default; Append by Rows is an editor setting.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Dérouler pour 1–32 scalaires numériques ou tableaux numériques 1D/2D. Les représentations sont promues ensemble ; la sortie est toujours 2D. Ajout par colonnes par défaut, ajout par lignes configurable.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -62,7 +69,11 @@ Port order: `element1` → `input_N_ascending`.
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.build.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -73,7 +84,7 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `element1` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `element1` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | OUTPUT | `result` | `unknown` | `any_explicit` | `single` | — |
 
 </details>

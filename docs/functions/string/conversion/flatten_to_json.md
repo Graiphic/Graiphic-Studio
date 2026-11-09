@@ -12,17 +12,13 @@ Serializes a value as JSON text.
 
 **Aplatir en JSON**
 
-Serialise une valeur en texte JSON. [Types] Les schémas booléens, numériques réels (hors FXP) et chaînes, scalaires/tableaux/clusters, produisent une chaîne JSON et une erreur. Entrée d’erreur et booléen d’extensions LabVIEW exposés. Chemins, enums, références, complexes et FXP refusés ; champs de cluster nommés de façon cohérente et unique.
+Serialise une valeur en texte JSON.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Boolean, real numeric (non-FXP) and String scalar/array/cluster schemas produce one JSON String and an error cluster. Error input and LabVIEW-extension Boolean are exposed. Paths, enums, references, complex and FXP leaves are rejected; named cluster fields must be unique and consistently named.
-
-Boolean, real numeric (non-FXP) and String scalar/array/cluster schemas produce one JSON String and an error cluster. Error input and LabVIEW-extension Boolean are exposed. Paths, enums, references, complex and FXP leaves are rejected; named cluster fields must be unique and consistently named.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Boolean, real numeric (non-FXP) and String scalar/array/cluster schemas produce one JSON String and an error cluster. Error input and LabVIEW-extension Boolean are exposed. Paths, enums, references, complex and FXP leaves are rejected; named cluster fields must be unique and consistently named.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Les schémas booléens, numériques réels (hors FXP) et chaînes, scalaires/tableaux/clusters, produisent une chaîne JSON et une erreur. Entrée d’erreur et booléen d’extensions LabVIEW exposés. Chemins, enums, références, complexes et FXP refusés ; champs de cluster nommés de façon cohérente et unique.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

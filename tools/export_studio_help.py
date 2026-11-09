@@ -171,12 +171,22 @@ def load_inputs(source: Path):
         if line.startswith("FILE_DEFAULT(") and len(values) == 3:
             cid, port, value = map(cpp_string, values)
             defaults[cid, port] = value if value else '""'
-    consumed.update(("src/QueueFunctionBinding.cpp", "src/QueueRuntime.cpp"))
+    queue_binding = "src/QueueFunctionBinding.cpp"
+    if not (source / queue_binding).is_file():
+        queue_binding = "../../FROG/Implementations/Frontend/src/QueueFunctionBinding.cpp"
+    consumed.update((queue_binding, "src/QueueRuntime.cpp"))
     aliases = collections.defaultdict(list)
     alias_text = (source / "src/FunctionCatalogLegacyAliases.inc").read_text(encoding="utf-8-sig")
     for alias, canonical in re.findall(r'FROG_FUNCTION_ALIAS\("([^"]+)",\s*"([^"]+)"\)', alias_text):
         aliases[canonical].extend((alias, "frog.studio." + alias))
-    catalog_text = (source / "src/FunctionCatalog.cpp").read_text(encoding="utf-8-sig")
+    identity_source = "src/FunctionCatalog.cpp"
+    catalog_text = (source / identity_source).read_text(encoding="utf-8-sig")
+    if 'if (entry.catalogId == "array.constant") {' not in catalog_text:
+        # The common Frontend now owns identities; Studio retains visual port
+        # geometry in FunctionCatalog.cpp. Read the declared semantic owner.
+        identity_source = "../../FROG/Implementations/Frontend/src/FunctionCatalogSemantic.cpp"
+        catalog_text = (source / identity_source).read_text(encoding="utf-8-sig")
+        consumed.add(identity_source)
     array_alias_block = catalog_text.split('if (entry.catalogId == "array.constant") {', 1)[1].split("}\n", 1)[0]
     aliases["array.constant"].extend(re.findall(r'"(frog\.studio\.[^"]+)"', array_alias_block))
     label_path = "src/win32/Win32FunctionPortLabels.inc"
@@ -200,12 +210,54 @@ def load_inputs(source: Path):
 
 
 def purpose_parts(text: str):
-    parts = text.split("[Types]", 1)
-    purpose = parts[0].strip()
-    rule = parts[1].strip() if len(parts) > 1 else ""
-    if rule and rule.rstrip(".") == purpose.rstrip("."):
-        rule = ""
-    return purpose, rule
+    """Separate only marked technical paragraphs; retain independent prose.
+
+    No marker leaves the original text unchanged, including whitespace.
+    A marker consumes the rest of its paragraph, not later functional prose.
+    Other bracketed terms such as [Local Studio] remain part of the note.
+    """
+    if "[Types]" not in text:
+        return text, ""
+    descriptions, rules = [], []
+    while "[Types]" in text:
+        before, tail = text.split("[Types]", 1)
+        descriptions.append(before.rstrip())
+        boundary = re.search(r"\r?\n[ \t]*\r?\n", tail)
+        rules.append((tail[:boundary.start()] if boundary else tail).strip())
+        text = tail[boundary.start():] if boundary else ""
+    descriptions.append(text)
+    return "".join(descriptions).strip(), "\n\n".join(rule for rule in rules if rule)
+
+
+def prose_statements(text: str):
+    """Exact prose units for deduplication, never an inference of equivalence."""
+    return [part for part in re.split(r"(?<=[.!?])\s+", text.strip()) if part]
+
+
+def prose_identity(text: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(text).replace("\\|", "|")).strip().rstrip(".")
+
+
+def unique_prose(text: str, seen: set[str]) -> str:
+    kept = []
+    for statement in prose_statements(text):
+        identity = prose_identity(statement)
+        if identity and identity not in seen:
+            seen.add(identity)
+            kept.append(statement)
+    return " ".join(kept)
+
+
+def prose_is_preserved(note: str, page: str) -> bool:
+    rendered = prose_identity(page)
+    return all(prose_identity(statement) in rendered for statement in prose_statements(note))
+
+
+def retained_examples(page: str, existing: str) -> str:
+    """A documentation-only content split does not refresh example links."""
+    section = r"(?ms)^## Examples\n.*?(?=^## |\Z)"
+    old = re.search(section, existing)
+    return re.sub(section, lambda _: old[0], page, count=1) if old else page
 
 
 def table(headers, rows):
@@ -246,11 +298,42 @@ def port_rows(cid, ports, supplemental, defaults, helper, direction, labels):
                default_text(cid, port, metadata, defaults, direction == "input"), details or "—"]
 
 
-def render_policy(contract, supplemental):
-    lines = ["## Types and connection rules", ""]
+def render_policy(contract, supplemental, help_entry=None, description="", native_examples=False):
+    helper = help_entry or {}
+    purpose, rules = purpose_parts(description or helper.get("description.en", ""))
+    french_purpose, french_rules = purpose_parts(helper.get("description.fr", ""))
+    if not contract and not (rules or french_rules):
+        return []
+    marked = bool(rules or french_rules)
+    lines = ["## Types and Compatibility" if marked else "## Types and connection rules", ""]
+    seen = {prose_identity(statement) for statement in prose_statements(purpose)}
+    if rules or french_rules:
+        lines.extend(("The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.", ""))
+    if marked and native_examples and (rules or (contract and contract.get("behavior_summary"))):
+        lines.extend(("<details>", "<summary>Retained binding and help statements</summary>", "",
+                      "These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.", ""))
+    for text in (rules, contract.get("behavior_summary", "") if contract and marked else ""):
+        if text.startswith("Preserves the historical Studio authoring bindings for"):
+            continue
+        remaining = unique_prose(text, seen)
+        if remaining:
+            lines.extend((prose(remaining), ""))
+    if marked and native_examples and (rules or (contract and contract.get("behavior_summary"))):
+        lines.extend(("</details>", ""))
+    if french_rules:
+        french_seen = {prose_identity(statement) for statement in prose_statements(french_purpose)}
+        remaining = unique_prose(french_rules, french_seen)
+        if remaining:
+            lines.extend(("<details>", "<summary>Notes de types et de compatibilité de l’aide Studio</summary>", "",
+                          "Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.", "",
+                          prose(remaining), "", "</details>", ""))
+    if not contract:
+        return lines
     policy = contract["overload_type_resolution"]
     if policy.get("description"):
-        lines.extend((prose(policy["description"]), ""))
+        remaining = unique_prose(policy["description"], seen) if marked else policy["description"]
+        if remaining:
+            lines.extend((prose(remaining), ""))
     lines.extend((f"- Type resolution: {code(policy['policy'])}; result expression: {code(policy['result'])}.",
                   "- Implicit coercion: " + ("permitted by this profile." if policy["implicit_coercion"] else "not enabled by this resolver; individual port policies remain explicit.")))
     array = contract["array_policy"]
@@ -262,8 +345,10 @@ def render_policy(contract, supplemental):
     for name, label in (("scalar_lift", "Scalar lifting"), ("broadcasting", "Broadcasting"), ("produces_array", "Array output")):
         if name in array:
             lines.append(f"- {label}: {'yes' if array[name] else 'no'}.")
-    if array.get("description") and array["description"] != policy.get("description"):
-        lines.extend(("", prose(array["description"])))
+    if array.get("description") and (marked or array["description"] != policy.get("description")):
+        remaining = unique_prose(array["description"], seen) if marked else array["description"]
+        if remaining:
+            lines.extend(("", prose(remaining)))
     variadic = contract["variadicity"]
     if variadic["enabled"]:
         lines.extend(("", f"**Expandable inputs:** {variadic['minimum_input_count']} to {variadic['maximum_input_count']}. Reduction: {code(variadic['reduction'])}."))
@@ -274,7 +359,9 @@ def render_policy(contract, supplemental):
     if variadic.get("port_order"):
         lines.extend(("", "Port order: " + " → ".join(code(p) for p in variadic["port_order"]) + "."))
     if variadic.get("description"):
-        lines.extend(("", prose(variadic["description"])))
+        remaining = unique_prose(variadic["description"], seen) if marked else variadic["description"]
+        if remaining:
+            lines.extend(("", prose(remaining)))
     for key, value in supplemental.get("overload_type_resolution", {}).items():
         if isinstance(value, str) and key not in ("resolver_id",):
             lines.extend(("", f"**{prose(key.replace('_', ' ').capitalize())}:** {prose(value)}"))
@@ -365,7 +452,7 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
                 lines.extend(("Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.", ""))
             if supplemental.get("matrix_dispatch", {}).get("available"):
                 lines.extend(("Le texte existant ci-dessous ne décrit pas le profil matriciel déclaré dans les métadonnées actuelles. Les règles et limites de ce profil sont précisées dans les sections anglaises de cette fiche.", ""))
-            lines.extend((prose(help_entry["description.fr"]), ""))
+            lines.extend((prose(purpose_parts(help_entry["description.fr"])[0]), ""))
         lines.extend(("</details>", ""))
     if entry["kind"] == "folder":
         lines.extend(("## Browse this palette", "", "This entry opens a palette folder; it is not an executable dataflow function.", ""))
@@ -373,6 +460,12 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
             family = FOLDER_ALIASES[cid]
             lines.extend((link("Open the canonical " + family + " reference", f"docs/functions/{family}/index.md") + ".", ""))
         children = [e for e in entries.values() if e["parent"] == cid]
+        if cid == "mathematics.linear_algebra":
+            # Presentation aliases match the existing Studio palette. Keep the
+            # saved conversion definitions documented elsewhere, not as tiles.
+            children = [e for e in children if not e["catalog_id"].startswith("math.matrix.")]
+            children.insert(17, entries["array.matrix.transpose"])
+            children.insert(2, entries["array.matrix"])
         if children:
             lines.extend(table(["Entry", "Purpose"], [[link(e["title_en"], e["route"]), prose(e["summary"])] for e in children]))
         elif cid not in FOLDER_ALIASES:
@@ -380,17 +473,15 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
     elif contract:
         status = contract["contract_status"].replace("_", " ")
         lines.extend(("## Studio authoring profile", "", f"Contract status: **{status}**. " + ("This is an editor-managed element; placement and configured values are distinct from an executable function provider." if contract["contract_status"] == "editor_managed" else "The connector below describes Studio authoring; execution availability is stated separately."), ""))
-        behavior = contract["behavior_summary"]
-        if native_examples:
-            lines.extend(("<details>", "<summary>Retained binding and help description</summary>", "",
-                          "This is the source declaration, not the current measured product-execution assessment.", ""))
-        if behavior and behavior != entry["summary"] and not behavior.startswith("Preserves the historical Studio authoring bindings for"):
-            lines.extend((prose(behavior), ""))
-        _, help_rules = purpose_parts(help_entry.get("description.en", ""))
-        if help_rules and not supplemental.get("matrix_dispatch", {}).get("available"):
-            lines.extend((prose(help_rules), ""))
-        if native_examples:
-            lines.extend(("</details>", ""))
+        marked = bool(purpose_parts(entry.get("description_source", help_entry.get("description.en", "")))[1] or purpose_parts(help_entry.get("description.fr", ""))[1])
+        if not marked:
+            behavior = contract["behavior_summary"]
+            if native_examples:
+                lines.extend(("<details>", "<summary>Retained binding and help description</summary>", "", "This is the source declaration, not the current measured product-execution assessment.", ""))
+            if behavior and behavior != entry["summary"] and not behavior.startswith("Preserves the historical Studio authoring bindings for"):
+                lines.extend((prose(behavior), ""))
+            if native_examples:
+                lines.extend(("</details>", ""))
         if cid.startswith("synchronization.queue."):
             lines.extend(("## Queue behavior", "", prose(QUEUE_DETAILS[cid.rsplit(".", 1)[1]]), "", "Queue&lt;T&gt; is a nominal execution-resource access reference. The complete T schema is invariant; an Array, Cluster or Enum message remains one T value. Collection outputs add one outer rank-1 Array.", ""))
             if any(p["id"] == "timeout_ms" for p in contract["ports"]["inputs"]):
@@ -412,7 +503,7 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
                 lines.extend(("When expanded beyond two operands, Studio displays x1, x2, …, xN and the corresponding result expression. The persisted input IDs and canonical operand order stay unchanged.", ""))
         if cid.startswith(("array.", "string.")) and (contract["variadicity"]["enabled"] or any(p["cardinality"] == "variadic" for p in contract["ports"]["inputs"] + contract["ports"]["outputs"])):
             lines.extend(("Expanded connector rows receive their live group/dimension number in Studio. Field selections and configured instances can also supply live names; the table documents the base connector and keeps its internal IDs separate.", ""))
-        lines.extend(render_policy(contract, supplemental))
+        lines.extend(render_policy(contract, supplemental, help_entry, entry.get("description_source", ""), native_examples))
         lines.extend(render_instances(supplemental))
         lines.extend(render_runtime(cid, contract, supplemental, native_examples))
         lines.extend(("<details>", "<summary>Connector type defaults and persistence aliases</summary>", ""))
@@ -424,6 +515,8 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
         lines.extend(("</details>", ""))
     else:
         lines.extend(("## Authoring scope", "", "This catalogue entry has no versioned function binding contract in the current snapshot. Its presence and icon establish discovery only; fixed ports, defaults and execution support are not inferred.", ""))
+    if not contract or entry["kind"] == "folder":
+        lines.extend(render_policy(None, supplemental, help_entry, entry.get("description_source", ""), native_examples))
     lines.extend(studio_examples.function_examples(example_projection, cid))
     lines.extend(("## Identity and references", "", "- Catalogue ID: " + code(cid) + "."))
     if entry["parent"]:
@@ -449,6 +542,7 @@ def main():
     parser.add_argument("--routes-output", type=Path)
     parser.add_argument("--examples-index", type=Path, help="Canonical FROG/Examples/index.v1.json (required; no placeholder index is generated).")
     parser.add_argument("--check", action="store_true", help="Check deterministic generated files without writing.")
+    parser.add_argument("--functions-only", action="store_true", help="Export/check function pages, family overviews and route/catalogue inventories; retain example pages, example links and assets.")
     args = parser.parse_args()
     source, output = args.source.resolve(), args.output.resolve()
     catalog = load_catalog(source)
@@ -464,6 +558,7 @@ def main():
         metadata = supplemental.get(cid, {})
         contract = contracts.get(cid)
         description = helper.get("description.en") or metadata.get("description") or palettes.get(cid, {}).get("description") or (contract["behavior_summary"] if contract else "")
+        entry["description_source"] = description
         entry["summary"] = purpose_parts(description)[0] or ("Browse the " + entry["title_en"] + " palette.")
         entry["title_en"] = helper.get("title.en") or entry["title_en"]
         entry["title_fr"] = helper.get("title.fr", "")
@@ -484,7 +579,16 @@ def main():
             consumed.add(icon_file.relative_to(source).as_posix())
     for cid, entry in catalog.items():
         helper = dict(help_catalog["function." + cid]) if "function." + cid in help_catalog else {}
-        artifacts[entry["route"]] = render_page(entry, contracts.get(cid), helper, supplemental.get(cid, {}), palettes, defaults, catalog, labels, example_projection).encode("utf-8")
+        page = render_page(entry, contracts.get(cid), helper, supplemental.get(cid, {}), palettes, defaults, catalog, labels, example_projection)
+        existing = output / entry["route"]
+        if args.functions_only and existing.is_file():
+            previous = existing.read_text(encoding="utf-8-sig")
+            marked = bool(purpose_parts(entry["description_source"])[1] or purpose_parts(helper.get("description.fr", ""))[1])
+            # Unmarked function pages may contain separately reviewed content.
+            # The String Conversion folder alone needs the two restored routes.
+            if previous.startswith("<!-- Generated by tools/export_studio_help.py;"):
+                page = retained_examples(page, previous) if marked or cid == "string.conversion" else previous
+        artifacts[entry["route"]] = page.encode("utf-8")
     artifacts.update(studio_examples.render_examples(example_projection, catalog))
     families = []
     for family_id in sorted({e["family_id"] for e in catalog.values()}):
@@ -499,7 +603,8 @@ def main():
                 lines.extend(table(["Entry", "Purpose"], rows))
         if family["route"] in artifacts:
             raise ValueError(f"Family overview would overwrite a function page: {family['route']}")
-        artifacts[family["route"]] = "\n".join(lines).encode("utf-8")
+        previous = output / family["route"]
+        artifacts[family["route"]] = previous.read_bytes() if args.functions_only and family_id not in ("string", "mathematics") and previous.is_file() else "\n".join(lines).encode("utf-8")
     counts = {"catalog_entries": len(catalog), "function_contracts": len(contracts), "palette_folders": sum(e["kind"] == "folder" for e in catalog.values()), "families": len(families), "helper_entries": sum("function." + cid in help_catalog for cid in catalog), "authentic_icons": len({e["icon"] for e in catalog.values() if e["icon"]}), "entries_without_icon": sum(not e["icon"] for e in catalog.values())}
     provenance = [{"path": name, "sha256": digest((source / name).read_bytes())} for name in sorted(consumed)]
     source_hash = digest(json.dumps(provenance, ensure_ascii=False, sort_keys=True).encode("utf-8"))
@@ -522,6 +627,13 @@ def main():
         records.append(record)
     export = {"schema_version": 1, "source_snapshot": {"sha256": source_hash, "files": provenance}, "counts": counts, "families": families, "entries": records}
     export["examples_projection"] = {"index": "assets/examples/index.v1.json", "sha256": digest(example_projection.files["assets/examples/index.v1.json"]), "entries": len(example_projection.entries), "scope": "declared expectations; no execution results inferred"}
+    previous_catalog = output / "docs/functions/catalog.json"
+    if args.functions_only and previous_catalog.is_file():
+        # This scope retains distributed example bytes and their existing
+        # declaration identity, rather than relabelling an old copy as new.
+        previous_examples = read_json(previous_catalog).get("examples_projection")
+        if previous_examples:
+            export["examples_projection"] = previous_examples
     artifacts["docs/functions/catalog.json"] = (json.dumps(export, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     routes = []
     for entry in records:
@@ -541,11 +653,29 @@ def main():
     for name, data in list(artifacts.items()):
         if name.endswith(".md"):
             artifacts[name] = relative_links(name, data.decode("utf-8")).encode("utf-8")
+    type_notes = {"function_pages": 0, "source_descriptions": 0, "already_present_descriptions": 0, "added_descriptions": 0, "without_marker": 0}
+    for cid, entry in catalog.items():
+        helper = dict(help_catalog["function." + cid]) if "function." + cid in help_catalog else {}
+        notes = [purpose_parts(entry["description_source"])[1], purpose_parts(helper.get("description.fr", ""))[1]]
+        notes = [note for note in notes if note]
+        if not notes:
+            type_notes["without_marker"] += 1
+            continue
+        type_notes["function_pages"] += 1
+        type_notes["source_descriptions"] += len(notes)
+        page = artifacts[entry["route"]].decode("utf-8")
+        if "[Types]" in page or "## Types and Compatibility" not in page or any(not prose_is_preserved(note, page) for note in notes):
+            raise ValueError(f"Function page lost a marked technical note: {cid}")
+        existing = output / entry["route"]
+        before = existing.read_text(encoding="utf-8-sig") if existing.is_file() else ""
+        present = sum(prose_is_preserved(note, before) for note in notes)
+        type_notes["already_present_descriptions"] += present
+        type_notes["added_descriptions"] += len(notes) - present
     studio_examples.seal_example_ownership(artifacts)
     # Validate only links owned by this export. Existing site navigation has its own owner.
     missing_links = []
     for name, data in artifacts.items():
-        if not name.endswith(".md"):
+        if not name.endswith(".md") or (args.functions_only and not name.startswith("docs/functions/")):
             continue
         text = data.decode("utf-8")
         urls = re.findall(r'\]\(([^)]+)\)|\b(?:src|href)="([^"]+)"', text)
@@ -554,14 +684,25 @@ def main():
             if urlsplit(target).scheme or not target:
                 continue
             target = posixpath.normpath(posixpath.join(posixpath.dirname(name), target))
-            if target not in artifacts:
+            if args.functions_only:
+                available = (target.startswith("docs/functions/") and target in artifacts) or (output / target).is_file()
+            else:
+                available = target in artifacts
+            if not available:
                 missing_links.append((name, target))
         if "github.com/Graiphic/FROG-STUDIO" in text:
             raise ValueError(f"Private source link leaked in {name}")
     if missing_links:
         raise ValueError(f"Broken generated links: {missing_links[:10]}")
+    written_artifacts = {name: data for name, data in artifacts.items() if name.startswith("docs/functions/")} if args.functions_only else artifacts
+    manual_exceptions = []
+    for entry in catalog.values():
+        path = output / entry["route"]
+        if path.is_file() and not path.read_bytes().startswith(b"<!-- Generated by tools/export_studio_help.py;"):
+            manual_exceptions.append(entry["route"])
+            written_artifacts.pop(entry["route"], None)
     mismatches = []
-    for path in studio_examples.stale_example_files(output, artifacts):
+    for path in (() if args.functions_only else studio_examples.stale_example_files(output, artifacts)):
         mismatches.append(path.relative_to(output).as_posix())
         if not args.check:
             path.unlink()
@@ -569,7 +710,7 @@ def main():
     # catalogue entries must not remain discoverable as stale public features.
     generated_page_root = output / "docs/functions"
     generated_page_marker = b"<!-- Generated by tools/export_studio_help.py;"
-    if generated_page_root.is_dir():
+    if not args.functions_only and generated_page_root.is_dir():
         resolved_page_root = generated_page_root.resolve()
         for path in sorted(generated_page_root.rglob("*.md")):
             resolved_path = path.resolve()
@@ -583,7 +724,7 @@ def main():
     # Reused resources must remove their superseded copies as well as update
     # links; otherwise a deterministic check would silently accept old assets.
     generated_icon_root = output / "assets/function-icons"
-    if generated_icon_root.is_dir():
+    if not args.functions_only and generated_icon_root.is_dir():
         resolved_icon_root = generated_icon_root.resolve()
         for path in sorted(generated_icon_root.rglob("*.svg")):
             resolved_path = path.resolve()
@@ -593,17 +734,17 @@ def main():
                 mismatches.append(name)
                 if not args.check:
                     resolved_path.unlink()
-    for name, data in sorted(artifacts.items()):
+    for name, data in sorted(written_artifacts.items()):
         path = studio_examples.destination(output, name)
         if not path.is_file() or path.read_bytes() != data:
             mismatches.append(name)
             if not args.check:
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(data)
-    if args.routes_output and not args.check:
+    if args.routes_output and not args.check and not args.functions_only:
         args.routes_output.parent.mkdir(parents=True, exist_ok=True)
         args.routes_output.write_bytes(route_export)
-    print(json.dumps({"mode": "check" if args.check else "export", "counts": counts, "example_documents": len(example_projection.entries), "example_bytes": "exact input copies; no runtime execution implied", "artifact_files": len(artifacts), "changed_or_stale": len(mismatches), "source_snapshot_sha256": source_hash, "links": "all generated links resolve", "authentic_icons": "all copied bytes match source"}, indent=2))
+    print(json.dumps({"mode": "check" if args.check else "export", "scope": "function-pages" if args.functions_only else "complete", "counts": counts, "type_notes": type_notes, "manual_page_exceptions": manual_exceptions, "example_documents": len(example_projection.entries), "example_bytes": "exact input copies; no runtime execution implied", "artifact_files": len(written_artifacts), "changed_or_stale": len(mismatches), "source_snapshot_sha256": source_hash, "links": "all generated links resolve", "authentic_icons": "all copied bytes match source"}, indent=2))
     if args.check and mismatches:
         raise SystemExit("Stale generated output: " + ", ".join(mismatches[:10]))
 

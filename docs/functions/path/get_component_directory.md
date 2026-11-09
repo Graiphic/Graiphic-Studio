@@ -12,17 +12,13 @@ Returns the directory that contains the current component.
 
 **Obtenir le repertoire du composant**
 
-Renvoie le repertoire contenant le composant courant. [Types] Primitive NXG du dossier du composant : aucune entrée, une sortie Chemin scalaire. Elle désigne le dossier de la bibliothèque, de l’application ou du projet propriétaire. L’édition ne recherche aucun dossier.
+Renvoie le repertoire contenant le composant courant.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-NXG component-directory primitive: no input, one scalar Path output. It describes the owning library/application/project directory. Authoring performs no directory lookup.
-
-NXG component-directory primitive: no input, one scalar Path output. It describes the owning library/application/project directory. Authoring performs no directory lookup.
 
 ## IN — inputs
 
@@ -36,9 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 NXG component-directory primitive: no input, one scalar Path output. It describes the owning library/application/project directory. Authoring performs no directory lookup.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Primitive NXG du dossier du composant : aucune entrée, une sortie Chemin scalaire. Elle désigne le dossier de la bibliothèque, de l’application ou du projet propriétaire. L’édition ne recherche aucun dossier.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

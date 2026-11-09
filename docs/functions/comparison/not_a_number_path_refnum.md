@@ -12,17 +12,13 @@ Tests for NaN or an invalid Path.
 
 **NaN/chemin/refnum ?**
 
-Teste une valeur NaN ou un chemin invalide. [Types] Valeurs numériques ou chemins, y compris dans les tableaux et clusters ; même structure booléenne en sortie. Les refnums ne sont pas encore représentés dans le système de types de Studio. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+Teste une valeur NaN ou un chemin invalide.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Tests for NaN or an invalid Path. Numeric or Path leaves, including arrays and clusters; output has the same Boolean structure. Refnums are not yet represented by Studio's type system.
-
-Numeric or Path leaves, including arrays and clusters; output has the same Boolean structure. Refnums are not yet represented by Studio's type system. Runtime execution is not implemented by this authoring profile.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric or Path leaves, including arrays and clusters; output has the same Boolean structure. Refnums are not yet represented by Studio's type system.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Numeric or Path leaves, including arrays and clusters; output has the same Boolean structure. Refnums are not yet represented by Studio's type system. Runtime execution is not implemented by this authoring profile.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Valeurs numériques ou chemins, y compris dans les tableaux et clusters ; même structure booléenne en sortie. Les refnums ne sont pas encore représentés dans le système de types de Studio. Ce profil d’édition n’implémente pas l’exécution dans le runtime.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,11 +63,11 @@ Numeric or Path leaves, including arrays and clusters; output has the same Boole
 
 Scope: `requires_explicit_target_capability`.
 
-Runtime execution is not implemented by this authoring profile.
+Implementation: `frog.studio.comparison.not_a_number_path_refnum.owned.v1`.
 
-**Authoring/target contract limits:**
+Required provider: `frog.studio.comparison.owned-tree@1`.
 
-- Runtime execution is not implemented by this authoring profile.
+The existing compiled NumericAggregate service provides the bounded Comparison profile on explicitly admitted targets. The exact established scalar zero-comparison identities remain unchanged where applicable. Complete types, nominal schemas, shapes and exact physical carriers remain checked. This declaration is not a passing test, full overload coverage or AOT/package qualification.
 
 **Private Studio Run/Highlight:** the local function evaluator dispatches this catalogue identity. Inputs and output types must be resolved; unsupported value operations or representations fail explicitly. This local dispatch is separate from the public target Runtime declaration above.
 

@@ -12,17 +12,13 @@ Replaces the file extension in a path.
 
 **Remplacer l'extension d'un fichier**
 
-Remplace l'extension de fichier d'un chemin. [Types] Surcharges NXG chemin et nom de fichier : un Chemin ou une Chaîne scalaire et une nouvelle extension Chaîne produisent une valeur du même type Chemin/Chaîne et l’ancienne extension Chaîne. Aucun tableau, cluster ou borne d’erreur ; cette opération ne renomme aucun fichier.
+Remplace l'extension de fichier d'un chemin.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-NXG Path and filename overloads: a scalar Path or String plus a scalar new-extension String produce a value of the same Path/String type and the previous extension as a String. No arrays, clusters or error terminals; this operation does not rename files.
-
-NXG Path and filename overloads: a scalar Path or String plus a scalar new-extension String produce a value of the same Path/String type and the previous extension as a String. No arrays, clusters or error terminals; this operation does not rename files.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 NXG Path and filename overloads: a scalar Path or String plus a scalar new-extension String produce a value of the same Path/String type and the previous extension as a String. No arrays, clusters or error terminals; this operation does not rename files.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Surcharges NXG chemin et nom de fichier : un Chemin ou une Chaîne scalaire et une nouvelle extension Chaîne produisent une valeur du même type Chemin/Chaîne et l’ancienne extension Chaîne. Aucun tableau, cluster ou borne d’erreur ; cette opération ne renomme aucun fichier.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

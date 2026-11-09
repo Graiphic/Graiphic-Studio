@@ -12,17 +12,13 @@ Parses spreadsheet text into an array.
 
 **Chaine tableur vers tableau**
 
-Convertit un texte de tableur en tableau. [Types] Chaîne tableur scalaire, format et séparateur chaîne ou tableau 1D de chaînes produisent le type et le rang exacts du tableau numérique/chaîne câblé sur array_type (DBL 2D par défaut). Contrat identique à l’alias de la palette Array.
+Convertit un texte de tableur en tableau.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A scalar spreadsheet String, format and scalar/1D String-array delimiter produce the exact numeric/String array type and rank wired to array_type (2D DBL by default). Same contract as the Array palette alias.
-
-A scalar spreadsheet String, format and scalar/1D String-array delimiter produce the exact numeric/String array type and rank wired to array_type (2D DBL by default). Same contract as the Array palette alias.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A scalar spreadsheet String, format and scalar/1D String-array delimiter produce the exact numeric/String array type and rank wired to array_type (2D DBL by default). Same contract as the Array palette alias.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Chaîne tableur scalaire, format et séparateur chaîne ou tableau 1D de chaînes produisent le type et le rang exacts du tableau numérique/chaîne câblé sur array_type (DBL 2D par défaut). Contrat identique à l’alias de la palette Array.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

@@ -12,17 +12,13 @@ Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractio
 
 **Horodatage en date et heure**
 
-Horodatage scalaire ou nombre réel facultatif et option UTC produisent un cluster : fraction de seconde F64 ; seconde, minute, heure, jour du mois, mois, année, jour de semaine, jour de l’année et heure d’été I32. L’exécution dépend de la cible sélectionnée. [Types] Horodatage scalaire ou nombre réel facultatif et option UTC produisent un cluster : fraction de seconde F64 ; seconde, minute, heure, jour du mois, mois, année, jour de semaine, jour de l’année et heure d’été I32.
+Horodatage scalaire ou nombre réel facultatif et option UTC produisent un cluster : fraction de seconde F64 ; seconde, minute, heure, jour du mois, mois, année, jour de semaine, jour de l’année et heure d’été I32. L’exécution dépend de la cible sélectionnée.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractional second F64; second, minute, hour, day of month, month, year, day of week, day of year and DST I32.
-
-Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractional second F64; second, minute, hour, day of month, month, year, day of week, day of year and DST I32.
 
 ## IN — inputs
 
@@ -41,9 +37,9 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractional second F64; second, minute, hour, day of month, month, year, day of week, day of year and DST I32.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -57,11 +53,16 @@ Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractio
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support does not establish runtime execution on the active target.
+Implementation: `frog.studio.timestamp.to_date_time.v1`.
+
+Required provider: `frog.studio.timestamp.native@1`.
+
+Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared types. Windows NLS/timezone services are required for local rendering. Explicit range, precision and format refusals remain. Admission, observed execution and AOT package qualification require separate current evidence; this declaration is not that evidence.
 
 **Authoring/target contract limits:**
 
-- NI reference verified for authoring types; this does not establish runtime support on the active target.
+- The native Timestamp profile is bounded; unsupported precision, calendar, locale and format variants remain explicit refusals.
+- A compiled service declaration alone does not qualify actual Run or an AOT package.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

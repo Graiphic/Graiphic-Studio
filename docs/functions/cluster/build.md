@@ -12,17 +12,13 @@ Diagram node for building a cluster. Ports are available for authoring; executio
 
 **Construire un cluster**
 
-Noeud de diagramme pour construire un cluster. Ports disponibles pour l'edition ; execution selon le moteur cible. [Types] Entrées de types quelconques T1..Tn -&gt; Cluster&lt;T1..Tn&gt; dans l’ordre des bornes.
+Noeud de diagramme pour construire un cluster. Ports disponibles pour l'edition ; execution selon le moteur cible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Studio authoring ports for cluster.build.
-
-Inputs of any types T1..Tn -&gt; Cluster&lt;T1..Tn&gt; in connector order.
 
 ## IN — inputs
 
@@ -43,7 +39,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 Additional input IDs: `elementN`, starting at 3.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Inputs of any types T1..Tn -&gt; Cluster&lt;T1..Tn&gt; in connector order.
+
+Studio authoring ports for cluster.build.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Entrées de types quelconques T1..Tn -&gt; Cluster&lt;T1..Tn&gt; dans l’ordre des bornes.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.palette.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

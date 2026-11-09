@@ -22,7 +22,7 @@ LIBRARY_NAMES = {"frog-example-native-library.dll"}
 LIBRARY_SOURCE_NAMES = ("resources_structures.c", "resources_structures.h", "CMakeLists.txt", "README.md")
 BACKENDS = {"native-fast", "native-debug", "simulation"}
 MODES = {"execution", "expected-diagnostic", "expected-abort", "persistence", "interactive"}
-COMPARATORS = {"exact", "float", "ieee-bits", "nan", "positive-infinity", "negative-infinity", "document_path", "studio_directory", "temporary_directory"}
+COMPARATORS = {"exact", "float", "ieee-bits", "nan", "positive-infinity", "negative-infinity", "document_path", "document_directory", "studio_directory", "temporary_directory"}
 SPECIAL_VALUES = {"nan", "positive-infinity", "negative-infinity"}
 PRIVATE_PATH = re.compile(rb"(?:[a-z]:[\\/]+users[\\/]+|/users/|/home/|file://|github\.com/graiphic/frog-studio)", re.IGNORECASE)
 
@@ -258,7 +258,7 @@ def function_examples(projection: ExampleProjection, cid: str) -> list[str]:
 
 
 def expected_display(value: dict) -> str:
-    return {"document_path": "<current example document path>", "studio_directory": "<Studio installation directory>", "temporary_directory": "<system temporary directory>", "nan": "NaN", "positive-infinity": "+Inf", "negative-infinity": "-Inf"}.get(value["comparator"], value["value_json"])
+    return {"document_path": "<current example document path>", "document_directory": "<directory containing the current example document>", "studio_directory": "<Studio installation directory>", "temporary_directory": "<system temporary directory>", "nan": "NaN", "positive-infinity": "+Inf", "negative-infinity": "-Inf"}.get(value["comparator"], value["value_json"])
 
 
 def render_examples(projection: ExampleProjection, catalog: dict) -> dict[str, bytes]:

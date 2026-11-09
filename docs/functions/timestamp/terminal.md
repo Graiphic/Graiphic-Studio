@@ -12,17 +12,13 @@ Editor-managed Timestamp Front Panel control/indicator and linked Diagram termin
 
 **Terminal horodatage**
 
-Contrôle/indicateur horodatage sur le Front Panel et terminal lié dans le diagramme ; le sens dépend du rôle contrôle ou indicateur. L’exécution dépend de la cible sélectionnée. [Types] Contrôle/indicateur horodatage sur le Front Panel et terminal lié dans le diagramme ; le sens dépend du rôle contrôle ou indicateur.
+Contrôle/indicateur horodatage sur le Front Panel et terminal lié dans le diagramme ; le sens dépend du rôle contrôle ou indicateur. L’exécution dépend de la cible sélectionnée.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Editor-managed Timestamp Front Panel control/indicator and linked Diagram terminal; direction follows control versus indicator.
-
-Editor-managed Timestamp Front Panel control/indicator and linked Diagram terminal; direction follows control versus indicator.
 
 ## IN — inputs
 
@@ -36,9 +32,9 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Editor-managed Timestamp Front Panel control/indicator and linked Diagram terminal; direction follows control versus indicator.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

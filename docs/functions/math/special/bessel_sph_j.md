@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Fonction de Bessel sphérique de première espèce, d’ordre entier signé n ; j_0(r)=sin(r)/r. Distincte de J cylindrique. En r=0 : 1 pour n=0 ; 0 pour n&gt;0 ; singularité pour n&lt;0. Les ordres négatifs suivent les relations de réflexion sphériques. Formule : sqrt(pi/(2*r))*J_(n+1/2)(r). Exemple : j_0(1)=0.8414709848078965. [Types] x: f64; n: i32 → jn(x) [value]: f64. Les profils FROG frog_bessel_v1 / ni_documented_abs_v1 évaluent r=\|x\| ; cette adaptation de la documentation NI n’est ni une identité de parité mathématique ni une compatibilité NI mesurée. x est requis ; ordre et type non câblés valent 0 (choix FROG). Aucune conversion degrés/radians. Socle NI scalaire ; l’extension FROG applique ordre et espèce scalaires aux tableaux/clusters x réels numériques en préservant dimensions, vides typés et champs. Les feuilles réelles sont promues en f64 ; résultats à feuilles f64 ou complex&lt;f64&gt;. Ports entiers strictement i32 ; sans nouveau broadcasting ni argument complexe. Entrées non finies et singularités donnent NaN ; dépassement : infini signé ; sous-dépassement : avertissement ; sous-normaux conservés. Aucun terminal d’erreur. Catégories FROG : SINGULAR, NONFINITE_INPUT, INVALID_KIND, OVERFLOW, UNDERFLOW, NUMERICAL_FAILURE ; pas des codes NI.
+Fonction de Bessel sphérique de première espèce, d’ordre entier signé n ; j_0(r)=sin(r)/r. Distincte de J cylindrique. En r=0 : 1 pour n=0 ; 0 pour n&gt;0 ; singularité pour n&lt;0. Les ordres négatifs suivent les relations de réflexion sphériques. Formule : sqrt(pi/(2*r))*J_(n+1/2)(r). Exemple : j_0(1)=0.8414709848078965.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Spherical Bessel function of the first kind, signed integer order n; j_0(r)=sin(r)/r. Distinct from cylindrical J. At r=0: 1 for n=0; 0 for n&gt;0; singular for n&lt;0. Negative orders use spherical reflection relations. Formula: sqrt(pi/(2*r))*J_(n+1/2)(r). NI-documented scalar baseline: f64 argument and real order, exact i32 integer order/kind, f64 or complex&lt;f64&gt; outputs. FROG extension: x may be a real numeric Array/Cluster tree; preserve ranks, dimensions, typed empties and ordered fields, using the same scalar order/kind on every leaf. Real f32/f64/integer x leaves and scalar v promote to f64; results always have f64 or complex&lt;f64&gt; leaves. n/type remain exact i32. No additional broadcasting, complex arguments, degree conversion or fractional integer-order rounding. frog_bessel_v1: nonfinite real input or singularity gives NaN (NaN,NaN for complex); invalid type gives INVALID_KIND; finite-result overflow gives signed Infinity; nonzero underflow may round to zero with warning; preserve representable subnormals. Numeric diagnostics use the existing engine channel, with no extra error ports. These categories are FROG, not NI numeric codes. NI classic LabVIEW documents connector types and negative x as abs(x); no runtime NI observation or NXG signature is claimed. FROG owns defaults, required x and numeric diagnostics. FROG defaults: x required, unwired v/n/type=0. Adapter input policy ni_documented_abs_v1, numerical profile frog_bessel_v1. Local Highlight provider: frog.studio.bessel.bessel_sph_j.
-
-x: f64; n: i32 → jn(x) [value]: f64. FROG profiles frog_bessel_v1 / ni_documented_abs_v1 evaluate r=\|x\|; this documentary NI adapter policy is not a mathematical evenness identity or measured NI parity. x is required; unwired order and type default to 0 (FROG choices). No degrees/radians conversion. Scalar NI baseline; FROG also applies scalar order/kind to real numeric x arrays/clusters, preserving dimensions, typed empties and fields. Real leaves promote to f64; result leaves are f64 or complex&lt;f64&gt;. Integer ports remain exact i32; no new broadcasting or complex arguments. Nonfinite input and singularities return NaN; overflow gives signed Infinity, underflow warns and subnormals are preserved. No error terminals. FROG diagnostic categories: SINGULAR, NONFINITE_INPUT, INVALID_KIND, OVERFLOW, UNDERFLOW, NUMERICAL_FAILURE; these are not NI codes.
-
-</details>
 
 ## IN — inputs
 
@@ -54,9 +43,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-NI-documented scalar baseline: f64 argument and real order, exact i32 integer order/kind, f64 or complex&lt;f64&gt; outputs. FROG extension: x may be a real numeric Array/Cluster tree; preserve ranks, dimensions, typed empties and ordered fields, using the same scalar order/kind on every leaf. Real f32/f64/integer x leaves and scalar v promote to f64; results always have f64 or complex&lt;f64&gt; leaves. n/type remain exact i32. No additional broadcasting, complex arguments, degree conversion or fractional integer-order rounding.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+x: f64; n: i32 → jn(x) [value]: f64. FROG profiles frog_bessel_v1 / ni_documented_abs_v1 evaluate r=\|x\|; this documentary NI adapter policy is not a mathematical evenness identity or measured NI parity. x is required; unwired order and type default to 0 (FROG choices). No degrees/radians conversion. Scalar NI baseline; FROG also applies scalar order/kind to real numeric x arrays/clusters, preserving dimensions, typed empties and fields. Real leaves promote to f64; result leaves are f64 or complex&lt;f64&gt;. Integer ports remain exact i32; no new broadcasting or complex arguments. Nonfinite input and singularities return NaN; overflow gives signed Infinity, underflow warns and subnormals are preserved. No error terminals. FROG diagnostic categories: SINGULAR, NONFINITE_INPUT, INVALID_KIND, OVERFLOW, UNDERFLOW, NUMERICAL_FAILURE; these are not NI codes.
+
+NI-documented scalar baseline: f64 argument and real order, exact i32 integer order/kind, f64 or complex&lt;f64&gt; outputs. FROG extension: x may be a real numeric Array/Cluster tree; preserve ranks, dimensions, typed empties and ordered fields, using the same scalar order/kind on every leaf. Real f32/f64/integer x leaves and scalar v promote to f64; results always have f64 or complex&lt;f64&gt; leaves. n/type remain exact i32. No additional broadcasting, complex arguments, degree conversion or fractional integer-order rounding. frog_bessel_v1: nonfinite real input or singularity gives NaN (NaN,NaN for complex); invalid type gives INVALID_KIND; finite-result overflow gives signed Infinity; nonzero underflow may round to zero with warning; preserve representable subnormals. Numeric diagnostics use the existing engine channel, with no extra error ports. These categories are FROG, not NI numeric codes. NI classic LabVIEW documents connector types and negative x as abs(x); no runtime NI observation or NXG signature is claimed. FROG owns defaults, required x and numeric diagnostics. FROG defaults: x required, unwired v/n/type=0. Adapter input policy ni_documented_abs_v1, numerical profile frog_bessel_v1. Local Highlight provider: frog.studio.bessel.bessel_sph_j.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x: f64; n: i32 → jn(x) [value]: f64. Les profils FROG frog_bessel_v1 / ni_documented_abs_v1 évaluent r=\|x\| ; cette adaptation de la documentation NI n’est ni une identité de parité mathématique ni une compatibilité NI mesurée. x est requis ; ordre et type non câblés valent 0 (choix FROG). Aucune conversion degrés/radians. Socle NI scalaire ; l’extension FROG applique ordre et espèce scalaires aux tableaux/clusters x réels numériques en préservant dimensions, vides typés et champs. Les feuilles réelles sont promues en f64 ; résultats à feuilles f64 ou complex&lt;f64&gt;. Ports entiers strictement i32 ; sans nouveau broadcasting ni argument complexe. Entrées non finies et singularités donnent NaN ; dépassement : infini signé ; sous-dépassement : avertissement ; sous-normaux conservés. Aucun terminal d’erreur. Catégories FROG : SINGULAR, NONFINITE_INPUT, INVALID_KIND, OVERFLOW, UNDERFLOW, NUMERICAL_FAILURE ; pas des codes NI.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.bessel.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

@@ -12,15 +12,13 @@ Places a string terminal on the diagram.
 
 **Terminal chaine**
 
-Place un terminal chaine sur le diagramme. [Types] Terminal chaîne de face avant Studio : chaîne scalaire, sens entrée/sortie déterminé par le mode commande/indicateur. Connecteur géré par l’éditeur.
+Place un terminal chaine sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
-
-Studio front-panel String terminal: one scalar String whose input/output direction follows control/indicator mode. The editor owns the connector.
 
 ## IN — inputs
 
@@ -30,7 +28,20 @@ No fixed inputs are declared in this binding profile. The editor or selected ins
 
 No fixed outputs are declared in this binding profile. The editor or selected instance owns any contextual terminals.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Studio front-panel String terminal: one scalar String whose input/output direction follows control/indicator mode. The editor owns the connector.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Terminal chaîne de face avant Studio : chaîne scalaire, sens entrée/sortie déterminé par le mode commande/indicateur. Connecteur géré par l’éditeur.
+
+</details>
 
 Historical Studio binding profile; no additional public FROG semantics are claimed.
 

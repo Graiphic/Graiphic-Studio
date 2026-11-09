@@ -12,17 +12,13 @@ Exchanges the rows and columns of a matrix.
 
 **Transposer une matrice**
 
-Echange les lignes et les colonnes d'une matrice. [Types] Un tableau numérique 2D reste 2D avec le même type réel ou complexe. Il s’agit de la transposition conjuguée, contrairement à Transpose 2D Array.
+Echange les lignes et les colonnes d'une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A numeric 2D array remains 2D with the same real or complex element type. This is conjugate transpose, unlike ordinary Transpose 2D Array.
-
-A numeric 2D array remains 2D with the same real or complex element type. This is conjugate transpose, unlike ordinary Transpose 2D Array.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A numeric 2D array remains 2D with the same real or complex element type. This is conjugate transpose, unlike ordinary Transpose 2D Array.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau numérique 2D reste 2D avec le même type réel ou complexe. Il s’agit de la transposition conjuguée, contrairement à Transpose 2D Array.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,11 @@ A numeric 2D array remains 2D with the same real or complex element type. This i
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.transpose.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -67,7 +78,7 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | OUTPUT | `result` | `unknown` | `any_explicit` | `single` | — |
 
 </details>

@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Renvoie la plus grande et la plus petite des entrees numeriques. [Types] x,y comparables compatibles -&gt; max et min du type commun, y compris agrégats. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+Renvoie la plus grande et la plus petite des entrees numeriques.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Compatible comparable x,y -&gt; max/min of the common type. In Compare Elements, a single NaN selects the non-NaN value at both outputs; two NaNs remain NaN. The current exact scalar native authored profile is frog.studio.scalar.maxmin.nan-aware.v2; equality and two NaNs retain x bits. Explicit persisted exact.v1 remains historical and chooses x for unordered comparisons.
-
-Compatible comparable x,y -&gt; max and min of their common type, including aggregates. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
-
-</details>
 
 ## IN — inputs
 
@@ -55,9 +44,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Compatible comparable x,y -&gt; max and min of their common type, including aggregates. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 Compatible comparable x,y -&gt; max/min of the common type. In Compare Elements, a single NaN selects the non-NaN value at both outputs; two NaNs remain NaN. The current exact scalar native authored profile is frog.studio.scalar.maxmin.nan-aware.v2; equality and two NaNs retain x bits. Explicit persisted exact.v1 remains historical and chooses x for unordered comparisons.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x,y comparables compatibles -&gt; max et min du type commun, y compris agrégats. Studio: Profil de câblage uniquement : les variantes Waveform, unités physiques et formats de virgule fixe configurables ne sont pas modélisés. L’exécution nécessite toujours un fournisseur sur la cible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -73,11 +82,11 @@ Compatible comparable x,y -&gt; max/min of the common type. In Compare Elements,
 
 Scope: `requires_explicit_target_capability`.
 
-Implementation: `frog.studio.scalar.maxmin.nan-aware.v2`.
+Implementation: `frog.studio.numeric.max_min.owned.v1`.
 
-Required provider: `frog.studio.scalar-maxmin.nan-aware@2`.
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
 
-Real LLVM/Reference scalar selection requires exact i32/u32/i64/u64/f64. Aggregate overloads remain a separate capability. Historical exact.v1 is still admitted explicitly.
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

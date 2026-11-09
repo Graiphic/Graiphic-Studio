@@ -20,24 +20,13 @@ Formula: `log1p(x)`.
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Calcule le logarithme naturel de 1+x en conservant la précision près de zéro. [Types] Scalaires F32/F64 et complexes C32/C64, tableaux ou clusters numériques récursifs. Les entiers sont convertis en F64 ; au-delà de 2^53, la conversion peut arrondir. Les rangs des tableaux et les identités ordonnées des champs sont conservés. Deux opérandes composés exigent la même structure et les mêmes dimensions réelles ; un opérande entièrement scalaire peut être appliqué à chaque feuille de l’autre. Pas de virgule fixe, précision étendue, calcul matriciel nominal ni diffusion entre dimensions. Les résultats réels hors domaine suivent NaN/Inf IEEE ; les résultats complexes non finis sont refusés. Toutes les entrées sont obligatoires dans le profil de calcul Studio ; l’aperçu F64 non câblé ne fournit aucune valeur implicite. Le calcul Highlight local utilise son fournisseur dédié ; l’exécution runtime sur cible est indisponible.
+Calcule le logarithme naturel de 1+x en conservant la précision près de zéro.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Computes the natural logarithm of one plus x, retaining accuracy near zero. Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. This private Studio profile declares local Highlight calculation separately from target Runtime execution.
-
-Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. All operands are required by the Studio calculation profile; the F64 unwired preview is not an implicit value. Local Highlight calculation is available through its dedicated provider; target Runtime execution is unavailable.
-
-</details>
 
 ## IN — inputs
 
@@ -55,9 +44,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric scalar, array or recursively numeric cluster. F32/F64 and C32/C64 are supported; integer leaves convert to F64 before calculation and values above 2^53 may round. Arrays preserve rank and clusters preserve ordered field identities. Binary operands require matching aggregate structures and actual array dimensions; one whole scalar operand may lift through the other aggregate. No fixed-point, extended precision, nominal Matrix dispatch or dimensional broadcasting. Real invalid-domain results follow IEEE NaN/Infinity; non-finite complex results are explicitly unsupported. All operands are required by the Studio calculation profile; the F64 unwired preview is not an implicit value. Local Highlight calculation is available through its dedicated provider; target Runtime execution is unavailable.
+
+This private Studio profile declares local Highlight calculation separately from target Runtime execution.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Scalaires F32/F64 et complexes C32/C64, tableaux ou clusters numériques récursifs. Les entiers sont convertis en F64 ; au-delà de 2^53, la conversion peut arrondir. Les rangs des tableaux et les identités ordonnées des champs sont conservés. Deux opérandes composés exigent la même structure et les mêmes dimensions réelles ; un opérande entièrement scalaire peut être appliqué à chaque feuille de l’autre. Pas de virgule fixe, précision étendue, calcul matriciel nominal ni diffusion entre dimensions. Les résultats réels hors domaine suivent NaN/Inf IEEE ; les résultats complexes non finis sont refusés. Toutes les entrées sont obligatoires dans le profil de calcul Studio ; l’aperçu F64 non câblé ne fournit aucune valeur implicite. Le calcul Highlight local utilise son fournisseur dédié ; l’exécution runtime sur cible est indisponible.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.exponential.type-resolution@1`.
 - Implicit coercion: permitted by this profile.

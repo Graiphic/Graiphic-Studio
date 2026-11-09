@@ -12,17 +12,13 @@ Diagram node for cluster properties. Ports are available for authoring; executio
 
 **Proprietes du cluster**
 
-Noeud de diagramme pour les proprietes du cluster. Ports disponibles pour l'edition ; execution selon le moteur cible. [Types] Schéma du cluster -&gt; type du champ choisi ; NI propose aussi la sortie cluster et l’écriture des champs. Studio: Studio expose actuellement la lecture d’un champ sélectionné, et non la liste complète des propriétés de lecture et d’écriture de NI.
+Noeud de diagramme pour les proprietes du cluster. Ports disponibles pour l'edition ; execution selon le moteur cible.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Cluster field access. The selected field name is stored in the node text; an unconfigured field remains unresolved.
-
-Cluster schema -&gt; selected field type; NI also exposes cluster pass-through and configurable field writes. Studio: Studio currently exposes one selected field read, not the full NI read/write property list.
 
 ## IN — inputs
 
@@ -40,7 +36,22 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+Cluster schema -&gt; selected field type; NI also exposes cluster pass-through and configurable field writes. Studio: Studio currently exposes one selected field read, not the full NI read/write property list.
+
+Cluster field access. The selected field name is stored in the node text; an unconfigured field remains unresolved.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Schéma du cluster -&gt; type du champ choisi ; NI propose aussi la sortie cluster et l’écriture des champs. Studio: Studio expose actuellement la lecture d’un champ sélectionné, et non la liste complète des propriétés de lecture et d’écriture de NI.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.palette.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

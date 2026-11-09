@@ -12,17 +12,13 @@ Tests whether a path contains at least one component.
 
 **Est chemin non vide**
 
-Teste si un chemin contient au moins un composant. [Types] Un chemin scalaire produit un booléen scalaire indiquant un chemin valide et non vide. Aucun tableau ni cluster ; ce prédicat ne garantit pas l’existence d’un fichier.
+Teste si un chemin contient au moins un composant.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-One scalar Path produces one scalar Boolean indicating a non-empty valid path. No arrays or clusters; this predicate does not establish file existence.
-
-One scalar Path produces one scalar Boolean indicating a non-empty valid path. No arrays or clusters; this predicate does not establish file existence.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 One scalar Path produces one scalar Boolean indicating a non-empty valid path. No arrays or clusters; this predicate does not establish file existence.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un chemin scalaire produit un booléen scalaire indiquant un chemin valide et non vide. Aucun tableau ni cluster ; ce prédicat ne garantit pas l’existence d’un fichier.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -56,7 +63,11 @@ One scalar Path produces one scalar Boolean indicating a non-empty valid path. N
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.path.is_not_empty.owned.v1`.
+
+Required provider: `frog.studio.comparison.owned-tree@1`.
+
+The existing compiled NumericAggregate service provides the bounded Comparison profile on explicitly admitted targets. The fixed scalar Path input and Boolean output retain their existing authoring contract; this predicate does not establish file existence. Complete types, nominal schemas, shapes and exact physical carriers remain checked. This declaration is not a passing test, full overload coverage or AOT/package qualification.
 
 **Authoring/target contract limits:**
 

@@ -20,7 +20,19 @@ Dossier Mathematics réservé à Geometry. Aucune fonction n’a encore été aj
 
 This entry opens a palette folder; it is not an executable dataflow function.
 
-No direct child operation is declared in the current catalogue snapshot. Browse the family reference for the entries that are available.
+| Entry | Purpose |
+| --- | --- |
+| [2D Shift](../math/geometry/shift_2d.md) | Adds the displacement to coordinates. Equal coordinate-array lengths; no truncation or scalar broadcasting. |
+| [2D Rotation](../math/geometry/rotation_2d.md) | Passive counterclockwise rotation of coordinate axes, radians. (1,0) at pi/2 becomes (0,-1). |
+| [3D Shift](../math/geometry/shift_3d.md) | Adds the displacement to coordinates. Equal coordinate-array lengths; no truncation or scalar broadcasting. |
+| [3D Rot. (Euler)](../math/geometry/rotation_3d_euler.md) | Intrinsic rotation of axes; D = (Ra(phi) Rb(theta) Rc(psi)) transposed. All twelve documented orders; default ZXZ. |
+| [3D Rot. (Direct)](../math/geometry/rotation_3d_direction.md) | Maps old coordinates into the new frame using an actual orthonormal 3x3 direction-cosine matrix, determinant +1; never axis-angle or implicit orthogonalization. |
+| [Cross Product](../math/geometry/cross_product.md) | Right-handed cross product of exactly three components, without normalization. |
+| [Euler Angles To Direction Cosines](../math/geometry/euler_to_direction.md) | NI matrix convention transcribed from its official ZXZ formula; all twelve intrinsic-axis orders, radians. |
+| [Direction Cosines To Euler Angles](../math/geometry/direction_to_euler.md) | Inverse of the common passive Euler convention. GS deterministic singular representation; reconstruct the same matrix rather than promise unique angles. |
+| [3D Coordinate Conversion](../math/geometry/coordinate_conversion_3d.md) | NI conversion codes 0 Cartesian/spherical, 1 spherical/Cartesian, 2 Cartesian/cylindrical, 3 cylindrical/Cartesian, 4 spherical/cylindrical, 5 cylindrical/spherical. Radians, phi polar from +Z; undefined azimuth is zero, negative radius refused; spherical polar input must be in [0,pi]. |
+| [Angle](geometry/angle.md) | Browse the Angle palette. |
+| [Computational Geometry](geometry/computational_geometry.md) | Browse the Computational Geometry palette. |
 
 ## Examples
 

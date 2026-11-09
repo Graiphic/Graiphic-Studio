@@ -12,17 +12,13 @@ Converts a string to a path.
 
 **Chaine en chemin**
 
-Convertit une chaine en chemin. [Types] Une chaîne ou un tableau/cluster ne contenant que des chaînes produit des chemins avec les mêmes rangs, identités des champs et imbrications.
+Convertit une chaine en chemin.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A String or an array/cluster containing only Strings produces Paths with exactly the same rank, field identities and nesting.
-
-A String or an array/cluster containing only Strings produces Paths with exactly the same rank, field identities and nesting.
 
 ## IN — inputs
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A String or an array/cluster containing only Strings produces Paths with exactly the same rank, field identities and nesting.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une chaîne ou un tableau/cluster ne contenant que des chaînes produit des chemins avec les mêmes rangs, identités des champs et imbrications.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

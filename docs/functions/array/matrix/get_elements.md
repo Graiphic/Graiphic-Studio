@@ -12,17 +12,13 @@ Returns selected elements from a matrix.
 
 **Obtenir les elements d'une matrice**
 
-Renvoie les elements selectionnes d'une matrice. [Types] Un tableau numérique 2D expose des paires déroulables d’indices ligne/colonne. Indices scalaires réels ou tableaux 1D, convertis en I32. Une sortie est scalaire seulement si les deux indices sont explicitement câblés en scalaires ; sinon elle reste 2D du type numérique d’entrée.
+Renvoie les elements selectionnes d'une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A numeric 2D array exposes repeatable row/column index pairs. Indices accept real numeric scalars or 1D arrays, converted to I32. An output is scalar only when both indices are explicitly wired as scalars; otherwise it is 2D, retaining the input numeric type.
-
-A numeric 2D array exposes repeatable row/column index pairs. Indices accept real numeric scalars or 1D arrays, converted to I32. An output is scalar only when both indices are explicitly wired as scalars; otherwise it is 2D, retaining the input numeric type.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A numeric 2D array exposes repeatable row/column index pairs. Indices accept real numeric scalars or 1D arrays, converted to I32. An output is scalar only when both indices are explicitly wired as scalars; otherwise it is 2D, retaining the input numeric type.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau numérique 2D expose des paires déroulables d’indices ligne/colonne. Indices scalaires réels ou tableaux 1D, convertis en I32. Une sortie est scalaire seulement si les deux indices sont explicitement câblés en scalaires ; sinon elle reste 2D du type numérique d’entrée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -58,7 +65,11 @@ A numeric 2D array exposes repeatable row/column index pairs. Indices accept rea
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.get_elements.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -69,7 +80,7 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `row_indices` | `array<i32>` | `any_explicit` | `single` | — |
 | INPUT | `column_indices` | `i32` | `any_explicit` | `single` | — |
 | OUTPUT | `elements` | `array<f64,rank=2>` | `any_explicit` | `single` | — |

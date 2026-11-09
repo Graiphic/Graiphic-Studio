@@ -12,17 +12,13 @@ Places a path terminal on the diagram.
 
 **Terminal chemin**
 
-Place un terminal chemin sur le diagramme. [Types] Terminal Chemin géré par l’éditeur, associé à une commande ou un indicateur de face avant ; son sens suit ce rôle. Ce n’est pas une fonction appelable.
+Place un terminal chemin sur le diagramme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Editor-managed Path front-panel control/indicator terminal; direction follows control versus indicator. It is not a callable function.
-
-Editor-managed Path front-panel control/indicator terminal; direction follows control versus indicator. It is not a callable function.
 
 ## IN — inputs
 
@@ -36,9 +32,20 @@ No fixed inputs are declared in this binding profile. No connector is invented h
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Editor-managed Path front-panel control/indicator terminal; direction follows control versus indicator. It is not a callable function.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Terminal Chemin géré par l’éditeur, associé à une commande ou un indicateur de face avant ; son sens suit ce rôle. Ce n’est pas une fonction appelable.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `declared_output_type`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

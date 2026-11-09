@@ -18,22 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Play/Highlight local enveloppe une valeur typée immuable exacte dans un Variant. Les tableaux gardent rang et dimensions, les clusters leurs identifiants de champs, les I128/U128 leur représentation lexicale exacte, sans conversion vers le profil f64 des états EDO. Boxer un Variant ajoute explicitement un niveau. Les limites communes de placement des valeurs restent actives. Aucun backend Variant externe, attribut ou format de sérialisation n’est annoncé. Aucun support cible public FROG/LLVM n’est déclaré. [Types] Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
+Play/Highlight local enveloppe une valeur typée immuable exacte dans un Variant. Les tableaux gardent rang et dimensions, les clusters leurs identifiants de champs, les I128/U128 leur représentation lexicale exacte, sans conversion vers le profil f64 des états EDO. Boxer un Variant ajoute explicitement un niveau. Les limites communes de placement des valeurs restent actives. Aucun backend Variant externe, attribut ou format de sérialisation n’est annoncé. Aucun support cible public FROG/LLVM n’est déclaré.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Any data T -&gt; Variant; contained T does not change the Variant wire type.
-
-</details>
 
 ## IN — inputs
 
@@ -51,9 +42,27 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Local Studio Play/Highlight wraps one immutable exact typed value in a Variant envelope. Arrays retain rank and dimensions, clusters retain field identities, and I128/U128 lexical payloads remain exact; there is no conversion to the ODE f64 state profile. Boxing a Variant deliberately adds one nesting level. Common value placement limits remain active. No external Variant backend, attributes or serialization are implied. Public FROG/LLVM target support is not declared.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Any data T -&gt; Variant; contained T does not change the Variant wire type.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
+
+</details>
 
 - Type resolution: `fixed`; result expression: `variant`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Multiplie x par 2 élevé à la puissance n. [Types] Le profil scalaire natif local est exactement x:F64,n:F64 -&gt; result:F64. L’exposant est arrondi à l’entier le plus proche, égalités vers le pair, et doit tenir dans un entier signé 32 bits. Le calcul préserve les résultats IEEE, dont les zéros signés et les débordements. Les autres signatures numériques et agrégées peuvent être câblées mais nécessitent leur propre réalisation cible ; aucune promotion implicite ni réalisation par décalage de bits entier n’est annoncée. Waveforms, unités physiques et formats de virgule fixe configurables ne sont pas modélisés.
+Multiplie x par 2 élevé à la puissance n.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Scale x by 2 raised to rounded n; floating n uses nearest ties-even. The local compiled profile admits exact x:F64,n:F64-&gt;result:F64 only, with finite rounded n within signed32.
-
-The local native scalar profile is exactly x:F64,n:F64 -&gt; result:F64. The exponent rounds to the nearest integer, with ties to even, and must fit a signed 32-bit integer. Scaling preserves IEEE results, including signed zero and overflow/underflow. Other numeric and aggregate signatures may be authored but need their own target implementation; no implicit promotion or integer bit-shift realization is claimed. Waveforms, physical units and configurable fixed-point layouts are not modeled.
-
-</details>
 
 ## IN — inputs
 
@@ -54,7 +43,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric x and exponent n, scalar/aggregate -&gt; scaled numeric structure; exponent values converted to integer. The current native scalar provider preserves x in I4/U4/I8/U8/I16/U16/I32/U32/I64/U64/SGL/DBL and accepts the same plain integer/real types for n. Floating n rounds to the nearest integer with ties to even; it must be finite with rounded magnitude below 2^64. For real x, n must also fit signed32 and scaling follows IEEE ldexp behavior. For integer x, scaling uses width-bounded bit shifts; signed right shifts are arithmetic and unsigned right shifts zero-fill. Array/Cluster authoring still needs its own active target admission. Complex, configurable fixed-point, waveforms and physical units are not part of this plain scalar provider.
+
+Scale x by 2 raised to rounded n, preserving the exact x representation. The owned scalar profile admits I4/U4/I8/U8/I16/U16/I32/U32/I64/U64/F32/F64 operands with result type equal to x; floating n rounds nearest ties-even and must have finite magnitude below 2^64. Real x uses ldexp with a checked signed-32 exponent. Integer x uses width-bounded shifts, arithmetic right shift for signed x and zero-fill right shift for unsigned x. Complete Array/Cluster authoring signatures still require separate target admission; no complex, configurable fixed-point, waveform or physical-unit scalar carrier is claimed.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x numérique et exposant n, scalaires/agrégats -&gt; structure numérique mise à l’échelle ; exposants convertis en entiers. Le fournisseur scalaire natif courant conserve x en I4/U4/I8/U8/I16/U16/I32/U32/I64/U64/SGL/DBL et accepte les mêmes types entiers/réels simples pour n. Si n est flottant, il est arrondi au plus proche, égalités vers le pair ; il doit être fini et sa magnitude arrondie inférieure à 2^64. Pour x réel, n doit aussi tenir dans un entier signé32 et le calcul suit le comportement IEEE de ldexp. Pour x entier, le calcul utilise des décalages bornés à sa largeur ; le décalage à droite signé est arithmétique et le non signé introduit des zéros. Les signatures auteur Tableau/Cluster nécessitent leur propre admission sur la cible active. Complexes, virgule fixe configurable, waveforms et unités physiques ne font pas partie de ce fournisseur scalaire simple.
+
+</details>
 
 Authoring preserves numeric representation of x and compatible shape; floating n is rounded ties-even. The compiled scalar profile requires exact F64 x,n,result.
 
@@ -64,8 +75,6 @@ Authoring preserves numeric representation of x and compatible shape; floating n
 - Shape rule: `compatible_rank_and_schema; scalar_lift`.
 - Scalar lifting: yes.
 
-Numeric x and exponent n, scalar/aggregate -&gt; scaled numeric structure; exponent values converted to integer.
-
 **Input count:** 2; this contract does not enable variadic inputs.
 
 ## Execution and limits
@@ -74,11 +83,11 @@ Numeric x and exponent n, scalar/aggregate -&gt; scaled numeric structure; expon
 
 Scope: `requires_explicit_target_capability`.
 
-Implementation: `frog.studio.numeric.scale_power_two.real64.v1`.
+Implementation: `frog.studio.numeric.scale_power_two.owned.v1`.
 
-Required provider: `frog.studio.numeric.scale-power-two-even@1; exact F64 ScalarProvider on active composed-native target`.
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
 
-Exact local scalar x:F64,n:F64-&gt;result:F64. n rounds to nearest even independently of caller FENV, then must fit signed32. Nonfinite/out-of-domain n faults atomically. x signedzero, Inf and NaN bits preserved; finite ldexp follows native Runtime IEEE environment including under/overflow. No integer shift, aggregate or implicit numeric-promotion capability is implied.
+The existing compiled Numeric provider realizes a bounded exact-type profile on explicitly admitted targets. Required Source schemas, parameters, shapes and physical carriers remain checked; unsupported overloads are refused. Availability declaration is not a passing test or AOT/package qualification.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>

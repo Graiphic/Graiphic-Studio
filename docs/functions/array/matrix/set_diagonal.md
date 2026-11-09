@@ -12,17 +12,13 @@ Replaces a diagonal in a matrix.
 
 **Definir une diagonale de matrice**
 
-Remplace une diagonale dans une matrice. [Types] Paires déroulables d’indices scalaires ligne/colonne et nouvelles diagonales. Entrée/sortie numérique 2D. Remplacement par un scalaire numérique ou vecteur ligne/colonne 2D, avec promotion numérique commune à la matrice et au remplacement. Pas de remplacement 1D ; les longueurs relèvent du runtime.
+Remplace une diagonale dans une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Repeatable scalar row/column index pairs and new diagonal inputs. Matrix input/output is numeric 2D. Replacement accepts a numeric scalar fill or 2D numeric row/column vector, with numeric promotion shared by the matrix and replacement. A 1D replacement is not accepted; vector lengths are runtime values.
-
-Repeatable scalar row/column index pairs and new diagonal inputs. Matrix input/output is numeric 2D. Replacement accepts a numeric scalar fill or 2D numeric row/column vector, with numeric promotion shared by the matrix and replacement. A 1D replacement is not accepted; vector lengths are runtime values.
 
 ## IN — inputs
 
@@ -43,9 +39,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Repeatable scalar row/column index pairs and new diagonal inputs. Matrix input/output is numeric 2D. Replacement accepts a numeric scalar fill or 2D numeric row/column vector, with numeric promotion shared by the matrix and replacement. A 1D replacement is not accepted; vector lengths are runtime values.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Paires déroulables d’indices scalaires ligne/colonne et nouvelles diagonales. Entrée/sortie numérique 2D. Remplacement par un scalaire numérique ou vecteur ligne/colonne 2D, avec promotion numérique commune à la matrice et au remplacement. Pas de remplacement 1D ; les longueurs relèvent du runtime.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -59,7 +66,11 @@ Repeatable scalar row/column index pairs and new diagonal inputs. Matrix input/o
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.set_diagonal.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -70,9 +81,9 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `diagonal` | `i32` | `numeric_implicit` | `single` | — |
-| INPUT | `diagonal_values` | `f64` | `any_explicit` | `single` | — |
+| INPUT | `diagonal_values` | `f64` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `column` | `i32` | `numeric_implicit` | `single` | — |
 | OUTPUT | `result` | `unknown` | `any_explicit` | `single` | — |
 

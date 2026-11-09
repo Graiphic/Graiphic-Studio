@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Additionne les deux entrees numeriques et renvoie leur somme. [Types] x,y numériques -&gt; scalaire/tableau/cluster promu ; extension scalaire et variantes Waveform/Timestamp chez NI. Studio: La fonction publique frog.core.add conserve son contrat fixé pour les scalaires et tableaux numériques, ainsi que la règle stricte imposant des tableaux de même forme ; cette revue ne redéfinit pas cette règle.
+Additionne les deux entrees numeriques et renvoie leur somme.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **defined**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type.
-
-Numeric x,y -&gt; promoted scalar/array/cluster; scalar lifting and waveform/timestamp overloads exist in NI. Studio: Public frog.core.add retains its pinned numeric scalar/array contract and strict same-array-shape rule; this review does not redefine that law.
-
-</details>
 
 ## IN — inputs
 
@@ -58,7 +47,29 @@ Additional input IDs: `input_N`, starting at 3.
 
 When expanded beyond two operands, Studio displays x1, x2, …, xN and the corresponding result expression. The persisted input IDs and canonical operand order stay unchanged.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Numeric x,y -&gt; promoted scalar/array/cluster; scalar lifting and waveform/timestamp overloads exist in NI. Studio: Public frog.core.add retains its pinned numeric scalar/array contract and strict same-array-shape rule; this review does not redefine that law.
+
+Adds connected operands in canonical port order with a canonical left fold after coercion to the resolved result leaf type.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+x,y numériques -&gt; scalaire/tableau/cluster promu ; extension scalaire et variantes Waveform/Timestamp chez NI. Studio: La fonction publique frog.core.add conserve son contrat fixé pour les scalaires et tableaux numériques, ainsi que la règle stricte imposant des tableaux de même forme ; cette revue ne redéfinit pas cette règle.
+
+</details>
 
 frog.core.add.type-resolution@1; promote all numeric leaves to one common type
 

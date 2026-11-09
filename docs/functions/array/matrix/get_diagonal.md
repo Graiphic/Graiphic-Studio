@@ -12,17 +12,13 @@ Extracts a diagonal from a matrix.
 
 **Obtenir la diagonale d'une matrice**
 
-Extrait une diagonale d'une matrice. [Types] Une entrée numérique 2D expose des paires déroulables d’indices ligne/colonne (réels convertis en I32, zéro par défaut). Chaque diagonale reste 2D du même type numérique ; la longueur de sa colonne relève du runtime.
+Extrait une diagonale d'une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-A numeric 2D input exposes repeatable pairs of scalar row/column indices (real numeric, converted to I32, default zero). Every diagonal output remains 2D, with the same numeric type; its single-column length is a runtime value.
-
-A numeric 2D input exposes repeatable pairs of scalar row/column indices (real numeric, converted to I32, default zero). Every diagonal output remains 2D, with the same numeric type; its single-column length is a runtime value.
 
 ## IN — inputs
 
@@ -42,9 +38,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 A numeric 2D input exposes repeatable pairs of scalar row/column indices (real numeric, converted to I32, default zero). Every diagonal output remains 2D, with the same numeric type; its single-column length is a runtime value.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une entrée numérique 2D expose des paires déroulables d’indices ligne/colonne (réels convertis en I32, zéro par défaut). Chaque diagonale reste 2D du même type numérique ; la longueur de sa colonne relève du runtime.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -58,7 +65,11 @@ A numeric 2D input exposes repeatable pairs of scalar row/column indices (real n
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.get_diagonal.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -69,7 +80,7 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `diagonal` | `i32` | `numeric_implicit` | `single` | — |
 | INPUT | `column` | `i32` | `numeric_implicit` | `single` | — |
 | OUTPUT | `diagonal_values` | `array<f64,rank=2>` | `any_explicit` | `single` | — |

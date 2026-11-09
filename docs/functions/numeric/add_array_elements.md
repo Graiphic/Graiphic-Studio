@@ -12,7 +12,7 @@ Reduces a numeric array by adding all defined elements.
 
 **Additionner les elements du tableau**
 
-Reduit un tableau numerique en additionnant tous ses elements definis. [Types] Un tableau numérique nD se réduit au type et à la structure d'un élément, pas à DBL fixe. Le point fixe n'est pas accepté.
+Reduit un tableau numerique en additionnant tous ses elements definis.
 
 </details>
 
@@ -20,15 +20,11 @@ Reduit un tableau numerique en additionnant tous ses elements definis. [Types] U
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-An n-D numeric array reduces to the type and structure of one element, not a fixed DBL. Fixed-point is not accepted.
-
-An n-D numeric array reduces to the type and structure of one element, not a fixed DBL. Fixed-point is not accepted.
-
 ## IN — inputs
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
-| numeric array `value` | `array<T:numeric,rank>=1>` | Required | Not specified | — |
+| numeric array `value` | `array<T:numeric_tree,rank>=1>` | Required | Not specified | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -40,9 +36,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 An n-D numeric array reduces to the type and structure of one element, not a fixed DBL. Fixed-point is not accepted.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Un tableau numérique nD se réduit au type et à la structure d'un élément, pas à DBL fixe. Le point fixe n'est pas accepté.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: permitted by this profile.
@@ -56,6 +63,14 @@ not_variadic
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.add_array_elements.owned.v1`.
+
+Required provider: `frog.studio.numeric.aggregate-left-fold@1`.
+
+The compiled Numeric service reduces exact owned Arrays in row-major order, preserves element types and reuses the shared tree walker for compound elements. Empty sum/product identities and per-step rounding are contractual. Nonfinite/advanced/complex leaves require separate admission; no universal or AOT qualification is claimed.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
@@ -67,7 +82,7 @@ not_variadic
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `value` | `array:f64` | `numeric_array_implicit` | `single` | — |
+| INPUT | `value` | `array:f64` | `any_explicit` | `single` | — |
 | OUTPUT | `result` | `f64` | `exact` | `single` | — |
 
 </details>

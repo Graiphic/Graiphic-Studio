@@ -18,24 +18,13 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Convertit le stockage d'une chaine en tableau d'octets. [Types] String scalaire + encodage optionnel -&gt; tableau U8 1D (et erreur NXG). Studio: L’alias de Studio limité à la valeur n’expose pas les terminaux NI d’encodage et d’erreur.
+Convertit le stockage d'une chaine en tableau d'octets.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-<details>
-<summary>Retained binding and help description</summary>
-
-This is the source declaration, not the current measured product-execution assessment.
-
-Converts raw String bytes to an exact rank-one U8 Array; preserves NUL and byte order without Unicode decoding.
-
-Scalar String + optional encoding -&gt; 1D U8 array (and error in NXG). Studio: Studio value-only alias does not expose NI encoding/error terminals.
-
-</details>
 
 ## IN — inputs
 
@@ -53,7 +42,29 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+Scalar String + optional encoding -&gt; 1D U8 array (and error in NXG). Studio: Studio value-only alias does not expose NI encoding/error terminals.
+
+Converts raw String bytes to an exact rank-one U8 Array; preserves NUL and byte order without Unicode decoding.
+
+</details>
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+String scalaire + encodage optionnel -&gt; tableau U8 1D (et erreur NXG). Studio: L’alias de Studio limité à la valeur n’expose pas les terminaux NI d’encodage et d’erreur.
+
+</details>
 
 fixed explicit result array&lt;u8,rank=1&gt;
 

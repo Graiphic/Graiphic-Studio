@@ -12,17 +12,13 @@ Deserializes a value from JSON text.
 
 **Redresser depuis JSON**
 
-Deserialise une valeur depuis un texte JSON. [Types] Une chaîne JSON et un type/défaut T pris en charge produisent exactement T et une erreur. Chemin tableau 1D de chaînes et booléens extensions/défauts des nulls/validation stricte exposés. Type non câblé : indéterminé. Schémas chemin, enum, référence, complexe et FXP refusés.
+Deserialise une valeur depuis un texte JSON.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-JSON String plus a supported type/default T produce exactly T and an error cluster. A 1D String path and Boolean extension/null-default/strict-validation options are exposed. Unwired type remains unresolved; Path, enum, reference, complex and FXP schemas are rejected.
-
-JSON String plus a supported type/default T produce exactly T and an error cluster. A 1D String path and Boolean extension/null-default/strict-validation options are exposed. Unwired type remains unresolved; Path, enum, reference, complex and FXP schemas are rejected.
 
 ## IN — inputs
 
@@ -47,9 +43,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 JSON String plus a supported type/default T produce exactly T and an error cluster. A 1D String path and Boolean extension/null-default/strict-validation options are exposed. Unwired type remains unresolved; Path, enum, reference, complex and FXP schemas are rejected.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Une chaîne JSON et un type/défaut T pris en charge produisent exactement T et une erreur. Chemin tableau 1D de chaînes et booléens extensions/défauts des nulls/validation stricte exposés. Type non câblé : indéterminé. Schémas chemin, enum, référence, complexe et FXP refusés.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.

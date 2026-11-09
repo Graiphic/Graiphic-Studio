@@ -12,17 +12,13 @@ Extracts a rectangular subset from a matrix.
 
 **Obtenir une sous-matrice**
 
-Extrait une sous-matrice rectangulaire d'une matrice. [Types] Entrée/sortie numérique 2D. Quatre bornes optionnelles réelles (première/dernière ligne, première/dernière colonne), converties en I32. Les fins sont des indices inclusifs, pas des longueurs. Sans bornes, toute la matrice est sélectionnée.
+Extrait une sous-matrice rectangulaire d'une matrice.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Numeric 2D input/output. Four optional scalar real numeric bounds (first/last row, first/last column) convert to I32. End bounds are inclusive indices, not lengths. Unwired bounds select the full extent.
-
-Numeric 2D input/output. Four optional scalar real numeric bounds (first/last row, first/last column) convert to I32. End bounds are inclusive indices, not lengths. Unwired bounds select the full extent.
 
 ## IN — inputs
 
@@ -44,9 +40,20 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
+
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric 2D input/output. Four optional scalar real numeric bounds (first/last row, first/last column) convert to I32. End bounds are inclusive indices, not lengths. Unwired bounds select the full extent.
+
+<details>
+<summary>Notes de types et de compatibilité de l’aide Studio</summary>
+
+Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne constitue pas une déclaration de prise en charge par le runtime Studio ; consultez les profils et limites d’exécution de cette fiche.
+
+Entrée/sortie numérique 2D. Quatre bornes optionnelles réelles (première/dernière ligne, première/dernière colonne), converties en I32. Les fins sont des indices inclusifs, pas des longueurs. Sans bornes, toute la matrice est sélectionnée.
+
+</details>
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -60,7 +67,11 @@ Numeric 2D input/output. Four optional scalar real numeric bounds (first/last ro
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.array.matrix.get_subset.owned.v1`.
+
+Required provider: `frog.studio.array.owned@1`.
+
+Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
 **Authoring/target contract limits:**
 
@@ -71,7 +82,7 @@ Authoring support is not an execution capability.
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
-| INPUT | `matrix` | `unknown` | `any_explicit` | `single` | — |
+| INPUT | `matrix` | `unknown` | `numeric_scalar_or_array_implicit` | `single` | — |
 | INPUT | `row` | `i32` | `numeric_implicit` | `single` | — |
 | INPUT | `column` | `i32` | `numeric_implicit` | `single` | — |
 | INPUT | `rows` | `i32` | `numeric_implicit` | `single` | — |

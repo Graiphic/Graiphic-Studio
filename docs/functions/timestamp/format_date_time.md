@@ -12,17 +12,13 @@ Optional time format String (%c), scalar Timestamp or real number (current time 
 
 **Formater la chaîne de date et heure**
 
-Format horaire facultatif (%c), horodatage scalaire ou nombre réel (instant courant si absent) et option UTC produisent une chaîne date/heure formatée. L’exécution dépend de la cible sélectionnée. [Types] Format horaire facultatif (%c), horodatage scalaire ou nombre réel (instant courant si absent) et option UTC produisent une chaîne date/heure formatée.
+Format horaire facultatif (%c), horodatage scalaire ou nombre réel (instant courant si absent) et option UTC produisent une chaîne date/heure formatée. L’exécution dépend de la cible sélectionnée.
 
 </details>
 
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
-
-Optional time format String (%c), scalar Timestamp or real number (current time if omitted) and UTC flag produce a formatted date/time String.
-
-Optional time format String (%c), scalar Timestamp or real number (current time if omitted) and UTC flag produce a formatted date/time String.
 
 ## IN — inputs
 
@@ -42,9 +38,9 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
-## Types and connection rules
+## Types and Compatibility
 
-Optional time format String (%c), scalar Timestamp or real number (current time if omitted) and UTC flag produce a formatted date/time String.
+The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -58,11 +54,16 @@ Optional time format String (%c), scalar Timestamp or real number (current time 
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support does not establish runtime execution on the active target.
+Implementation: `frog.studio.timestamp.format_date_time.v1`.
+
+Required provider: `frog.studio.timestamp.native@1`.
+
+Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared types. Windows NLS/timezone services are required for local rendering. Explicit range, precision and format refusals remain. Admission, observed execution and AOT package qualification require separate current evidence; this declaration is not that evidence.
 
 **Authoring/target contract limits:**
 
-- NI reference verified for authoring types; this does not establish runtime support on the active target.
+- The native Timestamp profile is bounded; unsupported precision, calendar, locale and format variants remain explicit refusals.
+- A compiled service declaration alone does not qualify actual Run or an AOT package.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
