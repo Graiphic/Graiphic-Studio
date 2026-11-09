@@ -12,3 +12,5 @@ _verification/
 *.log
 __pycache__/
 /proof/
+
+# Current qualified workspace rules (9 November 2026).
