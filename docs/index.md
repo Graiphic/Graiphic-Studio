@@ -6,7 +6,7 @@ Build an interface, connect a dataflow, and inspect one `.frog` document from
 three coordinated views. Start with a short walkthrough or open the reference
 for the object you are using.
 
-The [inspection and assurance guide](reference/inspection-and-assurance.md) explains the product direction, the role of informed human control and the difference between a readable graph, tests and a formal guarantee.
+Read [Why work in Graiphic Studio?](reference/product-philosophy.md) for the value of visual structure, execution observation and change in one environment. The [inspection and evidence guide](reference/inspection-and-assurance.md) explains the role of the available checks.
 
 ## Start here
 

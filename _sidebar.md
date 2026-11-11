@@ -61,7 +61,8 @@
   - [Connectivity](/docs/functions/connectivity/index.md)
 
 - **Reference**
-  - [Inspection and assurance](/docs/reference/inspection-and-assurance.md)
+  - [Product philosophy](/docs/reference/product-philosophy.md)
+  - [Inspection and evidence](/docs/reference/inspection-and-assurance.md)
   - [Current capabilities](/docs/reference/development-checkpoint.md)
   - [26 October documentation reconciliation](/docs/reference/documentation-refresh-2026-10-26.md)
   - [Keyboard shortcuts](/docs/reference/keyboard-shortcuts.md)
