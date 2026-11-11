@@ -6,6 +6,8 @@ Build an interface, connect a dataflow, and inspect one `.frog` document from
 three coordinated views. Start with a short walkthrough or open the reference
 for the object you are using.
 
+The [inspection and assurance guide](reference/inspection-and-assurance.md) explains the product direction, the role of informed human control and the difference between a readable graph, tests and a formal guarantee.
+
 ## Start here
 
 | Your next task | Guide |

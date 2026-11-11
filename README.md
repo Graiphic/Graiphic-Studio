@@ -31,6 +31,12 @@ pointer and links directly to the relevant reference.
 | Customize the editor | [Studio Options](docs/interface/options.md) |
 | Check support and limitations | [Current capabilities](docs/reference/development-checkpoint.md) |
 
+## Product direction and assurance
+
+Graiphic Studio is Graiphic's proprietary engineering environment built on the open FROG language. The objective is continuity of informed human control from generated logic to executable results. Graphical inspection, runtime observations, tests and scoped formal verification have complementary roles; a clear diagram is not a correctness proof.
+
+Read [Inspection and assurance](docs/reference/inspection-and-assurance.md) for current coverage, evidence boundaries and the proposed verification research direction. This update announces no FROG-to-Verus integration, general language importer, measured review advantage or new binary release.
+
 ## About these docs
 
 This repository contains the user guides and reference for Graiphic Studio.
