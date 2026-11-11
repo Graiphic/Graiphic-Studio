@@ -2,7 +2,7 @@
 
 The [26 October documentation reconciliation](docs/reference/documentation-refresh-2026-10-26.md) brings forward Run/Highlight, standalone Build, standard Type Def, Tabs and attached-comment guides. The example results below remain a dated measurement.
 
-The visual workspace for designing interfaces and dataflow in `.frog` documents.
+A visual workspace aimed at helping people follow and validate machine-generated software through a structured FROG model and graphical dataflow.
 
 Design a Front Panel, connect typed operations in the Block Diagram, and inspect
 the resulting document in Source. Context Help explains the object under the
@@ -33,9 +33,9 @@ pointer and links directly to the relevant reference.
 
 ## Product direction
 
-Graiphic Studio develops an integrated visual environment for building programs, understanding their behavior and making changes you can check. Connections and hierarchy expose relationships; Run and Highlight connect supported logic to execution. The workflow serves everyday programming, maintenance and review of proposals from tools, including AI. FROG provides the open language foundation; Studio is Graiphic's proprietary product.
+The strategic objective is human comprehension and acceptance as code generation expands. FROG serializes a structured model in `.frog`; Studio projects it into graphical dataflow using connections, color, shape, position, text, arrangement and labels. FIR/IR connect the supported program to compilers and execution targets. Direct human programming and maintenance use the same foundation. FROG remains open; Studio is Graiphic's proprietary environment.
 
-Read [Why work in Graiphic Studio?](docs/reference/product-philosophy.md) for the general direction and concrete examples. The [inspection and evidence guide](docs/reference/inspection-and-assurance.md) explains the scope of validation, execution and tests. Specialized research extensions are assessed separately from the everyday product workflow.
+Read [Why work in Graiphic Studio?](docs/reference/product-philosophy.md) for the calculator abstraction, the intended generation/review workflow and the distinction between direction and delivered capabilities. The [evidence guide](docs/reference/inspection-and-assurance.md) explains the available checks. DARPA-specific research remains separate from the general product direction.
 
 ## About these docs
 

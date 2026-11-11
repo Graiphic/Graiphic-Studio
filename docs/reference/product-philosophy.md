@@ -1,29 +1,37 @@
 # Why work in Graiphic Studio?
 
-**Product philosophy · reviewed 11 November 2026**
+**Human oversight of code generation · product philosophy reviewed 11 November 2026**
 
-Graiphic Studio develops a visual workspace for building software, understanding its behavior and making changes you can check. It brings interface design, dataflow programming, execution observation and supported Build into one environment. FROG provides the open language foundation; Studio is Graiphic's proprietary product.
+Graiphic Studio aims to increase the human capacity to follow, understand and validate machine-generated programs. Where a process requires human acceptance, an engineer needs access to consequential behavior, a way to assess a change and a connection to the version actually executed.
+
+FROG supplies a structured program model serialized in `.frog`. Studio projects that model into graphical dataflow for human comprehension and intervention. FIR and downstream IR provide a path to supported compilation and execution. FROG remains open; Studio is Graiphic's proprietary integrated environment.
 
 ## Work with the structure of the program
 
-Connections show dependencies. Structures organize cases, repetition and state. Shapes, labels, color and position help you find the relevant part of a diagram. A useful overview should let you enter the necessary detail without losing the surrounding context.
+Connections, color, shape, position, text, arrangement and labels expose relationships in a spatial abstraction. Hierarchy lets you move from an overview to relevant detail. Consistent organization should help you keep a mental map rather than confront an ever larger flat diagram.
 
-The [Front Panel](../interface/front-panel.md), [Block Diagram](../interface/block-diagram.md) and [Source](document-model.md) provide coordinated ways to work with the document. Language connections and structures determine behavior; diagram arrangement supports navigation and comprehension.
+The [Front Panel](../interface/front-panel.md), [Block Diagram](../interface/block-diagram.md) and [Source](document-model.md) provide coordinated views of a document. Its actual connections, structures, types and effects determine behavior; layout supports understanding. Drawing the graph is distinct from executing it.
 
-## Follow behavior and make a change
+## Follow behavior and change
 
-For supported programs, [Run and Highlight](../interface/run-and-highlight.md) let you observe values and activity in context. You can return to the relevant logic, make a correction and check its result. [Build](../interface/build.md) captures a supported program and its configuration for standalone use.
+For supported programs, [Run and Highlight](../interface/run-and-highlight.md) show values and activity in context. You can return to relevant logic, make a correction and check its result. [Build](../interface/build.md) captures a supported program and configuration for standalone use.
 
-This workflow matters when you write a program yourself, inherit it from a colleague or review a proposal produced by a tool. AI assistance is one use case within a broader programming and maintenance environment. Open FROG representations provide a foundation for tooling; general imports from other languages remain a prospective capability.
+Following successive generations also requires identifying what changed, what it may affect and which revision is under review. Stable associations, useful differences and a stable visual map are design goals. They are not announced here as a complete delivered change-review feature. The reviewed and executed program must remain attributable to the right revision.
 
-## Explain the benefit with a complete example
+This foundation also supports people writing programs directly and maintaining inherited software. The strategic focus is the human review capacity needed as machine production grows.
 
-A calculator can show the whole route: a familiar interface, event handling, a queue, explicit state, a diagram overview and a relevant case followed with Highlight. The important question is whether someone can understand the behavior, find a problem and complete a valid change.
+## The calculator example
 
-Different representations expose different detail. A compact overview helps communicate architecture; a claim of faster review needs a comparison of actual tasks and successful results.
+The supplied calculator comparison contains about 1,000 C/H lines, while one graphical overview exposes architecture with access to its cases. Events, a queue and explicit state become relationships you can investigate, then follow with Highlight.
 
-## Use the supported scope
+The overview presents an abstraction, with detail available below it. The C version includes UI, parser and queue code. The comparison illustrates how a person can enter the program; it does not report an automatic C conversion or establish faster review by line count alone.
 
-Normal execution, Highlight and native LLVM compilation exist for selected functions and profiles on Windows/x86-64. Consult [current capabilities](development-checkpoint.md), function documentation and diagnostics for the program you are working on. Additional source imports and deployment bridges need their own support and evidence.
+## From human abstraction to efficient execution
 
-The [inspection and evidence guide](inspection-and-assurance.md) explains what validation, execution and tests establish. Advanced research integrations have their own scope and do not define the everyday product workflow. The general direction is maintained in [FROG's project philosophy](https://github.com/Graiphic/FROG/blob/main/Strategy/Visual-Programming-and-Human-Control.md).
+The intended architecture supports direct FROG generation and progressive imports from existing languages. Every importer needs a declared subset and faithful handling of state, memory and effects. General C/C++/Rust/Java/Python imports remain prospective.
+
+A graphical representation can be compiled into efficient machine code. Efficiency depends on algorithms, language semantics, runtime requirements, data representation, FIR/IR quality, lowering and the target compiler. Choosing an established backend is important but does not alone guarantee equivalent performance.
+
+Selected functions and profiles have normal Run, Highlight and native LLVM paths on Windows/x86-64. Check [current capabilities](development-checkpoint.md), function documentation and diagnostics for your program. This page describes direction and introduces no new release or universal importer.
+
+The [evidence guide](inspection-and-assurance.md) explains the role of the available checks. The maintained [FROG philosophy](https://github.com/Graiphic/FROG/blob/main/Strategy/Visual-Programming-and-Human-Control.md) describes the general objective; partner-specific research remains separate from it.

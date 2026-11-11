@@ -6,7 +6,7 @@ Build an interface, connect a dataflow, and inspect one `.frog` document from
 three coordinated views. Start with a short walkthrough or open the reference
 for the object you are using.
 
-Read [Why work in Graiphic Studio?](reference/product-philosophy.md) for the value of visual structure, execution observation and change in one environment. The [inspection and evidence guide](reference/inspection-and-assurance.md) explains the role of the available checks.
+Read [Why work in Graiphic Studio?](reference/product-philosophy.md) for the human-oversight objective: a FROG model serialized in `.frog`, graphical abstraction for understanding generated code, and FIR/IR for supported execution. The [evidence guide](reference/inspection-and-assurance.md) explains what the available checks establish.
 
 ## Start here
 
