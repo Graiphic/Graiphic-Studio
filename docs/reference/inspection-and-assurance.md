@@ -1,6 +1,6 @@
 # Inspection, execution and evidence
 
-**Supporting guide · reviewed 11 November 2026**
+**Supporting guide · reviewed 11 November 2026 · public example added 13 November 2026**
 
 The [product philosophy](product-philosophy.md) focuses on human understanding and acceptance as machine generation grows. Studio's graphical projection helps investigate a FROG model serialized in `.frog`; execution and compilation are distinct operations on the supported program.
 
@@ -19,7 +19,9 @@ Human acceptance should remain connected to the version that runs. A generated e
 
 ## Coverage and claims
 
-Selected functions and profiles have normal Run, Highlight and native LLVM paths on Windows/x86-64. Use [current capabilities](development-checkpoint.md), function documentation and diagnostics to establish support. General language imports and complete change-review workflows are not announced by this update.
+Selected functions and profiles have Run, Highlight and native LLVM paths on Windows x64. Consult the [dated Studio checkpoint](development-checkpoint.md), function documentation and diagnostics for the relevant program and target. The [12 November public Frontend receipt](https://github.com/Graiphic/FROG/blob/main/docs/frontend-checkpoint-2026-11-12.json) identifies the shared source consumed by Studio 0.0.8.094.
+
+The public [UI Value Roundtrip dossier](https://github.com/Graiphic/FROG/blob/main/Examples/02_ui_value_roundtrip/Readme.md) lets you trace two numeric controls through Add to the indicator, then compare the declared values with the reference acceptance outputs. Its optional LLVM proof covers the value path on its stated inputs. This gives a concrete example of how to inspect connections and check behavior. Full application UI, translation fidelity and broader change review each require separate evidence.
 
 The calculator's roughly 1,000-line C comparison illustrates an architecture accessible through a graphical page and its underlying cases. Evaluate correct understanding, diagnosis and valid changes rather than infer a review-speed result from screen area alone.
 

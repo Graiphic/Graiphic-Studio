@@ -1,6 +1,6 @@
 # Why work in Graiphic Studio?
 
-**Human oversight of code generation · product philosophy reviewed 11 November 2026**
+**Human oversight of code generation · philosophy reviewed 11 November 2026 · capability references updated 13 November 2026**
 
 Graiphic Studio aims to increase the human capacity to follow, understand and validate machine-generated programs. Where a process requires human acceptance, an engineer needs access to consequential behavior, a way to assess a change and a connection to the version actually executed.
 
@@ -32,6 +32,8 @@ The intended architecture supports direct FROG generation and progressive import
 
 A graphical representation can be compiled into efficient machine code. Efficiency depends on algorithms, language semantics, runtime requirements, data representation, FIR/IR quality, lowering and the target compiler. Choosing an established backend is important but does not alone guarantee equivalent performance.
 
-Selected functions and profiles have normal Run, Highlight and native LLVM paths on Windows/x86-64. Check [current capabilities](development-checkpoint.md), function documentation and diagnostics for your program. This page describes direction and introduces no new release or universal importer.
+For a supported program, the shared Frontend resolves and validates the captured revision and produces FIR. The selected target checks that it supports the complete graph and its dependencies. Lowering translates the admitted FIR into the backend's IR, such as LLVM IR, for compilation and execution. The diagram and Source let you inspect the program throughout this process. Run and Highlight describe an identified execution, and Build identifies the captured revision and package.
+
+Selected profiles have Run, Highlight and native LLVM paths on Windows x64. The [12 November public source checkpoint](https://github.com/Graiphic/FROG/blob/main/docs/frontend-checkpoint-2026-11-12.json) records the Frontend consumed by Studio 0.0.8.094. Use the [dated Studio checkpoint](development-checkpoint.md), function documentation and diagnostics to check the coverage applicable to your program.
 
 The [evidence guide](inspection-and-assurance.md) explains the role of the available checks. The maintained [FROG philosophy](https://github.com/Graiphic/FROG/blob/main/Strategy/Visual-Programming-and-Human-Control.md) describes the general objective; partner-specific research remains separate from it.
