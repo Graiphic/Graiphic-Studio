@@ -12,6 +12,7 @@
   - [Type Definitions](/docs/interface/type-definitions.md)
   - [Attached comments](/docs/interface/attached-comments.md)
   - [Context Help](/docs/interface/context-help.md)
+  - [Agent Integration](/docs/interface/agent-integration.md)
 
 - **Design and edit**
   - [Widget Navigator](/docs/interface/widget-navigator.md)

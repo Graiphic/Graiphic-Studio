@@ -29,6 +29,7 @@ pointer and links directly to the relevant reference.
 | Attach an annotation to a diagram object | [Attached comments](docs/interface/attached-comments.md) |
 | Open an example with its explanation and expected results | [Examples](docs/examples/index.md) |
 | Customize the editor | [Studio Options](docs/interface/options.md) |
+| Review edits proposed by an external agent | [Agent Integration](docs/interface/agent-integration.md) |
 | Check support and limitations | [Current capabilities](docs/reference/development-checkpoint.md) |
 
 ## Product direction

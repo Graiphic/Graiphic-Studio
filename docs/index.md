@@ -23,6 +23,7 @@ Read [Why work in Graiphic Studio?](reference/product-philosophy.md) for the hum
 | Create pages of independent controls | [Tab Controls](widgets/tab-controls.md) |
 | Link an annotation to an object | [Attached comments](interface/attached-comments.md) |
 | Open a real .frog with an explanation and expected outputs | [Examples](examples/index.md) |
+| Review a limited edit from an external agent | [Agent Integration](interface/agent-integration.md) |
 
 ![Front Panel overview from an earlier Studio documentation capture](../assets/screenshots/front-panel/front-panel-overview.png)
 
