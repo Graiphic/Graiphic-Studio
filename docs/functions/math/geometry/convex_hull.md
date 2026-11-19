@@ -7,6 +7,15 @@
 
 Closed CCW hull of original zero-based indices, first repeated at end, lexicographic first vertex; duplicate coordinates choose first index, intermediate collinear points omitted.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Enveloppe convexe**
+
+Enveloppe fermée antihoraire d’indices originaux à partir de zéro, avec répétition du premier indice à la fin et premier sommet dans l’ordre lexicographique ; les coordonnées répétées retiennent le premier indice et les points colinéaires intermédiaires sont omis.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

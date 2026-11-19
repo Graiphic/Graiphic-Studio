@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "64072045364fada45f2716632dae5f6fdad6b2f3f9c62471830d27715186b294",
+  "source_snapshot_sha256": "8ff9cb12f908e6ea9842fe3563df74406dafd1bb9f587de10b397d6f64273644",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",
@@ -4296,6 +4296,168 @@
         "frog.studio.math.ode.solve.reference",
         "function.math.ode.solve.reference",
         "math.ode.solve.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.brent",
+      "route": "docs/functions/math/optimization/brent.md",
+      "keys": [
+        "frog.studio.math.optimization.brent",
+        "function.math.optimization.brent",
+        "math.optimization.brent"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.cg_nd",
+      "route": "docs/functions/math/optimization/cg_nd.md",
+      "keys": [
+        "frog.studio.math.optimization.cg_nd",
+        "function.math.optimization.cg_nd",
+        "math.optimization.cg_nd"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.chebyshev",
+      "route": "docs/functions/math/optimization/chebyshev.md",
+      "keys": [
+        "frog.studio.math.optimization.chebyshev",
+        "function.math.optimization.chebyshev",
+        "math.optimization.chebyshev"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.constrained",
+      "route": "docs/functions/math/optimization/constrained.md",
+      "keys": [
+        "frog.studio.math.optimization.constrained",
+        "function.math.optimization.constrained",
+        "math.optimization.constrained"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.global",
+      "route": "docs/functions/math/optimization/global.md",
+      "keys": [
+        "frog.studio.math.optimization.global",
+        "function.math.optimization.global",
+        "math.optimization.global"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.golden",
+      "route": "docs/functions/math/optimization/golden.md",
+      "keys": [
+        "frog.studio.math.optimization.golden",
+        "function.math.optimization.golden",
+        "math.optimization.golden"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.lp",
+      "route": "docs/functions/math/optimization/lp.md",
+      "keys": [
+        "frog.studio.math.optimization.lp",
+        "function.math.optimization.lp",
+        "math.optimization.lp"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.minima_1d",
+      "route": "docs/functions/math/optimization/minima_1d.md",
+      "keys": [
+        "frog.studio.math.optimization.minima_1d",
+        "function.math.optimization.minima_1d",
+        "math.optimization.minima_1d"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.minima_nd",
+      "route": "docs/functions/math/optimization/minima_nd.md",
+      "keys": [
+        "frog.studio.math.optimization.minima_nd",
+        "function.math.optimization.minima_nd",
+        "math.optimization.minima_nd"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.qp.as",
+      "route": "docs/functions/math/optimization/qp/as.md",
+      "keys": [
+        "frog.studio.math.optimization.qp.as",
+        "function.math.optimization.qp.as",
+        "math.optimization.qp.as"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.qp.ip",
+      "route": "docs/functions/math/optimization/qp/ip.md",
+      "keys": [
+        "frog.studio.math.optimization.qp.ip",
+        "function.math.optimization.qp.ip",
+        "math.optimization.qp.ip"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.simplex_nd",
+      "route": "docs/functions/math/optimization/simplex_nd.md",
+      "keys": [
+        "frog.studio.math.optimization.simplex_nd",
+        "function.math.optimization.simplex_nd",
+        "math.optimization.simplex_nd"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.conjugate_gradient.formula",
+      "route": "docs/functions/math/optimization/unconstrained/conjugate_gradient/formula.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.conjugate_gradient.formula",
+        "function.math.optimization.unconstrained.conjugate_gradient.formula",
+        "math.optimization.unconstrained.conjugate_gradient.formula"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.conjugate_gradient.reference",
+      "route": "docs/functions/math/optimization/unconstrained/conjugate_gradient/reference.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.conjugate_gradient.reference",
+        "function.math.optimization.unconstrained.conjugate_gradient.reference",
+        "math.optimization.unconstrained.conjugate_gradient.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.quasi_newton.formula",
+      "route": "docs/functions/math/optimization/unconstrained/quasi_newton/formula.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.quasi_newton.formula",
+        "function.math.optimization.unconstrained.quasi_newton.formula",
+        "math.optimization.unconstrained.quasi_newton.formula"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.quasi_newton.reference",
+      "route": "docs/functions/math/optimization/unconstrained/quasi_newton/reference.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.quasi_newton.reference",
+        "function.math.optimization.unconstrained.quasi_newton.reference",
+        "math.optimization.unconstrained.quasi_newton.reference"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.simplex.formula",
+      "route": "docs/functions/math/optimization/unconstrained/simplex/formula.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.simplex.formula",
+        "function.math.optimization.unconstrained.simplex.formula",
+        "math.optimization.unconstrained.simplex.formula"
+      ]
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.simplex.reference",
+      "route": "docs/functions/math/optimization/unconstrained/simplex/reference.md",
+      "keys": [
+        "frog.studio.math.optimization.unconstrained.simplex.reference",
+        "function.math.optimization.unconstrained.simplex.reference",
+        "math.optimization.unconstrained.simplex.reference"
       ]
     },
     {

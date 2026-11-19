@@ -7,6 +7,15 @@
 
 Legendre Polynomial. Associated Legendre, n&gt;=m&gt;=0 and real x in [-1,1]. type 0 standard, 1 Schmidt semi-normalized, 2 unit-normalized on [-1,1]. GS uses the explicit Condon-Shortley phase (-1)^m. The NI 2020 help identifies these three normalization choices but does not certify their factors or phase. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Polynôme de Legendre**
+
+Calcule le Legendre associé pour n&gt;=m&gt;=0 et x réel dans [-1,1]. type : 0 standard, 1 semi-normalisé de Schmidt, 2 normalisé à l’unité sur [-1,1]. GS utilise explicitement la phase de Condon-Shortley (-1)^m. L’aide NI 2020 identifie les trois normalisations sans certifier leurs facteurs ni leur phase. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

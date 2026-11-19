@@ -7,6 +7,15 @@
 
 Polynomial Evaluation. Element-wise polynomial Horner evaluation on a scalar, rank-1 or rank-2 array; preserves the point shape, distinct from matrix evaluation. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Évaluation d’un polynôme**
+
+Évalue le polynôme par Horner sur chaque point d’un scalaire ou d’un tableau de rang 1 ou 2 ; la forme des points est conservée, contrairement à l’évaluation matricielle. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

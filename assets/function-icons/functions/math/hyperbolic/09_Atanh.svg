@@ -49,12 +49,12 @@
   <g id="Calque_1-2" data-name="Calque 1">
     <g>
       <g>
-        <rect class="cls-5" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <rect class="cls-5" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" fill="#4B5563" stroke="#AAB4C0" style="fill:#4B5563;stroke:#AAB4C0"/>
         <path class="cls-7" d="M6.45,32.36h34.9c1.46,0,2.64,1.18,2.64,2.64v9.14H3.81v-9.14c0-1.46,1.18-2.64,2.64-2.64Z" transform="translate(47.8 76.51) rotate(-180)"/>
       </g>
       <line class="cls-2" x1="23.93" y1="2.93" x2="23.93" y2="31.52"/>
       <line class="cls-2" x1="44.02" y1="17.23" x2="3.84" y2="17.23"/>
-      <path class="cls-3" d="M6.34,30.66c-.91-7.08,3.52-9.98,9-11.03,4.7-.96,11.32-1.93,16.18-2.89,7.32-1.26,10.2-5.43,10.12-12.88"/>
+      <path class="cls-3" d="M6.34,30.66c-.91-7.08,3.52-9.98,9-11.03,4.7-.96,11.32-1.93,16.18-2.89,7.32-1.26,10.2-5.43,10.12-12.88" stroke="#F8FAFC" style="stroke:#F8FAFC"/>
       <text class="cls-6" transform="translate(9.29 41.33)"><tspan class="cls-1" x="0" y="0">A</tspan><tspan class="cls-4" x="5" y="0">T</tspan><tspan x="10.16" y="0">ANH</tspan></text>
     </g>
   </g>

@@ -95,7 +95,7 @@ Local Studio context-path@1 service; the actual native backend and explicit host
 
 These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
 
-- [Application Directory requires a compiled application](../../examples/path.application-directory.unavailable-in-studio.md) — When this program runs inside Studio it has no compiled application executable. The native provider reports its precise unavailable-context diagnostic; it must not invent the Studio or current working directory. (`expected-diagnostic`, `studio-draft`).
+- [Application Directory uses the saved root document directory](../../examples/path.application_directory.context.md) — In Studio, a saved root FROG without a loaded project uses its containing directory as the application directory. The runner computes this exact expected path independently from the actual saved example file; it must not substitute the Studio installation or current working directory. (`execution`, `studio-draft`).
 
 ## Identity and references
 

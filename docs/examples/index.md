@@ -81,6 +81,7 @@ The index declares intended results and required backends. Its presence does not
 - [Unbundle preserves field order and exact types](cluster.unbundle.order.md) — The incoming Cluster fixes the positional output count and types. Its I64 field must remain exact, and the String is a separate output terminal.
 - [Read a nested field by stable identity](cluster.unbundle-by-name.nested.md) — The displayed Config.Offset path resolves the stable IDs config-id / offset-id. Unrelated fields are not read or rebuilt.
 - [Replace one nested Cluster field](cluster.bundle-by-name.replace-nested.md) — Replacing Config.Offset preserves the nested Name and outer Enabled fields. The selection uses persistent field identities, independently from their displayed names.
+- [Named rows keep selected field order](cluster.by-name.ni-layout-order.md) — The selected row order is second, text, first, deliberately different from the Cluster declaration. Replacing only second must preserve first and text; every output is verified before and after replacement.
 
 ## Collection
 
@@ -574,9 +575,9 @@ The index declares intended results and required backends. Its presence does not
 ## Path
 
 - [Current FROG Path uses its source owner](path.current_frog_path.context.md) — The result is the actual saved file of this executing FROG, including its file name. The runner computes the expected value independently from its real working document path; no author-machine path is stored.
+- [Application Directory uses the saved root document directory](path.application_directory.context.md) — In Studio, a saved root FROG without a loaded project uses its containing directory as the application directory. The runner computes this exact expected path independently from the actual saved example file; it must not substitute the Studio installation or current working directory.
 - [Default Directory uses the Studio installation](path.default_directory.context.md) — Studio provides its actual executable context. The default directory is that executable's containing directory, independently from the process working directory or the source document's directory.
 - [Temporary Directory follows the current system](path.temporary_directory.context.md) — The existing native Path service obtains the current system temporary directory. The expected path is computed at execution time, so this example remains portable between users and machines.
-- [Application Directory requires a compiled application](path.application-directory.unavailable-in-studio.md) — When this program runs inside Studio it has no compiled application executable. The native provider reports its precise unavailable-context diagnostic; it must not invent the Studio or current working directory.
 
 ## String
 

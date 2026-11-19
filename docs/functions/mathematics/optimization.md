@@ -20,7 +20,26 @@ Dossier Mathematics réservé à Optimization. Aucune fonction n’a encore ét�
 
 This entry opens a palette folder; it is not an executable dataflow function.
 
-No direct child operation is declared in the current catalogue snapshot. Browse the family reference for the entries that are available.
+| Entry | Purpose |
+| --- | --- |
+| [LP](../math/optimization/lp.md) | Maximizes C·X with M·X ≥ B and X ≥ 0 using two-phase simplex. |
+| [Quadratic Programming](../math/optimization/qp/ip.md) | Minimizes a convex quadratic objective subject to linear equalities, inequalities and parameter bounds. |
+| [Quadratic Programming](../math/optimization/qp/as.md) | Minimizes a convex quadratic objective subject to linear equalities, inequalities and parameter bounds. |
+| [Unconstr NLP](../math/optimization/unconstrained/quasi_newton/formula.md) | Finds a local minimum using Quasi-Newton with an explicit formula objective. |
+| [Unconstr NLP](../math/optimization/unconstrained/quasi_newton/reference.md) | Finds a local minimum using Quasi-Newton with an explicit reference objective. |
+| [Unconstr NLP](../math/optimization/unconstrained/conjugate_gradient/formula.md) | Finds a local minimum using Conjugate Gradient with an explicit formula objective. |
+| [Unconstr NLP](../math/optimization/unconstrained/conjugate_gradient/reference.md) | Finds a local minimum using Conjugate Gradient with an explicit reference objective. |
+| [Unconstr NLP](../math/optimization/unconstrained/simplex/formula.md) | Finds a local minimum using Downhill Simplex with an explicit formula objective. |
+| [Unconstr NLP](../math/optimization/unconstrained/simplex/reference.md) | Finds a local minimum using Downhill Simplex with an explicit reference objective. |
+| [Constr NLP](../math/optimization/constrained.md) | Finds a constrained local minimum by sequential quadratic programming with a merit line search. |
+| [Global Optimization](../math/optimization/global.md) | Searches bounded parameters by differential evolution and retains vector objectives and Pareto candidates; no global optimum guarantee. |
+| [Brent with Derivatives 1D](../math/optimization/brent.md) | Refines a strict 1D minimum bracket using derivatives. |
+| [Golden Section 1D](../math/optimization/golden.md) | Refines a strict 1D minimum bracket without derivatives. |
+| [CG nD](../math/optimization/cg_nd.md) | Finds a local minimum with Fletcher–Reeves or Polak–Ribière conjugate gradients and the selected line search. |
+| [Downhill Simplex nD](../math/optimization/simplex_nd.md) | Finds a local minimum with a coupled Nelder–Mead simplex generated from the start point. |
+| [Find All Minima 1D](../math/optimization/minima_1d.md) | Samples an interval and refines detected local minima; finite sampling cannot guarantee exhaustive discovery. |
+| [Find All Minima nD](../math/optimization/minima_nd.md) | Runs local searches from random points in a box and returns distinct minima as rows; discovery is not exhaustive. |
+| [Chebyshev Approx](../math/optimization/chebyshev.md) | Approximates a formula in the Chebyshev basis and evaluates it on an equidistant grid. |
 
 ## Examples
 

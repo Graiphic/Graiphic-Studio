@@ -28,9 +28,9 @@
   </defs>
   <g id="Calque_1-2" data-name="Calque 1">
     <g>
-      <rect class="cls-4" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <rect class="cls-4" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" fill="#4B5563" style="fill:#4B5563"/>
       <path class="cls-1" d="M5.4.51h37c2.48,0,4.5,2.02,4.5,4.5v9.9H.9V5.01C.9,2.52,2.92.51,5.4.51Z"/>
-      <text class="cls-3" transform="translate(7.08 32.4)"><tspan x="0" y="0">EULER</tspan></text>
+      <text class="cls-3" transform="translate(7.08 32.4)" fill="#F8FAFC" style="fill:#F8FAFC"><tspan x="0" y="0" fill="#F8FAFC" style="fill:#F8FAFC">EULER</tspan></text>
       <g>
         <g>
           <path class="cls-2" d="M26.7,12.83l2.56-3.85-2.4-3.55h2.36l.76,1.19c.12.21.25.42.39.63.14.21.27.42.39.63h.06c.09-.21.19-.42.31-.64.11-.22.22-.43.31-.63l.66-1.19h2.3l-2.42,3.8,2.57,3.59h-2.36l-.85-1.22c-.14-.21-.28-.42-.42-.64-.14-.22-.29-.43-.42-.64h-.06c-.11.21-.22.42-.34.63s-.23.43-.34.65l-.73,1.22h-2.3Z"/>

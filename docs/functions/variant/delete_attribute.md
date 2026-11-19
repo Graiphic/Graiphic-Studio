@@ -46,7 +46,7 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 Variant + name:String + error -&gt; Variant, found:Boolean, error.
 
-Studio authoring ports for variant.delete_attribute.
+Typed native delete_attribute over the existing SDK Variant. Main payload, full schema and attributes are independent. Conversions and malformed binary inputs use explicit Error outputs; the active target must admit the exact signature.
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -71,11 +71,15 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.variant.delete_attribute.v1`.
+
+Required provider: `frog.studio.variant.primitives@1`.
+
+Native implementation uses the exact immutable SDK Variant and typed value codec. Actual artifact admission and current targeted qualification remain required; this declaration is not an execution receipt.
 
 **Authoring/target contract limits:**
 
-- Execution requires explicit support by the active target.
+- Current native artifact admission and actual Run qualification are required for the exact operation and transported types.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

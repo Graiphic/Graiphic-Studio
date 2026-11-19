@@ -53,7 +53,7 @@ These are source declarations, not the current measured product-execution assess
 
 F32/F64 and finite C32/C64 inputs retain their precision; integer leaves convert to F64 and values above 2^53 may round. Arrays preserve rank, dimensions and typed empties; numeric-only clusters preserve ordered fields. No Boolean, String, reference, mixed nonnumeric cluster, fixed-point, extended precision, physical-unit or Matrix overload. Required inputs have no implicit unwired value. Principal complex branches; non-finite complex results require unavailable finite-component lexical transport capability. NI NXG documents the connectors; the named edge conventions are FROG, without a measured bit-equivalence claim.
 
-Local Highlight provider: frog.studio.trigonometric.sinc.
+sin(x)/x; sinc(Â±0)=1. Unnormalized sin(x)/x with FROG continuous extension sinc(Â±0)=1. Local Highlight provider: frog.studio.trigonometric.sinc.
 
 </details>
 

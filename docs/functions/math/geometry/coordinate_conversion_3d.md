@@ -7,6 +7,15 @@
 
 NI conversion codes 0 Cartesian/spherical, 1 spherical/Cartesian, 2 Cartesian/cylindrical, 3 cylindrical/Cartesian, 4 spherical/cylindrical, 5 cylindrical/spherical. Radians, phi polar from +Z; undefined azimuth is zero, negative radius refused; spherical polar input must be in [0,pi].
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Conversion de coordonnées 3D**
+
+Codes de conversion NI : 0 cartésiennes/sphériques, 1 sphériques/cartésiennes, 2 cartésiennes/cylindriques, 3 cylindriques/cartésiennes, 4 sphériques/cylindriques, 5 cylindriques/sphériques. Angles en radians, phi polaire depuis +Z ; un azimut indéfini vaut zéro et un rayon négatif est refusé. L’angle polaire sphérique en entrée doit appartenir à [0,pi].
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

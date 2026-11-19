@@ -5,7 +5,7 @@
 
 [Application Control functions](../applicationcontrol/index.md) · [All functions](../index.md)
 
-Private Studio configuration of ordered property rows. Each stable row chooses one real member and Read or Write; its data terminal follows the complete member type. An incoming object reference takes precedence over the implicit symbolic target. Real authoring provider access checks target permissions, latch Value and contained-widget restrictions. Reference and Error pairs stay fixed; Value (Signaling) and graph execution are unavailable in this delivery.
+Drag the blue bottom handle to extend the Property Node. New rows follow the available properties in Select Property for the effective target, starting after the last eligible configured row. The last available property repeats at the end of the list. Existing rows keep their properties, modes and wires when you extend the node. Press Esc during the drag to restore the starting layout. Each row has a typed data terminal and uses the member’s Read or Write permissions. A wired reference determines the effective target. Reference and Error connectors remain fixed. Execution support depends on the selected property and target profile.
 
 ## Product execution profiles
 
@@ -18,7 +18,7 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Configuration privée Studio de lignes de propriétés ordonnées. Chaque ligne stable choisit un membre réel et Lecture ou Écriture ; son terminal de données reprend le type complet du membre. Une référence d’objet câblée prime sur la cible symbolique implicite. Le fournisseur authoring contrôle les permissions, la valeur des booléens à verrouillage et les restrictions des widgets contenus. Les paires Référence et Erreur restent fixes ; Value (Signaling) et l’exécution dans un graphe sont indisponibles dans cette livraison.
+Tirez la poignée bleue inférieure pour ajouter des lignes au nœud de propriétés. Les nouvelles lignes suivent les propriétés disponibles dans Select Property pour la cible effective, après la dernière ligne configurée admissible. La dernière propriété disponible se répète en fin de liste. Les lignes existantes conservent leurs propriétés, leurs modes et leurs fils pendant l’extension. Appuyez sur Échap pendant le glisser pour restaurer l’état de départ. Chaque ligne utilise un terminal typé et les droits de lecture ou d’écriture de la propriété. Une référence câblée détermine la cible effective. Les connecteurs Référence et Erreur restent fixes. La prise en charge à l’exécution dépend de la propriété et du profil de la cible.
 
 </details>
 

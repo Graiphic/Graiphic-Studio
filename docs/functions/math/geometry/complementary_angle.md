@@ -7,6 +7,15 @@
 
 Quarter-turn minus input; range None preserves negative complements; selected wrapping is explicit. NI I32 units 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. U16 range 0 none, 1 signed (default), 2 positive. GS endpoint choices (-half-turn,half-turn] and [0,full-turn). Finite DBL only; array operands have equal lengths.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Angle complémentaire**
+
+Calcule un quart de tour moins l’entrée ; l’intervalle Aucun conserve les compléments négatifs. La réduction sélectionnée est explicite. Unités NI I32 : 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. Intervalle U16 : 0 aucun, 1 signé (par défaut), 2 positif. Choix explicites GS des extrémités : (-demi-tour,demi-tour] et [0,tour complet). DBL finis uniquement ; les tableaux opérandes ont la même longueur.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

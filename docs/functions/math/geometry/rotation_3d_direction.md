@@ -7,6 +7,15 @@
 
 Maps old coordinates into the new frame using an actual orthonormal 3x3 direction-cosine matrix, determinant +1; never axis-angle or implicit orthogonalization.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Rotation 3D par cosinus directeurs**
+
+Transforme les anciennes coordonnées vers le nouveau repère avec une véritable matrice orthonormale 3×3 de cosinus directeurs, de déterminant +1 ; ce n’est pas une représentation axe-angle et aucune orthogonalisation implicite n’est effectuée.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

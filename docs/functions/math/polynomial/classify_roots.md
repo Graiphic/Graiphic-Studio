@@ -7,6 +7,15 @@
 
 Roots Classification. Partitions roots into real, conjugate-paired and unpaired roots. Real tolerance is absolute imaginary magnitude; pair tolerance is relative conjugacy error. No missing conjugate is invented. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Classification des racines**
+
+Répartit les racines en racines réelles, paires conjuguées et racines non appariées. La tolérance réelle porte sur la valeur absolue de la partie imaginaire ; la tolérance de paire est une erreur relative de conjugaison. Aucun conjugué absent n’est inventé. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Probability palette.
+Browse continuous and discrete distribution functions: probabilities, inverse distribution values, random sampling and moments.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Probabilités**
+
+Parcourir les fonctions de lois continues et discrètes : probabilités, valeurs de répartition inverse, tirages aléatoires et moments.
+
+</details>
 
 ## Browse this palette
 

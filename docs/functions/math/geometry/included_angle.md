@@ -7,6 +7,15 @@
 
 CCW closed interval; equal endpoints mean zero span. GS coercion chooses the nearest endpoint (ties start). NI I32 units 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. U16 range 0 none, 1 signed (default), 2 positive. GS endpoint choices (-half-turn,half-turn] and [0,full-turn). Finite DBL only; array operands have equal lengths.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Appartenance à un intervalle angulaire**
+
+Intervalle antihoraire fermé ; des extrémités égales définissent une étendue nulle. La coercition GS choisit l’extrémité la plus proche, et le début en cas d’égalité. Unités NI I32 : 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. Intervalle U16 : 0 aucun, 1 signé (par défaut), 2 positif. Choix explicites GS des extrémités : (-demi-tour,demi-tour] et [0,tour complet). DBL finis uniquement ; les tableaux opérandes ont la même longueur.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

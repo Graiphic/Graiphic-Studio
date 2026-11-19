@@ -57,7 +57,7 @@ Scope: `requires_explicit_target_capability`.
 
 Required provider: `frog.studio.application_control`.
 
-Authoring provider operations are not a graph execution provider.
+This authoring envelope does not declare unconditional runtime support. The private native object-reference capability frog.studio.object_reference.close_borrowed.v1 is limited to borrowed Widget references, reusing closeBorrowed without destroying the target or aliases. Owning resources, foreign domains and invalid references do not acquire generic support. Target admission and execution receipts remain required.
 
 **Authoring/target contract limits:**
 

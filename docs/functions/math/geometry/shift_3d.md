@@ -7,6 +7,15 @@
 
 Adds the displacement to coordinates. Equal coordinate-array lengths; no truncation or scalar broadcasting.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Translation 3D**
+
+Ajoute le déplacement aux coordonnées. Les tableaux de coordonnées ont la même longueur ; aucune troncature ni diffusion d’un scalaire.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

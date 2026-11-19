@@ -60,10 +60,10 @@
   </defs>
   <g id="Calque_1-2" data-name="Calque 1">
     <g>
-      <rect class="cls-10" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <rect class="cls-10" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" fill="#4B5563" style="fill:#4B5563"/>
       <path class="cls-1" d="M5.4.51h37c2.48,0,4.5,2.02,4.5,4.5v9.9H.9V5.01C.9,2.52,2.92.51,5.4.51Z"/>
-      <text class="cls-8" transform="translate(4.14 28.41)"><tspan class="cls-5" x="0" y="0">ʃ</tspan><tspan class="cls-3" x="5.73" y="0">ʄ</tspan><tspan class="cls-2" x="10.43" y="0">(x,x</tspan><tspan class="cls-4" x="26.07" y="0">&apos;,</tspan><tspan class="cls-2" x="31.54" y="0">t)</tspan></text>
-      <text class="cls-7" transform="translate(14.3 43.21)"><tspan class="cls-11" x="0" y="0">D</tspan><tspan class="cls-9" x="6.88" y="0">AE</tspan></text>
+      <text class="cls-8" transform="translate(4.14 28.41)" fill="#F8FAFC" style="fill:#F8FAFC"><tspan class="cls-5" x="0" y="0" fill="#F8FAFC" style="fill:#F8FAFC">ʃ</tspan><tspan class="cls-3" x="5.73" y="0" fill="#F8FAFC" style="fill:#F8FAFC">ʄ</tspan><tspan class="cls-2" x="10.43" y="0" fill="#F8FAFC" style="fill:#F8FAFC">(x,x</tspan><tspan class="cls-4" x="26.07" y="0" fill="#F8FAFC" style="fill:#F8FAFC">&apos;,</tspan><tspan class="cls-2" x="31.54" y="0" fill="#F8FAFC" style="fill:#F8FAFC">t)</tspan></text>
+      <text class="cls-7" transform="translate(14.3 43.21)" fill="#F8FAFC" style="fill:#F8FAFC"><tspan class="cls-11" x="0" y="0" fill="#F8FAFC" style="fill:#F8FAFC">D</tspan><tspan class="cls-9" x="6.88" y="0" fill="#F8FAFC" style="fill:#F8FAFC">AE</tspan></text>
       <g>
         <g>
           <path class="cls-6" d="M26.7,13.65l2.56-3.85-2.4-3.55h2.36l.76,1.19c.12.21.25.42.39.63.14.21.27.42.39.63h.06c.09-.21.19-.42.31-.64.11-.22.22-.43.31-.63l.66-1.19h2.3l-2.42,3.8,2.57,3.59h-2.36l-.85-1.22c-.14-.21-.28-.42-.42-.64-.14-.22-.29-.43-.42-.64h-.06c-.11.21-.22.42-.34.63s-.23.43-.34.65l-.73,1.22h-2.3Z"/>

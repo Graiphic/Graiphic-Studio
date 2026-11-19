@@ -45,13 +45,13 @@
   <g id="Calque_1-2" data-name="Calque 1">
     <g>
       <g>
-        <rect class="cls-4" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+        <rect class="cls-4" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" fill="#4B5563" stroke="#AAB4C0" style="fill:#4B5563;stroke:#AAB4C0"/>
         <path class="cls-6" d="M6.45,32.36h34.9c1.46,0,2.64,1.18,2.64,2.64v9.14H3.81v-9.14c0-1.46,1.18-2.64,2.64-2.64Z" transform="translate(47.8 76.51) rotate(-180)"/>
       </g>
       <line class="cls-1" x1="23.9" y1="2.93" x2="23.9" y2="31.52"/>
       <line class="cls-1" x1="43.99" y1="17.23" x2="3.81" y2="17.23"/>
       <text class="cls-5" transform="translate(11.76 41.33)"><tspan class="cls-3" x="0" y="0">T</tspan><tspan x="5.16" y="0">ANH</tspan></text>
-      <path class="cls-2" d="M43.52,11.55h-5.43c-19.55,0-8.51,11.45-26.09,11.45h-7.72"/>
+      <path class="cls-2" d="M43.52,11.55h-5.43c-19.55,0-8.51,11.45-26.09,11.45h-7.72" stroke="#F8FAFC" style="stroke:#F8FAFC"/>
     </g>
   </g>
 </svg>

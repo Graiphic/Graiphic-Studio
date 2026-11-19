@@ -7,6 +7,15 @@
 
 Create Orthogonal Polynomial. Ascending monomial coefficients. type 0 Chebyshev I, 1 Chebyshev II, 2 Legendre, 3 Laguerre, 4 physicists Hermite, 5 associated Laguerre, 6 Gegenbauer; alpha is used by families 5/6. Gegenbauer alpha must be nonzero. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Créer un polynôme orthogonal**
+
+Produit les coefficients monomiaux par ordre croissant. type : 0 Chebyshev I, 1 Chebyshev II, 2 Legendre, 3 Laguerre, 4 Hermite des physiciens, 5 Laguerre associé, 6 Gegenbauer ; alpha sert aux familles 5 et 6. L’alpha de Gegenbauer doit être non nul. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

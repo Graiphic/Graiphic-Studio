@@ -7,6 +7,15 @@
 
 Indefinite Integral of Polynomial. Primitive coefficients in ascending power, with integration constant zero. No constant-of-integration terminal is claimed for NI. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Primitive d’un polynôme**
+
+Calcule les coefficients d’une primitive par puissance croissante, avec constante d’intégration nulle. Aucun terminal de constante d’intégration n’est revendiqué pour NI. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

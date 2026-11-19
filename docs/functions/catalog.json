@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_snapshot": {
-    "sha256": "64072045364fada45f2716632dae5f6fdad6b2f3f9c62471830d27715186b294",
+    "sha256": "8ff9cb12f908e6ea9842fe3563df74406dafd1bb9f587de10b397d6f64273644",
     "files": [
       {
         "path": "../../FROG/Implementations/Frontend/src/FunctionCatalogSemantic.cpp",
@@ -369,11 +369,11 @@
       },
       {
         "path": "assets/icons/functions/collection/common/collection-size.svg",
-        "sha256": "96505e15f1350b45951b4e6927fdbf74ecda0294fe2d6b5455c038e161f687d4"
+        "sha256": "bc2ea1c8495544375d4c49bc2ffcd5c6ffcd3b5d8b40d122a4c912767d37ec14"
       },
       {
         "path": "assets/icons/functions/collection/common/empty-collection.svg",
-        "sha256": "c1508f0aeb28efc3495b9e220b53a081b364900977a4c7a86cb6b526c3b2e3bc"
+        "sha256": "663ed5382c103e2685f6a176dce1f8d30bd903f3f5abb1a22088838c581256ec"
       },
       {
         "path": "assets/icons/functions/collection/map/00-map.svg",
@@ -381,35 +381,35 @@
       },
       {
         "path": "assets/icons/functions/collection/map/01-build-map.svg",
-        "sha256": "8dbf2fc74c2822374e2d16895d0c3c68c87bd10e5fe25631457eb3380e1bbdf8"
+        "sha256": "54e26779aa7e865f5d6978bb2695c3b156bb45f5c88afe1bc25cbfe60c2afe44"
       },
       {
         "path": "assets/icons/functions/collection/map/02-insert-map.svg",
-        "sha256": "71e24571860fb7a74b60fdefb4b30f72a538e412b7cb775cc8f7ac93806659c1"
+        "sha256": "7b8ecbea058c244e569834cc4a5bbd3097a1c80d629c67db7bfb35af0de0ca9f"
       },
       {
         "path": "assets/icons/functions/collection/map/03-remove-map.svg",
-        "sha256": "4c6b330d83f4c86f669b86044e7135b3668c23616bb5dffd2c1f5f8aeafb31a1"
+        "sha256": "a55017aba8655ae2a189e63d2908e35f83e190f90a33a149ea75212324aaf62b"
       },
       {
         "path": "assets/icons/functions/collection/map/04-look-map.svg",
-        "sha256": "c6c2ee1a2302ff5be114e6fcac3b636a431aa0970cbe7ef2c2a57152e40948bb"
+        "sha256": "07de3182e78d0add203b9d8d9f2d0757be49ab945c7475b06d8863eec671f542"
       },
       {
         "path": "assets/icons/functions/collection/map/05-extrema-map.svg",
-        "sha256": "4469ebf3df8a525e52ff8bb45923f40f193622fa43ae1a36f0fe38d81ab769c6"
+        "sha256": "69a21f4f5985ae06d820d4b4f0faf922755ebd2e0c0b4286767717eecf892d51"
       },
       {
         "path": "assets/icons/functions/collection/map/06-map-constant.svg",
-        "sha256": "29736444a6e3dd3bc81848c15c3e7c24fcafaad400dbb7ccbd4ddbd60c25104a"
+        "sha256": "53a9c449ccd78ee0ce90f316a6f3a1a68f2215ed0f6c48b2aab81778aaf6f2fb"
       },
       {
         "path": "assets/icons/functions/collection/map/09-map-to-array.svg",
-        "sha256": "2b7c263929d3c5ff7e0c40bf6ac4dbac150f0ba5230db89bb0851a35b8335d9e"
+        "sha256": "b52f0ba3f954cb54273c76771c4cbd81d19aec1a5dae33532dbbb408d05106b7"
       },
       {
         "path": "assets/icons/functions/collection/map/10-in-place-map-access.svg",
-        "sha256": "5e37b931c4586fccc4261eba3e91f5ccb318d0d5d653c21cd28e85e9ca0846d1"
+        "sha256": "2cb88bf8b076972b4cc463677a163ded9c4173dd591c2e71edaacef101f669bf"
       },
       {
         "path": "assets/icons/functions/collection/set/00-set.svg",
@@ -417,51 +417,51 @@
       },
       {
         "path": "assets/icons/functions/collection/set/01-build-set.svg",
-        "sha256": "c6f775b9d242e090bab62175851a882cf803d5b4cf7093738516fdabd7044da6"
+        "sha256": "67d6a8100da3bd99403dc06f89fad1dde79aab89f75b5f2c63600c7577ff0d6e"
       },
       {
         "path": "assets/icons/functions/collection/set/02-insert-set.svg",
-        "sha256": "b3ee1b6f74a9a7e8200ead68d0c61efa3588534758de63fad8a32a3bea177bc6"
+        "sha256": "075dcf75620cf4a3e027110284ceb7ce70561fdc7f3a193fc88e91f0e43abd85"
       },
       {
         "path": "assets/icons/functions/collection/set/03-remove-set.svg",
-        "sha256": "6eb091c7a61c1fa2e3d6123e72aaebd77b023d3f2650e87bae77225c8f1bb4c9"
+        "sha256": "ddfcc53254d295ec3da567067715eecad9eb7098ae1902f1e6800f4c0d01a9e7"
       },
       {
         "path": "assets/icons/functions/collection/set/04-contains-set.svg",
-        "sha256": "b99f6fc3267d1e85b9c1d69c9e6e7e494e947e1f14d49eb91f15d897c4a61311"
+        "sha256": "d03faf3ef61e4a49b174795dca66b26df6017309dadd025480f21b5d3c6571ae"
       },
       {
         "path": "assets/icons/functions/collection/set/05-extrema-set.svg",
-        "sha256": "fba92d6643769f3f70578626dc685f70a66efebc432d8e46b388c801b928bb21"
+        "sha256": "ec8a5d2519ba03466bc5ec80891de1c77823f9d78ac6ff095a0f900a9aa2b91a"
       },
       {
         "path": "assets/icons/functions/collection/set/06-set-constant.svg",
-        "sha256": "5eeb868caf8b7a28b2376e7165aed7569514d701176c2b795f35a6f3786891a6"
+        "sha256": "657eb5170f19e30898f6098248740add0adb930ac15b7c0cce30da6c7323797c"
       },
       {
         "path": "assets/icons/functions/collection/set/09-set-to-array.svg",
-        "sha256": "077343ba6737efaf215c294b8880e8d053d29d20784bf200ff59b45478723607"
+        "sha256": "d718415f5f92fd00fbb88b8cd20bd5675c3266d1bce8fec9ad20465615063ace"
       },
       {
         "path": "assets/icons/functions/collection/set/10-union.svg",
-        "sha256": "9e529568e8d598ef0f8edee6f22eb12b7f0da6c828f99fa9a00c063ea6e1677b"
+        "sha256": "8f39e4f9c3cf176b6729fda0b685b6bbdf9059d0cf2e0f78b45b17b4e2231da6"
       },
       {
         "path": "assets/icons/functions/collection/set/11-intersection.svg",
-        "sha256": "da74d8722161c16212e32b51151bf2e932042a0d51565d7f3791ff5b01aeafda"
+        "sha256": "d4adda4f362bc978881932ced15c9649beafbd34fadf5b1c12b2bffc0dd7b4a2"
       },
       {
         "path": "assets/icons/functions/collection/set/12-cartesian-product.svg",
-        "sha256": "814d81a939b8f4bfe857465eb4cf05844e2c22ba6b30232bc5e388eb3baead1f"
+        "sha256": "d4a77715b83149b879826368841911c6a6041d3c63b6f3a4236cfd9b958ffdde"
       },
       {
         "path": "assets/icons/functions/collection/set/13-difference.svg",
-        "sha256": "d9d8c5598dbe2db8d7c5828f9895551ea844e5d9b301cb99f39da952018c186c"
+        "sha256": "3fa9b9b94eca9b732624e70b862b2df715f6624580ebae42e523daccc7db47df"
       },
       {
         "path": "assets/icons/functions/collection/set/14-symmetric-difference.svg",
-        "sha256": "7cc444cd2dfa99ebe6c27da23cab4c2f298494712bf8a50074d3325f96e9a941"
+        "sha256": "30fa6aa2345ff48b5607bfc752080dd5d35e47b7915823ad9653d357c222cc0a"
       },
       {
         "path": "assets/icons/functions/comparison/01-equal.svg",
@@ -753,99 +753,99 @@
       },
       {
         "path": "assets/icons/functions/error/01-build-cluster.svg",
-        "sha256": "e87301bf5ffd237174a6af288dc9df2e5162d7a12d310dcf7157a89172266f35"
+        "sha256": "57edf734b9a3cbfff33620c271ea432a5fb15fb822221b66bacb7907db84492d"
       },
       {
         "path": "assets/icons/functions/error/02-clear-cluster.svg",
-        "sha256": "0575716c64d62bbc8f5089bc85dccbaa1b0e1ece5d51ecc1b826d90eb9a622c4"
+        "sha256": "7dcd7c961ef8760588c7d66fc6968f760e4e23d8e8e1856a209f8fce64d42a7d"
       },
       {
         "path": "assets/icons/functions/error/03-demultiplex.svg",
-        "sha256": "37d402c60a12b25f7b5b0dc8a68e403c1b6b9c1b302f63b21c95b71f79c28f66"
+        "sha256": "772b3e74b69dce8c0da15144622f9a16938b2d9b0cca6bf9e25917c411560d40"
       },
       {
         "path": "assets/icons/functions/error/04-display.svg",
-        "sha256": "b793fd997b335f74c91597c8bc71d3153f0bd390fd8a40d1cf9398d29cd7bc8e"
+        "sha256": "7ec69205514393ba4d8738567579f0aa9070be0703b92598f17e25274de2fb79"
       },
       {
         "path": "assets/icons/functions/error/05-downgrade-to-warning.svg",
-        "sha256": "f35e672b0c73f155dcd49b9e3a409e1b3aecb344bf6cbc35417d41cda2a85a15"
+        "sha256": "29995cd548073d7c6091966355a4a7abfff47dcac42b12510688a073211d3b41"
       },
       {
         "path": "assets/icons/functions/error/06-filter-code.svg",
-        "sha256": "b16c4d840f47e5dd59b8a0e62fc47b4cae0b51ab2e4eb272c226746437dacb3c"
+        "sha256": "b92627b99afad44135257ec2e70e58a6dc444987bb1d47687d0d6f5516b47019"
       },
       {
         "path": "assets/icons/functions/error/07-generate-report.svg",
-        "sha256": "c2c36be27cb6e82bf08c998b1f23d789a28e02193d1562c6053fd4041ee51d90"
+        "sha256": "6eb4a340bb45f5cc1662e39928e3c11e3334f36397cfbb408a5ed8de33009351"
       },
       {
         "path": "assets/icons/functions/error/08-is-error-or-warning.svg",
-        "sha256": "91f8fe28ce2d970e7b4bd203c1ef3b913e105e3e786dcb6eaed390f370e6bcde"
+        "sha256": "f47036a417e2081b3c2b81b6612f34d9f958e70331409e66f9d6771a918c00c8"
       },
       {
         "path": "assets/icons/functions/error/09-is-error.svg",
-        "sha256": "19eba0e6b5d3eae5103de17f1a9009e8857c598cc33bad7fd1a68a4d0d5ed3b8"
+        "sha256": "17d2b17e1657e76d90f8c899612899f98d9f20541d5a9038cdf8f7367d665901"
       },
       {
         "path": "assets/icons/functions/error/10-is-warning.svg",
-        "sha256": "3914b38acdefeac8320d06e781ff192a4095ce314a9af630184e3e0a1167d4c5"
+        "sha256": "134cb816059d93bab3ebb237c2b17b7c344173e812a10c79828f2617d08ffc75"
       },
       {
         "path": "assets/icons/functions/error/11-multiplex.svg",
-        "sha256": "41818833d7f64399afe7d66ffae4d9ec6e84e61b20f54b37892ff06ac9078b9d"
+        "sha256": "20f99e0901d94a8bd5d0d9d84a31e2d4b78aed5824af87fa93c4913c66691724"
       },
       {
         "path": "assets/icons/functions/error/12-override-call-chain.svg",
-        "sha256": "9d9ad16067e1e3861ddb755ba0263eb760a13e82b9cfb5b3fd5970c3efc97937"
+        "sha256": "3658101943e3788e945bbc7dff80910233fc8705fa8051409612efa17c30579f"
       },
       {
         "path": "assets/icons/functions/error/13-read-call-chain.svg",
-        "sha256": "31e4a8d287a868559fe9858eeddaffe595bd38d39920f224d0cc98333ae49d4b"
+        "sha256": "8937db1ee09fa54569a3e3c5513327b88d626227da2c168cd3b7b6d118c72e92"
       },
       {
         "path": "assets/icons/functions/error/14-read-description.svg",
-        "sha256": "ef4e887b62d06b84eaaf03379a375e15d390874e2244d492c3437c41920f3a0b"
+        "sha256": "515d9fe881e8235d88d2f5c6d58aae994b97a7aa408d5d87f62cd6346312190e"
       },
       {
         "path": "assets/icons/functions/error/15-read-code.svg",
-        "sha256": "dcfd5312ceb74b1ce10049ed9215906c941b1f39e9681cd42d224e72c9af7f02"
+        "sha256": "23b2d8981fd751d4869fb539b17d975fe6500ced984837cd4e7ecfadc6985986"
       },
       {
         "path": "assets/icons/functions/error/16-read-location.svg",
-        "sha256": "4e9032cb2eaaac16be330c14dd871bfa87ef510f43261dbfdb774014a2910e7b"
+        "sha256": "5edb1687e407028054646ed4838966a866b4d5dbb60eced7f400b190af89c934"
       },
       {
         "path": "assets/icons/functions/error/17-translate-code.svg",
-        "sha256": "7cedac6a9e84696ea5f4ec63d8f92717cc21f8b70288cfc5426376a64aff3114"
+        "sha256": "ec2ef5529ca9d073fc71e4c27105539e4897cb0e216cde4ed0cd74a127df8631"
       },
       {
         "path": "assets/icons/functions/error/18-upgrade-to-error.svg",
-        "sha256": "f9c06451491033ac39de95945037931c9bc27f04ca852665da01fba0bd701e50"
+        "sha256": "0e3adb3fd31d2b04e3617922b7257e8a02862fabf6c7d908589784134580cae5"
       },
       {
         "path": "assets/icons/functions/error/19-write-call-chain.svg",
-        "sha256": "f5b30b3beebf652691230ff316a16e0bf399ea13f35967c00591ad0341cb0fed"
+        "sha256": "7f2308f47e6fddf5854e0aa39a99324bd9d5b720164a3e172f339e61312467a5"
       },
       {
         "path": "assets/icons/functions/error/20-write-current-call-chain.svg",
-        "sha256": "d83893e82f4444ecbc0a4de5a3f383525be937b0b3fd0503a2e8e337f1c730ca"
+        "sha256": "b7037621a0ea5d5a2cb84bff4c275b4361d3023da397f04c199e10fca2007bd4"
       },
       {
         "path": "assets/icons/functions/error/21-write-code.svg",
-        "sha256": "00934603415c8288fd0921482686308faa429f797aa89073eb04b3909770818d"
+        "sha256": "f2107b5cf20544c8c3847b08ff47ffb409ebb691d7e91677c27dce95474c7890"
       },
       {
         "path": "assets/icons/functions/error/22-retain-first.svg",
-        "sha256": "b0b1f20bebfead7755878dfebeddcb4d1196c3a4c354d8ade916041f35c68446"
+        "sha256": "5dbd24029e2efa37e3d89ca6b3ae284bc6b290657519b41e9358296a8c5797b7"
       },
       {
         "path": "assets/icons/functions/error/23-constant.svg",
-        "sha256": "5719e38a290e3e812efc95fc6576bd703f008d9e69f9eb80d9bca9879704df79"
+        "sha256": "70f7c4c56d2252a1a9e740620e038ab4d48893bb96ad483c58e6eecc7c1c7d63"
       },
       {
         "path": "assets/icons/functions/error/24-terminal.svg",
-        "sha256": "19378c3b4eda9ac360615a23855cb2a6e406a213e434b27495b996ea171b67be"
+        "sha256": "edff73392304b9816a5b7c6d76cc3c4ebae37c5c826b6a1fd099de7245e1e1f7"
       },
       {
         "path": "assets/icons/functions/file/01_Write delimited spreadsheet_vi.svg",
@@ -977,51 +977,51 @@
       },
       {
         "path": "assets/icons/functions/math/bessel/01_Bessel J.svg",
-        "sha256": "bbf9bf44d8d335c3aba701b574f5ccebd00adcc46289c08fce9205ddc9c863ce"
+        "sha256": "1c824377d7beebdeb5e975878a77272cc9138369f1efdab89d5027eb1cacc94e"
       },
       {
         "path": "assets/icons/functions/math/bessel/02_Bessel Y.svg",
-        "sha256": "2b478bdc43a74034cf3ebc70e4ebfdaa76840f5ee1377ef8b3116ce62d757de1"
+        "sha256": "b29335a4332a2d36eb87289d606cd82c1d9285121fd65c3f21fc76edecbc143b"
       },
       {
         "path": "assets/icons/functions/math/bessel/03_Bessel H.svg",
-        "sha256": "44fdbb1575fbcc324a144417745ad7888f826642eb62b4e15e26e8b877a742e9"
+        "sha256": "e42e10d8bdb5d96785c4cd0f332ef0a1677776828d11ccdf88c9bcce3b1324a0"
       },
       {
         "path": "assets/icons/functions/math/bessel/04_Bessel I.svg",
-        "sha256": "3c3c7ded0d0c158172afced566adb49fe78f7ab2d8b2c3b90f8bde3f2e70a2b1"
+        "sha256": "11c917cf5d55ca05174b950d885af367d4f3dd2de5cdb5528ce8370043ffdb34"
       },
       {
         "path": "assets/icons/functions/math/bessel/05_Bessel K.svg",
-        "sha256": "b6e198adb89e9ac7e936b169a26a657119300900c51f7589c817e6b6ba4b4dce"
+        "sha256": "6aa5f32d53a0f239cde06e9b7a20f758d3bee4857e6e7a495a7d98bc205fe651"
       },
       {
         "path": "assets/icons/functions/math/bessel/06_Bessel j.svg",
-        "sha256": "51f44235e0b0672d2d324eec768c2c69f4331b6ad49cdc19f3ceb6a8c0b13160"
+        "sha256": "c81e960b23034f6da850f1f942c5e83b42af8d1b942e33537d2f29e1c939f3bb"
       },
       {
         "path": "assets/icons/functions/math/bessel/07_Bessel y.svg",
-        "sha256": "e65ebb6ae220cf8cbb9b9bd80058c135554216bc3cee7288f49819b9e82d9bf2"
+        "sha256": "5482a536dad0132c615fe19bf6dab0e4d5028ae11eb2fe92fc4d40be6f21ea76"
       },
       {
         "path": "assets/icons/functions/math/bessel/08_Bessel h.svg",
-        "sha256": "f44858c77014f7e4c91067b52b03651486ef7ab2dc70b57813e156f790afe26a"
+        "sha256": "38c1d2e4c1f193d8a0f643c16f2ef446fd63e1a97d6c98f793307f69dacf39b0"
       },
       {
         "path": "assets/icons/functions/math/bessel/09_Airy ai, bi.svg",
-        "sha256": "9bf2a12a78c9d242d85af5123b221b629f155c2effb80aa7dd00be52b9000006"
+        "sha256": "2186515a2c69351f9421743a1f3330e1787e3d5780905c85e1e1a04a0c632591"
       },
       {
         "path": "assets/icons/functions/math/bessel/10_Struve.svg",
-        "sha256": "a2c3346216d2adcd8b06fb4a4bd8c15df65edaf00138def9de9d57e0b2339a78"
+        "sha256": "fe8520bb5a0cd91bc27cf8f757efb9d45c518a456832be8b0e645c6a5801d2c2"
       },
       {
         "path": "assets/icons/functions/math/bessel/11_Kelvin be.svg",
-        "sha256": "c386545e3b21be38dac1102de658ddc628c65d5a022ce7e9ddedd33175fc5ce2"
+        "sha256": "ae174a4795fca5674c0dcc465a1997f69f7cea4e7e3a67b234089b894bcf9100"
       },
       {
         "path": "assets/icons/functions/math/bessel/12_Kelvin ke.svg",
-        "sha256": "c1c648d262e047835515814ece2aa645d6e8effe2cf3a5fb690c74f12bb7908d"
+        "sha256": "54041b875a9bbb0207d60e744d5569b5b5eb5daca47b6e2928807ea5da2b7cf1"
       },
       {
         "path": "assets/icons/functions/math/calculus/01-numeric_integration.svg",
@@ -1053,35 +1053,35 @@
       },
       {
         "path": "assets/icons/functions/math/discrete/01_GCD.svg",
-        "sha256": "69c2cd4c8dfdb726b737b6a560a5f5e365c636604aefca5c167ec0cecd638199"
+        "sha256": "58a89deb26e5b2ce3739434811f7e1e2ba952ac3a0a2fe17d34f7d618d4f96fb"
       },
       {
         "path": "assets/icons/functions/math/discrete/02_LCM.svg",
-        "sha256": "2ca10d3612047672214249804f739ff8259d1933c08a7f3e9f7e2428d031c4b3"
+        "sha256": "d10b5d20a1880ccde50763f948e91b403a6de3baa866968862b6191de01c36dd"
       },
       {
         "path": "assets/icons/functions/math/discrete/03_Factorial.svg",
-        "sha256": "eeb0a97083c559b0b92b6348d3a91469aad09466cbd92add03a194dd7c65b90d"
+        "sha256": "5187307767059af2198f9e76447e0e72574813b0a8ef7388b7e8a9600bcb0626"
       },
       {
         "path": "assets/icons/functions/math/discrete/04_Prime Factor.svg",
-        "sha256": "d21f9412d4549aa387ed0ac99fc450dfcde267793880b95cad5833fd4527f09a"
+        "sha256": "755856dd2fdbdfa1f334cde7a0d36a45124c71362bf1499d3fc5beaa7db09a99"
       },
       {
         "path": "assets/icons/functions/math/discrete/05_Check Prime_vi.svg",
-        "sha256": "54432f36713b494b1a4aca2cc3c089d9dee29f71988b5329d60db8685245c28c"
+        "sha256": "c5d4b02017c07100eedc3008c3097f3a4719b0f46852b1550b256b420f99ae1d"
       },
       {
         "path": "assets/icons/functions/math/discrete/06_Permute.svg",
-        "sha256": "3e8baadbabedd7579b35f0d0419aa60830e390d6b6c429b75dba7d74d3c73776"
+        "sha256": "d2e495be87d8469e72761b4295cd2d1ae7d6c824b5cca985ff307af882d2ae0d"
       },
       {
         "path": "assets/icons/functions/math/discrete/07_Binominal Coefficient.svg",
-        "sha256": "fcc66a0e4a077aefaa803f667da52a7db7f07acaccaf17e106fd0624e990d6af"
+        "sha256": "2654db98b3907d6753b82b1fec20d579ddc6deaded769a4ef3ee5e1731e99ba5"
       },
       {
         "path": "assets/icons/functions/math/discrete/08_Continued Fraction.svg",
-        "sha256": "7b65351e9fa06ff464b7521f3cce58e3e8e2677d216dbd9c32aba8288c40869b"
+        "sha256": "8086edf8a742336131d11762c0dab3b9878c2f557409a6bfada97a4c37f31e34"
       },
       {
         "path": "assets/icons/functions/math/elliptic-parabolic-functions/00_Repertoire Elliptic & Parabolic functions.svg",
@@ -1089,11 +1089,11 @@
       },
       {
         "path": "assets/icons/functions/math/elliptic-parabolic-functions/01_Jacobi Elliptic.svg",
-        "sha256": "00002219690f88ff136011eb9660492a637280f590805099e836c6ae95c0192a"
+        "sha256": "d15ab58c779f5e7ebadf90a6d4eae869ba56e988a7c448887859802e2ecbca84"
       },
       {
         "path": "assets/icons/functions/math/elliptic-parabolic-functions/02_Parabolic Cylinder.svg",
-        "sha256": "ef01a0bbbf9ba9481a5d8fe67077d8dec2f8a61fb9ab4d1954dd2822e3bb5d40"
+        "sha256": "ea2573393cc00fd2d976619a915dea3bb19b0007cecabc3c4d4346edb36a6afb"
       },
       {
         "path": "assets/icons/functions/math/elliptic/00_Repertoire Elliptic Integrals.svg",
@@ -1101,11 +1101,11 @@
       },
       {
         "path": "assets/icons/functions/math/elliptic/01_Elliptic 1.svg",
-        "sha256": "3895dfeecc4128d257b1c30985d002726f7bb82aee2d2682cd257a98025984bd"
+        "sha256": "fa90edf023379c841a99da3bf5420f70da4544e07578afbd0dab14e1210bae0e"
       },
       {
         "path": "assets/icons/functions/math/elliptic/02_Elliptic 2.svg",
-        "sha256": "a335960977d3d7c58336a955e81d6ccdfb76d1de35bd75b7531d556cca470d25"
+        "sha256": "592cd79089b465f051b3e7153efbc10dc0d6cb1cda93eee4608f894e6bf8c3dd"
       },
       {
         "path": "assets/icons/functions/math/error-functions/00_Répertoire Error Functions.svg",
@@ -1113,31 +1113,31 @@
       },
       {
         "path": "assets/icons/functions/math/error-functions/01_Erf.svg",
-        "sha256": "6151fe44a32da6779002b84f0b254e31964137708136de0df755120060a7e62b"
+        "sha256": "085f134147e5d5c2e98694a0c4f57fd686f9d848a3d952eb673fb5c9d3644d38"
       },
       {
         "path": "assets/icons/functions/math/error-functions/02_ErfC.svg",
-        "sha256": "ba5bfdf60da61062138b58670670df2f97e24499a87c58759c98e521659a7276"
+        "sha256": "e9c009c98943dfc431e1b5ef74f51b810a3b6d029fa337711f8fa41d9cf57271"
       },
       {
         "path": "assets/icons/functions/math/error-functions/03_Scaled ErfC.svg",
-        "sha256": "c67e1d2156f535abb303531fbc9cb449c6b34178dfea26468f0eedde9483d9d8"
+        "sha256": "4841ddc71a069b96d19b22891721b81462ca1004a4e594e8611db07c543db033"
       },
       {
         "path": "assets/icons/functions/math/error-functions/04_nverse Erf.svg",
-        "sha256": "00fe677d02dfa637c6ae45f5d9137eab916c493a5e0473fc5bc680d960f5df66"
+        "sha256": "55934bc7e3d224d314776ed8115f2d8938624716f3e7f6ef01dc29c881365917"
       },
       {
         "path": "assets/icons/functions/math/error-functions/05_Inverse ErfC.svg",
-        "sha256": "2f165f67eb8e83218cbaa8ea8f60ae77069466abd8292fcfc765d60cd1aa740b"
+        "sha256": "a9808cd36b6ee25896e13bdc269f8498ed9869994aac86253412674dbaf4d65c"
       },
       {
         "path": "assets/icons/functions/math/error-functions/06_Fresnel.svg",
-        "sha256": "360fd1ce13b509413ca3460e0169346e4a88727431d909c9ed214ba87b5af6c9"
+        "sha256": "46ee987f93d30f2b36f02b5ea341273e8a710ce9a7e46c45891b06523055a754"
       },
       {
         "path": "assets/icons/functions/math/error-functions/07_Dawson.svg",
-        "sha256": "cacccf7e41202b6c2d68095196a86f57ceafccd4e825619489672e6477944395"
+        "sha256": "6ad7c8747ca5aa9bf626faab5e60b4124dfcce7fc6abf48809b348cef26fff54"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/00_Repertoire Exponential integrals.svg",
@@ -1145,71 +1145,71 @@
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/01_Expl.svg",
-        "sha256": "9641814cc8dde308b0f06580e6661635c50d71eee5db345fabee2e058bb8c7fe"
+        "sha256": "9db02f420eb7006bc4fc9a8864697ce32e36ef75576673eac2ae147223368d0f"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/02_Sinl.svg",
-        "sha256": "4fffc88f9a80f94d411e1150a95e75296e9553352fa7fd936d4a5fa7a1197d3f"
+        "sha256": "0f3561fe7a1df0e1787acc959164d02b9975a4807eb9614de18ca48272887673"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/03_Cosl.svg",
-        "sha256": "bf0b1ad254b20ad688c33d9981197054c2bb0411a9758bb5768827419d582084"
+        "sha256": "59cc49ab88562ec3b41513007a8a4c53278675b09f30242c70724985f9d490f5"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/04_Dilogarithm.svg",
-        "sha256": "f5cbc416c34a415e65675cd6e47a5855c0ddb1fe059bd182f040335f401d89ce"
+        "sha256": "6e15a3f69bf88f8ff98b6e34145e1e58f20cb3cb06540107fdc2d10ad94131e7"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/05_SinHl.svg",
-        "sha256": "f06ce9684d3037534f7b25492c0bb0a1c631b36858ffc003c09f04ded6558c86"
+        "sha256": "8a2e1858f2d0ac88602ed512a2f51563545dabbe2c72686f8c6bc579df3c3a69"
       },
       {
         "path": "assets/icons/functions/math/exponential-integrals/06_CosHl.svg",
-        "sha256": "f5261a9585e2a9212fab3c0d694ad23b56f5a270e5541ccfd3631835bc68e6ac"
+        "sha256": "c48e457af83dff9fa5ea5520bb3b334d4747772170998da3b279c5564a9b12c8"
       },
       {
         "path": "assets/icons/functions/math/exponential/01-exponential.svg",
-        "sha256": "1b4ae82e47b04c6f62b0a5216cf6745ca79a22d0c01ebdf7c911133692f9b069"
+        "sha256": "fb57ba24e4e9cdcfe56d27dd18df700e6d7a30ce82c2f46842450a5759c596c6"
       },
       {
         "path": "assets/icons/functions/math/exponential/02-exponential-minus-one.svg",
-        "sha256": "5757ce829a8b611fad79efe257a5db58ec0ac7cef05384895b8847735069fd92"
+        "sha256": "ef58f7c03eec85233523862fe707f6f1fee92ac7e66f4359db13de06ebbe264b"
       },
       {
         "path": "assets/icons/functions/math/exponential/03-power-of-10.svg",
-        "sha256": "edda61d4836e91b2fb34b2cc4d9a89e04155c6b3fe0a103b1bf7786314dfe111"
+        "sha256": "1995d0d5805cf1639a4f4dc56235ad2e737b395c78b9bc4c82eccb07f8a164dc"
       },
       {
         "path": "assets/icons/functions/math/exponential/04-power-of-2.svg",
-        "sha256": "8ecd8becdcd4dcc7c2f2ac9ef8efe3590853569d1448e3c5533d3cd2f5255565"
+        "sha256": "aaff13776a909c9c2d538f6542f6425d262188e303b16a5c50730fd071a8ebc4"
       },
       {
         "path": "assets/icons/functions/math/exponential/05-power-of-x.svg",
-        "sha256": "d751e0a3ca749e66d17b9e875b74bf8a1544d8d17a2ab8303013d2852b412b91"
+        "sha256": "5c8c4f0486c20a4a47db6b500a28ee119501f5955b9d438ad4c0f136f17c081a"
       },
       {
         "path": "assets/icons/functions/math/exponential/06-y-th-root-of-x.svg",
-        "sha256": "d2c0f1add2d2ae13c52e214b026f5c8be2f041903bfe22d1f7cb1fd375ca6481"
+        "sha256": "b313c8c72051f308e954b1faed2767be5c733bf5daace42b57c4756d3ce6ba41"
       },
       {
         "path": "assets/icons/functions/math/exponential/07-natural-logarithm.svg",
-        "sha256": "4de4e9bcfce92bc946a6faadaf9dee07066b66b247819e68819051a0cc88614c"
+        "sha256": "3581c5f291a3b0c0b78ec9dbd1e91f8e1c076b2e0b493ecf9e39de2766ba7b8b"
       },
       {
         "path": "assets/icons/functions/math/exponential/08-natural-logarithm-plus-one.svg",
-        "sha256": "f749519fb8faeee2ca3d9d4de44344df5e54d37cd5a9f9d7eccb647efe05bd5b"
+        "sha256": "9f5522ddf355a49c9e9149059ee9510b09d7f0b027b0c35a0cccca920538ca4c"
       },
       {
         "path": "assets/icons/functions/math/exponential/09-logarithm-base-10.svg",
-        "sha256": "197f94ef3b36c2e745fbe88ebccf306f1ccc9d21d0216ca5d33419bee953cf99"
+        "sha256": "06a28dd5090fdf53eed12a269dfe4664e53e5fc6f5a9a8d5b3e8eb967f48757a"
       },
       {
         "path": "assets/icons/functions/math/exponential/10-logarithm-base-2.svg",
-        "sha256": "5bb24d2d12de9c627dbba70f2b9658d3088daf72ca93e792717cdaec1b321db8"
+        "sha256": "bb3bec5388f0fda6d8ee780a62949e420480b335aa397eb6b352771ce76e9721"
       },
       {
         "path": "assets/icons/functions/math/exponential/11-logarithm-base-x.svg",
-        "sha256": "0689a9cdacdc19619cb360cc2a49098ee97cfc10234694b1861915b5fa37f61b"
+        "sha256": "534c882203003c8c2c96d70539b2e14124275b621396b27548cb77f9ae0b813e"
       },
       {
         "path": "assets/icons/functions/math/fitting/00-advanced-curve-fitting.svg",
@@ -1461,31 +1461,31 @@
       },
       {
         "path": "assets/icons/functions/math/gamma/01_Gamma.svg",
-        "sha256": "e74dda3187d2f364f7cf0f52b5c67769e08df7cb9d067d2d04146b3f32dca8d3"
+        "sha256": "a230fca856f24bbf45abf56a285f91838b8ac17731701cad8cd01135e47f4091"
       },
       {
         "path": "assets/icons/functions/math/gamma/02_Stirling.svg",
-        "sha256": "eb62ffb05c2d6f1aec273e50ed6dc57a94520613f7ff0b96ec5d0d92d1a9ed88"
+        "sha256": "2d64dd0d7662e1ceaae3392275dccdf9567199faa149ce28d2e2771f83cc4e1e"
       },
       {
         "path": "assets/icons/functions/math/gamma/03_Beta.svg",
-        "sha256": "720e01f0ca37bbc890fd728622faeb963abb147780ffd3d2f2661488ee2a77a7"
+        "sha256": "c7002fa9f441cf9dd50ebfedd363387bc8ab2961d1ef51fba3ec623af136b849"
       },
       {
         "path": "assets/icons/functions/math/gamma/04_Ln(n!).svg",
-        "sha256": "7d43f20c47e261f4e23668df835b822f97d89f1ecdfa6c5f62a9135c06be2405"
+        "sha256": "2778b1ea5b0563b2607157f62018aa2c001e752a53eba2926c6b92f6d967c9a5"
       },
       {
         "path": "assets/icons/functions/math/gamma/05_Ln Gamma.svg",
-        "sha256": "c0a0551cf88e3517c1b9e48028872cddd021dd6dbd5676b41dd12de6b01ad21c"
+        "sha256": "01ef47206e3e6b56e4dd8e70d0043d49ad8b636f432b376167956144adceb117"
       },
       {
         "path": "assets/icons/functions/math/gamma/06_GammaC.svg",
-        "sha256": "8bba18f2b55216d2c8a289d9d528b99e249a4e4770c4b05043e86128f32f2b2c"
+        "sha256": "79e6bcab7770ec3bde113cd2be260581cae81040db719dd0cf4c628f603cfc35"
       },
       {
         "path": "assets/icons/functions/math/gamma/07_digamma (psi).svg",
-        "sha256": "b2b67b59251e93efb52cd4d28606caeeb6a7f2dc8b1ab5598da72c0bb9d9d772"
+        "sha256": "da42a1c0ac7763544902f935825f5c6dcef9a2f5cb04f61c8ab9ac5c195a76cb"
       },
       {
         "path": "assets/icons/functions/math/gating/00_Repertoire Gating functions.svg",
@@ -1493,15 +1493,15 @@
       },
       {
         "path": "assets/icons/functions/math/gating/01_Spike.svg",
-        "sha256": "039edc2b3da5b70f8a8b17cd0a556b540e7c969a8bc233f6d05721dea113dfdb"
+        "sha256": "4abc31c740992f82bc00693902e131cffd525fe371eb8470d353752825c11220"
       },
       {
         "path": "assets/icons/functions/math/gating/02_Square.svg",
-        "sha256": "e33304c831ba9c382aa3901ed492d90ce15d4bf0912ea2e8804419fec2c2c6c0"
+        "sha256": "3f20a2c62b1c335d42ade1c8609993bf2bd645f3677de99c1fa5c20dd5bc2416"
       },
       {
         "path": "assets/icons/functions/math/gating/03_Step.svg",
-        "sha256": "4b0760799677dc8b3be323d9377938b7aadefb04173a625c19033a2ffcd79837"
+        "sha256": "32059f7947f906220489c29868f2ba9f0193ac8b017e1d2f48c5e375a515334b"
       },
       {
         "path": "assets/icons/functions/math/geometry/absolute_angle_difference.svg",
@@ -1613,51 +1613,51 @@
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/01_Sinh.svg",
-        "sha256": "5e5c09c1569935edca6ce10edc095ba2700f65a82bcbf0f47ede9ccc40d10460"
+        "sha256": "d0ccb0e6774910000f47dabd4245fe4ac11532e2e82e84ae3c4e87fed2acc41f"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/02_Cosh.svg",
-        "sha256": "6cd429fced3774cab266a73b9a7f4dda73eb4ac48547a96d2f25f867b5e8535f"
+        "sha256": "8571a392918990011ce27d00957a47a03ec653ab5d1d6f977a5bba0efac3676f"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/03_Tanh.svg",
-        "sha256": "6fd260f521d3a1947aa52204cc1a95e8ab4e9da57527e9055d53d3bf71e378c0"
+        "sha256": "10f7ec225ac5aa96cbd7fe2d7fe5c3894d9deaffcfdfccac4087fc2582a477e9"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/04_Sech.svg",
-        "sha256": "c74239e7edaf11b9c7884f646724b473b8830dba0b6d0030fe2134c45d4f1082"
+        "sha256": "1eb6e6cc513833a207f43474e1a1542e100f1592a3f521bd1767ed85ae787317"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/05_Csch.svg",
-        "sha256": "ced2c6ff0dac75b043e278b07ba51d1fb82fc780a14865000d689904a12c9e82"
+        "sha256": "b87765a932e390ead2af22b53ea789627523c85e889e2c8563afc8712e14da6c"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/06_Coth.svg",
-        "sha256": "9efea467503c1d5bf49c2eca1c48aee17c797c020a1f3ab9ee4c5112005e0879"
+        "sha256": "6c4710d6697352f47b02a6203572901c8878da84869fb3f7b811911c1c6a6c79"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/07_Asinh.svg",
-        "sha256": "d7eb87b3ea62ec2d3d9e4438ed434823c110e58ef8a025fdac0d077f3ce82b65"
+        "sha256": "9b076dc74b44e705556b9ff01902be5ae09dba3167656eb4190725f07a881225"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/08_Acosh.svg",
-        "sha256": "4c1ba8214d9033286f6ba240dbe5245098adbf5362c8d20fcea0a030f4424db9"
+        "sha256": "ccd634f967d184720ab4f55e3bbe4ce8680156780d8d6797d0469d17e2ef0ec0"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/09_Atanh.svg",
-        "sha256": "c1bb96a49135446735a54575392cef3baea00eb6cea47c65ab785782f95ed837"
+        "sha256": "5cda60b2261dea20146fc8eebddc1a8c0cc2bb099822e4fec5e9e09753b72546"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/10_Asech.svg",
-        "sha256": "c5142a9191792e8386220a012a8112fb4ebb30fb75e4e6187c7b55f854f7a6cf"
+        "sha256": "aeaf14557f5383137b94e26d49dabdfb2112370598cfd1a7ec06242c58ea7ca8"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/11_Acsh.svg",
-        "sha256": "860a2a5a3843138b5bb6defdc40f9ed34a43b7fb39b15ca41f19d9fe7ac14fc8"
+        "sha256": "211bbfdbd92acd4ad1dc79e081ae9a76d96ef480aaf4c843910933b6a336b1b4"
       },
       {
         "path": "assets/icons/functions/math/hyperbolic/12_Acoth.svg",
-        "sha256": "de6ada4392c84c9210bc91ff0da1e912fb85284c0f6966a20e6716e3a5c109bc"
+        "sha256": "e2c2a4aafa81e1f5e5be513e4f3f13178bf60e1689de00bbe7f69813b2f89608"
       },
       {
         "path": "assets/icons/functions/math/hypergeometric/00_Repertoire Hypergeometric functions.svg",
@@ -1665,15 +1665,15 @@
       },
       {
         "path": "assets/icons/functions/math/hypergeometric/01_Gauss.svg",
-        "sha256": "2778c84a37533d8a2305ded4c814c24ba60d67827fa0c54348bb4bf772abe476"
+        "sha256": "58416620e742177ae62bfb9326c1f7a1b31640593bb1cff4b6f3b3cbd27f13c8"
       },
       {
         "path": "assets/icons/functions/math/hypergeometric/02_Kummer.svg",
-        "sha256": "045d33d3e0931663938404598192f4b020389fac3b60cc99f53487580f7302a4"
+        "sha256": "ded3ff75d95d9577cd94801d5661ba7b12203feb944d9180daef23572ee2cb9f"
       },
       {
         "path": "assets/icons/functions/math/hypergeometric/03_Tricomi.svg",
-        "sha256": "6dc3ca5ee94bcfe5e7fd93b89ecb35cc4a83d894549ffd610927eed1602ef8e3"
+        "sha256": "57a7ab28c7cc7e2928ec460f60629941ae854f6c9855794749d83888bd1d5532"
       },
       {
         "path": "assets/icons/functions/math/interpolation/01-interpolate_1d.svg",
@@ -2024,44 +2024,92 @@
         "sha256": "0f584b2739ca9cc2d14ea152dd9195f1323b8b199bdd99bdf53933cc6c4dc9cf"
       },
       {
+        "path": "assets/icons/functions/math/optimization/brent.svg",
+        "sha256": "5b053c2e47977bafd4dcb630875d95b45b43c1099a7920e8ceb0d53b7ef9fb54"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/cg_nd.svg",
+        "sha256": "b8566701a63b26ec814585e594fa6d661de6eb75194f57ba8b4aac510f93193c"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/chebyshev.svg",
+        "sha256": "e5e2f14baa0348a087cc0372fee2f101fa42e9150e9c501bdd3b7657e238bf80"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/constrained.svg",
+        "sha256": "5418d88572ca92d0ef8a4d518f15a132bcc6155fdb9d3077d6e34be24873b102"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/global.svg",
+        "sha256": "15dc4abc2c9762df9ac4d142ad02db94eb64e63bb87b133a8294e4c91e929942"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/golden.svg",
+        "sha256": "9a942645c30286bf0b4296e69ef030aafd1261394f26ad1ba82c0cbd917d0912"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/lp.svg",
+        "sha256": "de26bbcc6cb3226fd534e17c85200c8795d22a285ac60bf24c8f337fb0094e4a"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/minima_1d.svg",
+        "sha256": "f8fdfe506708657447ae07a4d86ca469a2b7f4979305c6628f187ede88394464"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/minima_nd.svg",
+        "sha256": "2515febdf96aef550b1ffccdf14142e4127f35798915dc2b8f55fd5b095cd289"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/qp.svg",
+        "sha256": "20b1d9dd5b928f957f6466996253118254142fa5d40e2c520e9717624681c913"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/simplex_nd.svg",
+        "sha256": "13daff6063af661cc12f30cf74de741406074f29eed899d6031b04df9788976e"
+      },
+      {
+        "path": "assets/icons/functions/math/optimization/unconstrained.svg",
+        "sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6"
+      },
+      {
         "path": "assets/icons/functions/math/ordinary-differential-equations/00_Repertoire ODE.svg",
         "sha256": "634aa5f4676244c25b45295fbb14375285f4b1f2fb04dc5f80d36593b75d172d"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/01_ODE solver.svg",
-        "sha256": "b5438c5d7119ee4d91f508bb4599570d9332576d63e937563fe140025532702f"
+        "sha256": "4c69fc456a8a1f55b783c725490c1521ac6f468ce8765fd15c4a660fcdca9c6d"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/02_RK 4th Order.svg",
-        "sha256": "bb781d7229a3d85dc9afd0bc8007d51ba7299f0f6f4ffff5c233417865855467"
+        "sha256": "b77c6860503e5e619ef3cebd17ae54b09b20bd9d2c1687d8f04141ab9e08d9ad"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/03_CK 5th Order.svg",
-        "sha256": "3c54349452ffc81c38371cbef2a766afd12fe798422fd355efe49145377df129"
+        "sha256": "edf28cd0049f3462f4c45dd7b8ad690185b447c4dd9d8eb3e629ba54f5e87e3f"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/04_Euler Method.svg",
-        "sha256": "6507cb74619baab0cf3fd2fbc073e4c878592ba550dde339ec02d67e7b66a31c"
+        "sha256": "dfb6af53cf249772182a7dd75a57d46c5f9385cf50003c2914baaf8106aff989"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/05_Lin n-Ord Num.svg",
-        "sha256": "9c3d59f4aaa6ecb6f7787aaea6a9fe9d373addfeea2a604feb055cfa7991f7a6"
+        "sha256": "feef4e8ee33638578cfdd2e377096fe1de186fa0e708890b8a3b16bfbccacb69"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/06_Lin n-Ord Sym.svg",
-        "sha256": "19ee434cbbcd876f2d1f4d0ab193e900ed2709b4b03b9d382cc25bf8bb999b63"
+        "sha256": "1a34d4438bbc80bf6d6e2944729e13d04c219936d0913ec4a60295c419419c04"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/07_Lin_Syst Num.svg",
-        "sha256": "e0dff322f5bf916193907757af263580e43680ffa8d32f71fa386dc4849fd64a"
+        "sha256": "3341cfa6aa6124765589d3cc085cd9458924a71d87168d59551462bd7b208192"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/08_Lin_Syst Sym.svg",
-        "sha256": "7af337eac20bdb469830e1278e1101bf017bd3b78eb0a2d37fccc339dba5c15e"
+        "sha256": "934f422a3fe7313bd8521e6e6699e5093f588b9a2863e9ef4f7865429af8e2cb"
       },
       {
         "path": "assets/icons/functions/math/ordinary-differential-equations/09_DAE Radau 5th Order.svg",
-        "sha256": "14983ca5d63bb6305c0808d2ee82d8ffb13d09c771e02b8253728fcdfbe52287"
+        "sha256": "bc7cb01d5d20cff5ce56360ac047435dddfee82a2457961786adc1ebb69e8c99"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/00_Partial differential equation.svg",
@@ -2069,27 +2117,27 @@
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/01_Define equation.svg",
-        "sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077"
+        "sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/02_Define domain.svg",
-        "sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d"
+        "sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/03_Define Boundary condition.svg",
-        "sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62"
+        "sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/04_Define initial condition.svg",
-        "sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7"
+        "sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/05_Solver.svg",
-        "sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878"
+        "sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc"
       },
       {
         "path": "assets/icons/functions/math/partial-differential-equations/06_Rendering.svg",
-        "sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc"
+        "sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d"
       },
       {
         "path": "assets/icons/functions/math/polynomial/add.svg",
@@ -2429,63 +2477,63 @@
       },
       {
         "path": "assets/icons/functions/math/trigonometric/01_Sin.svg",
-        "sha256": "f086fc365e9c989a571bf81a4f3231d6585e9953aeefdc3fb6358badede48cc1"
+        "sha256": "78929394070edd87554215727c43eeb67dcd5d42a858d515f6562ae802d4cc39"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/02_Cos.svg",
-        "sha256": "653157776b836c0563b485c03c26f0fada1c97191db27fcc36efe09e0c1f2205"
+        "sha256": "3b739eb9ec157f2f4949b880681b60c6e3febcb3f89b40e94c115fc6f8a9ff6f"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/03_Tan.svg",
-        "sha256": "5d68482f81dfb0933a007fbc7e15ebfc304408a5369dae8b272e8ef7e02b0b0e"
+        "sha256": "26c8bd09a9c276b629533424a4ae760766324a2ecc9d3ab06205c7f8d1505db6"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/04_Csc.svg",
-        "sha256": "df775ead6ef6a686ae134bc83ce081bf47c17b7b17599b7ce45cb49086c4a894"
+        "sha256": "7d1062867862245db5e2a4296cffe0fbd88ad2f0bde1ba6cc4b452e2943f3981"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/05_Sec.svg",
-        "sha256": "b069b8c680e72c3597c7127ced90991dda6dfbbc9cd059818011545f566d4285"
+        "sha256": "9551aa6b72f85fcc6d6562b8e618d755d765977224b675f214b4ecd37aee0fe2"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/06_Cot.svg",
-        "sha256": "f01dc64e143d476c86bf96f1e996fd23a1f157f7b8f906f261b06d12ff14d390"
+        "sha256": "a186314d67db48e537238300d3146cab4495815006090907a00e1989f42e4211"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/07_ACSC.svg",
-        "sha256": "098dc150c29d699308125d4538e5350ba71da911fbefb634eb64465502a97709"
+        "sha256": "077fa447efe34ce40f6a25b7f434f519b41d23af806190d2c8bd6d085762c4d0"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/08_Asec.svg",
-        "sha256": "f7a79152723bbd2e350e0b2bd787e16232f88ac22780b77cae5a5f207489997b"
+        "sha256": "64415556843e4326b48215e6e6325d9828a0f8ee3a64b60ea1903ecb39402c51"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/09_Acot.svg",
-        "sha256": "17c87131d3453b82d22cb0f3492a0bbb35edcb3206cc4ec5d9db61c11ad8d6c9"
+        "sha256": "7508c073223d446f95c18f9f01d837b39d3cd325bfafcf07ee236e24c9fd2ae7"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/10_Asin.svg",
-        "sha256": "421f489bdd47b2cd40adcbaa006b1163d66456b96b84a2a89c3e0549a725dd8b"
+        "sha256": "9b993e758ec25612bba869cfac2f8dbd9cfcda2d95fe3ede96ccd9995d1496f1"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/11_Acos.svg",
-        "sha256": "eb6f3202ba3cae9bef30a3f407d4e3bb47f0d6aa4aff46fb58bdfec71cd794ea"
+        "sha256": "5d3fd3532e79eadd584118cdce1312bb5eabf3cb212807720085063f1f86d8be"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/12_Atan.svg",
-        "sha256": "574c7713435e1233b6faa3a36e398f5179dd8a156d3923db809a99dda39dcb12"
+        "sha256": "d198b7e897b372f75998e682e53859cca73265364b9584dbe78e76d3f227a526"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/13_Atan2.svg",
-        "sha256": "745baeac020f33f2e103f4387aaf0d87df59263202dee5fdb442e802cc95a3b2"
+        "sha256": "c4def5205d70d8f32fc1dcba1954f9a62ecd4187125eb9312bc5140eb544257f"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/14_SinCos.svg",
-        "sha256": "ebcaaa3bf2c0ca1b348185d238582f5e20f58f23aefc05edc85b845e90b5aa9a"
+        "sha256": "dbb8656412511f68b704105039567a7d19e4e5e4447525f0810b0e2759b23e79"
       },
       {
         "path": "assets/icons/functions/math/trigonometric/15_Sinc.svg",
-        "sha256": "34e0ed59bc2ee5ee969f6b2d9698669bfd10e78c4f58622d786241454c51ca56"
+        "sha256": "d6cd7c261d1ee233cb4d63f125b6784e633f4cc47b0203c1f518ce27f70dce55"
       },
       {
         "path": "assets/icons/functions/numeric-family.svg",
@@ -2581,11 +2629,11 @@
       },
       {
         "path": "assets/icons/functions/numeric/23-nombre-aleatoire.svg",
-        "sha256": "60ba7f569cda4b3c94597dd0972a9541bf2907cb318c5689cfe318cf1d45b262"
+        "sha256": "5b7357c128dd843a5a28512898b29ddc123c21b2b8435b3581b5dc8349750563"
       },
       {
         "path": "assets/icons/functions/numeric/24-nombre-aleatoire-gamme.svg",
-        "sha256": "ce9b317001121c9e5a881d4d32d6c7a89e441d8a46b11d9526c03c642c367de7"
+        "sha256": "474a10a5c8ba17dda15c2d0c7a63fcb2033cbfdd7147020307fc4027cb1e6ae7"
       },
       {
         "path": "assets/icons/functions/numeric/25-constante-numerique.svg",
@@ -3313,7 +3361,7 @@
       },
       {
         "path": "assets/icons/functions/synchronization/notifier/wait.svg",
-        "sha256": "cca568d31b31f04150d099a932cc921e490bd0a9ea0d17bed28871f9de29428b"
+        "sha256": "d2475434c490ede8b8e515542de25c3ad718f4cce64aa29913e1d79df3ed6657"
       },
       {
         "path": "assets/icons/functions/synchronization/notifier/wait_history.svg",
@@ -3321,7 +3369,7 @@
       },
       {
         "path": "assets/icons/functions/synchronization/notifier/wait_multiple.svg",
-        "sha256": "7bfe0ddcdc6a26f329060857f8ae5077c1ab7d857ea752fc3ec0bb81d1d93c1f"
+        "sha256": "e9237c45a607f327710b5f954587bd9f25b5aa154926f01833b14a7c0b1fc61c"
       },
       {
         "path": "assets/icons/functions/synchronization/notifier/wait_multiple_history.svg",
@@ -3569,7 +3617,7 @@
       },
       {
         "path": "config/context-help.ini",
-        "sha256": "83e42438fbe0811b14f20e35806b722f556b1825894ae621b1ffb8b4b10b40d9"
+        "sha256": "b953f824d54afe615953dab34ddb3a3ede32b9c48eac667ba380cd1db77c4c36"
       },
       {
         "path": "manifests/connectivity/entries.generated.inc",
@@ -3641,7 +3689,7 @@
       },
       {
         "path": "manifests/function-bindings/studio.mathematics.v2.json",
-        "sha256": "a246cd1df6c250a99b34698191c7fcfd722faf85d3c39fe43d57ea83022b8d75"
+        "sha256": "2dfcc80a4981c9e0d873f81ede425530189210133e4aa6be8eb7699ec5b1231a"
       },
       {
         "path": "manifests/function-bindings/studio.numeric.v2.json",
@@ -3677,7 +3725,7 @@
       },
       {
         "path": "manifests/math/entries.inc",
-        "sha256": "7ad1f70a62c44c313f532a950cb5888f1a3de1b81e8892fcfc0cea39762bcfd4"
+        "sha256": "43a2ebe035af7481ee079b8933384cba03d05ee6977108ef81f944667dea026b"
       },
       {
         "path": "manifests/math/exponential.json",
@@ -3685,7 +3733,7 @@
       },
       {
         "path": "src/FunctionCatalog.cpp",
-        "sha256": "e3dce14bce84a62b5f1422a69c343bb6e836f650806ba742f865c691ecb16cfe"
+        "sha256": "d1f40ab46318f934b3c08ff5f52aaada8b0e308885761ffe2255118845453382"
       },
       {
         "path": "src/FunctionCatalogEntries.inc",
@@ -3697,15 +3745,15 @@
       },
       {
         "path": "src/HighlightExecutionEvaluator.cpp",
-        "sha256": "a919649d81d0970da492da9e5cc9624db938e46905825c07fb734e44b2318633"
+        "sha256": "e6d30b1f90a55cfe187f7b948afea45841efac9d8bdeb5ea8983bb8cbbb89e14"
       },
       {
         "path": "src/QueueRuntime.cpp",
-        "sha256": "52509d44bab6149f251212285a338573090f6eb0338dbde25b75a0c23a45d7bf"
+        "sha256": "af8abfe77424e20a3324017581f38aca78fa18b5af57e3b59edd70452fca9aab"
       },
       {
         "path": "src/win32/Win32DiagramPortDisplay.cpp",
-        "sha256": "b05c7164d35386d1dfb0a732f087003a67aae62412a9fba5543bcc68981ac9d6"
+        "sha256": "59a6ee661bbe7234436ba257113eb6a48e95ad98de4f7064b94e8153fdcbb392"
       },
       {
         "path": "src/win32/Win32FunctionPortLabels.cpp",
@@ -3717,17 +3765,17 @@
       },
       {
         "path": "src/win32/Win32HighlightExecutionController.cpp",
-        "sha256": "a2d82227d1487ae8181829222da8be8e787ac9b8ac07c21999f92d3b82aecf27"
+        "sha256": "8f0fc8d817517de4ab45380f1c1649ca23a5b87d1532f50e5653bca25c91c8a6"
       }
     ]
   },
   "counts": {
-    "catalog_entries": 964,
-    "function_contracts": 892,
+    "catalog_entries": 982,
+    "function_contracts": 910,
     "palette_folders": 72,
     "families": 18,
-    "helper_entries": 852,
-    "authentic_icons": 889,
+    "helper_entries": 942,
+    "authentic_icons": 901,
     "entries_without_icon": 2
   },
   "families": [
@@ -3805,8 +3853,8 @@
       "id": "mathematics",
       "name": "Mathematics",
       "route": "docs/functions/mathematics/index.md",
-      "entries": 433,
-      "operations": 396
+      "entries": 451,
+      "operations": 414
     },
     {
       "id": "numeric",
@@ -3917,7 +3965,7 @@
       "family": "Application Control",
       "family_id": "applicationcontrol",
       "route": "docs/functions/application_control/property_node.md",
-      "summary": "Private Studio configuration of ordered property rows. Each stable row chooses one real member and Read or Write; its data terminal follows the complete member type. An incoming object reference takes precedence over the implicit symbolic target. Real authoring provider access checks target permissions, latch Value and contained-widget restrictions. Reference and Error pairs stay fixed; Value (Signaling) and graph execution are unavailable in this delivery.",
+      "summary": "Drag the blue bottom handle to extend the Property Node. New rows follow the available properties in Select Property for the effective target, starting after the last eligible configured row. The last available property repeats at the end of the list. Existing rows keep their properties, modes and wires when you extend the node. Press Esc during the drag to restore the starting layout. Each row has a typed data terminal and uses the member’s Read or Write permissions. A wired reference determines the effective target. Reference and Error connectors remain fixed. Execution support depends on the selected property and target profile.",
       "icon": "assets/function-icons/functions/application-control/Property Node.svg",
       "aliases": [],
       "parent": "",
@@ -6306,7 +6354,7 @@
         "empty",
         "empty?"
       ],
-      "icon_sha256": "c1508f0aeb28efc3495b9e220b53a081b364900977a4c7a86cb6b526c3b2e3bc",
+      "icon_sha256": "663ed5382c103e2685f6a176dce1f8d30bd903f3f5abb1a22088838c581256ec",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6354,7 +6402,7 @@
         "row:row_0:value",
         "value"
       ],
-      "icon_sha256": "8dbf2fc74c2822374e2d16895d0c3c68c87bd10e5fe25631457eb3380e1bbdf8",
+      "icon_sha256": "54e26779aa7e865f5d6978bb2695c3b156bb45f5c88afe1bc25cbfe60c2afe44",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6377,7 +6425,7 @@
       "connector_names": [
         "value"
       ],
-      "icon_sha256": "29736444a6e3dd3bc81848c15c3e7c24fcafaad400dbb7ccbd4ddbd60c25104a",
+      "icon_sha256": "53a9c449ccd78ee0ce90f316a6f3a1a68f2215ed0f6c48b2aab81778aaf6f2fb",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6404,7 +6452,7 @@
         "min_key",
         "minimum key"
       ],
-      "icon_sha256": "4469ebf3df8a525e52ff8bb45923f40f193622fa43ae1a36f0fe38d81ab769c6",
+      "icon_sha256": "69a21f4f5985ae06d820d4b4f0faf922755ebd2e0c0b4286767717eecf892d51",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6425,7 +6473,7 @@
       "public_runtime_available": false,
       "private_studio_dispatch": null,
       "connector_names": [],
-      "icon_sha256": "5e37b931c4586fccc4261eba3e91f5ccb318d0d5d653c21cd28e85e9ca0846d1",
+      "icon_sha256": "2cb88bf8b076972b4cc463677a163ded9c4173dd591c2e71edaacef101f669bf",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6456,7 +6504,7 @@
         "value unchanged?",
         "value_unchanged"
       ],
-      "icon_sha256": "71e24571860fb7a74b60fdefb4b30f72a538e412b7cb775cc8f7ac93806659c1",
+      "icon_sha256": "7b8ecbea058c244e569834cc4a5bbd3097a1c80d629c67db7bfb35af0de0ca9f",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6485,7 +6533,7 @@
         "map",
         "value"
       ],
-      "icon_sha256": "c6c2ee1a2302ff5be114e6fcac3b636a431aa0970cbe7ef2c2a57152e40948bb",
+      "icon_sha256": "07de3182e78d0add203b9d8d9f2d0757be49ab945c7475b06d8863eec671f542",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6514,7 +6562,7 @@
         "map_out",
         "value"
       ],
-      "icon_sha256": "4c6b330d83f4c86f669b86044e7135b3668c23616bb5dffd2c1f5f8aeafb31a1",
+      "icon_sha256": "a55017aba8655ae2a189e63d2908e35f83e190f90a33a149ea75212324aaf62b",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6535,7 +6583,7 @@
       "public_runtime_available": false,
       "private_studio_dispatch": null,
       "connector_names": [],
-      "icon_sha256": "2b7c263929d3c5ff7e0c40bf6ac4dbac150f0ba5230db89bb0851a35b8335d9e",
+      "icon_sha256": "b52f0ba3f954cb54273c76771c4cbd81d19aec1a5dae33532dbbb408d05106b7",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6581,7 +6629,7 @@
         "row:row_0:element",
         "set"
       ],
-      "icon_sha256": "c6f775b9d242e090bab62175851a882cf803d5b4cf7093738516fdabd7044da6",
+      "icon_sha256": "67d6a8100da3bd99403dc06f89fad1dde79aab89f75b5f2c63600c7577ff0d6e",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6608,7 +6656,7 @@
         "set_a",
         "set_b"
       ],
-      "icon_sha256": "814d81a939b8f4bfe857465eb4cf05844e2c22ba6b30232bc5e388eb3baead1f",
+      "icon_sha256": "d4a77715b83149b879826368841911c6a6041d3c63b6f3a4236cfd9b958ffdde",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6631,7 +6679,7 @@
       "connector_names": [
         "value"
       ],
-      "icon_sha256": "5eeb868caf8b7a28b2376e7165aed7569514d701176c2b795f35a6f3786891a6",
+      "icon_sha256": "657eb5170f19e30898f6098248740add0adb930ac15b7c0cce30da6c7323797c",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6657,7 +6705,7 @@
         "included",
         "set"
       ],
-      "icon_sha256": "b99f6fc3267d1e85b9c1d69c9e6e7e494e947e1f14d49eb91f15d897c4a61311",
+      "icon_sha256": "d03faf3ef61e4a49b174795dca66b26df6017309dadd025480f21b5d3c6571ae",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6684,7 +6732,7 @@
         "set_a",
         "set_b"
       ],
-      "icon_sha256": "d9d8c5598dbe2db8d7c5828f9895551ea844e5d9b301cb99f39da952018c186c",
+      "icon_sha256": "3fa9b9b94eca9b732624e70b862b2df715f6624580ebae42e523daccc7db47df",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6711,7 +6759,7 @@
         "minimum",
         "set"
       ],
-      "icon_sha256": "fba92d6643769f3f70578626dc685f70a66efebc432d8e46b388c801b928bb21",
+      "icon_sha256": "ec8a5d2519ba03466bc5ec80891de1c77823f9d78ac6ff095a0f900a9aa2b91a",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6739,7 +6787,7 @@
         "set out",
         "set_out"
       ],
-      "icon_sha256": "b3ee1b6f74a9a7e8200ead68d0c61efa3588534758de63fad8a32a3bea177bc6",
+      "icon_sha256": "075dcf75620cf4a3e027110284ceb7ce70561fdc7f3a193fc88e91f0e43abd85",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6766,7 +6814,7 @@
         "set_a",
         "set_b"
       ],
-      "icon_sha256": "da74d8722161c16212e32b51151bf2e932042a0d51565d7f3791ff5b01aeafda",
+      "icon_sha256": "d4adda4f362bc978881932ced15c9649beafbd34fadf5b1c12b2bffc0dd7b4a2",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6794,7 +6842,7 @@
         "set out",
         "set_out"
       ],
-      "icon_sha256": "6eb091c7a61c1fa2e3d6123e72aaebd77b023d3f2650e87bae77225c8f1bb4c9",
+      "icon_sha256": "ddfcc53254d295ec3da567067715eecad9eb7098ae1902f1e6800f4c0d01a9e7",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6821,7 +6869,7 @@
         "set_a",
         "set_b"
       ],
-      "icon_sha256": "7cc444cd2dfa99ebe6c27da23cab4c2f298494712bf8a50074d3325f96e9a941",
+      "icon_sha256": "30fa6aa2345ff48b5607bfc752080dd5d35e47b7915823ad9653d357c222cc0a",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6842,7 +6890,7 @@
       "public_runtime_available": false,
       "private_studio_dispatch": null,
       "connector_names": [],
-      "icon_sha256": "077343ba6737efaf215c294b8880e8d053d29d20784bf200ff59b45478723607",
+      "icon_sha256": "d718415f5f92fd00fbb88b8cd20bd5675c3266d1bce8fec9ad20465615063ace",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6869,7 +6917,7 @@
         "set_a",
         "set_b"
       ],
-      "icon_sha256": "9e529568e8d598ef0f8edee6f22eb12b7f0da6c828f99fa9a00c063ea6e1677b",
+      "icon_sha256": "8f39e4f9c3cf176b6729fda0b685b6bbdf9059d0cf2e0f78b45b17b4e2231da6",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -6893,7 +6941,7 @@
         "collection",
         "size"
       ],
-      "icon_sha256": "96505e15f1350b45951b4e6927fdbf74ecda0294fe2d6b5455c038e161f687d4",
+      "icon_sha256": "bc2ea1c8495544375d4c49bc2ffcd5c6ffcd3b5d8b40d122a4c912767d37ec14",
       "contract_source": "manifests/function-bindings/studio.collection.v2.json"
     },
     {
@@ -8986,7 +9034,7 @@
         "make warning",
         "make_warning"
       ],
-      "icon_sha256": "e87301bf5ffd237174a6af288dc9df2e5162d7a12d310dcf7157a89172266f35",
+      "icon_sha256": "57edf734b9a3cbfff33620c271ea432a5fb15fb822221b66bacb7907db84492d",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9012,7 +9060,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "0575716c64d62bbc8f5089bc85dccbaa1b0e1ece5d51ecc1b826d90eb9a622c4",
+      "icon_sha256": "7dcd7c961ef8760588c7d66fc6968f760e4e23d8e8e1856a209f8fce64d42a7d",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9035,7 +9083,7 @@
       "connector_names": [
         "value"
       ],
-      "icon_sha256": "5719e38a290e3e812efc95fc6576bd703f008d9e69f9eb80d9bca9879704df79",
+      "icon_sha256": "70f7c4c56d2252a1a9e740620e038ab4d48893bb96ad483c58e6eecc7c1c7d63",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9061,7 +9109,7 @@
         "errors out",
         "errors_out"
       ],
-      "icon_sha256": "37d402c60a12b25f7b5b0dc8a68e403c1b6b9c1b302f63b21c95b71f79c28f66",
+      "icon_sha256": "772b3e74b69dce8c0da15144622f9a16938b2d9b0cca6bf9e25917c411560d40",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9091,7 +9139,7 @@
         "type of dialog",
         "type_of_dialog"
       ],
-      "icon_sha256": "b793fd997b335f74c91597c8bc71d3153f0bd390fd8a40d1cf9398d29cd7bc8e",
+      "icon_sha256": "7ec69205514393ba4d8738567579f0aa9070be0703b92598f17e25274de2fb79",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9117,7 +9165,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "f35e672b0c73f155dcd49b9e3a409e1b3aecb344bf6cbc35417d41cda2a85a15",
+      "icon_sha256": "29995cd548073d7c6091966355a4a7abfff47dcac42b12510688a073211d3b41",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9148,7 +9196,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "b16c4d840f47e5dd59b8a0e62fc47b4cae0b51ab2e4eb272c226746437dacb3c",
+      "icon_sha256": "b92627b99afad44135257ec2e70e58a6dc444987bb1d47687d0d6f5516b47019",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9176,7 +9224,7 @@
         "include divider line",
         "include_divider_line"
       ],
-      "icon_sha256": "c2c36be27cb6e82bf08c998b1f23d789a28e02193d1562c6053fd4041ee51d90",
+      "icon_sha256": "6eb4a340bb45f5cc1662e39928e3c11e3334f36397cfbb408a5ed8de33009351",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9201,7 +9249,7 @@
         "error_in",
         "result"
       ],
-      "icon_sha256": "19eba0e6b5d3eae5103de17f1a9009e8857c598cc33bad7fd1a68a4d0d5ed3b8",
+      "icon_sha256": "17d2b17e1657e76d90f8c899612899f98d9f20541d5a9038cdf8f7367d665901",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9226,7 +9274,7 @@
         "error_in",
         "result"
       ],
-      "icon_sha256": "91f8fe28ce2d970e7b4bd203c1ef3b913e105e3e786dcb6eaed390f370e6bcde",
+      "icon_sha256": "f47036a417e2081b3c2b81b6612f34d9f958e70331409e66f9d6771a918c00c8",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9251,7 +9299,7 @@
         "error_in",
         "result"
       ],
-      "icon_sha256": "3914b38acdefeac8320d06e781ff192a4095ce314a9af630184e3e0a1167d4c5",
+      "icon_sha256": "134cb816059d93bab3ebb237c2b17b7c344173e812a10c79828f2617d08ffc75",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9283,7 +9331,7 @@
         "error_in_3",
         "error_out"
       ],
-      "icon_sha256": "41818833d7f64399afe7d66ffae4d9ec6e84e61b20f54b37892ff06ac9078b9d",
+      "icon_sha256": "20f99e0901d94a8bd5d0d9d84a31e2d4b78aed5824af87fa93c4913c66691724",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9310,7 +9358,7 @@
         "error_out",
         "location"
       ],
-      "icon_sha256": "9d9ad16067e1e3861ddb755ba0263eb760a13e82b9cfb5b3fd5970c3efc97937",
+      "icon_sha256": "3658101943e3788e945bbc7dff80910233fc8705fa8051409612efa17c30579f",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9338,7 +9386,7 @@
         "has location",
         "has_location"
       ],
-      "icon_sha256": "31e4a8d287a868559fe9858eeddaffe595bd38d39920f224d0cc98333ae49d4b",
+      "icon_sha256": "8937db1ee09fa54569a3e3c5513327b88d626227da2c168cd3b7b6d118c72e92",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9363,7 +9411,7 @@
         "error in",
         "error_in"
       ],
-      "icon_sha256": "dcfd5312ceb74b1ce10049ed9215906c941b1f39e9681cd42d224e72c9af7f02",
+      "icon_sha256": "23b2d8981fd751d4869fb539b17d975fe6500ced984837cd4e7ecfadc6985986",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9390,7 +9438,7 @@
         "filter typeface tags",
         "filter_typeface_tags"
       ],
-      "icon_sha256": "ef4e887b62d06b84eaaf03379a375e15d390874e2244d492c3437c41920f3a0b",
+      "icon_sha256": "515d9fe881e8235d88d2f5c6d58aae994b97a7aa408d5d87f62cd6346312190e",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9415,7 +9463,7 @@
         "error_in",
         "location"
       ],
-      "icon_sha256": "4e9032cb2eaaac16be330c14dd871bfa87ef510f43261dbfdb774014a2910e7b",
+      "icon_sha256": "5edb1687e407028054646ed4838966a866b4d5dbb60eced7f400b190af89c934",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9441,7 +9489,7 @@
         "error out",
         "error_out"
       ],
-      "icon_sha256": "b0b1f20bebfead7755878dfebeddcb4d1196c3a4c354d8ade916041f35c68446",
+      "icon_sha256": "5dbd24029e2efa37e3d89ca6b3ae284bc6b290657519b41e9358296a8c5797b7",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9464,7 +9512,7 @@
       "connector_names": [
         "value"
       ],
-      "icon_sha256": "19378c3b4eda9ac360615a23855cb2a6e406a213e434b27495b996ea171b67be",
+      "icon_sha256": "edff73392304b9816a5b7c6d76cc3c4ebae37c5c826b6a1fd099de7245e1e1f7",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9496,7 +9544,7 @@
         "update call chain",
         "update_call_chain"
       ],
-      "icon_sha256": "7cedac6a9e84696ea5f4ec63d8f92717cc21f8b70288cfc5426376a64aff3114",
+      "icon_sha256": "ec2ef5529ca9d073fc71e4c27105539e4897cb0e216cde4ed0cd74a127df8631",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9522,7 +9570,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "f9c06451491033ac39de95945037931c9bc27f04ca852665da01fba0bd701e50",
+      "icon_sha256": "0e3adb3fd31d2b04e3617922b7257e8a02862fabf6c7d908589784134580cae5",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9550,7 +9598,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "f5b30b3beebf652691230ff316a16e0bf399ea13f35967c00591ad0341cb0fed",
+      "icon_sha256": "7f2308f47e6fddf5854e0aa39a99324bd9d5b720164a3e172f339e61312467a5",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9577,7 +9625,7 @@
         "error_in",
         "error_out"
       ],
-      "icon_sha256": "00934603415c8288fd0921482686308faa429f797aa89073eb04b3909770818d",
+      "icon_sha256": "f2107b5cf20544c8c3847b08ff47ffb409ebb691d7e91677c27dce95474c7890",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -9605,7 +9653,7 @@
         "number of elements to remove",
         "number_of_elements_to_remove"
       ],
-      "icon_sha256": "d83893e82f4444ecbc0a4de5a3f383525be937b0b3fd0503a2e8e337f1c730ca",
+      "icon_sha256": "b7037621a0ea5d5a2cb84bff4c275b4361d3023da397f04c199e10fca2007bd4",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -10778,7 +10826,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "720e01f0ca37bbc890fd728622faeb963abb147780ffd3d2f2661488ee2a77a7",
+      "icon_sha256": "c7002fa9f441cf9dd50ebfedd363387bc8ab2961d1ef51fba3ec623af136b849",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -10805,7 +10853,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "720e01f0ca37bbc890fd728622faeb963abb147780ffd3d2f2661488ee2a77a7",
+      "icon_sha256": "c7002fa9f441cf9dd50ebfedd363387bc8ab2961d1ef51fba3ec623af136b849",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11029,7 +11077,7 @@
         "times",
         "values"
       ],
-      "icon_sha256": "14983ca5d63bb6305c0808d2ee82d8ffb13d09c771e02b8253728fcdfbe52287",
+      "icon_sha256": "bc7cb01d5d20cff5ce56360ac047435dddfee82a2457961786adc1ebb69e8c99",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11070,7 +11118,7 @@
         "times",
         "values"
       ],
-      "icon_sha256": "14983ca5d63bb6305c0808d2ee82d8ffb13d09c771e02b8253728fcdfbe52287",
+      "icon_sha256": "bc7cb01d5d20cff5ce56360ac047435dddfee82a2457961786adc1ebb69e8c99",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11096,7 +11144,7 @@
         "k",
         "n"
       ],
-      "icon_sha256": "fcc66a0e4a077aefaa803f667da52a7db7f07acaccaf17e106fd0624e990d6af",
+      "icon_sha256": "2654db98b3907d6753b82b1fec20d579ddc6deaded769a4ef3ee5e1731e99ba5",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11121,7 +11169,7 @@
         "prime",
         "prime?"
       ],
-      "icon_sha256": "54432f36713b494b1a4aca2cc3c089d9dee29f71988b5329d60db8685245c28c",
+      "icon_sha256": "c5d4b02017c07100eedc3008c3097f3a4719b0f46852b1550b256b420f99ae1d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11147,7 +11195,7 @@
         "error",
         "result"
       ],
-      "icon_sha256": "7b65351e9fa06ff464b7521f3cce58e3e8e2677d216dbd9c32aba8288c40869b",
+      "icon_sha256": "8086edf8a742336131d11762c0dab3b9878c2f557409a6bfada97a4c37f31e34",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11172,7 +11220,7 @@
         "n!",
         "result"
       ],
-      "icon_sha256": "eeb0a97083c559b0b92b6348d3a91469aad09466cbd92add03a194dd7c65b90d",
+      "icon_sha256": "5187307767059af2198f9e76447e0e72574813b0a8ef7388b7e8a9600bcb0626",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11197,7 +11245,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "69c2cd4c8dfdb726b737b6a560a5f5e365c636604aefca5c167ec0cecd638199",
+      "icon_sha256": "58a89deb26e5b2ce3739434811f7e1e2ba952ac3a0a2fe17d34f7d618d4f96fb",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11222,7 +11270,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "2ca10d3612047672214249804f739ff8259d1933c08a7f3e9f7e2428d031c4b3",
+      "icon_sha256": "d10b5d20a1880ccde50763f948e91b403a6de3baa866968862b6191de01c36dd",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11248,7 +11296,7 @@
         "nPk",
         "result"
       ],
-      "icon_sha256": "3e8baadbabedd7579b35f0d0419aa60830e390d6b6c429b75dba7d74d3c73776",
+      "icon_sha256": "d2e495be87d8469e72761b4295cd2d1ae7d6c824b5cca985ff307af882d2ae0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11272,7 +11320,7 @@
         "factors",
         "n"
       ],
-      "icon_sha256": "d21f9412d4549aa387ed0ac99fc450dfcde267793880b95cad5833fd4527f09a",
+      "icon_sha256": "755856dd2fdbdfa1f334cde7a0d36a45124c71362bf1499d3fc5beaa7db09a99",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11297,7 +11345,7 @@
         "k",
         "value"
       ],
-      "icon_sha256": "3895dfeecc4128d257b1c30985d002726f7bb82aee2d2682cd257a98025984bd",
+      "icon_sha256": "fa90edf023379c841a99da3bf5420f70da4544e07578afbd0dab14e1210bae0e",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11323,7 +11371,7 @@
         "k",
         "value"
       ],
-      "icon_sha256": "3895dfeecc4128d257b1c30985d002726f7bb82aee2d2682cd257a98025984bd",
+      "icon_sha256": "fa90edf023379c841a99da3bf5420f70da4544e07578afbd0dab14e1210bae0e",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11348,7 +11396,7 @@
         "k",
         "value"
       ],
-      "icon_sha256": "a335960977d3d7c58336a955e81d6ccdfb76d1de35bd75b7531d556cca470d25",
+      "icon_sha256": "592cd79089b465f051b3e7153efbc10dc0d6cb1cda93eee4608f894e6bf8c3dd",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11374,7 +11422,7 @@
         "k",
         "value"
       ],
-      "icon_sha256": "a335960977d3d7c58336a955e81d6ccdfb76d1de35bd75b7531d556cca470d25",
+      "icon_sha256": "592cd79089b465f051b3e7153efbc10dc0d6cb1cda93eee4608f894e6bf8c3dd",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11401,7 +11449,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "1b4ae82e47b04c6f62b0a5216cf6745ca79a22d0c01ebdf7c911133692f9b069",
+      "icon_sha256": "fb57ba24e4e9cdcfe56d27dd18df700e6d7a30ce82c2f46842450a5759c596c6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11428,7 +11476,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "5757ce829a8b611fad79efe257a5db58ec0ac7cef05384895b8847735069fd92",
+      "icon_sha256": "ef58f7c03eec85233523862fe707f6f1fee92ac7e66f4359db13de06ebbe264b",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11455,7 +11503,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "197f94ef3b36c2e745fbe88ebccf306f1ccc9d21d0216ca5d33419bee953cf99",
+      "icon_sha256": "06a28dd5090fdf53eed12a269dfe4664e53e5fc6f5a9a8d5b3e8eb967f48757a",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11482,7 +11530,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "5bb24d2d12de9c627dbba70f2b9658d3088daf72ca93e792717cdaec1b321db8",
+      "icon_sha256": "bb3bec5388f0fda6d8ee780a62949e420480b335aa397eb6b352771ce76e9721",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11510,7 +11558,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "0689a9cdacdc19619cb360cc2a49098ee97cfc10234694b1861915b5fa37f61b",
+      "icon_sha256": "534c882203003c8c2c96d70539b2e14124275b621396b27548cb77f9ae0b813e",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11537,7 +11585,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "4de4e9bcfce92bc946a6faadaf9dee07066b66b247819e68819051a0cc88614c",
+      "icon_sha256": "3581c5f291a3b0c0b78ec9dbd1e91f8e1c076b2e0b493ecf9e39de2766ba7b8b",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11564,7 +11612,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f749519fb8faeee2ca3d9d4de44344df5e54d37cd5a9f9d7eccb647efe05bd5b",
+      "icon_sha256": "9f5522ddf355a49c9e9149059ee9510b09d7f0b027b0c35a0cccca920538ca4c",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11591,7 +11639,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "edda61d4836e91b2fb34b2cc4d9a89e04155c6b3fe0a103b1bf7786314dfe111",
+      "icon_sha256": "1995d0d5805cf1639a4f4dc56235ad2e737b395c78b9bc4c82eccb07f8a164dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11618,7 +11666,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "8ecd8becdcd4dcc7c2f2ac9ef8efe3590853569d1448e3c5533d3cd2f5255565",
+      "icon_sha256": "aaff13776a909c9c2d538f6542f6425d262188e303b16a5c50730fd071a8ebc4",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11646,7 +11694,7 @@
         "x^y",
         "y"
       ],
-      "icon_sha256": "d751e0a3ca749e66d17b9e875b74bf8a1544d8d17a2ab8303013d2852b412b91",
+      "icon_sha256": "5c8c4f0486c20a4a47db6b500a28ee119501f5955b9d438ad4c0f136f17c081a",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -11674,7 +11722,7 @@
         "y",
         "y-th root(x)"
       ],
-      "icon_sha256": "d2c0f1add2d2ae13c52e214b026f5c8be2f041903bfe22d1f7cb1fd375ca6481",
+      "icon_sha256": "b313c8c72051f308e954b1faed2767be5c733bf5daace42b57c4756d3ce6ba41",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13469,7 +13517,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "e74dda3187d2f364f7cf0f52b5c67769e08df7cb9d067d2d04146b3f32dca8d3",
+      "icon_sha256": "a230fca856f24bbf45abf56a285f91838b8ac17731701cad8cd01135e47f4091",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13494,7 +13542,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "b2b67b59251e93efb52cd4d28606caeeb6a7f2dc8b1ab5598da72c0bb9d9d772",
+      "icon_sha256": "da42a1c0ac7763544902f935825f5c6dcef9a2f5cb04f61c8ab9ac5c195a76cb",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13519,7 +13567,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "c0a0551cf88e3517c1b9e48028872cddd021dd6dbd5676b41dd12de6b01ad21c",
+      "icon_sha256": "01ef47206e3e6b56e4dd8e70d0043d49ad8b636f432b376167956144adceb117",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13544,7 +13592,7 @@
         "n",
         "value"
       ],
-      "icon_sha256": "7d43f20c47e261f4e23668df835b822f97d89f1ecdfa6c5f62a9135c06be2405",
+      "icon_sha256": "2778b1ea5b0563b2607157f62018aa2c001e752a53eba2926c6b92f6d967c9a5",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13570,7 +13618,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "e74dda3187d2f364f7cf0f52b5c67769e08df7cb9d067d2d04146b3f32dca8d3",
+      "icon_sha256": "a230fca856f24bbf45abf56a285f91838b8ac17731701cad8cd01135e47f4091",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13596,7 +13644,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "8bba18f2b55216d2c8a289d9d528b99e249a4e4770c4b05043e86128f32f2b2c",
+      "icon_sha256": "79e6bcab7770ec3bde113cd2be260581cae81040db719dd0cf4c628f603cfc35",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13621,7 +13669,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "eb62ffb05c2d6f1aec273e50ed6dc57a94520613f7ff0b96ec5d0d92d1a9ed88",
+      "icon_sha256": "2d64dd0d7662e1ceaae3392275dccdf9567199faa149ce28d2e2771f83cc4e1e",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13646,7 +13694,7 @@
         "spike(x)",
         "x"
       ],
-      "icon_sha256": "039edc2b3da5b70f8a8b17cd0a556b540e7c969a8bc233f6d05721dea113dfdb",
+      "icon_sha256": "4abc31c740992f82bc00693902e131cffd525fe371eb8470d353752825c11220",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13671,7 +13719,7 @@
         "square(x)",
         "x"
       ],
-      "icon_sha256": "e33304c831ba9c382aa3901ed492d90ce15d4bf0912ea2e8804419fec2c2c6c0",
+      "icon_sha256": "3f20a2c62b1c335d42ade1c8609993bf2bd645f3677de99c1fa5c20dd5bc2416",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -13696,13 +13744,13 @@
         "step(x)",
         "x"
       ],
-      "icon_sha256": "4b0760799677dc8b3be323d9377938b7aadefb04173a625c19033a2ffcd79837",
+      "icon_sha256": "32059f7947f906220489c29868f2ba9f0193ac8b017e1d2f48c5e375a515334b",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
       "catalog_id": "math.geometry.absolute_angle_difference",
       "title_en": "Absolute Angle Difference",
-      "title_fr": "",
+      "title_fr": "Écart angulaire absolu",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/absolute_angle_difference.md",
@@ -13731,7 +13779,7 @@
     {
       "catalog_id": "math.geometry.angle_rotation",
       "title_en": "Angle Rotation",
-      "title_fr": "",
+      "title_fr": "Rotation d’un angle",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/angle_rotation.md",
@@ -13762,7 +13810,7 @@
     {
       "catalog_id": "math.geometry.bisect_angle",
       "title_en": "Bisect Angle",
-      "title_fr": "",
+      "title_fr": "Bissectrice d’un angle",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/bisect_angle.md",
@@ -13795,7 +13843,7 @@
     {
       "catalog_id": "math.geometry.complementary_angle",
       "title_en": "Complementary Angle",
-      "title_fr": "",
+      "title_fr": "Angle complémentaire",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/complementary_angle.md",
@@ -13825,7 +13873,7 @@
     {
       "catalog_id": "math.geometry.contour_line",
       "title_en": "Contour Line",
-      "title_fr": "",
+      "title_fr": "Courbes de niveau",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/contour_line.md",
@@ -13860,7 +13908,7 @@
     {
       "catalog_id": "math.geometry.convex_hull",
       "title_en": "Convex Hull",
-      "title_fr": "",
+      "title_fr": "Enveloppe convexe",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/convex_hull.md",
@@ -13886,7 +13934,7 @@
     {
       "catalog_id": "math.geometry.convex_polygon_intersection",
       "title_en": "Convex Polygon Intersection",
-      "title_fr": "",
+      "title_fr": "Intersection de polygones convexes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/convex_polygon_intersection.md",
@@ -13917,7 +13965,7 @@
     {
       "catalog_id": "math.geometry.coordinate_conversion_3d",
       "title_en": "3D Coordinate Conversion",
-      "title_fr": "",
+      "title_fr": "Conversion de coordonnées 3D",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/coordinate_conversion_3d.md",
@@ -13951,7 +13999,7 @@
     {
       "catalog_id": "math.geometry.cross_product",
       "title_en": "Cross Product",
-      "title_fr": "",
+      "title_fr": "Produit vectoriel",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/cross_product.md",
@@ -13977,7 +14025,7 @@
     {
       "catalog_id": "math.geometry.delaunay_triangulation",
       "title_en": "Delaunay Triangulation",
-      "title_fr": "",
+      "title_fr": "Triangulation de Delaunay",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/delaunay_triangulation.md",
@@ -14003,7 +14051,7 @@
     {
       "catalog_id": "math.geometry.direction_to_euler",
       "title_en": "Direction Cosines To Euler Angles",
-      "title_fr": "",
+      "title_fr": "Cosinus directeurs vers angles d’Euler",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/direction_to_euler.md",
@@ -14032,7 +14080,7 @@
     {
       "catalog_id": "math.geometry.euler_to_direction",
       "title_en": "Euler Angles To Direction Cosines",
-      "title_fr": "",
+      "title_fr": "Angles d’Euler vers cosinus directeurs",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/euler_to_direction.md",
@@ -14061,7 +14109,7 @@
     {
       "catalog_id": "math.geometry.included_angle",
       "title_en": "Check for Included Angle",
-      "title_fr": "",
+      "title_fr": "Appartenance à un intervalle angulaire",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/included_angle.md",
@@ -14096,7 +14144,7 @@
     {
       "catalog_id": "math.geometry.point_in_polygon",
       "title_en": "Point in Polygon",
-      "title_fr": "",
+      "title_fr": "Point dans un polygone",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/point_in_polygon.md",
@@ -14127,7 +14175,7 @@
     {
       "catalog_id": "math.geometry.polygon_area",
       "title_en": "Polygon Area",
-      "title_fr": "",
+      "title_fr": "Aire d’un polygone",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/polygon_area.md",
@@ -14154,7 +14202,7 @@
     {
       "catalog_id": "math.geometry.polygon_centroid",
       "title_en": "Polygon Centroid",
-      "title_fr": "",
+      "title_fr": "Centre d’un polygone",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/polygon_centroid.md",
@@ -14185,7 +14233,7 @@
     {
       "catalog_id": "math.geometry.rotation_2d",
       "title_en": "2D Rotation",
-      "title_fr": "",
+      "title_fr": "Rotation 2D",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/rotation_2d.md",
@@ -14215,7 +14263,7 @@
     {
       "catalog_id": "math.geometry.rotation_3d_direction",
       "title_en": "3D Rot. (Direct)",
-      "title_fr": "",
+      "title_fr": "Rotation 3D par cosinus directeurs",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/rotation_3d_direction.md",
@@ -14249,7 +14297,7 @@
     {
       "catalog_id": "math.geometry.rotation_3d_euler",
       "title_en": "3D Rot. (Euler)",
-      "title_fr": "",
+      "title_fr": "Rotation 3D par angles d’Euler",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/rotation_3d_euler.md",
@@ -14285,7 +14333,7 @@
     {
       "catalog_id": "math.geometry.shift_2d",
       "title_en": "2D Shift",
-      "title_fr": "",
+      "title_fr": "Translation 2D",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/shift_2d.md",
@@ -14316,7 +14364,7 @@
     {
       "catalog_id": "math.geometry.shift_3d",
       "title_en": "3D Shift",
-      "title_fr": "",
+      "title_fr": "Translation 3D",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/shift_3d.md",
@@ -14351,7 +14399,7 @@
     {
       "catalog_id": "math.geometry.supplementary_angle",
       "title_en": "Supplementary Angle",
-      "title_fr": "",
+      "title_fr": "Angle supplémentaire",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/supplementary_angle.md",
@@ -14381,7 +14429,7 @@
     {
       "catalog_id": "math.geometry.voronoi_diagram",
       "title_en": "Voronoi Diagram",
-      "title_fr": "",
+      "title_fr": "Diagramme de Voronoï",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/voronoi_diagram.md",
@@ -14412,7 +14460,7 @@
     {
       "catalog_id": "math.geometry.wrap_angle",
       "title_en": "Wrap Angle",
-      "title_fr": "",
+      "title_fr": "Réduire un angle",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/geometry/wrap_angle.md",
@@ -14461,7 +14509,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "4c1ba8214d9033286f6ba240dbe5245098adbf5362c8d20fcea0a030f4424db9",
+      "icon_sha256": "ccd634f967d184720ab4f55e3bbe4ce8680156780d8d6797d0469d17e2ef0ec0",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14486,7 +14534,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "de6ada4392c84c9210bc91ff0da1e912fb85284c0f6966a20e6716e3a5c109bc",
+      "icon_sha256": "e2c2a4aafa81e1f5e5be513e4f3f13178bf60e1689de00bbe7f69813b2f89608",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14511,7 +14559,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "860a2a5a3843138b5bb6defdc40f9ed34a43b7fb39b15ca41f19d9fe7ac14fc8",
+      "icon_sha256": "211bbfdbd92acd4ad1dc79e081ae9a76d96ef480aaf4c843910933b6a336b1b4",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14536,7 +14584,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "c5142a9191792e8386220a012a8112fb4ebb30fb75e4e6187c7b55f854f7a6cf",
+      "icon_sha256": "aeaf14557f5383137b94e26d49dabdfb2112370598cfd1a7ec06242c58ea7ca8",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14561,7 +14609,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "d7eb87b3ea62ec2d3d9e4438ed434823c110e58ef8a025fdac0d077f3ce82b65",
+      "icon_sha256": "9b076dc74b44e705556b9ff01902be5ae09dba3167656eb4190725f07a881225",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14586,7 +14634,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "c1bb96a49135446735a54575392cef3baea00eb6cea47c65ab785782f95ed837",
+      "icon_sha256": "5cda60b2261dea20146fc8eebddc1a8c0cc2bb099822e4fec5e9e09753b72546",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14611,7 +14659,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "6cd429fced3774cab266a73b9a7f4dda73eb4ac48547a96d2f25f867b5e8535f",
+      "icon_sha256": "8571a392918990011ce27d00957a47a03ec653ab5d1d6f977a5bba0efac3676f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14636,7 +14684,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "9efea467503c1d5bf49c2eca1c48aee17c797c020a1f3ab9ee4c5112005e0879",
+      "icon_sha256": "6c4710d6697352f47b02a6203572901c8878da84869fb3f7b811911c1c6a6c79",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14661,7 +14709,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "ced2c6ff0dac75b043e278b07ba51d1fb82fc780a14865000d689904a12c9e82",
+      "icon_sha256": "b87765a932e390ead2af22b53ea789627523c85e889e2c8563afc8712e14da6c",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14686,7 +14734,7 @@
         "sech",
         "x"
       ],
-      "icon_sha256": "c74239e7edaf11b9c7884f646724b473b8830dba0b6d0030fe2134c45d4f1082",
+      "icon_sha256": "1eb6e6cc513833a207f43474e1a1542e100f1592a3f521bd1767ed85ae787317",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14711,7 +14759,7 @@
         "sinh",
         "x"
       ],
-      "icon_sha256": "5e5c09c1569935edca6ce10edc095ba2700f65a82bcbf0f47ede9ccc40d10460",
+      "icon_sha256": "d0ccb0e6774910000f47dabd4245fe4ac11532e2e82e84ae3c4e87fed2acc41f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14736,7 +14784,7 @@
         "tanh",
         "x"
       ],
-      "icon_sha256": "6fd260f521d3a1947aa52204cc1a95e8ab4e9da57527e9055d53d3bf71e378c0",
+      "icon_sha256": "10f7ec225ac5aa96cbd7fe2d7fe5c3894d9deaffcfdfccac4087fc2582a477e9",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14764,7 +14812,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "2778c84a37533d8a2305ded4c814c24ba60d67827fa0c54348bb4bf772abe476",
+      "icon_sha256": "58416620e742177ae62bfb9326c1f7a1b31640593bb1cff4b6f3b3cbd27f13c8",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14791,7 +14839,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "045d33d3e0931663938404598192f4b020389fac3b60cc99f53487580f7302a4",
+      "icon_sha256": "ded3ff75d95d9577cd94801d5661ba7b12203feb944d9180daef23572ee2cb9f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -14818,7 +14866,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "6dc3ca5ee94bcfe5e7fd93b89ecb35cc4a83d894549ffd610927eed1602ef8e3",
+      "icon_sha256": "57a7ab28c7cc7e2928ec460f60629941ae854f6c9855794749d83888bd1d5532",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17634,7 +17682,7 @@
         "values",
         "variables"
       ],
-      "icon_sha256": "3c54349452ffc81c38371cbef2a766afd12fe798422fd355efe49145377df129",
+      "icon_sha256": "edf28cd0049f3462f4c45dd7b8ad690185b447c4dd9d8eb3e629ba54f5e87e3f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17675,7 +17723,7 @@
         "values",
         "variables"
       ],
-      "icon_sha256": "6507cb74619baab0cf3fd2fbc073e4c878592ba550dde339ec02d67e7b66a31c",
+      "icon_sha256": "dfb6af53cf249772182a7dd75a57d46c5f9385cf50003c2914baaf8106aff989",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17712,7 +17760,7 @@
         "times",
         "values"
       ],
-      "icon_sha256": "9c3d59f4aaa6ecb6f7787aaea6a9fe9d373addfeea2a604feb055cfa7991f7a6",
+      "icon_sha256": "feef4e8ee33638578cfdd2e377096fe1de186fa0e708890b8a3b16bfbccacb69",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17740,7 +17788,7 @@
         "formula",
         "initial_values"
       ],
-      "icon_sha256": "19ee434cbbcd876f2d1f4d0ab193e900ed2709b4b03b9d382cc25bf8bb999b63",
+      "icon_sha256": "1a34d4438bbc80bf6d6e2944729e13d04c219936d0913ec4a60295c419419c04",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17777,7 +17825,7 @@
         "times",
         "values"
       ],
-      "icon_sha256": "e0dff322f5bf916193907757af263580e43680ffa8d32f71fa386dc4849fd64a",
+      "icon_sha256": "3341cfa6aa6124765589d3cc085cd9458924a71d87168d59551462bd7b208192",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17805,7 +17853,7 @@
         "initial_values",
         "matrix"
       ],
-      "icon_sha256": "7af337eac20bdb469830e1278e1101bf017bd3b78eb0a2d37fccc339dba5c15e",
+      "icon_sha256": "934f422a3fe7313bd8521e6e6699e5093f588b9a2863e9ef4f7865429af8e2cb",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17846,7 +17894,7 @@
         "values",
         "variables"
       ],
-      "icon_sha256": "bb781d7229a3d85dc9afd0bc8007d51ba7299f0f6f4ffff5c233417865855467",
+      "icon_sha256": "b77c6860503e5e619ef3cebd17ae54b09b20bd9d2c1687d8f04141ab9e08d9ad",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17882,7 +17930,7 @@
         "values",
         "x0"
       ],
-      "icon_sha256": "b5438c5d7119ee4d91f508bb4599570d9332576d63e937563fe140025532702f",
+      "icon_sha256": "4c69fc456a8a1f55b783c725490c1521ac6f468ce8765fd15c4a660fcdca9c6d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17919,7 +17967,712 @@
         "values",
         "x0"
       ],
-      "icon_sha256": "b5438c5d7119ee4d91f508bb4599570d9332576d63e937563fe140025532702f",
+      "icon_sha256": "4c69fc456a8a1f55b783c725490c1521ac6f468ce8765fd15c4a660fcdca9c6d",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.brent",
+      "title_en": "Brent with Derivatives 1D",
+      "title_fr": "Raffiner un minimum 1D avec dérivées",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/brent.md",
+      "summary": "Refines a strict 1D minimum bracket using derivatives.",
+      "icon": "assets/function-icons/functions/math/optimization/brent.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "a",
+        "a (start)",
+        "accuracy",
+        "b",
+        "b (start)",
+        "c",
+        "c (start)",
+        "cost",
+        "error",
+        "f(minimum)",
+        "formula",
+        "minimum",
+        "ticks"
+      ],
+      "icon_sha256": "5b053c2e47977bafd4dcb630875d95b45b43c1099a7920e8ceb0d53b7ef9fb54",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.cg_nd",
+      "title_en": "CG nD",
+      "title_fr": "Minimum local par gradient conjugué",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/cg_nd.md",
+      "summary": "Finds a local minimum with Fletcher–Reeves or Polak–Ribière conjugate gradients and the selected line search.",
+      "icon": "assets/function-icons/functions/math/optimization/cg_nd.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "Minimum",
+        "Start",
+        "X",
+        "accuracy",
+        "cost",
+        "error",
+        "f(Minimum)",
+        "f(X)",
+        "formula",
+        "gradient method",
+        "gradient_method",
+        "line minimization",
+        "line_minimization",
+        "minimum",
+        "start",
+        "ticks",
+        "variables"
+      ],
+      "icon_sha256": "b8566701a63b26ec814585e594fa6d661de6eb75194f57ba8b4aac510f93193c",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.chebyshev",
+      "title_en": "Chebyshev Approx",
+      "title_fr": "Approximation dans la base de Chebyshev",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/chebyshev.md",
+      "summary": "Approximates a formula in the Chebyshev basis and evaluates it on an equidistant grid.",
+      "icon": "assets/function-icons/functions/math/optimization/chebyshev.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "C",
+        "X",
+        "Y",
+        "coefficients",
+        "end",
+        "error",
+        "formula",
+        "number of points",
+        "order",
+        "points",
+        "start",
+        "x",
+        "y"
+      ],
+      "icon_sha256": "e5e2f14baa0348a087cc0372fee2f101fa42e9150e9c501bdd3b7657e238bf80",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.constrained",
+      "title_en": "Constr NLP",
+      "title_fr": "Optimisation locale sous contraintes",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/constrained.md",
+      "summary": "Finds a constrained local minimum by sequential quadratic programming with a merit line search.",
+      "icon": "assets/function-icons/functions/math/optimization/constrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "SQP settings",
+        "beginning state",
+        "beginning_state",
+        "bounds",
+        "constraint bounds",
+        "constraint_bounds",
+        "cost",
+        "criteria",
+        "data",
+        "ending state",
+        "ending_state",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(minimum)",
+        "function",
+        "function data",
+        "minimum",
+        "number of function evaluations",
+        "objective function",
+        "parameter bounds",
+        "sqp_settings",
+        "start",
+        "stopping criteria"
+      ],
+      "icon_sha256": "5418d88572ca92d0ef8a4d518f15a132bcc6155fdb9d3077d6e34be24873b102",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.global",
+      "title_en": "Global Optimization",
+      "title_fr": "Recherche par évolution différentielle",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/global.md",
+      "summary": "Searches bounded parameters by differential evolution and retains vector objectives and Pareto candidates; no global optimum guarantee.",
+      "icon": "assets/function-icons/functions/math/optimization/global.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "beginning state",
+        "beginning_state",
+        "bounds",
+        "cost",
+        "criteria",
+        "data",
+        "ending state",
+        "ending_state",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "evolution",
+        "evolution settings",
+        "f(minimum)",
+        "function",
+        "function data",
+        "initial parameters",
+        "initial_parameters",
+        "minimum",
+        "number of function evaluations",
+        "objective function",
+        "parameter bounds",
+        "stopping criteria"
+      ],
+      "icon_sha256": "15dc4abc2c9762df9ac4d142ad02db94eb64e63bb87b133a8294e4c91e929942",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.golden",
+      "title_en": "Golden Section 1D",
+      "title_fr": "Raffiner un minimum 1D sans dérivées",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/golden.md",
+      "summary": "Refines a strict 1D minimum bracket without derivatives.",
+      "icon": "assets/function-icons/functions/math/optimization/golden.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "a",
+        "a (start)",
+        "accuracy",
+        "b",
+        "b (start)",
+        "c",
+        "c (start)",
+        "cost",
+        "error",
+        "f(minimum)",
+        "formula",
+        "minimum",
+        "ticks"
+      ],
+      "icon_sha256": "9a942645c30286bf0b4296e69ef030aafd1261394f26ad1ba82c0cbd917d0912",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.lp",
+      "title_en": "LP",
+      "title_fr": "Programmation linéaire",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/lp.md",
+      "summary": "Maximizes C·X with M·X ≥ B and X ≥ 0 using two-phase simplex.",
+      "icon": "assets/function-icons/functions/math/optimization/lp.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "B",
+        "C",
+        "M",
+        "X",
+        "b",
+        "c",
+        "error",
+        "m",
+        "max f(X)",
+        "maximum",
+        "solution",
+        "ticks"
+      ],
+      "icon_sha256": "de26bbcc6cb3226fd534e17c85200c8795d22a285ac60bf24c8f337fb0094e4a",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.minima_1d",
+      "title_en": "Find All Minima 1D",
+      "title_fr": "Recherche de minima locaux 1D",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/minima_1d.md",
+      "summary": "Samples an interval and refines detected local minima; finite sampling cannot guarantee exhaustive discovery.",
+      "icon": "assets/function-icons/functions/math/optimization/minima_1d.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "Minima",
+        "accuracy",
+        "algorithm",
+        "costs",
+        "end",
+        "error",
+        "f(Minima)",
+        "formula",
+        "minima",
+        "start",
+        "step type",
+        "step_type",
+        "ticks"
+      ],
+      "icon_sha256": "f8fdfe506708657447ae07a4d86ca469a2b7f4979305c6628f187ede88394464",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.minima_nd",
+      "title_en": "Find All Minima nD",
+      "title_fr": "Recherche de minima locaux multidimensionnels",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/minima_nd.md",
+      "summary": "Runs local searches from random points in a box and returns distinct minima as rows; discovery is not exhaustive.",
+      "icon": "assets/function-icons/functions/math/optimization/minima_nd.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "End",
+        "F Values",
+        "F(X)",
+        "Start",
+        "X",
+        "X Values",
+        "accuracy",
+        "algorithm",
+        "costs",
+        "end",
+        "error",
+        "formula",
+        "gradient method",
+        "gradient_method",
+        "line minimum",
+        "line_minimization",
+        "minima",
+        "number of trials",
+        "start",
+        "ticks",
+        "trials",
+        "variables"
+      ],
+      "icon_sha256": "2515febdf96aef550b1ffccdf14142e4127f35798915dc2b8f55fd5b095cd289",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.qp.as",
+      "title_en": "Quadratic Programming",
+      "title_fr": "Programmation quadratique, ensemble actif",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/qp/as.md",
+      "summary": "Minimizes a convex quadratic objective subject to linear equalities, inequalities and parameter bounds.",
+      "icon": "assets/function-icons/functions/math/optimization/qp.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "Lagrangian multipliers",
+        "bounds",
+        "cost",
+        "criteria",
+        "equalities",
+        "equality constraints",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "f(minimum)",
+        "inequalities",
+        "inequality constraints",
+        "minimum",
+        "multipliers",
+        "objective",
+        "objective function",
+        "parameter bounds",
+        "start",
+        "stopping criteria",
+        "warm start?",
+        "warm_start"
+      ],
+      "icon_sha256": "20b1d9dd5b928f957f6466996253118254142fa5d40e2c520e9717624681c913",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.qp.ip",
+      "title_en": "Quadratic Programming",
+      "title_fr": "Programmation quadratique, point intérieur",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/qp/ip.md",
+      "summary": "Minimizes a convex quadratic objective subject to linear equalities, inequalities and parameter bounds.",
+      "icon": "assets/function-icons/functions/math/optimization/qp.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "Lagrangian multipliers",
+        "bounds",
+        "cost",
+        "criteria",
+        "equalities",
+        "equality constraints",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "f(minimum)",
+        "inequalities",
+        "inequality constraints",
+        "minimum",
+        "multipliers",
+        "objective",
+        "objective function",
+        "parameter bounds",
+        "start",
+        "stopping criteria"
+      ],
+      "icon_sha256": "20b1d9dd5b928f957f6466996253118254142fa5d40e2c520e9717624681c913",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.simplex_nd",
+      "title_en": "Downhill Simplex nD",
+      "title_fr": "Minimum local par simplexe de Nelder-Mead",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/simplex_nd.md",
+      "summary": "Finds a local minimum with a coupled Nelder–Mead simplex generated from the start point.",
+      "icon": "assets/function-icons/functions/math/optimization/simplex_nd.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "Minimum",
+        "Start",
+        "X",
+        "accuracy",
+        "cost",
+        "error",
+        "f(Minimum)",
+        "f(X)",
+        "formula",
+        "minimum",
+        "start",
+        "ticks",
+        "variables"
+      ],
+      "icon_sha256": "13daff6063af661cc12f30cf74de741406074f29eed899d6031b04df9788976e",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.conjugate_gradient.formula",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, gradient conjugué sur formule",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/conjugate_gradient/formula.md",
+      "summary": "Finds a local minimum using Conjugate Gradient with an explicit formula objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "X",
+        "cg_settings",
+        "conjugate gradient settings",
+        "cost",
+        "criteria",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(X)",
+        "f(minimum)",
+        "formula",
+        "minimum",
+        "number of function evaluations",
+        "start",
+        "stopping criteria",
+        "variables"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.conjugate_gradient.reference",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, gradient conjugué sur référence",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/conjugate_gradient/reference.md",
+      "summary": "Finds a local minimum using Conjugate Gradient with an explicit reference objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "cg_settings",
+        "conjugate gradient settings",
+        "cost",
+        "criteria",
+        "data",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(minimum)",
+        "function",
+        "function data",
+        "minimum",
+        "number of function evaluations",
+        "objective function",
+        "start",
+        "stopping criteria"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.quasi_newton.formula",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, quasi-Newton sur formule",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/quasi_newton/formula.md",
+      "summary": "Finds a local minimum using Quasi-Newton with an explicit formula objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "X",
+        "cost",
+        "criteria",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(X)",
+        "f(minimum)",
+        "formula",
+        "minimum",
+        "number of function evaluations",
+        "start",
+        "stopping criteria",
+        "variables"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.quasi_newton.reference",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, quasi-Newton sur référence",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/quasi_newton/reference.md",
+      "summary": "Finds a local minimum using Quasi-Newton with an explicit reference objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "cost",
+        "criteria",
+        "data",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(minimum)",
+        "function",
+        "function data",
+        "minimum",
+        "number of function evaluations",
+        "objective function",
+        "start",
+        "stopping criteria"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.simplex.formula",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, simplexe sur formule",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/simplex/formula.md",
+      "summary": "Finds a local minimum using Downhill Simplex with an explicit formula objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "X",
+        "cost",
+        "criteria",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(X)",
+        "f(minimum)",
+        "formula",
+        "minimum",
+        "number of function evaluations",
+        "start",
+        "stopping criteria",
+        "variables"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
+      "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
+    },
+    {
+      "catalog_id": "math.optimization.unconstrained.simplex.reference",
+      "title_en": "Unconstr NLP",
+      "title_fr": "Minimum local, simplexe sur référence",
+      "family": "Mathematics",
+      "family_id": "mathematics",
+      "route": "docs/functions/math/optimization/unconstrained/simplex/reference.md",
+      "summary": "Finds a local minimum using Downhill Simplex with an explicit reference objective.",
+      "icon": "assets/function-icons/functions/math/optimization/unconstrained.svg",
+      "aliases": [],
+      "parent": "mathematics.optimization",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "cost",
+        "criteria",
+        "data",
+        "error in (no error)",
+        "error out",
+        "error_in",
+        "error_out",
+        "evaluations",
+        "f(minimum)",
+        "function",
+        "function data",
+        "minimum",
+        "number of function evaluations",
+        "objective function",
+        "start",
+        "stopping criteria"
+      ],
+      "icon_sha256": "5dd017fd6cbd1e71dd6b1634144ed7ceef9d1c39cd89768762911feea2a9f0d6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17953,7 +18706,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -17988,7 +18741,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18022,7 +18775,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18057,7 +18810,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18091,7 +18844,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18126,7 +18879,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18160,7 +18913,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18195,7 +18948,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18229,7 +18982,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18264,7 +19017,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18298,7 +19051,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18333,7 +19086,7 @@
         "position",
         "type"
       ],
-      "icon_sha256": "96fabbc491a4cf2f9692b35019e52240be2931d686e31c8d1550c941e3c77c62",
+      "icon_sha256": "52b26c54b38dfce43fa3829d0460125a30e51a09d82029c3b38929fe9090690f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18367,7 +19120,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18403,7 +19156,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18439,7 +19192,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18473,7 +19226,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18507,7 +19260,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18543,7 +19296,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "bdb54a7aca0a4a21a82520e4a2c1a06aa5bac357e34c1f2afe21f7d484a9411d",
+      "icon_sha256": "2e891fe9cfc10fceb41cdacc32c9e157b64e709bd7978440677f0381543364f6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18577,7 +19330,7 @@
         "pde_out",
         "source"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18612,7 +19365,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18646,7 +19399,7 @@
         "pde_out",
         "source"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18681,7 +19434,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18715,7 +19468,7 @@
         "pde_out",
         "source"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18750,7 +19503,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18784,7 +19537,7 @@
         "pde_out",
         "source"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18819,7 +19572,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18853,7 +19606,7 @@
         "pde_out",
         "source"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18888,7 +19641,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "2003295c8ee3b7ad1af7d03a2a786b41aa5e6055c54867b89a43769be9e56077",
+      "icon_sha256": "9b63ed95e4388bde84134b74a5f296defce7d9e6cbca59f40e7f7071c028f6af",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18920,7 +19673,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18953,7 +19706,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -18985,7 +19738,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19018,7 +19771,7 @@
         "pde_in",
         "pde_out"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19051,7 +19804,7 @@
         "pde_out",
         "type"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19085,7 +19838,7 @@
         "pde_out",
         "type"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19118,7 +19871,7 @@
         "pde_out",
         "type"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19152,7 +19905,7 @@
         "pde_out",
         "type"
       ],
-      "icon_sha256": "d7645c6ea1b2f0e6ba487258c3e1e55a1c6e913c04c3068225c8d5dfc8e410d7",
+      "icon_sha256": "e99adb0a605054630a57ee98b3c922fcc720b3252568d4091a3a56cda7114c15",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19190,7 +19943,7 @@
         "x_scale",
         "y_scale"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19230,7 +19983,7 @@
         "x_scale",
         "y_scale"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19270,7 +20023,7 @@
         "triangulation_plot",
         "values"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19308,7 +20061,7 @@
         "x_scale",
         "y_scale"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19346,7 +20099,7 @@
         "x_scale",
         "y_scale"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19386,7 +20139,7 @@
         "x_scale",
         "y_scale"
       ],
-      "icon_sha256": "eed0373ac469346754be99f0fd52d2fc91ad9a98a50722c8c1d42eb833ff0efc",
+      "icon_sha256": "bde44cc7c5cf028a8a12758714017befd122c295cf39b433228296444dda4a0d",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19418,7 +20171,7 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19450,7 +20203,7 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19484,7 +20237,7 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19516,7 +20269,7 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19548,7 +20301,7 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -19580,13 +20333,13 @@
         "pde_out",
         "values"
       ],
-      "icon_sha256": "8b37603b9db84e2c83477be453777911737432f2a5b11d51d56282b2a4fcd878",
+      "icon_sha256": "f705516c276cbd303dc1e788627d355462a2c0fcff1da7ed38721d888050a7dc",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
       "catalog_id": "math.polynomial.add",
       "title_en": "Add Poly",
-      "title_fr": "",
+      "title_fr": "Addition de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/add.md",
@@ -19612,7 +20365,7 @@
     {
       "catalog_id": "math.polynomial.bessel",
       "title_en": "Bessel",
-      "title_fr": "",
+      "title_fr": "Polynôme de Bessel",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/bessel.md",
@@ -19638,7 +20391,7 @@
     {
       "catalog_id": "math.polynomial.chebyshev",
       "title_en": "Chebyshev",
-      "title_fr": "",
+      "title_fr": "Polynôme de Chebyshev",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/chebyshev.md",
@@ -19664,7 +20417,7 @@
     {
       "catalog_id": "math.polynomial.classify_roots",
       "title_en": "Roots Classification",
-      "title_fr": "",
+      "title_fr": "Classification des racines",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/classify_roots.md",
@@ -19698,7 +20451,7 @@
     {
       "catalog_id": "math.polynomial.compose",
       "title_en": "Poly Composite",
-      "title_fr": "",
+      "title_fr": "Composition de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/compose.md",
@@ -19724,7 +20477,7 @@
     {
       "catalog_id": "math.polynomial.derivative",
       "title_en": "nth Derivative",
-      "title_fr": "",
+      "title_fr": "Dérivée nième d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/derivative.md",
@@ -19750,7 +20503,7 @@
     {
       "catalog_id": "math.polynomial.divide",
       "title_en": "Divide Poly",
-      "title_fr": "",
+      "title_fr": "Division de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/divide.md",
@@ -19777,7 +20530,7 @@
     {
       "catalog_id": "math.polynomial.eigenvalues",
       "title_en": "Poly Eigenvalue",
-      "title_fr": "",
+      "title_fr": "Valeurs et vecteurs propres polynomiaux",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/eigenvalues.md",
@@ -19805,7 +20558,7 @@
     {
       "catalog_id": "math.polynomial.evaluate",
       "title_en": "Poly Evaluation",
-      "title_fr": "",
+      "title_fr": "Évaluation d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/evaluate.md",
@@ -19831,7 +20584,7 @@
     {
       "catalog_id": "math.polynomial.from_pfe",
       "title_en": "Poly From PFE",
-      "title_fr": "",
+      "title_fr": "Créer des polynômes depuis les fractions partielles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/from_pfe.md",
@@ -19861,7 +20614,7 @@
     {
       "catalog_id": "math.polynomial.from_roots",
       "title_en": "Create Poly",
-      "title_fr": "",
+      "title_fr": "Créer un polynôme depuis ses racines",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/from_roots.md",
@@ -19886,7 +20639,7 @@
     {
       "catalog_id": "math.polynomial.gcd",
       "title_en": "Poly GCD",
-      "title_fr": "",
+      "title_fr": "PGCD de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/gcd.md",
@@ -19914,7 +20667,7 @@
     {
       "catalog_id": "math.polynomial.integral",
       "title_en": "Integral",
-      "title_fr": "",
+      "title_fr": "Intégrale d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/integral.md",
@@ -19941,7 +20694,7 @@
     {
       "catalog_id": "math.polynomial.lcm",
       "title_en": "Poly LCM",
-      "title_fr": "",
+      "title_fr": "PPCM de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/lcm.md",
@@ -19969,7 +20722,7 @@
     {
       "catalog_id": "math.polynomial.legendre",
       "title_en": "Legendre",
-      "title_fr": "",
+      "title_fr": "Polynôme de Legendre",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/legendre.md",
@@ -19997,7 +20750,7 @@
     {
       "catalog_id": "math.polynomial.linear_evaluate",
       "title_en": "Lin. Evaluation",
-      "title_fr": "",
+      "title_fr": "Évaluation linéaire",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/linear_evaluate.md",
@@ -20024,7 +20777,7 @@
     {
       "catalog_id": "math.polynomial.matrix_evaluate",
       "title_en": "Evaluate Polynomial with Matrix",
-      "title_fr": "",
+      "title_fr": "Évaluation polynomiale matricielle",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/matrix_evaluate.md",
@@ -20050,7 +20803,7 @@
     {
       "catalog_id": "math.polynomial.multiply",
       "title_en": "Multiply Poly",
-      "title_fr": "",
+      "title_fr": "Multiplication de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/multiply.md",
@@ -20076,7 +20829,7 @@
     {
       "catalog_id": "math.polynomial.negative_feedback",
       "title_en": "Negative Feedback with Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Boucle de retour négative de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/negative_feedback.md",
@@ -20107,7 +20860,7 @@
     {
       "catalog_id": "math.polynomial.normalize_high",
       "title_en": "Normalize with Highest Den Term",
-      "title_fr": "",
+      "title_fr": "Normaliser par le terme supérieur du dénominateur",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/normalize_high.md",
@@ -20136,7 +20889,7 @@
     {
       "catalog_id": "math.polynomial.normalize_low",
       "title_en": "Normalize with Lowest Den Term",
-      "title_fr": "",
+      "title_fr": "Normaliser par le terme inférieur du dénominateur",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/normalize_low.md",
@@ -20165,7 +20918,7 @@
     {
       "catalog_id": "math.polynomial.order",
       "title_en": "Order of Poly",
-      "title_fr": "",
+      "title_fr": "Degré d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/order.md",
@@ -20190,7 +20943,7 @@
     {
       "catalog_id": "math.polynomial.orthogonal",
       "title_en": "Create Orthogonal Polynomial",
-      "title_fr": "",
+      "title_fr": "Créer un polynôme orthogonal",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/orthogonal.md",
@@ -20217,7 +20970,7 @@
     {
       "catalog_id": "math.polynomial.pade",
       "title_en": "Pade Approximation",
-      "title_fr": "",
+      "title_fr": "Approximation de Padé",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/pade.md",
@@ -20245,7 +20998,7 @@
     {
       "catalog_id": "math.polynomial.pfe",
       "title_en": "PFE",
-      "title_fr": "",
+      "title_fr": "Décomposition en fractions partielles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/pfe.md",
@@ -20276,7 +21029,7 @@
     {
       "catalog_id": "math.polynomial.plot",
       "title_en": "Polynomial Plot",
-      "title_fr": "",
+      "title_fr": "Tracé d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/plot.md",
@@ -20308,7 +21061,7 @@
     {
       "catalog_id": "math.polynomial.positive_feedback",
       "title_en": "Positive Feedback with Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Boucle de retour positive de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/positive_feedback.md",
@@ -20339,7 +21092,7 @@
     {
       "catalog_id": "math.polynomial.primitive",
       "title_en": "Indef. Integral",
-      "title_fr": "",
+      "title_fr": "Primitive d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/primitive.md",
@@ -20364,7 +21117,7 @@
     {
       "catalog_id": "math.polynomial.rational_add",
       "title_en": "Add Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Addition de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_add.md",
@@ -20395,7 +21148,7 @@
     {
       "catalog_id": "math.polynomial.rational_derivative",
       "title_en": "nth Derivative of Rational Polynomial",
-      "title_fr": "",
+      "title_fr": "Dérivée nième d’une fraction rationnelle",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_derivative.md",
@@ -20425,7 +21178,7 @@
     {
       "catalog_id": "math.polynomial.rational_divide",
       "title_en": "Divide Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Division de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_divide.md",
@@ -20456,7 +21209,7 @@
     {
       "catalog_id": "math.polynomial.rational_evaluate",
       "title_en": "1D Rational Polynomial Evaluation",
-      "title_fr": "",
+      "title_fr": "Évaluation d’une fraction rationnelle 1D",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_evaluate.md",
@@ -20483,7 +21236,7 @@
     {
       "catalog_id": "math.polynomial.rational_multiply",
       "title_en": "Multiply Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Multiplication de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_multiply.md",
@@ -20514,7 +21267,7 @@
     {
       "catalog_id": "math.polynomial.rational_subtract",
       "title_en": "Subtract Rational Polynomials",
-      "title_fr": "",
+      "title_fr": "Soustraction de fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/rational_subtract.md",
@@ -20545,7 +21298,7 @@
     {
       "catalog_id": "math.polynomial.real_zeros",
       "title_en": "Real Zeros Counter",
-      "title_fr": "",
+      "title_fr": "Nombre de racines réelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/real_zeros.md",
@@ -20572,7 +21325,7 @@
     {
       "catalog_id": "math.polynomial.remove_residue",
       "title_en": "Remove Residue from Denominator",
-      "title_fr": "",
+      "title_fr": "Retirer le résidu du dénominateur",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/remove_residue.md",
@@ -20601,7 +21354,7 @@
     {
       "catalog_id": "math.polynomial.remove_zeros",
       "title_en": "Remove Zeros",
-      "title_fr": "",
+      "title_fr": "Retirer les coefficients nuls",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/remove_zeros.md",
@@ -20630,7 +21383,7 @@
     {
       "catalog_id": "math.polynomial.roots",
       "title_en": "Poly Roots",
-      "title_fr": "",
+      "title_fr": "Racines d’un polynôme",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/roots.md",
@@ -20656,7 +21409,7 @@
     {
       "catalog_id": "math.polynomial.sort_complex",
       "title_en": "Sort Complex Numbers",
-      "title_fr": "",
+      "title_fr": "Trier des nombres complexes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/sort_complex.md",
@@ -20684,7 +21437,7 @@
     {
       "catalog_id": "math.polynomial.subtract",
       "title_en": "Subtract Poly",
-      "title_fr": "",
+      "title_fr": "Soustraction de polynômes",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/subtract.md",
@@ -20710,7 +21463,7 @@
     {
       "catalog_id": "math.polynomial.unique",
       "title_en": "Unique Numbers and Multiplicity",
-      "title_fr": "",
+      "title_fr": "Valeurs uniques et multiplicités",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/math/polynomial/unique.md",
@@ -20757,7 +21510,7 @@
         "bi",
         "x"
       ],
-      "icon_sha256": "9bf2a12a78c9d242d85af5123b221b629f155c2effb80aa7dd00be52b9000006",
+      "icon_sha256": "2186515a2c69351f9421743a1f3330e1787e3d5780905c85e1e1a04a0c632591",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20783,7 +21536,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "bbf9bf44d8d335c3aba701b574f5ccebd00adcc46289c08fce9205ddc9c863ce",
+      "icon_sha256": "1c824377d7beebdeb5e975878a77272cc9138369f1efdab89d5027eb1cacc94e",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20809,7 +21562,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "2b478bdc43a74034cf3ebc70e4ebfdaa76840f5ee1377ef8b3116ce62d757de1",
+      "icon_sha256": "b29335a4332a2d36eb87289d606cd82c1d9285121fd65c3f21fc76edecbc143b",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20835,7 +21588,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "3c3c7ded0d0c158172afced566adb49fe78f7ab2d8b2c3b90f8bde3f2e70a2b1",
+      "icon_sha256": "11c917cf5d55ca05174b950d885af367d4f3dd2de5cdb5528ce8370043ffdb34",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20861,7 +21614,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "b6e198adb89e9ac7e936b169a26a657119300900c51f7589c817e6b6ba4b4dce",
+      "icon_sha256": "6aa5f32d53a0f239cde06e9b7a20f758d3bee4857e6e7a495a7d98bc205fe651",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20887,7 +21640,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "51f44235e0b0672d2d324eec768c2c69f4331b6ad49cdc19f3ceb6a8c0b13160",
+      "icon_sha256": "c81e960b23034f6da850f1f942c5e83b42af8d1b942e33537d2f29e1c939f3bb",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20913,7 +21666,7 @@
         "x",
         "yn(x)"
       ],
-      "icon_sha256": "e65ebb6ae220cf8cbb9b9bd80058c135554216bc3cee7288f49819b9e82d9bf2",
+      "icon_sha256": "5482a536dad0132c615fe19bf6dab0e4d5028ae11eb2fe92fc4d40be6f21ea76",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20946,7 +21699,7 @@
         "sn",
         "x"
       ],
-      "icon_sha256": "00002219690f88ff136011eb9660492a637280f590805099e836c6ae95c0192a",
+      "icon_sha256": "d15ab58c779f5e7ebadf90a6d4eae869ba56e988a7c448887859802e2ecbca84",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -20976,7 +21729,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "ef01a0bbbf9ba9481a5d8fe67077d8dec2f8a61fb9ab4d1954dd2822e3bb5d40",
+      "icon_sha256": "ea2573393cc00fd2d976619a915dea3bb19b0007cecabc3c4d4346edb36a6afb",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21001,7 +21754,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "cacccf7e41202b6c2d68095196a86f57ceafccd4e825619489672e6477944395",
+      "icon_sha256": "6ad7c8747ca5aa9bf626faab5e60b4124dfcce7fc6abf48809b348cef26fff54",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21026,7 +21779,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "6151fe44a32da6779002b84f0b254e31964137708136de0df755120060a7e62b",
+      "icon_sha256": "085f134147e5d5c2e98694a0c4f57fd686f9d848a3d952eb673fb5c9d3644d38",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21051,7 +21804,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "ba5bfdf60da61062138b58670670df2f97e24499a87c58759c98e521659a7276",
+      "icon_sha256": "e9c009c98943dfc431e1b5ef74f51b810a3b6d029fa337711f8fa41d9cf57271",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21076,7 +21829,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "2f165f67eb8e83218cbaa8ea8f60ae77069466abd8292fcfc765d60cd1aa740b",
+      "icon_sha256": "a9808cd36b6ee25896e13bdc269f8498ed9869994aac86253412674dbaf4d65c",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21101,7 +21854,7 @@
         "scaled erfc(x)",
         "x"
       ],
-      "icon_sha256": "c67e1d2156f535abb303531fbc9cb449c6b34178dfea26468f0eedde9483d9d8",
+      "icon_sha256": "4841ddc71a069b96d19b22891721b81462ca1004a4e594e8611db07c543db033",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21126,7 +21879,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "00fe677d02dfa637c6ae45f5d9137eab916c493a5e0473fc5bc680d960f5df66",
+      "icon_sha256": "55934bc7e3d224d314776ed8115f2d8938624716f3e7f6ef01dc29c881365917",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21153,7 +21906,7 @@
         "sine_integral",
         "x"
       ],
-      "icon_sha256": "360fd1ce13b509413ca3460e0169346e4a88727431d909c9ed214ba87b5af6c9",
+      "icon_sha256": "46ee987f93d30f2b36f02b5ea341273e8a710ce9a7e46c45891b06523055a754",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21178,7 +21931,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f5261a9585e2a9212fab3c0d694ad23b56f5a270e5541ccfd3631835bc68e6ac",
+      "icon_sha256": "c48e457af83dff9fa5ea5520bb3b334d4747772170998da3b279c5564a9b12c8",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21203,7 +21956,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "bf0b1ad254b20ad688c33d9981197054c2bb0411a9758bb5768827419d582084",
+      "icon_sha256": "59cc49ab88562ec3b41513007a8a4c53278675b09f30242c70724985f9d490f5",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21228,7 +21981,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f5cbc416c34a415e65675cd6e47a5855c0ddb1fe059bd182f040335f401d89ce",
+      "icon_sha256": "6e15a3f69bf88f8ff98b6e34145e1e58f20cb3cb06540107fdc2d10ad94131e7",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21254,7 +22007,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "9641814cc8dde308b0f06580e6661635c50d71eee5db345fabee2e058bb8c7fe",
+      "icon_sha256": "9db02f420eb7006bc4fc9a8864697ce32e36ef75576673eac2ae147223368d0f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21279,7 +22032,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f06ce9684d3037534f7b25492c0bb0a1c631b36858ffc003c09f04ded6558c86",
+      "icon_sha256": "8a2e1858f2d0ac88602ed512a2f51563545dabbe2c72686f8c6bc579df3c3a69",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21304,7 +22057,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "4fffc88f9a80f94d411e1150a95e75296e9553352fa7fd936d4a5fa7a1197d3f",
+      "icon_sha256": "0f3561fe7a1df0e1787acc959164d02b9975a4807eb9614de18ca48272887673",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21331,7 +22084,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "44fdbb1575fbcc324a144417745ad7888f826642eb62b4e15e26e8b877a742e9",
+      "icon_sha256": "e42e10d8bdb5d96785c4cd0f332ef0a1677776828d11ccdf88c9bcce3b1324a0",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21358,7 +22111,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "f44858c77014f7e4c91067b52b03651486ef7ab2dc70b57813e156f790afe26a",
+      "icon_sha256": "38c1d2e4c1f193d8a0f643c16f2ef446fd63e1a97d6c98f793307f69dacf39b0",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21384,7 +22137,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "c386545e3b21be38dac1102de658ddc628c65d5a022ce7e9ddedd33175fc5ce2",
+      "icon_sha256": "ae174a4795fca5674c0dcc465a1997f69f7cea4e7e3a67b234089b894bcf9100",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21410,7 +22163,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "c1c648d262e047835515814ece2aa645d6e8effe2cf3a5fb690c74f12bb7908d",
+      "icon_sha256": "54041b875a9bbb0207d60e744d5569b5b5eb5daca47b6e2928807ea5da2b7cf1",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -21436,7 +22189,7 @@
         "value",
         "x"
       ],
-      "icon_sha256": "a2c3346216d2adcd8b06fb4a4bd8c15df65edaf00138def9de9d57e0b2339a78",
+      "icon_sha256": "fe8520bb5a0cd91bc27cf8f757efb9d45c518a456832be8b0e645c6a5801d2c2",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22697,7 +23450,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "eb6f3202ba3cae9bef30a3f407d4e3bb47f0d6aa4aff46fb58bdfec71cd794ea",
+      "icon_sha256": "5d3fd3532e79eadd584118cdce1312bb5eabf3cb212807720085063f1f86d8be",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22722,7 +23475,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "17c87131d3453b82d22cb0f3492a0bbb35edcb3206cc4ec5d9db61c11ad8d6c9",
+      "icon_sha256": "7508c073223d446f95c18f9f01d837b39d3cd325bfafcf07ee236e24c9fd2ae7",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22747,7 +23500,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "098dc150c29d699308125d4538e5350ba71da911fbefb634eb64465502a97709",
+      "icon_sha256": "077fa447efe34ce40f6a25b7f434f519b41d23af806190d2c8bd6d085762c4d0",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22772,7 +23525,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f7a79152723bbd2e350e0b2bd787e16232f88ac22780b77cae5a5f207489997b",
+      "icon_sha256": "64415556843e4326b48215e6e6325d9828a0f8ee3a64b60ea1903ecb39402c51",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22797,7 +23550,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "421f489bdd47b2cd40adcbaa006b1163d66456b96b84a2a89c3e0549a725dd8b",
+      "icon_sha256": "9b993e758ec25612bba869cfac2f8dbd9cfcda2d95fe3ede96ccd9995d1496f1",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22822,7 +23575,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "574c7713435e1233b6faa3a36e398f5179dd8a156d3923db809a99dda39dcb12",
+      "icon_sha256": "d198b7e897b372f75998e682e53859cca73265364b9584dbe78e76d3f227a526",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22848,7 +23601,7 @@
         "x",
         "y"
       ],
-      "icon_sha256": "745baeac020f33f2e103f4387aaf0d87df59263202dee5fdb442e802cc95a3b2",
+      "icon_sha256": "c4def5205d70d8f32fc1dcba1954f9a62ecd4187125eb9312bc5140eb544257f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22873,7 +23626,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "653157776b836c0563b485c03c26f0fada1c97191db27fcc36efe09e0c1f2205",
+      "icon_sha256": "3b739eb9ec157f2f4949b880681b60c6e3febcb3f89b40e94c115fc6f8a9ff6f",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22898,7 +23651,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "f01dc64e143d476c86bf96f1e996fd23a1f157f7b8f906f261b06d12ff14d390",
+      "icon_sha256": "a186314d67db48e537238300d3146cab4495815006090907a00e1989f42e4211",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22923,7 +23676,7 @@
         "result",
         "x"
       ],
-      "icon_sha256": "df775ead6ef6a686ae134bc83ce081bf47c17b7b17599b7ce45cb49086c4a894",
+      "icon_sha256": "7d1062867862245db5e2a4296cffe0fbd88ad2f0bde1ba6cc4b452e2943f3981",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22948,7 +23701,7 @@
         "sec(x)",
         "x"
       ],
-      "icon_sha256": "b069b8c680e72c3597c7127ced90991dda6dfbbc9cd059818011545f566d4285",
+      "icon_sha256": "9551aa6b72f85fcc6d6562b8e618d755d765977224b675f214b4ecd37aee0fe2",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22973,7 +23726,7 @@
         "sin(x)",
         "x"
       ],
-      "icon_sha256": "f086fc365e9c989a571bf81a4f3231d6585e9953aeefdc3fb6358badede48cc1",
+      "icon_sha256": "78929394070edd87554215727c43eeb67dcd5d42a858d515f6562ae802d4cc39",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -22998,7 +23751,7 @@
         "sinc(x)",
         "x"
       ],
-      "icon_sha256": "34e0ed59bc2ee5ee969f6b2d9698669bfd10e78c4f58622d786241454c51ca56",
+      "icon_sha256": "d6cd7c261d1ee233cb4d63f125b6784e633f4cc47b0203c1f518ce27f70dce55",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -23025,7 +23778,7 @@
         "sin(x)",
         "x"
       ],
-      "icon_sha256": "ebcaaa3bf2c0ca1b348185d238582f5e20f58f23aefc05edc85b845e90b5aa9a",
+      "icon_sha256": "dbb8656412511f68b704105039567a7d19e4e5e4447525f0810b0e2759b23e79",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -23050,7 +23803,7 @@
         "tan(x)",
         "x"
       ],
-      "icon_sha256": "5d68482f81dfb0933a007fbc7e15ebfc304408a5369dae8b272e8ef7e02b0b0e",
+      "icon_sha256": "26c8bd09a9c276b629533424a4ae760766324a2ecc9d3ab06205c7f8d1505db6",
       "contract_source": "manifests/function-bindings/studio.mathematics.v2.json"
     },
     {
@@ -23476,11 +24229,11 @@
     {
       "catalog_id": "mathematics.geometry.angle",
       "title_en": "Angle",
-      "title_fr": "",
+      "title_fr": "Angles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/geometry/angle.md",
-      "summary": "Browse the Angle palette.",
+      "summary": "Browse angle conversion, wrapping, rotation, bisection and interval tests.",
       "icon": "assets/function-icons/functions/math/geometry/angle.svg",
       "aliases": [],
       "parent": "mathematics.geometry",
@@ -23497,11 +24250,11 @@
     {
       "catalog_id": "mathematics.geometry.computational_geometry",
       "title_en": "Computational Geometry",
-      "title_fr": "",
+      "title_fr": "Géométrie algorithmique",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/geometry/computational_geometry.md",
-      "summary": "Browse the Computational Geometry palette.",
+      "summary": "Browse contours, polygon measurements and relations, triangulation, Voronoi diagrams and convex hulls.",
       "icon": "assets/function-icons/functions/math/geometry/computational.svg",
       "aliases": [],
       "parent": "mathematics.geometry",
@@ -23665,11 +24418,11 @@
     {
       "catalog_id": "mathematics.polynomial.orthogonal",
       "title_en": "Orthogonal & Non-orthogonal",
-      "title_fr": "",
+      "title_fr": "Polynômes orthogonaux et non orthogonaux",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/polynomial/orthogonal.md",
-      "summary": "Browse the Orthogonal & Non-orthogonal palette.",
+      "summary": "Browse generators and evaluations for orthogonal and other named polynomial families.",
       "icon": "assets/function-icons/functions/math/folders/polynomial.svg",
       "aliases": [],
       "parent": "mathematics.polynomial",
@@ -23686,11 +24439,11 @@
     {
       "catalog_id": "mathematics.polynomial.rational",
       "title_en": "Rational",
-      "title_fr": "",
+      "title_fr": "Fractions rationnelles",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/polynomial/rational.md",
-      "summary": "Browse the Rational palette.",
+      "summary": "Browse arithmetic, normalization, derivatives and evaluation of ratios of polynomials, plus partial fractions and Pade approximation.",
       "icon": "assets/function-icons/functions/math/folders/polynomial.svg",
       "aliases": [],
       "parent": "mathematics.polynomial",
@@ -23728,11 +24481,11 @@
     {
       "catalog_id": "mathematics.probability_statistics.anova",
       "title_en": "ANOVA",
-      "title_fr": "",
+      "title_fr": "Analyse de variance",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/probability_statistics/anova.md",
-      "summary": "Browse the ANOVA palette.",
+      "summary": "Browse one-, two- and three-factor analysis of variance.",
       "icon": "assets/function-icons/functions/math/statistics/folder-anova.svg",
       "aliases": [],
       "parent": "mathematics.probability_statistics",
@@ -23749,11 +24502,11 @@
     {
       "catalog_id": "mathematics.probability_statistics.hypothesis_test",
       "title_en": "Hypothesis Test",
-      "title_fr": "",
+      "title_fr": "Tests d’hypothèse",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/probability_statistics/hypothesis_test.md",
-      "summary": "Browse the Hypothesis Test palette.",
+      "summary": "Browse statistical hypothesis tests, rank transformations and contingency-table analysis.",
       "icon": "assets/function-icons/functions/math/statistics/folder-hypothesis_test.svg",
       "aliases": [],
       "parent": "mathematics.probability_statistics",
@@ -23770,11 +24523,11 @@
     {
       "catalog_id": "mathematics.probability_statistics.probability",
       "title_en": "Probability",
-      "title_fr": "",
+      "title_fr": "Probabilités",
       "family": "Mathematics",
       "family_id": "mathematics",
       "route": "docs/functions/mathematics/probability_statistics/probability.md",
-      "summary": "Browse the Probability palette.",
+      "summary": "Browse continuous and discrete distribution functions: probabilities, inverse distribution values, random sampling and moments.",
       "icon": "assets/function-icons/functions/math/statistics/folder-probability.svg",
       "aliases": [],
       "parent": "mathematics.probability_statistics",
@@ -26247,7 +27000,7 @@
         "upper limit",
         "upper_limit"
       ],
-      "icon_sha256": "ce9b317001121c9e5a881d4d32d6c7a89e441d8a46b11d9526c03c642c367de7",
+      "icon_sha256": "474a10a5c8ba17dda15c2d0c7a63fcb2033cbfdd7147020307fc4027cb1e6ae7",
       "contract_source": "manifests/function-bindings/studio.numeric.v2.json"
     },
     {
@@ -26271,7 +27024,7 @@
         "random number [0,1)",
         "result"
       ],
-      "icon_sha256": "60ba7f569cda4b3c94597dd0972a9541bf2907cb318c5689cfe318cf1d45b262",
+      "icon_sha256": "5b7357c128dd843a5a28512898b29ddc123c21b2b8435b3581b5dc8349750563",
       "contract_source": "manifests/function-bindings/studio.numeric.v2.json"
     },
     {
@@ -29758,7 +30511,7 @@
         "timeout in ms (-1)",
         "timeout_ms"
       ],
-      "icon_sha256": "cca568d31b31f04150d099a932cc921e490bd0a9ea0d17bed28871f9de29428b",
+      "icon_sha256": "d2475434c490ede8b8e515542de25c3ad718f4cce64aa29913e1d79df3ed6657",
       "contract_source": "manifests/function-bindings/studio.synchronization.v2.json"
     },
     {
@@ -29830,7 +30583,7 @@
         "timeout in ms (-1)",
         "timeout_ms"
       ],
-      "icon_sha256": "7bfe0ddcdc6a26f329060857f8ae5077c1ab7d857ea752fc3ec0bb81d1d93c1f",
+      "icon_sha256": "e9237c45a607f327710b5f954587bd9f25b5aa154926f01833b14a7c0b1fc61c",
       "contract_source": "manifests/function-bindings/studio.synchronization.v2.json"
     },
     {
@@ -30945,7 +31698,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/disconnect_g_types.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant in: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: variant out: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant in: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: variant out: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/13-disconnect-g-types.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -30975,7 +31728,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/find_contained_data_types.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; data type to find: enum<variant.analysis.data_type,u8>; check inside refnums?: bool; error in: cluster<status:bool,code:i32,source:string>; class qualified name: string. Outputs: contains data type to find?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; data type to find: enum<variant.analysis.data_type,u8>; check inside refnums?: bool; error in: cluster<status:bool,code:i32,source:string>; class qualified name: string. Outputs: contains data type to find?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/11-find-contained-data-types.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31010,7 +31763,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_array_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: number of dimensions: i32; array lengths: array<cluster<Type:enum<variant.analysis.memory_type,u16>,Size:i32>>; array element data type: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: number of dimensions: i32; array lengths: array<cluster<Type:enum<variant.analysis.memory_type,u16>,Size:i32>>; array element data type: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/02-get-array-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31043,7 +31796,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_cluster_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: cluster elements: array<variant>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: cluster elements: array<variant>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/03-get-cluster-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31072,7 +31825,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_fixed_point_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: FXP representation: cluster<Signed:bool,\"Word Length\":u32,\"Integer Word Length\":i32>; FXP range: cluster<\"Range Min\":f64,\"Range Max\":f64,Delta:f64>; include overflow status?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: FXP representation: cluster<Signed:bool,\"Word Length\":u32,\"Integer Word Length\":i32>; FXP range: cluster<\"Range Min\":f64,\"Range Max\":f64,Delta:f64>; include overflow status?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/05-get-fixed-point-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31105,7 +31858,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_hardware_reference_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: tag type: enum<variant.analysis.tag_type,u16>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: tag type: enum<variant.analysis.tag_type,u16>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/10-get-hardware-reference-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31134,7 +31887,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_numeric_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: enum names: array<string>; units: array<cluster<\"Unit Type\":enum<variant.analysis.unit_type,u16>,Exponent:i16>>; representation: enum<variant.analysis.numeric_representation,u32>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: enum names: array<string>; units: array<cluster<\"Unit Type\":enum<variant.analysis.unit_type,u16>,Exponent:i16>>; representation: enum<variant.analysis.numeric_representation,u32>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/04-get-numeric-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31165,7 +31918,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_refnum_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: reference type: enum<variant.analysis.refnum_type,u16>; strict type: variant; VI Server generic type: enum<variant.analysis.vi_server_type,u16>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: reference type: enum<variant.analysis.refnum_type,u16>; strict type: variant; VI Server generic type: enum<variant.analysis.vi_server_type,u16>; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/07-get-refnum-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31198,7 +31951,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_type_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: type: enum<variant.analysis.data_type,u8>; name: string; type definition: bool; error out: cluster<status:bool,code:i32,source:string>; type definition info: cluster<Name:string,Timestamp:u32>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: type: enum<variant.analysis.data_type,u8>; name: string; type definition: bool; error out: cluster<status:bool,code:i32,source:string>; type definition info: cluster<Name:string,Timestamp:u32>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/01-get-type-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31231,7 +31984,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_user_defined_hardware_reference_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: class name: string; user data: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: class name: string; user data: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/09-get-user-defined-hardware-reference-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31262,7 +32015,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_user_defined_refnum_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: class name: string; type name: string; user data: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: class name: string; type name: string; user data: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/08-get-user-defined-refnum-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31295,7 +32048,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/get_waveform_info.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: Y array type: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: Y array type: variant; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/06-get-waveform-information.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31324,7 +32077,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/is_error_cluster.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: is error cluster?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: is error cluster?: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/14-is-error-cluster.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31353,7 +32106,7 @@
       "family": "Variant",
       "family_id": "variant",
       "route": "docs/functions/variant/data_type_analysis/is_or_contains_g_type.md",
-      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: is or contains type definition: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution is not implemented.",
+      "summary": "Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster<status:bool,code:i32,source:string>. Outputs: is or contains type definition: bool; error out: cluster<status:bool,code:i32,source:string>. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.",
       "icon": "assets/function-icons/functions/variant/data-type-analysis/12-is-or-contains-g-type.svg",
       "aliases": [],
       "parent": "variant.data_type_analysis",
@@ -31608,8 +32361,8 @@
   ],
   "examples_projection": {
     "index": "assets/examples/index.v1.json",
-    "sha256": "a6b68c3e722aeacf4701602665140e37fc2480dc2d2430ec1647dda6fb285892",
-    "entries": 625,
+    "sha256": "508c91dece45111e31fe8533e210e3c0f5a135e66f95b3af24a1a19f521ccd95",
+    "entries": 626,
     "scope": "declared expectations; no execution results inferred"
   }
 }

@@ -25,7 +25,7 @@ Contract status: **partial**. The connector below describes Studio authoring; ex
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
 | variant `variant` | `variant` | Required | Not specified | — |
-| name `name` | `string` | Recommended (help); Required (binding) | Not specified | — |
+| name `name` | `string` | Recommended (help); Optional (binding) | Not specified | — |
 | default value `default_value` | `T:any` | Recommended (help); Optional (binding) | Not specified | — |
 | error in `error_in` | `cluster<status:bool,code:i32,source:string>` | Recommended (help); Optional (binding) | Not specified | — |
 
@@ -47,7 +47,7 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 Variant + name:String + default:T + error -&gt; T, found:Boolean, error. Without name NI returns String names[] and Variant values[]. Studio: Studio exposes named-attribute mode only, not the NI name-unwired multi-attribute connector mode.
 
-Studio authoring ports for variant.get_attribute.
+Typed native get_attribute over the existing SDK Variant. Main payload, full schema and attributes are independent. Conversions and malformed binary inputs use explicit Error outputs; the active target must admit the exact signature.
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -58,7 +58,7 @@ Variant + nom:String + défaut:T + erreur -&gt; T, trouvé:Boolean, erreur. Sans
 
 </details>
 
-- Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.palette.type-resolution@1`.
+- Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
 - Arrays: not established; lifting policy: `none`.
 
@@ -72,11 +72,15 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.variant.get_attribute.v1`.
+
+Required provider: `frog.studio.variant.primitives@1`.
+
+Native implementation uses the exact immutable SDK Variant and typed value codec. Actual artifact admission and current targeted qualification remain required; this declaration is not an execution receipt.
 
 **Authoring/target contract limits:**
 
-- Execution requires explicit support by the active target.
+- Current native artifact admission and actual Run qualification are required for the exact operation and transported types.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

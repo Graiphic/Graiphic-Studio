@@ -7,6 +7,15 @@
 
 Remove Zero Coefficients. Removes only trailing high-power coefficients. threshold_type 0 absolute; 1 relative to the maximum coefficient magnitude. Always retains the first coefficient, including an all-small input. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Retirer les coefficients nuls**
+
+Retire uniquement les coefficients finaux des plus hautes puissances. threshold_type : 0 seuil absolu, 1 relatif au module maximal des coefficients. Le premier coefficient est toujours conservé, même si tous sont sous le seuil. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

@@ -38,6 +38,8 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 Integer milliseconds -&gt; timer integer after wait. Studio: Studio currently exposes the wait input, not the NI timer output.
 
+Cooperatively suspends this node for nonnegative integer milliseconds through U32 maximum. Zero yields once. Stop cancels the execution instance.
+
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
 
@@ -46,8 +48,6 @@ Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne c
 Millisecondes entières -&gt; compteur entier après attente. Studio: Studio expose actuellement l’entrée d’attente, mais pas la sortie de temporisation de NI.
 
 </details>
-
-Historical Studio binding profile; no additional public FROG semantics are claimed.
 
 - Type resolution: `fixed`; result expression: `undecided`.
 - Implicit coercion: permitted by this profile.
@@ -63,11 +63,11 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.structures.wait.v1`.
 
-**Authoring/target contract limits:**
+Required provider: `frog.studio.timestamp.native@1`.
 
-- The complete public execution semantics and target support for this legacy Studio profile have not been established.
+Compiled instance-owned Timing service; steady monotonic clock from the C++ standard library and OS. Same native task scheduler in Run and static AOT host. Target admission and current execution/package evidence are separate.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

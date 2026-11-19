@@ -7,6 +7,15 @@
 
 1D Rational Polynomial Evaluation. N(X)/D(X), preserving point order and length. A pole is an explicit numerical error; complex components are preserved. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Évaluation d’une fraction rationnelle 1D**
+
+Évalue N(X)/D(X) en conservant l’ordre et la longueur des points. Un pôle est une erreur numérique explicite ; les composantes complexes sont conservées. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

@@ -37,6 +37,7 @@ A default is shown only for an input with an explicitly documented value. Previe
 | --- | --- | --- | --- | --- |
 | result `result` | `variant` | Recommended (help); Required (binding) | — | — |
 | error out `error_out` | `cluster<status:bool,code:i32,source:string>` | Recommended (help); Required (binding) | — | — |
+| replaced? `replaced` | `bool` | Required | — | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -46,7 +47,7 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 Variant + name:String + any attribute value + error -&gt; Variant + error.
 
-Studio authoring ports for variant.set_attribute.
+Typed native set_attribute over the existing SDK Variant. Main payload, full schema and attributes are independent. Conversions and malformed binary inputs use explicit Error outputs; the active target must admit the exact signature.
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -71,11 +72,15 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Authoring support is not an execution capability.
+Implementation: `frog.studio.variant.set_attribute.v1`.
+
+Required provider: `frog.studio.variant.primitives@1`.
+
+Native implementation uses the exact immutable SDK Variant and typed value codec. Actual artifact admission and current targeted qualification remain required; this declaration is not an execution receipt.
 
 **Authoring/target contract limits:**
 
-- Execution requires explicit support by the active target.
+- Current native artifact admission and actual Run qualification are required for the exact operation and transported types.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -88,6 +93,7 @@ Authoring support is not an execution capability.
 | INPUT | `error_in` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 | OUTPUT | `result` | `variant` | `exact` | `single` | — |
 | OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
+| OUTPUT | `replaced` | `bool` | `exact` | `single` | — |
 
 </details>
 

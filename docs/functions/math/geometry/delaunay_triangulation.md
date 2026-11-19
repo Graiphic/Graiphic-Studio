@@ -7,6 +7,15 @@
 
 CCW triangle rows [n,3], zero-based original indices. Duplicate coordinates retain first original index. Deterministic cocircular diagonal; collinear input returns empty triangles. Bounded exact-sign predicates, no coordinate jitter.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Triangulation de Delaunay**
+
+Lignes de triangles antihoraires [n,3], avec indices originaux à partir de zéro. Les coordonnées répétées conservent le premier indice original. Diagonale déterministe pour les points cocirculaires ; une entrée colinéaire retourne des triangles vides. Prédicats à signe exact bornés, sans perturbation des coordonnées.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

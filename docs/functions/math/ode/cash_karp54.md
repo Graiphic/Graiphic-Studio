@@ -52,6 +52,8 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 X [variables]: array&lt;string&gt;; time start [time_start]: f64; time end [time_end]: f64; h [step]: f64; X0 [initial_values]: array&lt;f64&gt;; time [time]: string; F(X,t) [equations]: array&lt;string&gt;; accuracy [accuracy]: f64; Times [times]: array&lt;f64&gt;; X Values [values]: array&lt;f64,rank=2&gt;; ticks [ticks]: u32; error [error]: i32
 
+Cashâ€“Karp embedded explicit 5(4), six derivative stages with accepted/rejected adaptive steps. Cashâ€“Karp is never substituted by Dormandâ€“Prince.
+
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
 

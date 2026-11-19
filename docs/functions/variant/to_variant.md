@@ -53,6 +53,8 @@ These are source declarations, not the current measured product-execution assess
 
 Any data T -&gt; Variant; contained T does not change the Variant wire type.
 
+Typed native to_variant over the existing SDK Variant. Main payload, full schema and attributes are independent. Conversions and malformed binary inputs use explicit Error outputs; the active target must admit the exact signature.
+
 </details>
 
 <details>
@@ -63,6 +65,8 @@ Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne c
 Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
 
 </details>
+
+Preserves the exact immutable SDK value and full Source type. An already Variant input is returned unchanged, including attributes; it is not reboxed.
 
 - Type resolution: `fixed`; result expression: `variant`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -79,7 +83,11 @@ Toute donnée T -&gt; Variant ; T contenu ne change pas le type du fil Variant.
 
 Scope: `requires_explicit_target_capability`.
 
-Private Studio Play/Highlight executes exact immutable Variant envelopes. This does not provide a public FROG/LLVM target provider.
+Implementation: `frog.studio.variant.to_variant.v1`.
+
+Required provider: `frog.studio.variant.primitives@1`.
+
+Native implementation uses the exact immutable SDK Variant and typed value codec. Actual artifact admission and current targeted qualification remain required; this declaration is not an execution receipt.
 
 <details>
 <summary>Retained authoring-contract limitations</summary>
@@ -88,7 +96,7 @@ These declarations belong to the binding snapshot. Compare them with the separat
 
 **Authoring/target contract limits:**
 
-- No public FROG/LLVM target provider is declared; immutable boxing/unboxing is a private Studio Play/Highlight capability.
+- Current native artifact admission and actual Run qualification are required for the exact operation and transported types.
 
 </details>
 

@@ -7,6 +7,15 @@
 
 Create Polynomial From PFE. Inverse PFE, with explicit repeated-pole powers. Empty multiplicity follows NI nonzero residue counts only when unambiguous; otherwise requires explicit multiplicities. option 0 cancels certified common factors; 1 preserves them. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Créer des polynômes depuis les fractions partielles**
+
+Inverse la décomposition en fractions partielles, avec puissances explicites des pôles répétés. Une multiplicité vide suit le comptage NI des résidus non nuls uniquement si le cas est non ambigu ; sinon les multiplicités doivent être explicites. option : 0 annule les facteurs communs certifiés, 1 les conserve. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

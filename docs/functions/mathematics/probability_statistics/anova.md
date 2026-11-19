@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the ANOVA palette.
+Browse one-, two- and three-factor analysis of variance.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Analyse de variance**
+
+Parcourir les analyses de variance à un, deux ou trois facteurs.
+
+</details>
 
 ## Browse this palette
 

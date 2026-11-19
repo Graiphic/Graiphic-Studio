@@ -7,6 +7,15 @@
 
 Sort Complex Numbers. Stable complex sort. order 0 ascending, 1 descending. method 0 real/imaginary, 1 magnitude/real/imaginary, 2 magnitude/phase in [-pi,pi]. Indices refer to the original array. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Trier des nombres complexes**
+
+Effectue un tri stable des complexes. order : 0 croissant, 1 décroissant. method : 0 réel/imaginaire, 1 module/réel/imaginaire, 2 module/phase dans [-pi,pi]. Les indices renvoient au tableau original. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

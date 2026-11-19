@@ -7,6 +7,15 @@
 
 Partial Fraction Expansion. Partial fractions with unique complex poles, a residue matrix (rows=poles, columns=increasing denominator power), multiplicity and direct polynomial. option 0 cancels certified common factors; 1 preserves them. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Décomposition en fractions partielles**
+
+Retourne des pôles complexes uniques, une matrice de résidus dont les lignes sont les pôles et les colonnes les puissances croissantes du dénominateur, les multiplicités et le polynôme direct. option : 0 annule les facteurs communs certifiés, 1 les conserve. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

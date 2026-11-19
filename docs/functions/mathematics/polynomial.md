@@ -47,8 +47,8 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [PFE](../math/polynomial/pfe.md) | Partial Fraction Expansion. Partial fractions with unique complex poles, a residue matrix (rows=poles, columns=increasing denominator power), multiplicity and direct polynomial. option 0 cancels certified common factors; 1 preserves them. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented. |
 | [Poly From PFE](../math/polynomial/from_pfe.md) | Create Polynomial From PFE. Inverse PFE, with explicit repeated-pole powers. Empty multiplicity follows NI nonzero residue counts only when unambiguous; otherwise requires explicit multiplicities. option 0 cancels certified common factors; 1 preserves them. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented. |
 | [Poly Eigenvalue](../math/polynomial/eigenvalues.md) | Polynomial Eigenvalues and Vectors. Polynomial eigenproblem with coefficient matrices in ascending order. GS Array shape [coefficient,row,column]. Uses the existing generalized eigensolver without inverting the leading coefficient. output_option 0 values, 1 values and vectors. One coefficient matrix uses its ordinary eigensystem, as documented by NI. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented. |
-| [Orthogonal &amp; Non-orthogonal](polynomial/orthogonal.md) | Browse the Orthogonal &amp; Non-orthogonal palette. |
-| [Rational](polynomial/rational.md) | Browse the Rational palette. |
+| [Orthogonal &amp; Non-orthogonal](polynomial/orthogonal.md) | Browse generators and evaluations for orthogonal and other named polynomial families. |
+| [Rational](polynomial/rational.md) | Browse arithmetic, normalization, derivatives and evaluation of ratios of polynomials, plus partial fractions and Pade approximation. |
 
 ## Examples
 

@@ -8,2327 +8,2331 @@
     },
     {
       "path": "assets/examples/Native/ApplicationControl/application_control.read_value/main.frog",
-      "sha256": "c7755f096f26c8e0b8bea4a9f713247c0c73ebc9832cc645c4dd86774f57c371"
+      "sha256": "c7e9a5d0492193ce11b5d7fc35cd50df3ef6e2db99d5de73375027a72208fdf2"
     },
     {
       "path": "assets/examples/Native/ApplicationControl/application_control.reinitialize/main.frog",
-      "sha256": "8a1e581c246d90dd3b926c965f3c43c832d709d3fe921146d22b5884a4c83594"
+      "sha256": "39091cb60c84b9e9f9544b4a6a4a2edb09541ae7e6a96e4a53b9f9f590d3f004"
     },
     {
       "path": "assets/examples/Native/ApplicationControl/application_control.silent_write/main.frog",
-      "sha256": "77d7b17ab5f23a3c73114df466ce72a102381731677046a2b8a29ee16662bd5f"
+      "sha256": "94632eb59331bbccdaf80da11272bb17c2040675e1f905dedd419dd1f2d4b895"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.and.truth_00/main.frog",
-      "sha256": "2eaf0e05ae90de761a67f60bf98746ecb820e934a67cb70f9d36e7dc6c414cd6"
+      "sha256": "1db186146770fca0d7905593d6c7f84d44fc6a9b647e6dae59a19c075aac1a9e"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.and.truth_01/main.frog",
-      "sha256": "ad64dd5bf5f5ca02d27eff60f3dfea23a9c804ea7c1f24766a0df9475eff7db7"
+      "sha256": "6fbc3c10550afe825e2f83dfc2a908b38b7d6906fdd6c7541a6b2b8d30ec71b1"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.and.truth_10/main.frog",
-      "sha256": "668610896d8e10df96bf5ec0a78a6a2e4b2b21c1eb54618a3c45c4515572c753"
+      "sha256": "eebfc3dcb8a47720a0bf1a616992061111b3218fa9b5f1ae16ae79483b5f89b9"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.and.truth_11/main.frog",
-      "sha256": "3c69d0cb1fc3172763c964b1d1a7757258f704c0c9b3a653ab4a5cac8e3b1842"
+      "sha256": "632e4f77a114035e17ac9527f51541d7aa5dbf2a99a4dcc54526d033b58654a2"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.false_constant.direct_indicator/main.frog",
-      "sha256": "7251aa84028067706fdb15a5f13f56803962b200fddcbbc99ce284a2454aa094"
+      "sha256": "aaf5759050e154e5f65567f33f88dde046f19e06a39f54ab4daa2307835d70b0"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.implies.truth_00/main.frog",
-      "sha256": "bd5ad6540374e815487e32e046f18bf8c75d5b98a32133962409059938214447"
+      "sha256": "78f20c690a6a66258932b679458facf4affe44e056090a4b6288cd8ad20d7092"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.implies.truth_01/main.frog",
-      "sha256": "444c80d0fe1f152e0ad4ee61cca518860ca333d6ad0252167530a0925bd84f42"
+      "sha256": "95402465a44cb6b5265a0d41a612d4dc8a48319cd834358b2cf7fd221d6314c4"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.implies.truth_10/main.frog",
-      "sha256": "f8d177ed06b3fe778977925519f065a6a4ff6293a27edd953646994526603a4f"
+      "sha256": "448cd54d6ebcf58147c4241f8af83ca07298ec6f3b0a1132f56ec565bf3a7cd6"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.implies.truth_11/main.frog",
-      "sha256": "4ea5ad1891cbaa3d60d97efeca63f80cc2f370790018609c21ad17a780e6b60e"
+      "sha256": "17f56abb929dcc82df6114b2652f5f97f9032ac7af01381660bed40fe0abc838"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nand.truth_00/main.frog",
-      "sha256": "b895d72b5ebb53e42cf349299cb88e717c560da3b4d863a0ed90b56c41cf71b3"
+      "sha256": "d94ee8827a5fd5f409f4c5a2ee1cc48bf3147d51b88007577892bbe3e5b22733"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nand.truth_01/main.frog",
-      "sha256": "2cc508395b57f0d4077af7bd664bb1f93d6b533eec946a845b20f1e3486b3ec9"
+      "sha256": "15363e5ecd5704f7f910a1c645bd25e2e83737c0131272c3c98a6adfc7d7dce9"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nand.truth_10/main.frog",
-      "sha256": "e7a95062b6021b6e04b44fddf870d94a41d66e5c6d1e870191d6d2cbb780eb64"
+      "sha256": "aa7de9492070774b85ea7cf93687200acecb4034b82d33a284cc993ccdfc7ceb"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nand.truth_11/main.frog",
-      "sha256": "93ab1a5b722d71125a365dda7955675521fedcf101d5d94e8525e8312f84ed67"
+      "sha256": "798d3f4495e395e4049e5116a9d1358331a9a3041cf5b3f575e23497beb058dd"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nor.truth_00/main.frog",
-      "sha256": "bd121b71352528f89443abfea3ef82825566a89fdddaf93db00766190c3a7d3a"
+      "sha256": "f239e5e080bb1362489e9a3fe99a1c3602b8c0668c6ea36a0eb0ac25e437d3cc"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nor.truth_01/main.frog",
-      "sha256": "6c4215012ae7d90add4982c59b104f428ff9407757f7def8d5a311c6fc437822"
+      "sha256": "78bd0ec930bf5a2202ab112b4bc31f10fbbdba724d024a5c89a38f426e34285c"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nor.truth_10/main.frog",
-      "sha256": "eb2e13d32dbdb0d2ed1e03eb81ae68448456bcbde83a7c035742b29575eaccf3"
+      "sha256": "2d1152cda043dbe110b8aad2e578cfa4d56cc918416609dc1dc47715c6b011f5"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.nor.truth_11/main.frog",
-      "sha256": "747d3ae9ac5ff8e91a1ca326faef5ec7e5275705e9ab303423411a6389c44f7d"
+      "sha256": "3882545fa6165d6c3238fb3019c4804d73472ece03acb5dca44647d48834ba15"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.not.truth_0/main.frog",
-      "sha256": "d14cb9a4f81a61d71380de6e863406a943fd296e1717c3a7bad76ff39843d254"
+      "sha256": "ed2075cd2068cc697cccc3a9b7ac0280fdfdbc0b6daaa0d98c2004dd6d09d616"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.not.truth_1/main.frog",
-      "sha256": "c63e21f39265727794daf51ad0c8bb1e672ce4d1d849e1080fe6cc7c3031ce72"
+      "sha256": "cafc8c856e9ef89e8a0e40d5329e6c205aa09cdae4f2bc696e073aeea01715a9"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.or.truth_00/main.frog",
-      "sha256": "4cbe51a57a0ad1ffeb20667b48b8fa58ad1311344039e89ab813152c7dfb1201"
+      "sha256": "aa353326a701d35e0749f18ca95cdcdf189b57555e01c010ae204b32643ec922"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.or.truth_01/main.frog",
-      "sha256": "5e4c1a9e1703b97466a9d264714df09f46359145b2bb865b7d158c94fe668f1d"
+      "sha256": "7596d1b3b33393fb56f8a82856238eb845b8a64f4cd4b17e0a24ac5e13f3a648"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.or.truth_10/main.frog",
-      "sha256": "9f26ffea4922bb006ee9410946dbf5667638855bdcce73077869d3438c0e771b"
+      "sha256": "6715250752a44977bb3c401f9dc8b37eb7afe7626e4753f4ca12b759b4991ae1"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.or.truth_11/main.frog",
-      "sha256": "093fecee88535bffb1de58796dc87043c750128d7a8b51bb64eefae689f7265b"
+      "sha256": "036965a86961f57f25d31d74c44adc0971bb5495ee403221c960bb3e3c7efb87"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.true_constant.direct_indicator/main.frog",
-      "sha256": "fabba50c486cb932959b41453464362bc4c2aab2645b3f12e8078d50eff3e06d"
+      "sha256": "73d92fb21815d148a472aada7d6ab6273b519e16b787e45ba7f1142848b89c8e"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xnor.truth_00/main.frog",
-      "sha256": "e0334cd679c15de136b7513ff5a274d9ae069a4d8d4ad8f5c84b19b96950fb7e"
+      "sha256": "addd787fcc63ca34dee9d68354aebfd1277a75241ed5fadf6c02272735c8aa9b"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xnor.truth_01/main.frog",
-      "sha256": "0aaa0656a4be09b5e1f03edd2e3bf26a384bd17372f893de3ae5d0749ab84fb4"
+      "sha256": "9c68ea98acf9e8dcac9dd6afcda73708f19a0d816a3b3f7c36844e32d3887cdd"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xnor.truth_10/main.frog",
-      "sha256": "efb6b16828a05a062607295e70f89685c50a690f0d5050e7e2ed62fc05c87dd8"
+      "sha256": "f1275a86c5202edd4c53ac0298288e8ac6d44ed52e1626cc9f38b872fd42e541"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xnor.truth_11/main.frog",
-      "sha256": "640ad345b41acbd98810b0f884f1171326836b138bfcb68f531b16865c511e06"
+      "sha256": "7df5db29350b801ab09e817bafff777286638328ae701cfbda53cab49e3273d0"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xor.truth_00/main.frog",
-      "sha256": "c5610368c64b4e63129ce6258fbd2fd9cf59771ef506a2b9a0c3dbca2577bfa1"
+      "sha256": "70235a028b36775188d148286a3358449bad39f397130da74a55d4637bde0eb0"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xor.truth_01/main.frog",
-      "sha256": "a84f912d13d9aa2697c5dd600277aa432468fc757e0f3a1ff6cdae4417411b7e"
+      "sha256": "78cc592699ff6abf8965e17b632e58b35f8c275c1e8bcddf7e67bccde8ba650b"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xor.truth_10/main.frog",
-      "sha256": "0cdfab0442d4248521c9ba2c305b8a31cc098e8b5c00d952ce37bacf045ffc5f"
+      "sha256": "a71c4cf55a3c8a295920fc84d4202598ed597ab5458124223bbcd666f0bf2bf7"
     },
     {
       "path": "assets/examples/Native/Boolean/boolean.xor.truth_11/main.frog",
-      "sha256": "df47de3634cd13ba1af4ca430e991275af53115cc22064d6f66faa302a6cb8dc"
+      "sha256": "6703080d25d9c6440cdaa959a3a6c220d634f13231890a7c8a2f62c9b267055e"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal.exact_f64/main.frog",
-      "sha256": "b92c1b507ad7a4d55f1ab64adcbeb79e68101289f40011b78221fb8d314c2d76"
+      "sha256": "e83db745854ec2daa02abf6fed9ef8def7c9f0457adce7c19b421656a9a8c58e"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal.exact_i32/main.frog",
-      "sha256": "67556897bba1f098dcf8fabe1d4cc8dcd9d9b95975e7facf5abc615e0cc3f2e3"
+      "sha256": "9e5f5f96d618f936250da494a3a11ef57ba592a27d6a7b0c0639ec620b866f44"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal.exact_i64/main.frog",
-      "sha256": "94714a18a658dbeec29a834f3405e9dbeec6ea97edbe81a2061d5320b3c84273"
+      "sha256": "117888300860af6f809acdd9c8220133d04ad34fdbfe952b160fc8ed2fd89f99"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal.exact_u64/main.frog",
-      "sha256": "975ce8bde89ef1eb67f0c5218874a8f12f7a496e68d676740b85f7df5641b444"
+      "sha256": "fbedfbb65ce0d4a51fbcf89f5e929fde4559dacf87db56d6d1a772b2eec1dd9c"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal_zero.negative/main.frog",
-      "sha256": "3b3e20ea0132dfa3998f24e98d71da7de914b98a2b9fdf7d466079acb454a68e"
+      "sha256": "6d5741ed3545c893e3fd2b9f826beeae122aafac4d25b9af47df3b97e63b0a7b"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal_zero.positive/main.frog",
-      "sha256": "dba16fe2fae774af4a1a0804e837a6c3bb70da0cc112806858515388004c5cdd"
+      "sha256": "d8fb2fb0962d90e9936c5dc6b099c9a70f8462156e4d4b50f06ba513cb1bf859"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.equal_zero.zero/main.frog",
-      "sha256": "c52ed9c292629be98fd6ab34c846e2fdc738d612e6ac6f71baddee850152d903"
+      "sha256": "e5477788dde79a8dc436bde699f74f0bc9d44752c5e9e6d8805631dec0939ce3"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater.exact_f64/main.frog",
-      "sha256": "4e21f15fee09f3721dfc1d89d3a672f7731376b678ceb8fbc9501da406802a54"
+      "sha256": "4ed5cc7777647c4bcdb900805eaef0872b6bd2619dc5b2783680c916ede4d70b"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater.exact_i32/main.frog",
-      "sha256": "64dee37173ba92ff2c909f8920d8d063984325c0f5478745484c3a056ce823b9"
+      "sha256": "b963adbd40f2a97c9fbfe3343edae5ee471ebce611e2675f53bc5d556ca9407b"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater.exact_i64/main.frog",
-      "sha256": "4f33a61a83e7005c7d2f05b3f942fe9e915354d06e9c51dac5422a1e6526a02a"
+      "sha256": "418a7bf13ef0a9929b42910eff8bc04287423259ad90523082e5d8b4bee2e24d"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater.exact_u64/main.frog",
-      "sha256": "276ce3e6b7f2b820dbbfd44f633256fb59712b4e61c63c6d47f3aacf9b3181e5"
+      "sha256": "7e4b3c4e7451b076f72a4223ee19cfa8a0b8155a39d49f322693533527117961"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal.exact_f64/main.frog",
-      "sha256": "73017dd501ce047c4165a534134568e1a63f1cfbb9e42959305ef7676f3c0954"
+      "sha256": "3b8c2d898803ed08c83f97fe5f2ba9c5a4736137521fe850c0447c3be52b4010"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal.exact_i32/main.frog",
-      "sha256": "31edca04114a157c7e7769cd04a998078f9387bb28aa8899fb3a96ce68802883"
+      "sha256": "b64746217e401beff98a98edf595fb96584bc3737aa9d124ef4c9640f0aad4a4"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal.exact_i64/main.frog",
-      "sha256": "a4596df70ae8bb270a8dee6e8531b4375fb5dbae23165ef59a467af034b03d05"
+      "sha256": "4a0d7c4687e5d5fc135bf85c658319219d9522e61585470b08dd0d3d0c3cf1c4"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal.exact_u64/main.frog",
-      "sha256": "4ab52c6ec7fe99f5e72e250f2d20b56ee22af318041ba4c2fd2c674040408b38"
+      "sha256": "778b4b15a4b880f51e800096b8f6d3a7969030c9dc509bdbbad7f5ee8fc5c889"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal_zero.negative/main.frog",
-      "sha256": "d0206aaea51a4399975060f9ddce692b1412d1acc591bcdb40dc0e144d4b9276"
+      "sha256": "ebf9f245a505735fb568ce26b1094492506a4de84113686be1d217367a420675"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal_zero.positive/main.frog",
-      "sha256": "ac1d4066b7d3a706548dc3f8e665442bdaea371b9a266b6cd7c41b7123a69da4"
+      "sha256": "226965706ef43e5d9b105e79190dec87c542902360bd875a8b5a535c188c577f"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_or_equal_zero.zero/main.frog",
-      "sha256": "89047ecbf7d3707371185bbffa3a121bde0b7db34164a485259949c55f201f99"
+      "sha256": "188bd16f297da4ad70312cb25372df3657123cf4522c4df928731f4f1415f444"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_zero.negative/main.frog",
-      "sha256": "5c03588a9f05642302968f26d3eea2e20f6dfb1a1b26a09b02979e759aa84642"
+      "sha256": "b82b2833818ae02b9d7e12e0f2d7ab93d3664b8c0d14cb52cdeb24ce4b84fc13"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_zero.positive/main.frog",
-      "sha256": "17838bde74b995aba6501753a0449171920a251d178eae6074592fb816852c4d"
+      "sha256": "ae6fbd72c0027d4ea606173b68c37f43569a3be7ac7732a95c6127c3a3fcda87"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.greater_zero.zero/main.frog",
-      "sha256": "37ac879bca9718644c5785763b93430c5bb840fca1e91b9f12aff5dda080a703"
+      "sha256": "c15a4b67ef9abbdfe78d44c9a998dae39372f6d0d3b9df7cc64596a33c76a647"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less.exact_f64/main.frog",
-      "sha256": "de6311c17fedd50a3caf126e9445033d8a1b42c1da63d421965c50648b30cc5a"
+      "sha256": "f8dd72bb64624ca6000f12b23ae63f9d62bbdb715572767e8b4689df1d08c2e1"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less.exact_i32/main.frog",
-      "sha256": "3365f76a36d1b7775828f5278297178f2a681bd16c1b72c341d2151f722f77e3"
+      "sha256": "9ab717dfc58ead38ebbb2c33829030c8fbec5c28b93a2cc2acbcb0b9d8ebb837"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less.exact_i64/main.frog",
-      "sha256": "026b48ec3876e0e81ff5158c6a19330305dd7e817b95ba021197e326f7ab3913"
+      "sha256": "76bd4005c5e298c46cb36a3a0b951a362422fb4600f04e94a8d8821728a01f04"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less.exact_u64/main.frog",
-      "sha256": "2ea41e8e621bfda827a40baaefd2e95e76911f2969668a30f3a04741359ced07"
+      "sha256": "2263d7f8d105c0033ec922847779b5abad005e75fc9d99b0653c4dd5db4a0a1b"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal.exact_f64/main.frog",
-      "sha256": "6c2feabf6ae880887066742bebe34613525dd493cf6a122fe8863d0efbb45d24"
+      "sha256": "8fbdeb5e79f0d1347a634066abe1600ba828b8f66b655b084e261d4877182410"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal.exact_i32/main.frog",
-      "sha256": "87637d4f51338775910a4e60f1a49f585b7f51b80d1bb340f2048c03ece76208"
+      "sha256": "9cc16228f7e60bcb4089a81af05f4015e8514085218ec03910c613b1e63df1c7"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal.exact_i64/main.frog",
-      "sha256": "1b0b49171d2b42cb134d662c5fcd545038c2a8d4dd6cc7683da9bb9c9f956af7"
+      "sha256": "fafeafc27be417bfae25781d89ee481e6b64117381049cfa9e727e58888372c5"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal.exact_u64/main.frog",
-      "sha256": "8532ef7e24be94604cea950117d8399b6e83d136fa5e8b64e24bc0100ce06f1e"
+      "sha256": "bb27ec7a9408d9cc4b0c88f2294a3b0c3091bc799b646ecb7a16fb8ab38bfc16"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal_zero.negative/main.frog",
-      "sha256": "001d3ab3c275c10a227ca0d2c16cbeae0851924802ab5fdeee3babbe13127c1b"
+      "sha256": "d6fc48e0f55ad743d30b42a101875c2692bc5844c86ce22ad26a7762b5356508"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal_zero.positive/main.frog",
-      "sha256": "3f450e955c6ab3206d905708ff0753c731d8f9da44c9eb2f77e3b8b32004c115"
+      "sha256": "ffeb38e7572f4cd31f27cf1a8ab69139174a5591f975a6e650ed73800796790b"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_or_equal_zero.zero/main.frog",
-      "sha256": "b2b48396331431f4f8dd558ea0879d57e9277cf26266805671502e1f7f7db32a"
+      "sha256": "df415c28935879f1e9b00f271e5cbd970506af7bafb10380099f56c1ea085c78"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_zero.negative/main.frog",
-      "sha256": "e441414798a32eb5609c2f0b916c2b65405aa707b026dec024dcc00b94868a32"
+      "sha256": "cb2aae28c37a5698c10abfbd1e73038582423e637f0dadb7c45cd64cff28f21c"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_zero.positive/main.frog",
-      "sha256": "0567f2ad7adec635a4aa8c6f5e89a402c233b71c150b6f298b7c85da8c957e32"
+      "sha256": "850305d9bd1d553aed31e90379575bf5f799bcb90579ecf9ee1e626501889270"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.less_zero.zero/main.frog",
-      "sha256": "e796d66a1377f595cd7bd2ee62f8c6d27d9b70ec688c2c42837f9647a7425e41"
+      "sha256": "df3c946e8b0aaf26bd2639c607aa898ad363d0fee43585b107d94cc4b7aa92b5"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal.exact_f64/main.frog",
-      "sha256": "02c70c14517f2d4ad9e895c80297d3f26e2d2f8475df51fd559ae1c7290cdc1f"
+      "sha256": "df68f9bbcdca5436ab60351b5051ee5bc12461f753c8998a63020eb5d06c6c23"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal.exact_i32/main.frog",
-      "sha256": "cd5cec1f3ca62f94d156aab8cf61b4732d2ffc1ce0ec86c468bdcba5a4a972fd"
+      "sha256": "70c93d33f48d1985f4c62a5c1b10777ed74f55d9055ce1c8842d785f7bdaf9c4"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal.exact_i64/main.frog",
-      "sha256": "e9797d241b7407a08d7c19acdf17c602827b4a1f5468a82df4fffd1932c22916"
+      "sha256": "dfeb444b45522b6152522a766f0578f609b27a640b47cc9672b5e04714d96f64"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal.exact_u64/main.frog",
-      "sha256": "8e85a9de133a2b9137e5a8659a5695f31b33a1a11d5eab07d0e0131ebf5d4cd3"
+      "sha256": "0b4a17df497b96570b4b91b7acb170a67a2bf929a5c458e1e4961a367061116f"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal_zero.negative/main.frog",
-      "sha256": "da9d29756e541a39067fb72f8c2a9b4401d5527d84bbbbbbd7dc6a761edb88f3"
+      "sha256": "95bb340ddf78faf629b8e72f16f1092ca15d6e5fc10969a9aecf68183813e28e"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal_zero.positive/main.frog",
-      "sha256": "f32400785685f010fa332c6ba970e2a1acdc2fdcad28238fe1b80356bda2bb8f"
+      "sha256": "489b6c93d3942801c7fb570eedfe1150439cf0c5f34f00eb9375e5edabee6a79"
     },
     {
       "path": "assets/examples/Native/Comparison/comparison.not_equal_zero.zero/main.frog",
-      "sha256": "7a7480be2a50faae45605183aef86e510e4c93545853fbf7118503d030a5fb81"
+      "sha256": "f941a739bf4e7ec6b362d4f6df93ee01977878177d2c286fbdc027a94438460e"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.f64.exact/main.frog",
-      "sha256": "7689b39c41edb5b8df2304887a30b89f92f57a32c98e9aea0d5efa3e65cf3e61"
+      "sha256": "5d0100626567747e8d45bc07e6a8cabdab618a96a55a189f29fc309c19b19f50"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.i32.minimum/main.frog",
-      "sha256": "6e05f09534d734cfe00e55fb36b96d14c8e50a0cf18f87b32405a06fa1d2776e"
+      "sha256": "34c2721889af359c7d144a2fb16cbad2c781702692c6ec67da2643cb44d5e98c"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.i64.exact_above_2pow53/main.frog",
-      "sha256": "166dc4c57f5eec0de1ebafc796e3f09e9eedaa4649da8e8bd022ee64e6993f90"
+      "sha256": "aa416fdc70545cba182a56d4f8396484b5d36cc1b11a17cf8e2b33356279a13c"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.missing_library/main.frog",
-      "sha256": "ee00dc420c6263ac068a190224c2ad8bc762bc3d73b01a39190041bc9865e370"
+      "sha256": "5ebaa25c3a268bc99b92b0bbd80817b901c814f6e1ce9cc682084311b2fab459"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.pointer_refused_scalar5/main.frog",
-      "sha256": "24882471cf0b77b71a8ec819f2fd8f674afe5d61adb139beb236095255150499"
+      "sha256": "9c81e88569657e2484e97046b3809b57a8a324dd6c6f083ed30ef3dbe53d5c7d"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.u32.maximum/main.frog",
-      "sha256": "41c800377d60ee72fea0465360810db15ab693a7a6243b6a6728eff6112c1295"
+      "sha256": "f2b1cd77a48878efabf9df5991c075f5f11b87b4c0c9077c92a254419aae05ee"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.u64.maximum/main.frog",
-      "sha256": "1f14ae37c7a5bbdb0f592f74e9c451ecdeffb9329ae15e65bf4fa7a8517216de"
+      "sha256": "c620c9aadf33caa236625dc431df6550dbf8d051513ca2513af689530edf0758"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.upstream_error/main.frog",
-      "sha256": "93c635e47b34e03587f65993023f5c8c5c53c84496429853098cd0238328379a"
+      "sha256": "c707e49fe225dd044eeb11a8ce2aa7b836b802f8aaf694218abaf0d138033cd3"
     },
     {
       "path": "assets/examples/Native/Connectivity/native_call.visual_order_independent/main.frog",
-      "sha256": "a49da5115fe21e1366661f427337fbd8714c5f42e795446616ab8cb938a9c229"
+      "sha256": "2b1c33e00e69f5e66b0058afb3142ab3c9e7a86b1bfdf37127b48f93a3c830b2"
     },
     {
       "path": "assets/examples/Native/DialogUserInterface/events.user_event.register_generate_flush_cleanup/main.frog",
-      "sha256": "1ccae88a04bcbec69d4f3cf414ea96ed6e9da7845b8a80a09649d999df1f3b70"
+      "sha256": "ca70b2f1575d9c05e10704ab72bcadbc89b8fe6363062a2e447e17040e679813"
     },
     {
       "path": "assets/examples/Native/Error/error.clear.complete_record/main.frog",
-      "sha256": "54681a5aab2560ce5a5f9efaa32d2c0c984d6eaa1be17e5fbf96ab4a5a99f8b4"
+      "sha256": "b21740a8d0620892f5932cb0654d3ca465cb63c63903263febcf520ed7c65507"
     },
     {
       "path": "assets/examples/Native/Error/error.display.clean_record/main.frog",
-      "sha256": "fd511fa714ca867411f8e2f7f882542d1fa785735c409c4d2260f398352be62a"
+      "sha256": "2627ddc9689337a885fdf1dfd821601960b00a667cab8c57eda6e542210999bd"
     },
     {
       "path": "assets/examples/Native/Error/error.retain_first.error_before_warning/main.frog",
-      "sha256": "d038545f0fe52dda16075678b1447bae0ab7bf1d934344298b8ca7c898312d9f"
+      "sha256": "fd9d66dc5b0b6d8db2d5e87d5ab372db5a834dd361e7498847ba8a20e6d1100f"
     },
     {
       "path": "assets/examples/Native/Error/error.retain_first.warning_priority/main.frog",
-      "sha256": "cf35e2dc85e4d8501a9739274c6f3e48f5034bbbb10ad1e2422ac9a6fbbc7405"
+      "sha256": "3adba03409cf7709e23e2bcfe146a2d8ceb2b7c52c7a445c0a17927d281ccf95"
     },
     {
       "path": "assets/examples/Native/File/file.exists.empty_drive_list/main.frog",
-      "sha256": "71108ecb4cea36801afa79a523d5b1ef571883cbb8be99d3217ee466ef5b0b1c"
+      "sha256": "6ff5a62c383956c2284fb9de9f52746f05a4b6a3c830c8ff538d65723df1151f"
     },
     {
       "path": "assets/examples/Native/File/file.read.relative_path_rejected/main.frog",
-      "sha256": "e583606d6d245fa2692fa3c6e372aa486b86e75d35db38121fba4240b5f64325"
+      "sha256": "e44f6737c2f481b6d06e2e416d63677e27f4ad74ee25f7ac10ef1ccd91ed71d1"
     },
     {
       "path": "assets/examples/Native/File/file.read.upstream_error/main.frog",
-      "sha256": "49c58ff174d6ca63cbd5fd1f0dca4d104d0fea41b2844ed32006fe4d41a1f9fc"
+      "sha256": "aa735543f055969774f7e22d1d931fec2ac212518a7aec7c657857c4b26946d4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.complete.reference_1/main.frog",
-      "sha256": "49dc4b713c1a5679a6d57ef9e227f42b220af49d35745b6c44a9e50be390c2a8"
+      "sha256": "8c11e3b2db65a7886391d7c36020800cf9ec2f7a7fb497efdf18b89dcf713e42"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.complete.reference_2/main.frog",
-      "sha256": "99d2da40e6debfecbf2ab54a1a663bf8576d0f4016efbb745e9a512ab1cc59c6"
+      "sha256": "be630839167c715bfab79fa3f53484b742483782835631f3dbbc6934b66bd3a6"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.complete.reference_3/main.frog",
-      "sha256": "fb7cdcbe0bb15baa040325ad9a3579cecf3b0213718498bfbe5db532478171ff"
+      "sha256": "47c32b7d9b5705926748d5cb68d0449c24abf4c2fbbc66225c7837f4809450ea"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.regularized_lower.reference_1/main.frog",
-      "sha256": "7ee78f588dcb24b9d326d8c299c5806dec421110d616045e4415dbac877a4d0c"
+      "sha256": "d0e1509b8869139a93fd64fed1c5ae50381bc330402d45d65c502d7fd0068345"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.regularized_lower.reference_2/main.frog",
-      "sha256": "3614f025323071677e6f570264c3b6f14b82487791ed950332dc750d20b8a834"
+      "sha256": "8b38045080ecd63c9c25a60f4dc43b6b669f8f1734102067bc8e75a071b1933b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.beta.regularized_lower.reference_3/main.frog",
-      "sha256": "ab48f32d5f9dfd90fe444a51c862691308d14705fbad6652fef9db2cf3ae6fe7"
+      "sha256": "532198c365662ad9a6769230230a1c896924bef8c5162e4a2af43d5de63986bc"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.binomial.basic_exact/main.frog",
-      "sha256": "fde9215838abe76dd0dcfa5055e3fe4ff9593323032d35c501868f2bbbc34511"
+      "sha256": "19ef61394ee3ddc4b171906995b7c948dc8aaf8ddd9a12de504903e2105c13c7"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.check_prime.basic_exact/main.frog",
-      "sha256": "64c41585652b75d2925bf77b4e39b989753c5a44db5e5fe3c9e0db31596ff9e3"
+      "sha256": "9ad25a3bb3c043d16b10627965efe0b37f245642dda6e8696471d7d5c171a009"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.factorial.basic_exact/main.frog",
-      "sha256": "d7729fef425ae15701d819a08b785d5a911dc086a00b747124a141f73a2b6225"
+      "sha256": "05690eb087ff075b4b5be97f48d6ce4236ed3bee9c5bf2beeab93a2e41693ea7"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.gcd.basic_exact/main.frog",
-      "sha256": "a0ea43631123806b3a71bf1e50d6bda3526d477a0f3cbcd48ec97b7beb8f7db1"
+      "sha256": "61aee3b0568cbb8d8c454167ac49c2dfb32b8eaee4a7bb7e53347e84c06243e8"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.lcm.basic_exact/main.frog",
-      "sha256": "e4015bc79c923d306e684828570900994b81534e9de0f6569bfa4a6f22bd77c0"
+      "sha256": "daf2526cf7ca59d52e0f31b9e8220e51cfb500c41c5b37e61536af67225a1097"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.discrete.permute.basic_exact/main.frog",
-      "sha256": "0a87d321c474d9c19da4b789f566ea1377c857285d43f92712144d290c645b9e"
+      "sha256": "cad0437678c8b3ce7c4865cec93c6c7bebd95ef590a3e5f0c14a61a9022a7dff"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.complete_k.reference_1/main.frog",
-      "sha256": "b9a2e199fac69676399971974226eff6c1851c167fe3d22cb27617b553535723"
+      "sha256": "a4b22770a155a736333d8c9ddb4006d8eb446980faf3a06edac1fc5c6611d49e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.complete_k.reference_2/main.frog",
-      "sha256": "61ccdd91f7655a7481bbdf4734fca0175837adbab0c1c292ced8362f5c593333"
+      "sha256": "81a0590ee1d709d7a06bfc4eaf9f496d841e4769684777b2ed4805f15885e91a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.complete_k.reference_3/main.frog",
-      "sha256": "c525be9e20db7143c72aff50d07416cadd2e26f5c48f29253e2321b22781c0de"
+      "sha256": "7730b0defc7770cd1542a1b829c3ffb19b9bdd4f00b5aa57a9e6add71ce5e2e6"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.incomplete_f.reference_1/main.frog",
-      "sha256": "bee63872a13c5b4dd8c668843b202970d2a33738f7a64dd4ddc2fec3d9db6852"
+      "sha256": "3ea78876e8a40e34a120da3004758fe03dfc658afbf281a3960c22e03695b06b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.incomplete_f.reference_2/main.frog",
-      "sha256": "fcd07695142cebd5a96e17c1e37434f9f67f4723b4c38c3a99072c1a2781f719"
+      "sha256": "621327660384c34a0a17a5be73db6a8c77348dc36390e339f90cec1ab6d70191"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.first_kind.incomplete_f.reference_3/main.frog",
-      "sha256": "0004ccbd9a6235479c58205ab705c07e55547c2ad800edc75bda763faf7b0a1e"
+      "sha256": "3d420cb2fb48ab9aa3c637e740b207a74625a25f1e683bf5714070c716565460"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.complete_e.reference_1/main.frog",
-      "sha256": "6ac28b634a000100de6ee1dbd35e3a6b2005f15e99bcca502cbe715812b2bf29"
+      "sha256": "1c29fe9ea087ed1bc974f23d369eb4b95b87f7c2b50d3858263ccc9d24faa95f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.complete_e.reference_2/main.frog",
-      "sha256": "17294b10bf29b3f3a68dd984ba69a2c1efffd7823d887070592a380705d3774c"
+      "sha256": "a18852b7a119629466c272f58c9f96f9807cf7d76b6ad14789548b0b4829e74d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.complete_e.reference_3/main.frog",
-      "sha256": "8450aad9eb5910b9fd1afa08b89f8e359a08d07737a971750e8bc23339358df0"
+      "sha256": "77a88508ea1e7e396fd63407781117a73944e1cbb44dd905017f01fc68ba5057"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.incomplete_e.reference_1/main.frog",
-      "sha256": "c036abd2772189095bfc2878bf3e4fdcca9b9458fade7c70048cf1c76bdbe64d"
+      "sha256": "acf602bcd492ac0eff1a46aecaf1f7cf54bae6ec1a57badd6ef1cd68bceb628b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.incomplete_e.reference_2/main.frog",
-      "sha256": "d7061f482d6889ecceb53849c096281dbaba4a4276b102f5a2fd5c9926b0f3ab"
+      "sha256": "af3ed4dff9896c8d8ae82925ef254e2c9116a3a55ab231361aba0dd32c0ce9d3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.elliptic.second_kind.incomplete_e.reference_3/main.frog",
-      "sha256": "a9d38bcc65d8c2568df1d7962adc2d003d15217000fbf6d40f8f30bea4f223f0"
+      "sha256": "e5e004b73eb9515b7ac4be676c1d744a7ffb6e2d7271fc2dd46f8a2d73b12d12"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.exponential.real_identity/main.frog",
-      "sha256": "8d3d28cab833389b3928710b1c51d9c316e0befae92727537ae715190e2aece5"
+      "sha256": "c3ee49151463c6829e01241c8b2c1d9b53d9484cc48b748d71a26e3af1f0ee11"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.exponential_minus_one.near_zero/main.frog",
-      "sha256": "7477f1735303d7eadc40bfab476e7e92659a97c5d692d955bc6e8e07df5407a5"
+      "sha256": "09c16e1ce2b4a1c7920f126bdfd89386ff9bd5df114b6634131fde8d5b0b3960"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.exponential_minus_one.real_identity/main.frog",
-      "sha256": "615144e2bf64e5b5e072fed9b0c4368067c6850a0a041c802c6c9c2fcb1ecae4"
+      "sha256": "407329d73ccd9b1f826a77f59df6ae8f8127f645072ad9f7ab35daf4b9dda89d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.logarithm_base_10.real_identity/main.frog",
-      "sha256": "90c0c9bd6f7eaf2f4a0791b5c7ca7886d58c76a897da259df17a903a79fb992a"
+      "sha256": "5498d52093a78a33fdb602e7ce3754dca088de44ab7b8d3b20dbb5fe1169fe7f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.logarithm_base_2.real_identity/main.frog",
-      "sha256": "a110c0156d1fdf005f8ce92c49a70c5df0c72bd24957a20e4cf6271ededbff41"
+      "sha256": "9fd59cc38d9609a3fee269700cafe9a77c02fb3c022aec89b976a219c630880e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.logarithm_base_x.ordered_y_x/main.frog",
-      "sha256": "01c626de2fbd79c5c473377cdba539b8083a059f7eaf006fea475ee39197f8b9"
+      "sha256": "bb1e4b1f3f28cb15570b7b5dd4747e1bb42be19ab5a26167f0a948264800b695"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.natural_logarithm.real_identity/main.frog",
-      "sha256": "fca4ea011d3824c813ad1e0277d09006e9ad0a1093de58f9f6fc829932370329"
+      "sha256": "1bc397cf80903318d906bc60494cec3cb9134eafedffc5fa630098971dbc720c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.natural_logarithm_plus_one.near_zero/main.frog",
-      "sha256": "fe46e352a2725606962b94bf0ea5a849961dc9fd4cfce667129452fb45fec9c0"
+      "sha256": "f90d4553d7abe6515effa9bb7e5184d4605cce6cd56b771f77f34bc5161cda09"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.natural_logarithm_plus_one.real_identity/main.frog",
-      "sha256": "8a706afbbbf4949e8b9ffc1f8302f4e63343668d1d8b69be704881bcd3164eed"
+      "sha256": "fc9fbf6de7e3efe82dcee36730626a3fc8dd82f596e0ca35947d22967e4799cd"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.power_of_10.real_identity/main.frog",
-      "sha256": "63fa9f0652cfcc999afe4600aaa805f244ec943f78942abc2a312de48459521b"
+      "sha256": "e3e90a5b85c605f1a986e969f978a8738213fefbd310de27a58757f33c1ca06e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.power_of_2.real_identity/main.frog",
-      "sha256": "e0af0c400f98ec3dfd4f78eaaf596f7e8df28c20ad989a3da519e0848a825d56"
+      "sha256": "4e5d41d1627bd845eae85ccd0e07ec31403309e2fc39920819f425ec48c810d8"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.power_of_x.ordered_y_x/main.frog",
-      "sha256": "cd2019d298ef669e18757b15fcc29a48a1fe0cc07090358b2013b09e686b53d5"
+      "sha256": "49ecee89a056a76a91ad3b1b5b67372f66962510706771d6ff652bb76ee6ddf8"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.exponential.y_th_root_of_x.ordered_y_x/main.frog",
-      "sha256": "76ca57ba921d74a810e0fe372cd563da34736b3ca8625231fe41c3eacfb332fe"
+      "sha256": "510a8a10b9cded572c113467a14a715f8881e8907238e151776a13104b647407"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.eval_string.precedence/main.frog",
-      "sha256": "0fdc3ed97afe327192f556e8b77b5d32c12689513ff5f7109ec20a25ca9be091"
+      "sha256": "601e50bc77348ba0270c19337d0f1a14a93e7f46731639d58d560ced1f14f39a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.multi_array.variables-by-points/main.frog",
-      "sha256": "f487893ab7a793efde20a0907f139c0dcb6e18e4a613a8b924859902d26336be"
+      "sha256": "869d19480d1c26a6c16c51eb46ed5662b92fdad337b446bab2df021a460a9e3e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.multi_scalar.named-variables/main.frog",
-      "sha256": "bd33718a98af4102fc3b48e0ed5050fd735f811242b7f5f7b3af4f79ce8ab7c2"
+      "sha256": "8667d68249b10e146eb2e265a69d08fa59b1b6bd650551f6fb04e78510804870"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.node.ordered-outputs/main.frog",
-      "sha256": "338871bd5779d3b27835c116fbbccb62aff559610c3d59989f99e54272af5560"
+      "sha256": "2698d034fe82e09f85a79755e2cac0a8098e3c22b95357041f9038bd33e51419"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.parsed_node.ordered-outputs/main.frog",
-      "sha256": "22c97b599abe2f853eda73d56c9dd3093e1a728f76f2962de649dd61f045fd85"
+      "sha256": "de2e81198ddf6689fe49fc25a8a3d37d43d7a6ff9e4d2f43a084c3d88ef254b4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.parsed_string.reordered-bindings/main.frog",
-      "sha256": "0ad288415d720c1d2c6091f7e95f5e1ebef5ab10ae5fa38f1b77657d72c4f05f"
+      "sha256": "3c841df283b648d0ea47624e5fd06d0772af4b337ddce29da925551c4e223225"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.polar.quarter-circle/main.frog",
-      "sha256": "5fe411f95afa919361b55ee171c76f314dba5c58f88f723b8c31874d3544fce0"
+      "sha256": "50231ac6caf79e43996736314e17f2b7b4f609e8d57c121aab190b1ca603f344"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.polar_optimal.zero-radius/main.frog",
-      "sha256": "fbb5bc589289ea9464c8b0fa0bc7abf3d9b759e2275ca9c89711b467b19c76e7"
+      "sha256": "cc4496e1dfd9bf11b381e719c3f003a2b2e229ab00b349ec014badf27e4245eb"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.single_array.polynomial/main.frog",
-      "sha256": "bacba3108537d29f1476444954e05d9f37808c229c14ec9ce87c7976a7110934"
+      "sha256": "fa0f4570d50a7ef4c2ea17f70372d3a9ad0d5c93de10be9d0bcf1edcd624c891"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.single_scalar.polynomial/main.frog",
-      "sha256": "dde26e3a609e22f2d97dce5b00c3ef43dab1f0aa236e8ea1324da76e0f5c736a"
+      "sha256": "55f1943d1f540ecf92cec42e2bfab447fa7a25bfcc1714401d0475bb959bbdc2"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.surface.row-major/main.frog",
-      "sha256": "3bd329d6040795a34c4acbc736afa57c224bbba9b2ab35ca6baa5f74b8bd4d84"
+      "sha256": "8c4e2227142ce5c2b1eead1083af36ec35bec6b1cbff1d9c104228fcc65daaff"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.surface_parameters.weighted-grid/main.frog",
-      "sha256": "b5117ce6acda2ee27bcf2d32671354893916100bbf46e2a860ad47fed4962e86"
+      "sha256": "0b889730963d05ccdb51e3feacdda880e56360b35874143cbca2e8c08615f434"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.xy.polynomial-curve/main.frog",
-      "sha256": "0930ae7bc3341a0962d80065baa4e4cc54ae820b13fc48d4c799c70106c35a28"
+      "sha256": "4490110ae4cd003c25670120cf608cc5568929b6e0bcf8f055e513b114542275"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.xy_optimal.affine-no-refinement/main.frog",
-      "sha256": "7d072b2a0c6b2e4b778eb53b250db247ca1ae9b920fe68bfcb94b93ef3fd7a77"
+      "sha256": "c41228396c3315db6f2e9a360c4dd5b7376c50bad1ec5e0ef205cb418e4873ff"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.xy_parameters.affine-curve/main.frog",
-      "sha256": "44392acf6d18004a888cdf529a4c11e7ddd8b4d6b7523af5954dee8557f1d84a"
+      "sha256": "2b3251553c7cd4b2af75dd5adf8405c4ecebc60b55439257bd3b3be075bb8404"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.xyz.parameter-order/main.frog",
-      "sha256": "da7e26c7a81af919b282dc691401b6b2be8be4a3ed3308978a5e4699c4f4e55c"
+      "sha256": "e79378cadadd5d3a5870bdd14df234af37e3e3236b92cde1faadf8f28b5063d6"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.xyz_parameters.named-parameters/main.frog",
-      "sha256": "127e468eae293eaefb2edd1df062f501b0b23a1daa1836d720d736f7825e1c0a"
+      "sha256": "3fec411ebe80fdb44e09218fefc3c3fdd5f2511611464e43841e02b4d370b0a0"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.y_optimal.affine-no-refinement/main.frog",
-      "sha256": "a440ee679c1b03631b70b7b93d08444cc82e320cfaefd5128cf4fa8908104761"
+      "sha256": "b898fa895744194d44418f06051bba0aae313c1bb091f1e8fd17fcf92377d24b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.formula.y_parameters.affine/main.frog",
-      "sha256": "8883fb8c96161511abb9284128b3d1c62155073e2eb42dd84f162635148c31f9"
+      "sha256": "dd82198350b92931d53c422fe06946d0f231f0cf933470d01ae5a4ac18252978"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.complete.reference_1/main.frog",
-      "sha256": "579f9c056d02ce8841eb2669fdf5d105d47b253af53ce9a941976c555a42b02a"
+      "sha256": "ce1d2378995b6d157a1204ca33b9d3b8cf252ec34582e9b494e8887900cb3117"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.complete.reference_2/main.frog",
-      "sha256": "3d560d0aa683cbf475ad1533a7c62b3cbadea05bb4dbedcaa9669c4dd6b5c6a7"
+      "sha256": "8f111513151b75fccfaec0aaa2e0e02c7a82c2f598b379ee0a01c4eefa58a85a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.complete.reference_3/main.frog",
-      "sha256": "3aa35dbafb81186d8c19984e85154f37235be18c9578e14a882f444bc99af386"
+      "sha256": "35fea95cdbc5112805c73b342210efd1c8213280bd3a42b98b817c56bc508a4d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.digamma.reference_1/main.frog",
-      "sha256": "814c4acea22e6b49f599dba83428305a2fa0d91942cd80ca5b6d244339a118ba"
+      "sha256": "5d6326570eccb0e5ae82946b803dfe04cb1ec8bccb0e39c261751bc5142072ec"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.digamma.reference_2/main.frog",
-      "sha256": "6a208bc0075f58a4dc97a3033a8077b996d6ad41296a5b904398d6e1045f2646"
+      "sha256": "5ecd3fc78201500326b2f83bcf7a2d6479581ea3751f00679c8626edaa30d9ef"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.digamma.reference_3/main.frog",
-      "sha256": "7816797d9dfb061505ec0852f8baae59ac4c08866e72803f49a86c928823e60a"
+      "sha256": "9a8f433e4e60d1936b88195405855c2bc40f1b13bbff322db55200df036d6955"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_complete.reference_1/main.frog",
-      "sha256": "242f5861d53c6fdb8340d2f9c6594392ceea5f2d8fa246c7dc15fdc6e2e9001a"
+      "sha256": "ea5c746d1883ddb496e0c11f80d8141e4b91d710713420daacff36b2a1c1ad2f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_complete.reference_2/main.frog",
-      "sha256": "190f31e3d4acc3478817b7263a31c88078a111838f1010b62fe54959d3bb86c1"
+      "sha256": "9d077e70d15c68724223354eb48f73f21e80608f1f685146d90c15b265f177a2"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_complete.reference_3/main.frog",
-      "sha256": "31df714cb4b8fdbd03efc7f2e81361763acee9f4340143bfdab00a33ec71fd40"
+      "sha256": "ec3215edb7c5d2016011840cac071d33ae3f9781862a8914ae043f8735d5db7e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_factorial.reference_1/main.frog",
-      "sha256": "988cd3ee4e9b4ead78ff4faf7d0b775f68053ac18ab7816432912c98a8085111"
+      "sha256": "4e530d516608d3878126bebf6692e2980a4ab62a7baa25fbe0406a2cd193e82c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_factorial.reference_2/main.frog",
-      "sha256": "4ccc232ea810615aefaca825b0eea858e9b81ee97daf9f8c5665fe97a02134ef"
+      "sha256": "71f36a114b3f5717c0bb91f635b3a092f28a1235082d49f3b4bc8accdaee9164"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.log_factorial.reference_3/main.frog",
-      "sha256": "a13113d58f80395eeaeb0610b646f6266d4f59effa3040d54208a11da57d8e85"
+      "sha256": "718786d95ebc9299d848442dae12649daa2cee085c937df75f27d5d86c360d67"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_lower.reference_1/main.frog",
-      "sha256": "e5e84c3f5a490dc2141387eb1081246aa8de86a93c8aeb511869a83d74668f9c"
+      "sha256": "0e021eb1d44be2430716a4971b3f8161d9e4a6f3926c0caac8466cf06f4a20a3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_lower.reference_2/main.frog",
-      "sha256": "82337a3740e73858c9dac4ca40c61bea4505b028fc8407b611bd238c92ccd21d"
+      "sha256": "942f774c91d440be1d104d08728ed86222eba25e181384575da9aaf6e448d857"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_lower.reference_3/main.frog",
-      "sha256": "8b41188d27b510807810aa672d84cc645d4cc3e776de686575cda9885170fbc7"
+      "sha256": "ecbce2e6c0e2804355316d31534cb9eeb808264068171f45df5a700ec6fe990c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_upper.reference_1/main.frog",
-      "sha256": "767423ea99f1661fbcea9aebe917111870e6286aed0bedd73725b3108a896e7e"
+      "sha256": "ba75cc9d337140c25627680a9c6c1a56af179120615fef4c5a9a5a169480179e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_upper.reference_2/main.frog",
-      "sha256": "f8f476a7c3ad783ba639910bec86e75838faddd0b3a5ed0a14ca90be5bb4ed3c"
+      "sha256": "d3a31ba04860699686c867abe7881d3597b4acf65bcfd259a6015f3bc4a4ce8e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.regularized_upper.reference_3/main.frog",
-      "sha256": "884549888fc0e2dc5ab2ece8fa41e6bd312862f43d4259a036e1ceae8cbf4526"
+      "sha256": "0defff9932f8562a3f57121bbac3c7f45fe7a9668faf71dd81baa577d5e2ecb9"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.stirling_leading.reference_1/main.frog",
-      "sha256": "55cb7f07ca3f849a17f6d96db6b6c94ea42a7e1786d601917296bbd8bf294bf5"
+      "sha256": "cbf39d2969214d6fded194361cec7bb2d8a59b5cc615f025ebd5c5a944686e22"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.stirling_leading.reference_2/main.frog",
-      "sha256": "7971c01b4da5a4d339022d7404883f71bc957c5fea1ae4402b9333341dc97d5d"
+      "sha256": "8825741402bb6759465f040207527617a0b362811b3e73f5160a529eab1b4a4d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gamma.stirling_leading.reference_3/main.frog",
-      "sha256": "5a8a1efb26206880b2b17441ac34b589e66b34442e3079c9a549a55fb810321b"
+      "sha256": "2f45895d63417fd72211d9c38c3629522857bf86870e553452eb0d629c6cb96b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.spike.piecewise_0/main.frog",
-      "sha256": "ff9752b69d5d3b6d7a24c7e88e72e214cd8239a836888809ceb46d1908fa4895"
+      "sha256": "26aa8e77bd2b4cf06915d8593587992fb38c56280388a6f255a3c9f4c18f72e3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.spike.piecewise_1/main.frog",
-      "sha256": "e8d2af7bf562b85f8287fc7de968e88e712306f05e7d623f9b1555fb72ee16f4"
+      "sha256": "26a15d8d980c54fcad54d54ef20114fc6124734a4de6f96c98466f053f8e7a06"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.spike.piecewise_2/main.frog",
-      "sha256": "a7ec86856018b6db3b05bcf5893a279e63de74cfd15c4f885eb6f1468271eab8"
+      "sha256": "feb2fb093f5ebc6b2df883eec74d5ac389d42f838ac46834f86bf24a78f15868"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.spike.piecewise_3/main.frog",
-      "sha256": "c648b8aa618bee4eb83c5d37814392d98f708362969de8b36fdc3a824f38c410"
+      "sha256": "a517d2ac92b3921118635c85ac6e16bc63ae0bb569b4aee07386317ed03c8ed3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.square.piecewise_0/main.frog",
-      "sha256": "320e8ca54f86cf2ba30c8566a16446732c8da5abf8f876f2f5f5729ada766809"
+      "sha256": "977c66d2baf288854da5c00c1192888754b2c579bc3d0aa5e40a5c9df4458f1d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.square.piecewise_1/main.frog",
-      "sha256": "fadb2142d986afa56d0ff2f1f55b134e4f5e9dfba8607ecbdddf99b7ba31e3b0"
+      "sha256": "217e320e910c0dbf3b9a9b378d66055a77d664c811da81493f4121da4584ec64"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.square.piecewise_2/main.frog",
-      "sha256": "52c51cb06bfd7104183cebbaf5aa97ccc1989d813042b6fc4609797ec31f78ea"
+      "sha256": "a1762e2f4453808d1d3ff4992c23730a394d5fb197143f241997c1a5e254272f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.square.piecewise_3/main.frog",
-      "sha256": "e4cc9f649da2ee8d1321998f5fd7683828fbace486417fd03f72b0b89a455ea0"
+      "sha256": "f1aadb692db96bbe2bc397af49306caa56f29541abacefb708e26d1c6c97d9c5"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.step.piecewise_0/main.frog",
-      "sha256": "99590d8d0fb5a0a61f2761f7738bfd82c6287bd2b0bae52d2753ce8d149a95c7"
+      "sha256": "eece77a0ac18fd2e3ac1a9ef8421f8f584d72ee299490ca4d613c4ac0c45887a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.step.piecewise_1/main.frog",
-      "sha256": "ca2b21fae1837ae1565e71fd57e56f00ac2752b57eedb97f578c324fd895b802"
+      "sha256": "45f081e3376c8ff1b874253548537ff24e6e18639a5c1b450ed3187a6231a8a6"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.gating.step.piecewise_2/main.frog",
-      "sha256": "5589065b9f2f2b538a110c89efe7045294bbbbc1e471b9f2d63c4240fef8e52b"
+      "sha256": "d059e2b373af4e687a4243c83055dd99d4585b6380796c9166f8585be9428090"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.acosh.real_identity/main.frog",
-      "sha256": "297901eeb992d4bfec4988fa0371a8ef0f4e93f5913c469b9ce19a3194936fc9"
+      "sha256": "585100646d0d818f61e878d25688009f35a5b96266921e68dc820e446c1d284d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.acoth.real_identity/main.frog",
-      "sha256": "68395255bbc775630c123ae7008200ec04d4328fb13f5b1c668c5ccf1ead2f47"
+      "sha256": "19675bbb5d3ef64a9e6ebfbac97bea6f250afcff7d6584fd553cf25a18369431"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.acsch.real_identity/main.frog",
-      "sha256": "e7c96197f4b751754e9ccc65d2677cdfd8f8d5912e002515f3e1fdc04f2a8757"
+      "sha256": "c3609c1c13a2c584bd4622e7e1e1112e13d51bd8f7c22a6ac2651f5b83ecc109"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.asech.real_identity/main.frog",
-      "sha256": "7c7ca2cc4de30b322cc42e66a46a5ff03220842027a2f8c3244559cdf5a422b7"
+      "sha256": "9e3d9bb394f544c7a9b9a05aa503118f94f7c5636458ee022141aef289fedf0a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.asinh.real_identity/main.frog",
-      "sha256": "7b1c5bcd77392501b930c057ad79d2b9a247b6612673c4ee15a7069d79092417"
+      "sha256": "a1b53a252a4ac0631a9dabe5bf28e81a44855cd8c36874d341ddd9cf19281cf0"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.atanh.real_identity/main.frog",
-      "sha256": "1ef157f5bbbb87b438a97475847e6f1d2cceb63ce9b9406c2a21d8518d655692"
+      "sha256": "4c419955d41b5345f5d12427c4a2750a1e8f8b374d45bc93e9b83992635b58c3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.cosh.real_identity/main.frog",
-      "sha256": "ef7a7e6137277dd33df58f0949cb62f3adc6d0dd1987f0e429ba242c7724d1ee"
+      "sha256": "e36a17050cae9b2e1ded0a0f509d5d2a18aaa9d4933b882febeb6e5f435b7d9b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.coth.real_identity/main.frog",
-      "sha256": "2e36bf1146ad4a49bda5039cb565b88570f908cc4a8eb258b58a113332014bd6"
+      "sha256": "960f98837b2467cfd405b02df2ae7cb4cc83bd301ce834ea984f098400d99f80"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.csch.real_identity/main.frog",
-      "sha256": "18d87ab3c68d9f123229dd51b209371d0c7dc0ac557d6d95cd36771b946ae00e"
+      "sha256": "b1508d684d88d2127ef878ec606469aca3550d55e810dfbad68c1e348dbb3371"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.sech.real_identity/main.frog",
-      "sha256": "1a6836eb0152869afb34806a606c4a092fc4cdd27274b850a2de31f719fc11a1"
+      "sha256": "92d82f038e9d3aabfe96783d0326ad0cffef45fb5d331f74910697d5981435f3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.sinh.real_identity/main.frog",
-      "sha256": "db45a20d10641e0235fc296643655bf33ccfed5b2113283ef0a22e51158fa617"
+      "sha256": "a3437e2aa37002a21a70869fdb86c9904a07a6ec4296cc3354821e5994882700"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hyperbolic.tanh.real_identity/main.frog",
-      "sha256": "efc983c81e6ef6ff00d0c175b29563fb8b39304743b2184ed1427f1bae789ff7"
+      "sha256": "3f92375300ad2b49154d33751a1b4c21ae7ed4a942a62db7fc85a42382e49d5a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.gauss.reference_1/main.frog",
-      "sha256": "3e005b517b8a2432320d1477ec95ea38b031c114c1ee4ae1b6306a7b85656ec3"
+      "sha256": "a9ecbe70dc3dd5cdb89772f94c79f9cbbbebaef85f13f88b181e55b8d4f3283a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.gauss.reference_2/main.frog",
-      "sha256": "f8ee10809682948ac0a14dba9cdf5dbcbd0a17bad61920f07a5d3645017decf3"
+      "sha256": "dfed40fe44ee99cb32a6e90910f551a65fd071632a7bcff8545ce0af0f4be0b4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.gauss.reference_3/main.frog",
-      "sha256": "7ad2bb974ce925e5d2029b1e79eaaa4e22d77e54faa37462381739ed0010adcf"
+      "sha256": "831978a43b4c8750d5709486a4231f2aa9d88403252167555c3dae07a07b6e49"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.kummer_m.reference_1/main.frog",
-      "sha256": "a85beaa75ace1cd45b9f030118f80d520e7f14974ec6dd5d54cef772149609b1"
+      "sha256": "d2127644a8dba8ee1979951020ddd96dd473fbc33d77fb263a83f98b3b624d76"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.kummer_m.reference_2/main.frog",
-      "sha256": "7c24502cf767214f6e3293cce6dcbfdf92d8428d26e7b5a5a6bd2849873a7977"
+      "sha256": "00b4c3aad1dd61c0700de8a0faf1938372cbfaed02142fded6f3274d360283b5"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.kummer_m.reference_3/main.frog",
-      "sha256": "d26dcab5b0fe997cb5cabdbef5d82a4d0b37eda1c8dd5122b4d54b9072c6b6eb"
+      "sha256": "a5a1788acf8e2b85930974e5843613a0973d2048ef87af8968081b0842318d1c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.tricomi_u.reference_1/main.frog",
-      "sha256": "5af0b0cb06927d167ada34db7793c2a63b91808d597bc8388aae566d98f19ecb"
+      "sha256": "8a290a92919b6faf9342cd29fed98297e03b7cd0da83e2bcb9f1ff0ee90c1f1c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.tricomi_u.reference_2/main.frog",
-      "sha256": "ee4e0070da16e63f7e52eea534171aca36a5180eaf1acf8095abd52210bc20f2"
+      "sha256": "c2e28218a7341cb983da5d68a47d9807f9c3f814061b79b3d8ec1feda18ea6d0"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.hypergeometric.tricomi_u.reference_3/main.frog",
-      "sha256": "f232ba5bb468591b9a90d61177d76ff363d3f6d9809144694d2c9751439101b3"
+      "sha256": "3a78acf620fa2f68ceabb7b716565672d8090300283b3db1195749e31cefed43"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.airy_ai_bi.reference_1/main.frog",
-      "sha256": "fdcdc6dd3f21aefa4df80f54a80eb061f9d74ea34e4076ec0e021b028ffe3ecc"
+      "sha256": "dc061b277f538391bb2441f06526a47af3824fc0f847a8d8dcab018a82d3f411"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.airy_ai_bi.reference_2/main.frog",
-      "sha256": "5c527b6a09162bf91934a5172fe9ff8244579d65ed6572e6d16d39219bf06b9f"
+      "sha256": "d6a6cec8a10a87237a6b7ae4665ef4faa945b52de08733ffdf25e170ee5a6b73"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.airy_ai_bi.reference_3/main.frog",
-      "sha256": "e6d772190da2c3222190bd6192c6e3876d0ab8eca43269369fd74cf72ebaf668"
+      "sha256": "1f7d11a8627db9678d4d530fd07a062c3df58521cdc8595607a59ebc44d45106"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_j.reference_1/main.frog",
-      "sha256": "9ef0916b332e27d38a25f22f5e48c03d0230a4926cf86f41392cbfb4a150fed5"
+      "sha256": "743a2e2c5ab4213cb905ba7524fba36be1501b196ecd5d506f67021177755818"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_j.reference_2/main.frog",
-      "sha256": "a81a5cb437ef6a8438e9ab449231ea004d18d1a8b317a8b4d4cf6978a164cd96"
+      "sha256": "e46a5c5a8ae0821c042f3f6c68ce2d0b291d4c797d286b0b9c4d037ade1a272a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_j.reference_3/main.frog",
-      "sha256": "60f20e1e18fa7ef6f2cef8cf2ed7a037fd49013f3ef93d6054f0567fc3c5189f"
+      "sha256": "249c1bac514c74719cadad9f81629e323e2936ed0a686184ccf3149d4db67317"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_y.reference_1/main.frog",
-      "sha256": "3d7fd75c4138c5df37bb5f3c797dfcdea6dac564e524a88901bf2f37c8c3a213"
+      "sha256": "78ce3b8019fb6ba5ad17fd421791a222ecf32b6ff6ebb4098227716fefe69e14"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_y.reference_2/main.frog",
-      "sha256": "ebdb7ca9b9b6dc83cd978e3a603bceb52ef6c15146a229c1f1e9a977d07b9a7b"
+      "sha256": "30a42fdf3a99de07f93fc14bc0132626e16f1a1bb1db0b73d641b8767adcc8f9"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_cyl_y.reference_3/main.frog",
-      "sha256": "350e4f3aaab1f528aee1919b7b12a51a5eb4316155b5f662992a790d0f805a69"
+      "sha256": "1bf40d93f2b2d9c6e23c564d1bfe7a7840d192dbf5066db63328e73f803580d4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_i.reference_1/main.frog",
-      "sha256": "77e9c0f0ecce048215afa4780851275731685bf7c667021917ed8cb2c989c686"
+      "sha256": "0243b36a00c94bd16d2ef9446efcb6af204e45756b0e047a8340615724a79e43"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_i.reference_2/main.frog",
-      "sha256": "a111c60bd221983bc8830b6d3ab7f963eed28a62d04d7be574607662eaa418e8"
+      "sha256": "51d8df5167a20717ab35007d41efc0c79c4690d9c9344af0da6e2b1a7ca2d505"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_i.reference_3/main.frog",
-      "sha256": "1c0fd148a72060d230b7ca2c414525b433c58aa103e43f0d1b6fc8b03d6d940f"
+      "sha256": "0f31a84087f377c9154bf5e42a0fa1b258eb937bd6222506e5abb2b094a136fc"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_k.reference_1/main.frog",
-      "sha256": "37b7a3656b25cd55b615dbd333d4e33bfeb5dcb52347b86b110a8e6ed7e13212"
+      "sha256": "89b50abbba9526e15bd2f523dde8b5818adff1958a0831e3c6b113e9d5a7dad0"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_k.reference_2/main.frog",
-      "sha256": "08482150e22b93045ae4f2caca19ef475331b8968b95016c0622edafc6099879"
+      "sha256": "7362304be4e5a816c77af13e5d24953c8b9e3be726f1ef830d7e1b85cd85ebb9"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_mod_k.reference_3/main.frog",
-      "sha256": "b695333f59bcc764b371ae0cf3b49968a8d5d79abdb5a57784d72d3ce742b299"
+      "sha256": "71d655a0835ab151e14eaeef2879313f0f7755055f4b5b2ef40cdf2a912ca829"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_j.reference_1/main.frog",
-      "sha256": "1a86cf801c2110f0994bbf6d642724abc529c93151d6ada1675c4f52a01ce09a"
+      "sha256": "975cfd276054888c72846e9d4852f2795f950a4875fe3752c2dd35a27a740d86"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_j.reference_2/main.frog",
-      "sha256": "f4be988afd78917fa8202614e6623067e76e70866c1e6a6db7045c0433efd0fc"
+      "sha256": "a6779d90297193133363488fd9bb6a50cc5a759e20cf87efc8619aad979b32c6"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_j.reference_3/main.frog",
-      "sha256": "bfa9f7ce029cd626329ee365a199283c4279efe567339575a0026cddcfaa2581"
+      "sha256": "e7793e9b78cbe8964452012573078de893352f078892b6623efcae1d20cae04e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_y.reference_1/main.frog",
-      "sha256": "cc88d9d41bc68da1a5e5005c221a82c2a84e9f5808f201458cab462ee4575e76"
+      "sha256": "3a5ec11a405abda1900acd43282df3e05ad55d07357c7d7f8f516eb0b8c79bb9"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_y.reference_2/main.frog",
-      "sha256": "1e9439288a507f161f3882bee71113a3ad44a19d325abfc6a308387e6931b9c5"
+      "sha256": "bc8d23c93f07f12e2ebfd1924a630272aaccc2273d80e6ede15260610a588924"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.bessel_sph_y.reference_3/main.frog",
-      "sha256": "aa4ae18bf7979e02855b43ad1e429cab3592bfdd0230c28492008a87ecf7a70e"
+      "sha256": "f94ec6097236c4a37c60ecb37d7a9f0de13d1b0516ae2aef017f90b0d7203735"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.jacobi_elliptic.reference_1/main.frog",
-      "sha256": "a33b60fc12a3d2e3aaaacc6b5cfb13ee392b37e7215c3e8c40946ab9f40259a4"
+      "sha256": "ec6e1bea3090c6b2948b2cb705c205ed8b9b0c7c340113254da3e870c23d768a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.jacobi_elliptic.reference_2/main.frog",
-      "sha256": "ddd4d032a76b3b29bafd34f6ad4167f1bc30609c4d59ce7eb2ddd475c60dc096"
+      "sha256": "2979242ee2d83963468b6eceae544b23d02724f942708aa9d1b10e50763ab6f3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.jacobi_elliptic.reference_3/main.frog",
-      "sha256": "72daa5391500845cd6712b7772ded779e8f8fd7df8118f31046f255de6afce29"
+      "sha256": "ee6711af0b9ddc7334fb8e24df752d81af46c866b7c45af1e7b8afe74a3f737b"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.parabolic_cylinder.reference_1/main.frog",
-      "sha256": "498f05cc9fcceb4744cd422b7a5a9c27bed54db268137dae76d6db8baf9d043a"
+      "sha256": "5539b35e85628c0428d580b8d8e57374be71a93710dc29cedde851a1595bd3ca"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.parabolic_cylinder.reference_2/main.frog",
-      "sha256": "e7c8c2debbb36ee50660a467cbe1a737f6eca1253b9a369739ff928e9c77e4d3"
+      "sha256": "4798dbaf0f12f7a1911d3395a8507b5b2a11587581122f97fc9371634e087110"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.elliptic_parabolic_functions.parabolic_cylinder.reference_3/main.frog",
-      "sha256": "c9b04fe577e0a381c15cd8a245aea6f8646d7f83bb1c8dcfdc6c281d97c08db2"
+      "sha256": "9b1294315001ae7390be649b9f33dfaa3bee1c4fe894fa161f2bae9a3bf7bd93"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.dawson.reference_1/main.frog",
-      "sha256": "0fda94a9d94f123d33fce74608e5b2a5093183953f9c6468acce46b30ab4fa9e"
+      "sha256": "beb2dad1854418765da8e95dae223957b9b3d4e12f3e0e2ac754ef60ddb8370a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.dawson.reference_2/main.frog",
-      "sha256": "69a68c244a44a96a18347c0a83a300a3e064a20b0dfcd79478271451e30ac24e"
+      "sha256": "b71862b31f3731988bcf0ed61b7916c1e21683297792da8fe0d044d986a071f5"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.dawson.reference_3/main.frog",
-      "sha256": "9265e08da3e029c72e20f5909f4994b10ef1cf5ee4c2f5a37cb8954d440337b8"
+      "sha256": "eba6b408eedaeb336a15b593003592a0302fc5645c43c5fd7e00c6f8dd8f6e22"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erf.reference_1/main.frog",
-      "sha256": "4e7acb074309042170a84ca19032f25598b818d9559b08e4d1f2d5c23c1c29a8"
+      "sha256": "f238b73ae9bacd5512b82e7242262931dbf8fa6a9b044c34decd33200606aec7"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erf.reference_2/main.frog",
-      "sha256": "b5d65d3f82ce5c6981db71f4533dc6214018193587c29bd715747fc3618efe0c"
+      "sha256": "dc1e4ada77a7c5621087f1c471402530dda02c593030fb15ebee7eaf0af1c0a7"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erf.reference_3/main.frog",
-      "sha256": "e863aa6d69c6352a04afe8e4952f1c4b3f8c5ad32027a66af6872ba45522720a"
+      "sha256": "e6c0279b6a0241e2ef01bbeb4bc56028956c3e11c7c462b6384e2fed2f5107e4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfc.reference_1/main.frog",
-      "sha256": "905ae440297d1cca79cb45abfb4f10169c0c5ff5594bfc6db7524bad9a72acaf"
+      "sha256": "fc673658d2cd2dee721026a13ab4fbaea626c3e341fd21503c98d99ab5bbeca2"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfc.reference_2/main.frog",
-      "sha256": "5915d0abf6704612d54ccdb7d6919b4fc1955ec2a169e1ff25185cf198bcbffb"
+      "sha256": "ef8c472204e153a50f2bd735627baf1001e2a1f28e2128d88479185e6cbc8124"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfc.reference_3/main.frog",
-      "sha256": "370b45d8eabb46aaea7322514c703fedd15d03861467a70e14a1a0486b7668ba"
+      "sha256": "07fba2bfedcbe3076804fdcbdc934713ba9f5d36ede9e4215095c143583b19ac"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcinv.reference_1/main.frog",
-      "sha256": "af32c858906ff315d5430eb45cfde20419530e00160365857f3762d2d1c8bcf7"
+      "sha256": "58bf77e641278480ac0dbd63ea41e4acdcb409c36bb8f59f123c6dcbfc76be6a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcinv.reference_2/main.frog",
-      "sha256": "0d2ef31d07428cd0e7f65065f870972d4e9385fbdc8a3e92a1b7e78b1b69b7d3"
+      "sha256": "2a9a05fd9e9ccafbd2f7f37137387931c1a8f357c5748bf6a3634e820a4dbc8d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcinv.reference_3/main.frog",
-      "sha256": "eaa92b24d223fac603858319f87afd87c7b7afa420ab285e80dd7bc0165865e2"
+      "sha256": "3133db579ad4c92d679605c25f9a8e9ef0d38049e580281de5a51df6ef3038b4"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcx.reference_1/main.frog",
-      "sha256": "f2884cc109390e030926bce0eb2f2aa062cb3def6ab5c83d4456f20ace0f2dea"
+      "sha256": "63f879eb0d703f241cb856e62db1f51e39bd701008b464edd90abddd785e57d2"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcx.reference_2/main.frog",
-      "sha256": "fe08bb4cfa0f432ca6d438e9e6398ef4a5f949c16c614b9ed1cd107feb8c2c69"
+      "sha256": "3c5e28b35473db306ee34cccad042edd1fb1aa56baacc1e1d255fa506fbb7599"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfcx.reference_3/main.frog",
-      "sha256": "ad8135e91530fa83ace6625ee23290d8a12198359ae212127f1d070416b68542"
+      "sha256": "a1959b96a3f6b5bc4667327896fa529648d0f3e8d0cb89890d75841b33f68471"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfinv.reference_1/main.frog",
-      "sha256": "0e8bafb469e3d70b05e279006e29f33b46ec2dc05d17761c1929863d6476394f"
+      "sha256": "1c300e576d46ce2ad687e59909a5cd1afc4246bdd3e2afdbe1362b7eff070009"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfinv.reference_2/main.frog",
-      "sha256": "29b58ff855ad0cef448e5b3d93635efbafaeb4378b68887b349d81ed9cb2d2d6"
+      "sha256": "d6a6035188a9e94be6785efbaf16e3ec44f4d12f0be0db3d57e19aa0ec72293f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.erfinv.reference_3/main.frog",
-      "sha256": "37c450f6afd0c7e7894f45b9bc6cbe976949a6ce57cabcdc7e9b22b4b0b9ca05"
+      "sha256": "cee23bd067d42e0970e86f9f37890b56862533e0b06907877ef91f905b3cf9a3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.fresnel.reference_1/main.frog",
-      "sha256": "21aa8701c8fbe2246468ce262fd57dc72e6de49baba9725e658643ccc6b9bd7c"
+      "sha256": "6b20482ae571791745077182072b57bda3d0338d950d45337cb1fe0beb935c85"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.fresnel.reference_2/main.frog",
-      "sha256": "e99931336d7a20e5a029e1638dced21ed3f92c6c9435eb609fb36113a21cc329"
+      "sha256": "d95abb9a6e98b0f7046b7b34ce0845faf08f9813d38901d5502a857f18459b9e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.error_functions.fresnel.reference_3/main.frog",
-      "sha256": "e94771a2d00aa04ac0e38afa0984c19724dc69f0a8ba3f4fea33ab21d55b8864"
+      "sha256": "e1624fc8cde0dad39001ff5fbd3ba82fdc8af4978d737d089ff8f239821c66ca"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.chi.reference_1/main.frog",
-      "sha256": "9b675694fd2ee3b4bd5d1bc75ee8b01e5a463c4c43285cf50f5e1d7504860aa7"
+      "sha256": "76646d634a66f0327a67e41b15c346ff74d94608730c71d78bec2032bbb1fc9a"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.chi.reference_2/main.frog",
-      "sha256": "d792a35931286f144f09cc3623d32e0c9833c7ae4145ca2de3cd3b3aecab3b37"
+      "sha256": "0c9886f19465e37b9e61af846547b4842b6f647e632f2a50f861bc9e059d4a50"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.chi.reference_3/main.frog",
-      "sha256": "1df9ca884fbfc6d9d1ba344bf09e19c42f2089d6bcc1aae094a2dec1a0d71556"
+      "sha256": "e1f04dfec3733cc15955fc0bdc61d344e1d37b95c27406dd26f2af1ef7b6c970"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.ci.reference_1/main.frog",
-      "sha256": "1b6b8e1584c687e2641a15652c1da50b651ee9870f592032561eaf4282ac89f6"
+      "sha256": "69e9076999474fa7a9ce4b4ae9ea33ccfddb3b763ed8dc7f54fded0ac76ae653"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.ci.reference_2/main.frog",
-      "sha256": "bebaf5e9b9f954daca2dea17055556708bf18b4732af0d45e5b24665027a6495"
+      "sha256": "3025a6c3680d1c3a1779c6c3f1c78c4dd38eb9a69054617d712c7d6c60d3f124"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.ci.reference_3/main.frog",
-      "sha256": "b381ed9e3eac2d76d8ebbc44eb03d351a7b7f06285aece9be21de7cacff6a9bf"
+      "sha256": "0a3acbf8b8f28948cf8b59e4f01ae4e6b35aa4a16f7a3fa9c2b40f383b31746d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.dilogarithm.reference_1/main.frog",
-      "sha256": "fc41106de5ac121eea420e9335d5f643f2db9cefdc0dadd6f20dc5b544a8c135"
+      "sha256": "9d21cff64011f4621897bfc16bd467af044cb4c06656175323655097d9be6123"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.dilogarithm.reference_2/main.frog",
-      "sha256": "5a67688c555d9631eaebbe5e26cd6c0095bcdee7f1e67c0bf65249e7bee6b8f7"
+      "sha256": "febd80dc9a00eedbea46124e3f921c55372d8b121bc84683eedff978183b6767"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.dilogarithm.reference_3/main.frog",
-      "sha256": "dd93b2422286f397db9002fd78c85b4dfc09ff01d27d49ab03811c9224e9dc90"
+      "sha256": "ad57a46f13e81f44c5cddbea7b39ecb3fe9a41471d014ff26e36c0c5239c3978"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.expn.reference_1/main.frog",
-      "sha256": "ffbf9ee010e8311eb4f36fb75409c61c3b975d6f124cb59ed7cd09ff23175a79"
+      "sha256": "d902f80ed67f097d82be7a6375aff43ce9cabd49ed38f0b6aeb388ea67430598"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.expn.reference_2/main.frog",
-      "sha256": "0915f99b229a509e69cb8551fad77b4eb108b59505770aa4a45a68e08ddcc081"
+      "sha256": "f09c36c1c2c071751fdcde457d0e00f28e13777b9b44c705aee5dc916ebd2095"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.expn.reference_3/main.frog",
-      "sha256": "afcaa7eefb6d0b1fe26ff1f769c53f53f326c75776bdd2fd6bd748d2de7ff5be"
+      "sha256": "0f58ef0cfb6c8e12511feacf76742b6faa264bef4ec51ffb7f83cb80b408cacf"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.shi.reference_1/main.frog",
-      "sha256": "e14460bf5a3f7c5ef38760e4047f126670b23f2212cf4ec378d9bb9e39e9a8c4"
+      "sha256": "57bd1f8b3b872b16c8dd5e903ea58d482e7e6319be7e466079ea74b9f97b054d"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.shi.reference_2/main.frog",
-      "sha256": "29d27e6ba07c374eb9b49fd672e720855a72275d285e416a5d22f7e4870de63e"
+      "sha256": "18b671523b05791b457cd9b57df3f2b6eee7d3358c073c3dc42115e3affcdcc5"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.shi.reference_3/main.frog",
-      "sha256": "232013b00ce2d45572ea3fc6fb89418aef99f814cce385620f784f85f3a14a18"
+      "sha256": "9d6bc3c32e5a37f085f2a6b26aea7674d17736eae6e8f461c5f985139e4ba410"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.si.reference_1/main.frog",
-      "sha256": "29941bf9e902cfb0d4e12846bb72a63c360271e23a58875559acf879effe9ecc"
+      "sha256": "e7ada99fa1c9eeeac8138d18be9f2099c3504704aaf657f989fa696a7d7d55e7"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.si.reference_2/main.frog",
-      "sha256": "d50b5b04aaeaa8661f6faf9c5173024f667fa199b5593301ab89592e8828b6b2"
+      "sha256": "a74d36c2e7b26cc6568ae7b1aa8701c360e3af0b0f93e766ac637666f9db414e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.exponential_integrals.si.reference_3/main.frog",
-      "sha256": "d401235d54613794ee2654539d0314c7bcda72d4d0653bcf461e011c900b249f"
+      "sha256": "9cbda204bcce70ac1ca3482a60de4d9132d461c936517d92afd6bd40c5abc88e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.struve_h.reference_1/main.frog",
-      "sha256": "e11c071fe2df5f81e9ff7ccdda507dfc4713ff31ae61201d710f6803a23a2063"
+      "sha256": "6a2994ed13db614f50d4cc34ebc727167c36a0de14509a87a447437d38e7efc5"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.struve_h.reference_2/main.frog",
-      "sha256": "72032266d02c80136494a9b4f2f1a63cce3056547eee4fb3087487cb9129b431"
+      "sha256": "fd1ef0a4da4b4b2be99651d8b992970382f63a7ee9710fba5658ab7b4a615c5c"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.special.struve_h.reference_3/main.frog",
-      "sha256": "627e7286cf2aebf6150fd4b94dc62595c6744772dbd2776e3dcbbc2879f54413"
+      "sha256": "7d1a484e02789f0bd98f6c5d9a541204c39c6c51bf9c14451f81377e4a66aacd"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.acos.radian_identity/main.frog",
-      "sha256": "a0cb137c6d98e843b985fb3a46223ea9d6c40aeccef692813a338784d473e592"
+      "sha256": "f3e41204be7b57be15db632a21c1515136bd7d8cf71f68adbcba2ceefbbf3932"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.acot.radian_identity/main.frog",
-      "sha256": "2e77ea562e685cd229e25513510f8c1cd4a124bb732152ed917ed5a643da3087"
+      "sha256": "e1ab1f7124484a577bab5700c67b9dafd873b57630869955eb57aef04b345cc1"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.acsc.radian_identity/main.frog",
-      "sha256": "0dbddc79d118d9e9afeb61230c744f65444df12eb9e78cf7c822dbca20184796"
+      "sha256": "b2dd2ef82af6a41c35ea58c6dbe1c17a6efb0b2c27b1bb40e4eccb564864a55e"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.asec.radian_identity/main.frog",
-      "sha256": "27bc40baa64271f503f190a1c71c2ec2fcacd8b695c968a3bd38e68163efec0a"
+      "sha256": "780f6bd0b8e6d6e7491ddf83e56cd26d7f9945ee21ac12bcd6b4308ea4d80518"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.asin.radian_identity/main.frog",
-      "sha256": "42ea0b0e83067695f8aae75e01b67f669ded53c35ba848de82bda3c0b73f807b"
+      "sha256": "ca299a4283586b31c044607858bca71f8d796e22ffcfbe8746638c093b0e1499"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.atan.radian_identity/main.frog",
-      "sha256": "3ffb1bf91e4df2bdc9e651aaa38cecd006bcf924379bd4c269fa40e8573d5ed5"
+      "sha256": "e66c2084daddebadb722eea1cc8d747e45c61ecbf4cfcbd2556bc91af0c15f04"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.atan2.ordered_y_x/main.frog",
-      "sha256": "47378b76eec0a67223213c326e895e1e60a81c34d17e5cf49ad4b512821dc054"
+      "sha256": "662f286c6aa9447359e916f5c1d13ade652ed78f48d206e7bd4a38bf76162591"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.cos.radian_identity/main.frog",
-      "sha256": "dfc1bfa3534f0b99168dcbe8f5211f4e1498aefd0792f408e1bfdb24fbc29de2"
+      "sha256": "13414bedc6059be2b31bcab9dc484a658c0dc757f1494b54d8525b8e47555aa3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.cot.radian_identity/main.frog",
-      "sha256": "20da4dad580fea0c87f0b480e77b8dfdfdc83328a2bb95869c63faaf0dc0fef7"
+      "sha256": "cbfd7367e64064c0424fb272576b6ec44a0d445ce58130657b589c327de43ebd"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.csc.radian_identity/main.frog",
-      "sha256": "a5275cfcc6c12cbe9457feb08e7f140320aec79769ece3b17f8c66408a3a4e04"
+      "sha256": "6574041066585ad2529f0e75bc700a83905513416bfddcb239380efe561a68ed"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.sec.radian_identity/main.frog",
-      "sha256": "9543e5d6990150d37a0bb42e823f6cd776b94be04a2e3e3d667fab97e19bf454"
+      "sha256": "b6b20c8cd34ffba3c5983b7a1a392487be189fead7198204669ab60a93443a91"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.sin.pi_over_six/main.frog",
-      "sha256": "4040ffb02fe86bc8d7ad4cc8839eb889418179df01370724ab32bc0809b6f96f"
+      "sha256": "d88180990650d157fca30c915fbaa7dd1ff4cef7d65e9545f2108303b269a2c3"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.sin.radian_identity/main.frog",
-      "sha256": "5c523d442fb98a4297f74ffeddd64557a5e1dbe05f3da800d09d7322abb65821"
+      "sha256": "f7720476c675484ded14243a421cef433df931b24f9c6401b2896d267a9b5896"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.sinc.radian_identity/main.frog",
-      "sha256": "8f639893229e27d31efef14a2ec6dc721ab3f0f39c205942dd471a715285ca2b"
+      "sha256": "1df37a804c8661196d8458bf641f3397a9f76c0fc0da097cb7ef4c7919bcdb1f"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.sincos.zero/main.frog",
-      "sha256": "52a20483c6685309b31d5d71bf9ed44d896341f87b5d0fc4c4a9409f2a126a9d"
+      "sha256": "a561b49d9962505bf3987de577b77fb113b5b138855e96ee8f95be709dd67957"
     },
     {
       "path": "assets/examples/Native/Mathematics/math.trigonometric.tan.radian_identity/main.frog",
-      "sha256": "8b8c8fd11fa8f2042805be04791d0994cedef75f8261b8515a1a5eccf921603b"
+      "sha256": "56acac55f69f9f4e55c5cfa0c4f1e469fa2a263c27cff1a00db417a346ddd02e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.absolute_value.signed_f64/main.frog",
-      "sha256": "d1a7e3560b431602e325fe0e8b0cb37ee2457aa34ef84565e8b69cc47e3511a5"
+      "sha256": "d210da3d8d60281052619ceb2cff5c177d315e46960b227c3c987b24a3d67024"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.absolute_value.signed_i32/main.frog",
-      "sha256": "ac39a52145184e32540f13c2bc2856651bff6a725018f406f8ec00e78f0ae6d3"
+      "sha256": "dedb903e8fed5341883b16931b729947a21a358e946cc79fb5a15f626e51e449"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.absolute_value.signed_i64/main.frog",
-      "sha256": "3b4506efad50601775186bab695f7c102fe09dbbfd66c63658183bf78ce1acca"
+      "sha256": "f1bb10363f6d12baadfd5e46f1e40401652f4e1cd049f235c66e3592484896ab"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_10/main.frog",
-      "sha256": "f19d29afc42cec85464b1d3998c032cf694f70c8635a74bef9b6a281da2251a4"
+      "sha256": "e24606f24efaa548255c014b911d22bfe97d9ace34245a863adea8ce1930b6b0"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_11/main.frog",
-      "sha256": "d4901355e297143af8a5d9f4c086d969acb2ec7278b8adc7b39e8b6d9c37d9c6"
+      "sha256": "c8a3a434efad89ba3744d6ae44427346fdac8b8843becf826612f531a216a43e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_12/main.frog",
-      "sha256": "cf7025c4de06e1c780f02a30bbcbc1c34e26b314f5064baccc27b0a0a1a01af7"
+      "sha256": "ad665287a71d6fd8d7609acd97d00dd57b939550cba1251abb1e3d614df0d879"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_13/main.frog",
-      "sha256": "daeb43496d4c62e16b62dfde4bf2882c5756c60b23f0b40f914e77a33d21e522"
+      "sha256": "ac7b0d948152e75157ed46355a53bfd4e686e5cbb59d7a8c7587e0c246af166b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_14/main.frog",
-      "sha256": "4333244e2f4a76e8782c6bf1ba11631747abfcae66c7faef3e64bf6b517c7328"
+      "sha256": "ff6257eed0e333320cae329b1794c76e90645b801472e8d5e89aedd042c92441"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_15/main.frog",
-      "sha256": "40f05107d94e0f20f89eb8ff91166090e00b9cd660309e4c261321d1e39d3de5"
+      "sha256": "4c3898f80d2ef611c9ce896657cc94ff09224d4ccf2443c2c890fb5e9fb4e95c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_16/main.frog",
-      "sha256": "6d96ed7b69babbc00433a4ffe5fb99bed271f5c2d85b4a8a637d63ef71c7aed2"
+      "sha256": "0e5000b91c4f81c5482c217008ad7118b5b54b9913ea064d7cda24f85b886835"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_2/main.frog",
-      "sha256": "81a497f5eed80b468eccc9fe6963713f35b175a6c9de9d7acc054d0ba9bf2a6f"
+      "sha256": "6d95cc743f0c11097f9c0b442aa2ba586a44b51ede118e2c9c0bc786be63810a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_3/main.frog",
-      "sha256": "df2290fe91973b70822d705622226c23165ea3eae34a8cbffb46b71dde9276c9"
+      "sha256": "cf48fa5f94bc1eca60d44e57b9df54222f918ae27db49f00e033359ff7259d2a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_4/main.frog",
-      "sha256": "262fa6a27d8cac5afe7a3d8b3b7fd44a97bd082a8e6ccb123150db2f7ebafb6f"
+      "sha256": "38cf326024134f22d5747e146fb393511db12e8cc7fcded400340f9a2ff626a2"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_5/main.frog",
-      "sha256": "adc292336c955b467206ec87b10b095fd35354b0831acf03ee1c349b297cb3d7"
+      "sha256": "7892d1118d9757274a471638d40c48acb2c15df5af812740b232fe621ae43517"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_6/main.frog",
-      "sha256": "8fb9970553590430a9bc3f08970922b22796e22ec9b9d4c0fa0b938bca06fa7e"
+      "sha256": "8f2161ac05482cdd65fb6eec5c6c123b46b5f3729ebcdf892e927ca4b44ad36a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_7/main.frog",
-      "sha256": "9b289e93c305c9a9c2c34dbf0c718bc77de922967d564efe32c8c6871e1c5141"
+      "sha256": "061054bbb6a55fbcffba97739ed1cbcc858febd62741076972ac85d8a51f0924"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_8/main.frog",
-      "sha256": "beadbfcf0dd37d356f2469cf765957623659dcb132b642a2eb5a5df0153628b5"
+      "sha256": "4e807dcbb421fef690548236e7a3f3938f8e7d06015cc97846178120bfc35ea7"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arity_9/main.frog",
-      "sha256": "285f85fde26c0cc1cdf4e2ff60bcfb7cccdbf884679c055cebb2fc2c04dd11c5"
+      "sha256": "8a15d5bdd5b95b518f4cc4521faa641ab7fad9405fd0712fcfac0f32781eb387"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.arrays_same_shape/main.frog",
-      "sha256": "4000644a5dcd1c2ae0fb65683dc7164bc91657bf907bbac2d29500740e81e8b9"
+      "sha256": "4ace041f4246ba3a9b380735895f88ecf331ac6951f6779ee363aad2dff20b19"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.incompatible_shapes/main.frog",
-      "sha256": "d5b972a82e89822072962e1ba870b68f401e729f75997bf97161276c3e8497c3"
+      "sha256": "2b50a6171fa4602ec68f33841482d7b045d800ca3e798d69cca0077afc758f51"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.left_fold_f32/main.frog",
-      "sha256": "c7361c02906e549c305c74d35ff9e850408a79b580c68e54f5d947c4dfb97b01"
+      "sha256": "18d7c79d2d1cb6f9eeea95d4e11fee5eabc55803b47c71c872a538ca4b2f240e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.left_fold_f64/main.frog",
-      "sha256": "acc70b998709fccc525a3277124dea15bad273633dc1c78d957b392c2e08fe7b"
+      "sha256": "12c249a03eb7d2be3a6c1d1c725b6887cb62e771da15892f0d4de7fe5a140a25"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.mixed_i32_f64/main.frog",
-      "sha256": "30bae140d1c1acd951ace923e816caf3e65d25f06335cfc114c761c7a4485a6f"
+      "sha256": "4f9c3a3ab0a0a1b08a4e4af580752d707a6a86bc6503b76d126fc3c1bc94ab1e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_10/main.frog",
-      "sha256": "7d4f6bfbeab86acc0e3f3f179fbc1493257a2a27c5f918a1de45577cbc2f03c7"
+      "sha256": "9a6d5285a7488b62fbce9a95c6c643d8dcc5769028e6f04d35cd67cd13be49ab"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_11/main.frog",
-      "sha256": "b56770a3b1b9e7d09e23c2401d1f2ae56246fa9f7dad44d56350401a767472af"
+      "sha256": "af6267e19fcb7f0af7e378f5fdcfca743fab15bae55b8c169a3636bc5a99dc08"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_12/main.frog",
-      "sha256": "018731fa7160e6837e6f307b90bec36c30670e8222e5ee98c7283df12c0a95d5"
+      "sha256": "9462b39664bf5bcc01ad1318cb5d662ca1bc5c820dbaa19e46bda1662369dd7c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_13/main.frog",
-      "sha256": "514567666725b785299a6870986244a5b6eaf79863b35bf74e7c3729c859b5ec"
+      "sha256": "7113145373aa307299315f0df2638cf9f9d0e9262996ac7e92c9c5acb0a7b823"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_14/main.frog",
-      "sha256": "9a24781784e6883455d3d6e77457eab4d5b1c282a3adf6c450193d402fae29bb"
+      "sha256": "766a99ceb5e688c5b588d56362c31e477fa529d021f06c90e7c6c1b7c6b46378"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_15/main.frog",
-      "sha256": "a857707c97daa44e72f45e0c253d049b8e0fd2dffe17f526b5b0879055d656d2"
+      "sha256": "e31f6f21bb03ae9437551a6eb2baa78b55f572fe79f1b5594abd56ffc7d02b85"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_16/main.frog",
-      "sha256": "3f3788fab3944c23237b9ee3c989cdc7f7485bbb2b1dfe24c17bd7d0c7add738"
+      "sha256": "d0dd6d8f6dba53009deb735fdad9d3f88b5ed026f2d7174f1071d185606e5d5a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_2/main.frog",
-      "sha256": "bb138991f684d89f08ba3ccc14d514587cfc9548670009cd27bdd40cde69c095"
+      "sha256": "ac77f9b107f080f3ea0e463aef198e151003614e437439ae04bb52293f355ede"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_3/main.frog",
-      "sha256": "68a4faefebf694b6e926a4ac466b00282378d5a58884c409670e81fdbba45f10"
+      "sha256": "fb76ab23823d0b22a8b84828d805e3f56d96786f0aed932639ebc0ac9b821055"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_4/main.frog",
-      "sha256": "acc201b8c6d801df1577f3a5de0b56a15c98032570f47c6aa0be781a37e12909"
+      "sha256": "6cab48697f6c273fe81d66d76a25cf9db51e5c3712cf3b45b2d25f6a3642b642"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_5/main.frog",
-      "sha256": "3baecd51607aa46639e43740c384b26e50c06df18a9c83f3cd092cc7e6e43589"
+      "sha256": "e0d30b65cf5108269ac01a7607af2390bfc574fe46c6e7f25923a7963bc11989"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_6/main.frog",
-      "sha256": "a387e6ee667c717768963a7bdfb2c7804b55b93108c700f920657f6aaaed2720"
+      "sha256": "ae29ed8b273efbf3d11ea7581ac7bcfd7b35b1b60d90952b5a83507c8c995afc"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_7/main.frog",
-      "sha256": "b16e772d58dcb0f0f1cc82279fd744c3ae4617af65fe986024e12538a0669578"
+      "sha256": "902eeb8159b304fd82d6e4f9cd4f25acef24a69a086240e8c80faff17c02ef66"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_8/main.frog",
-      "sha256": "a6bf1d1268264c503a730c728211dedd1a29f6aa09af6bd579089d42540db7ec"
+      "sha256": "619227ebb561a15b81fd638be589ebd7cc5b0b59710c456610811a8a7fb5d155"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arity_9/main.frog",
-      "sha256": "755bd9e9cbb589cae4858e9fb39dff59d61776437224d68ece4ee5098988b45a"
+      "sha256": "04f820eb5b0e3493c98615694dfce0c13f545eebdb2c3f762f0acf94a66a7147"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_array_scalar_i32/main.frog",
-      "sha256": "03c6f9a7752d76f3617acf11ffb4f5a8053720a115c5c6c34e0c9fe7f724164f"
+      "sha256": "830e98e4db1b225eb2bc8563a9a3583c016f83df1253300989bd7c20f2c6c255"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_arrays_i32/main.frog",
-      "sha256": "ff15689e35a20054f2a43e30073a43009f081ad922f71afc7a7a03b478580c7d"
+      "sha256": "8910000571abe36c535e12e7f96514a6af94a418c7112a48a8b3863969eb528c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_empty_i32/main.frog",
-      "sha256": "3b2c455d1d06f0ea29c03d97d82b2d85ec2bf51551411c5809ef776500f5f72c"
+      "sha256": "0ada163caad69b30102ac56e32613100abb2417a155e9f0aeca93d1cd5503fbb"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_f32_left_fold/main.frog",
-      "sha256": "5d6cb07f622aaef3a90f1a33c9a8a1e8e2b4b8dffbde0784c9e03efe7c8352c5"
+      "sha256": "18c956b6542b953f20cb5a3d7a3905bb72ec0002835a7564cebfedbc9050c23c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_f64_left_fold/main.frog",
-      "sha256": "a5a7d1b14fa7fd411c066b0423b9bbc72bb9a130bdc6527b505ea56a06e00382"
+      "sha256": "669d39a4b2c7f8e5ab1340c1defc214ed0e3ad99a52a5b9adebf0055ad5d0bc5"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_i16_array_promoted_i32/main.frog",
-      "sha256": "d169b94edabd3d4076d6e61c9eee03346a708db8c6817a1bf21343fac41ad113"
+      "sha256": "0ad763fc6a0ae8eb6b9b33eddf0f5b73b02dd5adb8a3e9b535fe3620efe31466"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_i32_wrap/main.frog",
-      "sha256": "834424573a387134183c644ae6b507fe6af9391be3355d996a4e8e8a19fdc538"
+      "sha256": "45777f5b1e8a21b8e8556011e3d7639cc4383e76e6ed3f3374690ea67cf84a2f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_i64_direct_f32_round/main.frog",
-      "sha256": "21fa3147146ba3276fc2d44040f274add8aacb866ef1d912994199d22c4a6867"
+      "sha256": "e0aae9f28e8dd5e5aa671b04b2a156d28aa465b65b7217d5b764f0e317f1a34a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_i64_extremes/main.frog",
-      "sha256": "148ffeb0fdc06632b8ca42bb9dbc4d2edf3177805805c936b144351ad29e9125"
+      "sha256": "3d5d1039c30688041403cb8d98355d7593e00f3b9145acab7281adc3b2e1b2cc"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_i64_precision/main.frog",
-      "sha256": "c5c61a5c68e6d15dddf9526d0d9d6fd54aabead32c6b8997759d4434b20b88c7"
+      "sha256": "bbed15a8cce08688786e135b7acc90208a633ce6fc42c962d069bef2f9b41c0a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_logical_i128_then_f64/main.frog",
-      "sha256": "641218c1ccb10b499e9252867952c2e7bbd31952127cab5f986641709ab4fd2a"
+      "sha256": "efebe0614f74a2c07fcd6192846167badbc8a2c0beb8c8fe61cd789ea59fcef9"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_mixed_i32_f64/main.frog",
-      "sha256": "cbc33b59910ac37706b4d2e658c92130badb12ddd49c0d0e98b4fe23f46cf651"
+      "sha256": "0524b389fdb4d5ae45130e84c5a5efdda0e54f0490e88f466ecfdc68e83ee475"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_negative_zero/main.frog",
-      "sha256": "91f5c4908bba6c0c5729894f865b08c6d84c2dc10cf166361bc1ff8d322f1b48"
+      "sha256": "26fe4bb49d74322c32ed37ddf79fa1853c3cc4e42459b20042194753374c0cfd"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_nonfinite_result_rejected/main.frog",
-      "sha256": "e151a5997162b95bbf2334c992e35c23252bf9888c6654c671221f36f3d54e85"
+      "sha256": "37b95a6c4e2bf769cdda13e43a77ffa2fb30dd9c8fd71ee89cef1a0ffed59e00"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_rank2_i32/main.frog",
-      "sha256": "5a1906326a75c230ce21dd95fb5910c7dc5cf0a85001da20d2ba4d64def2b7fb"
+      "sha256": "044833165d2899b0a04b68343455e0665ac10c55dc072b29ca41b320a1118e6b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_scalar_array_i32/main.frog",
-      "sha256": "16c1c8ddf009f5a9163b3eecf1303cffc09dd07a9f84e8f4337306a2b36acd5b"
+      "sha256": "fecbfd54178cfd5061ac368133abb80e7c067394d90f5b78b449eda86be8c58e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_shape_equal_count_rejected/main.frog",
-      "sha256": "1a8bf1bced4e95dcc6aa65fe28c91551db72c1d40158aa83a7ae24d944d742b4"
+      "sha256": "8900d537cae9ce13542aef88b2a0632bc238ad0bf1772670ba49e4ff35f7e1d2"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_shape_length_rejected/main.frog",
-      "sha256": "800f94ef23bcbeb95b1afb5168ec238dfd7fc6d5468f52364fa1ee65b29bab73"
+      "sha256": "e4800219b29038edfb017b6843506193ed981be3b1e946b70e26619594172c72"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.native_owned_u64_wrap/main.frog",
-      "sha256": "775501883c2d0218d6504b653e961fdba4261e709b81d068ec5c84f2f9930401"
+      "sha256": "18d6ffba36b48ac7a1d6c961d050c1d3fdecdbe4df7f3cd17bd5cdbc063f0cc4"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_array/main.frog",
-      "sha256": "e3bd5c01b116a56bd1376ae2b5547e6a3de3e1126f4fad0917cbe10b8d722851"
+      "sha256": "09f332907872aac20099dccc7cde775565bef8e11927cf2598e99deca01a2e10"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_f32/main.frog",
-      "sha256": "a4e7527778a0d7186a6a096ef20a31fe55245ed73518ccb6b5e5b6f3bacd151a"
+      "sha256": "f57dda8c59a23ddbdf7ff3240a8d11d21615df750b9a463f54fd75a0bb1ddccc"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_f64/main.frog",
-      "sha256": "3e0d6720c378e25c73670d9c9b34b2a0bd6033431fa22d41a06a15e46e0d39a1"
+      "sha256": "d3e351a1cc568db067f3cc97037324892571b3b6131734e984675245e60b9219"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_i16/main.frog",
-      "sha256": "d9b91ff84a97db151f245726bcb8371e40c2e188ee1e6545da89a418658e8cc9"
+      "sha256": "a0ac3d3a59c998f4d5f3874c365f2bbc807b52124b0e6fde4c12a5887fd08a52"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_i32/main.frog",
-      "sha256": "9d551f14926ff6f1ab0d7104afd483585e8dba4cbb58ce112372a3ecf7b3dfc8"
+      "sha256": "bf9d90c6728ae71f311549d6195eb1ed7ed65b5281a5d48baebe0e674ff8dd4d"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_i64/main.frog",
-      "sha256": "986964b654c3d2cc266166335fe84b819f86f5b4e37902da0e5b291f96845076"
+      "sha256": "7961297929d59ec0ab6f1761aa3bbcefb2e31d29d8948428e7f55eab6c8ac401"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_i8/main.frog",
-      "sha256": "3f77bbbdc86e178ec122c315b6e4a4956e38eff7cdb5cf6c6f1221e256aed2ee"
+      "sha256": "946dd2dd3e1e31e3378d4a2f3b5561d59503477c480f0fdf9ae4d6fddb42eedc"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_u16/main.frog",
-      "sha256": "31d5a6e6199fe517bb10775c679f5cf41b24f5ff18fd5c3dd4768a99e345d8d9"
+      "sha256": "333cd88d2e9fdf63aeae5550808dc13b26c29b885c3ba070b01027149a304281"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_u32/main.frog",
-      "sha256": "e018e90dc44bd82a8200320223911a1f945c78add736c4be6212d4418cf62d57"
+      "sha256": "3b9fe9e212a0d2da949f5902f9918cfb53f2c0900c9ae67f74caeec584fb2af6"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_u64/main.frog",
-      "sha256": "ba3ccc75747496089370836fcf4adc2c4fe9b2c1189d0e3247ac73dcb541163c"
+      "sha256": "392a60d481d0377e867e848ef645f0c80028f27dd05de335ff77b2cbeee7239c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.scalar_u8/main.frog",
-      "sha256": "061ca3fb9c3ba96293943bf6d3a7b894a7474580d97fb2b7c4c695aaab0c023e"
+      "sha256": "2b8f89dcc81d3b0af612f08c336051b69da36ce073b8b3691097cccfa41db9ba"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.add.typed_empty/main.frog",
-      "sha256": "704c6cd7f70c659a7c5ba9ebc0050c0dd6dbc5b699902e26da1de5037d0c575f"
+      "sha256": "5086d13187fb8c3d02fca8901df8407d7b240325446a41dc5320f73d9f19b3eb"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.byte_array_to_string.ascii/main.frog",
-      "sha256": "1874d92c23651434b1eb42118b0a635c3d340fad101c7361d2698bac9723469a"
+      "sha256": "24d2b87c4e2b8ed6aa575a4e6d24a9274a7ef021bc8f41c6b50b655b4576ad14"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.byte_array_to_string.binary-roundtrip/main.frog",
-      "sha256": "96fca55b80f91692656cad07ec8f909813ba628d7c82981e14b1473eaffa364d"
+      "sha256": "f45cfdd8f6feb77c993e0ca43a4b31962a9dac948bb9097961a45fdfdc56d3c9"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.byte_array_to_string.empty/main.frog",
-      "sha256": "f74a0652ddd07ff53fffe2aa56b9ff7239da832a10503d0775f537d815e13491"
+      "sha256": "6fcbdbea7ed147b6e4cf71ffb89245e53687bc652eabd30bf378432847e5fd67"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.byte_array_to_string.utf8-nul/main.frog",
-      "sha256": "6d6c0cc925769d4ac3c8e9c491592069f10068287110d0c88cfc952f43bbb74c"
+      "sha256": "f4a1d73f80f6e14ca9d590d4ee5bab7cfe6a6ec237fe685ce4f892cbad80eb66"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.string_to_byte_array.ascii/main.frog",
-      "sha256": "0425f5e9ebdcff4a0e53668727967c4b20ba4b636cd68e2621c707ecd388ae30"
+      "sha256": "022409a0c788a249664b363c33a2cc776d1f482623b71224de05b546f600f1c0"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.string_to_byte_array.binary-intermediate/main.frog",
-      "sha256": "686c92796fe1ed0bcaca20e531e45afd4e2e3145a79e87c3123ceede63cadddb"
+      "sha256": "f502e140616d43da0bac94029cf674209f1cdaeb4e9ad11578d9b1f13d18ac8c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.string_to_byte_array.empty/main.frog",
-      "sha256": "d22a1035f175142f9d8ddeecf4760795578e3705f4d55b875d4a0534b6401012"
+      "sha256": "0378446c94119619427c9341e3dd172ac1b0ec1fffec5cea951b48ccdf8d9980"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.conversion.string_to_byte_array.utf8-nul/main.frog",
-      "sha256": "e2eff63f87e878ffa230c46da6b94c174bf0b5c662070e303a81aedff99807d4"
+      "sha256": "091af6314a0c8c5c02fa1dc16ed2b8bf5d5395eaf76bbf4aca453cee4b7d5915"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.decrement.scalar_f64/main.frog",
-      "sha256": "c869a69a35b7698365d1a0da75268b86e1c4fd3067f09765492c7c83d9dcd0a4"
+      "sha256": "da3cfd8139520214862a20940d5c4ba4ba565d82b8f0867720fc379bf64c862a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.decrement.scalar_i32/main.frog",
-      "sha256": "c64b3e017e5f95d3e3c09ada7ecea946931a0f644919a400c96f14199cad278a"
+      "sha256": "17ffcce92cb723c919e845d1c0d24645274c5999f738106eca21bfff6248d18b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.decrement.scalar_i64/main.frog",
-      "sha256": "935570fa9c1a31e4a4c5ccee50c3cace0ceaf9ba58eb12b86174851bacb66409"
+      "sha256": "5a8ee6dc80a8e3afa6cc8693cdfc2c399b72d17cc0343186a0d40c92d252f406"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.decrement.scalar_u32/main.frog",
-      "sha256": "4bb617b6670024a4dfa160d137b21ad6fc61da5fa116571c8c34977925727371"
+      "sha256": "fe94a843482e279226d74ba35bca4bb025e90eae718ee5cdbe55b97b27a62d92"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.decrement.scalar_u64/main.frog",
-      "sha256": "819d39d26fffb9c921e289161e0afaa0c5c2bc97728a083b1f211534ee977aa9"
+      "sha256": "f0f1f3540346bff2703cf98b791703d680c6b384358ed9bb153ac19a8cb5c7f4"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.divide.scalar_f64/main.frog",
-      "sha256": "66c9c7ca903aff4462370bfbd0ad579b2c661588c4b180ae5ccfd0f7f25567c9"
+      "sha256": "441ed6d4a3d76f5cf2d19066789189e08d2443de1cc591509d88835602a96050"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.divide.scalar_i32/main.frog",
-      "sha256": "26c9f5d5a87bd2071096be8ccd0f41b6bf2c6567b5def69eba01b6d6e8893f82"
+      "sha256": "625bcf18415e9808ca584b3e1f6c92656ec5d581f69b8a9a2f88bf18c161938e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.divide.scalar_i64/main.frog",
-      "sha256": "ea16b1994f422ca841b12eeb1344d031b70c75b971970874e28c89c7cd4f4edf"
+      "sha256": "92bf44ecb57ff7d8195e3f55f99102ea584fd79996f38742003bf585f6ac91fd"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.divide.scalar_u32/main.frog",
-      "sha256": "5fe7746c5d3348936c7f1eabf8871b32a15525259f7891e9ffa28acc028d2de4"
+      "sha256": "efac369ee709cccbf822e9f58d30323f0b8aa75d15ac6984765e7aae447f9c8b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.divide.scalar_u64/main.frog",
-      "sha256": "ea6c9d6afb87ebe8cc4c5c0e3c6914fb5c9b311c1ac88a443a65f82469371009"
+      "sha256": "da6016ae5c61081d1208eca8c7f4c28cb9022c143264ad020b1b2691e9e3274e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.increment.scalar_f64/main.frog",
-      "sha256": "dc0c59dc06f0e6d0a0c4887b2fd01b0634c41f3e5fd94e5d5400cd2b5a9e0a7e"
+      "sha256": "1b1a91643a2142c317e67b741af8c5540ccfc86baab1b6df7715ebe93363daf8"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.increment.scalar_i32/main.frog",
-      "sha256": "33ad2db7d61e1bc1d6d5d889350b7f6e6ff16d96e494698f3d4a39535e5052dd"
+      "sha256": "36aeb992c75a39460ad0a54b6287a87768243c1def3eb44d7d8daed240ee5d5e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.increment.scalar_i64/main.frog",
-      "sha256": "bfd820dc0506b663323d645ef6371066a94203c0fbfbc7aa49e17b86753aeb71"
+      "sha256": "aff7d602f1d7070387917293608e4c1c49f262b6f294b8dda3d9b293f319a619"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.increment.scalar_u32/main.frog",
-      "sha256": "d264e4bf050f98ad4d066192d1c289afeaac42a060a65c07bfbdadb9f9afb546"
+      "sha256": "db5bc8fa30fd1b6a56141c8e15f5d553736f51c32a23ac3dc1281f45697262bd"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.increment.scalar_u64/main.frog",
-      "sha256": "4f8f5ac046502381edcf2c778dfd476301f9021c88c11a76813a947c5f1c07c9"
+      "sha256": "6166224b90986fcf20fe23b8d7d89e9c1d18cb41486bb641c072b27e0ad7d84f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.ascending_f64/main.frog",
-      "sha256": "5ac10dbcf45eb0bdc35f6268efdb68cf44824b25af93a9ddc9469b992a5e976d"
+      "sha256": "c064354326b7d939fc83858e0ac1f4a9a3f4438d1b8ff4c6eddae700dba79481"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.ascending_i32/main.frog",
-      "sha256": "62687e2fc814be2bef9d260cc6343c7207366e705b09d48bef42d8c234a8637d"
+      "sha256": "aa63b473d4a21cb67af2ec9cf169b8609745d05aaf120cc799aad6255cdb8d37"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.ascending_i64/main.frog",
-      "sha256": "c275b3d5917afccfe9d3d3f21a406e4db35618ff42e87856bff53e31742a7582"
+      "sha256": "8b8cdda0e35a1b3bd674aa8a8db3412289e96a755487fc668da0800f8f6de957"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.ascending_u32/main.frog",
-      "sha256": "0fdf38ff8afc29531db89cb8de6a874e9262b27905af0390fe5c194477f6a53f"
+      "sha256": "9b66f4dd76336daf70aaa32f35ac07e34d0103a23633318bda08fc58238bc2c1"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.ascending_u64/main.frog",
-      "sha256": "062a69afb279fc3edff2f57fb9958c9e68f52d4b078cd9ec8e5d26192d8eb8c7"
+      "sha256": "cf0df82ca3c1c2d75b59adb84a5df8db96d3bf90d847c05cccd04fb56683318c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.bounds_f64/main.frog",
-      "sha256": "dcafc8da0b0e151813227d707603f2e1d08223d42b96a86ab3b4a79e0c088a3a"
+      "sha256": "d326590187b6307b3c87d1bee56cdab592bb7faac4b85eb4e0b28b22f1e58f76"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.bounds_i32/main.frog",
-      "sha256": "2235368de79df19411f97a5f458944cd53fc0add8dcb5489c2de18fca7842fb8"
+      "sha256": "aa302add93c48c3f156e933114ae02fad69a9542122084127b58da1d49563653"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.bounds_i64/main.frog",
-      "sha256": "9b4a3da3ac6ffdf154c024a96593de6e477046cc313d3d79efa34a4860f62645"
+      "sha256": "b64ea4e883087d6b8c4917f667b4c939f59bc92f760688727f24452ba5adfb9a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.bounds_u32/main.frog",
-      "sha256": "4b58a913ab603b752d5883bd391e923e30db44966ea5de9965d377e170dcfbd7"
+      "sha256": "040671ee53f2aecac44b447f66e73c463e1c915826ed43d09b96b3e5e7261ad6"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.bounds_u64/main.frog",
-      "sha256": "76a5eeca8b4c2c5173657538ccf91e2d3485d72d640ce32d9b3939608921e28c"
+      "sha256": "2e61bc9e24d2ca941960b25f94082e3046b32ce0faae50ade73c5a7746e3b1f8"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.descending_f64/main.frog",
-      "sha256": "9de4411f4ff0fe70df8f20d9afb2514c85aabbc2db758c02cb5395a7730311b1"
+      "sha256": "d69b98e80a7206ec956f8ddefe1db38de1e5e8960599797ce4940d4c084b8439"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.descending_i32/main.frog",
-      "sha256": "cdfe1e8c5c5eb37b91a08ed0bcf38032b647118f33265e4104b847da576eb98c"
+      "sha256": "5f92fa7a47dbf207cc67b78ccd6c93d764867d9e5c7ece457aac33a420848b02"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.descending_i64/main.frog",
-      "sha256": "badda9284a3bff74036a22789c6437bea3b8bfef7a0a89be78a9bd0177c358c0"
+      "sha256": "68aefa166788a326f6f8415edcd8de41dc8e7625c2a2712664140a2b3827b320"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.descending_u32/main.frog",
-      "sha256": "e3c0f9ec9f43db1147318ee1cabaa450ab17fda57efcbf014fb97b854abeceb7"
+      "sha256": "229394f1052fe040578e48236ec45646c60d3baad0f8a1fcc5df9d7a3a7c754f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.descending_u64/main.frog",
-      "sha256": "5d58740dcc5cee17d2edc5a2f8104525d0049dc34ab95381c5fcb2457db3accb"
+      "sha256": "635da246f87088cc8b40e6b1a5f2cfc63b246984a58a97c445694297f3f418e1"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.nan_both/main.frog",
-      "sha256": "7ccd05f17fa4fcc0cca157121f9e5add6234e92320b52c79e9c874ee0bc937fe"
+      "sha256": "bad08337defdc54819bf87e81b165a6cbb24613801a9b22b7b393f06b9a1b5fc"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.nan_x/main.frog",
-      "sha256": "31e54cf62266b96156d7e494a5aaab73cd33096458f3df3fad72c211056c20e2"
+      "sha256": "ee0c493ca752a3fca6926aad8ca29810bf3fa936465649381daaa51c3ffb9862"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.max_min.nan_y/main.frog",
-      "sha256": "df7a5e9702dda598a19e1750330cd8da1ec7fb2e3ac3eaef6ab1fc86df19d691"
+      "sha256": "ee002e329d8e201f16641be9f7ae604f5f4b57a020b54856381ccc11238d3bec"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.multiply.scalar_f64/main.frog",
-      "sha256": "09fecf3606456aead85e70fa1420d67a9d6864db587a3789273e1a8e6031ed9b"
+      "sha256": "d421013818f8273aa4939af56934f4b5a1465dc8a667ae22aa0bb018584edf86"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.multiply.scalar_i32/main.frog",
-      "sha256": "f79705166fb53846fe1b41854302e7c3e1db62946397a093b30ad4d09d7f2b26"
+      "sha256": "3b5c37b52fdbf3c513d1c7a2d17dd0fcc0586a89cfa1814537b017795e9cdc95"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.multiply.scalar_i64/main.frog",
-      "sha256": "85ffc57a75f11e6b73962da0d2321f3de7750211f50a142e012267ab89f57570"
+      "sha256": "72e3a99c6634de656599178ab8d87ca6cb73d6ad0ee3eab017916bc4713c0efe"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.multiply.scalar_u32/main.frog",
-      "sha256": "bb2c04b752529cfafb604e59988595569ed7223bb9325f970d8a4d329945617b"
+      "sha256": "98cc44b9eaf1ed44ded52daf87daab4cadc92fea6fc5658dce4b5506cc02d4e7"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.multiply.scalar_u64/main.frog",
-      "sha256": "09b2e70faf3b9b506f2ac8e2d11593aab17d868130db8f0317df8122ff480df5"
+      "sha256": "7caee080fdd7422d2099a52c9181fbf01c250c7bd27429276269dd2881373027"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.negate.signed_f64/main.frog",
-      "sha256": "6e750cc236835517c71a238f6b61b6dc26bca80d6aca19f7f30bedf75c18a2eb"
+      "sha256": "1b52616c4242229d3379c622ec2ab5ed81691dbc5b8e67f7823a79e7f115a574"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.negate.signed_i32/main.frog",
-      "sha256": "88a4882545d34bde3be3fba21f2b28b93e2bf89c529ccbc978ede94e0b5bceee"
+      "sha256": "b14096aba7f0fa62768109ca49c9aaee450791ec7a37e3582313ced5188cfc4f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.negate.signed_i64/main.frog",
-      "sha256": "c162f5f3fd929f7a21708126962a4f2e6d86eefe8b3f78a11486e38a746b4780"
+      "sha256": "bf6d82acef157c3e8e794df56b83313806f8d97de752321fdd3eff8452872598"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.avogadro.value_and_persistence/main.frog",
-      "sha256": "cad01c339c2551879d25ce3c5265757e59d1dbec7214a011e1752a09b1a7768f"
+      "sha256": "55073b173f1ee8e5baad2e7bba0539482be9671453c9ed80c93fd07ebad21e29"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.e.value_and_persistence/main.frog",
-      "sha256": "98b9b2b4cbc06464af1561c3520366e51d05d8bdf16773109ad184316c51d73e"
+      "sha256": "b4ed0db29abc8b7ea90454cef20482ce77b2ddeb8bc2710486084ba93b6920e1"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.elementary_charge.value_and_persistence/main.frog",
-      "sha256": "2b90f7bc2ba451d987941fc722ea52867b080280bbcdae461be5edc147aba115"
+      "sha256": "493bd7c31f1443e7e70c3e2c2c06ef247612e83c63d067d75d43633202eec669"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.gravitational.value_and_persistence/main.frog",
-      "sha256": "e77012e0f4beb09b7fc89f2057a3696aa86f6e346d18656ce5c9d627051149f9"
+      "sha256": "37590ae4059169712c6e00f9e1bd47ab5ff87bafc02eb7af0e79044b93a7a12e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.ideal_gas.value_and_persistence/main.frog",
-      "sha256": "0d9d0d1e8e79690e8f29d821abe6969c666401d069327cadadb6ff883d159f39"
+      "sha256": "3e9507b5c6b52846da4d38e7b4935d33fc285988f5db5691ac69d657c225a557"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.ln_pi.value_and_persistence/main.frog",
-      "sha256": "221d3e4e0143e47ee521b6bb6a743c8d10b80f9111e58f09d57b4f22741c1f6b"
+      "sha256": "60f92ef25aa59fcbf95ec41d94b8755b553aa93526e0df495913813dffc3bab2"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.ln_ten.value_and_persistence/main.frog",
-      "sha256": "4fca04e848b56fd64b98423193b1b49d34b6788c57a6a0962734820da098c2de"
+      "sha256": "033b5154932b2c7c6d20ecd0067a31f3bd227c81689586c155d877e4b278a7cf"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.ln_two.value_and_persistence/main.frog",
-      "sha256": "9e7bf697f96f713fad9dc4d608cb77c264942ac37a1e36190b0b259244ee2fe9"
+      "sha256": "c76006e360bf6f6b08fbabf55f1fe0104c75453fa93c1eeddebc65d857921920"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.log10_e.value_and_persistence/main.frog",
-      "sha256": "e2bb13db7727b7d9d8576f2e4a865493d045b8ffb8cfa976398730733cc3701e"
+      "sha256": "b14e995505809c532911cd978b3494a392a55b2daf3401a059f1c23a79aa99bf"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.machine_epsilon.value_and_persistence/main.frog",
-      "sha256": "0f2a0df752441536f8b773c9a3b5f05e7edf67442f06b76a4197331929c17e00"
+      "sha256": "bfa5edfb18a15b3e371bbe5848908c1585c9587ed0a98a1ef2dbba1b13ae5218"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.one_over_e.value_and_persistence/main.frog",
-      "sha256": "c5f566ee562cc67864292a437e3a02de2c891c0ab8511df6bf1fd5e8ed366986"
+      "sha256": "87c5d708d75bf6bde7d5626e21e77ec7bc57d852fa5c16279838362349be9536"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.one_over_pi.value_and_persistence/main.frog",
-      "sha256": "fb35f0e34c9a71a51100f1ca20a45921c1e2ac62cac0330fb1cb5828b7fc6ad0"
+      "sha256": "cd44999321bf7ac8fe42d15a4df01afa4782f21c35574356b4f0a308d59e1908"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.pi.value_and_persistence/main.frog",
-      "sha256": "3bb07d38ed2e187e93b36ddd85a64fd6339ce8d9bbd5aa312234c850c3fbe374"
+      "sha256": "88c45da4a5e5684d1745dc6e8720dd9c6c9f5b0e57143709cf7715a5778a0d99"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.pi_over_two.value_and_persistence/main.frog",
-      "sha256": "9647621ce7dbc9d93f3bb03849e4f7cb6710fcdf08efa1944b0cbe7a0af6b137"
+      "sha256": "24d1cf166bf284935aec3d8d1163e240ac844f5ba13cabf9610113a0220f2a6f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.planck.value_and_persistence/main.frog",
-      "sha256": "30cd0772a6947305df602f942106d72859ea7281b983e97d2df4e35eb42c2539"
+      "sha256": "aa4b1a49cdab5498aea29500e76d5318c4922c582d32637d9369d3e07639792a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.rydberg.value_and_persistence/main.frog",
-      "sha256": "b9dcd1848e6e2727bedc49b1919a02559c220713bafdd4fd37cb0a8db0a350a6"
+      "sha256": "b7e0fa90c00629938dd384e534a9b986b395e20f6a0efa63fb47d8b128e90933"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.speed_of_light.value_and_persistence/main.frog",
-      "sha256": "f72f01ba021bc73773ad79b1ca3007d49ee26fe77679a4a494c2df148a293841"
+      "sha256": "18f83a36ad1cffb1009a8f78eba5a53fee2b05aa53f68e1416f259b288ece6b6"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.other_constants.two_pi.value_and_persistence/main.frog",
-      "sha256": "d05c12ce5966a75b56e80e6b79cfbaf4c3b9b1418011f6cf79a300ab3f693808"
+      "sha256": "f73a94bf96b9b97b6ff623e0239278fd1b4cce2c94a4ea7efb5ffc93231c4637"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.quotient_remainder.signed_x7_y0/main.frog",
-      "sha256": "eeb412f28da75f21a2f3d8c50026959b3b3d4c8dbb7470ed210582c61cdb0be9"
+      "sha256": "4829c2f495a9d36b12ae1e7ae35ef0fb9edcf9141f3fa2707642466cdd609cee"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.quotient_remainder.signed_x7_y3/main.frog",
-      "sha256": "d88ab696e02b8f8a8ed0d7bc01f594eea7cfea30b773de18a077ad179f3026aa"
+      "sha256": "22deef65a9f1827ac681ec15d522c8077b7a689d68562d63d730982e03550a40"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.quotient_remainder.signed_x7_yneg3/main.frog",
-      "sha256": "7c330bb3e932a519abb24d97d32e5326db960ddb004377a4ca13d62cd9a7d3cf"
+      "sha256": "352d1efd4522e9ff3df5c013abb43e52b4b6c3889f79f8bf5840bb554a65a079"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.quotient_remainder.signed_xneg7_y3/main.frog",
-      "sha256": "36e2ebe56da33754ec0a64216d619234af3369d3a6a404fe67de9f1419e38ca6"
+      "sha256": "96e052a98002a8f5d2825a0eb1b722ab2ea007e3efe72e7850d41454005085c8"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.quotient_remainder.signed_xneg7_yneg3/main.frog",
-      "sha256": "389dd3432f86100bb73360b52c58c543d5e3488995064fec1bb25d3f85a1dc86"
+      "sha256": "02b83de6b17378ef2993aff53da86ac4718d4457aa9757917408c3f21e089766"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.reciprocal.integer_promotion_f64/main.frog",
-      "sha256": "60b4c2089133a821dd09fbcd311ac1566f76bfe4a341041cdeb7b869b2ce3e41"
+      "sha256": "52d408e3c52bc351f26a940db36f5af2d6d10656c04458a06ad8afe135cb8607"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.reciprocal.integer_promotion_i32/main.frog",
-      "sha256": "784aa599ec5b742c19df55991d04831a634488b2a92b9d36296e2f84ca4cf8d7"
+      "sha256": "98c780b9a796540cc07d9863b7a1841b23bde02eaf8fa1ab0d6cb40bfb3ddf6d"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.reciprocal.integer_promotion_i64/main.frog",
-      "sha256": "b5c6a4cd36e39914e3d0133a6b750eb5fb5f2e26812d78c3c3641200f264d947"
+      "sha256": "814e21abe7a95e62a766566201cbcabb8d328f2f42df8088efa6a246544ff817"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.reciprocal.integer_promotion_u32/main.frog",
-      "sha256": "a49a139c5b444283923c572c43fed43b407f96c3dc974884799b544dff705766"
+      "sha256": "a40eb0b1e50f43245c93317d376710498c296628d7ea4f6207f9293b9b338c9b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.reciprocal.integer_promotion_u64/main.frog",
-      "sha256": "0aba535361ec7eb3f8b004279c4bfd86b9e902964196f4547b83368c5339709b"
+      "sha256": "d859c933541cffad8f71793b203ef41e8c9184f1c4200de8831e6253f05cc78b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_half/main.frog",
-      "sha256": "beb26e864528ebc0e30fb580682a24012983b1d40e906000a38fe696150329d6"
+      "sha256": "c4ec21fd018c229c18853d0c2b19dfbbe81a9f89ebfab763ef831f08794d650e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_negative_half/main.frog",
-      "sha256": "81873f4e173701f4094bca159f4ca9aefbbe97b1a5416eb8a59599fb53a3b97a"
+      "sha256": "605c6c19d15908d704263f317f577e7096aa6196b3c120634da394959e596851"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_negative_one_half/main.frog",
-      "sha256": "45d96bd424073f1f24662f06fd141cb63fb4f90d1dd01325f44a9ecd17268baf"
+      "sha256": "f1fe0177442d5e26a911a79060094680020e1b06f164b52c0402c2d63ac62f45"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_negative_two_half/main.frog",
-      "sha256": "e1ac9af49c339debef728ac05251bf9f8631a5dd18ea3349efb1dafba11d9a5f"
+      "sha256": "fa2d6a113c718e0c40780156c4419c3ce3f8c8ff3ec2e944974e807ff2c28fb4"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_one_half/main.frog",
-      "sha256": "8b66589a2a5a7ae0262311d818fc74c0fc99e61a10d1fd2287d06a3b5424ddef"
+      "sha256": "c160aff456a8902d07bfe0a73cea1c3f8f8fedb6781dbfb692b0e608214789e1"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_nearest.ties_even_two_half/main.frog",
-      "sha256": "f425735a05b50382aab8496cb44d7a64ecf25db7bf9c1f76a6b1eeee9b6467a2"
+      "sha256": "e1516e751cc08973bc15c3e18d0b37bff539ac0b900c84ac20d4b0bfb0bbb5af"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_negative_infinity.negative/main.frog",
-      "sha256": "90672031aabba15be5c78a57fc7d000d6d8eb9fb6c823203d1d6cbeb6d5cfa13"
+      "sha256": "59d4c5c6bfbb5ae5852252b8f03aae7a4c9b7f0829e842556941e9d5bcf25c53"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.round_positive_infinity.negative/main.frog",
-      "sha256": "6347e020530a0db1b437651d75ed680b2d68795ee732f1bd9bd9d6679061184f"
+      "sha256": "8f19722111904d37f9fea23b7f8fb8d52cb5ec5197284a3bb867de39e36c0842"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.above-half/main.frog",
-      "sha256": "8121309f94cee6319960719324eb9ee3829aa1971aa79418135525e37ef1298c"
+      "sha256": "b20be4e6634ef61f740d09848d779306f68c40d63c85d8bad0906fff56867adf"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.below-negative-half/main.frog",
-      "sha256": "2faf8498d618188d37f39a0aae7223fe6c9335f9d2efe2c8bde495a40ec58e60"
+      "sha256": "5b010e4ccfb21401012d84e82ec008024ddcf3fa3d90619d08fc1b32eec86002"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.half/main.frog",
-      "sha256": "a8a5533e49005b51feb88fa66af79538b3daaf478ef824e18c09579c01179f03"
+      "sha256": "127d3576666b405ca58ecb1dba9c8a7b4851acf7e128ae4e1d7b6a3d0c10bc3b"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.negative-half/main.frog",
-      "sha256": "7caed6f5a9fcc9cbcc993e56aecdea5a6153b1126434fcf8299ff7bd98ae75f6"
+      "sha256": "11b4c870cea2643099fa8f45ec2cd616ee7b95b90f2f7af3cff30fc739feee66"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.negative-one-half/main.frog",
-      "sha256": "6138f3204e3cef5bda0545285638db04ccf003ad056e8a1afb6aa9f5c4551d07"
+      "sha256": "15de1949ce59893698fd2e5db5973ec2ce5282feb62938b25996eebc8aac4bb0"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.negative-two-half/main.frog",
-      "sha256": "c506a88b4763ab85f491477e10969902ff77255977d806bc0339e7d07f7044fe"
+      "sha256": "5e7decb4b8012867d372a6f8518d80e5a67064ebc1edf89b9ec9270651e88aea"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.one-half/main.frog",
-      "sha256": "cfa3d4e419619976de4c619043d1029e3f89e43b1a8c52613a8ad3af8f5c8f6b"
+      "sha256": "bf4838b8aeb3373410cc7125bf2e1aa1c8a127e2f26db957ed48fd146ca9ccb3"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.scale_power_two.two-half/main.frog",
-      "sha256": "749030b6cf9fea8a51f924ac0f0032fd6f0153455ac2791d19a6f2b2491deb16"
+      "sha256": "4377bd14d29fdd298dbe13446b34b951fcff268366f0d98940f85eda084b7e3c"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.array/main.frog",
-      "sha256": "4997d9cef32ed5bdfb658be2f60754b8f71fb9f210e2a6fe1c9e574c801af6f4"
+      "sha256": "601d64c2a2caaf56192b41b7c829d5feaee9daa605b2ad97a8ceabe3af8fa03f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_f32/main.frog",
-      "sha256": "3a7f3014da39847ed4930eda20ef0c5947aa37d901bed1d30368ec5f7ead37b4"
+      "sha256": "abb30b0f663beb8fc3cf537f58a05e78b4b59c562c5c1effc6386d14a1972651"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_f64/main.frog",
-      "sha256": "c3961f6552a4d810383f9b696cede7b0c99e4ebd662ebd824a8e2b2eab03d1d1"
+      "sha256": "c1e60ce454aeda8234b03b92775e8080e7b5434918b71956f5ff706f6345f303"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_i16/main.frog",
-      "sha256": "d73fbc0c5ccdbeb5e5a328ae3dee0d8753d4e1074287f2dab80f917d188f2716"
+      "sha256": "91b2be5f9708a9c2201b80c25c3705462d5d2d3c86c08f157ce521b3d8a094f3"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_i32/main.frog",
-      "sha256": "dbeeb5f58d3d5b287ee7a2d2325740852c3e2aac0d8c94d43cd9b325708bf7c9"
+      "sha256": "7660cd5272cc47b146b21c43d27654cbff5df2a9d8ef6a14518174fb37296233"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_i64/main.frog",
-      "sha256": "e80d37a9ae875e671de8baf30da63b221aa2cf4495610c65109c2ab4f51bccb3"
+      "sha256": "9d62df22bf02756a1aafed780815d2e28857186d75cb65f4da27fde3f09eaf1a"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_i8/main.frog",
-      "sha256": "1102b7fab475bf1b907c80fb5cc202a7ca3b06b0d4c0306d577ed6ebabf85485"
+      "sha256": "fe47cf872ebc6101f8cc6a26829f3141012c94d03e1d8a5e80e1c8701735ca32"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_u16/main.frog",
-      "sha256": "5548ec2e4b2a64ceb8e6ae8929bd9f04f279493e4777f56f1a56d6d4ab154cb2"
+      "sha256": "88b16d8d477aaf134c52736c84c34cc9e48244ca2b71fd1fbbc37ab4cd61291d"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_u32/main.frog",
-      "sha256": "bf7f8ba8fe04b42a3697eeca9e8aa215fe386f1438ac2db1e66afc55becd1128"
+      "sha256": "51b181f01fb1b10a924c21e8d5f0da61ca1fc9a6d347899fd72d00a718d6b6b1"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_u64/main.frog",
-      "sha256": "195b5bce79ed88a9002e288de92c4785bfd40be9e730593e02a9faef4997c433"
+      "sha256": "e212be3f226a327f5e28d69b68ab5be9b05ad196ba60ce39bf52ebed4758feaf"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square.unary_u8/main.frog",
-      "sha256": "e26fc17e00deacc37b110ece33e87f64931a436e7fd04a56311eefcb46270d4e"
+      "sha256": "00c8e1d3f4f4c8a9cd43d318cf3ebe5fba6c8f8ae443dd899cb350ee25b5a757"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square_root.integer_promotion_f64/main.frog",
-      "sha256": "334925b2fa77df0808b7000097b7db68668e6421368effde773a97cecb585a1e"
+      "sha256": "0f4a78a58e9276f4ba5b593341c9e237f4485440d8cfc599659c69f8909bac2d"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square_root.integer_promotion_i32/main.frog",
-      "sha256": "2fb526d0319552ed4698847e803b648d54d55e4a61e8bda539074ba8eb4a8e7a"
+      "sha256": "75ec51eb45ad51cd092850663ac5a5687ec796f2aa1258b219cb2c8bc3485cc2"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square_root.integer_promotion_i64/main.frog",
-      "sha256": "c91afe16038621374a054b6af083d878024ccf0d361a4752f12d3c01eda34895"
+      "sha256": "21fc5e6f335a5434ae50c0fd618e378fc2ad02e47d64a9b60ad3f60c08a69226"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square_root.integer_promotion_u32/main.frog",
-      "sha256": "b016736da358bb3e15b2e8fcee3dcb049121c44e6ee47b469da13a03bc373ff3"
+      "sha256": "9e9d27a8fa06869504139bae543a943e4ce453dbf9f482a5704c13188f321ce9"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.square_root.integer_promotion_u64/main.frog",
-      "sha256": "d184bd67f362428e69b4b688a905a22e323d46f50148b7b7d7bf96d40c8367fb"
+      "sha256": "51a502d7b3b70cd6f61edff9e59179c302e85f88f90e41883057fd514d50268f"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.subtract.scalar_f64/main.frog",
-      "sha256": "61a04d32a797b62a1dfb24613c7706db31d9da1f24c07e7bbeb4ed476e28c235"
+      "sha256": "1a6e715e1ce1b8681d1afd60885c08f262084c21d4b7611b9da884b97e1677c8"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.subtract.scalar_i32/main.frog",
-      "sha256": "f38693c50b61af7a30ae631c6fe83aab24764a1ab8c8bc563afa7499db0a0a92"
+      "sha256": "e8c4b51aec891e7f507a87b457a7b5c23fd64b61ad44ffb816df1bca27488e5e"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.subtract.scalar_i64/main.frog",
-      "sha256": "6dd33cd6e6cc5e5903afaf65e309ae975bac663d1562dbb69898d78ac6177495"
+      "sha256": "7c56ba9801a344bf78a1f6473d702fe1974f616410e629c8ca86591b82b90384"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.subtract.scalar_u32/main.frog",
-      "sha256": "d3d1ae53eae67ca0c428d0cec4b83f8c70d15b8216125df2863aacd213d28c89"
+      "sha256": "eb79082c11b54486d97161f3a1a3562bde033b25d4f57815594aaa4778105648"
     },
     {
       "path": "assets/examples/Native/Numeric/numeric.subtract.scalar_u64/main.frog",
-      "sha256": "6039a6fd8a1e91ed3a506eabe66bd0ecca9b51dcc7f20c91f403bab9c09f7a1c"
+      "sha256": "1a672f41eb7b7519334548e872a4b54f60afd0cb6f2af9af4123f690905f5623"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.bool.false/main.frog",
-      "sha256": "1cc9c80bf62b219f3b7a9b611de19da6ce14b1d663e7b427480bb0f72999de1f"
+      "sha256": "123db371fa81ecf02f5f29b8c432f5ff8d4ad536e266344d7041df65049b99c5"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.bool.true/main.frog",
-      "sha256": "bbed03b54d1fb54a14763f6984454f40db2c87becade1a6f88f25c00a340cdb9"
+      "sha256": "3581b9aa7db346b92eafccdd99169e85adb8211abc90c7f3acc48786bae486ed"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.enum.exact/main.frog",
-      "sha256": "e1d9d7ef8004a8f1e38540c1db44564bbd4de79e469c8d370a7462f46eb0c9b1"
+      "sha256": "3baf59af64c1fe47174dfb0fa6773a3b3b58208f5150fcf7afa1e6e972c97d64"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.i64.exact/main.frog",
-      "sha256": "f372103b74aff70fb8fca29d4838e7499422d561070698823f095546da4915a7"
+      "sha256": "1aefed091c45ce5a02828da011f8298c8bdbdbcfe6d1ebdbf39b4c32204de30b"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.string.default/main.frog",
-      "sha256": "2d22fef28be499b6d36725ca41962e10458607d2e26cfa8065e73125af650486"
+      "sha256": "9dbe4ddbf27a1c206c83719c78b6632785af45ec4e591391674047ae736784f8"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.string.exact/main.frog",
-      "sha256": "a2f02dd7d5212de21bfebde04e1cd600e8259663b94a3afc5940cf8af2cba466"
+      "sha256": "38397c07ce0b4f03c1f6d692455bd8b8a5f3348ad902cce767ad1779f3db6e12"
     },
     {
       "path": "assets/examples/Native/Structures/structure.case.u64.exact/main.frog",
-      "sha256": "3d766edc465e359bedc5baa3a6d40392b0445e5b8b4eed24c541de006bec152d"
+      "sha256": "4730b6624087d1af27d3b99bafa1752aebca39444cfb9667d70ee92af6b643b1"
     },
     {
       "path": "assets/examples/Native/Structures/structure.conditional_disable.saved_symbol/main.frog",
-      "sha256": "3220bd1119e6f2e0a1fb9e16122b21c3462a7d09e10d3e5bf530fb91134f67c6"
+      "sha256": "bc166641bcc9ca6e119e3fa984baa7a8b30d148f9f22988f0e293c96144b8963"
     },
     {
       "path": "assets/examples/Native/Structures/structure.diagram_disable.hidden_enabled/main.frog",
-      "sha256": "decfb452b4c67400c000097992281c8a9da3ce128a25433b489b5f9b25f3af36"
+      "sha256": "819403d6708642c1c727e3f2691b117f4a8287ff6ef66b895a84250bad6b123d"
     },
     {
       "path": "assets/examples/Native/Structures/structure.event.timeout_zero/main.frog",
-      "sha256": "058e9c636e192f59f77ecc918bc3a348289fddd58669399b9b2f524f16a2268e"
+      "sha256": "26bb1b6f22ab8a170fd4cf1e1b6b1c4632d2f5d46b80c9a1d9e3f98c27e01717"
     },
     {
       "path": "assets/examples/Native/Structures/structure.for.indexed_input_limits_count/main.frog",
-      "sha256": "954893ad6fe9436743d9d9e090a6d382539de457780da185eff5a7150ad6dc18"
+      "sha256": "ea76f526b7746428d54fe11bb6413085923a6b79419726cb464a977368a2ed3f"
     },
     {
       "path": "assets/examples/Native/Structures/structure.for.indexed_output/main.frog",
-      "sha256": "e98d56b7c79d008cd2de43066316eba0e57ffa5dd6112e01317608ede6ec37e6"
+      "sha256": "a353149ba0b1fbb5f9a8854adfde084f41ca7973096dbd41a0dc83fd4a62d733"
     },
     {
       "path": "assets/examples/Native/Structures/structure.for.initialized_shift_register/main.frog",
-      "sha256": "4740a5d2aad593d3dc455c2f0f86fccb8ebcbecd53f86ad34da1e503e7096c06"
+      "sha256": "fa1dac05b9a8550cae58a39a329a8cf55580210f8eb252467f0dcc40da090c95"
     },
     {
       "path": "assets/examples/Native/Structures/structure.for.zero_iterations/main.frog",
-      "sha256": "e5a8178e75d8546fcc73d4e1d0a6bdf586045dbd2e1ecfb634d066415a0f719a"
+      "sha256": "ea2f551bc6d61557d6cc6da80f3145149a03f87418679f5e2fb8a68b51cf382a"
     },
     {
       "path": "assets/examples/Native/Structures/structure.ipe.array_index_replace/main.frog",
-      "sha256": "a52b648634e0971bacd80cd3ef20e96c2f728950d4d429aded496e79dace7d70"
+      "sha256": "3bf16af00a3496bdb3d515cc792d324175cb19ef8d426ab0b24823e9ee936552"
     },
     {
       "path": "assets/examples/Native/Structures/structure.ipe.generic_modify/main.frog",
-      "sha256": "e07b26a906796147f79171266541a691f22ff4e559d0fe76b8b210f7ba679647"
+      "sha256": "f11ea85503f3fbcf14a14bb5ea28aee275ddcbbf848c317399615d0de68d5c16"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.flat_late_input/main.frog",
-      "sha256": "71463c07c536e4d7e9895209ccc5140b931c4b5d05462fc87d5c14f3272911a3"
+      "sha256": "10eacea2c26eed0c3958e7393c71b85813f1c1583177f077f9598e66349a1a27"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.flat_passages/main.frog",
-      "sha256": "67f8c4f032ad6de2292ed3aa2ad3fa79fc0ed3ba5e06266983d5e32fda43867d"
+      "sha256": "b1260e1b0289b58c670463d9dd3d5485274a21a6dd4c96e582e93f7afb6acd79"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.flat_wait_abort/main.frog",
-      "sha256": "8890629ee21915c11c52d222d34869a6d4488bfc674f93d5fa66f0a128329b35"
+      "sha256": "74380d40e194a57bef606ef82f8b69eeeea82f7232fc27aca1a5d94d03e85711"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.stacked_late_cycle/main.frog",
-      "sha256": "dcbbe24c8cd7191eba96dffa97c541184b73da0f01a6c10ce28905c1c12e4f45"
+      "sha256": "2f8d0791b54fe6bac0527db109aef67f5d8c5b08b9896ab017498fd4daaec7f0"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.stacked_passages/main.frog",
-      "sha256": "2b2bf77e07a6d5fe6d665bf47528cbb71b73374d723346856a732f75b1543fe4"
+      "sha256": "57939e18d349c2585c702e1d01a0e124da05fd2cd4c308ec317279c018bbd71f"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.native.stacked_wait_abort/main.frog",
-      "sha256": "c702b4a53cba7815f7f15b1ba2ed814805dea06cec26d636f67c8d50cfb9d3c1"
+      "sha256": "200dcaa2d424e4e82f33696f62ebf553b09b30074244767055b37b53d31f08ea"
     },
     {
       "path": "assets/examples/Native/Structures/structure.sequence.three_frames/main.frog",
-      "sha256": "b9aa339a30dd45277f5971c0569656d0c08ada08a9c0e3c3f52947fe4c512307"
+      "sha256": "e4a62df1c65024636e4ff01d7003353cae8a80bb0b2fb3ce2917335fb96466f9"
     },
     {
       "path": "assets/examples/Native/Structures/structure.timed_loop.saved_schedule/main.frog",
-      "sha256": "45d1ed661860878c1d8e994fac10da5bccb6afee374fa81c777f688a0b3a41aa"
+      "sha256": "3ccb63adf2dc72ff95134182b9730eec415543310de7617f41c0bb77a501250c"
     },
     {
       "path": "assets/examples/Native/Structures/structure.while.continue_false_one_iteration/main.frog",
-      "sha256": "7719579213e3ba6585007bcb27b03ea0a8ee74b34384727b5fddabaf0bf6828e"
+      "sha256": "bb749dc2bc8315e21e94a2399700f28e189a40a0e77b87d208a5da3d4bf5e001"
     },
     {
       "path": "assets/examples/Native/Structures/structure.while.stop_true_one_iteration/main.frog",
-      "sha256": "b545af25994ae28c31e348db62227078bbb19f1440c9cf249a7b1b74589638ae"
+      "sha256": "66e6cc43875bd9d9180a70b742b06e4d9ecc0e9ae2ccf0286a84ccfda0dbf80c"
     },
     {
       "path": "assets/examples/Native/Structures/structure.while.three_iterations/main.frog",
-      "sha256": "ab23dff3f83cb9f910f76e68134908cf6011ce73970de84d370f5d8406de779b"
+      "sha256": "fb1586977e4ba8cac77b80d910e416f635e94b0f92abbd91da37f3fc1df30397"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.first_call.iterations/main.frog",
-      "sha256": "9789d0a1d8cef8c18fcdab630875be7e6837a66b106c8b09f1b317cee88bee38"
+      "sha256": "cca9ff0698b7d2a81c53ae0438d23f422ad3e40bb920b20a14ecbbb16b43b661"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.cancel_status_release/main.frog",
-      "sha256": "dab34cedbc0230d32cca864e3f637fb42f819701182c3ef99522821e124a70bc"
+      "sha256": "a257d8e565102de981247e424f67270e24bd03f73816305b34914cc8acfd1e95"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.history_a_b_a/main.frog",
-      "sha256": "0eaaf78922ffcf8b5de0484dff239d7023bc040b12d547851f3778b519e39c6c"
+      "sha256": "8ae30ac4386557c5e5c7d26cb1d5631d4c57a7e42f9e8b3ae17b3090c1644813"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.ignore_previous/main.frog",
-      "sha256": "b43044386fbf573adcb2d8bef92fc3deaa5f2d4cffec323fdced10fdc846b8ed"
+      "sha256": "f311a8ae18559697b182f3271ed74f5d72614f8562380793f620476e2e30ed47"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.multiple_available/main.frog",
-      "sha256": "ef777bb015f9253a5e9cb9c7d9cdf7186bf8b91f8d48c7ffb139e03b1593f6ac"
+      "sha256": "6c1e98eb9ea970a568291af7762ba746e083aa1d3b9984919895254a42a669a8"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.multiple_history_available/main.frog",
-      "sha256": "1f980c18a15874358b56ee5da703ffcdaef48aaafa8e8d3a5b36574d99a29b55"
+      "sha256": "9b057c90e4bc652bb5f8d7156d93e959d91a977f430fd6df8e77859ec76ef8b0"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.notifier.publish_receive/main.frog",
-      "sha256": "f77a05ac502f8e88004b473cd5501fb3756478f787fa5d047e0aac719052df49"
+      "sha256": "0f8f00fdf47b1cb2e9e3c6496314ee1a3b596dbf8613810c9c4ed37fc6180dff"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.occurrence.broadcast/main.frog",
-      "sha256": "010a1c5e8c7a7e20201d2264fbc83552d37a846f1ce61689e0f1e0e0006114a2"
+      "sha256": "2f0e10c8ec9d36585b855823629bd48738be98d5548fa8cc739a4549dc6dde4d"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.occurrence.distinct_nodes/main.frog",
-      "sha256": "eea836667cf595ab88eae91d9fd2bcc4a53060838db29aed8777bb14473852cd"
+      "sha256": "435f7f9b23589ae29f76e8558075f2fb996d8f8e53d1c1f3284173c225cdc320"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.occurrence.infinite_stop/main.frog",
-      "sha256": "39debcefbd4261dfdc43913db416d4a7bf2e647ba3a8df979efdd3603a4901cf"
+      "sha256": "b3d90df65b94f35a3351c725a65b696de78c6c8603cb2ce2ffb5debed14cddd3"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.occurrence.poll_no_signal/main.frog",
-      "sha256": "07c1d8cfc078c01022443e908d66d1c7c71034de8e2e566ef7ec99c8ee9f1675"
+      "sha256": "02cbc34096200ca6766b959b0703a50fd908f733a2b294188d11374a71685eec"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.occurrence.typed_null/main.frog",
-      "sha256": "73e322119f617ec67ef8eb473c9fda51836d1ba2a5bd9e3d4b3eb9bdaff26a3c"
+      "sha256": "577733c3dc0af0ad4c439ee634912eb3afa219264954a2f13b2626ac948e727d"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.queue.bounded_preview_lossy_flush/main.frog",
-      "sha256": "41dee9a5fd0038b06797ba3fd98a14879a4df6d537339482d5e19d568f424f04"
+      "sha256": "30d5869fe6b722777df5f8ce6817cb6860a48f23f74899871d05e3bfced25ebd"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.queue.publish_receive/main.frog",
-      "sha256": "54606cc8b8f28327fec8f496ea9941b3b8618210ed677e91feafb7ec41b11030"
+      "sha256": "24e03d1bc68fd4aa54b2772a9849071e46432187372e5b1af85d22c66420dbb8"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.defaults/main.frog",
-      "sha256": "4a8bc22eecd3c0cbab50f917fcdc2b6639ec192bb8b0feffe655146c692ff73f"
+      "sha256": "bad98b160a2bfa1fcb6e4fcc65be82f7aa9d4bb738aa3276ccd21c9fb3646f39"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.resize_negative/main.frog",
-      "sha256": "f6cde28562ec1c2858fc9ae2ce32f46d082baa4dab38722d54297fbe2e181b72"
+      "sha256": "810bf1d11888a6183e4230b74469263018aabda1966fa8228ef5d7b7e1819753"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.resize_positive/main.frog",
-      "sha256": "a67cd9ca50684c14a446eefb970cadfdcbb4fa61c0fb021c03b9cedee9a67e2c"
+      "sha256": "65b23f8cdde1cfed7b027a00da72dda2875d9daf448dc9a6c907230f1513cbda"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.three_participants/main.frog",
-      "sha256": "4216815fe02900763cb44f5cd3879292b944cc815f6eba43415db48d68067630"
+      "sha256": "932e9706010b4810f62e41806b6dee72d5efc69af2cb9cab426290f2234250ec"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.two_generations/main.frog",
-      "sha256": "0fece307cf8b5046da5a38710593faf4c4bf4b1c5917ccafd3119aae14b7d391"
+      "sha256": "09e535c3c4aefe5c2510835a57ad11bd5d74840e91d639724c5a06f56ecedb96"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.typed_null/main.frog",
-      "sha256": "8fa0ce0a1250060fe2565a7d7c47bf44887f9d1c96c9d88cbf753d21724098fb"
+      "sha256": "a96209f44147ca1eb712795121a45e27759362cbe9c446fa8695bfa2ede06a85"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.rendezvous.upstream_error/main.frog",
-      "sha256": "e83c0b21fdf10c9f3a2846270814d2adbab9baa6b1c1b15abeb958605fbc82e0"
+      "sha256": "a976bef2b1626346095ad1d5dc654cb87ba0936a637f0cdf6b3a8988f8da0052"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.semaphore.capacity_and_cleanup/main.frog",
-      "sha256": "ea5c70e72184e28dccbe9c74ef9241fa9a22505b3bc1355183d9cc165879cd8e"
+      "sha256": "6f1d3a5c30d9f0ce05d1334eb87bf163385e6b91fb98dff2eaf5ce0d84632978"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.semaphore.poll_saturated/main.frog",
-      "sha256": "9d6661ec85ec610a29ce08c6c682d16cffe6cb9e80e6defac5889299d44f67b2"
+      "sha256": "039ef91e6c7de494431cfb7c8f1404bb4972018e16a51a677893fc9e45b6a0d6"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.semaphore.typed_null/main.frog",
-      "sha256": "0f29390ea46434e08fb381ee036877366b8f646c70937fecf5a0f20cbca92914"
+      "sha256": "b27142008b470d932fadbca531beb667a427a6cbdf3d86c680bbfcd5de5e6bc1"
     },
     {
       "path": "assets/examples/Native/Synchronization/sync.semaphore.upstream_cleanup/main.frog",
-      "sha256": "26bbc6c8c8cbbeb489804b92d444fad10438f8ea205ce2775b6576931efed824"
+      "sha256": "54bb3d726ef0c09c9449b99118f72ccc7588cbeede3781d24742eecaef98316f"
     },
     {
       "path": "assets/examples/Native/Timestamp/timestamp.editor_managed.saved_value/main.frog",
-      "sha256": "937fdad0ad167d0be181622dcfa613c5fc62cde14b8fad784e440833587d342f"
+      "sha256": "d94b3ad40e6c9e8acb70db067d966dc24d6505fcb137951eb284d22ddb41131e"
     },
     {
       "path": "assets/examples/Native/array/array.bytes.to-string/main.frog",
-      "sha256": "279b773e50af1f6420b9c431eb52660428133761cdf6c3868f659d58774a74b6"
+      "sha256": "1e5b1d35e5e080e097744fb1521ca9c8bd777766cc431b1c4d34ded3755862e1"
     },
     {
       "path": "assets/examples/Native/array/array.bytes.utf8-nul/main.frog",
-      "sha256": "b0a4218c089980e55d01717db7f04413eb371b4ec03ed49b2552791f594c76cb"
+      "sha256": "4fe4c35587c74f67766fe320b41dbf0a5dd3874975c47c4c0ed2270cde0ac81c"
     },
     {
       "path": "assets/examples/Native/array/array.cluster-to-array.alias/main.frog",
-      "sha256": "37af15b67e6b79d49d97189e183b2e13ae6f22f1017e25c3d7b6e2fd045007e3"
+      "sha256": "a53e3fef70581605c227aabe1be25d1551f9e95f55d569d0052c4d37860ab1be"
     },
     {
       "path": "assets/examples/Native/array/array.reverse.exact-i64/main.frog",
-      "sha256": "ab433c0b7c90e4f80689152f94fd42f4979fc5e0fb73a177764653a7ffe199dd"
+      "sha256": "874981e3ad450b896bb8412532a6c8d3c4cd5fea32d1f1de8af9d2fefaea8f1f"
     },
     {
       "path": "assets/examples/Native/array/array.reverse.strings-nul/main.frog",
-      "sha256": "04cc77951acc44b2cc5f1ef72aa5709e7a6ab7e51d0e43972e298d36b290dddb"
+      "sha256": "c4d109373b6562156ecda68604121072674069a6c1416e61770096eedfa2f7fe"
     },
     {
       "path": "assets/examples/Native/array/array.rotate.full-cycle/main.frog",
-      "sha256": "b26c92b39d47f99c682afc14c11c6624a0ddfc988da115863e1702c2ff15167f"
+      "sha256": "bc8d1fd63543e5c69eccae52360b1ef1e698a4f77b64e9e7cee704b638253643"
     },
     {
       "path": "assets/examples/Native/array/array.rotate.left/main.frog",
-      "sha256": "792d5eedb1b90b459dbbcfeaa9dba02ac2ac90ce6d1bb5011f89e995f33dfef7"
+      "sha256": "13001cafe02dc4f82d91514b4b67db84d043732b8c33390e9248dc6218df1fe2"
     },
     {
       "path": "assets/examples/Native/array/array.rotate.right/main.frog",
-      "sha256": "9395c8e14c31974ba01a84fe9ebf2d0fa6bb5f3c97ceb7ee507a5aec5f919bc7"
+      "sha256": "6411ff76c0115810b156395911c132e4e1a9f35512f81dce6bfc723cc271192c"
     },
     {
       "path": "assets/examples/Native/array/array.size.rank2/main.frog",
-      "sha256": "d4878f4ab6bd95fcee36b379dcb25d19bdf1b508157047ad0057561ddecc10d9"
+      "sha256": "b686396a34eb3239e764488224c4aec7ca6cb2ddf55f164b8d40683ccd61f170"
     },
     {
       "path": "assets/examples/Native/array/array.split.middle/main.frog",
-      "sha256": "3c5c51b71aa03787f2b03f0caae47b88193daae5bc00e34e1aa848c46818e7a0"
+      "sha256": "253579e7737053e33385690ae6462699b80993a609d19ebd5c9a6b1a1c9026a2"
     },
     {
       "path": "assets/examples/Native/array/array.split.negative/main.frog",
-      "sha256": "504a17c38a5230aa494866fd5b3762d37d22ffd55955ff67b4f896b09823575f"
+      "sha256": "e01150fe2a7b308717d17e6e124e3f528a885b4f8994bea2a34d01135b1a194c"
     },
     {
       "path": "assets/examples/Native/array/array.split.past-end/main.frog",
-      "sha256": "9fba5a3f840e3f49d756fdb96e500584ee691649c9ea6a0c0631c49bb36314c6"
+      "sha256": "188edab648b5f3a87a32cb113a792aa2c9aa4c2f0dc5a567e14d7981fcc17097"
     },
     {
       "path": "assets/examples/Native/array/array.to-cluster.excess/main.frog",
-      "sha256": "351c18b8f8b1804befad542da287164d1c3fa539eb880aa9ed6ac5899efaf552"
+      "sha256": "f37b5cb50e7a0d3cd35302668c55af455f4b2de8a6ce97ca1d7bb89c7ce6ead2"
     },
     {
       "path": "assets/examples/Native/array/array.to-cluster.padding/main.frog",
-      "sha256": "9ed3cfdd7c36025d57e5d538bb56f432aa6f5832f650685c62369ed5f13cef70"
+      "sha256": "ef27bf6dc95a95db7b486db5c9bcf80ecefeec961fb8c3ccaefa067ae178ccde"
     },
     {
       "path": "assets/examples/Native/array/array.transpose.empty-shape/main.frog",
-      "sha256": "913d279e64f6322f59085e9209d25f193d4bd81ddcec1c70d5a49498aa97b774"
+      "sha256": "436c52dd6f3e34e767e6dbd092655d365ea6956089d9540b2d06f22b0cf9060e"
     },
     {
       "path": "assets/examples/Native/array/array.transpose.rectangular/main.frog",
-      "sha256": "35335872900ced498511f9aeb83fb0062790e4985cb3b2fb0f3a6a925ed7a637"
+      "sha256": "2940d0f8b0c7d01fb7c48de87cb432686df1798bccd8058be911cab7abdd0386"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.array-to-cluster.alias/main.frog",
-      "sha256": "0b25e599a4a51d29b68912d6f9e51dcb53e6b67cbfea3b6be2253c08bbbf39d1"
+      "sha256": "81d82c8380ebb3ef4a512b68d53ae3e33a39df0d1e3c4dd1f9a6274de954a6bb"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle-by-name.replace-nested/main.frog",
-      "sha256": "a511c4f92cea2a828104dc251c8793b1bca9ce0312d68636978d7a7db5532c80"
+      "sha256": "aafa4276cb104bb554f7f3546be1372d1bd0030358b3581a5a4c739a73407daa"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle.construct/main.frog",
-      "sha256": "26746113e701da9f60c511bcd8c374dc3fb8d4c27544be5d31ab4ee2e5405fed"
+      "sha256": "19a7e8ed8831fa67f2e6f30f97763cbc3060fe0762ece34863f992e267cd3d10"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle.preserve-all/main.frog",
-      "sha256": "646a136ad375b99afb68f03bea74f8ddcf02a3cd7e4abbf2555e96ce321b3f2a"
+      "sha256": "bc27617978885b54003eab9a67b7e188aa5414adf78bb3b3e3a1d3cd8cd78944"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle.replace-middle/main.frog",
-      "sha256": "27a4a9add797698bcf148c65603d815832cef7f6fed802d8b33bdebbde6dd9c0"
+      "sha256": "9458392b092379d3212431ea20195a2fe93d0d902f1df407bd7839c018573b25"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle.replace-one/main.frog",
-      "sha256": "9dcd020838b5a257dd1003c66fe25daa15f666a50c284389a47baf1820932048"
+      "sha256": "c422046ad8ee891321fcc92453b5031634c0ff67e5ab8ea7dcada7af07981e7c"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.bundle.replace-outer/main.frog",
-      "sha256": "89a3507250c67fb0d7abcc8771cc0ed86b9ff9345db32acef8743ae44e691c47"
+      "sha256": "a04a8bd35dea0e7ad3f6f1ab8ae53cfb8a321eb298049d7a64dcb554d26186b8"
+    },
+    {
+      "path": "assets/examples/Native/cluster/cluster.by-name.ni-layout-order/main.frog",
+      "sha256": "9096ffc716d2865b87d47097496ed3f1833e438bc23f1c8a0ffb3fb977297434"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.to-array.exact-i64/main.frog",
-      "sha256": "0fbdef51453340ebecee06ace9518fdc8993d69ceb5b4129b2080d45c39ea024"
+      "sha256": "d47e27bf6bfddbe54fe8cefe0a2a83c99b1f84560fc77053e754bb73648060d1"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.to-array.promotion/main.frog",
-      "sha256": "19fb95ae5578a01941c7a19b8fe12d82ae92e9a42e3ba518318baa2b5dcf5d28"
+      "sha256": "57acfbed711d5b9269dd14b2f2ad1492ed521fbdaa71ad2923a31c1658ac2cfc"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.unbundle-by-name.nested/main.frog",
-      "sha256": "00a2306f902f5380571e9f18573b0dd81f0b825a781b6dc49d6f2cd9b9fac1ff"
+      "sha256": "7dc28ade4242e4138228b485e7de2acddb47eaee07b499f7011b814e4e408736"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.unbundle.order/main.frog",
-      "sha256": "55f7263acf29946f5b5771402e46069b6bd447d7100e0fa6c8d3c7384d482b25"
+      "sha256": "ca0fc4c52856f5d729023f0c3017c18fb584c83c9cf9b71088d90e6659399eff"
     },
     {
       "path": "assets/examples/Native/cluster/cluster.unbundle.schema-arity/main.frog",
-      "sha256": "20eacf9ab3f7408c6548359f169bb093cb8ff4e774189d083f53f95522a99ca9"
+      "sha256": "f1d41cfa8947c22193f4581ac4b45dfe90f59213020f1a157c498b07658e7370"
     },
     {
       "path": "assets/examples/Native/collection/collection.empty.default-element/main.frog",
-      "sha256": "d138b5abce767fc39af9c6388b9047060f0cb680e61501e4cd4b5f18dc822d11"
+      "sha256": "7f45871f0b79435d1d9a219dbe447c4c24ae26a968b17fac79bf83e373b5e565"
     },
     {
       "path": "assets/examples/Native/collection/collection.empty.true/main.frog",
-      "sha256": "43541f9b59cc1248cb5962e4708c6de3daefcb3fbbb159708f741ab968daf16b"
+      "sha256": "ece0d5c9621943d8b9e758f0eca44acdad22eb835af031166dde8d02f93813d1"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.build.duplicate-key/main.frog",
-      "sha256": "f86af8030d4bd0313478c9bf849b320cf0e37a068416bb0e70eba87791047803"
+      "sha256": "84c2a1d87576181922ccaaf4df17d9953c5d0786912803e46ad3ce7ee586f3a6"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.extrema.empty/main.frog",
-      "sha256": "a31f4ea0e8134fa790d78e10fbad37e20ebcc1ab67e00244aa38151541fe77a9"
+      "sha256": "8af9e351176fa90dd17a7f9afd62bd6d29f7f29c3d303128fa69be82e027fd98"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.extrema.keys/main.frog",
-      "sha256": "13aff7d3de8d77ff9e5e83b2fe19fc2bcae9cf63e8b57d9560e4708e897d3652"
+      "sha256": "6ae6412400474568f1944948d984cef84f994d511673b331f9843db8fa72e6f0"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.insert.new/main.frog",
-      "sha256": "7247642107b0ae01cea1712455b2fc9d005f6e5992b659e81ea36ad08a3c6145"
+      "sha256": "fd50c8a1a96021b719e3bd33f05266058548a3e5b146df75bc1e46b1567f16b5"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.insert.replace/main.frog",
-      "sha256": "796245a6728bdd927579224fd52cf8edd6325433f9e1c2f8f722daf5d95ae5ff"
+      "sha256": "6c27ba8f17d439bd40acc74eef3949173951c6af3007cfcad473075b954f4e3a"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.insert.unchanged/main.frog",
-      "sha256": "1dc80e39d3ff00ae5bf89bfe993cd4250eac176314987da1c2ccb96e08eda182"
+      "sha256": "c36b70ff4fb64e79f314699661a158d45867c285302790378ee2c4ec0cf89fb7"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.look.found/main.frog",
-      "sha256": "0d5848e2714ae97f7e704b2b38133a0a62d34e4a8a400356e9bfbbe9eebec9c0"
+      "sha256": "cd9c86898f61a6fecef0d819265808783df4425ff2ef08bf65308224b6c26c8e"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.look.missing-default/main.frog",
-      "sha256": "a0176fd2a6370324269b0b6bf03fb3f3979a3e752d49dbdf2cfb802000d0e827"
+      "sha256": "606e12f6e0d2d300a27474f1c95dd4c2578f65745192d2e64366007e8d5e2fc7"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.look.missing-intrinsic/main.frog",
-      "sha256": "b2134b00e5e20b5a8d54afff920f53e203038504e5fc929c51006c1a63acdf04"
+      "sha256": "d4efa69c031ceba2ceea32413068e6f67914ad775f0f056e93093eccedd7d381"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.remove.found/main.frog",
-      "sha256": "11c063cad2272ded99a6f145e67c3deec28405132cab465fdfac5dfe193e0abb"
+      "sha256": "39111b6a40dbe1a20cc016e3910d2130c257ad8bda8811b7af91554db8b95b46"
     },
     {
       "path": "assets/examples/Native/collection/collection.map.remove.missing/main.frog",
-      "sha256": "3076633b79ddc090117c909561271ace0436e6a8c672d651859156dd2e2d82ef"
+      "sha256": "2eee27b087ab2bd4129c6589f5b0b4da44bbbc6be0c6be4d5c1dd127647cdf8c"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.algebra.difference/main.frog",
-      "sha256": "3bd77e1a647adf22c725ecec14bafb1f69139212ff4ff35de36463dc02d81ab5"
+      "sha256": "3fefe97811aaafdfcee7eba850e152575636ba793d519ea56f5530067a03a5f5"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.algebra.intersection/main.frog",
-      "sha256": "64bd707fa6e3a76f1809a71f21138cdea6769e5f1558691a1cedc213c231ce9e"
+      "sha256": "59fc68e1e7203bca232228c715924969d5ab9069ce2b8bda693f1401e8d6a90f"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.algebra.symmetric-difference/main.frog",
-      "sha256": "f9c73160fea3335c7dda8cceb631246cd9fceb94afb16243abc864d38015da9a"
+      "sha256": "97ca65d3ca02ce188617e111a6e51679e249c550ea0357efabd1d403afe03767"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.algebra.union/main.frog",
-      "sha256": "f6fe7f0057740f1930499c5c22b146ec273e099c758fe9dd0c2cdcffd63a3872"
+      "sha256": "a98e755c54d39aed25b474bbc1c79a948ad2525ff43f8642a82304c327252c8e"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.build.deduplicate/main.frog",
-      "sha256": "84971b366d91690f09267491a4beec8285c248d4cf8bb5a7bbf849cb4cb94d3a"
+      "sha256": "1b08717d8193531654595817cf4ad1c7231712b778af254008c99d4a515a2d5e"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.cartesian.independent-types/main.frog",
-      "sha256": "5e53fa5b4dba5c2420a21612440aa1e09e53f62561212d77680a11ac90b2c8f7"
+      "sha256": "0a5c2e328054633fc1951e0cfe1ed125e1ca3cbc2819ee6ba8023303e33fc0f3"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.contains.found/main.frog",
-      "sha256": "69c30b451be0f0da8f9459c408b5b68056287959904f772dfd39b3b7f181c9ac"
+      "sha256": "5994e8c2b446c5131ee46a828f9b00e1691e94794ef30df38ec5e8750cd905d3"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.contains.missing/main.frog",
-      "sha256": "5f4ca539bcc0393f693f0c68ac050664a8eb9ceb4baaded61abe243403158577"
+      "sha256": "caab0457f76747e083eadce30c9c8d8a0bfa15d5b86a79bcde4ef9804f4675eb"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.extrema.empty/main.frog",
-      "sha256": "a3d6dbfc7e9db29da9335e92857e92111104a64edb4cb2e6faac39f0fee82992"
+      "sha256": "2407233925d7f0371451268b36e080fc0ee0175fb1e6682b2ae00dc379586ae6"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.extrema.values/main.frog",
-      "sha256": "e8c76f30108abf0b45f35b5d6cbbbf5a42813324316ee45e77df62d8a28ed2e1"
+      "sha256": "fa04c94a6507afc434c922cd4d8fceda277873ee5fd1c7bf68c68a189b5342ee"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.insert.existing/main.frog",
-      "sha256": "5114a8e83dcd9f1d347e669213e79d98f322be17edf093f88638e0eb566e0835"
+      "sha256": "05747fbb5d26dfba44561453220cd854d38e5890a450fa29e66fda1741a096b1"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.insert.new/main.frog",
-      "sha256": "ffb7a9604fe7a146fe23a6123fcb2951c70ed288ee07626cdeb0a8b4c189d955"
+      "sha256": "322410b42bb5d1f8e472c7ca80e248f6ea722ebafef7a154feec23543aaa7d54"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.remove.found/main.frog",
-      "sha256": "9345377b6d41fad8fdd38554c48a0bd174f74a2651bc4d26f09d2b6e02062146"
+      "sha256": "ceeca3b9062328f1a61de8f3c476db43ac913c17f915ad31404eece0d4b520c6"
     },
     {
       "path": "assets/examples/Native/collection/collection.set.remove.missing/main.frog",
-      "sha256": "459349eb841807ef937c240dcb1affbb0d0296a5ed37e580cc0be98a8a5b2ef8"
+      "sha256": "b5e7183ae5ea68195f073974666617d1e5592707c8061624fed2230807be3180"
     },
     {
       "path": "assets/examples/Native/collection/collection.size.map/main.frog",
-      "sha256": "62aae0e36e31c303226af68680881936eb9b8efa09ce47b9ece8bf2fa58a48ba"
+      "sha256": "85fdf0f50d7e13b3720a3e1de8b68632be9b08ff8fa5063455fb0152772d3b5f"
     },
     {
       "path": "assets/examples/Native/collection/collection.size.set/main.frog",
-      "sha256": "7fd744f23951bba4b2dddc5b94ef985305ebcb0be6fd2eb3a90476f593fb3a7f"
+      "sha256": "f3480cd2d84fbee348ec5c9c3cf3e97e1a5e4d08a7d2563121113852f8a19217"
     },
     {
       "path": "assets/examples/Native/lib/CMakeLists.txt",
@@ -2340,7 +2344,7 @@
     },
     {
       "path": "assets/examples/Native/lib/frog-example-native-library.dll",
-      "sha256": "fea4fcc47e27ae88e523c5bd0d00cf6e565101dfc72b0c89cfe03d8c0d91a714"
+      "sha256": "701b700a956c82bf317a42fca49587e322960597a8d06ff389c52386e99bfd18"
     },
     {
       "path": "assets/examples/Native/lib/resources_structures.c",
@@ -2351,184 +2355,184 @@
       "sha256": "123b132bebf1143b8cb83855d817c238a4cc92996b9b45955cef2ac201078fe1"
     },
     {
-      "path": "assets/examples/Native/path/path.application-directory.unavailable-in-studio/main.frog",
-      "sha256": "d4db02d189dbb4e5e361eccea92eb6983f0be5136378a72824875289441ddb0b"
+      "path": "assets/examples/Native/path/path.application_directory.context/main.frog",
+      "sha256": "152170acdc424a662f8d9d67937688b4b08a042a81921782f02e46a7ae0479b0"
     },
     {
       "path": "assets/examples/Native/path/path.current_frog_path.context/main.frog",
-      "sha256": "a63e7459cfef1fd93c019525d8a44a927895bbfeecbf488a006aee3b18f93174"
+      "sha256": "0d2547d89a560b3d19e999431a49e6e95be0aa1a7ed53b136d108cddf06a8220"
     },
     {
       "path": "assets/examples/Native/path/path.default_directory.context/main.frog",
-      "sha256": "dd8ab816553da34c75874b19706034a4a19519129df0bdb7bbef5bd8d8f20910"
+      "sha256": "22a09226df0f86270a9ccaf50536a480d7d6e1aa4fcade7d0a9d9ab2578e7cc2"
     },
     {
       "path": "assets/examples/Native/path/path.temporary_directory.context/main.frog",
-      "sha256": "57bc8f40fa0c348dc1395d2cd20ca96c77fb96118997f3a15d598fe7c1fb4b58"
+      "sha256": "adc4e608365f0b1ed2aff1696d52139e433a25e6eb74d0522010406956cd4068"
     },
     {
       "path": "assets/examples/Native/string/string.concatenate.array1d/main.frog",
-      "sha256": "7596b1afbc2416bd60e8c8a89f7ad54f4bc0da61fc44e7d6d539b757697ec6c8"
+      "sha256": "a5d8cd1d243e9a8c0e2026b1983cd8cd3ef64b4ba946c2922c6aa1bb438159a8"
     },
     {
       "path": "assets/examples/Native/string/string.concatenate.three/main.frog",
-      "sha256": "497d23c1e8543d8869ccc12a3eff22bd01861b4956910b83a28b3aae409c9185"
+      "sha256": "a491706b2be6c032a10485426926b0fdfe59d6545d2223781cc31b8f773808b7"
     },
     {
       "path": "assets/examples/Native/string/string.length.ascii/main.frog",
-      "sha256": "6d8c960c146e435c9fbebd26928daa7155a3d1aca22cd84a8be8f252dcf17641"
+      "sha256": "0d453be211e3a1b2cacc3a572338f6ae3fc334811258194047eb1f08461592cf"
     },
     {
       "path": "assets/examples/Native/string/string.length.cluster-tree/main.frog",
-      "sha256": "f7c93d839fd9f331e8d8ceac2c62b68b4565b1a635e52106977ae78660602899"
+      "sha256": "34f2626d8516c363339ac6bc21667f5dd21df6eedee60db6993f9a1e6f44d700"
     },
     {
       "path": "assets/examples/Native/string/string.length.empty/main.frog",
-      "sha256": "e9c2ac18cef3fe81a27798f72125bbe48cb65097503a5e37d3488e50c3d1ec7b"
+      "sha256": "a2eb4e8513bc4a175e5688f9ea6b49bf8743f6583871032e3e1fa1d6b7db1acf"
     },
     {
       "path": "assets/examples/Native/string/string.length.nul/main.frog",
-      "sha256": "b279d3093725a8bdf82dc52438a3236c18c036a7bdbd9850d435094807837ff4"
+      "sha256": "e64f0e76f41eca53cf1770e068ccd10d9d06e194c99b0c9ad6ce7c83271f3102"
     },
     {
       "path": "assets/examples/Native/string/string.length.utf8/main.frog",
-      "sha256": "47af4809ea5892b358c47229d0e196dd07c3cf087f2ad4259a9cf8ebf3f9c1ec"
+      "sha256": "40537fe58ca51416308c0ff410b253ad3e30ce626a69f0de47f0fbc8898c09e7"
     },
     {
       "path": "assets/examples/Native/string/string.replace-substring.default-length/main.frog",
-      "sha256": "f53f518f32fb4e5f92037e1b231d1847febbbd9937bccfe5ab9df8b34e9c16dc"
+      "sha256": "80683815b4cc3b0a39055cec90d5c12d16350d7272fac5445499861c40355d2b"
     },
     {
       "path": "assets/examples/Native/string/string.replace-substring.delete/main.frog",
-      "sha256": "94ccd2cee2541f2077aa0a52cb039178f30230ad8f1e3d81cb5b1c0b8ca248d3"
+      "sha256": "31e5ed6cef46081f0974036f7b3c4324a3c354c7b2ace9ac9289682aea578679"
     },
     {
       "path": "assets/examples/Native/string/string.replace-substring.insert/main.frog",
-      "sha256": "8eee3ff7b1fd02e35479973a77652d9fc836aeddac8d0ffaf642f2dee84aa3b4"
+      "sha256": "e57c181ccebd92aa467a3f4f2c2505cb6860d6291568acbf79cdfaede3604d2d"
     },
     {
       "path": "assets/examples/Native/string/string.reverse.ascii/main.frog",
-      "sha256": "8c794162a093654b44b49d9642f3a465c128840d22028ca3cbc9609c3cfa4743"
+      "sha256": "956afc3694e83b558f85705bc2b5892b09430ea9ab3e1cea963f56915c34d1b0"
     },
     {
       "path": "assets/examples/Native/string/string.reverse.binary-intermediate/main.frog",
-      "sha256": "cf82be770cf9992ee12d2718c74df39e0a56abd4982b8924438efaaaf900c02b"
+      "sha256": "b0a4d89f4d73da542c0316ace71909efe07cc9644a217e8e3f602abc2bad7ef7"
     },
     {
       "path": "assets/examples/Native/string/string.rotate.ascii/main.frog",
-      "sha256": "6c62bfaa36abbe8cceb266dbfac8904ef8c01e88bea144824dd9fac040a27745"
+      "sha256": "b7446b817257b2fc424fad7c3ea9b769b0c4d42380375058c068cbe3d4134e76"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.all/main.frog",
-      "sha256": "c56060ccd4b1c31eca27752fe3267ec8cb0599d4eb2dc26701f0ee75cd6bb644"
+      "sha256": "abd632bc059abbfda16f6195b22dbcd4367df603302b68b1b6aa1510ae1dfad6"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.casefold-unavailable/main.frog",
-      "sha256": "956a2b4835b706fd7c5de9b1f943d6799eeac67b1e49035f1d343652d5484928"
+      "sha256": "136f825225b219958fee1bcd80a39e4acd3a718c43e19743e1e959a2e1efb672"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.delete-default/main.frog",
-      "sha256": "068a661236d81b25d9e137e7eb15b620b1bded90ec951ceb18098954b0b4ee63"
+      "sha256": "933b88f84e76d53d7d0fcff9b723c784ac7a3355d6a2d00e85dfcbe6e0d6636e"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.empty-search.profile-error/main.frog",
-      "sha256": "495c7d67da4937e15caf6160bf06169953877ba02afd8c4703c292bc160b7b13"
+      "sha256": "ee9986db44c12f6e13fe8782d0e3b81b0d5e950928af371c70a88c937c4b6b59"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.first/main.frog",
-      "sha256": "2426d3a4193dac1ea81a284943cb3e481fa977647d42867113ff6cbe1185f7a2"
+      "sha256": "4c0a6645c0648a1a86a977d381c274fe10a2f88040eb0619cd3f08ab86d6d98e"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.incoming-error/main.frog",
-      "sha256": "365afb5f7f7a41888b03dd55b338e37af115f5d8e941a8d4bb9320a185659749"
+      "sha256": "7646bc3de380535207308aa2a86a878d24bd32b4e17256ac0422265957cb22c3"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.not-found/main.frog",
-      "sha256": "c95fe0bcf5bd57dc9d1a7c86c810190de0bfe4b8d4d9053b14173fd29ca98b6d"
+      "sha256": "41624ea72b29c9919433e14ddb868a02baec2a0f4b504c1fce16dd1bc55fd689"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.offset-outside.profile-error/main.frog",
-      "sha256": "31166171dec6373f9a1793703fe7a81a7f6376b168ae5c0449c6468e901e182a"
+      "sha256": "ab4d395a742258e097ce4587e55309a4c3893caf6cdc155e3e2669e2cf86e488"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.offset/main.frog",
-      "sha256": "93f9fced5bc8900f36101d356de92e98996b80b9d9fe61e590c88db9717f8c92"
+      "sha256": "cde4939a6b737bc8de358120289067eea665375941f51e5b3ded10e2a6d3f95b"
     },
     {
       "path": "assets/examples/Native/string/string.search-replace.utf8-boundary.profile-error/main.frog",
-      "sha256": "777b0ea43e651895feb9f70aa3a6359988cb73dd5dd4d3bb9a0857b902af1301"
+      "sha256": "4d4f48c675d820e98b0b48ab3e1700ddedf5725e82f144fbed0a3b46be617527"
     },
     {
       "path": "assets/examples/Native/string/string.search-split.found/main.frog",
-      "sha256": "6f20f518730b24c1598e2a87fde9863a5d9ee5def7da7cfc5c7f8a782127bfab"
+      "sha256": "584cd33a376435bb3004b99533321103a4ab1aeaccd0d64d97b4f99a455fc222"
     },
     {
       "path": "assets/examples/Native/string/string.search-split.missing/main.frog",
-      "sha256": "9fcce4aeaebaa95b39c1cc3b2e548d57d834633fa73e2efcb4ceb3c6bfcacf84"
+      "sha256": "17b0f5eb6d16ce1d8930d4434a2c43b76530bac7f10af7a89989f8a11bb558e4"
     },
     {
       "path": "assets/examples/Native/string/string.search-split.offset-only/main.frog",
-      "sha256": "a1b3cde058b091dc60ab2e30f9e6f7eeace9531155b7d56adfdad48c7c17e80b"
+      "sha256": "8235fcee2ace700350ce1ee260ea379b251a2e74efae632e7464286218a9b833"
     },
     {
       "path": "assets/examples/Native/string/string.subset.basic/main.frog",
-      "sha256": "f84575035752de84624447dedc12fecc8228b167931e4b38bb37b559de5c8cd8"
+      "sha256": "3e5636d92a231e8b5bc8c327018a4daedfb10d805b22494ec159c905e0c43515"
     },
     {
       "path": "assets/examples/Native/string/string.subset.defaults/main.frog",
-      "sha256": "c3be83abc014219a75320f8110c41a6ff52f35c9efeb05ffae4b20b94c5096d9"
+      "sha256": "dec8faa8ba7f571de762d5a6689dea3416993abdcd55ca1d5982fc5244777b64"
     },
     {
       "path": "assets/examples/Native/string/string.subset.excessive-length/main.frog",
-      "sha256": "bd0215ade01e5620e9c841fdbdf0b9338a714d0c7704a7f172dd6e31c9dbf380"
+      "sha256": "ad73bc7c2a89b766b389440f358a11dc9e0c7eeb8ea7003f5a2f0f84ba687f4e"
     },
     {
       "path": "assets/examples/Native/string/string.subset.negative-length/main.frog",
-      "sha256": "3d349036372b90960df97e0ae62b8b9abfe93f5a5c659ecf07ce80bb013e0be3"
+      "sha256": "82dac92edeecb6c66b3a18996016edf8cb36425995e7f4762568b2333db5d467"
     },
     {
       "path": "assets/examples/Native/string/string.subset.negative-offset/main.frog",
-      "sha256": "e3802982b072ee233828927012a5388a634683744b2eb290a26a152cd21ed294"
+      "sha256": "5acd933b6fd8da473c5e14ed1db07a051f81701eb0f941103bdbd4f8b93d302a"
     },
     {
       "path": "assets/examples/Native/string/string.subset.outside/main.frog",
-      "sha256": "d596d35ebc18190f99fda4711eaf91c67b393bbfec039ec80a9811865a8c3f80"
+      "sha256": "fd741503bab306840dca6071e246b7caa8d38ad3a3f4f36864fdf1f7442e2eaf"
     },
     {
       "path": "assets/examples/Native/string/string.subset.zero-length/main.frog",
-      "sha256": "9e0af1efe5b036b3d91f92c0ab941c00a96cf5a1d92421b74722336f92665ff7"
+      "sha256": "a8d3f787bda6923ea3c12f420748741186b9d3086099a4cac3d316a25de54467"
     },
     {
       "path": "assets/examples/Native/string/string.to-upper.exact-i64-array/main.frog",
-      "sha256": "8cc8de1aa10c8272b2da3be802549efb9b11e7696f8b07dda1c55b2d3ba8bf25"
+      "sha256": "84df69f4c96a9275f6b3abd2bc8694998ba31573d720fffb66f2db1b5047148c"
     },
     {
       "path": "assets/examples/Native/string/string.to_lower.ascii/main.frog",
-      "sha256": "0bf375ab8def2a0e1c95fed455236b50bd10b813063007ccb4b0b457168ab23d"
+      "sha256": "b45f10ab40afb96f31ae88cab0fc767063cf06fb2bea85cb31cce3be976eb85d"
     },
     {
       "path": "assets/examples/Native/string/string.to_upper.ascii/main.frog",
-      "sha256": "6be107129ed5e3517d89b11db9eaf81176906f273ef5fe255ade5dc20d0acce2"
+      "sha256": "170879e0b918cc4b51e4fe781c4d446f5b559e849feba1604e8e5c4f79765f18"
     },
     {
       "path": "assets/examples/Native/variant/variant.cluster-roundtrip/main.frog",
-      "sha256": "d9b2480dfb088d483fe044f6b729178b859874064dc41be1f944b4b7a3a1f7d8"
+      "sha256": "b6168afc7854803b33ee977dccaa8b938f56834cfdebe8ee199f902648d2db68"
     },
     {
       "path": "assets/examples/Native/variant/variant.exact-i64-roundtrip/main.frog",
-      "sha256": "5128121029c39616f3b3dfdf8dca15f85b9a3b4f1752c4dc9cf81f5d43b2a7ef"
+      "sha256": "de228c5ba8b361b3b12be866a3bb58890a9200183a37d91dbd11c6b7fe54f604"
     },
     {
       "path": "assets/examples/Native/variant/variant.rank2-roundtrip/main.frog",
-      "sha256": "fa35702d5e1f54b6b938e6cc55e3561d2bfe403d3fb7f5bbc4e12f52c51edafe"
+      "sha256": "76718ea0e68b8cfbea6b1c491a62b6edb8b9ed886c0791bdb2c94ccff43cf3ae"
     },
     {
       "path": "assets/examples/Native/variant/variant.type-mismatch.error/main.frog",
-      "sha256": "906b271e619cced6259f3f5fc18a4ab7451eae0464b4fdb18a303ab4e691a824"
+      "sha256": "4846ccaa338c8c5236d760bc3e55e630951dc1578b078c165e17e2705d193466"
     },
     {
       "path": "assets/examples/index.v1.json",
-      "sha256": "4d70d9b7bc7b8da45d42d191542c2ad0cbda7528323510fbef44608754ef3e1e"
+      "sha256": "508c91dece45111e31fe8533e210e3c0f5a135e66f95b3af24a1a19f521ccd95"
     },
     {
       "path": "docs/examples/application_control.read_value.md",
@@ -2761,6 +2765,10 @@
     {
       "path": "docs/examples/cluster.bundle.replace-outer.md",
       "sha256": "4b908270cc0bd40629ef878d8efea0e1bce511c5527c6f15ae4a36cbfabbc674"
+    },
+    {
+      "path": "docs/examples/cluster.by-name.ni-layout-order.md",
+      "sha256": "a1630028066c7f9a062219e22cdc85fc00aae3cc609ce4add0f954fb6f5eb498"
     },
     {
       "path": "docs/examples/cluster.to-array.exact-i64.md",
@@ -3100,7 +3108,7 @@
     },
     {
       "path": "docs/examples/index.md",
-      "sha256": "affb2ef3a9b93539a9d70d3cefce95af3a681f9989964cda21633d16ec1b9964"
+      "sha256": "5c506c8348cde0260fe7bb2f8bc74a940057202a62b88f32873a248b1c8d5d7a"
     },
     {
       "path": "docs/examples/math.beta.complete.reference_1.md",
@@ -3992,7 +4000,7 @@
     },
     {
       "path": "docs/examples/numeric.add.incompatible_shapes.md",
-      "sha256": "6f0f3bad34a39cf1f0be99d391c90354a61b4265cdd0a70ac43c01e1bb62285d"
+      "sha256": "35b7d24362f61d38e562e6f78099a088f638ba8d13b25c8c336e5ca6a1dff595"
     },
     {
       "path": "docs/examples/numeric.add.left_fold_f32.md",
@@ -4647,8 +4655,8 @@
       "sha256": "afdbea89286fb16e7ba820ff6435fa293d33bd56875289653c7d5e98dd9fdc38"
     },
     {
-      "path": "docs/examples/path.application-directory.unavailable-in-studio.md",
-      "sha256": "ace0aa02b5382e7d2dc1233eaeb0f77f4bdcd90fa6f3a1a9a838a08f73c50add"
+      "path": "docs/examples/path.application_directory.context.md",
+      "sha256": "5b5e1ced7f7cf610b8d7e2f0ce86e802e2f8db4b695cc712723ea7ee68870929"
     },
     {
       "path": "docs/examples/path.current_frog_path.context.md",
@@ -4884,7 +4892,7 @@
     },
     {
       "path": "docs/examples/structure.sequence.native.stacked_late_cycle.md",
-      "sha256": "4c8b2a98890153ce584f9235ba43b98ecf85f1e541c20185f8806ebffc29bacb"
+      "sha256": "2c70c0d8c56c95047fae8fc6040544543b3851a352b5994feeb1df5651441b22"
     },
     {
       "path": "docs/examples/structure.sequence.native.stacked_passages.md",
@@ -5036,7 +5044,7 @@
     },
     {
       "path": "docs/reference/studio-draft-examples.md",
-      "sha256": "0ec3f238c8359e451eec26ddf92d6f3332f58a8f86e2b76d405ffcab4123174a"
+      "sha256": "a41f7fb3d09f312a09bee60f81cd2d3f35186a5fcb9ece9e1881b000afbb1495"
     }
   ]
 }

@@ -7,6 +7,15 @@
 
 Right-handed cross product of exactly three components, without normalization.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Produit vectoriel**
+
+Produit vectoriel suivant la règle de la main droite, sur exactement trois composantes, sans normalisation.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

@@ -7,7 +7,7 @@ Stacked Sequence : diagnostiquer une dépendance circulaire
 
 ## What this example demonstrates
 
-Ce montage reprend le trajet extérieur de l'exemple Flat. Stacked doit disposer de toutes ses entrées avant la première frame et ne publie qu'à sa sortie finale : le trajet constitue donc un vrai cycle. Le Readiness doit le refuser dès la validation avec diagram.combinational_cycle, avant le FIR et sans réécrire le document. Un test séparé contrôle également la garde indépendante du FIR sur le même graphe canonique.
+Ce montage reprend le trajet extérieur de l'exemple Flat. Stacked doit disposer de toutes ses entrées avant la première frame et ne publie qu'à sa sortie finale : le trajet constitue donc un vrai cycle. Le Frontend commun doit le refuser lors de la dérivation du FIR avec IR_SEQUENCE_DEPENDENCY_CYCLE, sans produire de FIR exécutable ni réécrire le document. Un test séparé contrôle également la garde indépendante du FIR sur le même graphe canonique.
 
 ## Open the actual document
 
@@ -25,7 +25,7 @@ Open the file in a Studio version admitting its format and its exact configured 
 
 ## Expected result
 
-This is an intentional negative case. It must report exactly `diagram.combinational_cycle`; an unrelated refusal does not satisfy the expectation.
+This is an intentional negative case. It must report exactly `IR_SEQUENCE_DEPENDENCY_CYCLE`; an unrelated refusal does not satisfy the expectation.
 
 These are expected values, not a report of executed tests. Integers retain their exact JSON lexemes; Array shapes and nominal types remain part of the example contract.
 

@@ -7,6 +7,15 @@
 
 Evaluate Polynomial with Matrix. Matrix Horner evaluation P(A), square A, constant coefficient times identity; reuses the existing matrix multiplication kernel. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Évaluation polynomiale matricielle**
+
+Évalue P(A) par Horner matriciel, avec A carrée et le coefficient constant multiplié par l’identité ; le noyau existant de multiplication matricielle est réutilisé. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

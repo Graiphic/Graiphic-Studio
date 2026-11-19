@@ -38,6 +38,8 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 No input -&gt; millisecond timer integer. Studio: Studio millisecond timer is U32; other NI timer units are separate instances.
 
+Returns the monotonic millisecond counter as U32, modulo 2^32. Its epoch is undefined and unrelated to UTC.
+
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
 
@@ -46,8 +48,6 @@ Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne c
 Aucune entrée -&gt; compteur de millisecondes entier. Studio: Le compteur en millisecondes de Studio est de type U32 ; les autres unités de temporisation de NI sont des instances distinctes.
 
 </details>
-
-Historical Studio binding profile; no additional public FROG semantics are claimed.
 
 - Type resolution: `fixed`; result expression: `u32`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
@@ -63,11 +63,11 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.structures.tick_count.v1`.
 
-**Authoring/target contract limits:**
+Required provider: `frog.studio.timestamp.native@1`.
 
-- The complete public execution semantics and target support for this legacy Studio profile have not been established.
+Compiled instance-owned Timing service; steady monotonic clock from the C++ standard library and OS. Same native task scheduler in Run and static AOT host. Target admission and current execution/package evidence are separate.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

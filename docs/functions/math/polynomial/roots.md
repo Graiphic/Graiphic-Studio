@@ -7,6 +7,15 @@
 
 Polynomial Roots. All complex roots including multiplicities. Removes only exactly zero highest-power coefficients. Refinement acts on the square-free factors; zero polynomial is indeterminate. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Racines d’un polynôme**
+
+Calcule toutes les racines complexes, avec leurs multiplicités. Seuls les coefficients exactement nuls des plus hautes puissances sont retirés. Le raffinement agit sur les facteurs sans carré ; le polynôme nul est indéterminé. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

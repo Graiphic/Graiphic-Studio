@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Hypothesis Test palette.
+Browse statistical hypothesis tests, rank transformations and contingency-table analysis.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Tests d’hypothèse**
+
+Parcourir les tests d’hypothèse statistique, les transformations de rangs et l’analyse de tableaux de contingence.
+
+</details>
 
 ## Browse this palette
 

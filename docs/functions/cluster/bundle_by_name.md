@@ -110,6 +110,7 @@ These declarations belong to the binding snapshot. Compare them with the separat
 These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
 
 - [Replace one nested Cluster field](../../examples/cluster.bundle-by-name.replace-nested.md) — Replacing Config.Offset preserves the nested Name and outer Enabled fields. The selection uses persistent field identities, independently from their displayed names. (`execution`, `studio-draft`).
+- [Named rows keep selected field order](../../examples/cluster.by-name.ni-layout-order.md) — The selected row order is second, text, first, deliberately different from the Cluster declaration. Replacing only second must preserve first and text; every output is verified before and after replacement. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -7,6 +7,15 @@
 
 Polynomial Real Zeros Counter. Real roots in the open interval (start,end), including multiplicities, counted by repeated square-free Sturm chains; endpoints are excluded. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Nombre de racines réelles**
+
+Compte les racines réelles dans l’intervalle ouvert (start,end), avec leurs multiplicités, par chaînes de Sturm répétées sur les facteurs sans carré ; les bornes sont exclues. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

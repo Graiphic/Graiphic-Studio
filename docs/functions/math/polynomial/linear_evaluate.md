@@ -7,6 +7,15 @@
 
 Linear Evaluation. Y=a*X+b, preserving actual rank 1 or 2. Real and complex numeric arrays are admitted; this does not perform regression. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Évaluation linéaire**
+
+Calcule Y=a*X+b en conservant le rang réel 1 ou 2. Les tableaux numériques réels et complexes sont admis ; cette opération n’effectue pas de régression. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

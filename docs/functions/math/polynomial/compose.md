@@ -7,6 +7,15 @@
 
 Polynomials Composition. Computes P(Q(x)), not Q(P(x)), using polynomial Horner evaluation. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Composition de polynômes**
+
+Calcule P(Q(x)), et non Q(P(x)), par évaluation polynomiale de Horner. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

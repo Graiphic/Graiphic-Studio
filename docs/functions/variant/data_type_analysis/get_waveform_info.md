@@ -5,62 +5,78 @@
 
 [Variant functions](../index.md) · [All functions](../../index.md)
 
-Data Type Analysis palette entry. Artwork is available; ports and execution are not defined yet.
+Typed Data Type Analysis connector. Inputs: variant: variant; error in: cluster&lt;status:bool,code:i32,source:string&gt;. Outputs: Y array type: variant; error out: cluster&lt;status:bool,code:i32,source:string&gt;. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Obtenir des infos sur une waveform**
 
-Entree de la palette d'analyse de type de donnees. Visuel disponible ; ports et execution pas encore definis. [Types] Entrées : Variant, erreur. Sorties : type du tableau Y:Variant ; erreur. Métadonnées de types, pas conversion de valeur vers le type inspecté. Studio : contrat de bornes appelables pas encore implémenté.
+Connecteur typé d’analyse de données. Entrées : variant : variant ; error in : cluster&lt;status:bool,code:i32,source:string&gt;. Sorties : Y array type : variant ; error out : cluster&lt;status:bool,code:i32,source:string&gt;. Ces métadonnées décrivent le type contenu, sans convertir sa valeur. L’exécution native exige la capacité cible déclarée Variant Analysis v2 et reste limitée à son profil de types admis.
 
 </details>
 
 ## Studio authoring profile
 
-Contract status: **blocked**. The connector below describes Studio authoring; execution availability is stated separately.
+Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
-Supplied Data Type Analysis palette artwork for Get Waveform Information. Ports and execution are not defined by this visual integration.
-
-Inputs: Variant, error. Outputs: Y array type:Variant; error. These describe contained types, not a value converted into the inspected type. Studio: callable connector contract not yet implemented.
+Typed authoring connector for get waveform info. Port identities, metadata schemas and 4815 connector positions follow the supplied LabVIEW reference. Native execution is unavailable until an explicit provider implements this operation.
 
 ## IN — inputs
 
-No fixed inputs are declared in this binding profile. No connector is invented here.
+| Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
+| --- | --- | --- | --- | --- |
+| variant `variant` | `variant` | Required | Not specified | — |
+| error in `error_in` | `cluster<status:bool,code:i32,source:string>` | Optional | Not specified | — |
+
+A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
 ## OUT — outputs
 
-No fixed outputs are declared in this binding profile. No connector is invented here.
+| Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
+| --- | --- | --- | --- | --- |
+| Y array type `y_array_type` | `variant` | Required | — | — |
+| error out `error_out` | `cluster<status:bool,code:i32,source:string>` | Required | — | — |
+
+A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
 ## Types and connection rules
 
-undecided
+Fixed metadata types from the NI LabVIEW 2020 connector contract shown in the supplied video. Variant payload types are inspected, not converted or propagated as output value types. No runtime provider is declared.
 
-- Type resolution: `undecided`; result expression: `undecided`.
+- Type resolution: `fixed`; result expression: `variant`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
-- Arrays: not established; lifting policy: `undecided`.
+- Arrays: not accepted; lifting policy: `none`.
 
-none
+One Variant envelope, including an aggregate payload; no elementwise lifting of Array&lt;Variant&gt;. Metadata array outputs have their declared schemas.
 
-Input count is instance-dependent or not established by this contract.
-
-not_variadic
+**Input count:** 2; this contract does not enable variadic inputs.
 
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.variant.data_type_analysis.get_waveform_info.v1`.
+
+Required provider: `frog.studio.variant.type-analysis@2`.
+
+Candidate native type-analysis@2; current native receipts and actual UI Run qualification are separate. Exact immutable Source descriptors are authoritative; no Runtime parsing of Source JSON. Type witnesses hold intrinsic defaults, not payload data.
+
 **Authoring/target contract limits:**
 
-- Port identities and cardinality are not defined.
-- Accepted overloads and result type rules are not defined.
-- Runtime behavior and provider are unavailable.
+- Current UI Run qualification pending; source changes are not delivery. NI binary/type-definition/provider ABI compatibility is not implied.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
 
 | Direction | ID | Preview/default type | Connection policy | Cardinality | Legacy port IDs |
 | --- | --- | --- | --- | --- | --- |
+| INPUT | `variant` | `variant` | `exact` | `single` | — |
+| INPUT | `error_in` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
+| OUTPUT | `y_array_type` | `variant` | `exact` | `single` | — |
+| OUTPUT | `error_out` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 
 </details>
 
@@ -72,8 +88,9 @@ No example for this object is currently declared in the shared index. [Browse th
 
 - Catalogue ID: `variant.data_type_analysis.get_waveform_info`.
 - Parent palette: [Data Type Analysis](../data_type_analysis.md).
-- Profile: `variant.data_type_analysis.get_waveform_info.catalog-only.blocked`.
+- Profile: `frog.studio.palette.variant.data_type_analysis.get_waveform_info.v1`.
 - Definition: `frog.studio.variant.data_type_analysis.get_waveform_info`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-nxg-nodes-api-ref/page/get-waveform-info.html).
+- [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-api-ref/page/menus/categories/programming/cluster/datatypeparsing-mnu.html).
 
 NI links are reference sources for the connector model; Studio support is limited to the profile above. [Reference provenance and notation](../../index.md#provenance-and-notation).

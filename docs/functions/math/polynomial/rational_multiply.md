@@ -7,6 +7,15 @@
 
 Multiply Rational Polynomials. G1*G2. Products are polynomial convolutions. All denominators must be nonzero; division also requires nonzero second numerator. No implicit common-factor cancellation. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Multiplication de fractions rationnelles**
+
+Calcule G1*G2. Les produits sont des convolutions polynomiales. Tous les dénominateurs doivent être non nuls ; la division exige aussi un second numérateur non nul. Aucune annulation implicite de facteurs communs. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

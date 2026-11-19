@@ -31,8 +31,8 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Euler Angles To Direction Cosines](../math/geometry/euler_to_direction.md) | NI matrix convention transcribed from its official ZXZ formula; all twelve intrinsic-axis orders, radians. |
 | [Direction Cosines To Euler Angles](../math/geometry/direction_to_euler.md) | Inverse of the common passive Euler convention. GS deterministic singular representation; reconstruct the same matrix rather than promise unique angles. |
 | [3D Coordinate Conversion](../math/geometry/coordinate_conversion_3d.md) | NI conversion codes 0 Cartesian/spherical, 1 spherical/Cartesian, 2 Cartesian/cylindrical, 3 cylindrical/Cartesian, 4 spherical/cylindrical, 5 cylindrical/spherical. Radians, phi polar from +Z; undefined azimuth is zero, negative radius refused; spherical polar input must be in [0,pi]. |
-| [Angle](geometry/angle.md) | Browse the Angle palette. |
-| [Computational Geometry](geometry/computational_geometry.md) | Browse the Computational Geometry palette. |
+| [Angle](geometry/angle.md) | Browse angle conversion, wrapping, rotation, bisection and interval tests. |
+| [Computational Geometry](geometry/computational_geometry.md) | Browse contours, polygon measurements and relations, triangulation, Voronoi diagrams and convex hulls. |
 
 ## Examples
 

@@ -48,6 +48,8 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 ODE F(X,t) [function]: ref&lt;connectivity.document.strict,cluster&lt;in_t:f64,in_X:array&lt;f64&gt;,in_data:variant,out_dX:array&lt;f64&gt;,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;; data [data]: variant; x0 [initial_values]: array&lt;f64&gt;; simulation parameters [parameters]: cluster&lt;t0:f64,tf:f64,step:f64,method:string,atol:f64,rtol:f64,initial_step:f64,min_step:f64,max_step:f64&gt;; error in [error_in]: cluster&lt;status:bool,code:i32,source:string&gt;; Times [times]: array&lt;f64&gt;; X Values [values]: array&lt;f64,rank=2&gt;; error out [error_out]: cluster&lt;status:bool,code:i32,source:string&gt;
 
+Default method rk45 is Dormandâ€“Prince 5(4), distinct from Cashâ€“Karp. Adamsâ€“Moulton, Rosenbrock and Discrete States Only are unavailable and disabled with an explanation; imported requests return a diagnostic without substitution.
+
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
 

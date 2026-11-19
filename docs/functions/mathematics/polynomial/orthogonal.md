@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Orthogonal &amp; Non-orthogonal palette.
+Browse generators and evaluations for orthogonal and other named polynomial families.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Polynômes orthogonaux et non orthogonaux**
+
+Parcourir les générateurs et les évaluations de familles de polynômes orthogonaux et d’autres familles nommées.
+
+</details>
 
 ## Browse this palette
 

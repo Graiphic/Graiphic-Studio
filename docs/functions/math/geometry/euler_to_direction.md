@@ -7,6 +7,15 @@
 
 NI matrix convention transcribed from its official ZXZ formula; all twelve intrinsic-axis orders, radians.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Angles d’Euler vers cosinus directeurs**
+
+Convention matricielle NI transcrite depuis sa formule ZXZ officielle ; les douze ordres d’axes intrinsèques sont disponibles, en radians.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

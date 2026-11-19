@@ -7,9 +7,8 @@ Adds connected operands in canonical port order with a canonical left fold after
 
 ## What this example demonstrates
 
-Cas négatif: les tableaux ont des formes \[2\] et \[3\]. La Simulation privée doit produire exactement Incompatible aggregate shapes or Cluster fields et ne publier aucune valeur d'indicateur. Ce message est celui du moteur privé, pas un code public inventé. Aucun broadcasting silencieux n'est admis.
-Entrées : a (array&lt;i32&gt;) = \[1, 2\]; b (array&lt;i32&gt;) = \[3, 4, 5\].
-Résultats attendus : .
+Negative case: the arrays have shapes \[2\] and \[3\]. Native Run and Highlight must report incompatible array dimensions and publish no indicator value.
+Inputs: a (array&lt;i32&gt;) = \[1, 2\]; b (array&lt;i32&gt;) = \[3, 4, 5\].
 
 ## Open the actual document
 
@@ -20,14 +19,14 @@ Open the file in a Studio version admitting its format and its exact configured 
 - Example ID: `numeric.add.incompatible_shapes`.
 - Document profile: `studio-draft`.
 - Mode: `expected-diagnostic`.
-- Declared backends: `simulation`.
-- Required capability: `explicit private Simulation; not a compiled-native claim`.
+- Declared backends: `native-fast`, `native-debug`.
+- Required capability: `windows-x64; LLVM 22.1.7; native array shape validation`.
 
 `native-fast` and `native-debug` request the product's native compiler/session path for this exact graph. `simulation` is an explicitly private oracle; it does not establish normal Studio Run support or supply a native fallback. Missing providers remain failures or unsupported cases, not successful outputs.
 
 ## Expected result
 
-This is an intentional negative case. It must report exactly `Highlight Execution: operation (numeric.add): Incompatible aggregate shapes or Cluster fields`; an unrelated refusal does not satisfy the expectation.
+This is an intentional negative case. It must report exactly `native.numeric.incompatible_shape`; an unrelated refusal does not satisfy the expectation.
 
 These are expected values, not a report of executed tests. Integers retain their exact JSON lexemes; Array shapes and nominal types remain part of the example contract.
 

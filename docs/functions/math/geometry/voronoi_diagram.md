@@ -7,6 +7,15 @@
 
 GS unbounded topology: vertices [N,2]; edges [M,2] with -1 open endpoint; directions [M,2]; original site-index pairs. kind 0 segment, 1 ray, 2 full line through first vertex. No hidden clipping box.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Diagramme de Voronoï**
+
+Topologie GS non bornée : sommets [N,2], arêtes [M,2] avec -1 pour une extrémité ouverte, directions [M,2] et paires d’indices des sites originaux. kind : 0 segment, 1 demi-droite, 2 droite complète passant par le premier sommet. Aucune boîte de découpe cachée.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

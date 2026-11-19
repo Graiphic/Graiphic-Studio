@@ -7,6 +7,15 @@
 
 LCM of P(x) and Q(x). Monic polynomial LCM from division by the common factor. Zero input gives zero; GCD algorithm and tolerance have the same meaning as Poly GCD. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**PPCM de polynômes**
+
+Calcule un PPCM polynomial unitaire par division par le facteur commun. Une entrée nulle donne zéro ; l’algorithme de PGCD et la tolérance ont le même sens que pour Poly GCD. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

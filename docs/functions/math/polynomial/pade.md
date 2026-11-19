@@ -7,6 +7,15 @@
 
 Pade Approximation. Pade [m/n] about zero from raw derivatives f^(k)(0), divided by k! exactly once. D(0)=1; singular systems are diagnosed. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Approximation de Padé**
+
+Calcule l’approximation de Padé [m/n] autour de zéro à partir des dérivées brutes f^(k)(0), divisées par k! exactement une fois. D(0)=1 ; les systèmes singuliers sont diagnostiqués. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

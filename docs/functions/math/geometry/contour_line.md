@@ -7,6 +7,15 @@
 
 GS structured polyline output: points [N,2], offsets of each curve plus final sentinel, one level/closed flag per curve. Marching squares with asymptotic saddle decider; nonfinite Z masks cells; optional strict monotonic axes. No bitmap.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Courbes de niveau**
+
+Sortie GS en polylignes structurées : points [N,2], offsets de chaque courbe et sentinelle finale, un niveau et un drapeau fermé par courbe. Méthode des carrés marchants avec décision asymptotique aux points-selles ; les Z non finis masquent les cellules. Les axes facultatifs sont strictement monotones. Aucune image bitmap.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

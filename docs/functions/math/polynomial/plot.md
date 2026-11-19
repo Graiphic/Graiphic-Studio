@@ -7,6 +7,15 @@
 
 Polynomial Plot. Produces reusable XY data. A wired X selects Samples; otherwise Range uses inclusive start/end and samples&gt;=2. Wiring X together with range options is a configuration conflict, never silently ignored. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Tracé d’un polynôme**
+
+Produit des données XY réutilisables. X câblé sélectionne Samples ; sinon Range utilise les bornes start/end incluses et samples&gt;=2. Câbler X avec les options de plage est un conflit de configuration, jamais ignoré silencieusement. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

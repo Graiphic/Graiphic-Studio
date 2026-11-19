@@ -7,6 +7,15 @@
 
 Actual convex intersection coordinates; empty, point and segment results retained. Both input orientations accepted, nonconvex polygons refused rather than replaced by their hull.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Intersection de polygones convexes**
+
+Véritables coordonnées de l’intersection convexe ; les résultats vides, ponctuels et segmentaires sont conservés. Les deux orientations d’entrée sont admises ; les polygones non convexes sont refusés, sans remplacement par leur enveloppe.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

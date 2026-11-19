@@ -7,6 +7,15 @@
 
 GS 0 uniform-area centroid, 1 vertex arithmetic mean. NI prose is contradictory; both choices explicit, not claimed NI-equivalent. Collinear polygon returns NaN coordinates and error 0, as NI documents.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Centre d’un polygone**
+
+GS : 0 centre d’aire uniforme, 1 moyenne arithmétique des sommets. La prose NI est contradictoire ; les deux choix sont explicites, sans équivalence NI revendiquée. Un polygone colinéaire retourne des coordonnées NaN et l’erreur 0, comme documenté par NI.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

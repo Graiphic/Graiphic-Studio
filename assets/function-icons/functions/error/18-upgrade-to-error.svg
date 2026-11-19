@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #4B5563;
       }
 
       .cls-2 {
@@ -25,7 +25,7 @@
   </defs>
   <g id="Calque_1-2" data-name="Calque 1">
     <g>
-      <rect class="cls-3" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5"/>
+      <rect class="cls-3" x=".9" y=".9" width="46" height="46" rx="4.5" ry="4.5" fill="#4B5563" style="fill:#4B5563"/>
       <g>
         <g>
           <path class="cls-2" d="M.54,18.19V7.02C.54,3.45,3.45.54,7.02.54h11.17v17.65H.54Z"/>
@@ -41,12 +41,12 @@
     </g>
     <g>
       <g>
-        <rect class="cls-4" x="37.34" y="25.08" width="3.64" height="13.03" transform="translate(78.32 63.18) rotate(-180)"/>
-        <rect class="cls-4" x="37.34" y="40.71" width="3.64" height="2.72" transform="translate(78.32 84.14) rotate(-180)"/>
+        <rect class="cls-4" x="37.34" y="25.08" width="3.64" height="13.03" transform="translate(78.32 63.18) rotate(-180)" fill="#F8FAFC" style="fill:#F8FAFC"/>
+        <rect class="cls-4" x="37.34" y="40.71" width="3.64" height="2.72" transform="translate(78.32 84.14) rotate(-180)" fill="#F8FAFC" style="fill:#F8FAFC"/>
       </g>
-      <polygon class="cls-4" points="34.03 30.37 27.06 24.68 24.77 27.92 34.03 30.37"/>
-      <polygon class="cls-4" points="32.54 32.26 26.3 35.94 25.76 32.94 32.54 32.26"/>
+      <polygon class="cls-4" points="34.03 30.37 27.06 24.68 24.77 27.92 34.03 30.37" fill="#F8FAFC" style="fill:#F8FAFC"/>
+      <polygon class="cls-4" points="32.54 32.26 26.3 35.94 25.76 32.94 32.54 32.26" fill="#F8FAFC" style="fill:#F8FAFC"/>
     </g>
-    <path class="cls-4" d="M9.47,24h0c-.19-.04-.36.11-.41.31-.03.1-1.94,9.4,5.61,11.38l-.61,2.7c-.04.15,0,.3.11.39.09.09.24.1.36.03l6.33-3.82c.09-.06.16-.15.19-.28s0-.24-.05-.33l-4.06-6.18c-.08-.11-.21-.16-.33-.12s-.23.16-.26.3l-.61,2.69c-6.73-1.68-6.04-6.45-6-6.65.04-.21-.08-.39-.25-.43v.02Z"/>
+    <path class="cls-4" d="M9.47,24h0c-.19-.04-.36.11-.41.31-.03.1-1.94,9.4,5.61,11.38l-.61,2.7c-.04.15,0,.3.11.39.09.09.24.1.36.03l6.33-3.82c.09-.06.16-.15.19-.28s0-.24-.05-.33l-4.06-6.18c-.08-.11-.21-.16-.33-.12s-.23.16-.26.3l-.61,2.69c-6.73-1.68-6.04-6.45-6-6.65.04-.21-.08-.39-.25-.43v.02Z" fill="#F8FAFC" style="fill:#F8FAFC"/>
   </g>
 </svg>

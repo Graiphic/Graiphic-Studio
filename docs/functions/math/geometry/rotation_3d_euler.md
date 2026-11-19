@@ -7,6 +7,15 @@
 
 Intrinsic rotation of axes; D = (Ra(phi) Rb(theta) Rc(psi)) transposed. All twelve documented orders; default ZXZ.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Rotation 3D par angles d’Euler**
+
+Rotation intrinsèque des axes ; D est la transposée de Ra(phi) Rb(theta) Rc(psi). Les douze ordres documentés sont disponibles ; ZXZ est l’ordre par défaut.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

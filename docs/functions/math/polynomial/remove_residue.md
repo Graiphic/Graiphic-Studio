@@ -7,6 +7,15 @@
 
 Remove Residue from Denominator. Exactly zero numerator and valid denominator yield [0]/[1]. Other numerators and their denominators are preserved. 0/0 remains invalid. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Retirer le résidu du dénominateur**
+
+Un numérateur exactement nul et un dénominateur valide donnent [0]/[1]. Les autres numérateurs et leurs dénominateurs sont conservés. 0/0 reste invalide. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

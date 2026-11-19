@@ -7,6 +7,15 @@
 
 Signed shoelace area, positive CCW, simple polygon, optional repeated closing vertex; stable translated sums. Self intersections refused.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Aire d’un polygone**
+
+Aire signée par la formule du lacet, positive dans le sens antihoraire, pour un polygone simple avec dernier sommet de fermeture facultatif ; sommes translatées stables. Les auto-intersections sont refusées.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

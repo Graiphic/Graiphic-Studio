@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Angle palette.
+Browse angle conversion, wrapping, rotation, bisection and interval tests.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Angles**
+
+Parcourir les conversions, réductions, rotations et bissections d’angles, ainsi que les tests d’appartenance à un intervalle.
+
+</details>
 
 ## Browse this palette
 

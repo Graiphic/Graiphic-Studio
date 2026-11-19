@@ -7,6 +7,15 @@
 
 Inverse of the common passive Euler convention. GS deterministic singular representation; reconstruct the same matrix rather than promise unique angles.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Cosinus directeurs vers angles d’Euler**
+
+Inverse de la convention passive commune d’Euler. GS choisit une représentation singulière déterministe ; la même matrice est reconstruite, sans promettre des angles uniques.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

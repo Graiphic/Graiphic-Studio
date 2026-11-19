@@ -10,7 +10,7 @@ The extension `.frog` does not select one language authority. Each example decla
 
 Draft revision, application version and public Source compatibility version are different identities. The copied Studio Draft files are not thereby published as public Source programs. Keeping the format unchanged is deliberate; successful execution of one graph does not admit all overloads of its functions.
 
-Observed Studio Draft revisions in this index: `2, 4, 6, 7`. This observation is not a new revision-admission rule.
+Observed Studio Draft revisions in this index: `3, 4, 6, 7`. This observation is not a new revision-admission rule.
 
 The index and explanations describe expectations. This documentation export does not run Studio, test the ABI, or certify a backend. It does not publish a Git commit or deployment. NativeFast/NativeDebuggable, explicit private Simulation, persistence, interactive actions and expected failures retain their separate meanings.
 

@@ -57,12 +57,19 @@ Port order: `path` → `error_in`.
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
-A real Studio host File provider executes Highlight activations; this is separate from target compilation/runtime availability.
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.file.exists.windows.v1`.
+
+Required provider: `frog.studio.file.windows@1`.
+
+Bounded native Windows File service on complete immutable SDK carriers and per-RuntimeInstance resource authorities. The selected Source/FIR/native target must explicitly admit this operation, configuration and actual host services; this metadata does not grant universal execution support. The legacy Highlight provider remains a separate realization.
 
 **Authoring/target contract limits:**
 
-- No public FROG lowering or target Runtime provider is declared.
-- LLB package content requires an unavailable library adapter and reports an error. Headless evaluation without host dialog callbacks reports unsupported instead of selecting an invented path.
+- The selected target must admit the exact native operation, complete connector types, original connection flags and Read Lines/Convert EOL configuration.
+- Windows only; LLB members and implicit relative/current-directory paths are not admitted. String is not implicitly converted to Path.
+- Native payload/Array/resource bounds remain finite and can be narrower than the legacy256MiB/one-million-line profile. No oversized read is silently truncated and reported as success.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

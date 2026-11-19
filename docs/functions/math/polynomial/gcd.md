@@ -7,6 +7,15 @@
 
 GCD of P(x) and Q(x). Monic polynomial GCD. Algorithm 0: relative Euclidean division; 1: SVD subresultant with a certified common-factor residual. tolerance is a coefficient residual threshold. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**PGCD de polynômes**
+
+Calcule un PGCD polynomial unitaire. Algorithme 0 : division euclidienne relative ; 1 : sous-résultant SVD avec résidu de facteur commun certifié. tolerance est un seuil sur le résidu des coefficients. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

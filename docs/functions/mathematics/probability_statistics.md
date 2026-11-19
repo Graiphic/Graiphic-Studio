@@ -39,9 +39,9 @@ This entry opens a palette folder; it is not an executable dataflow function.
 | [Correlation Coefficient (Pearson)](../math/statistics/pearson.md) | Paired finite observations; constant sequence undefined. Spearman uses average ranks; Kendall tau-b is explicit GS because NI normalization is unpublished. No invented error output. |
 | [Correlation Coefficient (Spearman)](../math/statistics/spearman.md) | Paired finite observations; constant sequence undefined. Spearman uses average ranks; Kendall tau-b is explicit GS because NI normalization is unpublished. No invented error output. |
 | [Correlation Coefficient (Kendall Tau)](../math/statistics/kendall.md) | Paired finite observations; constant sequence undefined. Spearman uses average ranks; Kendall tau-b is explicit GS because NI normalization is unpublished. No invented error output. |
-| [Probability](probability_statistics/probability.md) | Browse the Probability palette. |
-| [Hypothesis Test](probability_statistics/hypothesis_test.md) | Browse the Hypothesis Test palette. |
-| [ANOVA](probability_statistics/anova.md) | Browse the ANOVA palette. |
+| [Probability](probability_statistics/probability.md) | Browse continuous and discrete distribution functions: probabilities, inverse distribution values, random sampling and moments. |
+| [Hypothesis Test](probability_statistics/hypothesis_test.md) | Browse statistical hypothesis tests, rank transformations and contingency-table analysis. |
+| [ANOVA](probability_statistics/anova.md) | Browse one-, two- and three-factor analysis of variance. |
 | [Statistics](../math/statistics/statistics_express.md) | GS typed adaptation of NI dynamic signals; only the FIRST waveform is measured. Selected measure IDs persist, default mean; exact source timestamp retained. No UI-triggered calculation. Select output IDs in Configure Statistics. The first waveform/channel is used. GS uses population moments here; time outputs retain the exact Timestamp origin. |
 | [Histogram (Express) (Express)](../math/statistics/histogram_express.md) | Separate stateful Express node, reusing Histogram/General Histogram counting. Explicit GS configuration ports auto_range/bins/cumulative/normalization; NI Enable/Reset/error behavior preserved. Graph XY output is GS. Express node distinct from the ordinary Histogram VI. GS range defaults [-3,3), 10 bins; cumulative/Reset/Enable use per-instance transactional state. Normalization 0 counts, 1 probability over accepted samples, 2 density. Waveform arrays use the first signal, an explicit GS adaptation. |
 

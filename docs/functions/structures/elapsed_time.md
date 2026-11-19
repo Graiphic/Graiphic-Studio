@@ -44,6 +44,8 @@ The notes below retain the reviewed help's original NI and Studio scopes. An NI 
 
 Target seconds:DBL, reset/auto-reset:Boolean -&gt; elapsed seconds:DBL, elapsed:Boolean. Studio: Studio exposes reset but not the NI auto-reset input.
 
+Measures monotonic seconds since the first activation of this node in the current Run, or explicit Reset. Publishes elapsed time and elapsed &gt;= time target. No automatic reset is exposed by this GS signature.
+
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
 
@@ -52,8 +54,6 @@ Les mentions NI et Studio gardent leur portée d’origine. Une variante NI ne c
 Secondes cibles:DBL, reset/auto-reset:Boolean -&gt; secondes écoulées:DBL, écoulé:Boolean. Studio: Studio expose la réinitialisation, mais pas l’entrée NI de réinitialisation automatique.
 
 </details>
-
-Historical Studio binding profile; no additional public FROG semantics are claimed.
 
 - Type resolution: `fixed`; result expression: `bool;f64`.
 - Implicit coercion: permitted by this profile.
@@ -69,11 +69,11 @@ Only the declared port expressions and connection policies are defined by this S
 
 Scope: `requires_explicit_target_capability`.
 
-Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
+Implementation: `frog.studio.structures.elapsed_time.v1`.
 
-**Authoring/target contract limits:**
+Required provider: `frog.studio.timestamp.native@1`.
 
-- The complete public execution semantics and target support for this legacy Studio profile have not been established.
+Compiled instance-owned Timing service; steady monotonic clock from the C++ standard library and OS. Same native task scheduler in Run and static AOT host. Target admission and current execution/package evidence are separate.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>

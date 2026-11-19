@@ -7,6 +7,15 @@
 
 Polynomial Eigenvalues and Vectors. Polynomial eigenproblem with coefficient matrices in ascending order. GS Array shape [coefficient,row,column]. Uses the existing generalized eigensolver without inverting the leading coefficient. output_option 0 values, 1 values and vectors. One coefficient matrix uses its ordinary eigensystem, as documented by NI. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Valeurs et vecteurs propres polynomiaux**
+
+Résout le problème propre polynomial avec matrices de coefficients par ordre croissant ; la forme GS du tableau est [coefficient,ligne,colonne]. Le solveur propre généralisé existant est utilisé sans inverser le coefficient dominant. output_option : 0 valeurs, 1 valeurs et vecteurs. Une seule matrice de coefficients utilise son système propre ordinaire, comme documenté par NI. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

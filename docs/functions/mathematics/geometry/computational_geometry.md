@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Computational Geometry palette.
+Browse contours, polygon measurements and relations, triangulation, Voronoi diagrams and convex hulls.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Géométrie algorithmique**
+
+Parcourir les courbes de niveau, les mesures et relations de polygones, la triangulation, les diagrammes de Voronoï et les enveloppes convexes.
+
+</details>
 
 ## Browse this palette
 

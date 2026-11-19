@@ -109,6 +109,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 
 - [Read a nested field by stable identity](../../examples/cluster.unbundle-by-name.nested.md) — The displayed Config.Offset path resolves the stable IDs config-id / offset-id. Unrelated fields are not read or rebuilt. (`execution`, `studio-draft`).
 - [Replace one nested Cluster field](../../examples/cluster.bundle-by-name.replace-nested.md) — Replacing Config.Offset preserves the nested Name and outer Enabled fields. The selection uses persistent field identities, independently from their displayed names. (`execution`, `studio-draft`).
+- [Named rows keep selected field order](../../examples/cluster.by-name.ni-layout-order.md) — The selected row order is second, text, first, deliberately different from the Cluster declaration. Replacing only second must preserve first and text; every output is verified before and after replacement. (`execution`, `studio-draft`).
 
 ## Identity and references
 

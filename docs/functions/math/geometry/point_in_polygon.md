@@ -7,6 +7,15 @@
 
 Simple concave polygon allowed. GS boundary is separately reported and included in inside; original vertex order is preserved.
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Point dans un polygone**
+
+Les polygones simples concaves sont admis. GS signale séparément le bord et l’inclut dans l’intérieur ; l’ordre original des sommets est conservé.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

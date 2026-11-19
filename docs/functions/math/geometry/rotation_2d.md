@@ -7,6 +7,15 @@
 
 Passive counterclockwise rotation of coordinate axes, radians. (1,0) at pi/2 becomes (0,-1).
 
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Rotation 2D**
+
+Rotation passive antihoraire des axes de coordonnées, en radians. Le point (1,0) devient (0,-1) pour pi/2.
+
+</details>
+
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.

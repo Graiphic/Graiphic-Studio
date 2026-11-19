@@ -24,8 +24,8 @@ Contract status: **partial**. The connector below describes Studio authoring; ex
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
-| x `x` | `T:numeric` | Required | Not specified | — |
-| y `y` | `T:numeric` | Required | Not specified | — |
+| x `x` | `T:numeric` | Optional | Not specified | — |
+| y `y` | `T:numeric` | Optional | Not specified | — |
 | initial value `initial_value` | `T:numeric` | Optional | Not specified | — |
 | initialize? `initialize` | `bool` | Optional | Not specified | — |
 
@@ -35,7 +35,7 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 | Displayed terminal / internal ID | Accepted / resolved type | Studio connection | Unwired input default | Meaning |
 | --- | --- | --- | --- | --- |
-| accumulator + x * y `result` | `T:numeric_tree` | Required | — | — |
+| accumulator + x * y `result` | `T:numeric` | Required | — | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
 
@@ -44,6 +44,8 @@ A default is shown only for an input with an explicitly documented value. Previe
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
 Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+
+Point-by-point scalar real/integer multiply-accumulate. Each activation computes product=x*y in the common exact numeric type, then result=accumulator+product. First activation and initialize=True use initial_value before adding the product. Fresh execution frames reset the state; nodes and independent instances do not share it. Optional x/y/initial_value default to typed zero and initialize to False. No array lifting or complex/nominal/fixed-point erasure.
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -60,16 +62,26 @@ x,y,valeur initiale numériques scalaires + initialisation booléenne -&gt; accu
 - Shape rule: `per_port_contract`.
 - Scalar lifting: no.
 
+Scalar real/integer inputs only; no aggregate or scalar-to-array lifting.
+
 **Input count:** 4; this contract does not enable variadic inputs.
 
 ## Execution and limits
 
 **Public FROG / target Runtime:** not declared available by this authoring contract.
 
+Scope: `requires_explicit_target_capability`.
+
+Implementation: `frog.studio.numeric.multiply_accumulate.instance-owned.v1`.
+
+Required provider: `frog.studio.numeric.multiply_accumulate.instance-owned@1`.
+
+Declared instance-owned native capability, typed multiplication/addition from the existing numeric providers, transactional publication and resident state accounting. The selected target must admit the exact physical scalar signature. This declaration is not execution, AOT/package or NI runtime qualification.
+
 **Authoring/target contract limits:**
 
-- NI reference verified for authoring types; this does not establish runtime support on the active target.
-- Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
+- Requires the exact native target capability and supported common physical scalar type.
+- No configurable fixed-point, complex, nominal Enum or aggregate overload. NI reset ordering is documented here as an explicit GS convention pending an independent NI execution comparison.
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -94,5 +106,6 @@ No example for this object is currently declared in the shared index. [Browse th
 - Profile: `frog.studio.polymorphic.numeric.multiply_accumulate.v1`.
 - Definition: `frog.studio.numeric.multiply_accumulate`.
 - [NI API reference](https://www.ni.com/docs/en-US/bundle/labview-nxg-nodes-api-ref/page/multiply-accumulate-add.html).
+- [NI API reference](https://www.ni.com/docs/en-US/bundle/daqexpress-api-ref/page/multiply-accumulate-add.html).
 
 NI links are reference sources for the connector model; Studio support is limited to the profile above. [Reference provenance and notation](../index.md#provenance-and-notation).

@@ -5,7 +5,16 @@
 
 [Mathematics functions](../index.md) · [All functions](../../index.md)
 
-Browse the Rational palette.
+Browse arithmetic, normalization, derivatives and evaluation of ratios of polynomials, plus partial fractions and Pade approximation.
+
+<details>
+<summary>Résumé français de l’aide Studio</summary>
+
+**Fractions rationnelles**
+
+Parcourir l’arithmétique, la normalisation, les dérivées et l’évaluation de rapports de polynômes, ainsi que les fractions partielles et l’approximation de Padé.
+
+</details>
 
 ## Browse this palette
 
