@@ -69,3 +69,7 @@ Only HTTP and HTTPS external documentation links are accepted.
 - Hover the actual child field or cell when inspecting a nested container.
 - Read [current capabilities](../reference/development-checkpoint.md) when a
   function is described but cannot run on the selected execution path.
+
+## Property Nodes, methods and references
+
+Use Detailed Help on a Property Node or an Invoke Node to reach its function page. Follow the [reference guide](../reference/using-object-references.md) for wiring, or choose the target class in the [property and method index](../reference/object-members/index.md) for member types, access and method parameters.

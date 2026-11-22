@@ -5,7 +5,9 @@
 
 [Application Control functions](../applicationcontrol/index.md) · [All functions](../index.md)
 
-Private Studio symbolic reference constant for This Frog, This Application, Front Panel or a widget identified by its owner document and stable identity. The single reference output is distinct from the widget data value and preserves a complete strict schema when known. Class upcasts are allowed; a generic reference does not implicitly become strict. Saved files contain no native handles. Resolution uses the live authoring provider; graph runtime execution is unavailable in this delivery.
+Produces a symbolic reference to this FROG, the application, the Front Panel or an identified widget. A strict reference carries the value schema. The saved identity resolves in its owning document. Wire the reference to a Property or Invoke Node to operate on that object.
+
+[Working with references](../../reference/using-object-references.md) · [Properties and methods by reference class](../../reference/object-members/index.md)
 
 ## Product execution profiles
 
@@ -18,7 +20,7 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Constante privée Studio de référence symbolique vers Ce FROG, Cette application, la Face avant ou un widget identifié par son document propriétaire et son identité stable. L’unique sortie Référence est distincte de la valeur de données et conserve le schéma strict complet lorsqu’il est connu. Les conversions vers une classe parente sont permises ; une référence générique ne devient pas strictement typée implicitement. Les fichiers ne contiennent aucun handle natif. La résolution utilise le fournisseur authoring vivant ; l’exécution dans un graphe est indisponible dans cette livraison.
+Produit une référence symbolique vers ce FROG, l’application, la face avant ou un widget identifié. Une référence stricte transporte le type de la valeur. L’identité sauvegardée se résout dans le document propriétaire. Câblez la référence à un nœud de propriétés ou de méthodes pour agir sur cet objet.
 
 </details>
 

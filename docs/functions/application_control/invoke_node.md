@@ -5,7 +5,9 @@
 
 [Application Control functions](../applicationcontrol/index.md) · [All functions](../index.md)
 
-Private Studio configuration of one exact method signature. Parameters retain their identities, types, input/output directions, requirements and declared defaults; a void method has no result terminal. The incoming object reference determines the effective class. The authoring provider supports only advertised real operations; unavailable focus and panel actions remain explicit. Reference and Error pairs stay fixed. No object-operation graph runtime provider is available in this delivery.
+Calls the selected method on the target reference. The method signature determines the required and optional inputs, outputs and return value. A void method has no result terminal. Check the error output. Availability depends on the member, its class and the execution host.
+
+[Working with references](../../reference/using-object-references.md) · [Properties and methods by reference class](../../reference/object-members/index.md)
 
 ## Product execution profiles
 
@@ -18,7 +20,7 @@ The shared index declares native examples for this object; see [the examples bel
 
 Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
-Configuration privée Studio d’une signature exacte de méthode. Les paramètres conservent leurs identités, types, directions d’entrée/sortie, obligations et valeurs par défaut déclarées ; une méthode void n’a pas de terminal de résultat. La référence câblée détermine la classe effective. Le fournisseur authoring propose uniquement les opérations réelles annoncées ; les actions indisponibles de focus et de panneau restent explicites. Les paires Référence et Erreur restent fixes. Aucun fournisseur runtime d’opérations sur objets n’est disponible dans cette livraison.
+Appelle la méthode sélectionnée sur la référence cible. Sa signature détermine les entrées obligatoires ou facultatives, les sorties et la valeur de retour. Une méthode void n’a pas de terminal de résultat. Vérifiez la sortie Erreur. La disponibilité dépend de la méthode, de sa classe et de l’hôte d’exécution.
 
 </details>
 

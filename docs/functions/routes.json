@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "8ff9cb12f908e6ea9842fe3563df74406dafd1bb9f587de10b397d6f64273644",
+  "source_snapshot_sha256": "be4392abc59bdbaa3233b527de52d518acb6286f72a94eccec21c1e39e6c571f",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",
@@ -7156,6 +7156,15 @@
         "frog.studio.numeric.other_constants.two_pi",
         "function.numeric.other_constants.two_pi",
         "numeric.other_constants.two_pi"
+      ]
+    },
+    {
+      "catalog_id": "numeric.picture_ring",
+      "route": "docs/functions/numeric/picture_ring.md",
+      "keys": [
+        "frog.studio.numeric.picture_ring",
+        "function.numeric.picture_ring",
+        "numeric.picture_ring"
       ]
     },
     {

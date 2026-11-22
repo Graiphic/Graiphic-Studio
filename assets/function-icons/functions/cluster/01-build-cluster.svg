@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26.28" role="img" aria-label="Bundle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 26.28" role="img" aria-label="Bundle">
 <title>Bundle</title>
-<rect x=".665" y=".665" width="30.67" height="24.950000000000003" rx="4.5" fill="#4b5563" stroke="#aab4c0" stroke-width="1.33"/>
+<rect x=".665" y=".665" width="46.67" height="24.95" rx="4.5" fill="#4b5563" stroke="#aab4c0" stroke-width="1.33"/>
+<path d="M1.33 13.14H23M23 1.33V10.64M23 15.64V24.95" fill="none" stroke="#818d9d"/>
 <g fill="none" stroke="#f8fafc" stroke-width=".87" stroke-linejoin="round" stroke-linecap="round">
-<path d="M2 7.57H6M10 7.57H13"/><rect x="6" y="5.57" width="4" height="4"/>
-<path d="M2 18.71H6M10 18.71H13"/><rect x="6" y="16.71" width="4" height="4"/>
-<path d="M13 7.57V18.71M13 13.14H21M17 11.14l2 2-2 2M24 8.14H22V18.14H24M28 8.14H30V18.14H28"/>
+<rect x="8" y="5.57" width="5" height="4"/><rect x="8" y="16.71" width="5" height="4"/>
+<path d="M13 7.57H18V18.71H13M18 13.14H29M25.5 10.64l2.5 2.5-2.5 2.5M36 8.14H33V18.14H36M39 8.14H42V18.14H39"/>
 </g></svg>

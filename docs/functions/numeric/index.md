@@ -2,7 +2,7 @@
 
 [All functions](../index.md)
 
-106 operations or editor elements; 5 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
+107 operations or editor elements; 5 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
 
 ## Operations and editor elements
 
@@ -69,6 +69,7 @@
 | [Octal String To Number](conversion/octal_string_to_number.md) | Parses an octal string into a numeric value. |
 | [Pi](other_constants/pi.md) | Places the Pi constant on the diagram. |
 | [Pi / 2](other_constants/pi_over_two.md) | Places one half of Pi on the diagram. |
+| [Picture Ring Constant](picture_ring.md) | Places a Picture Ring constant on the diagram. Use Edit Images to manage its catalogue and choose an image from the thumbnail selector. The wire carries the selected U16 index. The images stay with the document. |
 | [Planck Constant](other_constants/planck.md) | Places the Planck constant on the diagram. |
 | [Polar To Complex](complex/polar_to_complex.md) | Builds a complex value from its magnitude and phase. |
 | [Polar To Re/Im](complex/polar_to_real_imaginary.md) | Converts magnitude and phase to real and imaginary components. |

@@ -7,6 +7,8 @@
 
 Drag the blue bottom handle to extend the Property Node. New rows follow the available properties in Select Property for the effective target, starting after the last eligible configured row. The last available property repeats at the end of the list. Existing rows keep their properties, modes and wires when you extend the node. Press Esc during the drag to restore the starting layout. Each row has a typed data terminal and uses the member’s Read or Write permissions. A wired reference determines the effective target. Reference and Error connectors remain fixed. Execution support depends on the selected property and target profile.
 
+[Working with references](../../reference/using-object-references.md) · [Properties and methods by reference class](../../reference/object-members/index.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](property_node.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "source_snapshot": {
-    "sha256": "8ff9cb12f908e6ea9842fe3563df74406dafd1bb9f587de10b397d6f64273644",
+    "sha256": "be4392abc59bdbaa3233b527de52d518acb6286f72a94eccec21c1e39e6c571f",
     "files": [
       {
         "path": "../../FROG/Implementations/Frontend/src/FunctionCatalogSemantic.cpp",
-        "sha256": "a3285cf03e9e4ac299733abf3edeef504965a8f6d04e10ef18556e8f493f2031"
+        "sha256": "92ed68e04c8a961efbdd7f7fafe6a48ef1855ca2c40447c9c5a3ad752a4f06fc"
       },
       {
         "path": "../../FROG/Implementations/Frontend/src/QueueFunctionBinding.cpp",
@@ -329,11 +329,11 @@
       },
       {
         "path": "assets/icons/functions/cluster/01-build-cluster.svg",
-        "sha256": "25f72ef048d9230eed2396f4b90655edb00d51e228a629fdf774ce8fe011c072"
+        "sha256": "c7f2c99fdc3a60a9c7050abaf622b269764f83fd9a69f806f9370650a6028c22"
       },
       {
         "path": "assets/icons/functions/cluster/02-cluster-properties.svg",
-        "sha256": "3220c19f08a3e652f6571df7ab45db8279b38b5d4ee81be43c5f84838c571686"
+        "sha256": "79ec91b1cd51d9aeb0abda238e014c59ac994fe92c1754c08c80b347f291b343"
       },
       {
         "path": "assets/icons/functions/cluster/03-build-cluster-array.svg",
@@ -2561,7 +2561,7 @@
       },
       {
         "path": "assets/icons/functions/numeric/06-incrementer.svg",
-        "sha256": "12c9666a5c965a2f15c5a2563daede86607cb771e98fe90b36c574c042330c39"
+        "sha256": "52b69d583a895714368ccc19a6b0a223f0ea595833122f488d28009ad0c35f83"
       },
       {
         "path": "assets/icons/functions/numeric/07-decrementer.svg",
@@ -2966,6 +2966,10 @@
       {
         "path": "assets/icons/functions/numeric/mise-a-l-echelle/04-convertir-mesure-thermocouple.svg",
         "sha256": "7f22d31a04f592457eb2c416d2b263075cd1e0e7bce86c4001a4eb9e158b99c2"
+      },
+      {
+        "path": "assets/icons/functions/numeric/picture-ring-constant.svg",
+        "sha256": "d8f6e8a0a6540ec31a1b677782d4a10fda840e22973cd6fe2ac8aefc54000656"
       },
       {
         "path": "assets/icons/functions/path/01-composer-chemin.svg",
@@ -3617,7 +3621,7 @@
       },
       {
         "path": "config/context-help.ini",
-        "sha256": "b953f824d54afe615953dab34ddb3a3ede32b9c48eac667ba380cd1db77c4c36"
+        "sha256": "6d65e17ecfcf14c238c600bad0c6f7cf1184278c1b9112daf1bf32c98304ee32"
       },
       {
         "path": "manifests/connectivity/entries.generated.inc",
@@ -3693,7 +3697,7 @@
       },
       {
         "path": "manifests/function-bindings/studio.numeric.v2.json",
-        "sha256": "9bcd1c0a4363348e99cbb5d67a9847c18fe709d3cbf0937380ba51958d8af2d3"
+        "sha256": "6f834d44506f9efd383bd97468bb4e49e0d1d2005c37f01169c634d946e91397"
       },
       {
         "path": "manifests/function-bindings/studio.path.v2.json",
@@ -3737,7 +3741,7 @@
       },
       {
         "path": "src/FunctionCatalogEntries.inc",
-        "sha256": "cd71f9cae4b18377f4396e4bd1dc5b9c3495d86e202a9554b3d0ebd203832ae0"
+        "sha256": "01da7308d4ba503b6b96b0b38e6f758de07a2b5331c43aa207886a5512f8b3fa"
       },
       {
         "path": "src/FunctionCatalogLegacyAliases.inc",
@@ -3770,12 +3774,12 @@
     ]
   },
   "counts": {
-    "catalog_entries": 982,
-    "function_contracts": 910,
+    "catalog_entries": 983,
+    "function_contracts": 911,
     "palette_folders": 72,
     "families": 18,
-    "helper_entries": 942,
-    "authentic_icons": 901,
+    "helper_entries": 943,
+    "authentic_icons": 902,
     "entries_without_icon": 2
   },
   "families": [
@@ -3860,8 +3864,8 @@
       "id": "numeric",
       "name": "Numeric",
       "route": "docs/functions/numeric/index.md",
-      "entries": 111,
-      "operations": 106
+      "entries": 112,
+      "operations": 107
     },
     {
       "id": "path",
@@ -3914,7 +3918,7 @@
       "family": "Application Control",
       "family_id": "applicationcontrol",
       "route": "docs/functions/application_control/close_reference.md",
-      "summary": "Private Studio borrowed-reference operation. Authoring close is a no-op for a live borrowed reference: it preserves the target and other aliases. A null or stale reference reports an access error. Reference input and Error input/output; no reference output or array lifting. Object-operation graph execution has no runtime provider in this delivery.",
+      "summary": "Closes a borrowed reference without deleting its target or its other aliases. Check the error output for a null or stale target. This node has a reference input and no reference output.",
       "icon": "assets/function-icons/functions/application-control/Close Reference.svg",
       "aliases": [],
       "parent": "",
@@ -3939,7 +3943,7 @@
       "family": "Application Control",
       "family_id": "applicationcontrol",
       "route": "docs/functions/application_control/invoke_node.md",
-      "summary": "Private Studio configuration of one exact method signature. Parameters retain their identities, types, input/output directions, requirements and declared defaults; a void method has no result terminal. The incoming object reference determines the effective class. The authoring provider supports only advertised real operations; unavailable focus and panel actions remain explicit. Reference and Error pairs stay fixed. No object-operation graph runtime provider is available in this delivery.",
+      "summary": "Calls the selected method on the target reference. The method signature determines the required and optional inputs, outputs and return value. A void method has no result terminal. Check the error output. Availability depends on the member, its class and the execution host.",
       "icon": "assets/function-icons/functions/application-control/Invoke Node.svg",
       "aliases": [],
       "parent": "",
@@ -3991,7 +3995,7 @@
       "family": "Application Control",
       "family_id": "applicationcontrol",
       "route": "docs/functions/application_control/reference.md",
-      "summary": "Private Studio symbolic reference constant for This Frog, This Application, Front Panel or a widget identified by its owner document and stable identity. The single reference output is distinct from the widget data value and preserves a complete strict schema when known. Class upcasts are allowed; a generic reference does not implicitly become strict. Saved files contain no native handles. Resolution uses the live authoring provider; graph runtime execution is unavailable in this delivery.",
+      "summary": "Produces a symbolic reference to this FROG, the application, the Front Panel or an identified widget. A strict reference carries the value schema. The saved identity resolves in its owning document. Wire the reference to a Property or Invoke Node to operate on that object.",
       "icon": "assets/function-icons/functions/application-control/VI server reference_Rounded.svg",
       "aliases": [],
       "parent": "",
@@ -6065,7 +6069,7 @@
         "element1",
         "element2"
       ],
-      "icon_sha256": "25f72ef048d9230eed2396f4b90655edb00d51e228a629fdf774ce8fe011c072",
+      "icon_sha256": "c7f2c99fdc3a60a9c7050abaf622b269764f83fd9a69f806f9370650a6028c22",
       "contract_source": "manifests/function-bindings/studio.cluster.v2.json"
     },
     {
@@ -6114,7 +6118,7 @@
         "element1",
         "result"
       ],
-      "icon_sha256": "25f72ef048d9230eed2396f4b90655edb00d51e228a629fdf774ce8fe011c072",
+      "icon_sha256": "c7f2c99fdc3a60a9c7050abaf622b269764f83fd9a69f806f9370650a6028c22",
       "contract_source": "manifests/function-bindings/studio.cluster.v2.json"
     },
     {
@@ -6280,7 +6284,7 @@
         "cluster",
         "value"
       ],
-      "icon_sha256": "3220c19f08a3e652f6571df7ab45db8279b38b5d4ee81be43c5f84838c571686",
+      "icon_sha256": "79ec91b1cd51d9aeb0abda238e014c59ac994fe92c1754c08c80b347f291b343",
       "contract_source": "manifests/function-bindings/studio.cluster.v2.json"
     },
     {
@@ -6304,7 +6308,7 @@
         "cluster",
         "element1"
       ],
-      "icon_sha256": "3220c19f08a3e652f6571df7ab45db8279b38b5d4ee81be43c5f84838c571686",
+      "icon_sha256": "79ec91b1cd51d9aeb0abda238e014c59ac994fe92c1754c08c80b347f291b343",
       "contract_source": "manifests/function-bindings/studio.cluster.v2.json"
     },
     {
@@ -26217,7 +26221,7 @@
         "x",
         "x + 1"
       ],
-      "icon_sha256": "12c9666a5c965a2f15c5a2563daede86607cb771e98fe90b36c574c042330c39",
+      "icon_sha256": "52b69d583a895714368ccc19a6b0a223f0ea595833122f488d28009ad0c35f83",
       "contract_source": "manifests/function-bindings/studio.numeric.v2.json"
     },
     {
@@ -26945,6 +26949,27 @@
         "value"
       ],
       "icon_sha256": "3696763cce1d129f0c066c709d0bb9d36bd804a34c22888565af6701795ecd87",
+      "contract_source": "manifests/function-bindings/studio.numeric.v2.json"
+    },
+    {
+      "catalog_id": "numeric.picture_ring",
+      "title_en": "Picture Ring Constant",
+      "title_fr": "Constante Picture Ring",
+      "family": "Numeric",
+      "family_id": "numeric",
+      "route": "docs/functions/numeric/picture_ring.md",
+      "summary": "Places a Picture Ring constant on the diagram. Use Edit Images to manage its catalogue and choose an image from the thumbnail selector. The wire carries the selected U16 index. The images stay with the document.",
+      "icon": "assets/function-icons/functions/numeric/picture-ring-constant.svg",
+      "aliases": [],
+      "parent": "",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "editor_managed",
+      "public_runtime_available": false,
+      "private_studio_dispatch": null,
+      "connector_names": [],
+      "icon_sha256": "d8f6e8a0a6540ec31a1b677782d4a10fda840e22973cd6fe2ac8aefc54000656",
       "contract_source": "manifests/function-bindings/studio.numeric.v2.json"
     },
     {

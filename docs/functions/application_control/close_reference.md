@@ -5,14 +5,16 @@
 
 [Application Control functions](../applicationcontrol/index.md) · [All functions](../index.md)
 
-Private Studio borrowed-reference operation. Authoring close is a no-op for a live borrowed reference: it preserves the target and other aliases. A null or stale reference reports an access error. Reference input and Error input/output; no reference output or array lifting. Object-operation graph execution has no runtime provider in this delivery.
+Closes a borrowed reference without deleting its target or its other aliases. Check the error output for a null or stale target. This node has a reference input and no reference output.
+
+[Working with references](../../reference/using-object-references.md) · [Properties and methods by reference class](../../reference/object-members/index.md)
 
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Fermer la référence**
 
-Opération privée Studio sur une référence empruntée. La fermeture authoring d’une référence vivante est sans effet : elle conserve la cible et les autres alias. Une référence nulle ou périmée signale une erreur d’accès. Entrée Référence et entrée/sortie Erreur ; aucune sortie Référence ni traitement implicite des tableaux. Aucun fournisseur runtime n’exécute ces opérations dans un graphe dans cette livraison.
+Ferme une référence empruntée en conservant sa cible et ses autres alias. Vérifiez la sortie Erreur pour une cible nulle ou périmée. Le nœud possède une entrée Référence et aucune sortie Référence.
 
 </details>
 
