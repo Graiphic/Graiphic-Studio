@@ -24,12 +24,17 @@ blank inspection area. Hiding nonempty data retains a short size summary.
 Scrolling and resizing do not edit the payload. Arrays and Clusters use the
 same inspection surface for contained Variants.
 
-## Current data boundary
+## Wire a typed value
 
-The Studio authoring model preserves the payload as **opaque text**. It does
-not provide a complete typed Variant value model with an independent attribute
-dictionary. For a nonempty opaque payload, Show Type reports that its contained
-type is unavailable; the inspector does not infer a type from the text spelling.
+A terminal declared `Variant` accepts a typed value directly. The small red
+coercion dot at the receiving terminal identifies where Studio wraps the value
+with its type. A wire that already carries a Variant connects directly. To
+recover a payload, supply its expected type to **Variant To Data**. A cluster
+retains its fields, and an array retains its element type and shape.
+[Variant To Data](../functions/variant/to_data.md) · [Queue and error-cluster example](../interface/error-variant-loop.md).
+
+Older documents can contain opaque display text. For that representation,
+**Show Type** reports that the contained type is unavailable.
 
 The visible preview is limited to **16 KiB**, ending at a UTF-8 character boundary.
 Truncation is identified and affects the display only, preserving the stored
@@ -41,7 +46,5 @@ Inspection settings and retained payload belong to the Studio draft document;
 scroll offsets are temporary view state. These fields do not define a public
 FROG Variant encoding or cross-tool conformance.
 
-The [Variant function pages](../functions/variant/index.md) document declared
-ports and operation-specific limits. This inspector does not certify typed
-conversion, attribute operations, reference inspection, or another tool's
-Variant behavior. See [current capabilities](../reference/development-checkpoint.md).
+Consult the [Variant function pages](../functions/variant/index.md) for the
+ports and supported operations, including reading and writing attributes.

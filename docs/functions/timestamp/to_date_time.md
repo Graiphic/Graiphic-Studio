@@ -7,10 +7,16 @@
 
 Optional scalar Timestamp or real number and UTC flag produce a Cluster: fractional second F64; second, minute, hour, day of month, month, year, day of week, day of year and DST I32. Runtime support depends on the selected execution target.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](to_date_time.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Horodatage en date et heure**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Horodatage scalaire ou nombre réel facultatif et option UTC produisent un cluster : fraction de seconde F64 ; seconde, minute, heure, jour du mois, mois, année, jour de semaine, jour de l’année et heure d’été I32. L’exécution dépend de la cible sélectionnée.
 
@@ -41,6 +47,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
+
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
 - Arrays: not accepted; lifting policy: `none`.
@@ -59,10 +72,17 @@ Required provider: `frog.studio.timestamp.native@1`.
 
 Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared types. Windows NLS/timezone services are required for local rendering. Explicit range, precision and format refusals remain. Admission, observed execution and AOT package qualification require separate current evidence; this declaration is not that evidence.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The native Timestamp profile is bounded; unsupported precision, calendar, locale and format variants remain explicit refusals.
 - A compiled service declaration alone does not qualify actual Run or an AOT package.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -77,7 +97,9 @@ Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Timestamp To Date/Time](../../examples/timestamp.to_date_time.worked.md) — Décomposer en UTC le 31 décembre 2001 à minuit et une demi-seconde. La date est un lundi, le 365e jour de l’année. (`execution`, `studio-draft`).
 
 ## Identity and references
 

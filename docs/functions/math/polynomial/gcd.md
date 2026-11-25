@@ -7,10 +7,16 @@
 
 GCD of P(x) and Q(x). Monic polynomial GCD. Algorithm 0: relative Euclidean division; 1: SVD subresultant with a certified common-factor residual. tolerance is a coefficient residual threshold. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](gcd.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **PGCD de polynômes**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule un PGCD polynomial unitaire. Algorithme 0 : division euclidienne relative ; 1 : sous-résultant SVD avec résidu de facteur commun certifié. tolerance est un seuil sur le résidu des coefficients. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
 
@@ -19,6 +25,13 @@ Calcule un PGCD polynomial unitaire. Algorithme 0 : division euclidienne relativ
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -83,7 +96,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Poly GCD](../../../examples/math.polynomial.gcd.worked.md) — With p = \[0\], q = \[0\], Run displays result = \[0\], error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

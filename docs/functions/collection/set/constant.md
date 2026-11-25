@@ -7,10 +7,16 @@
 
 A Set element type model and complete value. Defining T inserts no default element. Copy Data and Paste Data transfer the complete typed Set, including an empty Set.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](constant.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Set Constant**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Modèle de type et valeur complète de Set. Définir T n’insère aucun élément par défaut. Copy Data et Paste Data transfèrent le Set typé complet, y compris vide.
 
@@ -20,7 +26,14 @@ Modèle de type et valeur complète de Set. Définir T n’insère aucun éléme
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Typed Set value literal. The T type model inserts no phantom element. Exact values and complete nominal metadata use the common Collection authoring codec.
+
+</details>
 
 ## IN — inputs
 
@@ -67,7 +80,9 @@ Local Studio profile only. A catalog contract is not a target capability or a pu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Insert Into Set — new element](../../../examples/collection.set.insert.new.md) — Set insertion preserves exact element type and reports whether the element was already included. Repeated insertion does not duplicate it. (`execution`, `studio-draft`).
 
 ## Identity and references
 

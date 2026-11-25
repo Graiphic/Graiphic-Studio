@@ -7,6 +7,8 @@
 
 Places a resizable While-style loop with orange scheduling surfaces for initial timing, iteration feedback, next-iteration updates, and completion results.
 
+[Branch an error wire to a loop and a queue](../../interface/error-variant-loop.md)
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 

@@ -93,7 +93,9 @@ Bounded native Windows File service on complete immutable SDK carriers and per-R
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Réduire un fichier réservé de quatre à deux octets](../../examples/file.reserve.write.truncate.md) — En Simulation, saisir un nom de fichier de base dans un dossier accessible en écriture. Réserver un nouveau fichier, y écrire FROG, vider le tampon, puis ramener sa taille à deux octets. Le texte relu est FR. Seul le fichier réservé par le montage est supprimé. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

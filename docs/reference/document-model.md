@@ -18,10 +18,11 @@ preserving a file do not imply complete visual editing, semantic validation,
 lowering, or runtime support for its entire graph.
 
 Revision 2 describes the older readable baseline, not every current document.
-The example index includes revisions 2, 4, 6 and 7; linked standard Type Def
-documents use revision 8. Application version, draft revision and public Source
-version are different identities. Preserve the actual envelope rather than
-rewriting its revision to match an older documentation snapshot.
+Later revisions identify additional authored content such as linked standard
+Type Defs, classes and Picture Ring image catalogues. Studio selects the
+revision required by the document. For the current revision numbers, reader
+compatibility and migration rules, consult the [FROG version matrix](https://github.com/Graiphic/FROG/blob/main/Versioning/Matrix.md).
+Use the Studio application version to identify the editor used for a test.
 
 The [FROG source guide](https://github.com/Graiphic/FROG/blob/main/Expression/Frog%20source%20guide.md)
 and [compatibility reference](https://github.com/Graiphic/FROG/blob/main/Expression/Source%20compatibility%20and%20profiles.md)

@@ -7,10 +7,16 @@
 
 Typed Data Type Analysis connector. Inputs: variant: variant; data type to find: enum&lt;variant.analysis.data_type,u8&gt;; check inside refnums?: bool; error in: cluster&lt;status:bool,code:i32,source:string&gt;; class qualified name: string. Outputs: contains data type to find?: bool; error out: cluster&lt;status:bool,code:i32,source:string&gt;. Metadata describes the contained type, not a conversion of the payload. Native execution requires the declared Variant Analysis v2 target capability and stays within its admitted type profile.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](find_contained_data_types.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Rechercher des types de données contenues**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Connecteur typé d’analyse de données. Entrées : variant : variant ; data type to find : enum&lt;variant.analysis.data_type,u8&gt; ; check inside refnums? : bool ; error in : cluster&lt;status:bool,code:i32,source:string&gt; ; class qualified name : string. Sorties : contains data type to find? : bool ; error out : cluster&lt;status:bool,code:i32,source:string&gt;. Ces métadonnées décrivent le type contenu, sans convertir sa valeur. L’exécution native exige la capacité cible déclarée Variant Analysis v2 et reste limitée à son profil de types admis.
 
@@ -20,7 +26,14 @@ Connecteur typé d’analyse de données. Entrées : variant : variant ; data ty
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Bounded compiled native candidate for find_contained_data_types; exact metadata and values follow the declared Source-prepared Variant profile. Unqualified payload classes/representations remain explicit refusals.
+
+</details>
 
 ## IN — inputs
 
@@ -67,9 +80,16 @@ Required provider: `frog.studio.variant.type-analysis@2`.
 
 Candidate native type-analysis@2; current native receipts and actual UI Run qualification are separate. Exact immutable Source descriptors are authoritative; no Runtime parsing of Source JSON. Type witnesses hold intrinsic defaults, not payload data.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Current UI Run qualification pending; source changes are not delivery. NI binary/type-definition/provider ABI compatibility is not implied.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -88,7 +108,9 @@ Candidate native type-analysis@2; current native receipts and actual UI Run qual
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Chercher les types contenus dans une mesure](../../../examples/variant.data_type_analysis.find_contained_data_types.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -46,6 +46,7 @@ These are expected values, not a report of executed tests. Integers retain their
 ## Related functions
 
 - [Insert Into Set](../functions/collection/set/insert.md) `collection.set.insert`
+- [Set Constant](../functions/collection/set/constant.md) `collection.set.constant`
 
 ## Dependencies and redistribution
 

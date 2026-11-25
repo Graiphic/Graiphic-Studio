@@ -12,6 +12,7 @@ The index declares intended results and required backends. Its presence does not
 - [Référence de contrôle : lire sa vraie valeur](application_control.read_value.md) — Référence de contrôle : lire sa vraie valeur
 - [Property Node : écrire la valeur sans événement](application_control.silent_write.md) — Property Node : écrire la valeur sans événement
 - [Invoke Node : réinitialiser la valeur par défaut](application_control.reinitialize.md) — Invoke Node : réinitialiser la valeur par défaut
+- [Édition uniquement — Fermer une référence de document](application_control.close_reference.worked.md) — La référence du diagramme entre dans la fermeture. Suivre le fil d’erreur.
 
 ## Array
 
@@ -31,6 +32,44 @@ The index declares intended results and required backends. Its presence does not
 - [Array To Cluster pads missing elements](array.to-cluster.padding.md) — The configured Cluster has three fields. Two array elements fill its first fields and the missing final field receives its intrinsic I32 default; excess array elements would be ignored.
 - [Array To Cluster ignores excess elements](array.to-cluster.excess.md) — The configured three fields receive the first three I32 elements in index order. The fourth input element is ignored; no default provider is needed.
 - [Cluster To Array preserves homogeneous I64 — alternate palette entry](array.cluster-to-array.alias.md) — Homogeneous fields retain their exact integer carrier. An integer above 2^53 remains unchanged, and stable Cluster field order determines Array order.
+- [Array To Spreadsheet String](array.conversion.array_to_spreadsheet_string.worked.md) — With array = \[9007199254740993, 18446744073709551615\], format = "%u", delimiter = ",", Run displays string = "9007199254740993,18446744073709551615\r\n".
+- [Delete From Array](array.delete.worked.md) — With array = \[-3, 1, -1, 5\], Run displays result = \[-3, 1, -1\], deleted = 5.
+- [Index Array](array.index.worked.md) — With array = \[-3, 1, -1, 5\], Run displays element = -3.
+- [Initialize Array](array.initialize.worked.md) — With element = 7, size = 3, Run displays result = \[7, 7, 7\].
+- [Insert Into Array](array.insert.worked.md) — With array = \[-3, 1, -1, 5\], index = 1, subset = -3, Run displays result = \[-3, -3, 1, -1, 5\].
+- [Interpolate 1D Array](array.interpolate_1d.worked.md) — With array = \[0, 4, 8, 12\], index = 0.5, Run displays result = 2.0.
+- [Matrix Size](array.matrix.size.worked.md) — With matrix = 2 x 3 array, Run displays rows = 2, columns = 3.
+- [Transpose Matrix](array.matrix.transpose.worked.md) — With matrix = 2 x 3 array, Run displays result = 3 x 2 array.
+- [Array Max &amp; Min](array.max_min.worked.md) — With array = \[-3, 1, -1, 5\], Run displays max = 5, max_index = 3, min = -3, min_index = 0.
+- [Boolean Array Constant](array.other_constants.boolean.worked.md) — Run displays the built-in value value = \[true, false, true\].
+- [Cluster Array Constant](array.other_constants.cluster.worked.md) — Run displays the built-in value value = \[{"name": "A", "level": 1}, {"name": "B", "level": 2}\].
+- [DBL Array Constant](array.other_constants.double_precision.worked.md) — Run displays the built-in value value = \[1.25, 2.5\].
+- [Error Array Constant](array.other_constants.error.worked.md) — Run displays the built-in value value = \[{"status": false, "code": 0, "source": ""}, {"status": true, "code": 7, "source": "sensor"}\].
+- [Integer Array Constant](array.other_constants.integer.worked.md) — Run displays the built-in value value = \[3, -2, 7\].
+- [Path Array Constant](array.other_constants.path.worked.md) — Run displays the built-in value value = \["first.txt", "second.txt"\].
+- [String Array Constant](array.other_constants.string.worked.md) — Run displays the built-in value value = \["Red", "Blue"\].
+- [Replace Array Subset](array.replace_subset.worked.md) — With array = \[-3, 1, -1, 5\], index = 1, subset = 5, Run displays result = \[-3, 5, -1, 5\].
+- [Search 1D Array](array.search_1d.worked.md) — With array = \[-3, 1, -1, 5\], value = -1, start_index = 0, Run displays index = 2.
+- [Sort 1D Array](array.sort_1d.worked.md) — With array = \[1, 7, 2, 15\], Run displays result = \[1, 2, 7, 15\].
+- [Array Subset](array.subset.worked.md) — With array = \[2, 4, 6, 8\], index = 3, length = 20, Run displays result = \[8\].
+- [Threshold 1D Array](array.threshold_1d.worked.md) — With array = \[0, 2, 4, 6\], threshold = 3, Run displays index = 1.5.
+- [Boolean Array To Number](array.conversion.boolean_array_to_number.worked.md) — Read the least-significant bit first. The array \[true, false, true\] represents 5.
+- [Number To Boolean Array](array.conversion.number_to_boolean_array.worked.md) — The U8 value 5 produces eight bits, with bits 0 and 2 set.
+- [Reshape Array](array.reshape.worked.md) — Resize a one-dimensional I32 array from four values to two; the prefix \[4, 8\] remains.
+- [Get Matrix Diagonal](array.matrix.get_diagonal.worked.md) — Read the main diagonal of a 3 by 3 matrix as a column containing 1, 5 and 9.
+- [Set Matrix Diagonal](array.matrix.set_diagonal.worked.md) — Replace the entire main diagonal of a 3 by 3 matrix with zero.
+- [Get Matrix Elements](array.matrix.get_elements.worked.md) — Read row 1 and column 2 of a zero-indexed matrix. Two scalar indices select the scalar 6.
+- [Set Matrix Elements](array.matrix.set_elements.worked.md) — Replace the value 6 at row 1 and column 2 with 42; the other eight cells are unchanged.
+- [Get Matrix Subset](array.matrix.get_subset.worked.md) — Extract rows 1 through 2 and columns 0 through 1. Both upper bounds are inclusive.
+- [Reshape Matrix](array.matrix.reshape.worked.md) — Resize a 2 by 3 matrix to 3 by 2. Preserve cells at their row and column coordinates, drop the third column and fill the additional row with zeros.
+- [Spreadsheet String To Array](array.conversion.spreadsheet_string_to_array.worked.md) — Parse two lines of semicolon-separated decimal numbers into a 2 by 2 matrix.
+- [Decimate 1D Array](array.decimate_1d.worked.md) — Split \[1,2,3,4,5,6\] into two alternating streams. Read \[1,3,5\] and \[2,4,6\] at their terminals.
+- [Set Matrix Subset](array.matrix.set_subset.worked.md) — Replace the center of a three-by-three matrix with 9 at zero-based row 1 and column 1.
+- [Interleave 1D Arrays](array.interleave_1d.worked.md) — Interleave two three-element I32 arrays to obtain 1 through 6 in order.
+- [Build Matrix](array.matrix.build.worked.md) — Former une matrice de trois lignes et deux colonnes. Le premier vecteur remplit la colonne gauche, le second la droite. Lire successivement les lignes \[2,1\], \[4,3\] et \[6,5\].
+- [Édition uniquement — Horodater deux relevés](array.other_constants.timestamp.worked.md) — Examiner les instants 0 et 1,5 seconde.
+- [Édition uniquement — Conserver une acquisition dans un tableau](array.other_constants.waveform.worked.md) — Déplier la première acquisition pour lire les trois échantillons espacés de 0,25 s.
+- [Mesures en face avant](array.terminal.worked.md) — La commande contient les mesures 12, 14 et 18. Son terminal alimente Array Size. Ajouter une quatrième mesure en face avant fait passer le compte de 3 à 4.
 
 ## Boolean
 
@@ -66,6 +105,12 @@ The index declares intended results and required backends. Its presence does not
 - [NOT — truth 1](boolean.not.truth_1.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted.
 - [True Constant — direct indicator](boolean.true_constant.direct_indicator.md) — The Studio node stores and exposes the fixed Boolean value true through output value.
 - [False Constant — direct indicator](boolean.false_constant.direct_indicator.md) — The Studio node stores and exposes the fixed Boolean value false through output value.
+- [Number To Boolean Array](boolean.number_to_array.worked.md) — With value = 5, Run displays result = \[True, False, True, ...\] (8 elements).
+- [Boolean To Integer](boolean.to_integer.worked.md) — With value = true, Run displays result = 1.
+- [Boolean Array To Number](boolean.array_to_number.worked.md) — Convert the bits true, false, true into the unsigned integer 5. The first element is bit zero.
+- [AND Array Elements](boolean.and_array_elements.worked.md) — Reduce the three flags \[true, false, true\] to a single Boolean result.
+- [OR Array Elements](boolean.or_array_elements.worked.md) — Reduce the three flags \[true, false, true\] to a single Boolean result.
+- [Acquisition active en face avant](boolean.terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
 
 ## Cluster
 
@@ -82,6 +127,8 @@ The index declares intended results and required backends. Its presence does not
 - [Read a nested field by stable identity](cluster.unbundle-by-name.nested.md) — The displayed Config.Offset path resolves the stable IDs config-id / offset-id. Unrelated fields are not read or rebuilt.
 - [Replace one nested Cluster field](cluster.bundle-by-name.replace-nested.md) — Replacing Config.Offset preserves the nested Name and outer Enabled fields. The selection uses persistent field identities, independently from their displayed names.
 - [Named rows keep selected field order](cluster.by-name.ni-layout-order.md) — The selected row order is second, text, first, deliberately different from the Cluster declaration. Replacing only second must preserve first and text; every output is verified before and after replacement.
+- [Édition uniquement — Assembler des mesures en enregistrements](cluster.build_array.worked.md) — Suivre les deux entrées puis la sortie tableau jusqu’au compteur d’enregistrements.
+- [Édition uniquement — Extraire les mesures par indice](cluster.index_build_array.worked.md) — Suivre les deux entrées puis la sortie tableau jusqu’au compteur d’enregistrements.
 
 ## Collection
 
@@ -114,6 +161,9 @@ The index declares intended results and required backends. Its presence does not
 - [Map size](collection.size.map.md) — Collection Size reports the stored entry count, not a maximum key or highest index.
 - [A default value is still an element](collection.empty.default-element.md) — A Set containing the value zero is nonempty. Default values are real stored elements and must not be confused with absence.
 - [An empty collection](collection.empty.true.md) — A Set containing the value zero is nonempty. Default values are real stored elements and must not be confused with absence.
+- [Parcourir les deux entrées d’une Map](collection.map.to_array.worked.md) — Lire le nombre d’éléments après le passage dans la structure.
+- [Recueillir les trois éléments d’un Set](collection.set.to_array.worked.md) — Lire le nombre d’éléments après le passage dans la structure.
+- [Accéder à la mesure B en place](collection.map.in_place_access.worked.md) — Lire le nombre d’éléments après le passage dans la structure.
 
 ## Comparison
 
@@ -159,6 +209,13 @@ The index declares intended results and required backends. Its presence does not
 - [Less Or Equal To 0? — negative](comparison.less_or_equal_zero.negative.md) — Tests whether a value is non-positive.
 - [Less Or Equal To 0? — zero](comparison.less_or_equal_zero.zero.md) — Tests whether a value is non-positive.
 - [Less Or Equal To 0? — positive](comparison.less_or_equal_zero.positive.md) — Tests whether a value is non-positive.
+- [Decimal Digit?](comparison.decimal_digit.worked.md) — With x = "0", Run displays result = true.
+- [Empty String/Path?](comparison.empty_string_or_path.worked.md) — With x = "notes", Run displays result = false.
+- [Hex Digit?](comparison.hex_digit.worked.md) — With x = "0", Run displays result = true.
+- [Not A Number/Path/Refnum?](comparison.not_a_number_path_refnum.worked.md) — With x = -3, Run displays result = false.
+- [Octal Digit?](comparison.octal_digit.worked.md) — With x = "0", Run displays result = true.
+- [White Space?](comparison.white_space.worked.md) — With x = "0", Run displays result = false.
+- [Empty Array?](comparison.empty_array.worked.md) — Test a non-empty numeric Array of two elements. The empty-array indicator is false.
 
 ## Connectivity
 
@@ -171,6 +228,30 @@ The index declares intended results and required backends. Its presence does not
 - [Appel C : bibliothèque absente](native_call.missing_library.md) — Appel C : bibliothèque absente
 - [Appel C : erreur amont, aucun effet externe](native_call.upstream_error.md) — Appel C : erreur amont, aucun effet externe
 - [Appel C : signature pointeur non admise par scalar5](native_call.pointer_refused_scalar5.md) — Appel C : signature pointeur non admise par scalar5
+- [Édition uniquement — Appeler une fonction Python](connectivity.python.node.editable.md) — Relier la session Python du premier appel au nœud, puis au dernier appel. Le paramètre vaut 21. Le module d’exercice attendu définit double_value(x) avec return 2*x.
+- [Édition uniquement — Récupérer une version](connectivity.source_control.get_latest_version.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Remettre un fichier](connectivity.source_control.check_in.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Réserver un fichier](connectivity.source_control.check_out.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Ajouter un fichier au projet](connectivity.source_control.add.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Retirer un fichier du projet](connectivity.source_control.remove.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Consulter le statut](connectivity.source_control.file_status.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Annuler une réservation](connectivity.source_control.undo_check_out.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Lire les propriétés du fichier](connectivity.source_control.file_properties.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Consulter l’historique](connectivity.source_control.file_history.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Comparer deux versions du fichier](connectivity.source_control.compare_files.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Comparer deux versions du diagramme](connectivity.source_control.compare_vis.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Examiner la référence de projet](connectivity.source_control.not_a_reference.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources.
+- [Édition uniquement — Inspecter une clé](connectivity.registry.query_key_info.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Énumérer les sous-clés](connectivity.registry.enum_keys.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Énumérer les valeurs](connectivity.registry.enum_values_simple.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Lire une valeur](connectivity.registry.read_value_simple.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Écrire une valeur](connectivity.registry.write_value_simple.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Supprimer une valeur de test](connectivity.registry.delete_value.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Supprimer une sous-clé de test](connectivity.registry.delete_key.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition.
+- [Édition uniquement — Acquérir les données d’une manette](connectivity.input_device.acquire_input_data.editable.md) — Choisir l’index 0. Suivre la référence de manette depuis l’initialisation vers l’acquisition puis la fermeture. Examiner les sorties d’axes, de boutons et de direction.
+- [Édition uniquement — Identifier le clavier](connectivity.input_device.initialize_keyboard.editable.md) — Compter les périphériques du type choisi dans l’inventaire, puis examiner la référence device_id de l’initialisation.
+- [Édition uniquement — Identifier la souris](connectivity.input_device.initialize_mouse.editable.md) — Compter les périphériques du type choisi dans l’inventaire, puis examiner la référence device_id de l’initialisation.
+- [Édition uniquement — Préparer une commande locale](connectivity.system_exec.worked.md) — Suivre la commande echo FROG depuis la constante jusqu’au nœud. Repérer les trois sorties qui recevraient le texte, le code retour et l’erreur.
 
 ## DialogUserInterface
 
@@ -182,12 +263,52 @@ The index declares intended results and required backends. Its presence does not
 - [Clear Error : réinitialiser les trois champs du cluster](error.clear.complete_record.md) — Clear Error : réinitialiser les trois champs du cluster
 - [Retain First : conserver le premier avertissement en l'absence d'erreur](error.retain_first.warning_priority.md) — Retain First : conserver le premier avertissement en l'absence d'erreur
 - [Display Error : inspecter un record sans erreur](error.display.clean_record.md) — Display Error : inspecter un record sans erreur
+- [Downgrade To Warning](error.downgrade_to_warning.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays error_out = {"status": false, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}.
+- [Filter Error Code](error.filter_code.worked.md) — With codes = \[41, 43\], error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays codes_cleared = \[41\], error_cleared = true, error_out = {"status": false, "code": 0, "source": ""}.
+- [Is Error](error.is_error.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays result = true.
+- [Is Error Or Warning](error.is_error_or_warning.worked.md) — With error_in = {"status": false, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays result = true.
+- [Is Warning](error.is_warning.worked.md) — With error_in = {"status": false, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays result = true.
+- [Read Call Chain](error.read_call_chain.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays has_location = true.
+- [Read Error Code](error.read_code.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays code = 41.
+- [Read Description](error.read_description.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays description = "sensor unplugged".
+- [Read Location](error.read_location.worked.md) — With error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays location = "read-sensor".
+- [Translate Error Code](error.translate_code.worked.md) — Translate sensor error code 41 to 101. The status remains true and the original location is retained. Translation clears the description associated with the previous code.
+- [Upgrade To Error](error.upgrade_to_error.worked.md) — With error_in = {"status": false, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays error_out = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}.
+- [Write Error Code](error.write_code.worked.md) — With code = 101, error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays error_out = {"status": true, "code": 101, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}.
+- [Generate Error Report](error.generate_report.worked.md) — Generate a readable report for an incoming cluster without an error. The string indicator displays Success.
+- [Build Error Cluster](error.build_cluster.worked.md) — Start with an incoming error 17 from Input sensor, then request creation of error 42. The original error passes through intact.
+- [Override Call Chain](error.override_call_chain.worked.md) — Record the location Count samples in the error source while retaining status false and code zero.
+- [Write Current Call Chain](error.write_current_call_chain.worked.md) — Write the current call chain to a clean Error Cluster with zero frames removed. Observe the resulting clean error.
+- [Write Call Chain](error.write_call_chain.worked.md) — Write the two call sites Main and Read in order. Inspect their encoding in the error source and the unchanged status and code.
+- [error in en face avant](error.terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Retrouver deux erreurs regroupées](error.demultiplex.worked.md) — Les voies Mesure et Lecture portent les codes 17 et 23. Regrouper les deux erreurs puis compter les entrées retrouvées.
+- [Regrouper deux voies d’erreur](error.multiplex.worked.md) — La première voie est saine, la seconde signale le code 17. Examiner la sortie du multiplexeur.
 
 ## File
 
 - [File Exists : le chemin vide désigne la liste des lecteurs Windows](file.exists.empty_drive_list.md) — File Exists : le chemin vide désigne la liste des lecteurs Windows
 - [Read Text : refuser un chemin relatif sans base explicite](file.read.relative_path_rejected.md) — Read Text : refuser un chemin relatif sans base explicite
 - [Read Text : conserver l'erreur amont sans accès disque](file.read.upstream_error.md) — Read Text : conserver l'erreur amont sans accès disque
+- [Unflatten From XML](file.unflatten_from_xml.worked.md) — In the Simulation profile, decode a signed I32 from a literal XML element. The I32 wired to type is a prototype, so the output is -42 even though the prototype value is 0. The example reads no file.
+- [CSV — write and read a spreadsheet](file.csv.write-read.md) — Choose an absolute base filename in a writable folder (for example, readings.csv), then run in Simulation. Create Incrementing reserves a new file. Write two rows separated by semicolons, read the four numbers back, then delete the file that this example created. An existing file with the chosen name is preserved.
+- [Lire la position et la taille d’un fichier](file.readonly.inspection.md) — En Simulation, saisir le chemin absolu d’un fichier non vide, par exemple le Readme.md de cet exemple. Ouvrir en lecture seule, avancer d’un octet et lire la position. Après fermeture, vérifier la taille et le type du fichier.
+- [Réduire un fichier réservé de quatre à deux octets](file.reserve.write.truncate.md) — En Simulation, saisir un nom de fichier de base dans un dossier accessible en écriture. Réserver un nouveau fichier, y écrire FROG, vider le tampon, puis ramener sa taille à deux octets. Le texte relu est FR. Seul le fichier réservé par le montage est supprimé.
+- [Copier une mesure](file.copy.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic.
+- [Déplacer une copie de travail](file.move.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic.
+- [Créer un dossier de relevés](file.create_folder.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic.
+- [Lister les relevés TSV](file.list_folder.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Dans un dossier contenant uniquement a.tsv, on trouve un relevé.
+- [Compter les relevés dans une arborescence](file.recursive_list.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Dans un dossier contenant uniquement a.tsv, on trouve un relevé.
+- [Lire le XML d’un relevé](file.read_xml.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Choisir un fichier LVData contenant un relevé DBL.
+- [Écrire un relevé XML](file.write_xml.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Choisir un nouveau nom de fichier .xml.
+- [Examiner les permissions d’un fichier](file.get_permissions.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic.
+- [Rendre une copie accessible en écriture](file.set_permissions.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Sous Windows, le bit 128 autorise l’écriture sur cette copie.
+- [Lire les métadonnées de type et de créateur](file.get_type_creator.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. Avec un fichier .log, le profil Windows renvoie LVDL et LBVW.
+- [Édition uniquement — Associer un type et un créateur à une copie](file.set_type_creator.worked.md) — Le chemin relatif releves/acquisition.tsv est fictif. Modifier ce chemin sur la face avant et suivre son fil jusqu’à la fonction.
+- [Édition uniquement — Localiser le relevé dans son dossier](file.show_in_file_system.worked.md) — Le chemin relatif releves/acquisition.tsv est fictif. Modifier ce chemin sur la face avant et suivre son fil jusqu’à la fonction.
+- [Examiner la capacité du volume d’un relevé](file.volume_info.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic.
+- [Lire trois octets dans un tampon](file.binary_read_preallocated.worked.md) — Choisir une copie de travail. Ouvrir en lecture seule, suivre la référence jusqu’à la fermeture et examiner le diagnostic. Le fichier de démonstration contient les trois caractères ASCII 123.
+- [Fixer le partage d’un fichier ouvert](file.deny_access.worked.md) — Choisir une copie de travail. Ouvrir en lecture seule, suivre la référence jusqu’à la fermeture et examiner le diagnostic.
+- [Sérialiser puis relire une tension en XML](file.flatten_to_xml.worked.md) — Observer le XML produit puis relire la tension avec un témoin DBL. La valeur relue doit être 12,5.
 
 ## Mathematics
 
@@ -385,6 +506,261 @@ The index declares intended results and required backends. Its presence does not
 - [Adaptive sampling keeps an exact straight line](math.formula.y_optimal.affine-no-refinement.md) — The explicit FROG refinement rule needs no extra point on 2*x+1. Initial parameter points \[0,1,2\] remain ordered. This example does not claim the same adaptive grid as NI.
 - [Adaptive coordinates preserve a straight line](math.formula.xy_optimal.affine-no-refinement.md) — For \[2*t,t+1\], every intermediate point lies exactly on the chord. The FROG refinement rule keeps the initial three parameter points and both endpoint occurrences.
 - [Adaptive polar sampling preserves parameter occurrences](math.formula.polar_optimal.zero-radius.md) — Zero radius gives three coincident coordinate pairs. At angles 0,1,2, cos(2) is negative, so +0*cos(2) is IEEE -0; the independent x oracle preserves that sign. Distinct parameter occurrences are retained; the output must not deduplicate them merely because their coordinates agree.
+- [Numeric Integration](math.calculus.numeric_integration.worked.md) — With input_array = \[2, 2, 2\], dt = 1, Run displays result = 4, error = 0.
+- [Quadrature](math.calculus.quadrature.worked.md) — With integrand = "2", upper_limit = 3, lower_limit = 1, Run displays result = 4, error = 0.
+- [Uneven Numeric Integration](math.calculus.uneven_numeric_integration.worked.md) — With x = \[2, 2, 2\], t = \[0, 1, 3\], Run displays result = 6, error = 0.
+- [Cubic Spline Fit](math.fitting.cubic_spline_fit.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 3, 5, ...\] (6 elements), balance_parameter = 0.4, Run displays best_fit = \[1, 3, 5, ...\] (6 elements).
+- [Curve Fit](math.fitting.curve_fit.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 3, 5, ...\] (6 elements), Run displays best_fit = \[1, 3, 5, ...\] (6 elements).
+- [Exp Fit](math.fitting.exponential_fit.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[2.0, 1.2130613194252668, 0.7357588823428847, ...\] (6 elements), tolerance = 1e-10, Run displays amplitude = 2, damping = -0.5.
+- [Exp Fit Coef](math.fitting.exponential_fit_coefficients.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[2.0, 1.2130613194252668, 0.7357588823428847, ...\] (6 elements), tolerance = 1e-10, Run displays amplitude = 2, damping = -0.5.
+- [Fit on a Sphere](math.fitting.fitting_on_sphere.worked.md) — With x = \[3, -1, 1, ...\] (6 elements), y = \[2, 2, 4, ...\] (6 elements), z = \[3, 3, 3, ...\] (6 elements), Run displays center = \[1, 2, 3\], radius = 2.
+- [Linear Fit](math.fitting.linear_fit.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 3, 5, ...\] (6 elements), tolerance = 1e-10, Run displays slope = 2, intercept = 1.
+- [Linear Fit Coef](math.fitting.linear_fit_coefficients.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 3, 5, ...\] (6 elements), Run displays slope = 2, intercept = 1.
+- [Polynomial Fit](math.fitting.polynomial_fit.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 6, 17, ...\] (6 elements), polynomial_order = 2, Run displays coefficients = \[1, 2, 3\].
+- [Poly Fit Coef](math.fitting.polynomial_fit_coefficients.worked.md) — With x = \[0, 1, 2, ...\] (6 elements), y = \[1, 6, 17, ...\] (6 elements), polynomial_order = 2, Run displays coefficients = \[1, 2, 3\].
+- [Power Fit](math.fitting.power_fit.worked.md) — With x = \[1, 2, 3, ...\] (6 elements), y = \[3, 12, 27, ...\] (6 elements), tolerance = 1e-10, Run displays amplitude = 3, power = 2.
+- [Power Fit Coef](math.fitting.power_fit_coefficients.worked.md) — With x = \[1, 2, 3, ...\] (6 elements), y = \[3, 12, 27, ...\] (6 elements), tolerance = 1e-10, Run displays amplitude = 3, power = 2.
+- [Absolute Angle Difference](math.geometry.absolute_angle_difference.worked.md) — With a = 0.75, b = 0.25, Run displays angle_out = 0.5, error = 0.
+- [Angle Rotation](math.geometry.angle_rotation.worked.md) — With angle = 0.25, delta = 0.5, Run displays angle_out = 0.75, error = 0.
+- [Bisect Angle](math.geometry.bisect_angle.worked.md) — With angle_units = 2, angle_range = 1, shortest_arc = false, start = 10, end = 350, Run displays angle_out = 180.0, error = 0.
+- [Complementary Angle](math.geometry.complementary_angle.worked.md) — With angle_units = 2, angle_range = 1, angle = 30, Run displays angle_out = 60, error = 0.
+- [Convex Hull](math.geometry.convex_hull.worked.md) — With x = \[0, 2, 2, 0, 1\], y = \[0, 0, 2, 2, 1\], Run displays hull = \[0, 1, 2, 3, 0\], error = 0.
+- [Convex Polygon Intersection](math.geometry.convex_polygon_intersection.worked.md) — With x1 = \[0, 2, 2, 0\], y1 = \[0, 0, 2, 2\], x2 = \[1, 3, 3, 1\], y2 = \[1, 1, 3, 3\], Run displays intersection_x = \[1, 2, 2, 1\], intersection_y = \[1, 1, 2, 2\], error = 0.
+- [3D Coordinate Conversion](math.geometry.coordinate_conversion_3d.worked.md) — With conversion_type = 0, axis1 = 2.0, axis2 = 2.0, axis3 = 3.0, Run displays axis1_out = 4.123105625617661, axis2_out = 0.7853981633974483, axis3_out = 0.7559694104239078, error = 0.
+- [Cross Product](math.geometry.cross_product.worked.md) — With a = \[1, 0, 0\], b = \[0, 1, 0\], Run displays cross = \[0, 0, 1\], error = 0.
+- [Delaunay Triangulation](math.geometry.delaunay_triangulation.worked.md) — With x = \[0, 2, 0\], y = \[0, 0, 2\], Run displays triangles = 1 x 3 array, error = 0.
+- [Check for Included Angle](math.geometry.included_angle.worked.md) — With angle_units = 2, angle_range = 1, coerce_angle = false, angle = 5, start = 350, end = 10, Run displays angle_out = 5, included = true, error = 0.
+- [Point in Polygon](math.geometry.point_in_polygon.worked.md) — With x = \[0, 4, 0\], y = \[0, 0, 3\], x_query = 1, y_query = 1, Run displays inside = true, boundary = false, error = 0.
+- [Polygon Area](math.geometry.polygon_area.worked.md) — With x = \[0, 4, 0\], y = \[0, 0, 3\], Run displays signed_area = 6, error = 0.
+- [Polygon Centroid](math.geometry.polygon_centroid.worked.md) — With x = \[0, 6, 0\], y = \[0, 0, 3\], Run displays centroid_x = 2, centroid_y = 1, error = 0.
+- [2D Rotation](math.geometry.rotation_2d.worked.md) — With theta = 1.5707963267948966, x = 1.0, y = 2.0, Run displays x_out = 2.0, y_out = -1.0, error = 0.
+- [3D Rot. (Direct)](math.geometry.rotation_3d_direction.worked.md) — With x = 1.0, y = 2.0, z = 3.0, direction_cosines = 3 x 3 array, Run displays x_out = 2.0, y_out = -1.0, z_out = 3.0, error = 0.
+- [2D Shift](math.geometry.shift_2d.worked.md) — With dx = 2.0, dy = -3.0, x = 1.0, y = 2.0, Run displays x_out = 3.0, y_out = -1.0, error = 0.
+- [3D Shift](math.geometry.shift_3d.worked.md) — With dx = 2.0, dy = -3.0, dz = 4.0, x = 1.0, y = 2.0, z = 3.0, Run displays x_out = 3.0, y_out = -1.0, z_out = 7.0, error = 0.
+- [Supplementary Angle](math.geometry.supplementary_angle.worked.md) — With angle_units = 2, angle_range = 1, angle = 30, Run displays angle_out = 150, error = 0.
+- [Voronoi Diagram](math.geometry.voronoi_diagram.worked.md) — With x = \[0, 2, 0\], y = \[0, 0, 2\], Run displays vertices = 1 x 2 array, edges = 3 x 2 array, directions = 3 x 2 array, sites = 3 x 2 array, edge_kind = \[1, 1, 1\], error = 0.
+- [Wrap Angle](math.geometry.wrap_angle.worked.md) — With angle = 0.5, Run displays angle_out = 0.5, error = 0.
+- [Create Mesh Grid (2D)](math.interpolation.create_mesh_grid_2d.worked.md) — With x_domain = \[10, 20, 30\], y_domain = \[1, 2\], Run displays x = 2 x 3 array, y = 2 x 3 array, error = 0.
+- [Interpolate 1D](math.interpolation.interpolate_1d.worked.md) — With x = \[0, 2, 4\], y = \[1, 5, 9\], method = 1, ntimes = 1, Run displays yi = \[1, 3, 5, 7, 9\], xi_used = \[0, 1, 2, 3, 4\], error = 0.
+- [Interpolate 1D Fourier](math.interpolation.interpolate_1d_fourier.worked.md) — With x = \[3, -2, 7, 1, 9\], n = 5, type = 0, dt_in = 0.4, Run displays y = \[3, -2, 7, 1, 9\], interpolation_size = 5, dt_out = 0.4, error = 0.
+- [Interpolate 2D](math.interpolation.interpolate_2d.worked.md) — With x = \[0, 2\], y = \[0, 4\], z = 2 x 2 array, method = 1, ntimes = 1, Run displays zi = 3 x 3 array, xi_used = 3 x 3 array, yi_used = 3 x 3 array, error = 0.
+- [Interpolate 2D Scattered](math.interpolation.interpolate_2d_scattered.worked.md) — With x = \[0, 1, 0\], y = \[0, 0, 1\], z = \[1, 3, 4\], xi = 1 x 2 array, yi = 1 x 2 array, method = 0, Run displays zi = 1 x 2 array.
+- [Polynomial Interpolation](math.interpolation.polynomial_interpolation.worked.md) — With x = \[0, 1, 2\], y = \[0, 1, 4\], x_value = 1, Run displays interpolation_value = 1, interpolation_error = 0, error = 0.
+- [Rational Interpolation](math.interpolation.rational_interpolation.worked.md) — With x = \[0, 1, 2\], y = \[1, 2, 5\], x_value = 0.5, Run displays interpolation_value = 1.4, interpolation_error = 0.06666666666666667, error = 0.
+- [Spline Interpolant](math.interpolation.spline_interpolant.worked.md) — With x = \[0, 1, 2\], y = \[0, 1, 8\], initial_boundary = 0, final_boundary = 12, Run displays interpolant = \[0, 6, 12\], error = 0.
+- [Spline Interpolation](math.interpolation.spline_interpolation.worked.md) — With x = \[0, 1, 2\], y = \[0, 1, 0\], interpolant = \[0, 0, 0\], x_value = 0.5, Run displays interpolation_value = 0.5, error = 0.
+- [asum](math.linear_algebra.blas.asum.worked.md) — With x = \[-3, 4\], Run displays result = 7.
+- [axpy](math.linear_algebra.blas.axpy.worked.md) — With x = \[2, 3\], y = \[4, 5\], alpha = 2, Run displays result = \[8, 11\].
+- [copy](math.linear_algebra.blas.copy.worked.md) — With x = \[2, 3\], y = \[0, 0\], Run displays result = \[2, 3\].
+- [ddot](math.linear_algebra.blas.ddot.worked.md) — With x = \[2, 3\], y = \[4, 5\], Run displays result = 23.
+- [dger](math.linear_algebra.blas.dger.worked.md) — With x = \[1, 2\], y = \[3, 4\], a = 2 x 2 array, alpha = 1, Run displays result = 2 x 2 array.
+- [dsymv](math.linear_algebra.blas.dsymv.worked.md) — With a = 2 x 2 array, x = \[2, 3\], y = \[0, 0\], alpha = 1, beta = 0, Run displays result = \[4, 9\].
+- [gemm](math.linear_algebra.blas.gemm.worked.md) — With a = 2 x 2 array, b = 2 x 2 array, c = 2 x 2 array, alpha = 1, beta = 0, Run displays result = 2 x 2 array.
+- [gemv](math.linear_algebra.blas.gemv.worked.md) — With a = 2 x 2 array, x = \[1, 2\], y = \[0, 0\], alpha = 1, beta = 0, Run displays result = \[5, 11\].
+- [nrm2](math.linear_algebra.blas.nrm2.worked.md) — With x = \[3, 4\], Run displays result = 5.
+- [rot](math.linear_algebra.blas.rot.worked.md) — With x = \[1, 2\], y = \[3, 4\], c = 0, s = 1, Run displays x_out = \[3, 4\], y_out = \[-1, -2\].
+- [swap](math.linear_algebra.blas.swap.worked.md) — With x = \[2, 3\], y = \[4, 5\], Run displays x_out = \[4, 5\], y_out = \[2, 3\].
+- [symm](math.linear_algebra.blas.symm.worked.md) — With a = 2 x 2 array, b = 2 x 2 array, c = 2 x 2 array, alpha = 1, beta = 0, Run displays result = 2 x 2 array.
+- [trmm](math.linear_algebra.blas.trmm.worked.md) — With a = 2 x 2 array, b = 2 x 2 array, alpha = 1, Run displays result = 2 x 2 array.
+- [trmv](math.linear_algebra.blas.trmv.worked.md) — With a = 2 x 2 array, x = \[2, 3\], Run displays result = \[4, 9\].
+- [trsm](math.linear_algebra.blas.trsm.worked.md) — With a = 2 x 2 array, x = 2 x 2 array, alpha = 1, Run displays result = 2 x 2 array.
+- [trsv](math.linear_algebra.blas.trsv.worked.md) — With a = 2 x 2 array, x = \[4, 9\], Run displays result = \[2, 3\].
+- [Matrix Characteristic Polynomial](math.linear_algebra.characteristic_polynomial.worked.md) — With a = 2 x 2 array, Run displays result = \[6, -5, 1\].
+- [Cholesky](math.linear_algebra.cholesky.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array.
+- [Cholesky Update](math.linear_algebra.cholesky_update.worked.md) — With r = 2 x 2 array, x = \[0, 0\], Run displays result = 2 x 2 array.
+- [Condition Number](math.linear_algebra.condition_number.worked.md) — With a = 2 x 2 array, Run displays result = 2.
+- [Determinant](math.linear_algebra.determinant.worked.md) — With a = 2 x 2 array, Run displays result = -2.
+- [Dot Product](math.linear_algebra.dot_product.worked.md) — With x = \[2, 3\], y = \[4, 5\], Run displays result = 23.
+- [Inverse Matrix](math.linear_algebra.inverse_matrix.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array.
+- [Kronecker Prod](math.linear_algebra.kronecker_product.worked.md) — With a = 1 x 2 array, b = 2 x 1 array, Run displays result = 2 x 2 array.
+- [LU](math.linear_algebra.lu.worked.md) — With a = 2 x 2 array, Run displays l = 2 x 2 array, u = 2 x 2 array.
+- [Matrix Balance](math.linear_algebra.matrix_balance.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array.
+- [Matrix Exp](math.linear_algebra.matrix_exp.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array.
+- [A x B](math.linear_algebra.matrix_multiply.worked.md) — With a = 2 x 2 array, b = 2 x 2 array, Run displays result = 2 x 2 array.
+- [Matrix Norm](math.linear_algebra.matrix_norm.worked.md) — With a = 2 x 2 array, Run displays result = 3.
+- [Matrix Power](math.linear_algebra.matrix_power.worked.md) — With a = 2 x 2 array, n = 3, Run displays result = 2 x 2 array.
+- [Matrix Rank](math.linear_algebra.matrix_rank.worked.md) — With a = 2 x 2 array, Run displays result = 1.
+- [Outer Product](math.linear_algebra.outer_product.worked.md) — With x = \[1, 2\], y = \[3, 4\], Run displays result = 2 x 2 array.
+- [PseudoInv](math.linear_algebra.pseudoinverse.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array.
+- [Solve Linear Eqs](math.linear_algebra.solve_linear_equations.worked.md) — With a = 2 x 2 array, b = \[9, 8\], Run displays result = \[2, 3\].
+- [Create Special Matrix](math.linear_algebra.special_matrix.worked.md) — With matrix_size = 2, Run displays result = 2 x 2 array.
+- [Subspaces Angle](math.linear_algebra.subspaces_angle.worked.md) — With a = 2 x 1 array, b = 2 x 1 array, Run displays result = 0.7853981633974483.
+- [SVD](math.linear_algebra.svd.worked.md) — With a = 2 x 2 array, Run displays singular_values = \[3, 2\].
+- [Trace](math.linear_algebra.trace.worked.md) — With a = 2 x 2 array, Run displays result = 5.
+- [Vector Norm](math.linear_algebra.vector_norm.worked.md) — With x = \[3, 4\], Run displays result = 5.
+- [CG nD](math.optimization.cg_nd.worked.md) — With start = \[-4, 3\], variables = \["u", "v"\], formula = "(u-1)^2+4*(v+2)^2+3", Run displays minimum = \[1, -2\], cost = 3.
+- [Chebyshev Approx](math.optimization.chebyshev.worked.md) — With start = -1, end = 1, order = 2, points = 3, formula = "x*x", Run displays coefficients = \[0.5, 0, 0.5\].
+- [LP](math.optimization.lp.worked.md) — With c = \[3, 2\], m = 3 x 2 array, b = \[-4, -2, -3\], Run displays maximum = 10, solution = \[2, 2\].
+- [Downhill Simplex nD](math.optimization.simplex_nd.worked.md) — With start = \[-4, 3\], variables = \["u", "v"\], formula = "(u-1)^2+4*(v+2)^2+3", Run displays minimum = \[1, -2\], cost = 3.
+- [Unconstr NLP](math.optimization.unconstrained.conjugate_gradient.formula.worked.md) — With start = \[-4, 3\], variables = \["u", "v"\], formula = "(u-1)^2+4*(v+2)^2+3", error_in = {"status": false, "code": 0, "source": ""}, Run displays minimum = \[1, -2\], cost = 3.
+- [Unconstr NLP](math.optimization.unconstrained.quasi_newton.formula.worked.md) — With start = \[-4, 3\], variables = \["u", "v"\], formula = "(u-1)^2+4*(v+2)^2+3", error_in = {"status": false, "code": 0, "source": ""}, Run displays minimum = \[1, -2\], cost = 3.
+- [Unconstr NLP](math.optimization.unconstrained.simplex.formula.worked.md) — With start = \[-4, 3\], variables = \["u", "v"\], formula = "(u-1)^2+4*(v+2)^2+3", error_in = {"status": false, "code": 0, "source": ""}, Run displays minimum = \[1, -2\], cost = 3.
+- [Add Poly](math.polynomial.add.worked.md) — With p = \[1, 2\], q = \[3, 4\], Run displays result = \[4, 6\], error = 0.
+- [Bessel](math.polynomial.bessel.worked.md) — With n = 0, x = 2, Run displays result = 1, error = 0.
+- [Chebyshev](math.polynomial.chebyshev.worked.md) — With n = 2, x = 0.5, Run displays result = -0.5, error = 0.
+- [Poly Composite](math.polynomial.compose.worked.md) — With p = \[1, 2\], q = \[3, 4\], Run displays result = \[7, 8\], error = 0.
+- [nth Derivative](math.polynomial.derivative.worked.md) — With p = \[1, 2, 3\], order = 1, Run displays result = \[2, 6\], error = 0.
+- [Divide Poly](math.polynomial.divide.worked.md) — With p = \[3, 10, 8\], q = \[1, 2\], Run displays quotient = \[3, 4\], remainder = \[0\], error = 0.
+- [Poly Eigenvalue](math.polynomial.eigenvalues.worked.md) — With coefficients = 2 x 1 x 1 array, Run displays error = -9602.
+- [Poly Evaluation](math.polynomial.evaluate.worked.md) — With p = \[1, 2\], x = 3, Run displays result = 7, error = 0.
+- [Create Poly](math.polynomial.from_roots.worked.md) — With roots = \[1, 1, -2\], Run displays result = \[2, -3, 0, 1\], error = 0.
+- [Poly GCD](math.polynomial.gcd.worked.md) — With p = \[0\], q = \[0\], Run displays result = \[0\], error = 0.
+- [Integral](math.polynomial.integral.worked.md) — With p = \[2, 6\], start = 0, end = 2, Run displays result = 16, error = 0.
+- [Poly LCM](math.polynomial.lcm.worked.md) — With p = \[2, -3, 1\], q = \[0\], Run displays result = \[0\], error = 0.
+- [Legendre](math.polynomial.legendre.worked.md) — With n = 2, x = 1, Run displays result = 1, error = 0.
+- [Lin. Evaluation](math.polynomial.linear_evaluate.worked.md) — With x = \[-1, 0, 4\], a = 2, b = -3, Run displays result = \[-5, -3, 5\], error = 0.
+- [Evaluate Polynomial with Matrix](math.polynomial.matrix_evaluate.worked.md) — With p = \[2, -3, 1\], a = 2 x 3 array, Run displays error = -9601.
+- [Multiply Poly](math.polynomial.multiply.worked.md) — With p = \[1, 2\], q = \[3, 4\], Run displays result = \[3, 10, 8\], error = 0.
+- [Negative Feedback with Rational Polynomials](math.polynomial.negative_feedback.worked.md) — With numerator = \[1, 1\], denominator = \[2, 1\], numerator2 = \[2\], denominator2 = \[3, 1\], Run displays numerator_out = \[3, 4, 1\], denominator_out = \[8, 7, 1\], error = 0.
+- [Normalize with Highest Den Term](math.polynomial.normalize_high.worked.md) — With numerator = \[2, 4\], denominator = \[4, 6, 2\], Run displays numerator_out = \[1, 2\], denominator_out = \[2, 3, 1\], error = 0.
+- [Normalize with Lowest Den Term](math.polynomial.normalize_low.worked.md) — With numerator = \[2, 4\], denominator = \[4, 6, 2\], Run displays numerator_out = \[0.5, 1\], denominator_out = \[1, 1.5, 0.5\], error = 0.
+- [Order of Poly](math.polynomial.order.worked.md) — With p = \[1, 2, 3\], Run displays order = 2, error = 0.
+- [Create Orthogonal Polynomial](math.polynomial.orthogonal.worked.md) — With order = 3, Run displays result = \[0, -3, 0, 4\], error = 0.
+- [Pade Approximation](math.polynomial.pade.worked.md) — With derivatives = \[0, 0, 1\], m = 1, n = 1, Run displays error = -9602.
+- [Polynomial Plot](math.polynomial.plot.worked.md) — With p = \[2, -3, 1\], samples = 1, Run displays error = -9603.
+- [Positive Feedback with Rational Polynomials](math.polynomial.positive_feedback.worked.md) — With numerator = \[1\], denominator = \[1\], numerator2 = \[1\], denominator2 = \[1\], Run displays error = -9602.
+- [Indef. Integral](math.polynomial.primitive.worked.md) — With p = \[2, 6\], Run displays result = \[0, 2, 3\], error = 0.
+- [Add Rational Polynomials](math.polynomial.rational_add.worked.md) — With numerator = \[1, 1\], denominator = \[2, 1\], numerator2 = \[2\], denominator2 = \[3, 1\], Run displays numerator_out = \[7, 6, 1\], denominator_out = \[6, 5, 1\], error = 0.
+- [nth Derivative of Rational Polynomial](math.polynomial.rational_derivative.worked.md) — With numerator = \[1\], denominator = \[1, 1\], Run displays numerator_out = \[-1\], denominator_out = \[1, 2, 1\], error = 0.
+- [Divide Rational Polynomials](math.polynomial.rational_divide.worked.md) — With numerator = \[1, 1\], denominator = \[2, 1\], numerator2 = \[2\], denominator2 = \[3, 1\], Run displays numerator_out = \[3, 4, 1\], denominator_out = \[4, 2\], error = 0.
+- [1D Rational Polynomial Evaluation](math.polynomial.rational_evaluate.worked.md) — With numerator = \[1\], denominator = \[1, 1\], x = \[-1\], Run displays error = -9602.
+- [Multiply Rational Polynomials](math.polynomial.rational_multiply.worked.md) — With numerator = \[1, 1\], denominator = \[2, 1\], numerator2 = \[2\], denominator2 = \[3, 1\], Run displays numerator_out = \[2, 2\], denominator_out = \[6, 5, 1\], error = 0.
+- [Subtract Rational Polynomials](math.polynomial.rational_subtract.worked.md) — With numerator = \[1, 1\], denominator = \[2, 1\], numerator2 = \[2\], denominator2 = \[3, 1\], Run displays numerator_out = \[-1, 2, 1\], denominator_out = \[6, 5, 1\], error = 0.
+- [Real Zeros Counter](math.polynomial.real_zeros.worked.md) — With p = \[2, -3, 1\], start = 3, end = 1, Run displays error = -9603.
+- [Remove Residue from Denominator](math.polynomial.remove_residue.worked.md) — With numerator = \[0\], denominator = \[0\], Run displays error = -9602.
+- [Remove Zeros](math.polynomial.remove_zeros.worked.md) — With p = \[0, 2, 0, 0\], Run displays result = \[0, 2\], removed = 2, error = 0.
+- [Poly Roots](math.polynomial.roots.worked.md) — With p = \[0\], Run displays error = -9603.
+- [Subtract Poly](math.polynomial.subtract.worked.md) — With p = \[4, 6\], q = \[1, 2\], Run displays result = \[3, 4\], error = 0.
+- [Unique Numbers and Multiplicity](math.polynomial.unique.worked.md) — With numbers = \[1, 1, 2, 3, 3\], Run displays result = \[1, 2, 3\], multiplicity = \[2, 1, 2\], error = 0.
+- [1D ANOVA](math.statistics.anova.anova_1d.worked.md) — With x = \[1, 2, 3, ...\] (9 elements), index_a = \[0, 0, 0, ...\] (9 elements), levels_a = 3, Run displays f = 27.0, sig_a = 0.001.
+- [2D ANOVA](math.statistics.anova.anova_2d.worked.md) — With x = \[6.5, 8.5, 9.5, ...\] (8 elements), observations_per_cell = 2, index_a = \[0, 0, 0, ...\] (8 elements), index_b = \[0, 0, 1, ...\] (8 elements), levels_a = 2, levels_b = 2, Run displays sig_a = 0.1161165235168156, sig_b = 0.01613008990009255.
+- [Correlation Test](math.statistics.hypothesis.correlation_test.worked.md) — With x = \[1, 2, 3, 4, 5\], y = \[1, 4, 2, 5, 3\], type = 0, alternative = 0, Run displays r = 0.5, p_value = 0.39100221895577025, reject = false, critical = 0.8783394481598046, error = 0.
+- [Rank Transformation](math.statistics.hypothesis.rank_transformation.worked.md) — With x = \[10, 30, 20, 20\], Run displays ranks = 4 array, t_sum = 6.0.
+- [Sign Test](math.statistics.hypothesis.sign_test.worked.md) — With x = \[1, 2, 3, 4, 5\], median0 = 0.0, alpha = 0.1, Run displays reject = true, p_value = 0.0625, error = 0.
+- [Wilcoxon Signed Rank Test](math.statistics.hypothesis.wilcoxon.worked.md) — With x = \[1, 2, 3, 4, 5\], mean0 = 0.0, alpha = 0.1, Run displays reject = true, p_value = 0.0625, error = 0.
+- [Correlation Coefficient (Kendall Tau)](math.statistics.kendall.worked.md) — With x = \[1, 2, 3\], y = \[4, 8, 12\], Run displays r = 1, r_squared = 1.
+- [Mean](math.statistics.mean.worked.md) — With x = \[2, 4, 9\], Run displays mean = 5, error = 0.
+- [Measures of Mean](math.statistics.measures_of_mean.worked.md) — With x = \[1, 4, 16\], type = 1, Run displays mean = 4, error = 0.
+- [Measures of Spread](math.statistics.measures_of_spread.worked.md) — With x = \[1, 2, 3, 4\], type = 1, Run displays spread = 3, error = 0.
+- [Median](math.statistics.median.worked.md) — With x = \[9, 2, 4\], Run displays median = 4, error = 0.
+- [Mode](math.statistics.mode.worked.md) — With x = \[4, 4, 4\], intervals = 100, Run displays mode = 4, error = 0.
+- [Moment about Mean](math.statistics.moment.worked.md) — With x = \[1, 3\], order = 2, Run displays moment = 1, error = 0.
+- [MSE](math.statistics.mse.worked.md) — With x = \[1, 4\], y = \[3, 2\], Run displays mse = 4, error = 0.
+- [Correlation Coefficient (Pearson)](math.statistics.pearson.worked.md) — With x = \[1, 2, 3\], y = \[4, 8, 12\], Run displays r = 1, r_squared = 1.
+- [Percentiles](math.statistics.percentiles.worked.md) — With x = \[1, 3, 5\], p = 50, Run displays percentile = 3, error = 0.
+- [Continuous CDF](math.statistics.probability.continuous_cdf.worked.md) — With a = 2, b = 3, x = 0.5, Run displays error = 0, cdf = 0.6875.
+- [Continuous Inverse CDF](math.statistics.probability.continuous_inverse_cdf.worked.md) — With a = 2, b = 3, probability = 0.6875, Run displays error = 0, quantile = 0.5.
+- [Continuous Moments](math.statistics.probability.continuous_moments.worked.md) — With a = 2, b = 3, Run displays error = 0, mean = 0.4, variance = 0.04.
+- [Continuous PDF](math.statistics.probability.continuous_pdf.worked.md) — With a = 2, b = 3, x = 0.5, Run displays error = 0, pdf = 1.5.
+- [Discrete CDF](math.statistics.probability.discrete_cdf.worked.md) — With p = 0.3, x = 1, Run displays error = 0, cdf = 1.
+- [Discrete Inverse CDF](math.statistics.probability.discrete_inverse_cdf.worked.md) — With p = 0.3, probability = 0.7, Run displays error = 0, quantile = 0.
+- [Discrete Moments](math.statistics.probability.discrete_moments.worked.md) — With p = 0.3, Run displays error = 0, mean = 0.3, variance = 0.21.
+- [Discrete PF](math.statistics.probability.discrete_pf.worked.md) — With p = 0.3, x = 1, Run displays error = 0, pf = 0.3.
+- [RMS](math.statistics.rms.worked.md) — With x = \[3, -3, 3, -3\], Run displays rms = 3, error = 0.
+- [Skewness and Kurtosis](math.statistics.skewness_kurtosis.worked.md) — With x = \[1, 2, 3, 4\], weighting = 0, Run displays skewness = 0, kurtosis = 1.8, error = 0.
+- [Correlation Coefficient (Spearman)](math.statistics.spearman.worked.md) — With x = \[1, 2, 3\], y = \[12, 8, 4\], Run displays r = -1, r_squared = 1.
+- [Std Deviation and Variance](math.statistics.std_variance.worked.md) — With x = \[7\], weighting = 1, Run displays mean = 7, std_deviation = 0, variance = 0.
+- [Euler Method](math.ode.euler.worked.md) — Integrate dx/dt = 2 from x(0) = 1. Two explicit Euler steps of 0.5 s give x = 1, 2, 3; the rows of X Values correspond in order to the three Times.
+- [RK 4th Order](math.ode.rk4.worked.md) — Integrate dx/dt = t from x(0) = 0 using two RK4 steps. Read x(t) = t²/2 at 0, 0.5 and 1.
+- [CK 5th Order](math.ode.cash_karp54.worked.md) — Integrate dx/dt = 2 using a single Cash–Karp step from 0 to 1. The exact solution from x(0) = 1 ends at 3.
+- [Linear nth Order Numeric](math.ode.linear_nth_numeric.worked.md) — Solve x″ = 0 from x(0) = 1 and x′(0) = 2. Three samples of the line x(t) = 1 + 2t show how the coefficients and initial derivatives are ordered.
+- [Linear System Numeric](math.ode.linear_system_numeric.worked.md) — Integrate a two-state linear system with x′ = v, v′ = 0, x(0) = 1 and v(0) = 2. Each output row contains position and velocity at its sample time.
+- [Prime Factor](math.discrete.prime_factor.worked.md) — Factor the positive integer 84 into 2, 2, 3 and 7.
+- [Continued Fraction](math.discrete.continued_fraction.worked.md) — A single numerator 3 and denominator 2 give 1.5 with error code zero.
+- [Goodness of Fit](math.fitting.goodness_of_fit.worked.md) — Compare a fitted line with its exact observations. The residual sum of squares and RMSE are zero and R squared is one.
+- [Matrix Sqrt](math.linear_algebra.matrix_sqrt.worked.md) — Take the principal square root of a positive diagonal matrix with diagonal 4 and 9. The diagonal of the result is 2 and 3.
+- [Matrix Log](math.linear_algebra.matrix_log.worked.md) — The principal matrix logarithm of the identity is the zero matrix.
+- [QR](math.linear_algebra.qr.worked.md) — Factor a positive diagonal matrix without pivoting. For this diagonal input the native QR factors are Q = I and R = A.
+- [Hessenberg](math.linear_algebra.hessenberg.worked.md) — A two-by-two diagonal matrix already has Hessenberg form. Reduce the whole matrix and compare its entries.
+- [Schur](math.linear_algebra.schur.worked.md) — A real diagonal matrix is already in Schur form. Inspect the factor and the orthogonal basis.
+- [QZ](math.linear_algebra.qz.worked.md) — Decompose two diagonal matrices with B equal to the identity. Inspect the two real Schur factors.
+- [iamax](math.linear_algebra.blas.iamax.worked.md) — Find the position of the largest magnitude in \[2, -7, 3\] at unit stride.
+- [iamin](math.linear_algebra.blas.iamin.worked.md) — Find the position of the smallest magnitude in \[5, -2, 8\] at unit stride.
+- [rotg](math.linear_algebra.blas.rotg.worked.md) — Construct the real Givens rotation for 3 and 4. The radius is 5, cosine is 0.6 and sine is 0.8.
+- [Euler Angles To Direction Cosines](math.geometry.euler_to_direction.worked.md) — Convert three zero Euler angles to the identity direction-cosine matrix.
+- [3D Rot. (Euler)](math.geometry.rotation_3d_euler.worked.md) — A zero Euler rotation preserves the vector (1, 2, 3).
+- [Search Ordered Table](math.interpolation.search_ordered_table.worked.md) — Locate 25 halfway between 20 and 30 in a zero-based ordered table. The fractional index is 1.5.
+- [Hermite Interpolation 1D](math.interpolation.hermite_interpolation_1d.worked.md) — Sample the straight line y = 2x at 0.5 and 1.5. The interpolated ordinates are 1 and 3.
+- [Spline Interpolation 1D](math.interpolation.spline_interpolation_1d.worked.md) — Sample the straight line y = 2x at 0.5 and 1.5. The interpolated ordinates are 1 and 3.
+- [Covariance Matrix](math.statistics.covariance_matrix.worked.md) — Treat the rows \[1,2\], \[2,4\], \[3,6\] as paired observations. Their sample covariance matrix contains 1, 2, 2 and 4.
+- [zdotc](math.linear_algebra.blas.zdotc.worked.md) — Take the conjugate inner product of 1+i with itself. The squared magnitude is 2.
+- [zdotu](math.linear_algebra.blas.zdotu.worked.md) — Multiply 1+i by itself without conjugation. The result is 2i.
+- [dsyr](math.linear_algebra.blas.dsyr.worked.md) — Add the outer product of \[0, 3\] with itself to the identity. The second diagonal entry becomes 10.
+- [dsyr2](math.linear_algebra.blas.dsyr2.worked.md) — Update the identity with xy transpose plus yx transpose for x = \[0,2\] and y = \[0,3\]. The second diagonal entry becomes 13.
+- [syrk](math.linear_algebra.blas.syrk.worked.md) — Multiply a diagonal matrix by its transpose. Its diagonal entries 2 and 3 produce 4 and 9.
+- [syr2k](math.linear_algebra.blas.syr2k.worked.md) — Form A times the identity plus its transpose. The two diagonal entries become 4 and 6.
+- [T Test](math.statistics.hypothesis.t_test.worked.md) — Test the sample \[1,2,3,4,5\] against mean 2 using the displayed one-sided alternative. The p-value is about 0.885 and the null hypothesis is retained at 5%.
+- [Z Test](math.statistics.hypothesis.z_test.worked.md) — Test five observations against the stated mean and standard deviation. Inspect the one-sided probability and the decision at 5%.
+- [Contingency Table](math.statistics.hypothesis.contingency_table.worked.md) — Compare the paired counts \[\[10,20\],\[20,10\]\]. The chi-square statistic is approximately 6.667 and its upper-tail probability is about 0.00982.
+- [3D ANOVA](math.statistics.anova.anova_3d.worked.md) — Analyse a balanced experiment with two levels per factor and two observations per cell. Read the eight-row ANOVA table.
+- [Histogram (Express)](math.statistics.histogram_express.worked.md) — Use two fixed histogram bins and reset the express histogram for this observation. Inspect the centers and their counts.
+- [Roots Classification](math.polynomial.classify_roots.worked.md) — Classify five roots into real roots, conjugate pairs and unpaired complex roots.
+- [Contour Line](math.geometry.contour_line.worked.md) — Trace the level supplied to the sampled matrix. The matrix of contour vertices and the curve offsets expose the path.
+- [Derivative x(t)](math.calculus.derivative_xt.worked.md) — Differentiate the sampled values \[1,4,9\] at a half-unit interval with the supplied boundary conditions. The derivative is \[6,8,12\].
+- [Integral x(t)](math.calculus.integral_xt.worked.md) — Integrate samples \[1,4,9\] at an interval of 0.5 using the displayed method and boundary values.
+- [Histogram](math.statistics.histogram.worked.md) — Count ten measurements in eight bins. The indicators show the counts and the eight bin centers.
+- [General Histogram](math.statistics.general_histogram.worked.md) — Count the five values 0 through 4 in two explicit bins, observing their boundary-inclusion rules. The counts are 2 and 3.
+- [Statistics](math.statistics.statistics_express.worked.md) — Compute the arithmetic mean of \[2,6,1\] with the default express configuration. The result is 3.
+- [PFE](math.polynomial.pfe.worked.md) — Expand (3+2x)/(2+3x+x²) into partial fractions. Inspect its real poles at -2 and -1 and their multiplicities.
+- [Sort Complex Numbers](math.polynomial.sort_complex.worked.md) — Sort the three complex numbers by the default order and display their original zero-based indices.
+- [Direction Cosines To Euler Angles](math.geometry.direction_to_euler.worked.md) — Extract three zero Euler angles from the identity direction-cosine matrix with the displayed rotation order.
+- [Gauss Fit Coef](math.fitting.gaussian_fit_coefficients.worked.md) — Fit nine samples of a Gaussian pulse with peak 5 at x=1 and standard deviation 2. Read the recovered center and amplitude.
+- [Gauss Peak Fit](math.fitting.gaussian_peak_fit.worked.md) — Fit nine samples of a Gaussian pulse with peak 5 at x=1 and standard deviation 2. Read the recovered center and amplitude.
+- [Exp Fit Intvl](math.fitting.exponential_fit_intervals.worked.md) — Inspect the confidence bounds when the sample follows the supplied exponential model exactly. The zero residual makes both bounds coincide with its fitted values.
+- [Log Fit Intvl](math.fitting.logarithm_fit_intervals.worked.md) — Inspect the confidence bounds when the sample follows the supplied logarithm model exactly. The zero residual makes both bounds coincide with its fitted values.
+- [Power Fit Intvl](math.fitting.power_fit_intervals.worked.md) — Inspect the confidence bounds when the sample follows the supplied power model exactly. The zero residual makes both bounds coincide with its fitted values.
+- [Poly Fit Intvl](math.fitting.polynomial_fit_intervals.worked.md) — Inspect the confidence bounds when the sample follows the supplied polynomial model exactly. The zero residual makes both bounds coincide with its fitted values.
+- [Gauss Fit Intvl](math.fitting.gaussian_fit_intervals.worked.md) — Inspect the confidence bounds when the sample follows the supplied gaussian model exactly. The zero residual makes both bounds coincide with its fitted values.
+- [Linear Fit Intvl](math.fitting.linear_fit_intervals.worked.md) — Compute the confidence intervals for the exact line y=2x+1 using its known slope and intercept. Both bounds reproduce the fitted line.
+- [Logarithm Fit](math.fitting.logarithm_fit.worked.md) — Recover amplitude 2 and scale 3 from six samples of 2 log10(3x).
+- [Log Fit Coef](math.fitting.logarithm_fit_coefficients.worked.md) — Recover amplitude 2 and scale 3 from six samples of 2 log10(3x).
+- [Gen. Linear Fit](math.fitting.general_linear_fit.worked.md) — Fit intercept and slope using the two columns of the design matrix for y = 1 + 2x. The coefficient vector is \[1,2\].
+- [B-Spline Fit](math.fitting.b_spline_fit.worked.md) — Fit the line y = 1 + 2x with four spline control points. The sampled fitted ordinates reproduce the line.
+- [zhemm](math.linear_algebra.blas.zhemm.worked.md) — Multiply a Hermitian diagonal matrix by the identity, using complex storage. The diagonal is unchanged.
+- [zhemv](math.linear_algebra.blas.zhemv.worked.md) — Apply a Hermitian diagonal matrix to \[1+i, 2\]. The output is \[2+2i, 6\].
+- [zgerc](math.linear_algebra.blas.zgerc.worked.md) — Conjugate the second vector in a complex rank-one update. For x = y = 1+i the only matrix entry becomes 2.
+- [zgeru](math.linear_algebra.blas.zgeru.worked.md) — Use an unconjugated complex outer product. Its single entry is (1+i) squared, or 2i.
+- [zher](math.linear_algebra.blas.zher.worked.md) — Perform a Hermitian rank-one update of a one-by-one matrix. The squared magnitude of 1+i is 2.
+- [zher2](math.linear_algebra.blas.zher2.worked.md) — Apply both conjugate outer products to a zero matrix. With identical vectors 1+i, their sum is 4.
+- [zher2k](math.linear_algebra.blas.zher2k.worked.md) — Add a complex matrix product to its Hermitian transpose using one-by-one matrices with real entries 2 and 3. The stored result is 12.
+- [Poly From PFE](math.polynomial.from_pfe.worked.md) — Reconstruct the rational polynomial with simple poles -2 and -1 and residues 1. Its coefficient vectors represent (3+2x)/(2+3x+x²).
+- [drotmg](math.linear_algebra.blas.drotmg.worked.md) — Construct the modified Givens rotation of 3 and 4 with both scale factors equal to 1. The leading component is 6.25 and the flag is 1.
+- [drotm](math.linear_algebra.blas.drotm.worked.md) — Use the expanded modified Givens matrix for (3,4) to rotate the vector. The two components become 6.25 and 0.
+- [Sylvester Eqs](math.linear_algebra.sylvester_equations.worked.md) — Solve A X + X B = C for two diagonal matrices A and B. Each result equals one divided by the sum of its row and column eigenvalues.
+- [Lyapunov Eqs](math.linear_algebra.lyapunov_equations.worked.md) — Solve the continuous Lyapunov equation for the stable diagonal system with rates -1 and -2. The solution diagonal is one half and one quarter.
+- [Test Matrix Type](math.linear_algebra.test_matrix_type.worked.md) — Test whether the diagonal matrix diag(1,0) is positive semidefinite. The result is true despite its zero eigenvalue.
+- [Eigenvalues and Vectors](math.linear_algebra.eigenvalues_vectors.worked.md) — For the one-by-one matrix \[3\] the unique eigenvalue is 3. Inspect the complex-valued eigenvalue array.
+- [Generalized SVD](math.linear_algebra.generalized_svd.worked.md) — Find the generalized singular value of the one-by-one matrix pair A = 3 and B = 4. Their singular-value ratio is 0.75.
+- [zherk](math.linear_algebra.blas.zherk.worked.md) — Compute a one-by-one Hermitian rank-k product using the real-valued complex entry 2. The Hermitian product is 4.
+- [Generalized Eigenvalues and Vectors](math.linear_algebra.generalized_eigenvalues_vectors.worked.md) — Solve A v = lambda B v for one-dimensional A = 6 and B = 2. The generalized eigenvalue is 3.
+- [Back Transform Eigenvectors](math.linear_algebra.back_transform_eigenvectors.worked.md) — Apply back-transformation to unit eigenvectors with unity scale. With no balancing change the eigenvector matrix stays the identity.
+- [Remove Outlier](math.fitting.remove_outliers.worked.md) — Reject the sample 99 outside the supplied y interval \[0,5\] and retain the other three points with their original abscissas.
+- [Create Real Matrix From Eigenvalues](math.linear_algebra.real_matrix_from_eigenvalues.worked.md) — Construct the real companion matrix for roots 2 and 3. Its characteristic polynomial is t squared minus 5t plus 6. The last row is \[-6,5\].
+- [Evaluate Interpolating Polynomial](math.interpolation.evaluate_interpolating_polynomial.worked.md) — Evaluate the interval polynomial 2 + 3x on \[0,2\]. Coefficients are stored in increasing power. Its values at 0, 1 and 2 are 2, 5 and 8.
+- [Create Interpolating Polynomial](math.interpolation.create_interpolating_polynomial.worked.md) — Build a one-piece polynomial representation on \[0,2\] with coefficients \[2,3\]. Read back the breakpoints and the full coefficient matrix.
+- [Heat 1D — solve and render a constant temperature field](math.pde.heat1d.constant-field.md) — Sample x and t from 0 to 1 at three points each. With zero source and temperature 2 at both boundaries and at t=0, the solver and renderer both return a 3 by 3 Array filled with 2.
+- [Édition uniquement — Chercher un minimum par la méthode de Brent](math.optimization.brent.worked.md) — Pour vérifier le problème à la main, annuler chaque carré de la formule. Lire la position et le coût sur deux indicateurs distincts.
+- [Édition uniquement — Chercher un minimum par la section dorée](math.optimization.golden.worked.md) — Pour vérifier le problème à la main, annuler chaque carré de la formule. Lire la position et le coût sur deux indicateurs distincts.
+- [Localiser le creux d’une parabole](math.optimization.minima_1d.worked.md) — Pour vérifier le problème à la main, annuler chaque carré de la formule. Lire la position et le coût sur deux indicateurs distincts.
+- [Localiser le minimum d’un paraboloïde](math.optimization.minima_nd.worked.md) — Pour vérifier le problème à la main, annuler chaque carré de la formule. Lire la position et le coût sur deux indicateurs distincts.
+- [Édition uniquement — Borner un problème d’optimisation entre 0 et 4](math.optimization.constrained.worked.md) — Examiner les bornes et le point de départ. Relier une référence de fonction compatible pour fournir l’objectif.
+- [Édition uniquement — Initialiser une recherche globale avec deux points](math.optimization.global.worked.md) — Examiner les bornes et le point de départ. Relier une référence de fonction compatible pour fournir l’objectif.
+- [Minimiser un coût quadratique par points intérieurs](math.optimization.qp.ip.worked.md) — Examiner les bornes et le point de départ. Le terme quadratique et le terme linéaire décrivent x² − 4x.
+- [Édition uniquement — Ajuster trois mesures · avec bornes](math.fitting.constrained_nonlinear_curve_fit.worked.md) — Les couples (0,1), (1,3) et (2,5) suivent le modèle a + bx. Le terminal de référence attend un modèle appelable compatible.
+- [Édition uniquement — Ajuster trois mesures · paramètres](math.fitting.nonlinear_curve_fit.worked.md) — Les couples (0,1), (1,3) et (2,5) suivent le modèle a + bx. Le terminal de référence attend un modèle appelable compatible.
+- [Édition uniquement — Ajuster trois mesures · intervalles](math.fitting.nonlinear_curve_fit_intervals.worked.md) — Les couples (0,1), (1,3) et (2,5) suivent le modèle a + bx. Le terminal de référence attend un modèle appelable compatible.
+- [Trouver l’expression d’une décroissance exponentielle](math.ode.linear_nth_symbolic.worked.md) — Examiner la solution symbolique de la décroissance de valeur initiale 1.
+- [Résoudre deux décroissances symboliquement](math.ode.linear_system_symbolic.worked.md) — Les deux états décroissent indépendamment aux taux 1 et 2.
+- [Échantillonner une décroissance avec Runge–Kutta](math.ode.solve.worked.md) — Discrétiser la décroissance de x sur une seconde. Sa solution analytique est exp(−t).
+- [Résoudre une équation implicite avec Radau](math.dae.radau_iia5.worked.md) — Relier le résidu dx + x, la condition x(0) = 1 et la dérivée initiale −1.
+- [Édition uniquement — Étudier une rampe échantillonnée](math.calculus.time_domain_math.worked.md) — Quatre échantillons d’une rampe, espacés de 0,25 s, permettent d’examiner le signal en entrée et en sortie.
+- [Calculer le potentiel sur une plaque carrée](math.pde.define_equation.helmholtz2d.numeric.worked.md) — La grille a trois points par axe. Le potentiel imposé vaut 0 à gauche et 2 à droite. Sur les deux autres bords, il passe par 1 au milieu. En l’absence de source, chaque ligne de la solution contient 0, 1 et 2.
+- [Évaluer une fonction de Hankel cylindrique](math.special.hankel_cyl.worked.md) — À l’argument 2 et à l’ordre zéro, lire sur l’indicateur complexe les composantes réelle et imaginaire.
+- [Évaluer une fonction de Hankel sphérique](math.special.hankel_sph.worked.md) — À l’argument 2 et à l’ordre zéro, lire sur l’indicateur complexe les composantes réelle et imaginaire.
+- [Lire les composantes de Kelvin ber et bei](math.special.kelvin_be.worked.md) — À l’argument 2 et à l’ordre zéro, lire sur l’indicateur complexe les composantes réelle et imaginaire.
+- [Lire les composantes de Kelvin ker et kei](math.special.kelvin_ke.worked.md) — À l’argument 2 et à l’ordre zéro, lire sur l’indicateur complexe les composantes réelle et imaginaire.
+- [Compter quatre tirages · continu](math.statistics.probability.continuous_random.worked.md) — Fixer la graine et vérifier la longueur du tableau obtenu.
+- [Compter quatre tirages · discret](math.statistics.probability.discrete_random.worked.md) — Fixer la graine et vérifier la longueur du tableau obtenu.
 
 ## Numeric
 
@@ -571,6 +947,74 @@ The index declares intended results and required backends. Its presence does not
 - [Scale by a rounded power of two](numeric.scale_power_two.below-negative-half.md) — The exact scalar signature is x:F64,n:F64 -&gt; result:F64. With x=8, floating n rounds to the nearest even integer before scaling. The exponent's type remains F64; no implicit promotion or integer shift is claimed.
 - [Scale by a rounded power of two](numeric.scale_power_two.negative-one-half.md) — The exact scalar signature is x:F64,n:F64 -&gt; result:F64. With x=8, floating n rounds to the nearest even integer before scaling. The exponent's type remains F64; no implicit promotion or integer shift is claimed.
 - [Scale by a rounded power of two](numeric.scale_power_two.negative-two-half.md) — The exact scalar signature is x:F64,n:F64 -&gt; result:F64. With x=8, floating n rounds to the nearest even integer before scaling. The exponent's type remains F64; no implicit promotion or integer shift is claimed.
+- [Add Array Elements](numeric.add_array_elements.worked.md) — With value = \[2, 3, 5\], Run displays result = 10.
+- [Complex To Polar](numeric.complex.complex_to_polar.worked.md) — With z = "3+4i", Run displays r = 5, theta = 0.9272952180016122.
+- [Complex To Re/Im](numeric.complex.complex_to_real_imaginary.worked.md) — With z = "3+4i", Run displays re = 3, im = 4.
+- [Complex Conjugate](numeric.complex.conjugate.worked.md) — With z = "3+4i", Run displays result = {"real": 3, "imaginary": -4}.
+- [Polar To Complex](numeric.complex.polar_to_complex.worked.md) — With r = 3, theta = 0, Run displays z = {"real": 3, "imaginary": 0}.
+- [Polar To Re/Im](numeric.complex.polar_to_real_imaginary.worked.md) — With r = 3, theta = 0, Run displays re = 3, im = 0.
+- [Re/Im To Complex](numeric.complex.real_imaginary_to_complex.worked.md) — With re = 3, im = 4, Run displays z = {"real": 3, "imaginary": 4}.
+- [Re/Im To Polar](numeric.complex.real_imaginary_to_polar.worked.md) — With re = 3, im = 4, Run displays r = 5, theta = 0.9272952180016122.
+- [Boolean To Integer](numeric.conversion.boolean_to_integer.worked.md) — With value = false, Run displays result = 0.
+- [Number To Boolean Array](numeric.conversion.number_to_boolean_array.worked.md) — With value = 5, Run displays result = \[True, False, True, ...\] (8 elements).
+- [To DBL](numeric.conversion.to_dbl.worked.md) — With value = 42, Run displays result = 42.
+- [To I16](numeric.conversion.to_i16.worked.md) — With value = 42, Run displays result = 42.
+- [To I32](numeric.conversion.to_i32.worked.md) — With value = 42, Run displays result = 42.
+- [To I64](numeric.conversion.to_i64.worked.md) — With value = 42, Run displays result = 42.
+- [To I8](numeric.conversion.to_i8.worked.md) — With value = 42, Run displays result = 42.
+- [To SGL](numeric.conversion.to_sgl.worked.md) — With value = 42, Run displays result = 42.
+- [To U16](numeric.conversion.to_u16.worked.md) — With value = 42, Run displays result = 42.
+- [To U32](numeric.conversion.to_u32.worked.md) — With value = 42, Run displays result = 42.
+- [To U64](numeric.conversion.to_u64.worked.md) — With value = 42, Run displays result = 42.
+- [To U8](numeric.conversion.to_u8.worked.md) — With value = 42, Run displays result = 42.
+- [Adapt To Type](numeric.data_manipulation.adapt_to_type.worked.md) — With x = 1065353217, Run displays result = 1065353217.
+- [Join Numbers](numeric.data_manipulation.join_numbers.worked.md) — With hi = 1, lo = 2, Run displays result = 65538.
+- [Logical Shift](numeric.data_manipulation.logical_shift.worked.md) — With x = 3, y = 2, Run displays result = 12.
+- [Reinterpret Number](numeric.data_manipulation.reinterpret_number.worked.md) — With data_in = 1.0000000000000002, Run displays data_out = 1.0000000000000002.
+- [Rotate](numeric.data_manipulation.rotate.worked.md) — With x = 2147483649, y = 1, Run displays result = 3.
+- [Rotate Left With Carry](numeric.data_manipulation.rotate_left_with_carry.worked.md) — With value_in = 2147483649, carry = true, Run displays value_out = 3, carry_out = true.
+- [Rotate Right With Carry](numeric.data_manipulation.rotate_right_with_carry.worked.md) — With value_in = 3, carry = true, Run displays value_out = 2147483649, carry_out = true.
+- [Split Number](numeric.data_manipulation.split_number.worked.md) — With x = 65538, Run displays hi = 1, lo = 2.
+- [Swap Bytes](numeric.data_manipulation.swap_bytes.worked.md) — With x = 4660, Run displays result = 13330.
+- [Swap Words](numeric.data_manipulation.swap_words.worked.md) — With x = 65538, Run displays result = 131073.
+- [In Range](numeric.in_range.worked.md) — With upper_limit = 5, x = 8, lower_limit = 2, Run displays coerced = 5, in_range = false.
+- [Multiply Array Elements](numeric.multiply_array_elements.worked.md) — With value = \[2, 2, 6\], Run displays result = 24.
+- [Convert RTD Reading](numeric.scaling.convert_rtd_reading.worked.md) — With voltage = 0.1, Ro = 100, Iex = 0.001, A = 0.0039083, B = -5.775e-07, Run displays temperature = 0.
+- [Sign](numeric.sign.worked.md) — With in = -6, Run displays result = -1.
+- [Number To Hex String](numeric.conversion.number_to_hex_string.worked.md) — With value = 255, Run displays result = "FF".
+- [Number To Octal String](numeric.conversion.number_to_octal_string.worked.md) — With value = 15, Run displays result = "17".
+- [Boolean Array To Number](numeric.conversion.boolean_array_to_number.worked.md) — Convert the bits true, false, true into the unsigned integer 5. The first element is bit zero.
+- [Multiply-Accumulate](numeric.multiply_accumulate.worked.md) — Initialize the accumulator to 10 and add the product of 2 and 3. The indicator reads 16.
+- [Mantissa &amp; Exponent](numeric.data_manipulation.mantissa_exponent.worked.md) — Normalize 12 as 1.5 times 2 cubed. The mantissa indicator reads 1.5 and the exponent indicator reads 3.
+- [To CDB](numeric.conversion.to_cdb.worked.md) — Convert the real I32 value 7 into a complex value with zero imaginary part.
+- [To CSG](numeric.conversion.to_csg.worked.md) — Convert the real I32 value 7 into a complex value with zero imaginary part.
+- [Convert Thermistor Reading](numeric.scaling.convert_thermistor_reading.worked.md) — Convert a calibrated sensor voltage using the displayed excitation and calibration parameters. Compare the output to the independent decimal calibration reference.
+- [Convert Strain Gauge Reading](numeric.scaling.convert_strain_gauge_reading.worked.md) — Convert a calibrated sensor voltage using the displayed excitation and calibration parameters. Compare the output to the independent decimal calibration reference.
+- [Convert Thermocouple Reading](numeric.scaling.convert_thermocouple_reading.worked.md) — Convert 0.001 V from a type B thermocouple using the independent calibration vector.
+- [Decimal String To Number](numeric.conversion.decimal_string_to_number.worked.md) — Use the unary conversion in the Numeric palette. Convert '-42' to -42.
+- [Hex String To Number](numeric.conversion.hex_string_to_number.worked.md) — Use the unary conversion in the Numeric palette. Convert '2A' to 42.
+- [Octal String To Number](numeric.conversion.octal_string_to_number.worked.md) — Use the unary conversion in the Numeric palette. Convert '52' to 42.
+- [Floating String To Number](numeric.conversion.floating_string_to_number.worked.md) — Use the unary conversion in the Numeric palette. Convert '12.5' to 12.5.
+- [Number To Fractional String](numeric.conversion.number_to_fractional_string.worked.md) — Use the unary conversion in the Numeric palette. Convert 12.5 to '12.500000'.
+- [Number To Engineering String](numeric.conversion.number_to_engineering_string.worked.md) — Use the unary conversion in the Numeric palette. Convert 1000 to '1.000000E+3'.
+- [Number To Exponential String](numeric.conversion.number_to_exponential_string.worked.md) — Use the unary conversion in the Numeric palette. Convert 1000 to '1.000000E+3'.
+- [Flatten To Byte Array](numeric.data_manipulation.flatten_to_byte_array.worked.md) — Flatten the U16 value 258 in big-endian order. The two bytes are 1 then 2.
+- [Number To Decimal String](numeric.conversion.number_to_decimal_string.worked.md) — Use the unary conversion in the Numeric palette. Convert 42 to '42'.
+- [Random Number (Range)](numeric.random_range.worked.md) — Request a random number between 4 and 4. A range with equal bounds has just one possible value, 4.
+- [Format Into String](numeric.conversion.format_into_string.worked.md) — Formater le DBL 12,5 avec la conversion unaire de la palette numérique. Vérifier le point décimal et les six chiffres après le point dans la chaîne 12.500000.
+- [Vérifier l’intervalle d’un tirage aléatoire](numeric.random_zero_one.interval.md) — Lire un tirage DBL. Sa valeur est supérieure ou égale à zéro et strictement inférieure à un. Les deux comparaisons utilisent le même tirage.
+- [Tension en face avant](numeric.numeric_terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Essais en face avant](numeric.int_terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Mode en face avant](numeric.ring_terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Compter 42 pièces](numeric.int_constant.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur.
+- [Lire la valeur RVB d’une couleur](numeric.color_box_constant.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur.
+- [Choisir un calibre](numeric.ring_constant.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur.
+- [Associer une image à un mode](numeric.picture_ring.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur.
+- [Tester le signe de l’infini positif](numeric.other_constants.positive_infinity.worked.md) — Comparer la constante DBL à zéro et lire le booléen.
+- [Tester le signe de l’infini négatif](numeric.other_constants.negative_infinity.worked.md) — Comparer la constante DBL à zéro et lire le booléen.
+- [Édition uniquement — Convertir une mesure en virgule fixe complexe](numeric.conversion.to_cfx.worked.md) — Suivre la conversion de la mesure vers une représentation fixe, puis vers un affichage DBL.
+- [Édition uniquement — Convertir une mesure en virgule fixe](numeric.conversion.to_fxp.worked.md) — Suivre la conversion de la mesure vers une représentation fixe, puis vers un affichage DBL.
+- [Décoder une mesure dans une trame](numeric.data_manipulation.unflatten_from_byte_array.worked.md) — Les huit premiers octets codent le DBL 12,5 en ordre réseau. Le dernier octet, 165, appartient au prochain champ.
 
 ## Path
 
@@ -578,6 +1022,24 @@ The index declares intended results and required backends. Its presence does not
 - [Application Directory uses the saved root document directory](path.application_directory.context.md) — In Studio, a saved root FROG without a loaded project uses its containing directory as the application directory. The runner computes this exact expected path independently from the actual saved example file; it must not substitute the Studio installation or current working directory.
 - [Default Directory uses the Studio installation](path.default_directory.context.md) — Studio provides its actual executable context. The default directory is that executable's containing directory, independently from the process working directory or the source document's directory.
 - [Temporary Directory follows the current system](path.temporary_directory.context.md) — The existing native Path service obtains the current system temporary directory. The expected path is computed at execution time, so this example remains portable between users and machines.
+- [Get Common/Relative Paths](path.common_relative.worked.md) — With path_1 = "C:\\folder\\a", path_2 = "C:\\folder\\a", Run displays common_path = "C:\\folder\\a", path_1_to_common = ".", common_to_path_1 = ".", path_2_to_common = ".", common_to_path_2 = ".".
+- [Compose Path](path.compose.worked.md) — With base_path = "C:\\work", name_or_relative_path = "first.txt", Run displays result = "C:\\work\\first.txt".
+- [Decompose Path](path.decompose.worked.md) — With path = "file.txt", Run displays stripped_path = ".", name = "file.txt".
+- [Empty String/Path?](path.empty_string_or_path.worked.md) — With value = ".", Run displays result = true.
+- [String To Path](path.from_string.worked.md) — With value = ".", Run displays result = ".".
+- [String Array To Path](path.from_string_array.worked.md) — With array = \["C", "dir", "file.txt"\], Run displays path = "C:\\dir\\file.txt".
+- [Get File Extension](path.get_file_extension.worked.md) — With file = "notes.TXT", error_in = {"status": false, "code": 0, "source": ""}, Run displays lowercase_extension = "txt", unmodified_extension = "TXT", error_out = {"status": false, "code": 0, "source": ""}.
+- [Is Path Not Empty](path.is_not_empty.worked.md) — With path = ".", Run displays result = false.
+- [Replace File Extension](path.replace_file_extension.worked.md) — With value = "Report.TxT", new_extension = ".csv", Run displays result = "Report.csv", previous_extension = "TxT".
+- [Path To String](path.to_string.worked.md) — With value = ".", Run displays result = ".".
+- [Path To String Array](path.to_string_array.worked.md) — With path = "C:\\dir\\file.txt", Run displays relative = false, array = \["C", "dir", "file.txt"\].
+- [Path Type](path.type.worked.md) — With path = "a\\b", Run displays result = 1.
+- [Compare Paths](path.compare.worked.md) — Compare the paths C:/data and C:/data/logs. The child lies inside the parent and the relative path is logs.
+- [Fichier de mesure en face avant](path.terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Édition uniquement — Situer le composant actif](path.get_component_directory.worked.md) — Repérer la sortie Chemin du composant. Un document autonome ne fournit pas la liaison avec un composant propriétaire.
+- [Trouver un dossier système](path.get_system_directory.worked.md) — Tester si le chemin renvoyé est renseigné. Son emplacement dépend du poste.
+- [Demander un chemin temporaire pour un relevé](path.generate_temporary_file.worked.md) — Demander un nom temporaire pour un relevé TSV et vérifier que le chemin est renseigné. Le fichier reste à créer.
+- [Édition uniquement — Reconnaître une référence invalide](path.not_a_refnum_constant.worked.md) — Relier la constante de référence invalide au prédicat de validité.
 
 ## String
 
@@ -617,6 +1079,54 @@ The index declares intended results and required backends. Its presence does not
 - [Search And Replace String — offset-outside.profile-error](string.search-replace.offset-outside.profile-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic.
 - [Search And Replace String — utf8-boundary.profile-error](string.search-replace.utf8-boundary.profile-error.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic.
 - [Search And Replace String — casefold-unavailable](string.search-replace.casefold-unavailable.md) — The existing UTF-8 literal-search target reports replacement count and the offset in the resulting String. Omitted replacement deletes a match. This version rejects empty searches and invalid UTF-8 offsets with ordinary error 1; Unicode case-folding is an explicit unavailable-provider diagnostic.
+- [Append Multiline String](string.append_multiline.worked.md) — With initial_string = "prefix:", value = "a\r\nb\u0000c\n", line_index = 2, Run displays result = "prefix:".
+- [Append True/False String](string.append_true_false.worked.md) — With value = "prefix:", true_string = "YES", false_string = "NO", selector = true, Run displays result = "prefix:YES".
+- [String Constant](string.constant.worked.md) — Run displays the built-in value value = "Welcome".
+- [Array To Spreadsheet String](string.conversion.array_to_spreadsheet_string.worked.md) — With array = 2 x 2 array, format = "%.;%d", delimiter = ";", Run displays string = "1;2\r\n3;4\r\n".
+- [Decimal String To Number](string.conversion.decimal_string_to_number.worked.md) — With value = "3tail", Run displays result = 3, offset_past_number = 1.
+- [Delimited String To String Array](string.conversion.delimited_string_to_string_array.worked.md) — With value = "A::B\|C", delimiter = "::", Run displays result = \["A", "B\|C"\].
+- [Flatten To JSON](string.conversion.flatten_to_json.worked.md) — With value = -3, error_in = {"status": false, "code": 0, "source": ""}, Run displays result = "-3", error_out = {"status": false, "code": 0, "source": ""}.
+- [Flatten To String](string.conversion.flatten_to_string.worked.md) — With anything = true, error_in = {"status": false, "code": 0, "source": ""}, Run displays flattened_string = "\u0001", error_out = {"status": false, "code": 0, "source": ""}.
+- [Floating String To Number](string.conversion.floating_string_to_number.worked.md) — With value = "12.5tail", default_value = 0, use_system_decimal_point = false, Run displays result = 12.5, offset_past_number = 4.
+- [Format Into String](string.conversion.format_into_string.worked.md) — With value = 3, format_string = "%.;%x", error_in = {"status": false, "code": 0, "source": ""}, Run displays result = "3", error_out = {"status": false, "code": 0, "source": ""}.
+- [Format Value](string.conversion.format_value.worked.md) — With value = -2.5, format_string = "%.;%f", initial_string = "prefix:", Run displays result = "prefix:-2.500000".
+- [Hex String To Number](string.conversion.hex_string_to_number.worked.md) — With value = "x 7!", offset = 2, default_value = 1, Run displays result = 7, offset_past_number = 3.
+- [Number To Decimal String](string.conversion.number_to_decimal_string.worked.md) — With value = 3, width = 2, Run displays result = " 3".
+- [Number To Engineering String](string.conversion.number_to_engineering_string.worked.md) — With value = 2.5, precision = 2, use_system_decimal_point = false, Run displays result = "2.50E+0".
+- [Number To Exponential String](string.conversion.number_to_exponential_string.worked.md) — With value = 2.5, precision = 2, use_system_decimal_point = false, Run displays result = "2.50E+0".
+- [Number To Fractional String](string.conversion.number_to_fractional_string.worked.md) — With value = 2.5, precision = 2, use_system_decimal_point = false, Run displays result = "2.50".
+- [Number To Hex String](string.conversion.number_to_hex_string.worked.md) — With value = 255, Run displays result = "FF".
+- [Number To Octal String](string.conversion.number_to_octal_string.worked.md) — With value = 15, Run displays result = "17".
+- [Octal String To Number](string.conversion.octal_string_to_number.worked.md) — With value = "x 7!", offset = 2, default_value = 1, Run displays result = 7, offset_past_number = 3.
+- [Path To String](string.conversion.path_to_string.worked.md) — With value = "dir\\file.txt", Run displays result = "dir\\file.txt".
+- [Path To String Array](string.conversion.path_to_string_array.worked.md) — With value = "C:\\dir\\file.txt", Run displays result = \["C", "dir", "file.txt"\], relative = false.
+- [Relative Path To Portable String](string.conversion.relative_path_to_portable_string.worked.md) — With value = "a\\b\\c", Run displays result = "a/b/c", error_out = {"status": false, "code": 0, "source": ""}.
+- [Scan From String](string.conversion.scan_from_string.worked.md) — With value = "N:3;tail", format_string = "%.;N:%d;", default_value = 1, error_in = {"status": false, "code": 0, "source": ""}, Run displays result = 3, remaining_string = "tail", offset_past_scan = 4, error_out = {"status": false, "code": 0, "source": ""}.
+- [Scan Value](string.conversion.scan_value.worked.md) — With value = "N:3;tail", format_string = "%.;N:%d;", default_value = 1, Run displays result = 3, output_string = "tail".
+- [Spreadsheet String To Array](string.conversion.spreadsheet_string_to_array.worked.md) — With string = "3\t\t2\r\n", format = "%.;%d", delimiter = "\t", array_type = 0 x 0 array, Run displays array = 1 x 3 array.
+- [String Array To Delimited String](string.conversion.string_array_to_delimited_string.worked.md) — With value = \["A", "B", "C"\], Run displays result = "A\tB\tC".
+- [String Array To Path](string.conversion.string_array_to_path.worked.md) — With value = \["C", "dir", "file.txt"\], Run displays result = "C:\\dir\\file.txt".
+- [String To Path](string.conversion.string_to_path.worked.md) — With value = "dir\\file.txt", Run displays result = "dir\\file.txt".
+- [Unflatten From JSON](string.conversion.unflatten_from_json.worked.md) — With value = "-3", type = 4, error_in = {"status": false, "code": 0, "source": ""}, Run displays result = -3, error_out = {"status": false, "code": 0, "source": ""}.
+- [Unflatten From String](string.conversion.unflatten_from_string.worked.md) — With binary_string = "ABCDrest", type = 0, error_in = {"status": false, "code": 0, "source": ""}, Run displays value = 1094861636, remainder = "rest", error_out = {"status": false, "code": 0, "source": ""}.
+- [Dropdown String Constant](string.dropdown_constant.worked.md) — Select Manual in the dropdown and Run in Simulation to read its length (6). Select Auto and Run again to read 4.
+- [Empty String/Path?](string.empty_string_or_path.worked.md) — With value = "", Run displays result = true.
+- [Escape String](string.escape.worked.md) — With value = "A+B", escapes = 2 array, Run displays result = "1+22".
+- [Lexical Class](string.lexical_class.worked.md) — With value = 97, Run displays result = 5.
+- [Match Pattern](string.match_pattern.worked.md) — With value = "aaLEVEL", regular_expression = "^LEVEL", offset = 2, Run displays before_substring = "aa", match_substring = "LEVEL", after_substring = "", offset_past_match = 7.
+- [Match Regular Expression](string.match_regular_expression.worked.md) — With value = "abc", regular_expression = "(Z)", error_in = {"status": false, "code": 0, "source": ""}, Run displays before_match = "abc", whole_match = "", after_match = "", offset_past_match = -1, error_out = {"status": false, "code": 0, "source": ""}, submatch = "".
+- [Normalize End Of Line](string.normalize_end_of_line.worked.md) — With value = "A\rB\nC\r\n", Run displays result = "A\r\nB\r\nC\r\n".
+- [Carriage Return Constant](string.other_constants.carriage_return.worked.md) — Run displays the built-in value value = "\r".
+- [Empty String Constant](string.other_constants.empty_string.worked.md) — Run displays the built-in value value = "".
+- [End Of Line Constant](string.other_constants.end_of_line.worked.md) — Run displays the built-in value value = "\r\n".
+- [Line Feed Constant](string.other_constants.line_feed.worked.md) — Run displays the built-in value value = "\n".
+- [Space Constant](string.other_constants.space.worked.md) — Run displays the built-in value value = " ".
+- [Tab Constant](string.other_constants.tab.worked.md) — Run displays the built-in value value = "\t".
+- [Scan Tokens](string.scan_tokens.worked.md) — With value = "abc", offset = 3, Run displays string_out = "abc", offset_past_token = -1, result = "", token_index = -2.
+- [Search 1D String Array](string.search_1d_array.worked.md) — With value = \["dog", "CAT2", "cat99"\], regular_expression = "cat\[0-9\]+", ignore_case = false, start_index = 0, Run displays result = "cat99", index_of_element = 2.
+- [Search And Replace Pattern](string.search_replace_pattern.worked.md) — With value = "a12b34c", regular_expression = "\[0-9\]+", replace_string = "#", replace_all = false, Run displays result = "a#b34c", offset_past_match = 2.
+- [Search And Replace Regular Expression](string.search_replace_regular_expression.worked.md) — With value = "cat", search_string = "(cat\|dog)", replace_string = "\\$", error_in = {"status": false, "code": 0, "source": ""}, Run displays result = "$", number_of_replacements = 1, offset_past_replacement = 1, error_out = {"status": false, "code": 0, "source": ""}.
+- [Trim Whitespace](string.trim_whitespace.worked.md) — With value = "  Maple  ", Run displays result = "Maple".
 
 ## Structures
 
@@ -647,6 +1157,13 @@ The index declares intended results and required backends. Its presence does not
 - [Stacked Sequence : ne pas publier avant la dernière frame](structure.sequence.native.stacked_wait_abort.md) — Stacked Sequence : ne pas publier avant la dernière frame
 - [Flat Sequence : une sortie précoce alimente une entrée tardive](structure.sequence.native.flat_late_input.md) — Flat Sequence : une sortie précoce alimente une entrée tardive
 - [Stacked Sequence : diagnostiquer une dépendance circulaire](structure.sequence.native.stacked_late_cycle.md) — Stacked Sequence : diagnostiquer une dépendance circulaire
+- [Select](structures.select.worked.md) — With true = 4294967295, select = true, false = -13, Run displays result = 4294967295.
+- [Édition uniquement — Examiner la pile des appels](structures.call_chain.worked.md) — Compter les documents présents dans la pile lorsque le programme est lancé.
+- [Examiner la remise à zéro du chronomètre](structures.elapsed_time.worked.md) — Réinitialiser le chronomètre avec une cible de dix secondes. Le seuil ne doit pas être atteint à l’initialisation.
+- [Mémoriser la dernière mesure](structures.feedback_node.worked.md) — Au premier passage, distinguer la valeur initiale 3 et la nouvelle mesure 12.
+- [Édition uniquement — Lire le compteur de millisecondes](structures.tick_count.worked.md) — Le compteur U32 dépend de la session. Suivre sa valeur jusqu’à l’indicateur.
+- [Édition uniquement — Câbler une attente de 10 ms](structures.wait.worked.md) — Le délai est fourni en millisecondes au terminal de temporisation.
+- [Édition uniquement — Attendre le prochain multiple de 10 ms](structures.wait_until_next.worked.md) — Le délai est fourni en millisecondes au terminal de temporisation.
 
 ## Synchronization
 
@@ -675,10 +1192,18 @@ The index declares intended results and required backends. Its presence does not
 - [Notifier : Multiple History conserve les identités de source](sync.notifier.multiple_history_available.md) — Notifier : Multiple History conserve les identités de source
 - [Notifier History : revenir à A sans relire son ancien signal](sync.notifier.history_a_b_a.md) — Notifier History : revenir à A sans relire son ancien signal
 - [First Call? : le premier passage, pas chaque itération](sync.first_call.iterations.md) — First Call? : le premier passage, pas chaque itération
+- [Édition uniquement — Vérifier une référence de rendez-vous](synchronization.rendezvous.not_a_rendezvous.worked.md) — Créer un rendez-vous pour deux participants. Suivre la référence jusqu’au prédicat.
+- [Édition uniquement — Vérifier une référence de sémaphore](synchronization.semaphore.not_a_semaphore.worked.md) — Obtenir un sémaphore de capacité deux. Suivre la référence jusqu’au prédicat.
 
 ## Timestamp
 
 - [Timestamp : constante et indicateur conservés dans le document](timestamp.editor_managed.saved_value.md) — Timestamp : constante et indicateur conservés dans le document
+- [Format Date/Time String](timestamp.format_date_time.worked.md) — Format a fixed time of 90,061 seconds from the FROG Timestamp epoch (January 1, 1904). UTC formatting gives 1904-01-02 01:01:01 on every computer without reading the clock.
+- [To Timestamp](timestamp.to_timestamp.worked.md) — Convert one and a half seconds after the FROG timestamp epoch. Inspect the integer second and exact half-second fraction.
+- [Date/Time To Timestamp](timestamp.from_date_time.worked.md) — Construire le 1er janvier 1904, une demi-seconde après minuit UTC. Le calendrier déduit le jour de semaine et le jour de l’année.
+- [Timestamp To Date/Time](timestamp.to_date_time.worked.md) — Décomposer en UTC le 31 décembre 2001 à minuit et une demi-seconde. La date est un lundi, le 365e jour de l’année.
+- [Édition uniquement — Lire l’horloge de la session](timestamp.get_current_time.worked.md) — Afficher l’horodatage retourné par le système. La valeur exacte dépend de l’instant de lecture.
+- [Édition uniquement — Formater une date et son heure](timestamp.get_date_time_string.worked.md) — Convertir un instant fixe en deux textes selon les réglages régionaux du poste.
 
 ## Variant
 
@@ -686,3 +1211,21 @@ The index declares intended results and required backends. Its presence does not
 - [Variant preserves an Array shape](variant.rank2-roundtrip.md) — Boxing and unboxing retain the complete rank-two I64 Array shape and row-major values, including an integer above 2^53. The type specimen contributes its schema, not its value.
 - [Variant preserves a named Cluster](variant.cluster-roundtrip.md) — The typed Variant retains the Cluster field identities and values. The same Cluster is used only as a schema witness for unboxing; it is not substituted for the payload.
 - [Variant type mismatch is a normal error](variant.type-mismatch.error.md) — A boxed String cannot be extracted as I32. The result is the I32 intrinsic default and an error status; no numeric parsing or reinterpretation is attempted. Native and historical Simulation currently have distinct error codes, so this example compares the shared status and data behavior.
+- [Get Type Information](variant.data_type_analysis.get_type_info.worked.md) — Inspect a double value of 12.5. The type name is f64 and the value has no type definition.
+- [Get Array Information](variant.data_type_analysis.get_array_info.worked.md) — Inspect a two-row matrix. Read the array rank, independently of the values it contains.
+- [Is Or Contains G Type](variant.data_type_analysis.is_or_contains_g_type.worked.md) — Determine whether an ordinary DBL value contains a G type. Read the Boolean result and the error output.
+- [Get Numeric Information](variant.data_type_analysis.get_numeric_info.worked.md) — Inspect an I32 numeric value. It has no enumeration names and inspection completes successfully.
+- [Is Error Cluster — examine the type of a Variant](variant.is-error-cluster.typed-inputs.md) — Box I32 17 and a Cluster with status, code and source fields. Is Error Cluster reports false for the number and true for the error record.
+- [Write, read and remove a named attribute](variant.attribute-lifecycle.md) — Attach a DBL gain of 2.5 to a Variant containing 12. Read gain, remove it, then look it up again with a default of -1. The second lookup reports that the name is missing.
+- [Recover a typed value from flattened Variant bytes](variant.binary-roundtrip.md) — Box the I32 value 42. Carry its type descriptor alongside the bytes through the decoder. An I32 specimen of zero selects the output type and the recovered value is 42.
+- [Édition uniquement — Mesure typée en face avant](variant.terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme.
+- [Édition uniquement — Examiner le type d’un Variant vide](variant.constant.worked.md) — Relier le Variant à l’inspection de type et suivre le nom déclaré.
+- [Retirer la liaison de type d’une mesure](variant.data_type_analysis.disconnect_g_types.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Chercher les types contenus dans une mesure](variant.data_type_analysis.find_contained_data_types.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Examiner les champs du cluster de mesures](variant.data_type_analysis.get_cluster_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Présenter un DBL à l’inspection de virgule fixe](variant.data_type_analysis.get_fixed_point_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Présenter un DBL à l’inspection de référence matérielle](variant.data_type_analysis.get_hardware_reference_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Distinguer un DBL d’une référence](variant.data_type_analysis.get_refnum_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Reconnaître une référence matérielle personnalisée incompatible](variant.data_type_analysis.get_user_defined_hardware_reference_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Reconnaître une référence personnalisée incompatible](variant.data_type_analysis.get_user_defined_refnum_info.worked.md) — Examiner la donnée typée et son diagnostic.
+- [Examiner le type des échantillons d’une acquisition](variant.data_type_analysis.get_waveform_info.worked.md) — Examiner la donnée typée et son diagnostic.

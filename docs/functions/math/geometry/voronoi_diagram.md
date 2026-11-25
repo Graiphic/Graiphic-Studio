@@ -7,10 +7,16 @@
 
 GS unbounded topology: vertices [N,2]; edges [M,2] with -1 open endpoint; directions [M,2]; original site-index pairs. kind 0 segment, 1 ray, 2 full line through first vertex. No hidden clipping box.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](voronoi_diagram.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Diagramme de Voronoï**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Topologie GS non bornée : sommets [N,2], arêtes [M,2] avec -1 pour une extrémité ouverte, directions [M,2] et paires d’indices des sites originaux. kind : 0 segment, 1 demi-droite, 2 droite complète passant par le premier sommet. Aucune boîte de découpe cachée.
 
@@ -19,6 +25,13 @@ Topologie GS non bornée : sommets [N,2], arêtes [M,2] avec -1 pour une extrém
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -87,7 +100,9 @@ Exact selected variant; native JIT Run only. AOT is explicitly unqualified, neve
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Voronoi Diagram](../../../examples/math.geometry.voronoi_diagram.worked.md) — With x = \[0, 2, 0\], y = \[0, 0, 2\], Run displays vertices = 1 x 2 array, edges = 3 x 2 array, directions = 3 x 2 array, sites = 3 x 2 array, edge_kind = \[1, 1, 1\], error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

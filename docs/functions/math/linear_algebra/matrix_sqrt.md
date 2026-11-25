@@ -7,10 +7,16 @@
 
 Computes a principal matrix square root, never element-wise roots. Output is statically CDB rank two even for real input; unsolvable/domain/nonconvergence cases produce an error. Retains all imaginary components. Inputs calculate in DBL/CDB with explicit numeric promotion; 64-bit integers above 2^53 may round. No broadcasting, no private Matrix reinterpretation. error is I32 and never an automatic dialog. Optional unwired defaults: none.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](matrix_sqrt.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Matrix Sqrt**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule une racine carrée matricielle, pas une racine cellule par cellule. La sortie est toujours un tableau 2D CDB, y compris pour une entrée réelle. Valeurs facultatives non câblées : none.
 
@@ -40,6 +46,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -86,7 +99,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Matrix Sqrt](../../../examples/math.linear_algebra.matrix_sqrt.worked.md) — Take the principal square root of a positive diagonal matrix with diagonal 4 and 9. The diagonal of the result is 2 and 3. (`execution`, `studio-draft`).
 
 ## Identity and references
 

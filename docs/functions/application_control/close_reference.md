@@ -78,7 +78,9 @@ This authoring envelope does not declare unconditional runtime support. The priv
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Fermer une référence de document](../../examples/application_control.close_reference.worked.md) — La référence du diagramme entre dans la fermeture. Suivre le fil d’erreur. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

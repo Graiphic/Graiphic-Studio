@@ -7,10 +7,16 @@
 
 NI conversion codes 0 Cartesian/spherical, 1 spherical/Cartesian, 2 Cartesian/cylindrical, 3 cylindrical/Cartesian, 4 spherical/cylindrical, 5 cylindrical/spherical. Radians, phi polar from +Z; undefined azimuth is zero, negative radius refused; spherical polar input must be in [0,pi].
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](coordinate_conversion_3d.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Conversion de coordonnées 3D**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Codes de conversion NI : 0 cartésiennes/sphériques, 1 sphériques/cartésiennes, 2 cartésiennes/cylindriques, 3 cylindriques/cartésiennes, 4 sphériques/cylindriques, 5 cylindriques/sphériques. Angles en radians, phi polaire depuis +Z ; un azimut indéfini vaut zéro et un rayon négatif est refusé. L’angle polaire sphérique en entrée doit appartenir à [0,pi].
 
@@ -19,6 +25,13 @@ Codes de conversion NI : 0 cartésiennes/sphériques, 1 sphériques/cartésienne
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -87,7 +100,9 @@ Exact selected variant; native JIT Run only. AOT is explicitly unqualified, neve
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [3D Coordinate Conversion](../../../examples/math.geometry.coordinate_conversion_3d.worked.md) — With conversion_type = 0, axis1 = 2.0, axis2 = 2.0, axis3 = 3.0, Run displays axis1_out = 4.123105625617661, axis2_out = 0.7853981633974483, axis3_out = 0.7559694104239078, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

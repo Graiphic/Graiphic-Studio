@@ -7,10 +7,16 @@
 
 Parses a floating-point string as a number.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](floating_string_to_number.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Chaine flottante vers nombre**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Convertit une chaine flottante en nombre.
 
@@ -44,7 +50,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 String scalars or String-only arrays/clusters produce numeric leaves of the scalar default representation (F64 if unwired). Ranks and cluster schemas are preserved. Offset and offset-past-number are scalar I32, not arrays. Includes the system decimal-point Boolean.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -69,9 +82,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -89,7 +109,9 @@ Provider identity is retained from Studio. Executability must be established by 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Floating String To Number](../../../examples/string.conversion.floating_string_to_number.worked.md) — With value = "12.5tail", default_value = 0, use_system_decimal_point = false, Run displays result = 12.5, offset_past_number = 4. (`execution`, `studio-draft`).
 
 ## Identity and references
 

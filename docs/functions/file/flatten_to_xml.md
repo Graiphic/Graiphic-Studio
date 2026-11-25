@@ -78,7 +78,9 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Sérialiser puis relire une tension en XML](../../examples/file.flatten_to_xml.worked.md) — Observer le XML produit puis relire la tension avec un témoin DBL. La valeur relue doit être 12,5. (`execution`, `studio-draft`).
 
 ## Identity and references
 

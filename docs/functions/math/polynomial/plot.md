@@ -7,10 +7,16 @@
 
 Polynomial Plot. Produces reusable XY data. A wired X selects Samples; otherwise Range uses inclusive start/end and samples&gt;=2. Wiring X together with range options is a configuration conflict, never silently ignored. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](plot.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Tracé d’un polynôme**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Produit des données XY réutilisables. X câblé sélectionne Samples ; sinon Range utilise les bornes start/end incluses et samples&gt;=2. Câbler X avec les options de plage est un conflit de configuration, jamais ignoré silencieusement. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
 
@@ -19,6 +25,13 @@ Produit des données XY réutilisables. X câblé sélectionne Samples ; sinon R
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -89,7 +102,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Polynomial Plot](../../../examples/math.polynomial.plot.worked.md) — With p = \[2, -3, 1\], samples = 1, Run displays error = -9603. (`execution`, `studio-draft`).
 
 ## Identity and references
 

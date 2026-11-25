@@ -99,6 +99,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Référence de contrôle : lire sa vraie valeur](../../examples/application_control.read_value.md) — Référence de contrôle : lire sa vraie valeur (`execution`, `studio-draft`).
 - [Property Node : écrire la valeur sans événement](../../examples/application_control.silent_write.md) — Property Node : écrire la valeur sans événement (`execution`, `studio-draft`).
 - [Invoke Node : réinitialiser la valeur par défaut](../../examples/application_control.reinitialize.md) — Invoke Node : réinitialiser la valeur par défaut (`execution`, `studio-draft`).
+- [Édition uniquement — Fermer une référence de document](../../examples/application_control.close_reference.worked.md) — La référence du diagramme entre dans la fermeture. Suivre le fil d’erreur. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

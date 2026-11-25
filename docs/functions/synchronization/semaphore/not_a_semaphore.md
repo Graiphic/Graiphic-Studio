@@ -76,7 +76,9 @@ Requires the shared semaphore resource service, cancellation-aware waits and sup
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Vérifier une référence de sémaphore](../../../examples/synchronization.semaphore.not_a_semaphore.worked.md) — Obtenir un sémaphore de capacité deux. Suivre la référence jusqu’au prédicat. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

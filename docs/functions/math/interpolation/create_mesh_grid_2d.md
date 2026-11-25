@@ -7,10 +7,16 @@
 
 Forms Cartesian coordinate matrices: rows repeat x_domain, columns repeat y_domain; xy uses separate domains and x uses one domain on both axes. Preserves domain order. Real DBL vectors/matrices; explicit real numeric promotion, no complex-to-real conversion, scalar lifting or broadcasting. PP uses ascending local powers as an explicit GS convention. Available variants: xy, x.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](create_mesh_grid_2d.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Create Mesh Grid (2D)**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Produit les matrices de coordonnées d’une grille depuis deux axes ou un domaine commun.
 
@@ -43,7 +49,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Real DBL vectors/matrices, exact I32/U16/Boolean options and typed piecewise-polynomial records; native GS profile.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -92,7 +105,9 @@ Declared per selected exact native variant. Complete-graph admission and attribu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Create Mesh Grid (2D)](../../../examples/math.interpolation.create_mesh_grid_2d.worked.md) — With x_domain = \[10, 20, 30\], y_domain = \[1, 2\], Run displays x = 2 x 3 array, y = 2 x 3 array, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

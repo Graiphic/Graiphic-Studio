@@ -7,6 +7,8 @@
 
 Adds one element at the tail. A full bounded FIFO waits cooperatively for space: timeout -1 waits indefinitely, 0 attempts immediately. Expiration inserts nothing. It never silently evicts an element; invalidation interrupts the wait with an error. Queue&lt;T&gt; is an execution resource reference; element is the ordinary T value. Public FROG target compilation remains unavailable.
 
+[Branch an error wire to a loop and a queue](../../../interface/error-variant-loop.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](enqueue.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
@@ -31,7 +33,7 @@ Contract status: **partial**. The connector below describes Studio authoring; ex
 
 This is the source declaration, not the current measured product-execution assessment.
 
-Adds one element at the tail. A full bounded FIFO waits cooperatively for space: timeout -1 waits indefinitely, 0 attempts immediately. Expiration inserts nothing. It never silently evicts an element; invalidation interrupts the wait with an error.
+Adds one element at the tail by default, or at the head when at_front is true. Waiting writers retain their insertion choice. A full bounded FIFO waits cooperatively for space: timeout -1 waits indefinitely, 0 attempts immediately. Expiration inserts nothing. It never silently evicts an element; invalidation interrupts the wait with an error.
 
 </details>
 
@@ -50,6 +52,7 @@ Timeout is I32 milliseconds: -1 waits without a deadline, 0 attempts immediately
 | queue `queue` | `ref<frog.sync.queue>` | Required | Not specified | — |
 | element `element` | `T:any` | Required | Not specified | — |
 | timeout (ms, -1) `timeout_ms` | `i32` | Optional | `-1` | — |
+| at opposite end? (false) `at_front` | `bool` | Optional | Not specified | — |
 | error in `error_in` | `cluster<status:bool,code:i32,source:string>` | Optional | Not specified | — |
 
 A default is shown only for an input with an explicitly documented value. Preview/default *types* do not imply unwired operand values. If helper and binding flags differ, both are labelled.
@@ -74,9 +77,9 @@ Queue&lt;T&gt; is a nominal execution-resource reference distinct from object/Fi
 
 One queued element may itself be an Array, Cluster or Enum; preserve its complete schema and message boundary. No element-wise lifting or array flattening.
 
-**Input count:** 4; this contract does not enable variadic inputs.
+**Input count:** 5; this contract does not enable variadic inputs.
 
-Port order: `queue` → `element` → `timeout_ms` → `error_in`.
+Port order: `queue` → `element` → `timeout_ms` → `at_front` → `error_in`.
 
 ## Execution and limits
 
@@ -105,6 +108,7 @@ These declarations belong to the binding snapshot. Compare them with the separat
 | INPUT | `queue` | `ref<frog.sync.queue>` | `exact` | `single` | — |
 | INPUT | `element` | `f64` | `exact` | `single` | — |
 | INPUT | `timeout_ms` | `i32` | `numeric_implicit` | `single` | — |
+| INPUT | `at_front` | `bool` | `exact` | `single` | — |
 | INPUT | `error_in` | `cluster<status:bool,code:i32,source:string>` | `exact` | `single` | — |
 | OUTPUT | `queue_out` | `ref<frog.sync.queue>` | `exact` | `single` | — |
 | OUTPUT | `timed_out` | `bool` | `exact` | `single` | — |

@@ -55,6 +55,8 @@ widget. Use **Find Terminal** on the Front Panel for the reverse navigation.
 
 ## Operations
 
+A branch can deliver the full error cluster to a message and its `status` to a loop condition in the same iteration. [Wire an error to a loop and a queue](error-variant-loop.md).
+
 Open the [Function Navigator](function-navigator.md), browse **Programming >
 Numeric**, and drag an operation onto the Diagram. The operation SVG follows
 the pointer at reduced opacity and becomes fully opaque when placed.

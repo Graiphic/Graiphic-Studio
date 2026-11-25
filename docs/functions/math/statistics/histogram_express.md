@@ -7,10 +7,16 @@
 
 Separate stateful Express node, reusing Histogram/General Histogram counting. Explicit GS configuration ports auto_range/bins/cumulative/normalization; NI Enable/Reset/error behavior preserved. Graph XY output is GS. Express node distinct from the ordinary Histogram VI. GS range defaults [-3,3), 10 bins; cumulative/Reset/Enable use per-instance transactional state. Normalization 0 counts, 1 probability over accepted samples, 2 density. Waveform arrays use the first signal, an explicit GS adaptation.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](histogram_express.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Histogram (Express) (Express)**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Configure un histogramme de signal, distinct du VI Histogram ordinaire, avec plage, normalisation et accumulation explicites.
 
@@ -19,6 +25,13 @@ Configure un histogramme de signal, distinct du VI Histogram ordinaire, avec pla
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -99,7 +112,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Histogram (Express)](../../../examples/math.statistics.histogram_express.worked.md) — Use two fixed histogram bins and reset the express histogram for this observation. Inspect the centers and their counts. (`execution`, `studio-draft`).
 
 ## Identity and references
 

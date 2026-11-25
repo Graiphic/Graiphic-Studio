@@ -7,10 +7,16 @@
 
 Serializes a value as JSON text.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](flatten_to_json.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Aplatir en JSON**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Serialise une valeur en texte JSON.
 
@@ -43,7 +49,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Boolean, real numeric (non-FXP) and String scalar/array/cluster schemas produce one JSON String and an error cluster. Error input and LabVIEW-extension Boolean are exposed. Paths, enums, references, complex and FXP leaves are rejected; named cluster fields must be unique and consistently named.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -68,9 +81,16 @@ Scope: `requires_explicit_target_capability`.
 
 Provider identity is retained from Studio. Executability must be established by the active target; it is not inferred from catalog visibility.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -87,7 +107,9 @@ Provider identity is retained from Studio. Executability must be established by 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Flatten To JSON](../../../examples/string.conversion.flatten_to_json.worked.md) — With value = -3, error_in = {"status": false, "code": 0, "source": ""}, Run displays result = "-3", error_out = {"status": false, "code": 0, "source": ""}. (`execution`, `studio-draft`).
 
 ## Identity and references
 

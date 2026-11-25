@@ -104,6 +104,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Less? — exact i64](../../examples/comparison.less.exact_i64.md) — Tests whether x is less than y. (`execution`, `studio-draft`).
 - [Less? — exact u64](../../examples/comparison.less.exact_u64.md) — Tests whether x is less than y. (`execution`, `studio-draft`).
 - [Less? — exact f64](../../examples/comparison.less.exact_f64.md) — Tests whether x is less than y. (`execution`, `studio-draft`).
+- [Vérifier l’intervalle d’un tirage aléatoire](../../examples/numeric.random_zero_one.interval.md) — Lire un tirage DBL. Sa valeur est supérieure ou égale à zéro et strictement inférieure à un. Les deux comparaisons utilisent le même tirage. (`execution`, `studio-draft`).
 
 ## Identity and references
 

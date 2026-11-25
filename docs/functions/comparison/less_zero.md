@@ -101,6 +101,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Less Than 0? — negative](../../examples/comparison.less_zero.negative.md) — Tests whether a value is negative. (`execution`, `studio-draft`).
 - [Less Than 0? — zero](../../examples/comparison.less_zero.zero.md) — Tests whether a value is negative. (`execution`, `studio-draft`).
 - [Less Than 0? — positive](../../examples/comparison.less_zero.positive.md) — Tests whether a value is negative. (`execution`, `studio-draft`).
+- [Tester le signe de l’infini négatif](../../examples/numeric.other_constants.negative_infinity.worked.md) — Comparer la constante DBL à zéro et lire le booléen. (`execution`, `studio-draft`).
 
 ## Identity and references
 

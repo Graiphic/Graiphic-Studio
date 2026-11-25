@@ -7,10 +7,16 @@
 
 Minimizes a convex quadratic objective subject to linear equalities, inequalities and parameter bounds.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](ip.md#examples) and [document profiles and evidence boundaries](../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Programmation quadratique, point intérieur**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Minimise un objectif quadratique convexe sous égalités et inégalités linéaires et bornes sur les paramètres.
 
@@ -19,6 +25,13 @@ Minimise un objectif quadratique convexe sous égalités et inégalités linéai
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -93,7 +106,9 @@ Exact owned native service; target admission and end-to-end qualification remain
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Minimiser un coût quadratique par points intérieurs](../../../../examples/math.optimization.qp.ip.worked.md) — Examiner les bornes et le point de départ. Le terme quadratique et le terme linéaire décrivent x² − 4x. (`execution`, `studio-draft`).
 
 ## Identity and references
 

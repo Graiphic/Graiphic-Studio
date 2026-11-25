@@ -76,7 +76,9 @@ Provider identity is retained from Studio. Executability must be established by 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Reconnaître une référence invalide](../../examples/path.not_a_refnum_constant.worked.md) — Relier la constante de référence invalide au prédicat de validité. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

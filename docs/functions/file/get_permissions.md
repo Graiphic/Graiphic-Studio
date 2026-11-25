@@ -83,7 +83,9 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Examiner les permissions d’un fichier](../../examples/file.get_permissions.worked.md) — Renseigner les chemins avec un dossier d’exercice et des copies jetables de ses relevés. Suivre les sorties et le diagnostic. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

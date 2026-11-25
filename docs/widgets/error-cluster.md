@@ -1,5 +1,7 @@
 # Error Cluster
 
+To use this value as a loop condition, wire it directly to the conditional terminal. You can branch the same wire to a message's `Variant` field to retain `status`, `code` and `source` together. [Walk through the two-iteration example](../interface/error-variant-loop.md).
+
 Choose **Error Cluster Control** or **Error Cluster Indicator** from the Widget
 Navigator's **Data Containers** category. Each preset places a real Cluster
 containing three ordinary widgets.

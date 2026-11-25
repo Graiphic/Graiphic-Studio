@@ -93,7 +93,9 @@ Generic authoring metadata does not imply universal target support. The selected
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Évaluer une fonction de Hankel sphérique](../../../examples/math.special.hankel_sph.worked.md) — À l’argument 2 et à l’ordre zéro, lire sur l’indicateur complexe les composantes réelle et imaginaire. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -7,10 +7,16 @@
 
 Defines finite physical axes, inclusive endpoints, and a compatible mesh. Axis defaults start=0,end=1,count=11; space needs count&gt;2 and time count&gt;1. Polygon accepts a simple concave contour and optional grid points; grid_factor=.005 is used only without supplied grid points. Filtering retains explicit point mapping, triangles and mesh boundary, never a convex-hull replacement. Documentary authoring profile_id=frog.studio.pde.proposed_v1; numerical Problem.profile=frog_pde_proposed_v1. FROG coefficient profile frog_pde_proposed_v1: L=-k*Laplacian+a, k&gt;0, without squaring k; no measured NI runtime parity or confirmed NXG signatures. Real f64 Arrays preserve rank and [time,y,x] order; no Matrix, scalar lifting or broadcasting. PDE is an immutable family-specific structural value, distinct from a callable reference and a scene reference. Exact instance identity is persisted and never inferred over an explicit choice. The shared authored Highlight worker executes the compiled C++ service; public Source/FIR LLVM aggregates remain explicitly unavailable, with no fallback or promised AOT provider. Errors, cancellation and resource limits never publish a plausible zero-valued success.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](rectangle.md#examples) and [document profiles and evidence boundaries](../../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Définir le domaine — Helmholtz 2D Rectangle**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Définit les coordonnées physiques et les deux extrémités incluses. Défauts des axes : start=0,end=1,count=11 ; plus de2points spatiaux et plus de1instant. Le polygone simple peut être concave ; grid_factor=.005 est ignoré avec Grid Points fourni. Le filtrage conserve un mapping explicite, les triangles et le contour du maillage. Profil documentaire profile_id=frog.studio.pde.proposed_v1 ; convention numérique Problem.profile=frog_pde_proposed_v1. Profil FROG frog_pde_proposed_v1 : L=-k*Laplacien+a, k&gt;0, sans mise au carré de k ; sans parité NI mesurée ni signature NXG confirmée. Tableaux réels f64 à rang exact, ordre [temps,y,x], sans Matrix, lifting ni broadcasting. Le descripteur PDE est une valeur structurelle immuable propre à sa famille, distincte des références de fonction et de scène. L’instance explicite est sauvegardée. Le worker Highlight auteur appelle le service C++ compilé ; les agrégats Source/FIR LLVM restent refusés explicitement, sans repli ni AOT annoncé. Erreurs, annulation et budgets ne deviennent jamais un succès de valeur nulle inventé.
 
@@ -44,7 +50,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 PDE in [pde_in]: cluster&lt;schema_helmholtz2d:i32,profile:string,family:i32,k:f64,a:f64,equation_defined:bool,source:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,domain:cluster&lt;defined:bool,geometry:i32,X:cluster&lt;start:f64,end:f64,count:i32&gt;,Y:cluster&lt;start:f64,end:f64,count:i32&gt;,T:cluster&lt;start:f64,end:f64,count:i32&gt;,boundary_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,grid_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,triangles:array&lt;cluster&lt;A:i32,B:i32,C:i32&gt;&gt;,mesh_boundary:array&lt;i32&gt;,point_mapping:array&lt;i32&gt;,input_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,grid_points_provided:bool,remapped:bool,grid_factor:f64,revision:u64&gt;,boundaries:array&lt;cluster&lt;defined:bool,type:i32,field:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;&gt;&gt;,initial_value:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,initial_derivative:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,settings:cluster&lt;maximum_bytes:u64,maximum_iterations:i32,tolerance:f64,mean_constraint:bool,mean_value:f64&gt;,generation:u64&gt;; X [axis_x]: cluster&lt;start:f64,end:f64,count:i32&gt;; Y [axis_y]: cluster&lt;start:f64,end:f64,count:i32&gt;; error in [error_in]: cluster&lt;status:bool,code:i32,source:string&gt;; PDE out [pde_out]: cluster&lt;schema_helmholtz2d:i32,profile:string,family:i32,k:f64,a:f64,equation_defined:bool,source:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,domain:cluster&lt;defined:bool,geometry:i32,X:cluster&lt;start:f64,end:f64,count:i32&gt;,Y:cluster&lt;start:f64,end:f64,count:i32&gt;,T:cluster&lt;start:f64,end:f64,count:i32&gt;,boundary_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,grid_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,triangles:array&lt;cluster&lt;A:i32,B:i32,C:i32&gt;&gt;,mesh_boundary:array&lt;i32&gt;,point_mapping:array&lt;i32&gt;,input_points:array&lt;cluster&lt;X:f64,Y:f64&gt;&gt;,grid_points_provided:bool,remapped:bool,grid_factor:f64,revision:u64&gt;,boundaries:array&lt;cluster&lt;defined:bool,type:i32,field:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;&gt;&gt;,initial_value:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,initial_derivative:cluster&lt;defined:bool,mode:i32,shape:array&lt;i32&gt;,values:array&lt;f64&gt;,function:ref&lt;connectivity.document.strict,cluster&lt;in_x:f64,in_y:f64,in_data:variant,out_value:f64,out_diagnostic:cluster&lt;status:bool,code:i32,source:string&gt;&gt;&gt;,data:variant,mesh_revision:u64,point_indices:array&lt;i32&gt;&gt;,settings:cluster&lt;maximum_bytes:u64,maximum_iterations:i32,tolerance:f64,mean_constraint:bool,mean_value:f64&gt;,generation:u64&gt;; error out [error_out]: cluster&lt;status:bool,code:i32,source:string&gt;
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -72,11 +85,18 @@ Port order: `pde_in` → `axis_x` → `axis_y` → `error_in`.
 
 Local authored Highlight service is separate. Public Source/FIR LLVM and AOT aggregates remain explicitly unavailable. Polygon scene3d host is unavailable.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No public Source/FIR LLVM or AOT aggregate provider.
 - No intensity/XY/scene3d host: numeric rendering data is distinct from a live graphics capability.
 - NI coefficient normalization/signs are not claimed verified.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -94,7 +114,9 @@ Local authored Highlight service is separate. Public Source/FIR LLVM and AOT agg
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Calculer le potentiel sur une plaque carrée](../../../../../examples/math.pde.define_equation.helmholtz2d.numeric.worked.md) — La grille a trois points par axe. Le potentiel imposé vaut 0 à gauche et 2 à droite. Sur les deux autres bords, il passe par 1 au milieu. En l’absence de source, chaque ligne de la solution contient 0, 1 et 2. (`execution`, `studio-draft`).
 
 ## Identity and references
 

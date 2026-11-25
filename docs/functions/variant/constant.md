@@ -80,7 +80,9 @@ Authoring support is not an execution capability.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Examiner le type d’un Variant vide](../../examples/variant.constant.worked.md) — Relier le Variant à l’inspection de type et suivre le nom déclaré. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

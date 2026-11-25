@@ -279,3 +279,20 @@ canonical name, and descriptive kind must agree when more than one is present.
 Runtime execution still depends on a validated FROG lowering and native ABI
 corridor for the selected type; Studio reports unsupported types instead of
 silently reinterpreting an executable graph.
+
+## Instruments and sliders
+
+In the **Numeric** palette, a Knob sets a value by rotation, a Meter shows it
+on a semicircular dial, a Gauge uses a 270-degree arc, and a Tank shows a
+vertical level. Use the control role to supply a number to the diagram and the
+indicator role to display a number received from a wire. Configure the range
+in **Properties**. During Run, adjusting the Knob with the mouse or keyboard
+can trigger a **Value Change** event.
+
+A single-handle slider can be horizontal or vertical. Drag its thumb to set
+the value. Drag a frame handle along the direction of travel to change the
+track length, or across it to change the track thickness. **Visible Items →
+Cursor** toggles the thumb and keeps the fill visible. On a two-handle slider,
+the diagram value contains the numeric fields `lower` and `upper`. The fill can
+cover the interval between them or the two outer portions. A range indicator
+uses the same pair of fields to reproduce both handle positions.

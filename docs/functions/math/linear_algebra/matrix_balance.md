@@ -7,10 +7,16 @@
 
 Balances by similarity B=T^-1*A*T. job U16 0 none,1 permutations,2 scaling,3 both default. Returns scale descriptor and zero-based inclusive index_low/high; descriptor must feed Back Transform without changing its meaning. Inputs calculate in DBL/CDB with explicit numeric promotion; 64-bit integers above 2^53 may round. No broadcasting, no private Matrix reinterpretation. error is I32 and never an automatic dialog. Optional unwired defaults: job=3.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](matrix_balance.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Matrix Balance**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Équilibre par similitude B=T⁻¹AT. Job 0 aucun, 1 permutations, 2 échelles, 3 les deux. Renvoie le descripteur Scale et les bornes inclusives en base 0. Valeurs facultatives non câblées : job=3.
 
@@ -44,6 +50,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -94,7 +107,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Matrix Balance](../../../examples/math.linear_algebra.matrix_balance.worked.md) — With a = 2 x 2 array, Run displays result = 2 x 2 array. (`execution`, `studio-draft`).
 
 ## Identity and references
 

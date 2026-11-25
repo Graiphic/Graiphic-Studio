@@ -7,10 +7,16 @@
 
 Creates a diagnostic from an I32 code, description and optional call chain. An incoming error or warning is preserved.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](build_cluster.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Construire un cluster d’erreur**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Construit un diagnostic à partir d’un code I32, d’une description et éventuellement de la chaîne d’appel. Une erreur ou mise en garde entrante est conservée.
 
@@ -44,7 +50,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -73,6 +86,11 @@ Required provider: `frog.studio.error.handling@1`.
 
 Local compiled Error value/service realization on complete immutable SDK carriers. The selected Source/FIR/native target must explicitly admit this exact operation and full typed signature; this metadata neither enables every backend nor claims that partial variants have been qualified.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The active target must explicitly admit the exact native operation and complete typed signature; palette visibility and this metadata do not grant an execution capability.
@@ -80,6 +98,8 @@ Local compiled Error value/service realization on complete immutable SDK carrier
 - Current call-chain frames require exact Source/FIR owner provenance; contextual execution inside projected SubFROG callees is not admitted without a qualified callee call-chain authority.
 - No NI localized error-code database is installed in this provider; explicit descriptions are preserved and an unknown code receives the truthful GS fallback.
 - Code0 preserves the complete incoming cluster; an incoming error or warning is preserved according to the declared GS contract. New code678100 without a multiplex collection is refused.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -97,7 +117,9 @@ Local compiled Error value/service realization on complete immutable SDK carrier
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Build Error Cluster](../../examples/error.build_cluster.worked.md) — Start with an incoming error 17 from Input sensor, then request creation of error 42. The original error passes through intact. (`execution`, `studio-draft`).
 
 ## Identity and references
 

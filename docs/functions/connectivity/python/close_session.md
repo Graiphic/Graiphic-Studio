@@ -66,7 +66,9 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Appeler une fonction Python](../../../examples/connectivity.python.node.editable.md) — Relier la session Python du premier appel au nœud, puis au dernier appel. Le paramètre vaut 21. Le module d’exercice attendu définit double_value(x) avec return 2*x. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

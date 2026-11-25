@@ -7,10 +7,16 @@
 
 Roots Classification. Partitions roots into real, conjugate-paired and unpaired roots. Real tolerance is absolute imaginary magnitude; pair tolerance is relative conjugacy error. No missing conjugate is invented. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](classify_roots.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Classification des racines**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Répartit les racines en racines réelles, paires conjuguées et racines non appariées. La tolérance réelle porte sur la valeur absolue de la partie imaginaire ; la tolérance de paire est une erreur relative de conjugaison. Aucun conjugué absent n’est inventé. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
 
@@ -19,6 +25,13 @@ Répartit les racines en racines réelles, paires conjuguées et racines non app
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -85,7 +98,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Roots Classification](../../../examples/math.polynomial.classify_roots.worked.md) — Classify five roots into real roots, conjugate pairs and unpaired complex roots. (`execution`, `studio-draft`).
 
 ## Identity and references
 

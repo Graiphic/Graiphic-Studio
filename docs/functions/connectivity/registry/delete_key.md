@@ -72,7 +72,9 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Supprimer une sous-clé de test](../../../examples/connectivity.registry.delete_key.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

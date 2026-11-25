@@ -54,6 +54,7 @@ These are expected values, not a report of executed tests. Integers retain their
 ## Related functions
 
 - [Insert Into Map](../functions/collection/map/insert.md) `collection.map.insert`
+- [Map Constant](../functions/collection/map/constant.md) `collection.map.constant`
 
 ## Dependencies and redistribution
 

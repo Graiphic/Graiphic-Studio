@@ -81,7 +81,9 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Lire la position et la taille d’un fichier](../../examples/file.readonly.inspection.md) — En Simulation, saisir le chemin absolu d’un fichier non vide, par exemple le Readme.md de cet exemple. Ouvrir en lecture seule, avancer d’un octet et lire la position. Après fermeture, vérifier la taille et le type du fichier. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

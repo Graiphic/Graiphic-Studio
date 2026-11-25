@@ -76,7 +76,9 @@ Requires the shared Rendezvous resource service, generation-bound waits and expl
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Vérifier une référence de rendez-vous](../../../examples/synchronization.rendezvous.not_a_rendezvous.worked.md) — Créer un rendez-vous pour deux participants. Suivre la référence jusqu’au prédicat. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

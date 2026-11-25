@@ -7,10 +7,16 @@
 
 GS structured polyline output: points [N,2], offsets of each curve plus final sentinel, one level/closed flag per curve. Marching squares with asymptotic saddle decider; nonfinite Z masks cells; optional strict monotonic axes. No bitmap.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](contour_line.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Courbes de niveau**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Sortie GS en polylignes structurées : points [N,2], offsets de chaque courbe et sentinelle finale, un niveau et un drapeau fermé par courbe. Méthode des carrés marchants avec décision asymptotique aux points-selles ; les Z non finis masquent les cellules. Les axes facultatifs sont strictement monotones. Aucune image bitmap.
 
@@ -19,6 +25,13 @@ Sortie GS en polylignes structurées : points [N,2], offsets de chaque courbe et
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -89,7 +102,9 @@ Exact selected variant; native JIT Run only. AOT is explicitly unqualified, neve
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Contour Line](../../../examples/math.geometry.contour_line.worked.md) — Trace the level supplied to the sampled matrix. The matrix of contour vertices and the curve offsets expose the path. (`execution`, `studio-draft`).
 
 ## Identity and references
 

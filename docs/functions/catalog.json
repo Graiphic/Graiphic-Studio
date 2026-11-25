@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_snapshot": {
-    "sha256": "be4392abc59bdbaa3233b527de52d518acb6286f72a94eccec21c1e39e6c571f",
+    "sha256": "1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963",
     "files": [
       {
         "path": "../../FROG/Implementations/Frontend/src/FunctionCatalogSemantic.cpp",
@@ -9,7 +9,7 @@
       },
       {
         "path": "../../FROG/Implementations/Frontend/src/QueueFunctionBinding.cpp",
-        "sha256": "49a6f2dc8593fd1081df413a344b87f6b98ce51606d50e8b64c75fcbb3f0eff3"
+        "sha256": "efebf045df51c05e9604fec2ad6556a903afcf87357977c5a137f7f14452214e"
       },
       {
         "path": "assets/icons/diagram/numeric-terminals/lecture/float64.svg",
@@ -3621,7 +3621,7 @@
       },
       {
         "path": "config/context-help.ini",
-        "sha256": "6d65e17ecfcf14c238c600bad0c6f7cf1184278c1b9112daf1bf32c98304ee32"
+        "sha256": "43a11bd85d89ae956173495a8473badb109ebe65a6fa59f853258513b9a1464b"
       },
       {
         "path": "manifests/connectivity/entries.generated.inc",
@@ -3713,7 +3713,7 @@
       },
       {
         "path": "manifests/function-bindings/studio.synchronization.v2.json",
-        "sha256": "cee0bc83c7714da211da1802bc2ac3e8938e0e07285ed533847e9e1c5d5ebd38"
+        "sha256": "2d52c45d621473a185bfad95184f18e48c34d316fefb19a6ae74d52d5f9d0f78"
       },
       {
         "path": "manifests/function-bindings/studio.timestamp.v2.json",
@@ -3749,15 +3749,15 @@
       },
       {
         "path": "src/HighlightExecutionEvaluator.cpp",
-        "sha256": "e6d30b1f90a55cfe187f7b948afea45841efac9d8bdeb5ea8983bb8cbbb89e14"
+        "sha256": "9cc6dc26e6dde2a2ba2ac10b070b46b221a5cf6e474d19fbd9faf5e2cc77bc91"
       },
       {
         "path": "src/QueueRuntime.cpp",
-        "sha256": "af8abfe77424e20a3324017581f38aca78fa18b5af57e3b59edd70452fca9aab"
+        "sha256": "a2f386cb46942b786925a703b292c57f273bf8090de806a45dcb9cc3ec478ccb"
       },
       {
         "path": "src/win32/Win32DiagramPortDisplay.cpp",
-        "sha256": "59a6ee661bbe7234436ba257113eb6a48e95ad98de4f7064b94e8153fdcbb392"
+        "sha256": "ff78b3e39a66d01347ce1366fa91e02088debe12cf601863c0d89a28d54e5154"
       },
       {
         "path": "src/win32/Win32FunctionPortLabels.cpp",
@@ -3769,7 +3769,7 @@
       },
       {
         "path": "src/win32/Win32HighlightExecutionController.cpp",
-        "sha256": "8f0fc8d817517de4ab45380f1c1649ca23a5b87d1532f50e5653bca25c91c8a6"
+        "sha256": "b4f0dcd37792e80a45f545b16210f634b3499e006905f7803e4de6a6a1168929"
       }
     ]
   },
@@ -30816,6 +30816,8 @@
       "public_runtime_available": false,
       "private_studio_dispatch": true,
       "connector_names": [
+        "at opposite end? (false)",
+        "at_front",
         "element",
         "error in",
         "error out",
@@ -32386,8 +32388,8 @@
   ],
   "examples_projection": {
     "index": "assets/examples/index.v1.json",
-    "sha256": "508c91dece45111e31fe8533e210e3c0f5a135e66f95b3af24a1a19f521ccd95",
-    "entries": 626,
+    "sha256": "a8008b4f3c01bf1039c42460d109b1e3cf84c90583479e58cc50a24139d54ce8",
+    "entries": 1169,
     "scope": "declared expectations; no execution results inferred"
   }
 }

@@ -6,7 +6,7 @@ a global shared value.
 
 ## Create and reuse a definition
 
-1. Create the Numeric, Boolean, String, Enum, Cluster or typed Array to share.
+1. Create the control whose definition you want to share, such as a Numeric, an Enum, a Picture Ring, a Cluster or a typed Array.
 2. Use **Make Type Def.** and save the definition as a native **`.ftype`** file.
 3. Use **Open Type Def.** to edit its root and the existing Icon Editor to
    customize its shared SVG artwork.
@@ -17,6 +17,13 @@ The definition editor has one root control and no executable Block Diagram.
 **Locate Type Def.** finds its source; **Disconnect from Type Def.** makes an
 instance independent. Saving a definition under another source with Save As
 creates an independent definition with a new identity.
+
+For a nested cluster, right-click a child and choose the enclosing cluster by
+its full field path. With the cluster already selected, **Shift+F10** opens
+its own menu. The definition retains that cluster's descendants, field order,
+and each Picture Ring's image catalogue. The linked instance stays in its
+parent. The turquoise Type Def badge appears on diagram terminals and constants.
+Front Panel widgets use their normal face, including inside clusters and tabs.
 
 ## Apply a saved change
 

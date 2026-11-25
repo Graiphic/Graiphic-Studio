@@ -7,10 +7,16 @@
 
 Optional time format String (%c), scalar Timestamp or real number (current time if omitted) and UTC flag produce a formatted date/time String. Runtime support depends on the selected execution target.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](format_date_time.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Formater la chaîne de date et heure**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Format horaire facultatif (%c), horodatage scalaire ou nombre réel (instant courant si absent) et option UTC produisent une chaîne date/heure formatée. L’exécution dépend de la cible sélectionnée.
 
@@ -42,6 +48,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
+
 - Type resolution: `custom_resolver`; result expression: `resolve:frog.studio.polymorphic.type-resolution@1`.
 - Implicit coercion: not enabled by this resolver; individual port policies remain explicit.
 - Arrays: not accepted; lifting policy: `none`.
@@ -60,10 +73,17 @@ Required provider: `frog.studio.timestamp.native@1`.
 
 Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared types. Windows NLS/timezone services are required for local rendering. Explicit range, precision and format refusals remain. Admission, observed execution and AOT package qualification require separate current evidence; this declaration is not that evidence.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The native Timestamp profile is bounded; unsupported precision, calendar, locale and format variants remain explicit refusals.
 - A compiled service declaration alone does not qualify actual Run or an AOT package.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -79,7 +99,9 @@ Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Format Date/Time String](../../examples/timestamp.format_date_time.worked.md) — Format a fixed time of 90,061 seconds from the FROG Timestamp epoch (January 1, 1904). UTC formatting gives 1904-01-02 01:01:01 on every computer without reading the clock. (`execution`, `studio-draft`).
 
 ## Identity and references
 

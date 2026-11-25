@@ -433,6 +433,10 @@ def render_page(entry, contract, help_entry, supplemental, palettes, defaults, e
              f"{link(entry['family'] + ' functions', entry['family_route'])} · {link('All functions', 'docs/functions/index.md')}", "", prose(entry["summary"]), ""]
     native_examples = any(set(item.get("backends", [])) & {"native-fast", "native-debug"}
                           for item in example_projection.by_catalog.get(cid, []))
+    if cid in {"structures.for_loop", "structures.while_loop", "structures.timed_loop",
+               "variant.to_data", "variant.to_variant", "cluster.bundle_by_name",
+               "cluster.unbundle_by_name", "synchronization.queue.enqueue", "synchronization.queue.dequeue"}:
+        lines.extend((link("Branch an error wire to a loop and a queue", "docs/interface/error-variant-loop.md"), ""))
     if cid in {"application_control.property_node", "application_control.invoke_node",
                "application_control.reference", "application_control.close_reference"}:
         lines.extend((link("Working with references", "docs/reference/using-object-references.md") + " · " +
@@ -691,9 +695,9 @@ def main():
             if args.functions_only:
                 available = (target.startswith("docs/functions/") and target in artifacts) or (output / target).is_file()
             else:
-                member_pages = {"docs/reference/object-members/index.md",
-                                "docs/reference/using-object-references.md"}
-                available = target in artifacts or (target in member_pages and (output / target).is_file())
+                guide_pages = {"docs/reference/object-members/index.md", "docs/reference/using-object-references.md",
+                               "docs/interface/error-variant-loop.md"}
+                available = target in artifacts or (target in guide_pages and (output / target).is_file())
             if not available:
                 missing_links.append((name, target))
         if "github.com/Graiphic/FROG-STUDIO" in text:

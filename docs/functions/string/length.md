@@ -112,6 +112,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [String Length — utf8](../../examples/string.length.utf8.md) — Length counts bytes, including NUL. UTF-8 é occupies two bytes; this example does not count Unicode characters. (`execution`, `studio-draft`).
 - [String Length — nul](../../examples/string.length.nul.md) — Length counts bytes, including NUL. UTF-8 é occupies two bytes; this example does not count Unicode characters. (`execution`, `studio-draft`).
 - [String Length preserves Cluster fields](../../examples/string.length.cluster-tree.md) — Each String leaf is replaced by its byte length. Cluster field identities and names remain in the same order, including when UTF-8 uses several bytes. (`execution`, `studio-draft`).
+- [Dropdown String Constant](../../examples/string.dropdown_constant.worked.md) — Select Manual in the dropdown and Run in Simulation to read its length (6). Select Auto and Run again to read 4. (`execution`, `studio-draft`).
 
 ## Identity and references
 

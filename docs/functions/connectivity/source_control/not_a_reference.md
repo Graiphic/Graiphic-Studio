@@ -67,7 +67,9 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Examiner la référence de projet](../../../examples/connectivity.source_control.not_a_reference.editable.md) — Suivre la référence du projet et le fil d’erreur depuis l’ouverture jusqu’à la fermeture. Le diagramme montre le contrat de l’opération sans lancer de client de gestion de sources. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

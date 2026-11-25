@@ -102,7 +102,9 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Préparer une commande locale](../../examples/connectivity.system_exec.worked.md) — Suivre la commande echo FROG depuis la constante jusqu’au nœud. Repérer les trois sorties qui recevraient le texte, le code retour et l’erreur. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

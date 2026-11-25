@@ -7,10 +7,16 @@
 
 Places the common IPE with one Map Get/Replace pair. Action 0 modifies only if found; 1 adds or modifies; 2 deletes. Both absence flags describe the original lookup, including after insertion. Other value branches remain independent.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](in_place_access.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **In Place Map Access**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Dépose l’IPE commune avec une paire Map Get/Replace. Action 0 : modifie si présente ; 1 : ajoute ou modifie ; 2 : supprime. Les deux drapeaux d’absence décrivent la recherche initiale, même après insertion. Les autres branches restent indépendantes.
 
@@ -20,7 +26,14 @@ Dépose l’IPE commune avec une paire Map Get/Replace. Action 0 : modifie si pr
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Editable existing In Place Element Structure with one ordinary Map Get/Replace pair and stable access ID. Reuses the shared IPE binding, Entry/body/Exit, action0/1/2, typed defaults and initial not-found flags; no second implementation.
+
+</details>
 
 ## IN — inputs
 
@@ -62,7 +75,9 @@ Local Studio profile only. A catalog contract is not a target capability or a pu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Accéder à la mesure B en place](../../../examples/collection.map.in_place_access.worked.md) — Lire le nombre d’éléments après le passage dans la structure. (`execution`, `studio-draft`).
 
 ## Identity and references
 

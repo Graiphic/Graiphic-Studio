@@ -83,7 +83,10 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [CSV — write and read a spreadsheet](../../examples/file.csv.write-read.md) — Choose an absolute base filename in a writable folder (for example, readings.csv), then run in Simulation. Create Incrementing reserves a new file. Write two rows separated by semicolons, read the four numbers back, then delete the file that this example created. An existing file with the chosen name is preserved. (`interactive`, `studio-draft`).
+- [Réduire un fichier réservé de quatre à deux octets](../../examples/file.reserve.write.truncate.md) — En Simulation, saisir un nom de fichier de base dans un dossier accessible en écriture. Réserver un nouveau fichier, y écrire FROG, vider le tampon, puis ramener sa taille à deux octets. Le texte relu est FR. Seul le fichier réservé par le montage est supprimé. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

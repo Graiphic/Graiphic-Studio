@@ -101,6 +101,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Greater Than 0? — negative](../../examples/comparison.greater_zero.negative.md) — Tests whether a value is positive. (`execution`, `studio-draft`).
 - [Greater Than 0? — zero](../../examples/comparison.greater_zero.zero.md) — Tests whether a value is positive. (`execution`, `studio-draft`).
 - [Greater Than 0? — positive](../../examples/comparison.greater_zero.positive.md) — Tests whether a value is positive. (`execution`, `studio-draft`).
+- [Tester le signe de l’infini positif](../../examples/numeric.other_constants.positive_infinity.worked.md) — Comparer la constante DBL à zéro et lire le booléen. (`execution`, `studio-draft`).
 
 ## Identity and references
 

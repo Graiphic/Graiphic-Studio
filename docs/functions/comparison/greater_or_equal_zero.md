@@ -101,6 +101,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Greater Or Equal To 0? — negative](../../examples/comparison.greater_or_equal_zero.negative.md) — Tests whether a value is non-negative. (`execution`, `studio-draft`).
 - [Greater Or Equal To 0? — zero](../../examples/comparison.greater_or_equal_zero.zero.md) — Tests whether a value is non-negative. (`execution`, `studio-draft`).
 - [Greater Or Equal To 0? — positive](../../examples/comparison.greater_or_equal_zero.positive.md) — Tests whether a value is non-negative. (`execution`, `studio-draft`).
+- [Vérifier l’intervalle d’un tirage aléatoire](../../examples/numeric.random_zero_one.interval.md) — Lire un tirage DBL. Sa valeur est supérieure ou égale à zéro et strictement inférieure à un. Les deux comparaisons utilisent le même tirage. (`execution`, `studio-draft`).
 
 ## Identity and references
 

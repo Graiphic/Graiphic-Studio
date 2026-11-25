@@ -7,10 +7,16 @@
 
 Evaluates the finite rational convergent A[0]/(B[0]+A[1]/(B[1]+...)), using every coefficient. Required A and B are nonempty rank-one F64 arrays of equal length with finite coefficients. Result is F64 with a separate I32 status. Empty/unequal arrays, nonfinite coefficients or a final zero denominator give NaN,error=1; overflow gives an overflow indication. Intermediate zero denominators are not automatically invalid: A=[1,1],B=[2,0] gives 0. This A[0] convention is FROG; NI equation indexing remains unconfirmed. It evaluates supplied coefficients, not a scalar-to-coefficients conversion. Formula: A[0]/(B[0]+A[1]/(B[1]+...+A[m-1]/B[m-1])). Example: A=[3],B=[2] gives 1.5; A=[1,1,1],B=[1,1,1] gives 2/3; A=[2,3,4],B=[5,6,7] gives 92/251.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](continued_fraction.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Fraction continue**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Évalue le convergent rationnel fini A[0]/(B[0]+A[1]/(B[1]+...)) en utilisant tous les coefficients. A et B requis sont deux tableaux F64 1D finis, non vides, de même longueur. Résultat F64 avec état I32 séparé. Tableaux vides/inégaux, coefficients non finis ou dénominateur final nul : NaN,error=1 ; dépassement : indication dédiée. Un zéro intermédiaire n’invalide pas automatiquement l’expression : A=[1,1],B=[2,0] donne 0. Cette convention A[0] appartient à FROG ; l’indexation de l’équation NI reste non confirmée. Évalue des coefficients fournis, sans développer un scalaire en coefficients. Formule : A[0]/(B[0]+A[1]/(B[1]+...+A[m-1]/B[m-1])). Exemple : A=[3],B=[2] gives 1.5; A=[1,1,1],B=[1,1,1] gives 2/3; A=[2,3,4],B=[5,6,7] gives 92/251.
 
@@ -42,9 +48,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 A: array&lt;f64,rank=1&gt;; B: array&lt;f64,rank=1&gt; → result: f64; error: i32. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. FROG I32 status: 0=Ok,1=Domain,2=Overflow,3=Cancelled,4=WorkLimit; not NI codes or an Error Cluster. Native Run currently has no Array transport for this signature and rejects it explicitly; local Highlight supports it.
 
 Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -74,11 +87,18 @@ Port order: `A` → `B`.
 
 Prime Factor and Continued Fraction remain local Highlight operations for these Array signatures: the current native execution SDK has no Array transport. Native Run must reject them explicitly without fallback.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Selected execution target must explicitly support the exact declared signature.
 - No implicit polymorphic overload or Array/Cluster lifting.
 - Prime Factor and Continued Fraction remain local Highlight operations for these Array signatures: the current native execution SDK has no Array transport. Native Run must reject them explicitly without fallback.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -94,7 +114,9 @@ Prime Factor and Continued Fraction remain local Highlight operations for these 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Continued Fraction](../../../examples/math.discrete.continued_fraction.worked.md) — A single numerator 3 and denominator 2 give 1.5 with error code zero. (`execution`, `studio-draft`).
 
 ## Identity and references
 

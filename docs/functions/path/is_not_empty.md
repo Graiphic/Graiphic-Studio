@@ -7,10 +7,16 @@
 
 Tests whether a path contains at least one component.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](is_not_empty.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Est chemin non vide**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Teste si un chemin contient au moins un composant.
 
@@ -40,7 +46,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 One scalar Path produces one scalar Boolean indicating a non-empty valid path. No arrays or clusters; this predicate does not establish file existence.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -69,9 +82,16 @@ Required provider: `frog.studio.comparison.owned-tree@1`.
 
 The existing compiled NumericAggregate service provides the bounded Comparison profile on explicitly admitted targets. The fixed scalar Path input and Boolean output retain their existing authoring contract; this predicate does not establish file existence. Complete types, nominal schemas, shapes and exact physical carriers remain checked. This declaration is not a passing test, full overload coverage or AOT/package qualification.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -85,7 +105,12 @@ The existing compiled NumericAggregate service provides the bounded Comparison p
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Is Path Not Empty](../../examples/path.is_not_empty.worked.md) — With path = ".", Run displays result = false. (`execution`, `studio-draft`).
+- [Édition uniquement — Situer le composant actif](../../examples/path.get_component_directory.worked.md) — Repérer la sortie Chemin du composant. Un document autonome ne fournit pas la liaison avec un composant propriétaire. (`persistence`, `studio-draft`).
+- [Trouver un dossier système](../../examples/path.get_system_directory.worked.md) — Tester si le chemin renvoyé est renseigné. Son emplacement dépend du poste. (`execution`, `studio-draft`).
+- [Demander un chemin temporaire pour un relevé](../../examples/path.generate_temporary_file.worked.md) — Demander un nom temporaire pour un relevé TSV et vérifier que le chemin est renseigné. Le fichier reste à créer. (`execution`, `studio-draft`).
 
 ## Identity and references
 

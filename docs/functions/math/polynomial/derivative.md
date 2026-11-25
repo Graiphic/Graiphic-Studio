@@ -7,10 +7,16 @@
 
 nth Derivative of Polynomial. Derivative coefficients of nonnegative integer order; order zero preserves P, order above degree yields [0]. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](derivative.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Dérivée nième d’un polynôme**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule les coefficients de la dérivée d’ordre entier non négatif ; l’ordre zéro conserve P et un ordre supérieur au degré donne [0]. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
 
@@ -19,6 +25,13 @@ Calcule les coefficients de la dérivée d’ordre entier non négatif ; l’ord
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -79,7 +92,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [nth Derivative](../../../examples/math.polynomial.derivative.worked.md) — With p = \[1, 2, 3\], order = 1, Run displays result = \[2, 6\], error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

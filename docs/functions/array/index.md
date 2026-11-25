@@ -7,10 +7,16 @@
 
 Returns an element or subarray at the requested index.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](index.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Indexer un tableau**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Renvoie un element ou un sous-tableau a l'index demande.
 
@@ -41,9 +47,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 An n-D array of T yields T when all dimensions are indexed; otherwise an array of T with one dimension removed per indexed dimension. With no index wired, the first dimension defaults to index zero. Waveforms expose Y elements. Studio: Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target. [Local Studio] Local Studio Play/Highlight executes one finite rank-1 array&lt;f64&gt; with one explicitly wired i32 index and one scalar f64 element output. Negative/out-of-range indexes and empty arrays produce ARRAY_INDEX_RANGE with no output; there is no invented zero. Reads are bounded to one million elements. Other types/ranks, subarrays and expanded index/output groups fail explicitly with ARRAY_LOCAL_PROFILE_UNAVAILABLE. This bounded FROG profile does not claim general NI Index Array behavior or public FROG/LLVM target support.
 
 [Local Studio] Exact owned Array operations use the selected native target capability. The historical one-output I32 Index keeps its version-one range diagnostic. Extended ranks, groups and unwired indices use the separately versioned owned.v2 contract with full-schema defaults. Unsupported carriers remain explicit diagnostics.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -72,11 +85,18 @@ Required provider: `frog.studio.array.owned@1`.
 
 Conditional exact owned-value implementation selected by the current Source/FIR/native target; configuration and full element signatures are validated separately. This metadata is not unconditional support for every representation, backend or deployment profile.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for authoring types; this does not establish runtime support on the active target.
 - Studio provides one index per dimension (up to 16) and up to 32 expandable output groups. An unwired group follows the preceding group's indexed dimensions. Runtime support depends on the target.
 - Local f64 vector execution: finite rank-1 Index/single i32 index or Build/1..32 scalar f64 inputs only; no general Array or public LLVM provider.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -91,7 +111,9 @@ Conditional exact owned-value implementation selected by the current Source/FIR/
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Index Array](../../examples/array.index.worked.md) — With array = \[-3, 1, -1, 5\], Run displays element = -3. (`execution`, `studio-draft`).
 
 ## Identity and references
 

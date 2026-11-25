@@ -7,6 +7,8 @@
 
 Local Studio Play/Highlight removes exactly one immutable Variant envelope when its child type exactly matches both the actual wired type specimen and the compiled data output. No implicit numeric conversion: exact integer lexical payloads, array rank/dimensions, ordered cluster fields and immutable ownership survive. The specimen is a type, not an arbitrary fallback value. A neutral or historical text Variant remains opaque: return the requested typed default and error 8051 VARIANT_NO_CONCRETE_PAYLOAD. A wrong payload type/rank gives 8051 VARIANT_TYPE_MISMATCH. Incoming active error is preserved with a typed default. Double boxing requires unboxing Variant first, then its child. Public FROG/LLVM target support is not declared.
 
+[Branch an error wire to a loop and a queue](../../interface/error-variant-loop.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](to_data.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
@@ -122,6 +124,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Variant preserves an Array shape](../../examples/variant.rank2-roundtrip.md) — Boxing and unboxing retain the complete rank-two I64 Array shape and row-major values, including an integer above 2^53. The type specimen contributes its schema, not its value. (`execution`, `studio-draft`).
 - [Variant preserves a named Cluster](../../examples/variant.cluster-roundtrip.md) — The typed Variant retains the Cluster field identities and values. The same Cluster is used only as a schema witness for unboxing; it is not substituted for the payload. (`execution`, `studio-draft`).
 - [Variant type mismatch is a normal error](../../examples/variant.type-mismatch.error.md) — A boxed String cannot be extracted as I32. The result is the I32 intrinsic default and an error status; no numeric parsing or reinterpretation is attempted. Native and historical Simulation currently have distinct error codes, so this example compares the shared status and data behavior. (`execution`, `studio-draft`).
+- [Recover a typed value from flattened Variant bytes](../../examples/variant.binary-roundtrip.md) — Box the I32 value 42. Carry its type descriptor alongside the bytes through the decoder. An I32 specimen of zero selects the output type and the recovered value is 42. (`execution`, `studio-draft`).
 
 ## Identity and references
 

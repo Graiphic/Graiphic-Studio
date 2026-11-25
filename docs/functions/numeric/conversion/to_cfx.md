@@ -84,7 +84,9 @@ No portable Runtime conversion provider is declared.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Convertir une mesure en virgule fixe complexe](../../../examples/numeric.conversion.to_cfx.worked.md) — Suivre la conversion de la mesure vers une représentation fixe, puis vers un affichage DBL. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

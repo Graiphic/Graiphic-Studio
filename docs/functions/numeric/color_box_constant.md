@@ -7,10 +7,16 @@
 
 Places a U32 color constant on the diagram. Click the color to select its value.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](color_box_constant.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Constante Color Box**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place une constante de couleur U32 sur le diagramme. Cliquer sur la couleur permet de choisir sa valeur.
 
@@ -32,9 +38,16 @@ No fixed outputs are declared in this binding profile. The editor or selected in
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 No function operand; instance type: U32 color value. Constants/controls supply a value; indicators consume it.
 
 The Color Box constant is a numeric constant preset whose U32 color value and presentation are managed by the Studio editor.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -65,9 +78,16 @@ Implementation: `frog.studio.editor-managed`.
 
 Executable lowering or document-boundary behavior is owned by the editor.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No standalone function-provider contract applies.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -79,7 +99,9 @@ Executable lowering or document-boundary behavior is owned by the editor.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Lire la valeur RVB d’une couleur](../../examples/numeric.color_box_constant.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur. (`execution`, `studio-draft`).
 
 ## Identity and references
 

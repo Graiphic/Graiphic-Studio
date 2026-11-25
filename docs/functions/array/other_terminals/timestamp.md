@@ -80,7 +80,9 @@ Authoring support is not an execution capability.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Horodater deux relevés](../../../examples/array.other_constants.timestamp.worked.md) — Examiner les instants 0 et 1,5 seconde. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

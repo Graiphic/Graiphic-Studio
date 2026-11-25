@@ -7,10 +7,16 @@
 
 Accepts an I32 code or a 1D I32 array. Clears matching diagnostics, preserves others, and exposes codes cleared for the array overload.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](filter_code.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Filtrer un code d’erreur**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Accepte un code I32 ou un tableau 1D d’I32. Efface les diagnostics correspondants et conserve les autres. La sortie codes effacés apparaît avec l’entrée tableau.
 
@@ -43,7 +49,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Error = status:Boolean, code:I32, source:String. No automatic array lifting; no runtime provider in this delivery.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -72,11 +85,18 @@ Required provider: `frog.studio.error.handling@1`.
 
 Local compiled Error value/service realization on complete immutable SDK carriers. The selected Source/FIR/native target must explicitly admit this exact operation and full typed signature; this metadata neither enables every backend nor claims that partial variants have been qualified.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - The active target must explicitly admit the exact native operation and complete typed signature; palette visibility and this metadata do not grant an execution capability.
 - Authored positional Error clusters with custom field IDs remain valid authoring types, but their native typed-edge bridge is not implemented/qualified in this profile.
 - The codes connector admits exactly scalar I32 or rank-one I32 Array. codes_cleared exists only for the Array overload.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -93,7 +113,9 @@ Local compiled Error value/service realization on complete immutable SDK carrier
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Filter Error Code](../../examples/error.filter_code.worked.md) — With codes = \[41, 43\], error_in = {"status": true, "code": 41, "source": "&lt;3&gt;{\"desc\":\"sensor unplugged\",\"loc\":\"read-sensor\"}"}, Run displays codes_cleared = \[41\], error_cleared = true, error_out = {"status": false, "code": 0, "source": ""}. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -100,7 +100,9 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Acquérir les données d’une manette](../../../examples/connectivity.input_device.acquire_input_data.editable.md) — Choisir l’index 0. Suivre la référence de manette depuis l’initialisation vers l’acquisition puis la fermeture. Examiner les sorties d’axes, de boutons et de direction. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

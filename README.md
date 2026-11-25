@@ -1,6 +1,6 @@
 # Graiphic Studio
 
-The [26 October documentation reconciliation](docs/reference/documentation-refresh-2026-10-26.md) brings forward Run/Highlight, standalone Build, standard Type Def, Tabs and attached-comment guides. The example results below remain a dated measurement.
+The [November Studio update](docs/reference/studio-update-2026-11-25.md) covers error wiring, user events, instruments, Picture Rings and project classes. The [October documentation checkpoint](docs/reference/documentation-refresh-2026-10-26.md) retains the earlier guide and example measurements.
 
 A visual workspace aimed at helping people follow and validate machine-generated software through a structured FROG model and graphical dataflow.
 

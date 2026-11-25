@@ -113,6 +113,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Rendezvous : augmenter le seuil de 2](../../../examples/sync.rendezvous.resize_positive.md) — Rendezvous : augmenter le seuil de 2 (`execution`, `studio-draft`).
 - [Rendezvous : trois préparations indépendantes](../../../examples/sync.rendezvous.three_participants.md) — Rendezvous : trois préparations indépendantes (`execution`, `studio-draft`).
 - [Rendezvous : trois participants, deux générations](../../../examples/sync.rendezvous.two_generations.md) — Rendezvous : trois participants, deux générations (`execution`, `studio-draft`).
+- [Édition uniquement — Vérifier une référence de rendez-vous](../../../examples/synchronization.rendezvous.not_a_rendezvous.worked.md) — Créer un rendez-vous pour deux participants. Suivre la référence jusqu’au prédicat. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

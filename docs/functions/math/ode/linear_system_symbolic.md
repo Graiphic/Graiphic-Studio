@@ -7,10 +7,16 @@
 
 Solves homogeneous X'=A*X with constant real square rank-2 Array A and X0 at t=0. Outputs one String containing one autonomous expression per state, ordered as X0 and separated canonically by newline. It is not an array of Strings or sampled values. Real conjugate modes and Jordan polynomial-exponential factors are generated; unsupported ill-conditioned forms return a diagnostic. Example rotation: cos(t) newline -sin(t). Real f64 coupled systems, not element-wise batch lifting. Vectors are rank 1; matrices and multistate trajectories are actual rank-2 Arrays, not nominal Matrix transport. Values[row,column] is state column at Times[row]. Explicit exception: Linear nth Order Numeric returns only x(t) as a rank-1 Array, without its derivatives. Borrowed Variant user data is opaque to the f64 ODE state profile and may preserve exact common typed payloads, including I128/U128 lexical values, without numeric conversion. No complex transport, implicit batch, dimensional broadcasting or scalar lifting. Formula and FROG Reference are explicitly selected persisted identities sharing one palette artwork. Common connector IDs survive switching instances. ODE Solver and DAE use error in/out clusters; the legacy RK4, CK, Euler and linear functions retain error:i32 (zero means success). ticks:u32 is elapsed calculation milliseconds, not step count or simulated time. Invalid preconditions return empty results; a stopped integration retains accepted rows with an explicit nonzero diagnostic. Resource limits, cancellation, invalid references, nonfinite values and unavailable methods never become plausible zero-valued success. Classic LabVIEW connector documentation and mathematical algorithms; no measured NI runtime parity or confirmed NXG graphical signatures. FROG owns endpoint_policy=clip, long declared identifiers, CK accuracy mapping, repeated-root and Jordan support. Local execution uses the existing immutable authored graph and its owned Highlight worker, through Play with or without the bulb. The public-source LLVM compiled target corridor does not admit these aggregate signatures yet and rejects them explicitly; there is no substituted provider.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](linear_system_symbolic.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Système linéaire symbolique**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Résout X'=A*X homogène à matrice A réelle carrée constante, X0 à t=0. Une seule String contient une expression autonome par état, dans l’ordre de X0, séparée par retour à la ligne canonique. Ce n’est ni un tableau de Strings ni des valeurs échantillonnées. Modes conjugués réels et facteurs polynôme-exponentielle de Jordan ; diagnostic si forme indisponible ou mal conditionnée. Rotation : cos(t), puis -sin(t). Socle réel f64 : un vecteur est un système couplé, sans batch implicite, complexe ni transport Matrix. Les matrices et trajectoires multi-états sont de vrais tableaux de rang 2 : ligne=temps, colonne=état. Exception : Linear nth Order Numeric renvoie seulement x(t), tableau de rang 1 sans ses dérivées. Les données Variant empruntées restent opaques au profil f64 des états et peuvent conserver des lexèmes I128/U128 exacts sans conversion numérique. Formula/FROG Reference sont des instances manuelles persistées avec les mêmes identifiants des ports communs et le même SVG. ODE Solver/DAE gardent les clusters error in/out ; les anciens nœuds gardent error:i32 (0=succès). ticks:u32 mesure les millisecondes de calcul, pas les pas. endpoint_policy=clip inclut t0 et tf en recalculant le dernier pas tronqué. Dimensions, formules, tolérances, bornes, valeurs non finies, ressources, annulation et convergence produisent un diagnostic explicite. Sources LabVIEW classique, sans parité NI mesurée ni signature NXG confirmée ; les écarts FROG sont documentés. Exécution locale sur le graphe auteur immuable via le worker Highlight, Play avec ou sans ampoule. Le corridor cible compilé LLVM ne prend pas encore en charge ces signatures agrégées et les refuse explicitement, sans substitution.
 
@@ -42,7 +48,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 A [matrix]: array&lt;f64,rank=2&gt;; X0 [initial_values]: array&lt;f64&gt;; formula [formula]: string; error [error]: i32
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -70,10 +83,17 @@ Port order: `matrix` → `initial_values`.
 
 Authoring and local Highlight support do not imply a public FROG target provider.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Classic LabVIEW connector documentation and mathematical algorithms; no measured NI runtime parity or confirmed NXG graphical signatures. FROG owns endpoint_policy=clip, long declared identifiers, CK accuracy mapping, repeated-root and Jordan support.
 - No universal public FROG target provider is declared; local Highlight executes this exact signature.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -89,7 +109,9 @@ Authoring and local Highlight support do not imply a public FROG target provider
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Résoudre deux décroissances symboliquement](../../../examples/math.ode.linear_system_symbolic.worked.md) — Les deux états décroissent indépendamment aux taux 1 et 2. (`execution`, `studio-draft`).
 
 ## Identity and references
 

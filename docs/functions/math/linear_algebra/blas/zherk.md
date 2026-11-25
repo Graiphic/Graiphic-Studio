@@ -7,10 +7,16 @@
 
 Updates only the chosen C triangle using alpha*A*A^H + beta*C or alpha*A^H*A + beta*C. Both alpha and beta are DBL real. N/H supported; T is explicitly rejected. DBL/CDB instance domains and full Array ranks are explicit; permitted narrower numeric inputs are promoted visibly. A real-only port never discards an imaginary part. No broadcasting or implicit Matrix conversion. Outputs own their data; error is I32, without automatic popup. N0/H1 only; NI enum T2 exists but its mathematical adaptation is not documented, so GS refuses T2 rather than changing it to H. Optional unwired defaults: c=zero_square_rows_op_a, alpha=1, beta=1, operation_a=0, matrix_c_type=3.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](zherk.md#examples) and [document profiles and evidence boundaries](../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **zherk**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Mise à jour hermitienne de rang k ; alpha et beta réels. N/H admis, T refusé. Valeurs facultatives non câblées : c=zero_square_rows_op_a, alpha=1, beta=1, operation_a=0, matrix_c_type=3.
 
@@ -45,6 +51,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -96,7 +109,9 @@ Declared native provider capability; admission and execution require the complet
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [zherk](../../../../examples/math.linear_algebra.blas.zherk.worked.md) — Compute a one-by-one Hermitian rank-k product using the real-valued complex entry 2. The Hermitian product is 4. (`execution`, `studio-draft`).
 
 ## Identity and references
 

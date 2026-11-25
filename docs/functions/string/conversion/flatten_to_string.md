@@ -7,10 +7,16 @@
 
 Flattens a supported value into a binary String, preserving raw bytes without text or hexadecimal conversion.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](flatten_to_string.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Aplatir en chaîne**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Aplatit une valeur prise en charge en chaîne binaire, en préservant les octets sans conversion textuelle ni hexadécimale.
 
@@ -44,9 +50,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Data T, byte order (0=big-endian, 1=native, 2=little-endian), optional size prefix and error input produce a binary String and an error. Complete schema and active Source/FIR/Runtime capability determine admission; this entry does not imply a universal target provider.
 
 Serializable data + byte-order/size flags -&gt; binary String and error; no text encoding or hexadecimal conversion.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -79,9 +92,16 @@ Required provider: `frog.studio.string.raw-bytes@1`.
 
 The typed binary operation is admitted only by the active Source/FIR/Runtime capability. Byte order is big-endian (0), native (1), or little-endian (2); top-level array/String size prefixes are optional.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - NI reference verified for the supported binary value schemas; this does not grant an unsupported target this native operation.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -99,7 +119,9 @@ The typed binary operation is admitted only by the active Source/FIR/Runtime cap
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Flatten To String](../../../examples/string.conversion.flatten_to_string.worked.md) — With anything = true, error_in = {"status": false, "code": 0, "source": ""}, Run displays flattened_string = "\u0001", error_out = {"status": false, "code": 0, "source": ""}. (`execution`, `studio-draft`).
 
 ## Identity and references
 

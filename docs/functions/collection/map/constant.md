@@ -7,10 +7,16 @@
 
 A Map type model and complete value. Setting K and V creates no entries. Copy Data and Paste Data transfer compatible complete typed data. Unconfigured constants remain editable but cannot run.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](constant.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Map Constant**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Modèles de types et valeur complète de Map. Définir K et V ne crée aucune entrée. Copy Data et Paste Data transfèrent une valeur complète typée compatible. Une constante non configurée reste éditable mais ne peut pas être exécutée.
 
@@ -20,7 +26,14 @@ Modèles de types et valeur complète de Map. Définir K et V ne crée aucune en
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Typed Map value literal. Independent K/V type models define no entries. Actual values and complete nominal metadata use the common Collection authoring codec.
+
+</details>
 
 ## IN — inputs
 
@@ -67,7 +80,9 @@ Local Studio profile only. A catalog contract is not a target capability or a pu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Insert Into Map — new](../../../examples/collection.map.insert.new.md) — Insertion preserves the exact Map&lt;K,V&gt; model and reports separately whether the key already existed and its value remained unchanged. (`execution`, `studio-draft`).
 
 ## Identity and references
 

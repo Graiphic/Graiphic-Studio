@@ -123,6 +123,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [AND — truth 01](../../examples/boolean.and.truth_01.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted. (`execution`, `studio-draft`).
 - [AND — truth 10](../../examples/boolean.and.truth_10.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted. (`execution`, `studio-draft`).
 - [AND — truth 11](../../examples/boolean.and.truth_11.md) — Boolean or non-complex numeric scalars, arrays and clusters are accepted. (`execution`, `studio-draft`).
+- [Vérifier l’intervalle d’un tirage aléatoire](../../examples/numeric.random_zero_one.interval.md) — Lire un tirage DBL. Sa valeur est supérieure ou égale à zéro et strictement inférieure à un. Les deux comparaisons utilisent le même tirage. (`execution`, `studio-draft`).
 
 ## Identity and references
 

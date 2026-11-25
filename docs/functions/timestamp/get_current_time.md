@@ -70,7 +70,9 @@ Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Lire l’horloge de la session](../../examples/timestamp.get_current_time.worked.md) — Afficher l’horodatage retourné par le système. La valeur exacte dépend de l’instant de lecture. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

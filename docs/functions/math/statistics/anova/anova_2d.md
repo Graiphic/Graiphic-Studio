@@ -7,10 +7,16 @@
 
 Signed levels: positive fixed, negative random. Balanced cells, actual A/B/AB effects. Without replication fixed additive only; mixed denominator selection is actual. Signed levels identify fixed/random factors. Balanced replicated factors use the corresponding interaction denominator; unreplicated fixed models are additive.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](anova_2d.md#examples) and [document profiles and evidence boundaries](../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **2D ANOVA**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Analyse deux facteurs et leur interaction selon les niveaux et répétitions déclarés.
 
@@ -19,6 +25,13 @@ Analyse deux facteurs et leur interaction selon les niveaux et répétitions dé
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -93,7 +106,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [2D ANOVA](../../../../examples/math.statistics.anova.anova_2d.worked.md) — With x = \[6.5, 8.5, 9.5, ...\] (8 elements), observations_per_cell = 2, index_a = \[0, 0, 0, ...\] (8 elements), index_b = \[0, 0, 1, ...\] (8 elements), levels_a = 2, levels_b = 2, Run displays sig_a = 0.1161165235168156, sig_b = 0.01613008990009255. (`execution`, `studio-draft`).
 
 ## Identity and references
 

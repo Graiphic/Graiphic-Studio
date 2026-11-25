@@ -7,10 +7,16 @@
 
 Diagram node for Variant To Flattened Bytes. Ports are available for authoring; execution requires target support.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](to_flattened_bytes.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Variant en tableau d'octets aplati**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Noeud de diagramme : Variant en tableau d'octets aplati. Ports disponibles pour l'edition ; execution selon le moteur cible.
 
@@ -43,9 +49,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Variant + error -&gt; U8 data[], U16 type descriptor[], error.
 
 Typed native to_flattened_bytes over the existing SDK Variant. Main payload, full schema and attributes are independent. Conversions and malformed binary inputs use explicit Error outputs; the active target must admit the exact signature.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -76,9 +89,16 @@ Required provider: `frog.studio.variant.primitives@1`.
 
 Native implementation uses the exact immutable SDK Variant and typed value codec. Actual artifact admission and current targeted qualification remain required; this declaration is not an execution receipt.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Current native artifact admission and actual Run qualification are required for the exact operation and transported types.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -95,7 +115,9 @@ Native implementation uses the exact immutable SDK Variant and typed value codec
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Recover a typed value from flattened Variant bytes](../../examples/variant.binary-roundtrip.md) — Box the I32 value 42. Carry its type descriptor alongside the bytes through the decoder. An I32 specimen of zero selects the output type and the recovered value is 42. (`execution`, `studio-draft`).
 
 ## Identity and references
 

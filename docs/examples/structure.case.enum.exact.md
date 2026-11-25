@@ -39,6 +39,7 @@ These are expected values, not a report of executed tests. Integers retain their
 
 - [Case Structure](../functions/structures/case_structure.md) `structures.case_structure`
 - [Increment](../functions/numeric/increment.md) `numeric.increment`
+- [Enum Constant](../functions/numeric/enum_constant.md) `numeric.enum_constant`
 
 ## Dependencies and redistribution
 

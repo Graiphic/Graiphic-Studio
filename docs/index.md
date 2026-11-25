@@ -10,6 +10,8 @@ Read [Why work in Graiphic Studio?](reference/product-philosophy.md) for the hum
 
 ## Start here
 
+Read the [November Studio update](reference/studio-update-2026-11-25.md) for recent workflows and their Studio versions.
+
 | Your next task | Guide |
 | --- | --- |
 | Create your first document | [Getting started](getting-started.md) |

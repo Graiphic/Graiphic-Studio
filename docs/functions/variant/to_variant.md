@@ -7,6 +7,8 @@
 
 Local Studio Play/Highlight wraps one immutable exact typed value in a Variant envelope. Arrays retain rank and dimensions, clusters retain field identities, and I128/U128 lexical payloads remain exact; there is no conversion to the ODE f64 state profile. Boxing a Variant deliberately adds one nesting level. Common value placement limits remain active. No external Variant backend, attributes or serialization are implied. Public FROG/LLVM target support is not declared.
 
+[Branch an error wire to a loop and a queue](../../interface/error-variant-loop.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](to_variant.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
@@ -118,6 +120,22 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Variant preserves an Array shape](../../examples/variant.rank2-roundtrip.md) — Boxing and unboxing retain the complete rank-two I64 Array shape and row-major values, including an integer above 2^53. The type specimen contributes its schema, not its value. (`execution`, `studio-draft`).
 - [Variant preserves a named Cluster](../../examples/variant.cluster-roundtrip.md) — The typed Variant retains the Cluster field identities and values. The same Cluster is used only as a schema witness for unboxing; it is not substituted for the payload. (`execution`, `studio-draft`).
 - [Variant type mismatch is a normal error](../../examples/variant.type-mismatch.error.md) — A boxed String cannot be extracted as I32. The result is the I32 intrinsic default and an error status; no numeric parsing or reinterpretation is attempted. Native and historical Simulation currently have distinct error codes, so this example compares the shared status and data behavior. (`execution`, `studio-draft`).
+- [Get Type Information](../../examples/variant.data_type_analysis.get_type_info.worked.md) — Inspect a double value of 12.5. The type name is f64 and the value has no type definition. (`execution`, `studio-draft`).
+- [Get Array Information](../../examples/variant.data_type_analysis.get_array_info.worked.md) — Inspect a two-row matrix. Read the array rank, independently of the values it contains. (`execution`, `studio-draft`).
+- [Is Or Contains G Type](../../examples/variant.data_type_analysis.is_or_contains_g_type.worked.md) — Determine whether an ordinary DBL value contains a G type. Read the Boolean result and the error output. (`execution`, `studio-draft`).
+- [Get Numeric Information](../../examples/variant.data_type_analysis.get_numeric_info.worked.md) — Inspect an I32 numeric value. It has no enumeration names and inspection completes successfully. (`execution`, `studio-draft`).
+- [Is Error Cluster — examine the type of a Variant](../../examples/variant.is-error-cluster.typed-inputs.md) — Box I32 17 and a Cluster with status, code and source fields. Is Error Cluster reports false for the number and true for the error record. (`execution`, `studio-draft`).
+- [Write, read and remove a named attribute](../../examples/variant.attribute-lifecycle.md) — Attach a DBL gain of 2.5 to a Variant containing 12. Read gain, remove it, then look it up again with a default of -1. The second lookup reports that the name is missing. (`execution`, `studio-draft`).
+- [Recover a typed value from flattened Variant bytes](../../examples/variant.binary-roundtrip.md) — Box the I32 value 42. Carry its type descriptor alongside the bytes through the decoder. An I32 specimen of zero selects the output type and the recovered value is 42. (`execution`, `studio-draft`).
+- [Retirer la liaison de type d’une mesure](../../examples/variant.data_type_analysis.disconnect_g_types.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Chercher les types contenus dans une mesure](../../examples/variant.data_type_analysis.find_contained_data_types.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Examiner les champs du cluster de mesures](../../examples/variant.data_type_analysis.get_cluster_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Présenter un DBL à l’inspection de virgule fixe](../../examples/variant.data_type_analysis.get_fixed_point_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Présenter un DBL à l’inspection de référence matérielle](../../examples/variant.data_type_analysis.get_hardware_reference_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Distinguer un DBL d’une référence](../../examples/variant.data_type_analysis.get_refnum_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Reconnaître une référence matérielle personnalisée incompatible](../../examples/variant.data_type_analysis.get_user_defined_hardware_reference_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Reconnaître une référence personnalisée incompatible](../../examples/variant.data_type_analysis.get_user_defined_refnum_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
+- [Examiner le type des échantillons d’une acquisition](../../examples/variant.data_type_analysis.get_waveform_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
 
 ## Identity and references
 

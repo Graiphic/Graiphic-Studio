@@ -80,7 +80,9 @@ Compiled instance-owned Timing service; steady monotonic clock from the C++ stan
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Lire le compteur de millisecondes](../../examples/structures.tick_count.worked.md) — Le compteur U32 dépend de la session. Suivre sa valeur jusqu’à l’indicateur. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

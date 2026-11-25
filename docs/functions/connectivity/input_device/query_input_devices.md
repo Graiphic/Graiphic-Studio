@@ -70,7 +70,10 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Identifier le clavier](../../../examples/connectivity.input_device.initialize_keyboard.editable.md) — Compter les périphériques du type choisi dans l’inventaire, puis examiner la référence device_id de l’initialisation. (`persistence`, `studio-draft`).
+- [Édition uniquement — Identifier la souris](../../../examples/connectivity.input_device.initialize_mouse.editable.md) — Compter les périphériques du type choisi dans l’inventaire, puis examiner la référence device_id de l’initialisation. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

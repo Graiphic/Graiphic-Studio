@@ -49,7 +49,7 @@ NI API links document reference semantics and connector evidence. They do not pr
 
 Regenerate with Python 3.11+: `python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine`; add `--check` for a read-only deterministic export check. This documentation check does not run application regression tests.
 
-Source snapshot SHA-256: `be4392abc59bdbaa3233b527de52d518acb6286f72a94eccec21c1e39e6c571f`.
+Source snapshot SHA-256: `1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963`.
 
 ## Actual example documents
 

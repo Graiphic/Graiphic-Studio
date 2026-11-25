@@ -89,7 +89,9 @@ Exact owned native service; target admission and end-to-end qualification remain
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Chercher un minimum par la section dorée](../../../examples/math.optimization.golden.worked.md) — Pour vérifier le problème à la main, annuler chaque carré de la formule. Lire la position et le coût sur deux indicateurs distincts. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

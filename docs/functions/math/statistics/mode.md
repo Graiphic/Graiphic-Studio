@@ -7,10 +7,16 @@
 
 intervals&lt;=0 exact frequencies; &gt;0 histogram bin centers. Constant stays constant. No mode=NaN/[] without error; GS ties choose smallest/ascending modes.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](mode.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Mode**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Recherche un ou plusieurs modes, sur les valeurs exactes ou dans les intervalles choisis.
 
@@ -19,6 +25,13 @@ Recherche un ou plusieurs modes, sur les valeurs exactes ou dans les intervalles
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -79,7 +92,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Mode](../../../examples/math.statistics.mode.worked.md) — With x = \[4, 4, 4\], intervals = 100, Run displays mode = 4, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

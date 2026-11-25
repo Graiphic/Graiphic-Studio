@@ -18,6 +18,20 @@ editing it immediately.
 
 ![Ring item editor](../../assets/screenshots/widgets/ring-items.png)
 
+## Picture Ring
+
+Use **Edit Images** to open the **Images** section of Properties. Add several
+images, replace a selected image, or use **Move Up** and **Move Down** to change
+the order. The first image has index `0`. A control sends the selected index to
+the diagram; an indicator displays the image at the index it receives.
+
+Click the image to choose a thumbnail. **Visible Items → Dropdown Arrow** hides
+the arrow and gives its space back to the image. The picture keeps its intrinsic
+size when you resize the box. Shrink the box to clip the picture, then enlarge
+it to reveal the rest. The frame can shrink to 24 × 24 logical units. The
+catalogue and resources travel with the document or linked definition.
+[Using Picture Rings in Type Definitions](../interface/type-definitions.md).
+
 ## Enum
 
 Enum presents a finite named set with permanent automatic Size to Text and the

@@ -7,10 +7,16 @@
 
 Places a Picture Ring constant on the diagram. Use Edit Images to manage its catalogue and choose an image from the thumbnail selector. The wire carries the selected U16 index. The images stay with the document.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](picture_ring.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Constante Picture Ring**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place une constante Picture Ring dans le diagramme. Utilisez Modifier les images pour gérer son catalogue, puis choisissez une miniature. Le fil transporte l’indice U16 sélectionné. Les images restent dans le document.
 
@@ -20,7 +26,14 @@ Place une constante Picture Ring dans le diagramme. Utilisez Modifier les images
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Places a Picture Ring preset of the existing Ring literal. Its image catalogue belongs to Studio presentation; the diagram carries the selected U16 index.
+
+</details>
 
 ## IN — inputs
 
@@ -52,9 +65,16 @@ Implementation: `frog.studio.editor-managed`.
 
 The preset lowers through the existing Ring literal. It declares no separate execution provider or image value type.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No standalone function-provider contract applies.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -66,7 +86,9 @@ The preset lowers through the existing Ring literal. It declares no separate exe
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Associer une image à un mode](../../examples/numeric.picture_ring.worked.md) — Suivre la valeur sélectionnée jusqu’à l’indicateur. (`execution`, `studio-draft`).
 
 ## Identity and references
 

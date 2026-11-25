@@ -7,10 +7,16 @@
 
 Trim removes floor(n*percent/100) observations at each tail (GS). Positive domain for geometric/harmonic (GS). percent is inactive in other modes. Type 0 Arithmetic, 1 Geometric, 2 Harmonic, 3 Trimmed (Percent per tail), 4 Median.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](measures_of_mean.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Measures of Mean**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule la moyenne arithmétique, géométrique, harmonique, tronquée ou la médiane selon le mode choisi.
 
@@ -19,6 +25,13 @@ Calcule la moyenne arithmétique, géométrique, harmonique, tronquée ou la mé
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -81,7 +94,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Measures of Mean](../../../examples/math.statistics.measures_of_mean.worked.md) — With x = \[1, 4, 16\], type = 1, Run displays mean = 4, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

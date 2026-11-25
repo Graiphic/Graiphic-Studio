@@ -86,7 +86,9 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Lire trois octets dans un tampon](../../examples/file.binary_read_preallocated.worked.md) — Choisir une copie de travail. Ouvrir en lecture seule, suivre la référence jusqu’à la fermeture et examiner le diagnostic. Le fichier de démonstration contient les trois caractères ASCII 123. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

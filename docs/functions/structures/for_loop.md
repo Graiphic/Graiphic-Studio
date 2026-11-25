@@ -7,6 +7,8 @@
 
 Places a resizable counted loop. N receives and exposes the I32 count; the movable i terminal exposes the current I32 iteration inside the body diagram.
 
+[Branch an error wire to a loop and a queue](../../interface/error-variant-loop.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](for_loop.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.

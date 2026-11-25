@@ -90,7 +90,9 @@ Per selected exact variant; complete-graph target admission and runtime tests re
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Étudier une rampe échantillonnée](../../../examples/math.calculus.time_domain_math.worked.md) — Quatre échantillons d’une rampe, espacés de 0,25 s, permettent d’examiner le signal en entrée et en sortie. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

@@ -75,7 +75,9 @@ A real Studio host File provider executes Highlight activations; this is separat
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Localiser le relevé dans son dossier](../../examples/file.show_in_file_system.worked.md) — Le chemin relatif releves/acquisition.tsv est fictif. Modifier ce chemin sur la face avant et suivre son fil jusqu’à la fonction. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

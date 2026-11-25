@@ -7,10 +7,16 @@
 
 Factors the magnitude of an I64 integer into a rank-one I64 array. FROG sorts repeated prime factors in ascending order; +/-1 produce an empty array and zero produces a domain diagnostic without a usable result. Negative inputs use their magnitude, including INT64_MIN. Cancellation or a work limit never returns a partial factorization as success. Formula: product(factors) = abs(n). Example: Prime Factor(-60)=[2,2,3,5]; Prime Factor(1)=[].
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](prime_factor.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Facteurs premiers**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Décompose la valeur absolue d’un entier I64 en tableau 1D de facteurs premiers I64. FROG trie les facteurs répétés dans l’ordre croissant ; ±1 donnent un tableau vide et zéro un diagnostic de domaine sans résultat exploitable. La magnitude des négatifs est utilisée, y compris INT64_MIN. Une annulation ou limite de travail ne présente jamais une factorisation partielle comme complète. Formule : product(factors) = abs(n). Exemple : Prime Factor(-60)=[2,2,3,5]; Prime Factor(1)=[].
 
@@ -40,9 +46,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 n: i64 → factors: array&lt;i64,rank=1&gt;. Every input is required; fixed arity, no implicit lifting. NI documents classic LabVIEW connector types; FROG specifies boundaries and required inputs. No verified NXG signature. Native Run currently has no Array transport for this signature and rejects it explicitly; local Highlight supports it.
 
 Fixed signature only. Required inputs have no implicit unwired value. No automatic polymorphism, element-wise Array/Cluster lifting, scalar broadcasting or truncation of real values to integers. Wire conversions must follow explicit engine type rules; I64 values must not pass through F64. FROG I32 status codes: 0=Ok, 1=Domain, 2=Overflow, 3=Cancelled, 4=WorkLimit. These are not NI codes and not an Error Cluster. Error outputs are present only on Binomial Coefficient and Continued Fraction. The supplied NI references describe classic LabVIEW connector types, not verified NXG signatures. FROG owns required-input choices, boundary conventions and numeric status codes; no bit-for-bit NI equivalence is claimed. Continued Fraction equation indexing remains unconfirmed in NI.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -72,11 +85,18 @@ Port order: `n`.
 
 Prime Factor and Continued Fraction remain local Highlight operations for these Array signatures: the current native execution SDK has no Array transport. Native Run must reject them explicitly without fallback.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Selected execution target must explicitly support the exact declared signature.
 - No implicit polymorphic overload or Array/Cluster lifting.
 - Prime Factor and Continued Fraction remain local Highlight operations for these Array signatures: the current native execution SDK has no Array transport. Native Run must reject them explicitly without fallback.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -90,7 +110,9 @@ Prime Factor and Continued Fraction remain local Highlight operations for these 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Prime Factor](../../../examples/math.discrete.prime_factor.worked.md) — Factor the positive integer 84 into 2, 2, 3 and 7. (`execution`, `studio-draft`).
 
 ## Identity and references
 

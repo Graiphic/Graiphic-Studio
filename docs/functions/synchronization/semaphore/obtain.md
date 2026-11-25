@@ -111,6 +111,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 - [Semaphore : capacité, acquisition, restitution et fermeture](../../../examples/sync.semaphore.capacity_and_cleanup.md) — Semaphore : capacité, acquisition, restitution et fermeture (`execution`, `studio-draft`).
 - [Semaphore : timeout zéro sur une capacité épuisée](../../../examples/sync.semaphore.poll_saturated.md) — Semaphore : timeout zéro sur une capacité épuisée (`execution`, `studio-draft`).
 - [Semaphore : acquérir et nettoyer malgré une erreur](../../../examples/sync.semaphore.upstream_cleanup.md) — Semaphore : acquérir et nettoyer malgré une erreur (`execution`, `studio-draft`).
+- [Édition uniquement — Vérifier une référence de sémaphore](../../../examples/synchronization.semaphore.not_a_semaphore.worked.md) — Obtenir un sémaphore de capacité deux. Suivre la référence jusqu’au prédicat. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

@@ -7,6 +7,8 @@
 
 Removes and returns the head element in FIFO order. An empty queue waits cooperatively: -1 means no deadline, 0 an immediate attempt. Ordinary timeout is distinguished from invalidation and from a successfully received message. Queue&lt;T&gt; is an execution resource reference; element is the ordinary T value. Public FROG target compilation remains unavailable.
 
+[Branch an error wire to a loop and a queue](../../../interface/error-variant-loop.md)
+
 ## Product execution profiles
 
 The shared index declares native examples for this object; see [the examples below](dequeue.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.

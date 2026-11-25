@@ -7,10 +7,16 @@
 
 Places a Boolean control and its linked diagram terminal.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](terminal.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Terminal booleen**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place un controle booleen et son terminal de diagramme lie.
 
@@ -32,9 +38,16 @@ No fixed outputs are declared in this binding profile. The editor or selected in
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 No function operand; instance type: Boolean. Constants/controls supply a value; indicators consume it.
 
 This palette action places a Boolean widget and its linked diagram terminal; it is not a Runtime function contract.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -57,9 +70,16 @@ Sans opérande de fonction ; type de l’instance : Boolean. Constantes/contrôl
 
 Implementation: `frog.studio.editor-managed`.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Keep the palette action outside semantic function lowering and use the widget terminal value contract instead.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -71,7 +91,9 @@ Implementation: `frog.studio.editor-managed`.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Acquisition active en face avant](../../examples/boolean.terminal.worked.md) — Modifier la commande et suivre son terminal sur le diagramme. (`execution`, `studio-draft`).
 
 ## Identity and references
 

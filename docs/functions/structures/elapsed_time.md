@@ -7,10 +7,16 @@
 
 Places the Elapsed Time utility on the Diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](elapsed_time.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Temps ecoule**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place l'utilitaire Temps ecoule sur le diagramme.
 
@@ -42,9 +48,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Target seconds:DBL, reset/auto-reset:Boolean -&gt; elapsed seconds:DBL, elapsed:Boolean. Studio: Studio exposes reset but not the NI auto-reset input.
 
 Measures monotonic seconds since the first activation of this node in the current Run, or explicit Reset. Publishes elapsed time and elapsed &gt;= time target. No automatic reset is exposed by this GS signature.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -89,7 +102,9 @@ Compiled instance-owned Timing service; steady monotonic clock from the C++ stan
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Examiner la remise à zéro du chronomètre](../../examples/structures.elapsed_time.worked.md) — Réinitialiser le chronomètre avec une cible de dix secondes. Le seuil ne doit pas être atteint à l’initialisation. (`execution`, `studio-draft`).
 
 ## Identity and references
 

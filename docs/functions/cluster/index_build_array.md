@@ -89,7 +89,9 @@ Authoring support is not an execution capability.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Extraire les mesures par indice](../../examples/cluster.index_build_array.worked.md) — Suivre les deux entrées puis la sortie tableau jusqu’au compteur d’enregistrements. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

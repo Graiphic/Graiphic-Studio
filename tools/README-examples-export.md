@@ -1,5 +1,9 @@
 # Exporting the shared examples into the public reference
 
+## November 2026 export
+
+The public example catalogue contains 1,169 downloadable documents. The export checks 4,254 files, including the shared function and folder reference. Its read-only check verifies content, icon bytes and generated links. The corpus includes 911 function or editor-object entries in 72 palette folders. To reproduce the export, point `--source` and `--examples-index` at the matching Studio catalogue and FROG example index. The function pages for the loop conditions, Variant conversions, named cluster operations and queue access link directly to the [error wiring walkthrough](../docs/interface/error-variant-loop.md).
+
 ## Refresh checked on 26 October 2026
 
 The current export has 2,693 generated artifacts, 625 example documents,

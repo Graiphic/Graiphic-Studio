@@ -27,7 +27,7 @@ Catalog value schema for this listing: target-dependent. A strict reference can 
 
 | Menu path | Saved ID | Connection | Access | Catalog availability |
 | --- | --- | --- | --- | --- |
-| Front Panel › Open | `front_panel.open` | in Activate (`activate`, `bool`) optional = `true` → void | Invoke | Editor |
+| Front Panel › Open | `front_panel.open` | in Activate (`activate`, `bool`) optional = `true`, in State (`state`, `u32`) optional = `1` → void | Invoke | Editor |
 | Front Panel › Close | `front_panel.close` | No parameters → void | Invoke | Editor |
 | Save | `save` | No parameters → void | Invoke | Editor |
 | Run | `run` | No parameters → void | Invoke | — · The required service is not available in this provider. |

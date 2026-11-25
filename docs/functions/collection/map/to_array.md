@@ -7,10 +7,16 @@
 
 Places an editable For with AtomicElements indexing and a real internal wire. Map iteration supplies a typed (key,value) cluster in key order; output is a 1D Array of these complete entries. Nested Arrays are not flattened.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](to_array.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Convert Map To Array**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Dépose une vraie For éditable, ses tunnels AtomicElements et son fil interne. Chaque itération fournit un cluster typé (key,value), dans l’ordre des clés ; la sortie est un tableau 1D de ces entrées complètes. Les tableaux imbriqués ne sont pas aplatis.
 
@@ -20,7 +26,14 @@ Dépose une vraie For éditable, ses tunnels AtomicElements et son fil interne. 
 
 Contract status: **editor managed**. This is an editor-managed element; placement and configured values are distinct from an executable function provider.
 
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
 Editable ordinary For template, not an opaque operator. AtomicElements input iterates sorted complete key/value records and indexed output produces rank-one Array&lt;Cluster&lt;key:K,value:V&gt;&gt; without flattening V. Indexed input cardinality supplies N when N is unconnected.
+
+</details>
 
 ## IN — inputs
 
@@ -64,7 +77,9 @@ Local Studio profile only. A catalog contract is not a target capability or a pu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Parcourir les deux entrées d’une Map](../../../examples/collection.map.to_array.worked.md) — Lire le nombre d’éléments après le passage dans la structure. (`execution`, `studio-draft`).
 
 ## Identity and references
 

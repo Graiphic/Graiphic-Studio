@@ -7,10 +7,16 @@
 
 Finite nonnegative I32 counts, GS Pearson chi-square without Yates; no silent Fisher substitution or extra fields.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](contingency_table.md#examples) and [document profiles and evidence boundaries](../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Contingency Table**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Teste l’indépendance d’une table de contingence par le khi carré.
 
@@ -19,6 +25,13 @@ Teste l’indépendance d’une table de contingence par le khi carré.
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -79,7 +92,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Contingency Table](../../../../examples/math.statistics.hypothesis.contingency_table.worked.md) — Compare the paired counts \[\[10,20\],\[20,10\]\]. The chi-square statistic is approximately 6.667 and its upper-tail probability is about 0.00982. (`execution`, `studio-draft`).
 
 ## Identity and references
 

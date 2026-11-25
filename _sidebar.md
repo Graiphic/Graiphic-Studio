@@ -1,11 +1,13 @@
 - [Overview](/docs/index.md)
 - [Getting started](/docs/getting-started.md)
+- [November Studio update](/docs/reference/studio-update-2026-11-25.md)
 - [Examples — actual .frog documents](/docs/examples/index.md)
 
 - **Workspace guides**
   - [Window workflow](/docs/interface/window-workflow.md)
   - [Front Panel](/docs/interface/front-panel.md)
   - [Block Diagram](/docs/interface/block-diagram.md)
+  - [Branch an error wire to a loop and a queue](/docs/interface/error-variant-loop.md)
   - [Source](/docs/interface/source-view.md)
   - [Run and Highlight](/docs/interface/run-and-highlight.md)
   - [Build a standalone application](/docs/interface/build.md)

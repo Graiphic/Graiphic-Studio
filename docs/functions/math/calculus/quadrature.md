@@ -7,10 +7,16 @@
 
 Adaptively integrates an authored mathematical formula or a compiled strict native function over finite rectangular one-, two- or three-dimensional limits. Callable coordinates are paired arrays and preserve Variant data. Real DBL only; exact structured schemas and explicit real numeric promotion. Variants: formula_1d, function_1d, formula_2d, function_2d, formula_3d, function_3d.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](quadrature.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Quadrature**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Intègre une formule ou un sous-programme natif en 1D/2D/3D par quadrature adaptative bornée.
 
@@ -44,7 +50,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Real DBL vectors/matrices, exact I32/U16/Boolean options and typed piecewise-polynomial records; native GS profile.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -94,7 +107,9 @@ Per selected exact variant; complete-graph target admission and runtime tests re
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Quadrature](../../../examples/math.calculus.quadrature.worked.md) — With integrand = "2", upper_limit = 3, lower_limit = 1, Run displays result = 4, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

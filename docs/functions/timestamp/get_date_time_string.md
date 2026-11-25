@@ -81,7 +81,9 @@ Compiled Timestamp6 service declared with exact signed64.64 and Source-prepared 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Formater une date et son heure](../../examples/timestamp.get_date_time_string.worked.md) — Convertir un instant fixe en deux textes selon les réglages régionaux du poste. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

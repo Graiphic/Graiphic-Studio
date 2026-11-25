@@ -77,7 +77,9 @@ Provider identity is retained from Studio. Executability must be established by 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Dropdown String Constant](../../examples/string.dropdown_constant.worked.md) — Select Manual in the dropdown and Run in Simulation to read its length (6). Select Auto and Run again to read 4. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -14,7 +14,7 @@ Catalog value schema for this listing: target-dependent. A strict reference can 
 | Object ID | `identity.object_id` | `string` | Read | Editor |
 | Name | `name` | `string` | Read | Editor |
 | Version | `version` | `string` | Read | Editor |
-| Kind | `kind` | `string` | Read | Editor |
+| Kind | `kind` | `string` | Read | Editor · Run advertised |
 | Active FROG Name | `active_frog_name` | `string` | Read | Editor |
 | Executable Path | `executable_path` | `path` | Read | Editor |
 | Application Directory | `application_directory` | `path` | Read | Editor |

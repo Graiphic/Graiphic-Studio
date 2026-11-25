@@ -7,10 +7,16 @@
 
 Evaluates one scalar query from X, Y and the supplied second-derivative Interpolant; consumes rather than recomputes that vector. Real DBL vectors/matrices; explicit real numeric promotion, no complex-to-real conversion, scalar lifting or broadcasting. PP uses ascending local powers as an explicit GS convention. Available variants: default.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](spline_interpolation.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Spline Interpolation**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Évalue une spline à partir des dérivées secondes fournies ; aucun recalcul implicite.
 
@@ -44,7 +50,14 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Real DBL vectors/matrices, exact I32/U16/Boolean options and typed piecewise-polynomial records; native GS profile.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -94,7 +107,9 @@ Declared per selected exact native variant. Complete-graph admission and attribu
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Spline Interpolation](../../../examples/math.interpolation.spline_interpolation.worked.md) — With x = \[0, 1, 2\], y = \[0, 1, 0\], interpolant = \[0, 0, 0\], x_value = 0.5, Run displays interpolation_value = 0.5, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -7,10 +7,16 @@
 
 Generalized reduction of A/B: decomposition_type 0 generalized Hessenberg, 1 generalized Schur. Returns eigenvectors,Q,Z,complex alpha,beta, and I32 error. Additional GS outputs s/t expose the actual reduced matrix pair for independent reconstruction A=Q*S*Z^H, B=Q*T*Z^H. order 0..4 applies only in Schur mode. No inverse(B)*A shortcut. Inputs calculate in DBL/CDB with explicit numeric promotion; 64-bit integers above 2^53 may round. No broadcasting, no private Matrix reinterpretation. error is I32 and never an automatic dialog. Optional unwired defaults: decomposition_type=0, order=0.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](qz.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **QZ**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Réduit la paire A,B : mode 0 Hessenberg généralisé, mode 1 Schur. Renvoie vecteurs propres,Q,Z,α,β ; les sorties supplémentaires GS s/t permettent de vérifier A=Q·S·Zᴴ et B=Q·T·Zᴴ. Valeurs facultatives non câblées : decomposition_type=0, order=0.
 
@@ -49,6 +55,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -104,7 +117,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [QZ](../../../examples/math.linear_algebra.qz.worked.md) — Decompose two diagonal matrices with B equal to the identity. Inspect the two real Schur factors. (`execution`, `studio-draft`).
 
 ## Identity and references
 

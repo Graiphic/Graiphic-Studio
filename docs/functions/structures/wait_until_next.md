@@ -80,7 +80,9 @@ Compiled instance-owned Timing service; steady monotonic clock from the C++ stan
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Attendre le prochain multiple de 10 ms](../../examples/structures.wait_until_next.worked.md) — Le délai est fourni en millisecondes au terminal de temporisation. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

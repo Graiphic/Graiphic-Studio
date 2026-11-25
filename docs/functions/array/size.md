@@ -108,6 +108,14 @@ These declarations belong to the binding snapshot. Compare them with the separat
 These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
 
 - [Read both Array dimensions](../../examples/array.size.rank2.md) — Array Size returns one dimension per axis for rank two, independently from its total element count. (`execution`, `studio-draft`).
+- [Mesures en face avant](../../examples/array.terminal.worked.md) — La commande contient les mesures 12, 14 et 18. Son terminal alimente Array Size. Ajouter une quatrième mesure en face avant fait passer le compte de 3 à 4. (`execution`, `studio-draft`).
+- [Édition uniquement — Assembler des mesures en enregistrements](../../examples/cluster.build_array.worked.md) — Suivre les deux entrées puis la sortie tableau jusqu’au compteur d’enregistrements. (`persistence`, `studio-draft`).
+- [Édition uniquement — Extraire les mesures par indice](../../examples/cluster.index_build_array.worked.md) — Suivre les deux entrées puis la sortie tableau jusqu’au compteur d’enregistrements. (`persistence`, `studio-draft`).
+- [Retrouver deux erreurs regroupées](../../examples/error.demultiplex.worked.md) — Les voies Mesure et Lecture portent les codes 17 et 23. Regrouper les deux erreurs puis compter les entrées retrouvées. (`execution`, `studio-draft`).
+- [Compter quatre tirages · continu](../../examples/math.statistics.probability.continuous_random.worked.md) — Fixer la graine et vérifier la longueur du tableau obtenu. (`execution`, `studio-draft`).
+- [Compter quatre tirages · discret](../../examples/math.statistics.probability.discrete_random.worked.md) — Fixer la graine et vérifier la longueur du tableau obtenu. (`execution`, `studio-draft`).
+- [Édition uniquement — Examiner la pile des appels](../../examples/structures.call_chain.worked.md) — Compter les documents présents dans la pile lorsque le programme est lancé. (`persistence`, `studio-draft`).
+- [Examiner les champs du cluster de mesures](../../examples/variant.data_type_analysis.get_cluster_info.worked.md) — Examiner la donnée typée et son diagnostic. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -97,7 +97,9 @@ Exact owned native service; target admission and end-to-end qualification remain
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Initialiser une recherche globale avec deux points](../../../examples/math.optimization.global.worked.md) — Examiner les bornes et le point de départ. Relier une référence de fonction compatible pour fournir l’objectif. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

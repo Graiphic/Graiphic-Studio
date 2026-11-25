@@ -7,10 +7,16 @@
 
 Removes designated observations while preserving X/Y/weight association. Range removes boundary and outside points; limits are upper then lower. Index uses explicit zero-based indices. Only Range returns outlier_indices; absent weights remain an empty output. Variants: range, index.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](remove_outliers.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Remove Outlier**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Retire les observations désignées par plage ou indices, en conservant les associations X/Y/poids. Variantes : range, index.
 
@@ -48,9 +54,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Real DBL, ranks and exact structured model schemas; diagnostic is I32 or error cluster according to the selected signature.
 
 Real DBL Arrays only (vectors rank1, matrices rank2); numeric promotions are explicit and may round large integers. No complex-to-real coercion, scalar lifting, broadcasting or private Matrix substitution. Model/error/constraint records and native references keep exact schemas. Declared availability is separate from complete-graph target admission and execution proof. Available variants: range, index.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -104,7 +117,9 @@ Each selected variant has its own exact public native operation identity and sig
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Remove Outlier](../../../examples/math.fitting.remove_outliers.worked.md) — Reject the sample 99 outside the supplied y interval \[0,5\] and retain the other three points with their original abscissas. (`execution`, `studio-draft`).
 
 ## Identity and references
 

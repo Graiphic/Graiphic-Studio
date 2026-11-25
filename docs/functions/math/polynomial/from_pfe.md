@@ -7,10 +7,16 @@
 
 Create Polynomial From PFE. Inverse PFE, with explicit repeated-pole powers. Empty multiplicity follows NI nonzero residue counts only when unambiguous; otherwise requires explicit multiplicities. option 0 cancels certified common factors; 1 preserves them. Coefficients are ascending powers. DBL/CDB promotion is explicit; input arrays are immutable. Empty coefficient vectors are errors unless explicitly documented.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](from_pfe.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Créer des polynômes depuis les fractions partielles**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Inverse la décomposition en fractions partielles, avec puissances explicites des pôles répétés. Une multiplicité vide suit le comptage NI des résidus non nuls uniquement si le cas est non ambigu ; sinon les multiplicités doivent être explicites. option : 0 annule les facteurs communs certifiés, 1 les conserve. Les coefficients suivent les puissances croissantes. La promotion DBL/CDB est explicite ; les tableaux d’entrée restent immuables. Les vecteurs de coefficients vides sont des erreurs, sauf indication explicite.
 
@@ -19,6 +25,13 @@ Inverse la décomposition en fractions partielles, avec puissances explicites de
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -87,7 +100,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Poly From PFE](../../../examples/math.polynomial.from_pfe.worked.md) — Reconstruct the rational polynomial with simple poles -2 and -1 and residues 1. Its coefficient vectors represent (3+2x)/(2+3x+x²). (`execution`, `studio-draft`).
 
 ## Identity and references
 

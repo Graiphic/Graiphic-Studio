@@ -7,10 +7,16 @@
 
 GS default CCW arc bisector; shortest_arc selects the minor arc. Equal endpoints have zero span; antipodal tie follows CCW. NI I32 units 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. U16 range 0 none, 1 signed (default), 2 positive. GS endpoint choices (-half-turn,half-turn] and [0,full-turn). Finite DBL only; array operands have equal lengths.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](bisect_angle.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Bissectrice d’un angle**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Par défaut, GS prend la bissectrice de l’arc antihoraire ; shortest_arc sélectionne l’arc mineur. Des extrémités égales définissent une étendue nulle ; le cas antipodal est départagé dans le sens antihoraire. Unités NI I32 : 0 rad/rad, 1 rad/deg, 2 deg/deg, 3 deg/rad. Intervalle U16 : 0 aucun, 1 signé (par défaut), 2 positif. Choix explicites GS des extrémités : (-demi-tour,demi-tour] et [0,tour complet). DBL finis uniquement ; les tableaux opérandes ont la même longueur.
 
@@ -19,6 +25,13 @@ Par défaut, GS prend la bissectrice de l’arc antihoraire ; shortest_arc séle
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -85,7 +98,9 @@ Exact selected variant; native JIT Run only. AOT is explicitly unqualified, neve
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Bisect Angle](../../../examples/math.geometry.bisect_angle.worked.md) — With angle_units = 2, angle_range = 1, shortest_arc = false, start = 10, end = 350, Run displays angle_out = 180.0, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

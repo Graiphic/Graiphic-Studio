@@ -7,10 +7,16 @@
 
 Multiplies values and adds the product to an accumulator.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](multiply_accumulate.md#examples) and [document profiles and evidence boundaries](../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Multiplier-accumuler**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Multiplie des valeurs puis ajoute le produit a un accumulateur.
 
@@ -43,9 +49,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 Numeric scalar x,y,initial value + Boolean initialize -&gt; numeric scalar accumulated result; not array lifting. Studio: Studio authoring supports the declared numeric scalar/array/cluster types; NI waveform, physical-unit and configurable fixed-point layout overloads are not modeled. Runtime execution still requires a target provider.
 
 Point-by-point scalar real/integer multiply-accumulate. Each activation computes product=x*y in the common exact numeric type, then result=accumulator+product. First activation and initialize=True use initial_value before adding the product. Fresh execution frames reset the state; nodes and independent instances do not share it. Optional x/y/initial_value default to typed zero and initialize to False. No array lifting or complex/nominal/fixed-point erasure.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -78,10 +91,17 @@ Required provider: `frog.studio.numeric.multiply_accumulate.instance-owned@1`.
 
 Declared instance-owned native capability, typed multiplication/addition from the existing numeric providers, transactional publication and resident state accounting. The selected target must admit the exact physical scalar signature. This declaration is not execution, AOT/package or NI runtime qualification.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Requires the exact native target capability and supported common physical scalar type.
 - No configurable fixed-point, complex, nominal Enum or aggregate overload. NI reset ordering is documented here as an explicit GS convention pending an independent NI execution comparison.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -98,7 +118,9 @@ Declared instance-owned native capability, typed multiplication/addition from th
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Multiply-Accumulate](../../examples/numeric.multiply_accumulate.worked.md) — Initialize the accumulator to 10 and add the product of 2 and 3. The indicator reads 16. (`execution`, `studio-draft`).
 
 ## Identity and references
 

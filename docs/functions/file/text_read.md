@@ -98,6 +98,7 @@ These are real `.frog` documents from the same index used by Studio. Backend nam
 
 - [Read Text : refuser un chemin relatif sans base explicite](../../examples/file.read.relative_path_rejected.md) — Read Text : refuser un chemin relatif sans base explicite (`execution`, `studio-draft`).
 - [Read Text : conserver l'erreur amont sans accès disque](../../examples/file.read.upstream_error.md) — Read Text : conserver l'erreur amont sans accès disque (`execution`, `studio-draft`).
+- [Réduire un fichier réservé de quatre à deux octets](../../examples/file.reserve.write.truncate.md) — En Simulation, saisir un nom de fichier de base dans un dossier accessible en écriture. Réserver un nouveau fichier, y écrire FROG, vider le tampon, puis ramener sa taille à deux octets. Le texte relu est FR. Seul le fichier réservé par le montage est supprimé. (`interactive`, `studio-draft`).
 
 ## Identity and references
 

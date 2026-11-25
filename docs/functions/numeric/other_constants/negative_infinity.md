@@ -7,10 +7,16 @@
 
 Places the negative infinity constant on the diagram.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](negative_infinity.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Moins l'infini**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Place la constante moins l'infini sur le diagramme.
 
@@ -36,9 +42,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 No input; one real numeric constant output (Studio default DBL).
 
 Emits the fixed f64 value currently catalogued by Studio.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -67,10 +80,17 @@ no inputs
 
 Studio materializes the catalogued value, but no function provider or portable lowering contract is declared.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - No public FROG primitive identity or machine-readable function manifest exists.
 - Portable Runtime lowering is not defined.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -83,7 +103,9 @@ Studio materializes the catalogued value, but no function provider or portable l
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Tester le signe de l’infini négatif](../../../examples/numeric.other_constants.negative_infinity.worked.md) — Comparer la constante DBL à zéro et lire le booléen. (`execution`, `studio-draft`).
 
 ## Identity and references
 

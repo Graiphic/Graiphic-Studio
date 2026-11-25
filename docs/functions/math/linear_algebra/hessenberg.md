@@ -7,10 +7,16 @@
 
 Upper Hessenberg reduction A=Q*H*Q^H. result is H, q is Q. index_low/index_high are zero-based inclusive; default -1 selects the full range. Entries below the first subdiagonal vanish by similarity, not truncation. Inputs calculate in DBL/CDB with explicit numeric promotion; 64-bit integers above 2^53 may round. No broadcasting, no private Matrix reinterpretation. error is I32 and never an automatic dialog. Optional unwired defaults: index_low=-1, index_high=-1.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](hessenberg.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Hessenberg**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Réduit par similitude A=Q·H·Qᴴ. H autorise une sous-diagonale. Les indices bas/haut sont inclusifs et en base 0 ; −1 sélectionne la plage complète. Valeurs facultatives non câblées : index_low=-1, index_high=-1.
 
@@ -43,6 +49,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -92,7 +105,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Hessenberg](../../../examples/math.linear_algebra.hessenberg.worked.md) — A two-by-two diagonal matrix already has Hessenberg form. Reduce the whole matrix and compare its entries. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -7,10 +7,16 @@
 
 Computes sum(x[i]*conj(y[i])). The SECOND operand is conjugated. Equal nonzero vector lengths are required; returns a scalar and numerical error code. Inputs calculate in DBL/CDB with explicit numeric promotion; 64-bit integers above 2^53 may round. No broadcasting, no private Matrix reinterpretation. error is I32 and never an automatic dialog. Optional unwired defaults: none.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](dot_product.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Dot Product**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule Σ xᵢ·conj(yᵢ) : le SECOND vecteur est conjugué. Les deux vecteurs non vides doivent avoir la même longueur. La sortie est un scalaire. Valeurs facultatives non câblées : none.
 
@@ -41,6 +47,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -88,7 +101,9 @@ Declared native provider capability; actual admission, compilation and execution
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Dot Product](../../../examples/math.linear_algebra.dot_product.worked.md) — With x = \[2, 3\], y = \[4, 5\], Run displays result = 23. (`execution`, `studio-draft`).
 
 ## Identity and references
 

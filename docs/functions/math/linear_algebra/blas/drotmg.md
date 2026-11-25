@@ -7,10 +7,16 @@
 
 Computes the modified Givens transform and updated d1,d2,r. All four scalar inputs are required; H is fully materialized as a 2x2 Array and its flag is preserved. DBL/CDB instance domains and full Array ranks are explicit; permitted narrower numeric inputs are promoted visibly. A real-only port never discards an imaginary part. No broadcasting or implicit Matrix conversion. Outputs own their data; error is I32, without automatic popup. No NI scalar defaults certified; required GS inputs. H is fully materialized, flag retained. Optional unwired defaults: none.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](drotmg.md#examples) and [document profiles and evidence boundaries](../../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **drotmg**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Construit H, son flag et les facteurs d’échelle mis à jour. Les quatre entrées scalaires sont requises. Valeurs facultatives non câblées : aucune.
 
@@ -47,6 +53,13 @@ A default is shown only for an input with an explicitly documented value. Previe
 ## Types and Compatibility
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
+
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -100,7 +113,9 @@ Declared native provider capability; admission and execution require the complet
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [drotmg](../../../../examples/math.linear_algebra.blas.drotmg.worked.md) — Construct the modified Givens rotation of 3 and 4 with both scale factors equal to 1. The leading component is 6.25 and the flag is 1. (`execution`, `studio-draft`).
 
 ## Identity and references
 

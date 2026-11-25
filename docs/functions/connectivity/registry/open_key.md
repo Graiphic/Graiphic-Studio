@@ -77,7 +77,14 @@ Authoring only; no new function runtime is implemented.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Inspecter une clé](../../../examples/connectivity.registry.query_key_info.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
+- [Édition uniquement — Énumérer les sous-clés](../../../examples/connectivity.registry.enum_keys.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
+- [Édition uniquement — Énumérer les valeurs](../../../examples/connectivity.registry.enum_values_simple.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
+- [Édition uniquement — Lire une valeur](../../../examples/connectivity.registry.read_value_simple.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
+- [Édition uniquement — Supprimer une valeur de test](../../../examples/connectivity.registry.delete_value.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
+- [Édition uniquement — Supprimer une sous-clé de test](../../../examples/connectivity.registry.delete_key.editable.md) — Suivre la référence de clé depuis son obtention jusqu’à Close Key. Le chemin et les noms sont des valeurs pédagogiques. Ce montage est destiné à l’édition. (`persistence`, `studio-draft`).
 
 ## Identity and references
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "be4392abc59bdbaa3233b527de52d518acb6286f72a94eccec21c1e39e6c571f",
+  "source_snapshot_sha256": "1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",

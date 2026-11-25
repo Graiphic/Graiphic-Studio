@@ -1,5 +1,7 @@
 # Current capabilities and limits
 
+**25 November 2026.** The [November Studio update](studio-update-2026-11-25.md) lists recent workflows and their tested application versions. The current example catalogue contains 1,169 documents. The run counts below apply to the October set identified here.
+
 **Documentation reconciliation: 26 October 2026.** See the [refresh and evidence boundaries](documentation-refresh-2026-10-26.md) for current guides, retained declarations and icon provenance.
 
 **Runtime measurement: 25 October 2026.** The shared corpus contains

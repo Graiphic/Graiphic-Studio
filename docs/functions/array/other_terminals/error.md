@@ -7,10 +7,16 @@
 
 Palette icon for an array of errors. Placement is not implemented yet.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](error.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Terminal tableau d'erreurs**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Icone de palette pour un tableau d'erreurs. Le placement n'est pas encore implemente.
 
@@ -36,9 +42,16 @@ A default is shown only for an input with an explicitly documented value. Previe
 
 The notes below retain the reviewed help's original NI and Studio scopes. An NI overload is not a claim of Studio runtime support; the authoring profile and execution limits remain separate.
 
+<details>
+<summary>Retained binding and help statements</summary>
+
+These are source declarations, not the current measured product-execution assessment. Compare historical limitations with the separately dated native profiles above.
+
 No function operand. Instance element type Error{status:Boolean,code:I32,source:String} and configured rank determine Array&lt;T,rank&gt;. A control supplies this type; an indicator consumes it.
 
 Studio authoring ports for array.other_terminals.error.
+
+</details>
 
 <details>
 <summary>Notes de types et de compatibilité de l’aide Studio</summary>
@@ -65,9 +78,16 @@ Scope: `requires_explicit_target_capability`.
 
 Authoring support is not an execution capability.
 
+<details>
+<summary>Retained authoring-contract limitations</summary>
+
+These declarations belong to the binding snapshot. Compare them with the separately admitted native profiles and dated measurements linked above; they are not a current denial of those product profiles.
+
 **Authoring/target contract limits:**
 
 - Execution requires explicit support by the active target.
+
+</details>
 
 <details>
 <summary>Connector type defaults and persistence aliases</summary>
@@ -80,7 +100,9 @@ Authoring support is not an execution capability.
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Error Array Constant](../../../examples/array.other_constants.error.worked.md) — Run displays the built-in value value = \[{"status": false, "code": 0, "source": ""}, {"status": true, "code": 7, "source": "sensor"}\]. (`execution`, `studio-draft`).
 
 ## Identity and references
 

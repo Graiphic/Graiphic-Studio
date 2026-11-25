@@ -7,10 +7,16 @@
 
 Percent in[0,100], GS type7 interpolation h=(n-1)*p/100; no NI interpolation equivalence claimed. GS type-7 linear interpolation, percent scale 0..100, one shared sort per percentile vector.
 
+## Product execution profiles
+
+The shared index declares native examples for this object; see [the examples below](percentiles.md#examples) and [document profiles and evidence boundaries](../../../reference/studio-draft-examples.md). Older binding/help statements retained below can lag those product profiles. They do not establish or deny the separately measured native profiles. An example declaration alone is not an execution result or admission of every overload.
+
 <details>
 <summary>Résumé français de l’aide Studio</summary>
 
 **Percentiles**
+
+Texte historique de l’aide conservé ci-dessous. Des exemples natifs distincts sont déclarés pour cet objet ; consultez les profils et preuves datés, sans déduire une compatibilité universelle de ce texte.
 
 Calcule un ou plusieurs percentiles, exprimés entre 0 et 100.
 
@@ -19,6 +25,13 @@ Calcule un ou plusieurs percentiles, exprimés entre 0 et 100.
 ## Studio authoring profile
 
 Contract status: **partial**. The connector below describes Studio authoring; execution availability is stated separately.
+
+<details>
+<summary>Retained binding and help description</summary>
+
+This is the source declaration, not the current measured product-execution assessment.
+
+</details>
 
 ## IN — inputs
 
@@ -79,7 +92,9 @@ Per selected exact signature; complete-graph target admission, native execution 
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Percentiles](../../../examples/math.statistics.percentiles.worked.md) — With x = \[1, 3, 5\], p = 50, Run displays percentile = 3, error = 0. (`execution`, `studio-draft`).
 
 ## Identity and references
 

@@ -108,7 +108,9 @@ Each selected variant has its own exact public native operation identity and sig
 
 ## Examples
 
-No example for this object is currently declared in the shared index. [Browse the available examples](../../../examples/index.md).
+These are real `.frog` documents from the same index used by Studio. Backend names and expected results describe the examples; they are not execution certificates.
+
+- [Édition uniquement — Ajuster trois mesures · intervalles](../../../examples/math.fitting.nonlinear_curve_fit_intervals.worked.md) — Les couples (0,1), (1,3) et (2,5) suivent le modèle a + bx. Le terminal de référence attend un modèle appelable compatible. (`persistence`, `studio-draft`).
 
 ## Identity and references
 
