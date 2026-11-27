@@ -1,6 +1,6 @@
 # Graiphic Studio
 
-The [November Studio update](docs/reference/studio-update-2026-11-25.md) covers error wiring, user events, instruments, Picture Rings and project classes. The [October documentation checkpoint](docs/reference/documentation-refresh-2026-10-26.md) retains the earlier guide and example measurements.
+The [November 27 Studio update](docs/reference/studio-update-2026-11-27.md) covers graph legends, Studio windows, class data and loop counts. The [November 25 update](docs/reference/studio-update-2026-11-25.md) covers error wiring, user events, instruments, Picture Rings and project classes.
 
 A visual workspace aimed at helping people follow and validate machine-generated software through a structured FROG model and graphical dataflow.
 

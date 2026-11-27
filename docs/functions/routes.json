@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "base_url": "https://graiphic.github.io/Graiphic-Studio/",
-  "source_snapshot_sha256": "1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963",
+  "source_snapshot_sha256": "e812b4fe88f7661f554fb88001bada76eee68d1bc3670ab299776733fde100e6",
   "routes": [
     {
       "catalog_id": "application_control.close_reference",
@@ -37,6 +37,15 @@
         "application_control.reference",
         "frog.studio.application_control.reference",
         "function.application_control.reference"
+      ]
+    },
+    {
+      "catalog_id": "application_control.to_more_specific_class",
+      "route": "docs/functions/application_control/to_more_specific_class.md",
+      "keys": [
+        "application_control.to_more_specific_class",
+        "frog.studio.application_control.to_more_specific_class",
+        "function.application_control.to_more_specific_class"
       ]
     },
     {
@@ -1777,6 +1786,15 @@
       ]
     },
     {
+      "catalog_id": "error.invalid_message",
+      "route": "docs/functions/error/invalid_message.md",
+      "keys": [
+        "error.invalid_message",
+        "frog.studio.error.invalid_message",
+        "function.error.invalid_message"
+      ]
+    },
+    {
       "catalog_id": "error.is_error",
       "route": "docs/functions/error/is_error.md",
       "keys": [
@@ -1864,6 +1882,15 @@
         "error.retain_first",
         "frog.studio.error.retain_first",
         "function.error.retain_first"
+      ]
+    },
+    {
+      "catalog_id": "error.simple_handler",
+      "route": "docs/functions/error/simple_handler.md",
+      "keys": [
+        "error.simple_handler",
+        "frog.studio.error.simple_handler",
+        "function.error.simple_handler"
       ]
     },
     {

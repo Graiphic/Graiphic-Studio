@@ -21,6 +21,24 @@ Use **Value** for ordinary typed access. **Value (Signaling)** is write-only. On
 
 ### Methods and strict types
 
+**Cluster → Controls[]** returns one control reference per immediate field in
+field order. Use **Index Array** to select one child. **Control.Value** on this
+generic reference accepts a Variant. A direct numeric wire is boxed at the
+receiving terminal and marked with a red coercion dot. An existing Variant
+connects directly. Check **error out** for an incompatible payload.
+
+Use **Application Control → To More Specific Class** to access the selected
+child’s class-specific properties. Wire the child to **reference**. On a
+reference constant wired to **target class**, use **Choose a Class…** for a
+control class or **Choose a Type Def…** for a strict schema from a file. A
+strict Ring model supplies the numeric representation of **Value**. To access
+a nested field, specialize the child as a Cluster and use its own **Controls[]**.
+
+For example, select index `2` from a cluster of four Rings and use the first
+Ring as the class model. Writing `9` through the specialized output changes the
+third Ring. A Picture Ring displays the image assigned to `9`. A failed cast
+returns an invalid reference and reports the error on **error out**.
+
 For a String target, **Get Nth Line** exposes its declared line index and output parameters. For a Front Panel reference, **Find Child** receives a path and returns a Control reference. Its class determines which properties are available downstream. A strict reference also carries the target's value schema, which determines Value, array rank and cluster fields. Closing a borrowed reference preserves the object and its other aliases. [String methods](object-members/frog.widgets.string_control.md) · [Front Panel methods](object-members/frog.front_panel.md)
 
 ## Updating this index

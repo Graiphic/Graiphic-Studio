@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_snapshot": {
-    "sha256": "1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963",
+    "sha256": "e812b4fe88f7661f554fb88001bada76eee68d1bc3670ab299776733fde100e6",
     "files": [
       {
         "path": "../../FROG/Implementations/Frontend/src/FunctionCatalogSemantic.cpp",
@@ -34,6 +34,10 @@
       {
         "path": "assets/icons/functions/application-control/Property Node.svg",
         "sha256": "eee3e1eb25841a656c0d815285d3878352b9d0a2bbc5b38892e9f77c0a55b93f"
+      },
+      {
+        "path": "assets/icons/functions/application-control/To More Specific Class.svg",
+        "sha256": "025ed4cdf8d112e718b2d7e251bbdb4fc635d7fe52bfb8868d8b45b38df88c93"
       },
       {
         "path": "assets/icons/functions/application-control/VI server reference_Rounded.svg",
@@ -3321,7 +3325,7 @@
       },
       {
         "path": "assets/icons/functions/structures/16-feedback-node.svg",
-        "sha256": "f67c3dc00fe4cf287b8949bd1a0974749a6d9ac2526a644ac6d1051e2573a0d0"
+        "sha256": "eb3d1659397dc15ddbca44482569fce5df0b615dd7bff9f74761537622aec4c3"
       },
       {
         "path": "assets/icons/functions/structures/17-select.svg",
@@ -3621,7 +3625,7 @@
       },
       {
         "path": "config/context-help.ini",
-        "sha256": "43a11bd85d89ae956173495a8473badb109ebe65a6fa59f853258513b9a1464b"
+        "sha256": "d50cbeb5ce0d117a0f4dcc8ba98f84afb7bb4f88a910df824333c2012433242a"
       },
       {
         "path": "manifests/connectivity/entries.generated.inc",
@@ -3653,7 +3657,7 @@
       },
       {
         "path": "manifests/function-bindings/studio.applicationcontrol.v2.json",
-        "sha256": "4e33e956134d5585ae52f4183b7a0c8f1f8dca5dc83f672610ae347fa8e295d6"
+        "sha256": "bd8b0b600f57158f8c6b44faf972b887f87be21cee7aadd0f6aa5d5c8a08cd97"
       },
       {
         "path": "manifests/function-bindings/studio.array.v2.json",
@@ -3685,7 +3689,7 @@
       },
       {
         "path": "manifests/function-bindings/studio.error.v2.json",
-        "sha256": "d2aadc6bc90927fee218b520156bb0ccd5324197bea349963dab32aa358075e8"
+        "sha256": "b628c9bb8984de17b8a223e9e5402df0c3b9d90c8aad1344630401d5a7e1cd3f"
       },
       {
         "path": "manifests/function-bindings/studio.file.v2.json",
@@ -3737,11 +3741,11 @@
       },
       {
         "path": "src/FunctionCatalog.cpp",
-        "sha256": "d1f40ab46318f934b3c08ff5f52aaada8b0e308885761ffe2255118845453382"
+        "sha256": "277a9cbad566b8307edab6e259c491dd338648c9077c34e40f288841df006b8b"
       },
       {
         "path": "src/FunctionCatalogEntries.inc",
-        "sha256": "01da7308d4ba503b6b96b0b38e6f758de07a2b5331c43aa207886a5512f8b3fa"
+        "sha256": "5ac7b739dd5b6cc3838a9b200b49fcd72f7bb84ece33ac7d7117bbaa1b744840"
       },
       {
         "path": "src/FunctionCatalogLegacyAliases.inc",
@@ -3774,12 +3778,12 @@
     ]
   },
   "counts": {
-    "catalog_entries": 983,
-    "function_contracts": 911,
+    "catalog_entries": 986,
+    "function_contracts": 914,
     "palette_folders": 72,
     "families": 18,
-    "helper_entries": 943,
-    "authentic_icons": 902,
+    "helper_entries": 945,
+    "authentic_icons": 903,
     "entries_without_icon": 2
   },
   "families": [
@@ -3787,8 +3791,8 @@
       "id": "applicationcontrol",
       "name": "Application Control",
       "route": "docs/functions/applicationcontrol/index.md",
-      "entries": 4,
-      "operations": 4
+      "entries": 5,
+      "operations": 5
     },
     {
       "id": "array",
@@ -3843,8 +3847,8 @@
       "id": "error",
       "name": "Error",
       "route": "docs/functions/error/index.md",
-      "entries": 24,
-      "operations": 24
+      "entries": 26,
+      "operations": 26
     },
     {
       "id": "file",
@@ -4009,6 +4013,38 @@
         "reference_out"
       ],
       "icon_sha256": "d8f5676d57a443ccbeacba20c1145a8d28d2d407e912e7b6ed027c8b34d715d2",
+      "contract_source": "manifests/function-bindings/studio.applicationcontrol.v2.json"
+    },
+    {
+      "catalog_id": "application_control.to_more_specific_class",
+      "title_en": "To More Specific Class",
+      "title_fr": "Vers une classe plus spécifique",
+      "family": "Application Control",
+      "family_id": "applicationcontrol",
+      "route": "docs/functions/application_control/to_more_specific_class.md",
+      "summary": "Specializes the input reference to the class supplied by target class. The output addresses the original control. A strict model also specifies the Value type. An incompatible target produces an invalid reference and an error.",
+      "icon": "assets/function-icons/functions/application-control/To More Specific Class.svg",
+      "aliases": [],
+      "parent": "",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "defined",
+      "public_runtime_available": true,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "error in",
+        "error out",
+        "error_in",
+        "error_out",
+        "reference",
+        "reference_in",
+        "reference_out",
+        "specific class reference",
+        "target class",
+        "target_class"
+      ],
+      "icon_sha256": "025ed4cdf8d112e718b2d7e251bbdb4fc635d7fe52bfb8868d8b45b38df88c93",
       "contract_source": "manifests/function-bindings/studio.applicationcontrol.v2.json"
     },
     {
@@ -9232,6 +9268,33 @@
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
+      "catalog_id": "error.invalid_message",
+      "title_en": "Invalid Message",
+      "title_fr": "",
+      "family": "Error",
+      "family_id": "error",
+      "route": "docs/functions/error/invalid_message.md",
+      "summary": "Builds the qualified imported LabVIEW invalid-message error with code 1 and its complete caller chain.",
+      "icon": "assets/function-icons/functions/error/01-build-cluster.svg",
+      "aliases": [],
+      "parent": "",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": false,
+      "contract_status": "partial",
+      "public_runtime_available": false,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "call chain",
+        "call_chain",
+        "error out",
+        "error_out",
+        "message"
+      ],
+      "icon_sha256": "57edf734b9a3cbfff33620c271ea432a5fb15fb822221b66bacb7907db84492d",
+      "contract_source": "manifests/function-bindings/studio.error.v2.json"
+    },
+    {
       "catalog_id": "error.is_error",
       "title_en": "Is Error",
       "title_fr": "Est une erreur",
@@ -9494,6 +9557,31 @@
         "error_out"
       ],
       "icon_sha256": "5dbd24029e2efa37e3d89ca6b3ae284bc6b290657519b41e9358296a8c5797b7",
+      "contract_source": "manifests/function-bindings/studio.error.v2.json"
+    },
+    {
+      "catalog_id": "error.simple_handler",
+      "title_en": "Simple Error Handler",
+      "title_fr": "Gestionnaire d’erreur simple",
+      "family": "Error",
+      "family_id": "error",
+      "route": "docs/functions/error/simple_handler.md",
+      "summary": "Returns the complete error message and waits for Continue when the input contains an error. A warning returns No Error in this mode.",
+      "icon": "assets/function-icons/functions/error/04-display.svg",
+      "aliases": [],
+      "parent": "",
+      "kind": "operation",
+      "role": "node",
+      "palette_visible": true,
+      "contract_status": "partial",
+      "public_runtime_available": false,
+      "private_studio_dispatch": null,
+      "connector_names": [
+        "error in",
+        "error_in",
+        "message"
+      ],
+      "icon_sha256": "7ec69205514393ba4d8738567579f0aa9070be0703b92598f17e25274de2fb79",
       "contract_source": "manifests/function-bindings/studio.error.v2.json"
     },
     {
@@ -30013,7 +30101,7 @@
         "result",
         "value"
       ],
-      "icon_sha256": "f67c3dc00fe4cf287b8949bd1a0974749a6d9ac2526a644ac6d1051e2573a0d0",
+      "icon_sha256": "eb3d1659397dc15ddbca44482569fce5df0b615dd7bff9f74761537622aec4c3",
       "contract_source": "manifests/function-bindings/studio.structures.v2.json"
     },
     {

@@ -44,6 +44,18 @@ catalog entry, with its purpose, connector reference, types, and current
 execution limits. Connector schematics on those pages describe declarations;
 they are not captures of a particular wired graph.
 
+## Find Examples
+
+Choose **Help > Find Examples** and select an example. **Example documentation**
+opens the installed `Readme.md` in the system viewer or shows it in Studio’s
+details pane when the viewer is unavailable. If the example has no installed
+readme, the button opens its page in the [online examples catalog](../examples/index.md).
+The page includes the `.frog` file, its dependencies, expected results and
+related functions.
+
+**Function help** opens the relevant reference or lists the available references
+when the example declares several. Choose **Open in Studio** to edit a working copy.
+
 ## Interface assistance
 
 Options, Navigator controls, and other supported interactive controls use the

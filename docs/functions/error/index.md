@@ -2,7 +2,7 @@
 
 [All functions](../index.md)
 
-24 operations or editor elements; 0 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
+26 operations or editor elements; 0 palette folders. Open a page to inspect its exact connector, typing rules and execution limits.
 
 ## Operations and editor elements
 
@@ -17,6 +17,7 @@
 | [Error Terminal](terminal.md) | Creates an error-cluster control on the Front Panel and its linked diagram terminal. |
 | [Filter Error Code](filter_code.md) | Accepts an I32 code or a 1D I32 array. Clears matching diagnostics, preserves others, and exposes codes cleared for the array overload. |
 | [Generate Error Report](generate_report.md) | Formats a diagnostic into a multiline report string, optionally followed by a divider line. |
+| [Invalid Message](invalid_message.md) | Builds the qualified imported LabVIEW invalid-message error with code 1 and its complete caller chain. |
 | [Is Error](is_error.md) | Tests the status field, not the sign of the error code. The output is one Boolean. |
 | [Is Error Or Warning](is_error_or_warning.md) | Tests for an error or warning: status true or nonzero code. The output is one Boolean. |
 | [Is Warning](is_warning.md) | Tests for status false with a nonzero code. The output is one Boolean. |
@@ -27,6 +28,7 @@
 | [Read Error Code](read_code.md) | Reads the signed 32-bit code without inferring severity from its sign. |
 | [Read Location](read_location.md) | Reads the location or formats the call chain as a multiline string. |
 | [Retain First Error](retain_first.md) | Expandable inputs are checked from top to bottom: first error, otherwise first warning, otherwise no error. This is not Multiplex Errors. |
+| [Simple Error Handler](simple_handler.md) | Returns the complete error message and waits for Continue when the input contains an error. A warning returns No Error in this mode. |
 | [Translate Error Code](translate_code.md) | Maps original codes to replacement codes supplied as two 1D I32 arrays; optionally updates the call chain. Array lengths are runtime values. |
 | [Upgrade To Error](upgrade_to_error.md) | Changes a warning into an active error. |
 | [Write Call Chain](write_call_chain.md) | Writes a 1D string array as the diagnostic call chain, including in an empty error cluster. |

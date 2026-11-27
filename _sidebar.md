@@ -1,6 +1,6 @@
 - [Overview](/docs/index.md)
 - [Getting started](/docs/getting-started.md)
-- [November Studio update](/docs/reference/studio-update-2026-11-25.md)
+- [November 27 Studio update](/docs/reference/studio-update-2026-11-27.md)
 - [Examples — actual .frog documents](/docs/examples/index.md)
 
 - **Workspace guides**

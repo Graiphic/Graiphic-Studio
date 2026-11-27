@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>To More Specific Class</title>
+  <rect x="1" y="1" width="46" height="46" rx="4" fill="#4b5563" stroke="#aeb9c4" stroke-width="2"/>
+  <path d="M14 17v7h20v5M14 24v5" fill="none" stroke="#d5dce3" stroke-width="2.5"/>
+  <rect x="7" y="8" width="14" height="9" rx="2" fill="#285d69" stroke="#dcf3f3" stroke-width="2"/>
+  <rect x="7" y="30" width="14" height="9" rx="2" fill="none" stroke="#d5dce3" stroke-width="2"/>
+  <rect x="27" y="30" width="14" height="9" rx="2" fill="#38a880" stroke="#edfff8" stroke-width="2"/>
+  <path d="m30 25 4 4 4-4" fill="none" stroke="#edfff8" stroke-width="2"/>
+</svg>

@@ -6,7 +6,7 @@ Use the documentation search for an English or French helper title, a catalogue 
 
 | Family | Operations / editor elements | Folders |
 | --- | --- | --- |
-| [Application Control](applicationcontrol/index.md) | 4 | 0 |
+| [Application Control](applicationcontrol/index.md) | 5 | 0 |
 | [Array](array/overview.md) | 58 | 4 |
 | [Boolean](boolean/index.md) | 16 | 0 |
 | [Cluster](cluster/index.md) | 11 | 1 |
@@ -14,7 +14,7 @@ Use the documentation search for an English or French helper title, a catalogue 
 | [Comparison](comparison/index.md) | 19 | 0 |
 | [Connectivity](connectivity/index.md) | 35 | 5 |
 | [DialogUserInterface](dialoguserinterface/index.md) | 6 | 1 |
-| [Error](error/index.md) | 24 | 0 |
+| [Error](error/index.md) | 26 | 0 |
 | [File](file/index.md) | 32 | 5 |
 | [Mathematics](mathematics/index.md) | 414 | 37 |
 | [Numeric](numeric/index.md) | 107 | 5 |
@@ -35,7 +35,7 @@ Constants, terminals and structure containers are included. Their editor-managed
 
 ## Provenance and notation
 
-This deterministic export covers **983 catalogue entries**, **911 versioned function contracts** and **72 palette folders** across **18 families**. 943 entries carry an existing context-help section. The remaining purposes come from reviewed family metadata or the versioned authoring contract.
+This deterministic export covers **986 catalogue entries**, **914 versioned function contracts** and **72 palette folders** across **18 families**. 945 entries carry an existing context-help section. The remaining purposes come from reviewed family metadata or the versioned authoring contract.
 
 The English text follows Studio help. French summaries are reproduced only where the existing helper supplies them. Missing French text, defaults, requirements or capabilities are not translated or inferred.
 
@@ -49,7 +49,7 @@ NI API links document reference semantics and connector evidence. They do not pr
 
 Regenerate with Python 3.11+: `python tools/export_studio_help.py --source ../FROG-STUDIO/native-portable-engine`; add `--check` for a read-only deterministic export check. This documentation check does not run application regression tests.
 
-Source snapshot SHA-256: `1daee002b5fc5b8d3505976ed8909cf0b32c856d2208545a7ed935fce3b00963`.
+Source snapshot SHA-256: `e812b4fe88f7661f554fb88001bada76eee68d1bc3670ab299776733fde100e6`.
 
 ## Actual example documents
 
